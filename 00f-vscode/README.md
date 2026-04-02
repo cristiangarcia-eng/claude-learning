@@ -96,15 +96,6 @@ You don't need to memorize all of these. Start with the top 5.
 | `Cmd+Shift+F` | `Ctrl+Shift+F` | Find text in ALL files |
 | `Cmd+S` | `Ctrl+S` | Save the current file |
 
-### Bonus shortcuts
-
-| Shortcut (Mac) | Shortcut (Windows) | What it does |
-|----------------|--------------------|----|
-| `Cmd+Z` | `Ctrl+Z` | Undo |
-| `Cmd+Shift+Z` | `Ctrl+Y` | Redo |
-| `` Ctrl+` `` | `` Ctrl+` `` | Toggle the built-in terminal |
-| `Cmd+B` | `Ctrl+B` | Toggle the sidebar |
-| `Cmd+,` | `Ctrl+,` | Open settings |
 
 > **Pro tip**: The **Command Palette** (`Cmd+Shift+P`) is your best friend. If you don't know how to do something, open it and type what you want. VS Code will find the action for you.
 
@@ -201,7 +192,6 @@ Beyond Claude Code, these extensions are useful for non-developers:
 | **Prettier** | Auto-formats your files to look clean |
 | **Markdown Preview** | Preview .md files as formatted text |
 | **GitLens** | See who changed what and when |
-| **Error Lens** | Shows errors inline, next to the code |
 
 ## Quick reference
 

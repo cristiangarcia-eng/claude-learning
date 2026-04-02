@@ -126,16 +126,6 @@ export const LESSONS: LessonMeta[] = [
     order: 10,
   },
   {
-    folder: "06-hooks",
-    slug: "hooks",
-    title: "Hooks",
-    description: "Workflow automation with 25 events and 4 hook types",
-    level: "intermediate",
-    duration: "1 hour",
-    complexity: 3,
-    order: 11,
-  },
-  {
     folder: "05-mcp",
     slug: "mcp",
     title: "MCP",

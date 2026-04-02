@@ -1,0 +1,116 @@
+import { notFound } from "next/navigation";
+import { LESSONS, getLessonBySlug } from "@/lib/lessons";
+import { getLessonContent, getLessonFiles } from "@/lib/content";
+import { MarkdownRenderer } from "@/components/markdown-renderer";
+import { LessonNav } from "@/components/lesson-nav";
+import { getAdjacentLessons } from "@/lib/lessons";
+import { Badge } from "@/components/ui/badge";
+import { Clock, Star, GraduationCap } from "lucide-react";
+import Link from "next/link";
+import { CompleteButton } from "@/components/progress/complete-button";
+import { getQuizBySlug } from "@/lib/quiz-data";
+
+export function generateStaticParams() {
+  return LESSONS.map((l) => ({ lessonSlug: l.slug }));
+}
+
+export function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lessonSlug: string }>;
+}) {
+  // Next.js 16 requires async params - but generateMetadata can return sync
+  // We'll handle this in the component
+  return {};
+}
+
+export default async function LessonPage({
+  params,
+}: {
+  params: Promise<{ lessonSlug: string }>;
+}) {
+  const { lessonSlug } = await params;
+  const lesson = getLessonBySlug(lessonSlug);
+  if (!lesson) notFound();
+
+  const content = getLessonContent(lesson);
+  if (!content) notFound();
+
+  const files = getLessonFiles(lesson);
+  const { prev, next } = getAdjacentLessons(lessonSlug);
+  const hasQuiz = !!getQuizBySlug(lessonSlug);
+
+  const levelColors = {
+    starter: "bg-brand-green/10 text-brand-green border-brand-green/20",
+    beginner: "bg-green-500/10 text-green-500 border-green-500/20",
+    intermediate: "bg-blue-500/10 text-blue-500 border-blue-500/20",
+    advanced: "bg-red-500/10 text-red-500 border-red-500/20",
+  };
+
+  return (
+    <div className="flex-1 overflow-y-auto">
+      <div className="max-w-4xl mx-auto px-6 py-8">
+        {/* Lesson header */}
+        <div className="mb-8">
+          <div className="flex items-center gap-3 mb-3">
+            <Badge variant="outline" className={levelColors[lesson.level]}>
+              {lesson.level}
+            </Badge>
+            <span className="flex items-center gap-1 text-sm text-muted-foreground">
+              <Clock className="h-3.5 w-3.5" />
+              {lesson.duration}
+            </span>
+            <span className="flex items-center gap-1 text-sm text-muted-foreground">
+              {Array.from({ length: lesson.complexity }).map((_, i) => (
+                <Star
+                  key={i}
+                  className="h-3.5 w-3.5 fill-brand-green text-brand-green"
+                />
+              ))}
+            </span>
+          </div>
+        </div>
+
+        {/* Sub-files list */}
+        {files.length > 0 && (
+          <div className="mb-8 rounded-lg border border-border bg-card p-4">
+            <h3 className="text-sm font-semibold mb-2 text-muted-foreground uppercase tracking-wide">
+              Files in this lesson
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              {files.map((f) => (
+                <Link
+                  key={f.slug}
+                  href={`/lessons/${lessonSlug}/${f.slug}`}
+                  className="text-sm px-3 py-1 rounded-md bg-muted hover:bg-muted/80 transition-colors"
+                >
+                  {f.title}
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Markdown content */}
+        <MarkdownRenderer content={content.markdown} />
+
+        {/* Actions */}
+        <div className="mt-8 flex items-center justify-center gap-4">
+          <CompleteButton lessonSlug={lessonSlug} />
+          {hasQuiz && (
+            <Link
+              href={`/quiz/${lessonSlug}`}
+              className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium bg-brand-green/10 text-brand-green border border-brand-green/30 hover:bg-brand-green/20 transition-colors"
+            >
+              <GraduationCap className="h-4 w-4" />
+              Take Quiz
+            </Link>
+          )}
+        </div>
+
+        {/* Navigation */}
+        <LessonNav prev={prev} next={next} />
+      </div>
+    </div>
+  );
+}

@@ -337,6 +337,89 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* About */}
+      <section className="border-t border-border py-20">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="relative">
+              <img
+                src="/cristian.png"
+                alt="Cristian Garcia"
+                className="w-full max-w-md rounded-2xl object-cover aspect-square"
+              />
+              <div className="absolute -bottom-4 -right-4 md:right-4 bg-brand-green text-black px-4 py-2 rounded-lg font-semibold text-sm shadow-lg">
+                8+ years in Product
+              </div>
+            </div>
+            <div>
+              <p className="text-brand-green text-sm font-semibold uppercase tracking-wider mb-2">Meet your instructor</p>
+              <h2 className="text-3xl font-bold mb-2">Cristian Garcia</h2>
+              <p className="text-lg text-muted-foreground mb-6">
+                Chief Product Officer &middot; Claude Code Expert
+              </p>
+              <div className="space-y-4 text-muted-foreground">
+                <p>
+                  I&apos;ve spent 8+ years building digital products at companies like
+                  <strong className="text-foreground"> Banco Santander</strong> and
+                  <strong className="text-foreground"> BBVA</strong>, leading teams
+                  and shipping apps used by millions.
+                </p>
+                <p>
+                  As CPO at
+                  <strong className="text-foreground"> Nova Talent</strong>, I
+                  integrate AI into every part of our product workflow. Claude Code
+                  is my daily driver — I use it to ship features, analyze data,
+                  and automate tasks that used to take hours.
+                </p>
+                <p>
+                  This course is what I wish existed when I started: a practical,
+                  no-jargon guide designed for product people, not engineers. Everything
+                  I teach comes from real work, not theory.
+                </p>
+              </div>
+            </div>
+            <div className="space-y-4">
+              <div className="grid grid-cols-2 gap-4">
+                <Card>
+                  <CardContent className="p-5 text-center">
+                    <p className="text-3xl font-bold text-brand-green">8+</p>
+                    <p className="text-sm text-muted-foreground mt-1">Years in Product</p>
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardContent className="p-5 text-center">
+                    <p className="text-3xl font-bold text-brand-green">CPO</p>
+                    <p className="text-sm text-muted-foreground mt-1">at Nova Talent</p>
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardContent className="p-5 text-center">
+                    <p className="text-3xl font-bold text-brand-green">BBVA</p>
+                    <p className="text-sm text-muted-foreground mt-1">Risk & Technology</p>
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardContent className="p-5 text-center">
+                    <p className="text-3xl font-bold text-brand-green">Santander</p>
+                    <p className="text-sm text-muted-foreground mt-1">Built the global app</p>
+                  </CardContent>
+                </Card>
+              </div>
+              <Card>
+                <CardContent className="p-5">
+                  <p className="text-sm text-muted-foreground italic">
+                    &ldquo;I&apos;m not a developer by training. I learned to code at Ironhack,
+                    then spent years bridging the gap between business and engineering.
+                    Claude Code changed everything — now I can do in minutes what used
+                    to require a developer and a ticket in the backlog.&rdquo;
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="border-t border-border py-20 text-center">
         <div className="max-w-2xl mx-auto px-6">

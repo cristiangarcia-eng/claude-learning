@@ -2,8 +2,14 @@ import NextAuth from "next-auth";
 import Nodemailer from "next-auth/providers/nodemailer";
 import { UnstorageAdapter } from "@auth/unstorage-adapter";
 import { createStorage } from "unstorage";
+import upstashRedisDriver from "unstorage/drivers/upstash";
 
-const storage = createStorage();
+const storage = createStorage({
+  driver: upstashRedisDriver({
+    url: process.env.KV_REST_API_URL!,
+    token: process.env.KV_REST_API_TOKEN!,
+  }),
+});
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
   adapter: UnstorageAdapter(storage),

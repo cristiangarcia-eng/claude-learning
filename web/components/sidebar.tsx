@@ -6,6 +6,9 @@ import { Logo } from "./logo";
 import { LESSONS, getLessonsByLevel } from "@/lib/lessons";
 import type { LessonMeta } from "@/lib/lessons";
 import { ThemeToggle } from "./theme-toggle";
+import { useProgress } from "./progress/progress-provider";
+import { Progress } from "./ui/progress";
+import { LESSONS as ALL_LESSONS } from "@/lib/lessons";
 import {
   BarChart3,
   BookOpen,
@@ -105,10 +108,25 @@ function SidebarContent({ onClose }: { onClose?: () => void }) {
         })}
       </nav>
 
-      {/* Footer */}
-      <div className="p-4 border-t border-border text-xs text-muted-foreground">
-        {LESSONS.length} lessons &middot; 100+ examples
+      {/* Progress footer */}
+      <SidebarProgress />
+    </div>
+  );
+}
+
+function SidebarProgress() {
+  const { progress } = useProgress();
+  const completed = progress.completedLessons.length;
+  const total = ALL_LESSONS.length;
+  const percent = total > 0 ? Math.round((completed / total) * 100) : 0;
+
+  return (
+    <div className="p-4 border-t border-border">
+      <div className="flex items-center justify-between text-xs text-muted-foreground mb-2">
+        <span>{completed}/{total} completed</span>
+        <span className="text-brand-green font-medium">{percent}%</span>
       </div>
+      <Progress value={percent} className="h-2" />
     </div>
   );
 }

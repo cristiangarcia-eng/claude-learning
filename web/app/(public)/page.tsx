@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Logo } from "@/components/logo";
 import { LESSONS, getLessonsByLevel } from "@/lib/lessons";
 import {
   BookOpen,
@@ -59,8 +60,7 @@ export default function LandingPage() {
       <nav className="border-b border-border">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <GraduationCap className="h-6 w-6 text-brand-green" />
-            <span className="font-bold text-lg">Claude Mastery</span>
+            <Logo />
           </div>
           <div className="flex items-center gap-4">
             <Link
@@ -442,7 +442,7 @@ export default function LandingPage() {
 
       {/* Footer */}
       <footer className="border-t border-border py-8 text-center text-sm text-muted-foreground">
-        <p>Claude Mastery &middot; Master Claude Code without writing code</p>
+        <p><Logo size="sm" /> &middot; Master Claude Code without writing code</p>
       </footer>
     </div>
   );

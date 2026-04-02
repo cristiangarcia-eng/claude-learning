@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Claude Mastery — Master Claude Code",
+  title: "Claude10x — Master Claude Code",
   description:
     "Interactive learning platform to master Claude Code features: slash commands, memory, skills, subagents, MCP, hooks, and more.",
   icons: {

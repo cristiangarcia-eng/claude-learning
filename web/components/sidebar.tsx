@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Logo } from "./logo";
 import { LESSONS, getLessonsByLevel } from "@/lib/lessons";
 import type { LessonMeta } from "@/lib/lessons";
 import { ThemeToggle } from "./theme-toggle";
@@ -34,8 +35,7 @@ function SidebarContent({ onClose }: { onClose?: () => void }) {
           className="flex items-center gap-2"
           onClick={onClose}
         >
-          <GraduationCap className="h-6 w-6 text-brand-green" />
-          <span className="font-bold text-lg">Claude Mastery</span>
+          <Logo size="sm" />
         </Link>
         <ThemeToggle />
       </div>

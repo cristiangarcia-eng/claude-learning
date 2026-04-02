@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Logo } from "@/components/logo";
 import { getLessonsByLevel } from "@/lib/lessons";
 import type { LessonMeta } from "@/lib/lessons";
 import {
@@ -89,11 +90,8 @@ export default function HomePage() {
       <header className="border-b border-border">
         <div className="max-w-6xl mx-auto px-6 py-16 text-center">
           <div className="flex justify-center mb-6">
-            <GraduationCap className="h-16 w-16 text-brand-green" />
+            <Logo size="lg" />
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Claude Mastery
-          </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
             Master Claude Code in a weekend. From first commands to orchestrating
             agents, hooks, skills, and MCP servers.
@@ -161,7 +159,7 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="border-t border-border py-8 text-center text-sm text-muted-foreground">
         <p>
-          Built with Claude Mastery &middot; Interactive Learning Platform
+          Claude10x &middot; Interactive Learning Platform
         </p>
       </footer>
     </div>

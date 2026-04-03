@@ -49,19 +49,25 @@ to Starter/Growth/Scale.
 
 This two-step approach gets much better results than jumping straight to changes.
 
-## Use Plan Mode for safety
+## Start with a plan
 
-If you're nervous about Claude making changes, use **Plan Mode** (press **Shift+Tab** twice):
+Before making changes, always start in **Plan Mode**. Press **Shift+Tab** twice to activate it — you'll see the mode indicator change at the bottom.
 
-```
-[Plan Mode] What files would need to change if we
-wanted to add a new language to the website?
-```
+In Plan Mode, Claude can only read and analyze — it won't modify any files. This is the best way to start any task because Claude will think through the approach before doing anything.
 
-In Plan Mode, Claude can only read and analyze — never modify files. Perfect for:
-- Understanding a codebase you're unfamiliar with
-- Scoping a change before committing to it
-- Getting a second opinion on how something works
+### Try it: plan a Nike market report
+
+Open Claude Code in your `nike-analysis` folder and activate Plan Mode (Shift+Tab twice). Then type:
+
+> `I want to turn this competitive analysis into a full market report. Plan what sections to add, what data from the CSV to include, and how to structure the final document.`
+
+Claude will read your files and propose a detailed plan — without changing anything. You can review it, ask questions, and adjust before any work begins.
+
+When the plan looks good, exit Plan Mode (press **Shift+Tab** to cycle back to normal mode) and tell Claude:
+
+> `Go ahead, execute the plan.`
+
+Now Claude will start making the actual changes. This **plan first, execute second** approach gives you much better results than jumping straight to changes.
 
 ## Keep conversations focused
 
@@ -100,10 +106,10 @@ Claude will ask smart questions about things you might not have considered. Once
 
 ## Summary: the golden rules
 
-1. **Be specific** — say exactly what you want
-2. **Explore first** — let Claude understand before changing
-3. **Clear often** — `/clear` between different topics
-4. **Use Plan Mode** — when you just want to understand, not change
+1. **Start with a plan** — always use Plan Mode before making changes
+2. **Be specific** — say exactly what you want
+3. **Explore first** — let Claude understand before changing
+4. **Clear often** — `/clear` between different topics
 5. **Let Claude verify** — tell it how to check its own work
 6. **Course-correct fast** — Esc and redirect if it's going wrong
 7. **Interview technique** — for big tasks, let Claude ask questions first

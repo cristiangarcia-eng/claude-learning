@@ -49,19 +49,25 @@ a Starter/Growth/Scale.
 
 Este enfoque de dos pasos da mucho mejores resultados que ir directamente a los cambios.
 
-## Usa el Modo Plan para seguridad
+## Empieza con un plan
 
-Si te pone nervioso que Claude haga cambios, usa el **Modo Plan** (presiona **Shift+Tab** dos veces):
+Antes de hacer cambios, siempre empieza en **Modo Plan**. Presiona **Shift+Tab** dos veces para activarlo — verás que el indicador de modo cambia en la parte inferior.
 
-```
-[Modo Plan] ¿Que archivos necesitarian cambiar si quisieramos
-agregar un nuevo idioma al sitio web?
-```
+En Modo Plan, Claude solo puede leer y analizar — no modificará ningún archivo. Esta es la mejor forma de empezar cualquier tarea porque Claude pensará en el enfoque antes de hacer nada.
 
-En Modo Plan, Claude solo puede leer y analizar — nunca modificar archivos. Perfecto para:
-- Entender un codebase con el que no estas familiarizado
-- Evaluar el alcance de un cambio antes de comprometerte
-- Obtener una segunda opinion sobre como funciona algo
+### Pruébalo: planifica un informe de mercado de Nike
+
+Abre Claude Code en tu carpeta `nike-analysis` y activa el Modo Plan (Shift+Tab dos veces). Luego escribe:
+
+> `Quiero convertir este análisis competitivo en un informe de mercado completo. Planifica qué secciones agregar, qué datos del CSV incluir, y cómo estructurar el documento final.`
+
+Claude leerá tus archivos y propondrá un plan detallado — sin cambiar nada. Puedes revisarlo, hacer preguntas y ajustar antes de que empiece cualquier trabajo.
+
+Cuando el plan te parezca bien, sal del Modo Plan (presiona **Shift+Tab** para volver al modo normal) y dile a Claude:
+
+> `Adelante, ejecuta el plan.`
+
+Ahora Claude empezará a hacer los cambios reales. Este enfoque de **planificar primero, ejecutar después** te da resultados mucho mejores que ir directamente a los cambios.
 
 ## Manten las conversaciones enfocadas
 
@@ -100,10 +106,10 @@ Claude hara preguntas inteligentes sobre cosas que quizás no habias considerado
 
 ## Resumen: las reglas de oro
 
-1. **Se específico** — di exactamente lo que quieres
-2. **Explora primero** — deja que Claude entienda antes de cambiar
-3. **Limpia seguido** — `/clear` entre diferentes temas
-4. **Usa el Modo Plan** — cuando solo quieres entender, no cambiar
-5. **Deja que Claude verifique** — dile como revisar su propio trabajo
+1. **Empieza con un plan** — siempre usa el Modo Plan antes de hacer cambios
+2. **Sé específico** — di exactamente lo que quieres
+3. **Explora primero** — deja que Claude entienda antes de cambiar
+4. **Limpia seguido** — `/clear` entre diferentes temas
+5. **Deja que Claude verifique** — dile cómo revisar su propio trabajo
 6. **Corrige rápido** — Esc y redirige si va por mal camino
-7. **Tecnica de entrevista** — para tareas grandes, deja que Claude haga preguntas primero
+7. **Técnica de entrevista** — para tareas grandes, deja que Claude haga preguntas primero

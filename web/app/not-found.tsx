@@ -11,7 +11,7 @@ export default function NotFound() {
           This page doesn&apos;t exist yet.
         </p>
         <Link
-          href="/"
+          href="/en"
           className="text-brand-green hover:underline"
         >
           Go back home

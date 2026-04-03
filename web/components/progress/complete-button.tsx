@@ -1,10 +1,13 @@
 "use client";
 
 import { useProgress } from "./progress-provider";
+import { useLocale } from "../locale-provider";
+import { t } from "@/lib/i18n";
 import { CheckCircle, Circle } from "lucide-react";
 
 export function CompleteButton({ lessonSlug }: { lessonSlug: string }) {
   const { progress, toggleLessonComplete } = useProgress();
+  const locale = useLocale();
   const isCompleted = progress.completedLessons.includes(lessonSlug);
 
   return (
@@ -21,7 +24,7 @@ export function CompleteButton({ lessonSlug }: { lessonSlug: string }) {
       ) : (
         <Circle className="h-4 w-4" />
       )}
-      {isCompleted ? "Completed" : "Mark as Complete"}
+      {isCompleted ? t(locale, "completed") : t(locale, "markComplete")}
     </button>
   );
 }

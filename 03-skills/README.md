@@ -29,6 +29,7 @@ Here are a few to get you started:
 |-------|-------------|-----------|
 | **frontend-design** | Creates polished web interfaces and landing pages | PMs wanting quick mockups |
 | **pdf-generator** | Creates and fills PDF documents | Sales proposals, reports |
+| **data-analyst** | Analyzes datasets, finds patterns, and creates visualizations | Sales ops, finance, anyone with CSVs |
 | **simplify** | Reviews code for quality and simplifies it | Anyone reviewing Claude's output |
 
 ### How to install a skill

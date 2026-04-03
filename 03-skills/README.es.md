@@ -29,6 +29,7 @@ Aquí hay algunos para empezar:
 |-------|----------|-----------|
 | **frontend-design** | Crea interfaces web pulidas y landing pages | PMs que quieren mockups rápidos |
 | **pdf-generator** | Crea y rellena documentos PDF | Propuestas de venta, informes |
+| **data-analyst** | Analiza datasets, encuentra patrones y crea visualizaciones | Sales ops, finanzas, cualquiera con CSVs |
 | **simplify** | Revisa código por calidad y lo simplifica | Cualquiera revisando el output de Claude |
 
 ### Cómo instalar un skill

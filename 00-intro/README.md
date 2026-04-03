@@ -56,4 +56,4 @@ You'll learn to:
 
 No coding experience required. If you can describe what you want in plain English, you can use Claude Code.
 
-**Let's get started.**
+**Next step**: [Set up VS Code — your work environment for the course →](../00f-vscode/)

@@ -2,16 +2,14 @@
 
 ## Why VS Code?
 
-To use Claude Code, you need a terminal. You *could* open the terminal directly (as we saw in [Terminal Basics](../00-terminal-basics/)), but there's a much better option: **use it from inside a code editor**.
-
-Visual Studio Code (VS Code) is a **free editor** made by Microsoft that combines:
+Visual Studio Code (VS Code) is where you'll do everything in this course. It's a **free editor** made by Microsoft that combines:
 - A **file browser** to see all your project files
 - A **text editor** to view and edit any file
 - A **built-in terminal** to run Claude Code
 
 All in one window. Instead of switching between apps, you have everything together — you can see the files Claude is changing while you talk to it.
 
-> **This is the recommended way to use Claude Code.** The terminal alone works, but VS Code gives you the visual context that makes everything easier to follow.
+> **This is your work environment for the entire course.** We'll use VS Code for everything — editing files, running the terminal, and talking to Claude.
 
 ## Installing VS Code
 
@@ -207,4 +205,4 @@ Beyond Claude Code, these extensions are useful for non-developers:
 
 ## Next step
 
-**Next step**: [Set up voice input for hands-free coding →](../00g-voice-input/)
+**Next step**: [Learn the 4 terminal commands you need inside VS Code →](../00-terminal-basics/)

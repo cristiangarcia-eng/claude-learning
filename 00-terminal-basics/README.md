@@ -6,25 +6,17 @@ A terminal (also called "command line" or "shell") is a text-based way to talk t
 
 Think of it like texting your computer instead of tapping on apps.
 
-> You don't need to become a terminal expert. You just need to know enough to launch Claude Code and navigate to your files.
+> You don't need to become a terminal expert. You just need 4 commands to navigate your files.
 
-## Opening the terminal
+## Opening the terminal in VS Code
 
-### On Mac
+You already have VS Code installed from the previous lesson. The terminal is built right in:
 
-1. Press **Cmd + Space** to open Spotlight
-2. Type **Terminal**
-3. Press **Enter**
+1. Open **VS Code**
+2. Press `` Ctrl+` `` (the backtick key, next to the number 1)
+3. A terminal panel appears at the bottom
 
-You'll see a window with a blinking cursor. That's your terminal.
-
-### On Windows
-
-1. Press **Win + R**
-2. Type **cmd** or **powershell**
-3. Press **Enter**
-
-Or search for "Terminal" in the Start menu.
+That's it — you'll see a blinking cursor ready for commands. No need to open a separate app.
 
 ## Your first commands
 
@@ -79,7 +71,7 @@ This **makes a directory** (folder) called `my-project`.
 
 ## A typical workflow
 
-Here's what a real session looks like. You open the terminal and:
+Here's what a real session looks like. Open the terminal in VS Code (`` Ctrl+` ``) and try:
 
 ```bash
 # See where you are
@@ -95,19 +87,11 @@ mkdir my-first-project
 # Go into that folder
 cd my-first-project
 
-# Now you're ready to start Claude Code!
-claude
+# Check what's inside (nothing yet — it's brand new!)
+ls
 ```
 
 ## Common mistakes (and how to fix them)
-
-### "command not found"
-
-```
-zsh: command not found: claud
-```
-
-You probably have a **typo**. Check the spelling. It's `claude`, not `claud`.
 
 ### "No such file or directory"
 
@@ -142,6 +126,6 @@ Just type `pwd` to see your current location. You can always go home with `cd ~`
 
 ## That's all you need
 
-Seriously — `pwd`, `ls`, `cd`, and `mkdir` are the only commands you need to get started with Claude Code. Once Claude is running, you talk to it in plain English, not terminal commands.
+Seriously — `pwd`, `ls`, `cd`, and `mkdir` are the only commands you'll ever need. Once Claude Code is running, you talk to it in plain English, not terminal commands.
 
-**Next step**: [Set up VS Code — the best way to use Claude Code →](../00f-vscode/)
+**Next step**: [Set up voice input for hands-free coding →](../00g-voice-input/)

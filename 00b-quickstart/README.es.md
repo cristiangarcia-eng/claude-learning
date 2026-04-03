@@ -65,15 +65,18 @@ Ahora pídele a Claude que modifique uno de los archivos:
 
 > `agrega una sección sobre la estrategia digital de Nike al análisis competitivo`
 
-Claude:
-1. Pensará en qué escribir
-2. Te mostrará los cambios propuestos
-3. **Te pedirá permiso** antes de hacer el cambio
-4. Editará el archivo
+Claude pensará en qué escribir, luego te mostrará los cambios propuestos y te pedirá permiso:
 
-Verás los cambios aparecer en VS Code inmediatamente — el archivo se actualiza en tiempo real.
+![Claude pidiendo permiso para editar un archivo](/claude-code-permission.png)
 
-> **Claude siempre pide permiso antes de cambiar cosas.** Tú mantienes el control. Nada sucede sin tu aprobación.
+Verás tres opciones:
+1. **Yes** — aprobar solo este cambio
+2. **Yes, allow all edits during this session (shift+tab)** — aprobar este cambio y dejar que Claude haga ediciones similares sin preguntar de nuevo. **Esta es la opción recomendada** — mantiene el flujo sin interrupciones.
+3. **No** — rechazar el cambio
+
+Elige la opción 2, y verás el archivo actualizarse en VS Code inmediatamente.
+
+> **Claude siempre pide permiso antes de cambiar cosas.** Tú mantienes el control. Si quieres detener a Claude en cualquier momento, presiona `Esc`.
 
 ## Paso 5: Prueba más tareas
 

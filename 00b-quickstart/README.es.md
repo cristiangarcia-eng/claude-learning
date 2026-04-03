@@ -4,12 +4,12 @@
 
 Antes de comenzar, asegúrate de tener:
 
-- **VS Code abierto** con una carpeta de proyecto (como la carpeta `nike-analysis` de las lecciones anteriores)
+- **VS Code abierto** con la carpeta `nike-analysis` (la que descargaste en la [lección de VS Code](../00f-vscode/README.es.md))
 - Una [suscripción a Claude](https://claude.com/pricing) (Pro, Max o Teams)
 
 ## Paso 1: Instalar Claude Code
 
-Abre la terminal dentro de VS Code (presiona `` Ctrl+` ``) y pega este comando:
+Abre la terminal dentro de VS Code (haz clic en el icono de terminal o presiona `` Ctrl+` ``) y pega este comando:
 
 **Mac / Linux:**
 ```bash
@@ -23,9 +23,15 @@ irm https://claude.ai/install.ps1 | iex
 
 Eso es todo. Se instala automáticamente y se mantiene actualizado.
 
-## Paso 2: Iniciar Claude Code
+## Paso 2: Navega a tu proyecto
 
-En la misma terminal de VS Code, escribe:
+En la misma terminal de VS Code, navega al proyecto de Nike en tu Escritorio:
+
+```bash
+cd ~/Desktop/nike-analysis
+```
+
+Ahora inicia Claude Code:
 
 ```bash
 claude
@@ -37,71 +43,71 @@ Una vez que inicies sesión, verás una pantalla de bienvenida con un cursor esp
 
 ## Paso 3: Haz tu primera pregunta
 
-Solo escribe en español normal. Prueba una de estas:
+¿Recuerdas los archivos de Nike que exploraste en VS Code? Ahora preguntémosle a Claude sobre ellos. Solo escribe en español normal:
 
 ```
-¿qué hace este proyecto?
-```
-
-```
-¿qué archivos hay en esta carpeta?
+resume el análisis competitivo
 ```
 
 ```
-explica qué tecnologías usa este proyecto
+¿cuáles son las principales fortalezas y amenazas de Nike?
 ```
 
-Claude leerá tus archivos y te dará un resumen. No se necesita configuración — simplemente funciona.
+```
+analiza los datos de ventas y dime qué región creció más
+```
+
+Claude leerá los archivos y te dará una respuesta detallada. No se necesita configuración — simplemente funciona.
 
 > **Le hablas a Claude como a un colega.** Sin sintaxis especial, sin lenguaje de programación. Solo describe lo que quieres.
 
 ## Paso 4: Haz tu primer cambio
 
-Pídele a Claude que haga algo:
+Ahora pídele a Claude que modifique uno de los archivos:
 
 ```
-crea un archivo llamado resumen.md con un resumen de este proyecto
+agrega una sección sobre la estrategia digital de Nike al análisis competitivo
 ```
 
 Claude:
 1. Pensará en qué escribir
 2. Te mostrará los cambios propuestos
 3. **Te pedirá permiso** antes de hacer el cambio
-4. Creará el archivo
+4. Editará el archivo
 
-Verás el nuevo archivo aparecer en la barra lateral de VS Code inmediatamente.
+Verás los cambios aparecer en VS Code inmediatamente — el archivo se actualiza en tiempo real.
 
 > **Claude siempre pide permiso antes de cambiar cosas.** Tú mantienes el control. Nada sucede sin tu aprobación.
 
-## Paso 5: Prueba tareas comunes
+## Paso 5: Prueba más tareas
 
-Estas son cosas que personas no técnicas comúnmente le piden a Claude:
+Aquí hay más cosas que puedes pedirle a Claude sobre el proyecto de Nike:
 
-### Entender un proyecto
+### Analizar datos
 ```
-explica este proyecto como si fuera un product manager
-```
-
-```
-¿cuáles son los archivos principales y qué hace cada uno?
-```
-
-### Encontrar información
-```
-¿cuáles son las mayores amenazas de Nike según el análisis?
+lee el CSV de ventas y crea una tabla resumen por región con ingresos totales y crecimiento promedio
 ```
 
 ```
-resume los datos de ventas por región
+¿qué trimestre tuvo el mejor rendimiento general?
 ```
 
-### Hacer cambios
+### Extraer insights
 ```
-agrega una sección sobre la estrategia digital de Nike al análisis competitivo
+basándote en las notas de reunión y el análisis competitivo, ¿qué debería priorizar Nike el próximo trimestre?
 ```
 
 ```
-crea un resumen de los ingresos trimestrales listo para gráficos
+escribe 3 puntos clave que pueda compartir con mi equipo sobre los mayores riesgos de Nike
+```
+
+### Crear contenido nuevo
+```
+crea un resumen ejecutivo de una página combinando el análisis competitivo y los datos de ventas
+```
+
+```
+redacta un email para el equipo resumiendo los hallazgos clave del análisis de Nike
 ```
 
 ## Comandos esenciales para recordar
@@ -110,7 +116,6 @@ crea un resumen de los ingresos trimestrales listo para gráficos
 |-------------|-------------|
 | `claude` | Iniciar una nueva sesión |
 | `claude -c` | Continuar tu última conversación |
-| `claude -r` | Reanudar una conversación anterior |
 | `/help` | Ver todos los comandos disponibles |
 | `/clear` | Empezar de cero (limpiar conversación) |
 | `Esc` | Detener a Claude a mitad de una acción |

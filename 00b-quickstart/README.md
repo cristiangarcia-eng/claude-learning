@@ -4,12 +4,12 @@
 
 Before starting, make sure you have:
 
-- **VS Code open** with a project folder (like the `nike-analysis` folder from the previous lessons)
+- **VS Code open** with the `nike-analysis` folder (the one you downloaded in the [VS Code lesson](../00f-vscode/))
 - A [Claude subscription](https://claude.com/pricing) (Pro, Max, or Teams)
 
 ## Step 1: Install Claude Code
 
-Open the terminal inside VS Code (press `` Ctrl+` ``) and paste this command:
+Open the terminal inside VS Code (click the terminal icon or press `` Ctrl+` ``) and paste this command:
 
 **Mac / Linux:**
 ```bash
@@ -23,9 +23,15 @@ irm https://claude.ai/install.ps1 | iex
 
 That's it. It installs automatically and keeps itself up to date.
 
-## Step 2: Start Claude Code
+## Step 2: Navigate to your project
 
-In the same VS Code terminal, type:
+In the same VS Code terminal, navigate to the Nike project on your Desktop:
+
+```bash
+cd ~/Desktop/nike-analysis
+```
+
+Now start Claude Code:
 
 ```bash
 claude
@@ -37,71 +43,71 @@ Once logged in, you'll see a welcome screen with a cursor waiting for your input
 
 ## Step 3: Ask your first question
 
-Just type in plain English. Try one of these:
+Remember the Nike files you explored in VS Code? Now let's ask Claude about them. Just type in plain English:
 
 ```
-what does this project do?
-```
-
-```
-what files are in this folder?
+summarize the competitive analysis
 ```
 
 ```
-explain what technologies this project uses
+what are Nike's main strengths and threats?
 ```
 
-Claude will read your files and give you a summary. No setup needed — it just works.
+```
+analyze the sales data and tell me which region grew the most
+```
+
+Claude will read the files and give you a detailed answer. No setup needed — it just works.
 
 > **You talk to Claude like a colleague.** No special syntax, no programming language. Just describe what you want.
 
 ## Step 4: Make your first change
 
-Ask Claude to do something:
+Now ask Claude to modify one of the files:
 
 ```
-create a file called notes.md with a summary of this project
+add a section about Nike's digital strategy to the competitive analysis
 ```
 
 Claude will:
 1. Think about what to write
 2. Show you the proposed changes
 3. **Ask for your permission** before making the change
-4. Create the file
+4. Edit the file
 
-You'll see the new file appear in VS Code's sidebar immediately.
+You'll see the changes appear in VS Code immediately — the file updates in real time.
 
 > **Claude always asks before changing things.** You stay in control. Nothing happens without your approval.
 
-## Step 5: Try common tasks
+## Step 5: Try more tasks
 
-Here are things non-developers commonly ask Claude to do:
+Here are more things you can ask Claude about the Nike project:
 
-### Understand a project
+### Analyze data
 ```
-explain this project like I'm a product manager
-```
-
-```
-what are the main files and what does each one do?
-```
-
-### Find information
-```
-what are Nike's biggest threats according to the analysis?
+read the sales CSV and create a summary table by region with total revenue and average growth
 ```
 
 ```
-summarize the sales data by region
+which quarter had the best performance overall?
 ```
 
-### Make changes
+### Extract insights
 ```
-add a section about Nike's digital strategy to the competitive analysis
+based on the meeting notes and competitive analysis, what should Nike prioritize next quarter?
 ```
 
 ```
-create a chart-ready summary of the quarterly revenue data
+write 3 bullet points I can share with my team about Nike's biggest risks
+```
+
+### Create new content
+```
+create a one-page executive summary combining the competitive analysis and sales data
+```
+
+```
+draft an email to the team summarizing the key findings from the Nike analysis
 ```
 
 ## Essential commands to remember
@@ -110,7 +116,6 @@ create a chart-ready summary of the quarterly revenue data
 |-------------|-------------|
 | `claude` | Start a new session |
 | `claude -c` | Continue your last conversation |
-| `claude -r` | Resume a previous conversation |
 | `/help` | See all available commands |
 | `/clear` | Start fresh (clear conversation) |
 | `Esc` | Stop Claude mid-action |

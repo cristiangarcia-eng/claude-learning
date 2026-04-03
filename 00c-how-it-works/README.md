@@ -37,16 +37,16 @@ graph TD
 ## What Claude can do
 
 ### Read files
-Claude can open and read any file in your project. It does this automatically when it needs context.
+Claude can open and read any file in your project — reports, spreadsheets, meeting notes, proposals. It does this automatically when it needs context.
 
 ### Edit files
-Claude can modify files — adding, changing, or removing content. It always shows you the changes and asks for permission.
+Claude can modify files — updating a competitive analysis, adding sections to a report, or fixing data in a CSV. It always shows you the changes and asks for permission.
 
 ### Run commands
-Claude can execute terminal commands — like running tests, installing packages, or checking Git status. Again, it asks first.
+Claude can execute terminal commands on your computer. It asks first before running anything.
 
-### Search your codebase
-Claude can search through all your files to find specific text, patterns, or functionality.
+### Search your files
+Claude can search through all your files to find specific information — like every mention of a client name, a pricing figure, or a deadline.
 
 ## The context window
 

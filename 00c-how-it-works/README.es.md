@@ -37,16 +37,16 @@ graph TD
 ## Qué puede hacer Claude
 
 ### Leer archivos
-Claude puede abrir y leer cualquier archivo en tu proyecto. Lo hace automaticamente cuando necesita contexto.
+Claude puede abrir y leer cualquier archivo en tu proyecto — informes, hojas de cálculo, notas de reunión, propuestas. Lo hace automáticamente cuando necesita contexto.
 
 ### Editar archivos
-Claude puede modificar archivos — agregando, cambiando o eliminando contenido. Siempre te muestra los cambios y pide permiso.
+Claude puede modificar archivos — actualizar un análisis competitivo, agregar secciones a un informe, o corregir datos en un CSV. Siempre te muestra los cambios y pide permiso.
 
 ### Ejecutar comandos
-Claude puede ejecutar comandos de terminal — como correr pruebas, instalar paquetes o verificar el estado de Git. De nuevo, pregunta primero.
+Claude puede ejecutar comandos de terminal en tu computadora. Pregunta primero antes de ejecutar cualquier cosa.
 
-### Buscar en tu codebase
-Claude puede buscar en todos tus archivos para encontrar texto específico, patrones o funcionalidades.
+### Buscar en tus archivos
+Claude puede buscar en todos tus archivos para encontrar información específica — como cada mención de un nombre de cliente, una cifra de precios, o una fecha límite.
 
 ## La ventana de contexto
 

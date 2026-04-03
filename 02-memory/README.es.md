@@ -1,8 +1,3 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="../resources/logos/claude-howto-logo-dark.svg">
-  <img alt="Claude How To" src="../resources/logos/claude-howto-logo.svg">
-</picture>
-
 # Guía de Memoria
 
 La memoria permite a Claude retener contexto entre sesiones y conversaciones. Existe en dos formas: sintesis automática en claude.ai, y archivos CLAUDE.md en Claude Code.

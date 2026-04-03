@@ -144,4 +144,4 @@ Just type `pwd` to see your current location. You can always go home with `cd ~`
 
 Seriously — `pwd`, `ls`, `cd`, and `mkdir` are the only commands you need to get started with Claude Code. Once Claude is running, you talk to it in plain English, not terminal commands.
 
-**Next step**: [Install Claude Code and start your first session →](../00b-quickstart/)
+**Next step**: [Set up VS Code — the best way to use Claude Code →](../00f-vscode/)

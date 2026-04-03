@@ -100,6 +100,8 @@ Your organization may have its own plugin marketplace with company-specific tool
 - [Official Plugins Documentation](https://code.claude.com/docs/en/plugins)
 - [Discover Plugins](https://code.claude.com/docs/en/discover-plugins)
 
+You've completed the full course! You now know everything you need to use Claude Code like a pro.
+
 ---
 
 *Part of the [Claude How To](../) guide series*

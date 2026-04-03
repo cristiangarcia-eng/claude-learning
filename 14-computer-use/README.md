@@ -68,3 +68,5 @@ screenshots of every page. Note any broken layouts.
 - Works best with web apps and standard desktop applications
 
 > **Tip**: Computer Use is especially powerful for repetitive tasks across apps that don't have an API — like filling forms, updating CMS content, or navigating internal tools.
+
+**Next step**: [Connect Claude directly to your browser with Chrome Integration →](../15-chrome/)

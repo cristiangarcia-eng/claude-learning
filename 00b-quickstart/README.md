@@ -157,8 +157,4 @@ how many users signed up last month based on the logs?
 
 ## What's next?
 
-Now that you've had your first session, learn:
-
-- [How Claude Code actually works](../00c-how-it-works/) — understand what happens behind the scenes
-- [Best practices](../00d-best-practices/) — get better results from your conversations
-- [Practical workflows](../00e-workflows/) — real tasks for PMs, designers, and sales
+**Next step**: [Understand how Claude Code actually works behind the scenes →](../00c-how-it-works/)

@@ -1167,3 +1167,5 @@ For the most up-to-date information, refer to the official Claude Code documenta
 ### Related Claude Features
 - [Claude Web Memory](https://claude.ai) - Automatic synthesis
 - [Official Memory Docs](https://code.claude.com/docs/en/memory) - Anthropic documentation
+
+**Next step**: [Learn to experiment fearlessly with checkpoints →](../08-checkpoints/)

@@ -113,6 +113,8 @@ Switch during a session with `Option+P` (Mac) or `Alt+P` (Windows/Linux).
 - [Official CLI Reference](https://code.claude.com/docs/en/cli-reference)
 - [Advanced Features](../09-advanced-features/)
 
+**Next step**: [Give Claude reusable skills and automatic expertise →](../03-skills/)
+
 ---
 
 *Part of the [Claude How To](../) guide series*

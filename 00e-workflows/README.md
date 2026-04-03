@@ -226,3 +226,5 @@ After Claude makes changes, ask it to summarize what it did:
 Summarize all the changes you just made in a bullet list
 I can share with the team on Slack.
 ```
+
+**Next step**: [Discover slash commands — 55+ shortcuts that save you time →](../01-slash-commands/)

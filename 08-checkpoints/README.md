@@ -315,3 +315,5 @@ Key benefits:
 - Integrate safely with version control systems
 
 Remember: checkpoints are not a replacement for git. Use checkpoints for rapid experimentation and git for permanent code changes.
+
+**Next step**: [Master the CLI — print mode, piping, and scripting →](../10-cli/)

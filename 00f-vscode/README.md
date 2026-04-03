@@ -205,10 +205,6 @@ Beyond Claude Code, these extensions are useful for non-developers:
 | Run any action | `Cmd+Shift+P` (Command Palette) |
 | Open Claude Code | `Cmd+Shift+P` > "Claude Code: Open" |
 
-## Next steps
+## Next step
 
-Now that you have VS Code set up:
-
-- [Install Claude Code](../00b-quickstart/) and start your first session
-- Try opening a project and asking Claude to explain it
-- Use `Cmd+Shift+F` to search for something, then ask Claude about what you found
+**Next step**: [Set up voice input for hands-free coding →](../00g-voice-input/)

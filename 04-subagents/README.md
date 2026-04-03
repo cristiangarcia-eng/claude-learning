@@ -192,6 +192,8 @@ There are three ways to create a subagent:
 
 - [Official Subagents Documentation](https://code.claude.com/docs/en/sub-agents)
 
+**Next step**: [Control how Claude thinks and works with Planning & Auto Mode →](../11-planning-mode/)
+
 ---
 
 *Part of the [Claude How To](../) guide series*

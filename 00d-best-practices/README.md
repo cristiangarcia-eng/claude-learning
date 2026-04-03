@@ -107,3 +107,5 @@ Claude will ask smart questions about things you might not have considered. Once
 5. **Let Claude verify** — tell it how to check its own work
 6. **Course-correct fast** — Esc and redirect if it's going wrong
 7. **Interview technique** — for big tasks, let Claude ask questions first
+
+**Next step**: [See real workflows for PMs, designers, and sales teams →](../00e-workflows/)

@@ -144,6 +144,8 @@ For personal tools, the default is fine. For team-wide tools, ask your team lead
 - [Official MCP Documentation](https://code.claude.com/docs/en/mcp)
 - [Available MCP Servers](https://github.com/modelcontextprotocol/servers)
 
+**Next step**: [Delegate complex tasks to specialized subagents →](../04-subagents/)
+
 ---
 
 *Part of the [Claude How To](../) guide series*

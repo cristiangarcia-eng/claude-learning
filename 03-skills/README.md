@@ -217,6 +217,8 @@ Browse the most popular skills, sorted by likes, and install the ones that fit y
 
 - [Official Skills Documentation](https://code.claude.com/docs/en/skills)
 
+**Next step**: [Connect Claude to live data with MCP →](../05-mcp/)
+
 ---
 
 *Part of the [Claude How To](../) guide series*

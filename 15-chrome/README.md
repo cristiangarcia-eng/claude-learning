@@ -74,3 +74,5 @@ Since Claude uses your Chrome (where you're already logged in), it can access:
 - Claude never saves your passwords or credentials
 
 > **Tip**: Chrome Integration works great with Computer Use — Claude can see the browser and interact with it naturally, just like you would.
+
+**Next step**: [Supercharge Claude with pre-built plugin bundles →](../07-plugins/)

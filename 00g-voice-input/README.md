@@ -70,3 +70,5 @@ The difference is that `/voice` only works inside Claude Code, while Wispr Flow 
 - **Correct as you go** — if it transcribes something wrong, just fix it before pressing Enter
 
 > **This changes everything.** Once you get used to voice input, going back to typing feels painfully slow. Most people who try it never go back.
+
+**Next step**: [Install Claude Code and have your first conversation →](../00b-quickstart/)

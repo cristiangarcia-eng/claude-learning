@@ -50,9 +50,7 @@ export default async function LessonPage({
 
   const levelColors = {
     starter: "bg-brand-green/10 text-brand-green border-brand-green/20",
-    beginner: "bg-green-500/10 text-green-500 border-green-500/20",
-    intermediate: "bg-blue-500/10 text-blue-500 border-blue-500/20",
-    advanced: "bg-red-500/10 text-red-500 border-red-500/20",
+    pro: "bg-blue-500/10 text-blue-500 border-blue-500/20",
   };
 
   return (

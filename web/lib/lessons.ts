@@ -7,7 +7,7 @@ export interface LessonMeta {
   titleEs?: string;
   description: string;
   descriptionEs?: string;
-  level: "starter" | "beginner" | "intermediate" | "advanced";
+  level: "starter" | "pro";
   duration: string;
   complexity: number; // 1-5 stars
   order: number; // pedagogical order
@@ -111,7 +111,7 @@ export const LESSONS: LessonMeta[] = [
     complexity: 1,
     order: 5,
   },
-  // === BEGINNER: Core Claude Code features ===
+  // === PRO: From memory onwards ===
   {
     folder: "02-memory",
     slug: "memory",
@@ -119,7 +119,7 @@ export const LESSONS: LessonMeta[] = [
     titleEs: "Memoria",
     description: "Persistent context, project standards, and preferences",
     descriptionEs: "Contexto persistente, estandares de proyecto y preferencias",
-    level: "beginner",
+    level: "pro",
     duration: "45 min",
     complexity: 2,
     order: 8,
@@ -131,7 +131,7 @@ export const LESSONS: LessonMeta[] = [
     titleEs: "Puntos de Control",
     description: "Safe exploration with session checkpoints and recovery",
     descriptionEs: "Exploracion segura con puntos de control de sesion y recuperacion",
-    level: "beginner",
+    level: "pro",
     duration: "45 min",
     complexity: 2,
     order: 8,
@@ -143,13 +143,11 @@ export const LESSONS: LessonMeta[] = [
     titleEs: "Conceptos Basicos de CLI",
     description: "Core CLI usage, interactive and print mode",
     descriptionEs: "Uso basico de CLI, modo interactivo y modo impresion",
-    level: "beginner",
+    level: "pro",
     duration: "30 min",
     complexity: 2,
     order: 9,
   },
-
-  // === INTERMEDIATE: Building workflows ===
   {
     folder: "03-skills",
     slug: "skills",
@@ -157,7 +155,7 @@ export const LESSONS: LessonMeta[] = [
     titleEs: "Habilidades",
     description: "Reusable agent capabilities and automatic expertise",
     descriptionEs: "Capacidades de agente reutilizables y experiencia automatica",
-    level: "intermediate",
+    level: "pro",
     duration: "1 hour",
     complexity: 3,
     order: 10,
@@ -169,7 +167,7 @@ export const LESSONS: LessonMeta[] = [
     titleEs: "MCP",
     description: "Model Context Protocol for live data access and integration",
     descriptionEs: "Protocolo de Contexto de Modelo para acceso a datos en vivo e integracion",
-    level: "intermediate",
+    level: "pro",
     duration: "1 hour",
     complexity: 3,
     order: 12,
@@ -181,13 +179,11 @@ export const LESSONS: LessonMeta[] = [
     titleEs: "Subagentes",
     description: "Delegate complex tasks to specialized agents",
     descriptionEs: "Delega tareas complejas a agentes especializados",
-    level: "intermediate",
+    level: "pro",
     duration: "1.5 hours",
     complexity: 3,
     order: 13,
   },
-
-  // === ADVANCED: Power user ===
   {
     folder: "11-planning-mode",
     slug: "planning-mode",
@@ -195,7 +191,7 @@ export const LESSONS: LessonMeta[] = [
     titleEs: "Planificacion y Modo Auto",
     description: "Plan before executing, control autonomy, and extend thinking",
     descriptionEs: "Planifica antes de ejecutar, controla la autonomia y extiende el razonamiento",
-    level: "advanced",
+    level: "pro",
     duration: "15 min",
     complexity: 3,
     order: 14,
@@ -207,7 +203,7 @@ export const LESSONS: LessonMeta[] = [
     titleEs: "Voz y Control Remoto",
     description: "Speak instead of type, control sessions from your phone",
     descriptionEs: "Habla en vez de escribir, controla sesiones desde tu telefono",
-    level: "advanced",
+    level: "pro",
     duration: "10 min",
     complexity: 2,
     order: 15,
@@ -219,7 +215,7 @@ export const LESSONS: LessonMeta[] = [
     titleEs: "App de Escritorio y Web",
     description: "Visual diffs, scheduled tasks, and browser sessions",
     descriptionEs: "Diffs visuales, tareas programadas y sesiones en el navegador",
-    level: "advanced",
+    level: "pro",
     duration: "10 min",
     complexity: 2,
     order: 16,
@@ -231,7 +227,7 @@ export const LESSONS: LessonMeta[] = [
     titleEs: "Uso del Computador",
     description: "Let Claude see and control your screen to automate visual tasks",
     descriptionEs: "Deja que Claude vea y controle tu pantalla para automatizar tareas visuales",
-    level: "advanced",
+    level: "pro",
     duration: "10 min",
     complexity: 3,
     order: 17,
@@ -243,7 +239,7 @@ export const LESSONS: LessonMeta[] = [
     titleEs: "Integracion con Chrome",
     description: "Connect Claude to your browser to read pages and interact with web apps",
     descriptionEs: "Conecta Claude a tu navegador para leer paginas e interactuar con apps web",
-    level: "advanced",
+    level: "pro",
     duration: "10 min",
     complexity: 3,
     order: 18,
@@ -255,7 +251,7 @@ export const LESSONS: LessonMeta[] = [
     titleEs: "Plugins",
     description: "Pre-configured bundles for instant productivity",
     descriptionEs: "Paquetes preconfigurados para productividad instantanea",
-    level: "advanced",
+    level: "pro",
     duration: "10 min",
     complexity: 3,
     order: 15,

@@ -30,16 +30,12 @@ const AUDIENCE_KEYS = [
 
 const LEVEL_LABELS = {
   starter: "startHere",
-  beginner: "beginner",
-  intermediate: "intermediate",
-  advanced: "advanced",
+  pro: "pro",
 } as const;
 
 const LEVEL_COLORS = {
   starter: "text-brand-green",
-  beginner: "text-green-500",
-  intermediate: "text-blue-500",
-  advanced: "text-red-500",
+  pro: "text-blue-500",
 } as const;
 
 export default async function LandingPage({
@@ -151,7 +147,7 @@ export default async function LandingPage({
             {t(l, "lessonsFromZeroDesc")}
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {(["starter", "beginner", "intermediate", "advanced"] as const).map(
+            {(["starter", "pro"] as const).map(
               (level) => {
                 const lessons = getLessonsByLevel(level);
                 return (

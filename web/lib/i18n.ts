@@ -39,10 +39,8 @@ const dictionaries = {
     // Navigation
     home: "Home",
     progress: "Progress",
-    startHere: "Start Here",
-    beginner: "Beginner",
-    intermediate: "Intermediate",
-    advanced: "Advanced",
+    startHere: "Getting Started",
+    pro: "Pro",
 
     // Lesson page
     filesInThisLesson: "Files in this lesson",
@@ -151,14 +149,10 @@ const dictionaries = {
     anyoneCuriousDesc: "No coding experience needed. If you can type a message, you can use Claude Code.",
 
     // Level descriptions (dashboard)
-    starterDesc: "No experience needed -- perfect for PMs, designers, and non-devs",
-    beginnerDesc: "Core Claude Code features and customization",
-    intermediateDesc: "Building workflows and automation",
-    advancedDesc: "Power user tools and team features",
+    starterDesc: "No experience needed — perfect for PMs, designers, and non-devs",
+    proDesc: "Memory, checkpoints, skills, MCP, and advanced features",
     starterTime: "~1.5 hours",
-    beginnerTime: "~2.5 hours",
-    intermediateTime: "~5 hours",
-    advancedTime: "~5 hours",
+    proTime: "~5 hours",
 
     // Instructor section
     yearsInProduct: "Years in Product",
@@ -170,10 +164,8 @@ const dictionaries = {
     // Navigation
     home: "Inicio",
     progress: "Progreso",
-    startHere: "Empieza aqui",
-    beginner: "Principiante",
-    intermediate: "Intermedio",
-    advanced: "Avanzado",
+    startHere: "Iniciación",
+    pro: "Pro",
 
     // Lesson page
     filesInThisLesson: "Archivos en esta leccion",
@@ -282,14 +274,10 @@ const dictionaries = {
     anyoneCuriousDesc: "No se necesita experiencia en programacion. Si puedes escribir un mensaje, puedes usar Claude Code.",
 
     // Level descriptions (dashboard)
-    starterDesc: "Sin experiencia necesaria -- perfecto para PMs, disenadores y no-devs",
-    beginnerDesc: "Funcionalidades principales de Claude Code y personalizacion",
-    intermediateDesc: "Construyendo flujos de trabajo y automatizacion",
-    advancedDesc: "Herramientas avanzadas y funcionalidades de equipo",
+    starterDesc: "Sin experiencia necesaria — perfecto para PMs, diseñadores y no-devs",
+    proDesc: "Memoria, checkpoints, skills, MCP y funcionalidades avanzadas",
     starterTime: "~1.5 horas",
-    beginnerTime: "~2.5 horas",
-    intermediateTime: "~5 horas",
-    advancedTime: "~5 horas",
+    proTime: "~5 horas",
 
     // Instructor section
     yearsInProduct: "Anos en Producto",

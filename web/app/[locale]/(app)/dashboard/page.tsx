@@ -47,9 +47,7 @@ function LessonCard({ lesson, locale }: { lesson: LessonMeta; locale: Locale }) 
 
 const LEVEL_ICONS = {
   starter: Sparkles,
-  beginner: Zap,
-  intermediate: Brain,
-  advanced: Rocket,
+  pro: Rocket,
 } as const;
 
 const LEVEL_STYLES = {
@@ -58,42 +56,26 @@ const LEVEL_STYLES = {
     borderColor: "border-brand-green/30",
     bgColor: "bg-brand-green/5",
   },
-  beginner: {
-    color: "text-green-500",
-    borderColor: "border-green-500/30",
-    bgColor: "bg-green-500/5",
-  },
-  intermediate: {
+  pro: {
     color: "text-blue-500",
     borderColor: "border-blue-500/30",
     bgColor: "bg-blue-500/5",
-  },
-  advanced: {
-    color: "text-red-500",
-    borderColor: "border-red-500/30",
-    bgColor: "bg-red-500/5",
   },
 } as const;
 
 const LEVEL_LABEL_KEYS = {
   starter: "startHere",
-  beginner: "beginner",
-  intermediate: "intermediate",
-  advanced: "advanced",
+  pro: "pro",
 } as const;
 
 const LEVEL_DESC_KEYS = {
   starter: "starterDesc",
-  beginner: "beginnerDesc",
-  intermediate: "intermediateDesc",
-  advanced: "advancedDesc",
+  pro: "proDesc",
 } as const;
 
 const LEVEL_TIME_KEYS = {
   starter: "starterTime",
-  beginner: "beginnerTime",
-  intermediate: "intermediateTime",
-  advanced: "advancedTime",
+  pro: "proTime",
 } as const;
 
 export default async function HomePage({
@@ -139,7 +121,7 @@ export default async function HomePage({
 
       {/* Learning path by level */}
       <main className="max-w-6xl mx-auto px-6 py-12 space-y-12">
-        {(["starter", "beginner", "intermediate", "advanced"] as const).map((level) => {
+        {(["starter", "pro"] as const).map((level) => {
           const styles = LEVEL_STYLES[level];
           const lessons = getLessonsByLevel(level);
           const Icon = LEVEL_ICONS[level];

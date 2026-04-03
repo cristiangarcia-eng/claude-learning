@@ -1,151 +1,95 @@
-# MCP (Model Context Protocol) -- Connecting to Your Business Tools
+# MCP — Connecting Claude to External Data
 
 ## What is MCP?
 
-MCP (Model Context Protocol) is how Claude Code connects to external tools and services you already use at work. Think of it as giving Claude a set of "adapters" so it can read your Slack messages, check your project boards, look up documents, and more -- all from one place.
+MCP (Model Context Protocol) is how Claude Code connects to the outside world. Without MCP, Claude only knows what's in your project files. With MCP, Claude can read web pages, access your Slack messages, check your Google Docs, and much more.
 
-Without MCP, Claude only knows what you tell it. With MCP, Claude can pull live data from your tools and take actions on your behalf.
-
-## How MCP Works
-
-The concept is simple:
-
-1. You tell Claude Code which tools to connect to (called "MCP servers")
-2. Claude Code connects to those tools
-3. You can now ask Claude questions that involve your real data
+Think of MCP servers as "adapters" — each one gives Claude access to a specific tool or data source.
 
 ```
-You  -->  Claude Code  -->  MCP Server  -->  Your Tool (Slack, Notion, etc.)
-                          (the adapter)
+You  →  Claude Code  →  MCP Server  →  The outside world
+                       (the adapter)
 ```
 
-For example, after connecting Slack, you could say: "Summarize what happened in the #marketing channel today" -- and Claude will pull the actual messages and summarize them.
+## Try it: Install the Fetch MCP
 
-## The MCP Ecosystem
+The best way to understand MCP is to use one. **Fetch** is the simplest MCP server — it lets Claude read any web page. No API key, no account, no setup.
 
-Claude Code can connect to many business tools through MCP:
+### Step 1: Install it
 
-| Tool | What Claude Can Do |
+In your VS Code terminal (outside of Claude Code), run:
+
+```bash
+claude mcp add fetch -s user -- npx -y @anthropic-ai/fetch-mcp
+```
+
+This tells Claude Code: "I want you to be able to read web pages."
+
+### Step 2: Use it with your Nike project
+
+Open Claude Code in your `nike-analysis` folder and try:
+
+> `Go to adidas.com and analyze their running shoe lineup. Compare their positioning with Nike's strengths from our competitive analysis.`
+
+Claude will fetch the Adidas website, read it, and compare it with your local Nike files. This is the power of MCP — combining live external data with your project.
+
+More things you can do with Fetch:
+
+> `Read https://www.nike.com/sustainability and add a sustainability section to our competitive analysis based on what you find`
+
+> `Check what New Balance is doing on newbalance.com and update the threats section`
+
+## The MCP ecosystem
+
+Fetch is just the beginning. There are MCP servers for most business tools:
+
+| Tool | What Claude can do |
 |------|-------------------|
+| **Fetch** | Read any web page |
 | **Slack** | Read channels, send messages, search conversations |
-| **Google Docs** | Read and edit documents, access Google Drive |
-| **Notion** | Browse pages, search your workspace, read databases |
-| **Asana** | View tasks, update status, create new tasks |
-| **Jira** | Check issues, update tickets, view sprint boards |
-| **Linear** | Track issues, manage projects, view team workload |
-| **Google Calendar** | Check your schedule, view upcoming meetings |
+| **Google Docs** | Read and edit documents |
+| **Notion** | Browse pages, search your workspace |
+| **Linear** | Track issues, manage projects |
 | **Gmail** | Search emails, read messages, draft replies |
 
-## Adding an MCP Server
+You add any MCP server the same way — with `claude mcp add`. Each tool may need an API key or authentication.
 
-You add tools to Claude Code using the `claude mcp add` command. Here are practical examples:
+## Managing your connections
 
-### Connecting to Notion
-
-```bash
-claude mcp add --transport http notion https://mcp.notion.com/mcp
-```
-
-After running this, Claude Code will walk you through authentication. Once connected, you can ask things like:
-
-- "Find the Q3 marketing plan in Notion"
-- "What tasks are assigned to me in Notion?"
-- "Summarize the product roadmap page"
-
-### Connecting to Slack
-
-```bash
-claude mcp add --transport http slack https://mcp.slack.com/mcp
-```
-
-Now you can ask:
-
-- "What are the latest messages in #sales?"
-- "Send a message to #team-updates saying the report is ready"
-- "Search Slack for conversations about the product launch"
-
-### Connecting to Linear
-
-```bash
-claude mcp add --transport http linear https://mcp.linear.app/mcp
-```
-
-Then ask:
-
-- "What issues are assigned to me this sprint?"
-- "Create a bug report for the login page issue"
-- "Show me the status of project Alpha"
-
-## Managing Your Connections
-
-Once you have MCP servers set up, you can manage them easily:
-
-| Command | What It Does |
+| Command | What it does |
 |---------|-------------|
-| `claude mcp list` | See all your connected tools |
-| `claude mcp get notion` | Check details of a specific connection |
-| `claude mcp remove notion` | Disconnect a tool |
+| `claude mcp list` | See all connected MCP servers |
+| `claude mcp remove fetch` | Disconnect a server |
 | `/mcp` (inside Claude Code) | Browse and manage connections interactively |
 
-## Checking Your Connections
+## Important: MCPs consume your context window
 
-Inside Claude Code, type `/mcp` to see all your connected tools and their status. This is the quickest way to verify everything is working.
+Every MCP server you have connected takes up space in Claude's context window — even if you're not using it. Claude needs to "know" about each server's capabilities at the start of every conversation.
 
-## Using Multiple Tools Together
+**This means:**
 
-The real power of MCP is combining tools. For example:
+- If you have 10 MCP servers connected but only use 2, the other 8 are wasting context space
+- Less context space = Claude forgets things faster and produces worse results
+- More MCP servers = slower startup for each conversation
 
+### How to manage this
+
+**Only keep connected the MCPs you're actively using.** Remove the rest:
+
+```bash
+claude mcp list          # see what's connected
+claude mcp remove slack  # disconnect what you're not using
 ```
-You: "Check my calendar for tomorrow's meetings, find the related
-      Notion docs for each one, and post a prep summary to #my-prep
-      in Slack."
-```
 
-Claude will:
-1. Read your calendar via Google Calendar MCP
-2. Search Notion for relevant documents
-3. Compose and send a summary to Slack
+You can always reconnect them later when you need them. Think of it like browser tabs — close the ones you're not using.
 
-## Connection Scopes
+> **Rule of thumb:** 2-3 MCP servers connected at a time is ideal. More than 5 and you'll start noticing slower, less focused responses from Claude.
 
-Your MCP connections can be stored at different levels:
+## Tips
 
-| Scope | Who Can Use It | How to Set |
-|-------|---------------|------------|
-| **Personal** (default) | Just you | `claude mcp add ...` |
-| **Shared** | Your whole team | Add to `.mcp.json` in a shared folder |
-
-For personal tools, the default is fine. For team-wide tools, ask your team lead about shared configurations.
-
-## Tips for Getting Started
-
-- **Start with one tool.** Connect the tool you use most (Slack, Notion, or your project tracker) and get comfortable before adding more.
-- **Ask naturally.** You do not need special syntax. Just ask Claude what you need: "What are my open Jira tickets?" works perfectly.
-- **Check the status.** If something is not working, type `/mcp` inside Claude Code to see if the connection is active.
-- **Keep credentials safe.** When a tool asks for an API key or token, store it in an environment variable rather than typing it directly into config files.
-
-## Troubleshooting
-
-| Problem | Solution |
-|---------|----------|
-| "MCP server not found" | Re-run the `claude mcp add` command |
-| "Authentication failed" | Check that your API key or token is still valid |
-| Tool not responding | Type `/mcp` to check connection status |
-| "Connection timeout" | Check your internet connection and try again |
-
-## Practice Exercise
-
-> **[Exercise 11: Connect Systems](../11-exercises/exercise-11-connect-systems/)** — Set up a real MCP server (filesystem, GitHub, or database) and build a cross-system workflow. You will practice MCP configuration, connection scopes, and credential management.
->
-> **Time:** 30 min | **Setup:** Choose from filesystem (no API key), GitHub, or database
-
-## Additional Resources
-
-- [Official MCP Documentation](https://code.claude.com/docs/en/mcp)
-- [Available MCP Servers](https://github.com/modelcontextprotocol/servers)
+- **Start with Fetch** — it's free, requires nothing, and is immediately useful
+- **Add one at a time** — connect a new MCP, test it, make sure it works before adding the next
+- **Disconnect when done** — remove MCPs you're not actively using to save context space
+- **Check with `/mcp`** — type this inside Claude Code to see what's connected and if it's working
 
 **Next step**: [Delegate complex tasks to specialized subagents →](../04-subagents/)
-
----
-
-*Part of the [Claude How To](../) guide series*

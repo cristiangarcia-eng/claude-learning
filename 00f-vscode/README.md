@@ -54,6 +54,16 @@ It's a simple competitive analysis of Nike with a few files inside.
 
 You should see the files appear in the Explorer sidebar on the left. Click any file to open it — that's it!
 
+### What's inside
+
+Take a look at the files in the project. You'll see three different types that are very common when working with Claude:
+
+- **`competitive-analysis.md`** — a Markdown file. This is the most important format you'll use with Claude. Markdown (`.md`) is plain text with simple formatting (headings with `#`, bold with `**`, tables with `|`). Claude reads and writes Markdown constantly.
+- **`notes.txt`** — a simple text file. Meeting notes, to-do lists, raw ideas — any plain text works.
+- **`sales-data.csv`** — a CSV file (comma-separated values). This is how spreadsheet data looks as text. Claude can read, analyze, and transform CSVs for you.
+
+Click each one to see how it looks inside VS Code.
+
 ## Saving files
 
 When you edit a file, you'll notice a **dot** appears on the tab next to the filename. That dot means you have **unsaved changes**.

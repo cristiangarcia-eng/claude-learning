@@ -54,6 +54,16 @@ Es un análisis competitivo sencillo de Nike con algunos archivos dentro.
 
 Deberías ver los archivos aparecer en el Explorador a la izquierda. Haz clic en cualquier archivo para abrirlo — ¡eso es todo!
 
+### Qué hay dentro
+
+Echa un vistazo a los archivos del proyecto. Verás tres tipos diferentes que son muy comunes cuando trabajas con Claude:
+
+- **`competitive-analysis.md`** — un archivo Markdown. Este es el formato más importante que usarás con Claude. Markdown (`.md`) es texto plano con formato simple (títulos con `#`, negrita con `**`, tablas con `|`). Claude lee y escribe Markdown constantemente.
+- **`notes.txt`** — un archivo de texto simple. Notas de reuniones, listas de tareas, ideas sueltas — cualquier texto plano funciona.
+- **`sales-data.csv`** — un archivo CSV (valores separados por comas). Así se ven los datos de una hoja de cálculo en texto. Claude puede leer, analizar y transformar CSVs por ti.
+
+Haz clic en cada uno para ver cómo se ve dentro de VS Code.
+
 ## Guardar archivos
 
 Cuando editas un archivo, notarás que aparece un **punto** en la pestaña junto al nombre del archivo. Ese punto significa que tienes **cambios sin guardar**.

@@ -111,19 +111,6 @@ export const LESSONS: LessonMeta[] = [
     complexity: 1,
     order: 5,
   },
-  {
-    folder: "00e-workflows",
-    slug: "workflows",
-    title: "Practical Workflows",
-    titleEs: "Flujos de Trabajo Practicos",
-    description: "Real tasks for PMs, designers, sales, and non-developers",
-    descriptionEs: "Tareas reales para PMs, disenadores, ventas y no-desarrolladores",
-    level: "starter",
-    duration: "20 min",
-    complexity: 1,
-    order: 6,
-  },
-
   // === BEGINNER: Core Claude Code features ===
   {
     folder: "01-slash-commands",

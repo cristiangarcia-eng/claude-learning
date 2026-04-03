@@ -151,9 +151,9 @@ Estos gaps son **friction points** que ralentizan pero no bloquean.
 ## Plan de Acción Recomendado
 
 ### Prioridad 1 — Resolver antes del primer uso
-- [ ] Crear módulo `00g-git-basics/` con los 5 comandos esenciales
-- [ ] Crear guía rápida de JSON (1 página) en `docs/json-cheatsheet.md`
-- [ ] Añadir sección sobre archivos ocultos en `00-terminal-basics/`
+- [x] Crear módulo `00g-git-basics/` con los 5 comandos esenciales
+- [x] Crear guía de JSON como extra en `06-hooks/EXTRA-JSON-ESSENTIALS.md`
+- [x] Crear guía de archivos ocultos como extra en `02-memory/EXTRA-HIDDEN-FILES.md`
 
 ### Prioridad 2 — Resolver antes de lecciones intermedias
 - [ ] Crear guía de obtención de tokens API para MCP (`docs/api-tokens-guide.md`)

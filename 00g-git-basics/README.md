@@ -236,4 +236,4 @@ These are power tools. Claude handles them for you if needed.
 | `git log --oneline` | Show history | "Show my save history" |
 | `git diff` | Show line-by-line changes | "Show me exactly what changed" |
 
-**Next step**: [Learn about JSON configuration →](../00h-json-essentials/)
+**Next step**: [Start the course with Slash Commands →](../01-slash-commands/)

@@ -323,4 +323,4 @@ Object:     {"key": "val"}  (curly braces)
 ─────────────────────────────────────
 ```
 
-**Next step**: [Understand hidden files and paths →](../00i-hidden-files/)
+**Next step**: [Back to the Hooks lesson →](README.md)

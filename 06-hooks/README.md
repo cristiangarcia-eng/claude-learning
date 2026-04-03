@@ -11,6 +11,8 @@ Hooks are automated scripts that execute in response to specific events during C
 
 Hooks are automated actions (shell commands, HTTP webhooks, LLM prompts, or subagent evaluations) that execute automatically when specific events occur in Claude Code. They receive JSON input and communicate results via exit codes and JSON output.
 
+> **Never edited a JSON file?** Hooks are configured in JSON format. If you're not familiar with JSON syntax, read the [Extra: JSON Essentials](EXTRA-JSON-ESSENTIALS.md) guide first (15 min) — it will save you a lot of frustration with syntax errors.
+
 **Key features:**
 - Event-driven automation
 - JSON-based input/output

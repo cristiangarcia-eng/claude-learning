@@ -11,6 +11,8 @@ Memory enables Claude to retain context across sessions and conversations. It ex
 
 Memory in Claude Code provides persistent context that carries across multiple sessions and conversations. Unlike temporary context windows, memory files allow you to:
 
+> **New to hidden files and paths?** This lesson uses paths like `~/.claude/` and `.claude/` extensively. If terms like "hidden folder" or `~` are unfamiliar, read the [Extra: Hidden Files & Paths](EXTRA-HIDDEN-FILES.md) guide first (15 min).
+
 - Share project standards across your team
 - Store personal development preferences
 - Maintain directory-specific rules and configurations

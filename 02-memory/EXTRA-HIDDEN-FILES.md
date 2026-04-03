@@ -239,4 +239,4 @@ Before moving on, make sure you can answer:
 - [ ] Where are project settings stored? → `.claude/` (inside the project)
 - [ ] If a skill works for you but not your team, what happened? → It's in `~/` instead of `./`
 
-**Next step**: [Back to the main course →](../01-slash-commands/)
+**Next step**: [Back to the Memory lesson →](README.md)

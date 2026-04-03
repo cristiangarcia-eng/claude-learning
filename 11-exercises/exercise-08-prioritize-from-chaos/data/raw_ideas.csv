@@ -1,0 +1,61 @@
+id,idea,submitted_by,department,date,notes
+1,Fix the app,Miguel Fernandez,Sales,2025-03-01,
+2,We need better reporting. Our clients keep asking for custom reports and we can't deliver them. This is becoming a deal-breaker in enterprise sales.,Laura Schmidt,Sales,2025-03-02,Lost 2 deals because of this
+3,Dark mode,Tomas Novak,Engineering,2025-03-02,
+4,Automatizar el proceso de onboarding para nuevos clientes — actualmente tarda 3 semanas y requiere 12 emails manuales,Sofia Martinez,Customer Success,2025-03-03,urgente
+5,Mobile app,Anna Johansson,Product,2025-03-03,
+6,SSO integration. Our enterprise customers (especially banks and insurance companies) require SSO for compliance. We've lost at least 3 deals worth €200K+ in the last quarter because of this.,Liam O'Brien,Sales,2025-03-04,URGENT - blocking revenue
+7,The dashboard loads too slow,Pierre Dubois,Engineering,2025-03-04,
+8,Necesitamos un sistema de notificaciones push para la app web,Carlos Ruiz,Product,2025-03-05,
+9,Hire more customer success people,Helena Kowalski,Customer Success,2025-03-05,team is overwhelmed
+10,Can we integrate with Slack? Everyone keeps asking,Ana Torres,Product,2025-03-06,
+11,The search function is broken. When I search for companies with more than 100 employees in Germany it returns companies from Austria too.,Miguel Fernandez,Sales,2025-03-06,
+12,Mejorar la documentación de la API — los clientes se quejan de que está incompleta y desactualizada,Pierre Dubois,Engineering,2025-03-07,
+13,We should do a podcast,Laura Schmidt,Marketing,2025-03-07,
+14,GDPR export feature — clients need to export their data for compliance. This is legally required and we don't have it yet.,Helena Kowalski,Customer Success,2025-03-08,legal risk
+15,Better onboarding. New users don't understand how to use the product.,Sofia Martinez,Customer Success,2025-03-08,
+16,AI chatbot for customer support to reduce ticket volume,Tomas Novak,Engineering,2025-03-09,
+17,Fix bug where CSV export truncates names longer than 50 characters,Carlos Ruiz,Engineering,2025-03-09,
+18,Necesitamos integración con HubSpot. El 40% de nuestros clientes lo usan.,Miguel Fernandez,Sales,2025-03-10,
+19,Redesign the pricing page. It's confusing and the conversion rate is 2% (industry average is 5-7%).,Anna Johansson,Product,2025-03-10,
+20,Add two-factor authentication,Pierre Dubois,Engineering,2025-03-11,security audit finding
+21,We should sponsor a conference,Laura Schmidt,Marketing,2025-03-11,
+22,Improve email templates — they look outdated compared to competitors,Ana Torres,Marketing,2025-03-12,
+23,Customer health score dashboard. We need to predict churn before it happens. Currently we only find out when clients cancel.,Helena Kowalski,Customer Success,2025-03-12,we lost 8 accounts last quarter without warning
+24,Faster API response times. Current p95 is 2.3 seconds. Should be under 500ms.,Tomas Novak,Engineering,2025-03-13,
+25,Multi-language support for the platform (at minimum: English Spanish French German),Sofia Martinez,Product,2025-03-13,
+26,Fix the login page,Carlos Ruiz,Engineering,2025-03-14,
+27,Crear un programa de referidos para clientes existentes,Laura Schmidt,Marketing,2025-03-14,
+28,Annual billing option. Customers keep asking for it and it would improve our cash flow.,Liam O'Brien,Sales,2025-03-15,
+29,Better search. I typed 'marketing manager Germany' and got irrelevant results.,Miguel Fernandez,Sales,2025-03-15,
+30,Automated invoice generation. Finance spends 2 days per month creating invoices manually.,Anna Johansson,Finance,2025-03-16,
+31,Add bulk actions — selecting one item at a time is painful when managing 200+ records,Ana Torres,Product,2025-03-16,
+32,Necesitamos un sandbox/entorno de pruebas para que los clientes puedan testear antes de comprar,Sofia Martinez,Sales,2025-03-17,
+33,Integration with Zapier,Tomas Novak,Engineering,2025-03-17,
+34,The help center articles are outdated. At least 30% reference features that no longer exist.,Helena Kowalski,Customer Success,2025-03-18,
+35,We need a mobile app. I said this before. Clients use phones.,Miguel Fernandez,Sales,2025-03-18,duplicate but adding context
+36,Improve page load speed on the main dashboard — takes 8 seconds on first load,Pierre Dubois,Engineering,2025-03-19,
+37,Custom fields on contact records. Every client wants different data points.,Liam O'Brien,Sales,2025-03-19,
+38,Hacer que el proceso de cancelación sea más claro — los clientes se quejan de que no pueden encontrar cómo cancelar,Carlos Ruiz,Product,2025-03-20,
+39,Add webhooks so clients can build their own integrations,Tomas Novak,Engineering,2025-03-20,
+40,Blog content — we haven't posted in 3 months,Laura Schmidt,Marketing,2025-03-21,
+41,Role-based access control. Right now everyone sees everything. Enterprise clients need granular permissions.,Helena Kowalski,Customer Success,2025-03-21,blocking 5 enterprise deals
+42,Keyboard shortcuts for power users,Anna Johansson,Product,2025-03-22,
+43,Necesitamos métricas de uso del producto por cliente para el equipo de CS,Sofia Martinez,Customer Success,2025-03-22,
+44,Fix email deliverability — 15% of our transactional emails go to spam,Pierre Dubois,Engineering,2025-03-23,
+45,White-label option for agency clients,Liam O'Brien,Sales,2025-03-23,3 agencies asked this month
+46,Better error messages. Current ones are cryptic: 'Error 500: Something went wrong',Carlos Ruiz,Engineering,2025-03-24,
+47,Add drag-and-drop to the workflow builder,Ana Torres,Product,2025-03-24,
+48,Competitor tracking dashboard — what are Competitor X and Y shipping?,Laura Schmidt,Product,2025-03-25,
+49,Audit log for enterprise clients — they need to track who did what for compliance,Tomas Novak,Engineering,2025-03-25,
+50,We should rebrand. The current brand feels dated.,Anna Johansson,Marketing,2025-03-26,
+51,Integrar con Salesforce — es requisito para los clientes enterprise en US,Miguel Fernandez,Sales,2025-03-26,
+52,In-app onboarding tour for new users. Current activation rate is 35%.,Sofia Martinez,Product,2025-03-27,
+53,Fix: when you click 'Export' with no data selected nothing happens. No error no feedback.,Pierre Dubois,Engineering,2025-03-27,
+54,Dedicated account managers for enterprise tier,Helena Kowalski,Customer Success,2025-03-28,
+55,Improve SEO — we rank page 3 for our main keywords,Laura Schmidt,Marketing,2025-03-28,
+56,Data backup and recovery options for enterprise clients,Tomas Novak,Engineering,2025-03-29,
+57,Simplify the settings page — 47 options is overwhelming,Carlos Ruiz,Product,2025-03-29,
+58,Necesitamos un panel de analytics para ver el ROI de cada campaña,Ana Torres,Marketing,2025-03-30,
+59,Team collaboration features — comments on records shared views real-time editing,Liam O'Brien,Product,2025-03-30,
+60,Make the API documentation interactive (like Stripe's),Pierre Dubois,Engineering,2025-03-31,

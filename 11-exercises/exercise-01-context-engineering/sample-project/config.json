@@ -1,0 +1,16 @@
+{
+  "company": "Meridian Analytics",
+  "currency": "EUR",
+  "fiscal_year_start": "January",
+  "report_recipients": ["cfo@meridian.com", "ops-team@meridian.com"],
+  "data_sources": {
+    "customers": "data/customers.csv",
+    "transactions": "data/transactions.csv"
+  },
+  "output_dir": "reports/",
+  "monthly_report": {
+    "script": "scripts/monthly-report.py",
+    "schedule": "1st of each month",
+    "format": "markdown"
+  }
+}

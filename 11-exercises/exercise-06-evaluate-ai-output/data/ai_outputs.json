@@ -1,0 +1,422 @@
+[
+  {
+    "id": "OUT-01",
+    "task": "Write a LinkedIn outreach message",
+    "input": {
+      "recipient_name": "{{firstName}}",
+      "recipient_role": "Head of Engineering",
+      "recipient_company": "DataFlow",
+      "sender_company": "TalentBridge",
+      "purpose": "Recruiting for Senior Backend Engineer role",
+      "tone": "friendly",
+      "channel": "linkedin"
+    },
+    "constraints": {
+      "max_length": 300,
+      "language": "English",
+      "tone": "friendly",
+      "required_fields": ["{{firstName}}", "recipient_role", "sender_company"],
+      "forbidden": ["salary details", "markdown formatting"]
+    },
+    "output": "Hi {{firstName}},\n\nI came across your profile and was impressed by your work at DataFlow. We're helping a fast-growing company find a Senior Backend Engineer, and your experience leading engineering teams makes you a great fit.\n\nWould you be open to a quick chat this week?\n\nBest,\nSarah"
+  },
+  {
+    "id": "OUT-02",
+    "task": "Write a follow-up email after no reply",
+    "input": {
+      "recipient_name": "{{firstName}}",
+      "original_message_date": "March 10",
+      "purpose": "Follow up on partnership proposal",
+      "sender_company": "NexGen Solutions",
+      "tone": "professional",
+      "channel": "email"
+    },
+    "constraints": {
+      "max_length": 200,
+      "language": "English",
+      "tone": "professional",
+      "required_fields": ["{{firstName}}", "sender_company", "subject line"],
+      "forbidden": ["guilt language", "aggressive urgency"]
+    },
+    "output": "Subject: **Quick follow-up on our proposal**\n\nHi {{firstName}},\n\nI wanted to circle back on the partnership proposal I sent on March 10. I know things get busy — just wanted to make sure it didn't slip through the cracks.\n\nI'd love to find 15 minutes to walk you through the key points. Would next Tuesday or Wednesday work?\n\nBest regards,\nMichael Torres\nNexGen Solutions"
+  },
+  {
+    "id": "OUT-03",
+    "task": "Write a cold outreach email in Spanish",
+    "input": {
+      "recipient_name": "{{firstName}}",
+      "recipient_role": "Director de Marketing",
+      "recipient_company": "Grupo Ibérica",
+      "sender_company": "CloudMetrics",
+      "purpose": "Introduce analytics platform",
+      "tone": "formal",
+      "channel": "email"
+    },
+    "constraints": {
+      "max_length": 250,
+      "language": "Spanish",
+      "tone": "formal",
+      "required_fields": ["{{firstName}}", "recipient_company", "sender_company", "subject line"],
+      "forbidden": ["English words", "informal language"]
+    },
+    "output": "Subject: Optimice su marketing analytics con CloudMetrics\n\nEstimado/a {{firstName}},\n\nMe dirijo a usted desde CloudMetrics para presentarle nuestra plataforma de analytics que está ayudando a empresas como Grupo Ibérica a mejorar su ROI de marketing en un 40%.\n\nNos encantaría mostrarle un quick demo personalizado para su equipo.\n\n¿Tendría disponibilidad esta semana para una breve conversación?\n\nAtentamente,\nCarlos Mendoza\nCloudMetrics"
+  },
+  {
+    "id": "OUT-04",
+    "task": "Write an event invitation",
+    "input": {
+      "recipient_name": "{{firstName}}",
+      "event_name": "AI in Recruiting Summit 2025",
+      "event_date": "April 15, 2025",
+      "event_location": "Berlin",
+      "sender_company": "TalentTech",
+      "tone": "enthusiastic",
+      "channel": "email"
+    },
+    "constraints": {
+      "max_length": 300,
+      "language": "English",
+      "tone": "enthusiastic",
+      "required_fields": ["{{firstName}}", "event_name", "event_date", "event_location", "subject line"],
+      "forbidden": ["generic greetings like 'Dear Sir/Madam'"]
+    },
+    "output": "Subject: You're Invited: AI in Recruiting Summit 2025 in Berlin!\n\nHi {{firstName}},\n\nWe're thrilled to invite you to the AI in Recruiting Summit 2025 — happening April 15 in Berlin!\n\nThis year's lineup features leaders from Google, Anthropic, and LinkedIn sharing how AI is transforming talent acquisition. As someone in the industry, we think you'd love it.\n\nEarly bird tickets are available until March 30.\n\nHope to see you there!\n\nThe TalentTech Team"
+  },
+  {
+    "id": "OUT-05",
+    "task": "Write a customer success check-in email",
+    "input": {
+      "recipient_name": "{{firstName}}",
+      "recipient_company": "BrightPath",
+      "account_age": "6 months",
+      "recent_usage": "Dashboard usage dropped 40% last month",
+      "sender_name": "Jessica Liu",
+      "sender_company": "DataPulse",
+      "tone": "caring",
+      "channel": "email"
+    },
+    "constraints": {
+      "max_length": 250,
+      "language": "English",
+      "tone": "caring, not salesy",
+      "required_fields": ["{{firstName}}", "recipient_company", "subject line"],
+      "forbidden": ["mentioning exact usage numbers", "upselling"]
+    },
+    "output": "Subject: Checking in — how's everything going at BrightPath?\n\nHi {{firstName}},\n\nI noticed your team's dashboard usage has dropped 40% over the past month and wanted to check in. Is everything okay? Sometimes a quick walkthrough of new features can reignite things.\n\nI'd love to hop on a 15-minute call to make sure you're getting the most out of DataPulse. No agenda — just here to help.\n\nWarmly,\nJessica Liu\nCustomer Success, DataPulse"
+  },
+  {
+    "id": "OUT-06",
+    "task": "Write a meeting summary email",
+    "input": {
+      "meeting_topic": "Q2 roadmap planning",
+      "attendees": ["Product team", "Engineering leads", "CEO"],
+      "key_decisions": ["Focus on mobile app", "Delay enterprise features to Q3", "Hire 2 more engineers"],
+      "action_items": ["Sarah: mobile wireframes by March 28", "Tom: engineering capacity plan by March 25", "CEO: approve hiring budget"],
+      "next_meeting": "April 1",
+      "tone": "professional",
+      "channel": "email"
+    },
+    "constraints": {
+      "max_length": 400,
+      "language": "English",
+      "tone": "professional, concise",
+      "required_fields": ["all key decisions", "all action items with owners", "next meeting date", "subject line"],
+      "forbidden": ["opinions", "editorializing"]
+    },
+    "output": "Subject: Meeting Notes — Q2 Roadmap Planning\n\nHi team,\n\nHere's a summary of today's Q2 roadmap planning session.\n\n**Key Decisions:**\n1. Mobile app will be the primary focus for Q2\n2. Enterprise features pushed to Q3\n3. Two additional engineers to be hired\n\n**Action Items:**\n- Sarah: Mobile wireframes by March 28\n- Tom: Engineering capacity plan by March 25\n- Mark (CEO): Approve hiring budget by end of week\n\n**Next Meeting:** April 1\n\nLet me know if I missed anything.\n\nBest,\nAlex"
+  },
+  {
+    "id": "OUT-07",
+    "task": "Write a product update announcement",
+    "input": {
+      "product_name": "FlowBoard",
+      "update_name": "Smart Filters 2.0",
+      "features": ["Saved filter presets", "Cross-board filtering", "Natural language search"],
+      "release_date": "March 20, 2025",
+      "tone": "excited but professional",
+      "channel": "email"
+    },
+    "constraints": {
+      "max_length": 350,
+      "language": "English",
+      "tone": "excited but professional",
+      "required_fields": ["product_name", "all 3 features", "release_date", "subject line"],
+      "forbidden": ["markdown formatting in body", "technical jargon"]
+    },
+    "output": "Subject: 🚀 Smart Filters 2.0 is Here!\n\nHi there,\n\nWe're excited to announce **Smart Filters 2.0** for FlowBoard, launching March 20!\n\nHere's what's new:\n\n• **Saved Filter Presets** — Save your favorite filter combinations and apply them with one click\n• **Cross-Board Filtering** — Search across all your boards simultaneously\n• **Natural Language Search** — Just type what you're looking for in plain English\n\nThese updates are available to all users starting March 20. No action needed — just open FlowBoard and try it out.\n\nHappy filtering!\nThe FlowBoard Team"
+  },
+  {
+    "id": "OUT-08",
+    "task": "Write a LinkedIn outreach message in German",
+    "input": {
+      "recipient_name": "{{firstName}}",
+      "recipient_role": "VP of Engineering",
+      "recipient_company": "AutoTech GmbH",
+      "sender_company": "ScaleHire",
+      "purpose": "Recruiting for CTO role at a Series B startup",
+      "tone": "professional",
+      "channel": "linkedin"
+    },
+    "constraints": {
+      "max_length": 300,
+      "language": "German",
+      "tone": "professional",
+      "required_fields": ["{{firstName}}", "recipient_company"],
+      "forbidden": ["English words", "informal 'du' form"]
+    },
+    "output": "Hallo {{firstName}},\n\nIch habe Ihr Profil bei AutoTech GmbH gesehen und bin beeindruckt von Ihrer experience im Engineering-Bereich. Wir suchen derzeit einen CTO für ein Series B Startup mit starkem Wachstum.\n\nMit Ihrer Erfahrung in der Führung von Engineering-Teams wären Sie ein idealer Kandidat.\n\nHätten Sie Zeit für ein kurzes Gespräch diese Woche?\n\nMit freundlichen Grüßen,\nAnna Schmidt\nScaleHire"
+  },
+  {
+    "id": "OUT-09",
+    "task": "Write a rejection email to a job applicant",
+    "input": {
+      "recipient_name": "{{firstName}}",
+      "role_applied": "Senior Product Designer",
+      "company": "DesignLab",
+      "reason": "Other candidate had more relevant enterprise experience",
+      "tone": "empathetic",
+      "channel": "email"
+    },
+    "constraints": {
+      "max_length": 200,
+      "language": "English",
+      "tone": "empathetic, respectful",
+      "required_fields": ["{{firstName}}", "role_applied", "company", "subject line"],
+      "forbidden": ["specific rejection reason", "false promises about future roles"]
+    },
+    "output": "Subject: Update on Your Application — Senior Product Designer at DesignLab\n\nDear {{firstName}},\n\nThank you for taking the time to interview for the Senior Product Designer role at DesignLab. We were impressed by your portfolio and thoughtful approach to design.\n\nAfter careful consideration, we've decided to move forward with another candidate who had more extensive enterprise experience. We truly appreciate your interest and wish you the very best in your search.\n\nWarm regards,\nHiring Team\nDesignLab"
+  },
+  {
+    "id": "OUT-10",
+    "task": "Write a short internal Slack message",
+    "input": {
+      "context": "Announce that the staging environment is down for maintenance",
+      "duration": "2 hours (10am-12pm CET)",
+      "affected_teams": "Engineering, QA",
+      "tone": "casual",
+      "channel": "chat"
+    },
+    "constraints": {
+      "max_length": 100,
+      "language": "English",
+      "tone": "casual, informative",
+      "required_fields": ["duration", "affected teams"],
+      "forbidden": ["formal language", "email-style greetings"]
+    },
+    "output": "Hey team — heads up: staging is going down for maintenance from 10am to 12pm CET today. Engineering and QA, plan accordingly. Should be back up by noon. Ping me if you have questions!"
+  },
+  {
+    "id": "OUT-11",
+    "task": "Write a LinkedIn outreach message",
+    "input": {
+      "recipient_name": "{{firstName}}",
+      "recipient_role": "Data Science Lead",
+      "recipient_company": "FinanceAI",
+      "sender_company": "GrowthTalent",
+      "purpose": "Recruiting for ML Engineering Manager",
+      "tone": "friendly",
+      "channel": "linkedin"
+    },
+    "constraints": {
+      "max_length": 300,
+      "language": "English",
+      "tone": "friendly",
+      "required_fields": ["{{firstName}}"],
+      "forbidden": ["salary details", "markdown formatting"]
+    },
+    "output": "Hi John,\n\nI've been following FinanceAI's work on fraud detection — really impressive stuff. We're working with a well-funded fintech that's building out their ML team and looking for an Engineering Manager who can bridge data science and production systems.\n\nGiven your background, I thought you might be interested. Would you be up for a quick chat?\n\nCheers,\nRachel Green\nGrowthTalent"
+  },
+  {
+    "id": "OUT-12",
+    "task": "Write a webinar invitation email",
+    "input": {
+      "recipient_name": "{{firstName}}",
+      "webinar_topic": "How to Reduce Time-to-Hire by 50%",
+      "date": "March 25, 2025",
+      "time": "3pm CET",
+      "speaker": "Dr. Maria Gonzalez, VP People at Spotify",
+      "sender_company": "RecruitOS",
+      "tone": "professional",
+      "channel": "email"
+    },
+    "constraints": {
+      "max_length": 300,
+      "language": "English",
+      "tone": "professional",
+      "required_fields": ["{{firstName}}", "webinar_topic", "date", "time", "speaker", "subject line"],
+      "forbidden": ["markdown formatting in body"]
+    },
+    "output": "Subject: Join Us: How to Reduce Time-to-Hire by 50% — Live Webinar\n\nHi {{firstName}},\n\nWe'd love to have you at our upcoming webinar:\n\n**How to Reduce Time-to-Hire by 50%**\n📅 March 25, 2025 | 3pm CET\n🎤 Speaker: Dr. Maria Gonzalez, VP People at Spotify\n\nMaria will share the exact playbook Spotify used to cut their hiring cycle in half — including the tools, processes, and metrics that made it possible.\n\nReserve your spot here: [Registration Link]\n\nSee you there!\nThe RecruitOS Team"
+  },
+  {
+    "id": "OUT-13",
+    "task": "Write an email asking for a referral",
+    "input": {
+      "recipient_name": "{{firstName}}",
+      "recipient_company": "Alpine Ventures",
+      "target_role": "VP of Sales",
+      "target_company": "Not specified — looking for introductions",
+      "sender_name": "David Park",
+      "sender_company": "ConnectHR",
+      "tone": "warm",
+      "channel": "email"
+    },
+    "constraints": {
+      "max_length": 250,
+      "language": "English",
+      "tone": "warm, not pushy",
+      "required_fields": ["{{firstName}}", "target_role", "subject line"],
+      "forbidden": ["demanding language", "assumptions about recipient's network"]
+    },
+    "output": "Subject: Quick Ask — Know Any Great VP Sales Candidates?\n\nHi {{firstName}},\n\nHope you're doing well! I'm reaching out because we're helping a fast-growing SaaS company find their next VP of Sales, and I know you have an incredible network in the space.\n\nIf anyone comes to mind who might be a fit — someone with B2B SaaS experience and a track record of scaling teams — I'd love an intro. No pressure at all; even a name to look into would be helpful.\n\nThanks so much, Robert!\n\nWarmly,\nDavid Park\nConnectHR"
+  },
+  {
+    "id": "OUT-14",
+    "task": "Write a customer feedback request",
+    "input": {
+      "recipient_name": "{{firstName}}",
+      "recipient_company": "Velocity Labs",
+      "product_name": "TaskPilot",
+      "usage_duration": "3 months",
+      "sender_name": "Sophie Miller",
+      "tone": "casual",
+      "channel": "email"
+    },
+    "constraints": {
+      "max_length": 200,
+      "language": "English",
+      "tone": "casual, genuine",
+      "required_fields": ["{{firstName}}", "product_name", "subject line"],
+      "forbidden": ["survey links", "NPS score requests", "incentives/bribes"]
+    },
+    "output": "Subject: Quick question about your TaskPilot experience\n\nHey {{firstName}}!\n\nYou've been using TaskPilot for about 3 months now and I'm curious — what's your honest take? What's working well? What's frustrating?\n\nNo survey, no forms. Just hit reply and tell me in a few sentences. Your feedback directly shapes what we build next.\n\nThanks!\nSophie Miller\nTaskPilot Team"
+  },
+  {
+    "id": "OUT-15",
+    "task": "Write a conference talk proposal rejection",
+    "input": {
+      "recipient_name": "{{firstName}}",
+      "conference_name": "EuroTech 2025",
+      "talk_title": "Scaling Microservices in Regulated Industries",
+      "reason": "Too similar to another accepted talk",
+      "tone": "encouraging",
+      "channel": "email"
+    },
+    "constraints": {
+      "max_length": 250,
+      "language": "English",
+      "tone": "encouraging, constructive",
+      "required_fields": ["{{firstName}}", "conference_name", "talk_title", "subject line"],
+      "forbidden": ["specific rejection reason", "comparison to other speakers"]
+    },
+    "output": "Subject: Your EuroTech 2025 Talk Proposal — Update\n\nHi {{firstName}},\n\nThank you for submitting \"Scaling Microservices in Regulated Industries\" for EuroTech 2025. We received over 300 proposals this year and the selection was incredibly competitive.\n\nUnfortunately, we weren't able to include your talk in this year's program due to its overlap with another accepted session on a very similar topic. Your proposal was strong, and we'd encourage you to submit again next year — perhaps with a more specific case study angle.\n\nWe'd also love to have you attend as a guest. Use code SPEAKER25 for a 30% discount.\n\nBest,\nEuroTech Program Committee"
+  },
+  {
+    "id": "OUT-16",
+    "task": "Write a payment reminder email",
+    "input": {
+      "recipient_name": "{{firstName}}",
+      "recipient_company": "TechBridge Solutions",
+      "invoice_number": "INV-2025-0847",
+      "amount": "€4,500",
+      "due_date": "March 1, 2025",
+      "days_overdue": 15,
+      "sender_company": "CloudServe",
+      "tone": "firm but polite",
+      "channel": "email"
+    },
+    "constraints": {
+      "max_length": 200,
+      "language": "English",
+      "tone": "firm but polite",
+      "required_fields": ["{{firstName}}", "invoice_number", "amount", "due_date", "subject line"],
+      "forbidden": ["threatening language", "legal threats in first reminder"]
+    },
+    "output": "Subject: Reminder: Invoice INV-2025-0847 — Payment Overdue\n\nDear {{firstName}},\n\nI hope this message finds you well. I'm writing to remind you that invoice INV-2025-0847 for €4,500 was due on March 1, 2025, and remains outstanding.\n\nCould you please arrange payment at your earliest convenience or let us know if there are any issues we can help resolve?\n\nPlease find the invoice attached for your reference.\n\nThank you for your prompt attention.\n\nBest regards,\nAccounts Team\nCloudServe"
+  },
+  {
+    "id": "OUT-17",
+    "task": "Write a product launch email for French market",
+    "input": {
+      "recipient_name": "{{firstName}}",
+      "product_name": "SmartDash Pro",
+      "features": ["Real-time KPI tracking", "AI-powered anomaly detection", "One-click board reports"],
+      "launch_date": "April 1, 2025",
+      "sender_company": "MetricFlow",
+      "tone": "professional, excited",
+      "channel": "email"
+    },
+    "constraints": {
+      "max_length": 350,
+      "language": "French",
+      "tone": "professional, excited",
+      "required_fields": ["{{firstName}}", "product_name", "all 3 features", "launch_date", "subject line"],
+      "forbidden": ["English words", "informal 'tu' form"]
+    },
+    "output": "Subject: Découvrez SmartDash Pro — Lancement le 1er Avril 2025\n\nBonjour {{firstName}},\n\nNous sommes ravis de vous annoncer le lancement de SmartDash Pro, notre nouvelle plateforme de business intelligence, disponible dès le 1er avril 2025.\n\nLes nouveautés qui vont transformer votre reporting :\n\n• Suivi de KPIs en temps réel — Visualisez vos metrics clés instantanément\n• Détection d'anomalies par IA — Soyez alerté avant que les problèmes ne s'aggravent\n• Rapports pour le board en un clic — Générez des présentations professionnelles automatiquement\n\nNous serions honorés de vous offrir un accès anticipé. Répondez à cet email pour réserver votre place.\n\nCordialement,\nL'équipe MetricFlow"
+  },
+  {
+    "id": "OUT-18",
+    "task": "Write a partnership proposal email",
+    "input": {
+      "recipient_name": "{{firstName}}",
+      "recipient_company": "EduTech Global",
+      "recipient_role": "Head of Partnerships",
+      "sender_company": "SkillMap",
+      "partnership_idea": "Integrate SkillMap's assessment engine into EduTech's learning platform",
+      "tone": "professional",
+      "channel": "email"
+    },
+    "constraints": {
+      "max_length": 350,
+      "language": "English",
+      "tone": "professional, compelling",
+      "required_fields": ["{{firstName}}", "recipient_company", "sender_company", "partnership idea", "subject line"],
+      "forbidden": ["revenue projections without data", "exclusivity language"]
+    },
+    "output": "Subject: Partnership Idea: SkillMap + EduTech Global\n\nDear {{firstName}},\n\nI'm reaching out from SkillMap to explore a potential partnership between our companies. We've been following EduTech Global's growth in the corporate learning space and believe there's a compelling opportunity to collaborate.\n\nThe idea: integrate SkillMap's skills assessment engine directly into EduTech's learning platform. This would allow your users to take pre- and post-training assessments, giving them — and their employers — measurable proof of skill development.\n\nWe currently serve 200+ enterprise clients and our assessment library covers 500+ technical and soft skills. We project this integration could increase your platform's engagement by 30-40% based on our data from similar partnerships.\n\nWould you be open to a 30-minute call to explore this further?\n\nBest regards,\nLiam Chen\nHead of Business Development\nSkillMap"
+  },
+  {
+    "id": "OUT-19",
+    "task": "Write a short testimonial request via LinkedIn",
+    "input": {
+      "recipient_name": "{{firstName}}",
+      "context": "They've been a happy customer for 1 year",
+      "product_name": "HireWise",
+      "specific_result": "Reduced time-to-hire from 45 to 22 days",
+      "sender_name": "Kate Robinson",
+      "tone": "friendly",
+      "channel": "linkedin"
+    },
+    "constraints": {
+      "max_length": 200,
+      "language": "English",
+      "tone": "friendly, not pushy",
+      "required_fields": ["{{firstName}}", "product_name"],
+      "forbidden": ["writing the testimonial for them", "pressure tactics"]
+    },
+    "output": "Hi {{firstName}}! 👋\n\nIt's been a year since you started using HireWise and I remember you mentioning that your time-to-hire dropped from 45 to 22 days — that's incredible.\n\nWould you be willing to share a quick 2-3 sentence testimonial about your experience? It would mean a lot to our team and help other recruiting leaders discover what's possible.\n\nTotally understand if you're too busy — no pressure at all!\n\nThanks,\nKate Robinson"
+  },
+  {
+    "id": "OUT-20",
+    "task": "Write an internal announcement about a new hire",
+    "input": {
+      "new_hire_name": "Elena Kowalski",
+      "role": "Director of Customer Success",
+      "start_date": "April 7, 2025",
+      "background": "10 years at Salesforce, led EMEA CS team of 40",
+      "reports_to": "CRO",
+      "fun_fact": "Ran 3 marathons and speaks 4 languages",
+      "tone": "warm, welcoming",
+      "channel": "email"
+    },
+    "constraints": {
+      "max_length": 250,
+      "language": "English",
+      "tone": "warm, welcoming",
+      "required_fields": ["new_hire_name", "role", "start_date", "background", "subject line"],
+      "forbidden": ["salary information", "other candidates mentioned"]
+    },
+    "output": "Subject: Welcome Elena Kowalski — Our New Director of Customer Success!\n\nTeam,\n\nI'm excited to announce that **Elena Kowalski** will be joining us as Director of Customer Success, starting April 7!\n\nElena brings 10 years of experience from Salesforce, where she led the EMEA Customer Success team of 40 people. She's passionate about building customer relationships that last — and she brings some serious energy to everything she does (she's run 3 marathons and speaks 4 languages!).\n\nShe'll be reporting to our CRO and working closely with Sales, Product, and Support.\n\nPlease join me in giving Elena a warm welcome when she starts. Feel free to drop her a note at elena@company.com.\n\nLet's go! 🎉"
+  }
+]

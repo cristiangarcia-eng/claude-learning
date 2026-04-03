@@ -1,0 +1,3062 @@
+[
+  {
+    "id": "CONV-001",
+    "sender": {
+      "name": "Thomas Weber",
+      "role": "Strategic Partnerships",
+      "department": "Partnerships"
+    },
+    "recipient": {
+      "name": "Henrik Lindgren",
+      "role": "Head of People",
+      "company": "Klarna"
+    },
+    "channel": "email",
+    "started_at": "2025-03-12 11:15",
+    "tags": [
+      "warm-intro"
+    ],
+    "outcome": "not-interested",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-12 11:15",
+        "text": "Hello Henrik, traditional recruiting tools rely on keyword matching, meaning you see the same candidates as everyone else. Our platform takes a different approach — analyzing merit signals across education, career trajectory, and achievements to surface genuinely high-potential talent. We've been working with European scale-ups and typically see a 40% reduction in time-to-hire alongside significantly higher candidate quality. I'd love to schedule a call to discuss Klarna's hiring challenges and demonstrate our platform. What does your calendar look like this week?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-15 09:15",
+        "text": "Hi Thomas, thanks but we're set with our current tools. Maybe revisit in Q3?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-002",
+    "sender": {
+      "name": "Laura Petersen",
+      "role": "Account Executive",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Katarina Muller",
+      "role": "People Operations Lead",
+      "company": "Spotify"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-05 11:15",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-05 11:15",
+        "text": "Hey Katarina, your team at Spotify is expanding. We specialize in finding hidden talent traditional search misses. Open to a brief call?"
+      },
+      {
+        "from": "sender",
+        "timestamp": "2025-03-10 09:30",
+        "text": "Hi Katarina, following up one last time. Would a quick async demo video be more convenient?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-003",
+    "sender": {
+      "name": "Laura Petersen",
+      "role": "Account Executive",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Matthias Dubois",
+      "role": "Director of Talent",
+      "company": "Adyen"
+    },
+    "channel": "email",
+    "started_at": "2025-03-26 14:15",
+    "tags": [
+      "warm-intro"
+    ],
+    "outcome": "replied",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-26 14:15",
+        "text": "Hey Matthias, Maria Gonzalez connected us. Great things about Adyen's hiring ambitions. Free for a quick call?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-28 14:45",
+        "text": "Interesting, Laura. Heard good things about Nova. Let me loop in my team and find a time."
+      }
+    ]
+  },
+  {
+    "id": "CONV-004",
+    "sender": {
+      "name": "Marco Bellini",
+      "role": "Senior BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Isabelle Van den Berg",
+      "role": "VP People",
+      "company": "Bolt"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-07 11:30",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "meeting-booked",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-07 11:30",
+        "text": "Isabelle, quick note — we help companies like Bolt source high-potential candidates using merit-based intelligence. Interested?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-09 17:15",
+        "text": "Thanks Marco, this is timely. Let's book 30 min next week."
+      },
+      {
+        "from": "sender",
+        "timestamp": "2025-03-10 16:00",
+        "text": "Perfect, sent a calendar invite for Thursday. Looking forward to it!"
+      }
+    ]
+  },
+  {
+    "id": "CONV-005",
+    "sender": {
+      "name": "Erik Johansson",
+      "role": "Sales Manager",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Joris Rossi",
+      "role": "Head of People",
+      "company": "Zalando"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-28 12:00",
+    "tags": [
+      "inbound"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-28 12:00",
+        "text": "Hi team, we've been struggling with candidate quality from traditional tools. Came across Nova and the AI search looks promising. Can we do a demo?"
+      },
+      {
+        "from": "sender",
+        "timestamp": "2025-03-28 12:24",
+        "text": "Hi Joris, thanks for your interest! Would love to set up a demo. How does this week look?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-006",
+    "sender": {
+      "name": "Erik Johansson",
+      "role": "Sales Manager",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Camille Andersen",
+      "role": "Head of People",
+      "company": "N26"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-28 13:15",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-28 13:15",
+        "text": "Hello Camille, traditional recruiting tools rely on keyword matching, meaning you see the same candidates as everyone else. Our platform takes a different approach — analyzing merit signals across education, career trajectory, and achievements to surface genuinely high-potential talent. We've been working with European scale-ups and typically see a 40% reduction in time-to-hire alongside significantly higher candidate quality. I'd love to schedule a call to discuss N26's hiring challenges and demonstrate our platform. What does your calendar look like this week?"
+      },
+      {
+        "from": "sender",
+        "timestamp": "2025-03-28 16:00",
+        "text": "Hey Camille, wanted to circle back — any interest in learning more about how we could help N26?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-007",
+    "sender": {
+      "name": "Laura Petersen",
+      "role": "Account Executive",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Nils Ferreira",
+      "role": "CHRO",
+      "company": "Revolut"
+    },
+    "channel": "email",
+    "started_at": "2025-03-05 11:00",
+    "tags": [
+      "inbound"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-05 11:00",
+        "text": "Hi team, we've been struggling with candidate quality from traditional tools. Came across Nova and the AI search looks promising. Can we do a demo?"
+      },
+      {
+        "from": "sender",
+        "timestamp": "2025-03-05 11:28",
+        "text": "Hi Nils, thanks for your interest! Would love to set up a demo. How does this week look?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-008",
+    "sender": {
+      "name": "Marco Bellini",
+      "role": "Senior BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Elisa Schmidt",
+      "role": "Head of Recruitment",
+      "company": "Wise"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-13 09:15",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "replied",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-13 09:15",
+        "text": "Elisa, quick note — we help companies like Wise source high-potential candidates using merit-based intelligence. Interested?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-15 17:15",
+        "text": "Marco, sounds great. We've been looking for something like this. Free Wednesday afternoon?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-009",
+    "sender": {
+      "name": "Marco Bellini",
+      "role": "Senior BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Pieter Larsson",
+      "role": "CTO",
+      "company": "Delivery Hero"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-26 11:30",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "replied",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-26 11:30",
+        "text": "Hi Pieter, I hope you're doing well. I've been following Delivery Hero's growth and I'm impressed by what your team has achieved. At Nova, we've built an AI-powered recruiting tool that searches over 650 million profiles using merit-based intelligence — not just keywords. We evaluate education, employer quality, achievements, and career milestones to surface high-potential candidates others miss. I think this could be really valuable for Delivery Hero given the roles you're hiring for. Would you have 20-30 minutes this week to discuss how we could help accelerate your pipeline?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-27 13:45",
+        "text": "Thanks Marco, this is timely. Let's book 30 min next week."
+      }
+    ]
+  },
+  {
+    "id": "CONV-010",
+    "sender": {
+      "name": "Laura Petersen",
+      "role": "Account Executive",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Marta De Vries",
+      "role": "Hiring Manager",
+      "company": "HelloFresh"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-05 11:30",
+    "tags": [
+      "follow-up"
+    ],
+    "outcome": "replied",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-05 11:30",
+        "text": "Hi Marta, following up on my previous message. Would love to find time to connect this week."
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-06 13:45",
+        "text": "Hey Laura, appreciate the note. We're evaluating sourcing tools right now. Can you send more details?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-011",
+    "sender": {
+      "name": "Erik Johansson",
+      "role": "Sales Manager",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Lukas Martin",
+      "role": "CPO",
+      "company": "BlaBlaCar"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-13 10:15",
+    "tags": [
+      "follow-up"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-13 10:15",
+        "text": "Hi Lukas, following up one last time. Would a quick async demo video be more convenient?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-012",
+    "sender": {
+      "name": "Erik Johansson",
+      "role": "Sales Manager",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Freya Novak",
+      "role": "Head of Engineering",
+      "company": "Doctolib"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-12 10:45",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-12 10:45",
+        "text": "Hi Freya — we help teams like yours at Doctolib discover top candidates through AI-powered search. Would love 15 min to show you."
+      }
+    ]
+  },
+  {
+    "id": "CONV-013",
+    "sender": {
+      "name": "Laura Petersen",
+      "role": "Account Executive",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Antoine Kowalski",
+      "role": "Technical Recruiter Lead",
+      "company": "Back Market"
+    },
+    "channel": "email",
+    "started_at": "2025-03-10 14:00",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-10 14:00",
+        "text": "Antoine, quick note — we help companies like Back Market source high-potential candidates using merit-based intelligence. Interested?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-014",
+    "sender": {
+      "name": "Sophie Durand",
+      "role": "Partnerships Lead",
+      "department": "Partnerships"
+    },
+    "recipient": {
+      "name": "Clara Eriksson",
+      "role": "Director of Talent",
+      "company": "Personio"
+    },
+    "channel": "email",
+    "started_at": "2025-03-06 16:30",
+    "tags": [
+      "warm-intro"
+    ],
+    "outcome": "not-interested",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-06 16:30",
+        "text": "Hi Clara, I hope you're doing well. I've been following Personio's growth and I'm impressed by what your team has achieved. At Nova, we've built an AI-powered recruiting tool that searches over 650 million profiles using merit-based intelligence — not just keywords. We evaluate education, employer quality, achievements, and career milestones to surface high-potential candidates others miss. I think this could be really valuable for Personio given the roles you're hiring for. Would you have 20-30 minutes this week to discuss how we could help accelerate your pipeline?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-08 16:30",
+        "text": "Sophie, not the right fit at the moment. Good luck."
+      }
+    ]
+  },
+  {
+    "id": "CONV-015",
+    "sender": {
+      "name": "Sophie Durand",
+      "role": "Partnerships Lead",
+      "department": "Partnerships"
+    },
+    "recipient": {
+      "name": "Jan Bauer",
+      "role": "Head of People",
+      "company": "Scalable Capital"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-21 08:30",
+    "tags": [
+      "follow-up"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-21 08:30",
+        "text": "Hi Jan, following up one last time. Would a quick async demo video be more convenient?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-016",
+    "sender": {
+      "name": "Laura Petersen",
+      "role": "Account Executive",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Lena Jansen",
+      "role": "Technical Recruiter Lead",
+      "company": "Trade Republic"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-25 17:15",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-25 17:15",
+        "text": "Hey Lena, your team at Trade Republic is expanding. We specialize in finding hidden talent traditional search misses. Open to a brief call?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-017",
+    "sender": {
+      "name": "Marco Bellini",
+      "role": "Senior BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Hugo Moreau",
+      "role": "Director of Talent",
+      "company": "Gorillas"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-28 13:45",
+    "tags": [
+      "referral"
+    ],
+    "outcome": "meeting-booked",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-28 13:45",
+        "text": "Hey Hugo, Maria Gonzalez at Wise suggested we connect — mentioned you're scaling at Gorillas. We've been helping them find great hires."
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-28 11:45",
+        "text": "Interesting, Marco. Heard good things about Nova. Let me loop in my team and find a time."
+      },
+      {
+        "from": "sender",
+        "timestamp": "2025-03-28 10:15",
+        "text": "Great, Wednesday works. I'll prep a demo tailored to Gorillas. See you then!"
+      }
+    ]
+  },
+  {
+    "id": "CONV-018",
+    "sender": {
+      "name": "Sophie Durand",
+      "role": "Partnerships Lead",
+      "department": "Partnerships"
+    },
+    "recipient": {
+      "name": "Astrid Fischer",
+      "role": "HR Director",
+      "company": "Flink"
+    },
+    "channel": "email",
+    "started_at": "2025-03-27 09:00",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-27 09:00",
+        "text": "Hi Astrid, I hope you're doing well. I've been following Flink's growth and I'm impressed by what your team has achieved. At Nova, we've built an AI-powered recruiting tool that searches over 650 million profiles using merit-based intelligence — not just keywords. We evaluate education, employer quality, achievements, and career milestones to surface high-potential candidates others miss. I think this could be really valuable for Flink given the roles you're hiring for. Would you have 20-30 minutes this week to discuss how we could help accelerate your pipeline?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-019",
+    "sender": {
+      "name": "Laura Petersen",
+      "role": "Account Executive",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Romain Nilsson",
+      "role": "Hiring Manager",
+      "company": "Swappie"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-07 15:15",
+    "tags": [
+      "inbound"
+    ],
+    "outcome": "replied",
+    "messages": [
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-07 15:15",
+        "text": "Hello, I attended your webinar and was impressed by the merit-based approach. Swappie is hiring aggressively — can we explore Nova?"
+      },
+      {
+        "from": "sender",
+        "timestamp": "2025-03-07 15:57",
+        "text": "Hi Romain, thanks for your interest! Would love to set up a demo. How does this week look?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-020",
+    "sender": {
+      "name": "Marco Bellini",
+      "role": "Senior BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Chiara Costa",
+      "role": "Head of Engineering",
+      "company": "Vinted"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-11 12:45",
+    "tags": [
+      "inbound"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-11 12:45",
+        "text": "Hi team, we've been struggling with candidate quality from traditional tools. Came across Nova and the AI search looks promising. Can we do a demo?"
+      },
+      {
+        "from": "sender",
+        "timestamp": "2025-03-11 12:07",
+        "text": "Hi Chiara, thanks for your interest! Would love to set up a demo. How does this week look?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-021",
+    "sender": {
+      "name": "Thomas Weber",
+      "role": "Strategic Partnerships",
+      "department": "Partnerships"
+    },
+    "recipient": {
+      "name": "Felix Hansen",
+      "role": "Head of Recruitment",
+      "company": "Picnic"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-21 09:15",
+    "tags": [
+      "referral"
+    ],
+    "outcome": "replied",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-21 09:15",
+        "text": "Hi Felix, James Chen from Klarna recommended I reach out. They use Nova and thought Picnic would benefit too. Open to a quick demo?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-22 10:00",
+        "text": "Thomas, sounds great. We've been looking for something like this. Free Wednesday afternoon?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-022",
+    "sender": {
+      "name": "Marco Bellini",
+      "role": "Senior BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Maja Bernard",
+      "role": "People Operations Lead",
+      "company": "Mollie"
+    },
+    "channel": "email",
+    "started_at": "2025-03-04 11:00",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "replied",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-04 11:00",
+        "text": "Hi Maja, I hope you're doing well. I've been following Mollie's growth and I'm impressed by what your team has achieved. At Nova, we've built an AI-powered recruiting tool that searches over 650 million profiles using merit-based intelligence — not just keywords. We evaluate education, employer quality, achievements, and career milestones to surface high-potential candidates others miss. I think this could be really valuable for Mollie given the roles you're hiring for. Would you have 20-30 minutes this week to discuss how we could help accelerate your pipeline?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-05 14:00",
+        "text": "Thanks Marco, this is timely. Let's book 30 min next week."
+      }
+    ]
+  },
+  {
+    "id": "CONV-023",
+    "sender": {
+      "name": "Sophie Durand",
+      "role": "Partnerships Lead",
+      "department": "Partnerships"
+    },
+    "recipient": {
+      "name": "Olivier Richter",
+      "role": "Head of People",
+      "company": "MessageBird"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-24 11:15",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "not-interested",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-24 11:15",
+        "text": "Hello Olivier, traditional recruiting tools rely on keyword matching, meaning you see the same candidates as everyone else. Our platform takes a different approach — analyzing merit signals across education, career trajectory, and achievements to surface genuinely high-potential talent. We've been working with European scale-ups and typically see a 40% reduction in time-to-hire alongside significantly higher candidate quality. I'd love to schedule a call to discuss MessageBird's hiring challenges and demonstrate our platform. What does your calendar look like this week?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-26 12:30",
+        "text": "Sophie, not the right fit at the moment. Good luck."
+      }
+    ]
+  },
+  {
+    "id": "CONV-024",
+    "sender": {
+      "name": "Marco Bellini",
+      "role": "Senior BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Sara Olsen",
+      "role": "Hiring Manager",
+      "company": "Miro"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-11 09:00",
+    "tags": [
+      "inbound"
+    ],
+    "outcome": "not-interested",
+    "messages": [
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-11 09:00",
+        "text": "Hi, I saw Nova mentioned in a recent article and I'm curious. We're scaling our product team at Miro and need better sourcing tools."
+      },
+      {
+        "from": "sender",
+        "timestamp": "2025-03-11 09:17",
+        "text": "Hi Sara, thanks for your interest! Would love to set up a demo. How does this week look?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-14 15:30",
+        "text": "Appreciate the outreach Marco, but not a priority right now."
+      }
+    ]
+  },
+  {
+    "id": "CONV-025",
+    "sender": {
+      "name": "Sophie Durand",
+      "role": "Partnerships Lead",
+      "department": "Partnerships"
+    },
+    "recipient": {
+      "name": "Tobias Fontaine",
+      "role": "CPO",
+      "company": "UiPath"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-04 09:00",
+    "tags": [
+      "follow-up"
+    ],
+    "outcome": "not-interested",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-04 09:00",
+        "text": "Hey Tobias, wanted to circle back — any interest in learning more about how we could help UiPath?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-05 16:30",
+        "text": "Thanks Sophie, we just signed with another vendor. Bad timing."
+      }
+    ]
+  },
+  {
+    "id": "CONV-026",
+    "sender": {
+      "name": "Marco Bellini",
+      "role": "Senior BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Ingrid Berger",
+      "role": "HR Director",
+      "company": "Wolt"
+    },
+    "channel": "email",
+    "started_at": "2025-03-07 14:15",
+    "tags": [
+      "follow-up"
+    ],
+    "outcome": "replied",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-07 14:15",
+        "text": "Hi Ingrid, following up on my previous message. Would love to find time to connect this week."
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-08 13:15",
+        "text": "Hi Marco, thanks for reaching out. Sounds interesting — let's set up a call. How does Thursday look?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-027",
+    "sender": {
+      "name": "Marco Bellini",
+      "role": "Senior BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Ruben Svensson",
+      "role": "Technical Recruiter Lead",
+      "company": "Glovo"
+    },
+    "channel": "email",
+    "started_at": "2025-03-26 09:00",
+    "tags": [
+      "follow-up"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-26 09:00",
+        "text": "Ruben, bumping this up. Happy to keep it brief — even 10 minutes would show the value."
+      }
+    ]
+  },
+  {
+    "id": "CONV-028",
+    "sender": {
+      "name": "Laura Petersen",
+      "role": "Account Executive",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Elena Keller",
+      "role": "Head of Engineering",
+      "company": "Cabify"
+    },
+    "channel": "email",
+    "started_at": "2025-03-24 15:15",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-24 15:15",
+        "text": "Hello Elena, traditional recruiting tools rely on keyword matching, meaning you see the same candidates as everyone else. Our platform takes a different approach — analyzing merit signals across education, career trajectory, and achievements to surface genuinely high-potential talent. We've been working with European scale-ups and typically see a 40% reduction in time-to-hire alongside significantly higher candidate quality. I'd love to schedule a call to discuss Cabify's hiring challenges and demonstrate our platform. What does your calendar look like this week?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-029",
+    "sender": {
+      "name": "Laura Petersen",
+      "role": "Account Executive",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Gustav Leroy",
+      "role": "CTO",
+      "company": "Factorial"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-19 12:45",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "not-interested",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-19 12:45",
+        "text": "Gustav, we're working with several European scale-ups on smarter talent sourcing. Could Factorial benefit from a fresh approach?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-20 12:15",
+        "text": "Hi Laura, we handle recruiting internally. Thanks anyway."
+      }
+    ]
+  },
+  {
+    "id": "CONV-030",
+    "sender": {
+      "name": "Ana Torres",
+      "role": "BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Lea Gruber",
+      "role": "CHRO",
+      "company": "Typeform"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-11 12:15",
+    "tags": [
+      "follow-up"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-11 12:15",
+        "text": "Lea, bumping this up. Happy to keep it brief — even 10 minutes would show the value."
+      }
+    ]
+  },
+  {
+    "id": "CONV-031",
+    "sender": {
+      "name": "Ana Torres",
+      "role": "BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Finn Lindgren",
+      "role": "VP People",
+      "company": "Contentful"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-17 08:00",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-17 08:00",
+        "text": "Hi Finn — we help teams like yours at Contentful discover top candidates through AI-powered search. Would love 15 min to show you."
+      },
+      {
+        "from": "sender",
+        "timestamp": "2025-03-19 16:15",
+        "text": "Hey Finn, wanted to circle back — any interest in learning more about how we could help Contentful?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-032",
+    "sender": {
+      "name": "Marco Bellini",
+      "role": "Senior BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Pauline Muller",
+      "role": "VP Engineering",
+      "company": "SumUp"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-10 09:00",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-10 09:00",
+        "text": "Hi Pauline, I hope you're doing well. I've been following SumUp's growth and I'm impressed by what your team has achieved. At Nova, we've built an AI-powered recruiting tool that searches over 650 million profiles using merit-based intelligence — not just keywords. We evaluate education, employer quality, achievements, and career milestones to surface high-potential candidates others miss. I think this could be really valuable for SumUp given the roles you're hiring for. Would you have 20-30 minutes this week to discuss how we could help accelerate your pipeline?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-033",
+    "sender": {
+      "name": "Marco Bellini",
+      "role": "Senior BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Florian Dubois",
+      "role": "CPO",
+      "company": "Sennder"
+    },
+    "channel": "email",
+    "started_at": "2025-03-27 11:00",
+    "tags": [
+      "referral"
+    ],
+    "outcome": "not-interested",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-27 11:00",
+        "text": "Hi Florian, Peter Hoffman from Revolut recommended I reach out. They use Nova and thought Sennder would benefit too. Open to a quick demo?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-28 09:15",
+        "text": "Marco, not the right fit at the moment. Good luck."
+      }
+    ]
+  },
+  {
+    "id": "CONV-034",
+    "sender": {
+      "name": "Ana Torres",
+      "role": "BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Anika Van den Berg",
+      "role": "Head of Recruitment",
+      "company": "Forto"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-17 11:30",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "replied",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-17 11:30",
+        "text": "Hey Anika, your team at Forto is expanding. We specialize in finding hidden talent traditional search misses. Open to a brief call?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-20 11:00",
+        "text": "Thanks Ana, this is timely. Let's book 30 min next week."
+      }
+    ]
+  },
+  {
+    "id": "CONV-035",
+    "sender": {
+      "name": "Thomas Weber",
+      "role": "Strategic Partnerships",
+      "department": "Partnerships"
+    },
+    "recipient": {
+      "name": "Daan Rossi",
+      "role": "CHRO",
+      "company": "Grover"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-05 08:45",
+    "tags": [
+      "follow-up"
+    ],
+    "outcome": "replied",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-05 08:45",
+        "text": "Hey Daan, wanted to circle back — any interest in learning more about how we could help Grover?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-05 11:30",
+        "text": "Hi Thomas, perfect timing — we're scaling fast and need better tools. Let's chat this week."
+      }
+    ]
+  },
+  {
+    "id": "CONV-036",
+    "sender": {
+      "name": "Ana Torres",
+      "role": "BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Silvia Andersen",
+      "role": "HR Director",
+      "company": "Pleo"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-18 09:15",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-18 09:15",
+        "text": "Hi Silvia, noticed Pleo has several open roles. We use AI to find candidates others miss. Happy to show you how."
+      },
+      {
+        "from": "sender",
+        "timestamp": "2025-03-23 13:30",
+        "text": "Silvia, bumping this up. Happy to keep it brief — even 10 minutes would show the value."
+      }
+    ]
+  },
+  {
+    "id": "CONV-037",
+    "sender": {
+      "name": "Marco Bellini",
+      "role": "Senior BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Oskar Ferreira",
+      "role": "Engineering Manager",
+      "company": "Lunar"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-28 16:00",
+    "tags": [
+      "warm-intro"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-28 16:00",
+        "text": "Hi Oskar, I hope you're doing well. I've been following Lunar's growth and I'm impressed by what your team has achieved. At Nova, we've built an AI-powered recruiting tool that searches over 650 million profiles using merit-based intelligence — not just keywords. We evaluate education, employer quality, achievements, and career milestones to surface high-potential candidates others miss. I think this could be really valuable for Lunar given the roles you're hiring for. Would you have 20-30 minutes this week to discuss how we could help accelerate your pipeline?"
+      },
+      {
+        "from": "sender",
+        "timestamp": "2025-03-28 15:30",
+        "text": "Oskar, bumping this up. Happy to keep it brief — even 10 minutes would show the value."
+      }
+    ]
+  },
+  {
+    "id": "CONV-038",
+    "sender": {
+      "name": "Laura Petersen",
+      "role": "Account Executive",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Celine Schmidt",
+      "role": "Head of Engineering",
+      "company": "Vivid Money"
+    },
+    "channel": "email",
+    "started_at": "2025-03-06 16:15",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-06 16:15",
+        "text": "Hi Celine, I came across your profile and was impressed by what Vivid Money is building. We help teams find top-tier talent faster — open to a quick chat?"
+      },
+      {
+        "from": "sender",
+        "timestamp": "2025-03-08 16:15",
+        "text": "Celine, bumping this up. Happy to keep it brief — even 10 minutes would show the value."
+      }
+    ]
+  },
+  {
+    "id": "CONV-039",
+    "sender": {
+      "name": "Ana Torres",
+      "role": "BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Adrian Larsson",
+      "role": "HR Director",
+      "company": "Qonto"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-13 16:45",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-13 16:45",
+        "text": "Hey Adrian, your team at Qonto is expanding. We specialize in finding hidden talent traditional search misses. Open to a brief call?"
+      },
+      {
+        "from": "sender",
+        "timestamp": "2025-03-16 16:00",
+        "text": "Adrian, bumping this up. Happy to keep it brief — even 10 minutes would show the value."
+      }
+    ]
+  },
+  {
+    "id": "CONV-040",
+    "sender": {
+      "name": "Thomas Weber",
+      "role": "Strategic Partnerships",
+      "department": "Partnerships"
+    },
+    "recipient": {
+      "name": "Frida De Vries",
+      "role": "CPO",
+      "company": "Alan"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-17 10:30",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "not-interested",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-17 10:30",
+        "text": "Hey Frida, Alan seems to be scaling fast. We help similar companies cut hiring time by 40%. Worth a conversation?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-21 13:30",
+        "text": "Thomas, not the right fit at the moment. Good luck."
+      }
+    ]
+  },
+  {
+    "id": "CONV-041",
+    "sender": {
+      "name": "Erik Johansson",
+      "role": "Sales Manager",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Victor Martin",
+      "role": "Director of Talent",
+      "company": "Klarna"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-03 09:00",
+    "tags": [
+      "follow-up"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-03 09:00",
+        "text": "Hi Victor, following up on my previous message. Would love to find time to connect this week."
+      }
+    ]
+  },
+  {
+    "id": "CONV-042",
+    "sender": {
+      "name": "Laura Petersen",
+      "role": "Account Executive",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Hanna Novak",
+      "role": "Technical Recruiter Lead",
+      "company": "Spotify"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-07 14:15",
+    "tags": [
+      "warm-intro"
+    ],
+    "outcome": "replied",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-07 14:15",
+        "text": "Hanna, following up on David Klein's intro. Would love to show how Nova helps Spotify find exceptional candidates. When works?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-07 10:15",
+        "text": "Hi Laura, perfect timing — we're scaling fast and need better tools. Let's chat this week."
+      }
+    ]
+  },
+  {
+    "id": "CONV-043",
+    "sender": {
+      "name": "Sophie Durand",
+      "role": "Partnerships Lead",
+      "department": "Partnerships"
+    },
+    "recipient": {
+      "name": "Emil Kowalski",
+      "role": "Head of Engineering",
+      "company": "Adyen"
+    },
+    "channel": "email",
+    "started_at": "2025-03-11 11:00",
+    "tags": [
+      "referral"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-11 11:00",
+        "text": "Hey Emil, Sarah Mitchell at N26 suggested we connect — mentioned you're scaling at Adyen. We've been helping them find great hires."
+      }
+    ]
+  },
+  {
+    "id": "CONV-044",
+    "sender": {
+      "name": "Ana Torres",
+      "role": "BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Birgit Eriksson",
+      "role": "VP People",
+      "company": "Bolt"
+    },
+    "channel": "email",
+    "started_at": "2025-03-12 10:15",
+    "tags": [
+      "referral"
+    ],
+    "outcome": "not-interested",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-12 10:15",
+        "text": "Hey Birgit, James Chen at Spotify suggested we connect — mentioned you're scaling at Bolt. We've been helping them find great hires."
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-13 15:30",
+        "text": "Hi Ana, thanks but we're set with our current tools. Maybe revisit in Q3?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-045",
+    "sender": {
+      "name": "Laura Petersen",
+      "role": "Account Executive",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Stefan Bauer",
+      "role": "CTO",
+      "company": "Zalando"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-20 11:30",
+    "tags": [
+      "referral"
+    ],
+    "outcome": "replied",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-20 11:30",
+        "text": "Hey Stefan, Maria Gonzalez at Spotify suggested we connect — mentioned you're scaling at Zalando. We've been helping them find great hires."
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-21 09:30",
+        "text": "Hey Laura, appreciate the note. We're evaluating sourcing tools right now. Can you send more details?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-046",
+    "sender": {
+      "name": "Laura Petersen",
+      "role": "Account Executive",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Marie Jansen",
+      "role": "Technical Recruiter Lead",
+      "company": "N26"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-21 13:30",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-21 13:30",
+        "text": "Hi Marie, I hope you're doing well. I've been following N26's growth and I'm impressed by what your team has achieved. At Nova, we've built an AI-powered recruiting tool that searches over 650 million profiles using merit-based intelligence — not just keywords. We evaluate education, employer quality, achievements, and career milestones to surface high-potential candidates others miss. I think this could be really valuable for N26 given the roles you're hiring for. Would you have 20-30 minutes this week to discuss how we could help accelerate your pipeline?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-047",
+    "sender": {
+      "name": "Marco Bellini",
+      "role": "Senior BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Lars Moreau",
+      "role": "HR Director",
+      "company": "Revolut"
+    },
+    "channel": "email",
+    "started_at": "2025-03-19 13:30",
+    "tags": [
+      "warm-intro"
+    ],
+    "outcome": "meeting-booked",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-19 13:30",
+        "text": "Hello Lars, traditional recruiting tools rely on keyword matching, meaning you see the same candidates as everyone else. Our platform takes a different approach — analyzing merit signals across education, career trajectory, and achievements to surface genuinely high-potential talent. We've been working with European scale-ups and typically see a 40% reduction in time-to-hire alongside significantly higher candidate quality. I'd love to schedule a call to discuss Revolut's hiring challenges and demonstrate our platform. What does your calendar look like this week?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-19 15:30",
+        "text": "Hey Marco, appreciate the note. We're evaluating sourcing tools right now. Can you send more details?"
+      },
+      {
+        "from": "sender",
+        "timestamp": "2025-03-20 16:00",
+        "text": "Booked for Tuesday. I'll send a brief agenda beforehand."
+      }
+    ]
+  },
+  {
+    "id": "CONV-048",
+    "sender": {
+      "name": "Thomas Weber",
+      "role": "Strategic Partnerships",
+      "department": "Partnerships"
+    },
+    "recipient": {
+      "name": "Petra Fischer",
+      "role": "Director of Talent",
+      "company": "Wise"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-26 13:00",
+    "tags": [
+      "warm-intro"
+    ],
+    "outcome": "meeting-booked",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-26 13:00",
+        "text": "Hi Petra, Peter Hoffman suggested I reach out — heard Wise is looking for better senior talent sourcing. Happy to chat?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-27 12:15",
+        "text": "Hi Thomas, perfect timing — we're scaling fast and need better tools. Let's chat this week."
+      },
+      {
+        "from": "sender",
+        "timestamp": "2025-03-27 10:30",
+        "text": "Perfect, sent a calendar invite for Thursday. Looking forward to it!"
+      }
+    ]
+  },
+  {
+    "id": "CONV-049",
+    "sender": {
+      "name": "Sophie Durand",
+      "role": "Partnerships Lead",
+      "department": "Partnerships"
+    },
+    "recipient": {
+      "name": "Mikael Nilsson",
+      "role": "CTO",
+      "company": "Delivery Hero"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-13 08:00",
+    "tags": [
+      "referral"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-13 08:00",
+        "text": "Hey Mikael, Sarah Mitchell at Klarna suggested we connect — mentioned you're scaling at Delivery Hero. We've been helping them find great hires."
+      }
+    ]
+  },
+  {
+    "id": "CONV-050",
+    "sender": {
+      "name": "Erik Johansson",
+      "role": "Sales Manager",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Julia Costa",
+      "role": "People Operations Lead",
+      "company": "HelloFresh"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-27 11:30",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "replied",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-27 11:30",
+        "text": "Hi Julia, I came across your profile and was impressed by what HelloFresh is building. We help teams find top-tier talent faster — open to a quick chat?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-28 11:15",
+        "text": "Hi Erik, perfect timing — we're scaling fast and need better tools. Let's chat this week."
+      }
+    ]
+  },
+  {
+    "id": "CONV-051",
+    "sender": {
+      "name": "Erik Johansson",
+      "role": "Sales Manager",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Willem Hansen",
+      "role": "VP Engineering",
+      "company": "BlaBlaCar"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-26 11:30",
+    "tags": [
+      "referral"
+    ],
+    "outcome": "meeting-booked",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-26 11:30",
+        "text": "Hi Willem, James Chen from Klarna recommended I reach out. They use Nova and thought BlaBlaCar would benefit too. Open to a quick demo?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-26 11:00",
+        "text": "Thanks Erik, this is timely. Let's book 30 min next week."
+      },
+      {
+        "from": "sender",
+        "timestamp": "2025-03-27 14:00",
+        "text": "Perfect, sent a calendar invite for Wednesday. Looking forward to it!"
+      }
+    ]
+  },
+  {
+    "id": "CONV-052",
+    "sender": {
+      "name": "Ana Torres",
+      "role": "BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Ines Bernard",
+      "role": "Head of Recruitment",
+      "company": "Doctolib"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-14 16:30",
+    "tags": [
+      "inbound"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-14 16:30",
+        "text": "Hi team, we've been struggling with candidate quality from traditional tools. Came across Nova and the AI search looks promising. Can we do a demo?"
+      },
+      {
+        "from": "sender",
+        "timestamp": "2025-03-14 16:01",
+        "text": "Hi Ines, thanks for your interest! Would love to set up a demo. How does this week look?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-053",
+    "sender": {
+      "name": "Sophie Durand",
+      "role": "Partnerships Lead",
+      "department": "Partnerships"
+    },
+    "recipient": {
+      "name": "Andreas Richter",
+      "role": "CPO",
+      "company": "Back Market"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-07 11:45",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-07 11:45",
+        "text": "Hello Andreas, traditional recruiting tools rely on keyword matching, meaning you see the same candidates as everyone else. Our platform takes a different approach — analyzing merit signals across education, career trajectory, and achievements to surface genuinely high-potential talent. We've been working with European scale-ups and typically see a 40% reduction in time-to-hire alongside significantly higher candidate quality. I'd love to schedule a call to discuss Back Market's hiring challenges and demonstrate our platform. What does your calendar look like this week?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-054",
+    "sender": {
+      "name": "Marco Bellini",
+      "role": "Senior BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Greta Olsen",
+      "role": "People Operations Lead",
+      "company": "Personio"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-26 08:30",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "replied",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-26 08:30",
+        "text": "Hey Greta, Personio seems to be scaling fast. We help similar companies cut hiring time by 40%. Worth a conversation?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-28 17:15",
+        "text": "Hi Marco, perfect timing — we're scaling fast and need better tools. Let's chat this week."
+      }
+    ]
+  },
+  {
+    "id": "CONV-055",
+    "sender": {
+      "name": "Erik Johansson",
+      "role": "Sales Manager",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Kasper Fontaine",
+      "role": "Hiring Manager",
+      "company": "Scalable Capital"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-17 15:45",
+    "tags": [
+      "warm-intro"
+    ],
+    "outcome": "replied",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-17 15:45",
+        "text": "Hi Kasper, David Klein thought we should connect. Our AI search has been a game-changer for teams scaling fast like Scalable Capital."
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-18 09:00",
+        "text": "Erik, sounds great. We've been looking for something like this. Free Wednesday afternoon?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-056",
+    "sender": {
+      "name": "Thomas Weber",
+      "role": "Strategic Partnerships",
+      "department": "Partnerships"
+    },
+    "recipient": {
+      "name": "Emilie Berger",
+      "role": "CTO",
+      "company": "Trade Republic"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-25 17:30",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "replied",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-25 17:30",
+        "text": "Hey Emilie, Trade Republic seems to be scaling fast. We help similar companies cut hiring time by 40%. Worth a conversation?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-27 16:00",
+        "text": "Hi Thomas, thanks for reaching out. Sounds interesting — let's set up a call. How does Thursday look?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-057",
+    "sender": {
+      "name": "Marco Bellini",
+      "role": "Senior BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Karl Svensson",
+      "role": "CHRO",
+      "company": "Gorillas"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-11 10:00",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "meeting-booked",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-11 10:00",
+        "text": "Hi Karl, noticed Gorillas has several open roles. We use AI to find candidates others miss. Happy to show you how."
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-12 11:30",
+        "text": "Hi Marco, perfect timing — we're scaling fast and need better tools. Let's chat this week."
+      },
+      {
+        "from": "sender",
+        "timestamp": "2025-03-15 14:15",
+        "text": "Booked for Thursday. I'll send a brief agenda beforehand."
+      }
+    ]
+  },
+  {
+    "id": "CONV-058",
+    "sender": {
+      "name": "Laura Petersen",
+      "role": "Account Executive",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Lucia Keller",
+      "role": "Engineering Manager",
+      "company": "Flink"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-27 11:45",
+    "tags": [
+      "referral"
+    ],
+    "outcome": "meeting-booked",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-27 11:45",
+        "text": "Hey Lucia, James Chen at N26 suggested we connect — mentioned you're scaling at Flink. We've been helping them find great hires."
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-27 10:15",
+        "text": "Laura, sounds great. We've been looking for something like this. Free Wednesday afternoon?"
+      },
+      {
+        "from": "sender",
+        "timestamp": "2025-03-28 12:15",
+        "text": "Great, Wednesday works. I'll prep a demo tailored to Flink. See you then!"
+      }
+    ]
+  },
+  {
+    "id": "CONV-059",
+    "sender": {
+      "name": "Marco Bellini",
+      "role": "Senior BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Sven Leroy",
+      "role": "CTO",
+      "company": "Swappie"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-06 14:15",
+    "tags": [
+      "warm-intro"
+    ],
+    "outcome": "meeting-booked",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-06 14:15",
+        "text": "Hi Sven, Maria Gonzalez suggested I reach out — heard Swappie is looking for better senior talent sourcing. Happy to chat?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-07 15:30",
+        "text": "Interesting, Marco. Heard good things about Nova. Let me loop in my team and find a time."
+      },
+      {
+        "from": "sender",
+        "timestamp": "2025-03-08 14:00",
+        "text": "Booked for Wednesday. I'll send a brief agenda beforehand."
+      }
+    ]
+  },
+  {
+    "id": "CONV-060",
+    "sender": {
+      "name": "Laura Petersen",
+      "role": "Account Executive",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Amelia Gruber",
+      "role": "Director of Talent",
+      "company": "Vinted"
+    },
+    "channel": "email",
+    "started_at": "2025-03-06 15:15",
+    "tags": [
+      "referral"
+    ],
+    "outcome": "replied",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-06 15:15",
+        "text": "Hi Amelia, David Klein from Wise recommended I reach out. They use Nova and thought Vinted would benefit too. Open to a quick demo?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-06 15:00",
+        "text": "Interesting, Laura. Heard good things about Nova. Let me loop in my team and find a time."
+      }
+    ]
+  },
+  {
+    "id": "CONV-061",
+    "sender": {
+      "name": "Thomas Weber",
+      "role": "Strategic Partnerships",
+      "department": "Partnerships"
+    },
+    "recipient": {
+      "name": "Rasmus Lindgren",
+      "role": "Director of Talent",
+      "company": "Picnic"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-21 17:45",
+    "tags": [
+      "warm-intro"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-21 17:45",
+        "text": "Hi Rasmus, I hope you're doing well. I've been following Picnic's growth and I'm impressed by what your team has achieved. At Nova, we've built an AI-powered recruiting tool that searches over 650 million profiles using merit-based intelligence — not just keywords. We evaluate education, employer quality, achievements, and career milestones to surface high-potential candidates others miss. I think this could be really valuable for Picnic given the roles you're hiring for. Would you have 20-30 minutes this week to discuss how we could help accelerate your pipeline?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-062",
+    "sender": {
+      "name": "Thomas Weber",
+      "role": "Strategic Partnerships",
+      "department": "Partnerships"
+    },
+    "recipient": {
+      "name": "Therese Muller",
+      "role": "Technical Recruiter Lead",
+      "company": "Mollie"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-12 12:45",
+    "tags": [
+      "follow-up"
+    ],
+    "outcome": "replied",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-12 12:45",
+        "text": "Therese, bumping this up. Happy to keep it brief — even 10 minutes would show the value."
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-14 10:45",
+        "text": "Thanks Thomas, this is timely. Let's book 30 min next week."
+      }
+    ]
+  },
+  {
+    "id": "CONV-063",
+    "sender": {
+      "name": "Sophie Durand",
+      "role": "Partnerships Lead",
+      "department": "Partnerships"
+    },
+    "recipient": {
+      "name": "Bastian Dubois",
+      "role": "Engineering Manager",
+      "company": "MessageBird"
+    },
+    "channel": "email",
+    "started_at": "2025-03-12 12:30",
+    "tags": [
+      "warm-intro"
+    ],
+    "outcome": "replied",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-12 12:30",
+        "text": "Hi Bastian, Maria Gonzalez thought we should connect. Our AI search has been a game-changer for teams scaling fast like MessageBird."
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-14 13:30",
+        "text": "Hi Sophie, thanks for reaching out. Sounds interesting — let's set up a call. How does Thursday look?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-064",
+    "sender": {
+      "name": "Marco Bellini",
+      "role": "Senior BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Sofie Van den Berg",
+      "role": "CPO",
+      "company": "Miro"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-11 09:45",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-11 09:45",
+        "text": "Sofie, quick note — we help companies like Miro source high-potential candidates using merit-based intelligence. Interested?"
+      },
+      {
+        "from": "sender",
+        "timestamp": "2025-03-16 12:00",
+        "text": "Sofie, bumping this up. Happy to keep it brief — even 10 minutes would show the value."
+      }
+    ]
+  },
+  {
+    "id": "CONV-065",
+    "sender": {
+      "name": "Ana Torres",
+      "role": "BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Tomas Rossi",
+      "role": "Engineering Manager",
+      "company": "UiPath"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-20 14:00",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-20 14:00",
+        "text": "Hi Tomas, I hope you're doing well. I've been following UiPath's growth and I'm impressed by what your team has achieved. At Nova, we've built an AI-powered recruiting tool that searches over 650 million profiles using merit-based intelligence — not just keywords. We evaluate education, employer quality, achievements, and career milestones to surface high-potential candidates others miss. I think this could be really valuable for UiPath given the roles you're hiring for. Would you have 20-30 minutes this week to discuss how we could help accelerate your pipeline?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-066",
+    "sender": {
+      "name": "Laura Petersen",
+      "role": "Account Executive",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Klara Andersen",
+      "role": "Head of Recruitment",
+      "company": "Wolt"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-20 16:15",
+    "tags": [
+      "inbound"
+    ],
+    "outcome": "not-interested",
+    "messages": [
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-20 16:15",
+        "text": "Hello, I attended your webinar and was impressed by the merit-based approach. Wolt is hiring aggressively — can we explore Nova?"
+      },
+      {
+        "from": "sender",
+        "timestamp": "2025-03-20 16:49",
+        "text": "Hi Klara, thanks for your interest! Would love to set up a demo. How does this week look?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-23 13:00",
+        "text": "Appreciate the outreach Laura, but not a priority right now."
+      }
+    ]
+  },
+  {
+    "id": "CONV-067",
+    "sender": {
+      "name": "Sophie Durand",
+      "role": "Partnerships Lead",
+      "department": "Partnerships"
+    },
+    "recipient": {
+      "name": "Jonas Ferreira",
+      "role": "CPO",
+      "company": "Glovo"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-17 14:15",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "meeting-booked",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-17 14:15",
+        "text": "Hello Jonas, traditional recruiting tools rely on keyword matching, meaning you see the same candidates as everyone else. Our platform takes a different approach — analyzing merit signals across education, career trajectory, and achievements to surface genuinely high-potential talent. We've been working with European scale-ups and typically see a 40% reduction in time-to-hire alongside significantly higher candidate quality. I'd love to schedule a call to discuss Glovo's hiring challenges and demonstrate our platform. What does your calendar look like this week?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-19 09:15",
+        "text": "Hey Sophie, appreciate the note. We're evaluating sourcing tools right now. Can you send more details?"
+      },
+      {
+        "from": "sender",
+        "timestamp": "2025-03-21 15:00",
+        "text": "Perfect, sent a calendar invite for Thursday. Looking forward to it!"
+      }
+    ]
+  },
+  {
+    "id": "CONV-068",
+    "sender": {
+      "name": "Ana Torres",
+      "role": "BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Margot Schmidt",
+      "role": "VP Engineering",
+      "company": "Cabify"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-03 09:45",
+    "tags": [
+      "warm-intro"
+    ],
+    "outcome": "not-interested",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-03 09:45",
+        "text": "Hey Margot, David Klein connected us. Great things about Cabify's hiring ambitions. Free for a quick call?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-05 15:15",
+        "text": "Thanks Ana, we just signed with another vendor. Bad timing."
+      }
+    ]
+  },
+  {
+    "id": "CONV-069",
+    "sender": {
+      "name": "Erik Johansson",
+      "role": "Sales Manager",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Petter Larsson",
+      "role": "CTO",
+      "company": "Factorial"
+    },
+    "channel": "email",
+    "started_at": "2025-03-17 11:45",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-17 11:45",
+        "text": "Hi Petter, saw Factorial is growing the eng team. We've helped Wise and Klarna find senior hires fast. Mind if I share how?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-070",
+    "sender": {
+      "name": "Erik Johansson",
+      "role": "Sales Manager",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Alma De Vries",
+      "role": "Talent Lead",
+      "company": "Typeform"
+    },
+    "channel": "email",
+    "started_at": "2025-03-26 08:30",
+    "tags": [
+      "follow-up"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-26 08:30",
+        "text": "Hi Alma, following up on my previous message. Would love to find time to connect this week."
+      }
+    ]
+  },
+  {
+    "id": "CONV-071",
+    "sender": {
+      "name": "Laura Petersen",
+      "role": "Account Executive",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Henrik Martin",
+      "role": "Hiring Manager",
+      "company": "Contentful"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-03 11:15",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-03 11:15",
+        "text": "Hi Henrik, I hope you're doing well. I've been following Contentful's growth and I'm impressed by what your team has achieved. At Nova, we've built an AI-powered recruiting tool that searches over 650 million profiles using merit-based intelligence — not just keywords. We evaluate education, employer quality, achievements, and career milestones to surface high-potential candidates others miss. I think this could be really valuable for Contentful given the roles you're hiring for. Would you have 20-30 minutes this week to discuss how we could help accelerate your pipeline?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-072",
+    "sender": {
+      "name": "Erik Johansson",
+      "role": "Sales Manager",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Katarina Novak",
+      "role": "CHRO",
+      "company": "SumUp"
+    },
+    "channel": "email",
+    "started_at": "2025-03-11 15:30",
+    "tags": [
+      "warm-intro"
+    ],
+    "outcome": "replied",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-11 15:30",
+        "text": "Hello Katarina, traditional recruiting tools rely on keyword matching, meaning you see the same candidates as everyone else. Our platform takes a different approach — analyzing merit signals across education, career trajectory, and achievements to surface genuinely high-potential talent. We've been working with European scale-ups and typically see a 40% reduction in time-to-hire alongside significantly higher candidate quality. I'd love to schedule a call to discuss SumUp's hiring challenges and demonstrate our platform. What does your calendar look like this week?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-12 15:45",
+        "text": "Hi Erik, perfect timing — we're scaling fast and need better tools. Let's chat this week."
+      }
+    ]
+  },
+  {
+    "id": "CONV-073",
+    "sender": {
+      "name": "Marco Bellini",
+      "role": "Senior BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Matthias Kowalski",
+      "role": "People Operations Lead",
+      "company": "Sennder"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-06 10:30",
+    "tags": [
+      "referral"
+    ],
+    "outcome": "meeting-booked",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-06 10:30",
+        "text": "Hey Matthias, Maria Gonzalez at N26 suggested we connect — mentioned you're scaling at Sennder. We've been helping them find great hires."
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-06 17:00",
+        "text": "Thanks Marco, this is timely. Let's book 30 min next week."
+      },
+      {
+        "from": "sender",
+        "timestamp": "2025-03-08 10:15",
+        "text": "Booked for Thursday. I'll send a brief agenda beforehand."
+      }
+    ]
+  },
+  {
+    "id": "CONV-074",
+    "sender": {
+      "name": "Thomas Weber",
+      "role": "Strategic Partnerships",
+      "department": "Partnerships"
+    },
+    "recipient": {
+      "name": "Isabelle Eriksson",
+      "role": "Head of Engineering",
+      "company": "Forto"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-11 09:15",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "replied",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-11 09:15",
+        "text": "Hi Isabelle, saw Forto is growing the eng team. We've helped Wise and Klarna find senior hires fast. Mind if I share how?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-12 12:45",
+        "text": "Hi Thomas, perfect timing — we're scaling fast and need better tools. Let's chat this week."
+      }
+    ]
+  },
+  {
+    "id": "CONV-075",
+    "sender": {
+      "name": "Sophie Durand",
+      "role": "Partnerships Lead",
+      "department": "Partnerships"
+    },
+    "recipient": {
+      "name": "Joris Bauer",
+      "role": "Technical Recruiter Lead",
+      "company": "Grover"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-06 17:00",
+    "tags": [
+      "warm-intro"
+    ],
+    "outcome": "not-interested",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-06 17:00",
+        "text": "Hey Joris, David Klein connected us. Great things about Grover's hiring ambitions. Free for a quick call?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-08 12:00",
+        "text": "Thanks Sophie, we just signed with another vendor. Bad timing."
+      }
+    ]
+  },
+  {
+    "id": "CONV-076",
+    "sender": {
+      "name": "Ana Torres",
+      "role": "BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Camille Jansen",
+      "role": "CHRO",
+      "company": "Pleo"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-20 15:00",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "replied",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-20 15:00",
+        "text": "Hey Camille, Pleo seems to be scaling fast. We help similar companies cut hiring time by 40%. Worth a conversation?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-21 16:45",
+        "text": "Hey Ana, appreciate the note. We're evaluating sourcing tools right now. Can you send more details?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-077",
+    "sender": {
+      "name": "Sophie Durand",
+      "role": "Partnerships Lead",
+      "department": "Partnerships"
+    },
+    "recipient": {
+      "name": "Nils Moreau",
+      "role": "CHRO",
+      "company": "Lunar"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-20 10:30",
+    "tags": [
+      "warm-intro"
+    ],
+    "outcome": "meeting-booked",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-20 10:30",
+        "text": "Hey Nils, Sarah Mitchell connected us. Great things about Lunar's hiring ambitions. Free for a quick call?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-22 17:30",
+        "text": "Hi Sophie, thanks for reaching out. Sounds interesting — let's set up a call. How does Thursday look?"
+      },
+      {
+        "from": "sender",
+        "timestamp": "2025-03-22 09:15",
+        "text": "Perfect, sent a calendar invite for Wednesday. Looking forward to it!"
+      }
+    ]
+  },
+  {
+    "id": "CONV-078",
+    "sender": {
+      "name": "Erik Johansson",
+      "role": "Sales Manager",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Elisa Fischer",
+      "role": "CPO",
+      "company": "Vivid Money"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-17 11:00",
+    "tags": [
+      "warm-intro"
+    ],
+    "outcome": "not-interested",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-17 11:00",
+        "text": "Elisa, following up on David Klein's intro. Would love to show how Nova helps Vivid Money find exceptional candidates. When works?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-20 15:30",
+        "text": "Erik, not the right fit at the moment. Good luck."
+      }
+    ]
+  },
+  {
+    "id": "CONV-079",
+    "sender": {
+      "name": "Erik Johansson",
+      "role": "Sales Manager",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Pieter Nilsson",
+      "role": "HR Director",
+      "company": "Qonto"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-19 13:00",
+    "tags": [
+      "warm-intro"
+    ],
+    "outcome": "meeting-booked",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-19 13:00",
+        "text": "Pieter, following up on James Chen's intro. Would love to show how Nova helps Qonto find exceptional candidates. When works?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-19 14:15",
+        "text": "Hi Erik, perfect timing — we're scaling fast and need better tools. Let's chat this week."
+      },
+      {
+        "from": "sender",
+        "timestamp": "2025-03-21 14:00",
+        "text": "Great, Tuesday works. I'll prep a demo tailored to Qonto. See you then!"
+      }
+    ]
+  },
+  {
+    "id": "CONV-080",
+    "sender": {
+      "name": "Sophie Durand",
+      "role": "Partnerships Lead",
+      "department": "Partnerships"
+    },
+    "recipient": {
+      "name": "Marta Costa",
+      "role": "Hiring Manager",
+      "company": "Alan"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-28 12:00",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "replied",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-28 12:00",
+        "text": "Hi Marta — we help teams like yours at Alan discover top candidates through AI-powered search. Would love 15 min to show you."
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-28 10:45",
+        "text": "Thanks Sophie, this is timely. Let's book 30 min next week."
+      }
+    ]
+  },
+  {
+    "id": "CONV-081",
+    "sender": {
+      "name": "Marco Bellini",
+      "role": "Senior BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Lukas Hansen",
+      "role": "Head of People",
+      "company": "Klarna"
+    },
+    "channel": "email",
+    "started_at": "2025-03-24 16:15",
+    "tags": [
+      "warm-intro"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-24 16:15",
+        "text": "Hello Lukas, traditional recruiting tools rely on keyword matching, meaning you see the same candidates as everyone else. Our platform takes a different approach — analyzing merit signals across education, career trajectory, and achievements to surface genuinely high-potential talent. We've been working with European scale-ups and typically see a 40% reduction in time-to-hire alongside significantly higher candidate quality. I'd love to schedule a call to discuss Klarna's hiring challenges and demonstrate our platform. What does your calendar look like this week?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-082",
+    "sender": {
+      "name": "Laura Petersen",
+      "role": "Account Executive",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Freya Bernard",
+      "role": "Head of People",
+      "company": "Spotify"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-12 12:30",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-12 12:30",
+        "text": "Hey Freya, Spotify seems to be scaling fast. We help similar companies cut hiring time by 40%. Worth a conversation?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-083",
+    "sender": {
+      "name": "Ana Torres",
+      "role": "BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Antoine Richter",
+      "role": "Head of Recruitment",
+      "company": "Adyen"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-26 13:30",
+    "tags": [
+      "referral"
+    ],
+    "outcome": "replied",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-26 13:30",
+        "text": "Hey Antoine, Sarah Mitchell at Revolut suggested we connect — mentioned you're scaling at Adyen. We've been helping them find great hires."
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-26 12:00",
+        "text": "Hey Ana, appreciate the note. We're evaluating sourcing tools right now. Can you send more details?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-084",
+    "sender": {
+      "name": "Laura Petersen",
+      "role": "Account Executive",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Clara Olsen",
+      "role": "VP People",
+      "company": "Bolt"
+    },
+    "channel": "email",
+    "started_at": "2025-03-26 10:15",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "replied",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-26 10:15",
+        "text": "Hi Clara, noticed Bolt has several open roles. We use AI to find candidates others miss. Happy to show you how."
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-28 11:00",
+        "text": "Hey Laura, appreciate the note. We're evaluating sourcing tools right now. Can you send more details?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-085",
+    "sender": {
+      "name": "Erik Johansson",
+      "role": "Sales Manager",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Jan Fontaine",
+      "role": "Talent Lead",
+      "company": "Zalando"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-25 17:30",
+    "tags": [
+      "warm-intro"
+    ],
+    "outcome": "replied",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-25 17:30",
+        "text": "Hello Jan, traditional recruiting tools rely on keyword matching, meaning you see the same candidates as everyone else. Our platform takes a different approach — analyzing merit signals across education, career trajectory, and achievements to surface genuinely high-potential talent. We've been working with European scale-ups and typically see a 40% reduction in time-to-hire alongside significantly higher candidate quality. I'd love to schedule a call to discuss Zalando's hiring challenges and demonstrate our platform. What does your calendar look like this week?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-27 14:30",
+        "text": "Hey Erik, appreciate the note. We're evaluating sourcing tools right now. Can you send more details?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-086",
+    "sender": {
+      "name": "Sophie Durand",
+      "role": "Partnerships Lead",
+      "department": "Partnerships"
+    },
+    "recipient": {
+      "name": "Lena Berger",
+      "role": "CTO",
+      "company": "N26"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-26 10:30",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "not-interested",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-26 10:30",
+        "text": "Lena, we're working with several European scale-ups on smarter talent sourcing. Could N26 benefit from a fresh approach?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-28 13:15",
+        "text": "Hi Sophie, we handle recruiting internally. Thanks anyway."
+      }
+    ]
+  },
+  {
+    "id": "CONV-087",
+    "sender": {
+      "name": "Laura Petersen",
+      "role": "Account Executive",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Hugo Svensson",
+      "role": "Director of Talent",
+      "company": "Revolut"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-07 15:00",
+    "tags": [
+      "warm-intro"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-07 15:00",
+        "text": "Hi Hugo, I hope you're doing well. I've been following Revolut's growth and I'm impressed by what your team has achieved. At Nova, we've built an AI-powered recruiting tool that searches over 650 million profiles using merit-based intelligence — not just keywords. We evaluate education, employer quality, achievements, and career milestones to surface high-potential candidates others miss. I think this could be really valuable for Revolut given the roles you're hiring for. Would you have 20-30 minutes this week to discuss how we could help accelerate your pipeline?"
+      },
+      {
+        "from": "sender",
+        "timestamp": "2025-03-12 09:00",
+        "text": "Hugo, bumping this up. Happy to keep it brief — even 10 minutes would show the value."
+      }
+    ]
+  },
+  {
+    "id": "CONV-088",
+    "sender": {
+      "name": "Erik Johansson",
+      "role": "Sales Manager",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Astrid Keller",
+      "role": "Head of Recruitment",
+      "company": "Wise"
+    },
+    "channel": "email",
+    "started_at": "2025-03-13 15:00",
+    "tags": [
+      "referral"
+    ],
+    "outcome": "not-interested",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-13 15:00",
+        "text": "Hi Astrid, James Chen from Wise recommended I reach out. They use Nova and thought Wise would benefit too. Open to a quick demo?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-15 16:30",
+        "text": "Hi Erik, we handle recruiting internally. Thanks anyway."
+      }
+    ]
+  },
+  {
+    "id": "CONV-089",
+    "sender": {
+      "name": "Erik Johansson",
+      "role": "Sales Manager",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Romain Leroy",
+      "role": "Engineering Manager",
+      "company": "Delivery Hero"
+    },
+    "channel": "email",
+    "started_at": "2025-03-04 10:15",
+    "tags": [
+      "warm-intro"
+    ],
+    "outcome": "replied",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-04 10:15",
+        "text": "Hi Romain, I hope you're doing well. I've been following Delivery Hero's growth and I'm impressed by what your team has achieved. At Nova, we've built an AI-powered recruiting tool that searches over 650 million profiles using merit-based intelligence — not just keywords. We evaluate education, employer quality, achievements, and career milestones to surface high-potential candidates others miss. I think this could be really valuable for Delivery Hero given the roles you're hiring for. Would you have 20-30 minutes this week to discuss how we could help accelerate your pipeline?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-05 16:15",
+        "text": "Hi Erik, thanks for reaching out. Sounds interesting — let's set up a call. How does Thursday look?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-090",
+    "sender": {
+      "name": "Marco Bellini",
+      "role": "Senior BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Chiara Gruber",
+      "role": "Head of People",
+      "company": "HelloFresh"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-28 17:15",
+    "tags": [
+      "inbound"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-28 17:15",
+        "text": "Hello, I attended your webinar and was impressed by the merit-based approach. HelloFresh is hiring aggressively — can we explore Nova?"
+      },
+      {
+        "from": "sender",
+        "timestamp": "2025-03-28 17:46",
+        "text": "Hi Chiara, thanks for your interest! Would love to set up a demo. How does this week look?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-091",
+    "sender": {
+      "name": "Erik Johansson",
+      "role": "Sales Manager",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Felix Lindgren",
+      "role": "Engineering Manager",
+      "company": "BlaBlaCar"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-27 14:30",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "meeting-booked",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-27 14:30",
+        "text": "Felix, quick note — we help companies like BlaBlaCar source high-potential candidates using merit-based intelligence. Interested?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-28 16:45",
+        "text": "Hi Erik, perfect timing — we're scaling fast and need better tools. Let's chat this week."
+      },
+      {
+        "from": "sender",
+        "timestamp": "2025-03-28 11:15",
+        "text": "Great, Wednesday works. I'll prep a demo tailored to BlaBlaCar. See you then!"
+      }
+    ]
+  },
+  {
+    "id": "CONV-092",
+    "sender": {
+      "name": "Laura Petersen",
+      "role": "Account Executive",
+      "department": "Sales"
+    },
+    "recipient": {
+      "name": "Maja Muller",
+      "role": "Hiring Manager",
+      "company": "Doctolib"
+    },
+    "channel": "email",
+    "started_at": "2025-03-13 09:15",
+    "tags": [
+      "warm-intro"
+    ],
+    "outcome": "meeting-booked",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-13 09:15",
+        "text": "Hi Maja, Maria Gonzalez thought we should connect. Our AI search has been a game-changer for teams scaling fast like Doctolib."
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-15 09:30",
+        "text": "Hi Laura, thanks for reaching out. Sounds interesting — let's set up a call. How does Thursday look?"
+      },
+      {
+        "from": "sender",
+        "timestamp": "2025-03-15 10:30",
+        "text": "Booked for Wednesday. I'll send a brief agenda beforehand."
+      }
+    ]
+  },
+  {
+    "id": "CONV-093",
+    "sender": {
+      "name": "Ana Torres",
+      "role": "BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Olivier Dubois",
+      "role": "Head of People",
+      "company": "Back Market"
+    },
+    "channel": "email",
+    "started_at": "2025-03-21 17:45",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-21 17:45",
+        "text": "Hi Olivier, noticed Back Market has several open roles. We use AI to find candidates others miss. Happy to show you how."
+      },
+      {
+        "from": "sender",
+        "timestamp": "2025-03-24 14:15",
+        "text": "Hi Olivier, following up one last time. Would a quick async demo video be more convenient?"
+      }
+    ]
+  },
+  {
+    "id": "CONV-094",
+    "sender": {
+      "name": "Thomas Weber",
+      "role": "Strategic Partnerships",
+      "department": "Partnerships"
+    },
+    "recipient": {
+      "name": "Sara Van den Berg",
+      "role": "Technical Recruiter Lead",
+      "company": "Personio"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-12 12:15",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "meeting-booked",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-12 12:15",
+        "text": "Hey Sara, Personio seems to be scaling fast. We help similar companies cut hiring time by 40%. Worth a conversation?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-14 17:45",
+        "text": "Interesting, Thomas. Heard good things about Nova. Let me loop in my team and find a time."
+      },
+      {
+        "from": "sender",
+        "timestamp": "2025-03-15 11:30",
+        "text": "Booked for Thursday. I'll send a brief agenda beforehand."
+      }
+    ]
+  },
+  {
+    "id": "CONV-095",
+    "sender": {
+      "name": "Ana Torres",
+      "role": "BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Tobias Rossi",
+      "role": "HR Director",
+      "company": "Scalable Capital"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-13 10:00",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-13 10:00",
+        "text": "Hi Tobias — we help teams like yours at Scalable Capital discover top candidates through AI-powered search. Would love 15 min to show you."
+      }
+    ]
+  },
+  {
+    "id": "CONV-096",
+    "sender": {
+      "name": "Ana Torres",
+      "role": "BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Ingrid Andersen",
+      "role": "Head of Engineering",
+      "company": "Trade Republic"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-21 12:45",
+    "tags": [
+      "follow-up"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-21 12:45",
+        "text": "Ingrid, bumping this up. Happy to keep it brief — even 10 minutes would show the value."
+      }
+    ]
+  },
+  {
+    "id": "CONV-097",
+    "sender": {
+      "name": "Ana Torres",
+      "role": "BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Ruben Ferreira",
+      "role": "Director of Talent",
+      "company": "Gorillas"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-28 08:45",
+    "tags": [
+      "follow-up"
+    ],
+    "outcome": "no-reply",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-28 08:45",
+        "text": "Ruben, bumping this up. Happy to keep it brief — even 10 minutes would show the value."
+      }
+    ]
+  },
+  {
+    "id": "CONV-098",
+    "sender": {
+      "name": "Marco Bellini",
+      "role": "Senior BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Elena Schmidt",
+      "role": "CHRO",
+      "company": "Flink"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-03 12:00",
+    "tags": [
+      "warm-intro"
+    ],
+    "outcome": "replied",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-03 12:00",
+        "text": "Hi Elena, I hope you're doing well. I've been following Flink's growth and I'm impressed by what your team has achieved. At Nova, we've built an AI-powered recruiting tool that searches over 650 million profiles using merit-based intelligence — not just keywords. We evaluate education, employer quality, achievements, and career milestones to surface high-potential candidates others miss. I think this could be really valuable for Flink given the roles you're hiring for. Would you have 20-30 minutes this week to discuss how we could help accelerate your pipeline?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-03 11:00",
+        "text": "Thanks Marco, this is timely. Let's book 30 min next week."
+      }
+    ]
+  },
+  {
+    "id": "CONV-099",
+    "sender": {
+      "name": "Marco Bellini",
+      "role": "Senior BDR",
+      "department": "Business Development"
+    },
+    "recipient": {
+      "name": "Gustav Larsson",
+      "role": "Engineering Manager",
+      "company": "Swappie"
+    },
+    "channel": "chat",
+    "started_at": "2025-03-13 10:45",
+    "tags": [
+      "warm-intro"
+    ],
+    "outcome": "replied",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-13 10:45",
+        "text": "Hi Gustav, David Klein suggested I reach out — heard Swappie is looking for better senior talent sourcing. Happy to chat?"
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-15 14:15",
+        "text": "Hi Marco, perfect timing — we're scaling fast and need better tools. Let's chat this week."
+      }
+    ]
+  },
+  {
+    "id": "CONV-100",
+    "sender": {
+      "name": "Sophie Durand",
+      "role": "Partnerships Lead",
+      "department": "Partnerships"
+    },
+    "recipient": {
+      "name": "Lea De Vries",
+      "role": "CPO",
+      "company": "Vinted"
+    },
+    "channel": "linkedin",
+    "started_at": "2025-03-06 10:30",
+    "tags": [
+      "cold-outreach"
+    ],
+    "outcome": "replied",
+    "messages": [
+      {
+        "from": "sender",
+        "timestamp": "2025-03-06 10:30",
+        "text": "Hi Lea, noticed Vinted has several open roles. We use AI to find candidates others miss. Happy to show you how."
+      },
+      {
+        "from": "recipient",
+        "timestamp": "2025-03-07 11:45",
+        "text": "Hi Sophie, thanks for reaching out. Sounds interesting — let's set up a call. How does Thursday look?"
+      }
+    ]
+  }
+]

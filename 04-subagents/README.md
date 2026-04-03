@@ -176,6 +176,12 @@ There are three ways to create a subagent:
 
 **Agent gives inconsistent results**: Add more specific instructions to the system prompt. Include examples of the output format you expect.
 
+## Practice Exercise
+
+> **[Exercise 5: Extract Insights from Conversations](../11-exercises/exercise-05-conversation-analysis/)** — Analyze 100 conversations, then create a reusable `data-analyst` subagent. You will practice agent files, tool restrictions, priorities, and structured output formats.
+>
+> **Time:** 45 min | **Data:** 100 conversations in JSON with patterns to discover
+
 ## Related Guides
 
 - [Slash Commands](../01-slash-commands/) -- Built-in shortcuts

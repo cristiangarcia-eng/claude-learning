@@ -9,8 +9,8 @@ This document provides a complete index of all example files organized by featur
 
 ## Summary Statistics
 
-- **Total Files**: 100+ files
-- **Categories**: 10 feature categories
+- **Total Files**: 130+ files
+- **Categories**: 11 feature categories (+ hands-on exercises)
 - **Plugins**: 3 complete plugins
 - **Skills**: 6 complete skills
 - **Hooks**: 8 example hooks
@@ -849,6 +849,28 @@ Run tests in background
 
 ### Configuration
 - `09-advanced-features/config-examples.json` - Configuration examples
+
+---
+
+## 11. Hands-On Exercises (30+ files)
+
+Practical, role-agnostic exercises with real data files.
+
+| Exercise | Module | Feature You Build | Data Files |
+|----------|--------|-------------------|------------|
+| 1. Context Engineering | [02-memory](02-memory/) | CLAUDE.md with layered memory | `sample-project/` (6 files) |
+| 2. Tame a Messy Spreadsheet | [01-slash-commands](01-slash-commands/) | Reusable `/clean-csv` command | `raw_requests.csv` (50 rows) |
+| 3. Research & Structure | [03-skills](03-skills/) | Auto-triggered research skill | `example-output.md` |
+| 4. Build a Taxonomy | [08-checkpoints](08-checkpoints/) | Checkpoint-based approach comparison | `raw_entries.csv` (174 rows) |
+| 5. Conversation Analysis | [04-subagents](04-subagents/) | `data-analyst` subagent | `conversations.json` (100 conversations) |
+| 6. Evaluate AI Output | [06-hooks](06-hooks/) | Quality-check hook | `ai_outputs.json` (20 outputs) |
+| 7. Screenshots to Spec | [09-advanced](09-advanced-features/) | Plan mode + multimodal | User-provided screenshots |
+| 8. Prioritize from Chaos | [09-advanced](09-advanced-features/) | Plan mode framework design | `raw_ideas.csv` (60 ideas) |
+| 9. Folder Audit | [10-cli](10-cli/) | CLI scripts with `claude -p` | Self-referential |
+| 10. Content Pipeline | [07-plugins](07-plugins/) | Complete distributable plugin | User-provided brief |
+| 11. Connect Systems | [05-mcp](05-mcp/) | MCP server + workflow | User chooses integration |
+
+**Installation Path**: `11-exercises/`
 
 ---
 

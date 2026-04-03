@@ -1,0 +1,175 @@
+original_text,frequency,source
+Senior Software Engineer,342,linkedin_import
+Software Engineer,289,linkedin_import
+Project Manager,187,manual_entry
+Sr. Developer,156,crm_sync
+Product Manager,143,linkedin_import
+Desarrollador Senior,134,manual_entry
+Data Analyst,128,linkedin_import
+Marketing Manager,119,manual_entry
+Ingeniero de Software,112,crm_sync
+Sales Representative,98,linkedin_import
+DevOps Engineer,94,linkedin_import
+Account Manager,91,crm_sync
+Gerente de Proyecto,88,manual_entry
+UX Designer,85,linkedin_import
+Full Stack Developer,82,linkedin_import
+Software Developer,79,linkedin_import
+Business Analyst,76,manual_entry
+HR Manager,73,crm_sync
+Analista de Datos,71,manual_entry
+Senior Dev,68,crm_sync
+Front End Developer,65,linkedin_import
+Backend Developer,62,linkedin_import
+Representante de Ventas,59,manual_entry
+Scrum Master,56,linkedin_import
+Data Scientist,54,linkedin_import
+QA Engineer,52,linkedin_import
+Diseñador UX,50,manual_entry
+Financial Analyst,48,crm_sync
+Cloud Architect,46,linkedin_import
+Technical Lead,44,linkedin_import
+Jefe de Marketing,42,manual_entry
+Chief Technology Officer,40,linkedin_import
+Solutions Architect,38,crm_sync
+Ingeniero DevOps,36,manual_entry
+Product Owner,34,linkedin_import
+Gerente de RRHH,33,manual_entry
+CTO,31,crm_sync
+Fullstack Dev,30,crm_sync
+Sr Software Engineer,29,linkedin_import
+Développeur Senior,28,manual_entry
+FrontEnd Dev,27,crm_sync
+VP of Sales,26,linkedin_import
+Analista Financiero,25,manual_entry
+Database Administrator,24,linkedin_import
+Ingénieur Logiciel,23,manual_entry
+Machine Learning Engineer,22,linkedin_import
+Gerente de Cuentas,21,manual_entry
+Senior QA,20,crm_sync
+UI/UX Designer,19,linkedin_import
+Tech Lead,18,crm_sync
+Infrastructure Engineer,17,linkedin_import
+Content Marketing Manager,16,manual_entry
+Directeur Marketing,15,manual_entry
+Analista de Negocio,14,manual_entry
+Software Eng.,13,crm_sync
+Site Reliability Engineer,12,linkedin_import
+Release Manager,11,crm_sync
+Wissenschaftlicher Mitarbeiter,10,manual_entry
+Produktmanager,9,manual_entry
+Head of Engineering,8,linkedin_import
+Responsable RH,7,manual_entry
+DBA,6,crm_sync
+VP Sales,5,crm_sync
+front-end developer,4,crm_sync
+SENIOR SOFTWARE ENGINEER,3,crm_sync
+back end developer,2,crm_sync
+sr. soft. eng.,1,crm_sync
+Architecte Cloud,1,manual_entry
+Datenwissenschaftler,1,manual_entry
+Responsable de Produit,1,manual_entry
+Projektleiter,1,manual_entry
+SE,1,crm_sync
+PM,1,crm_sync
+sviluppatore senior,1,manual_entry
+analista dati,1,manual_entry
+chef de projet,1,manual_entry
+Quality Assurance Engineer,1,linkedin_import
+MLOps Engineer,1,linkedin_import
+Platform Engineer,1,linkedin_import
+swe,1,crm_sync
+software engineering,1,crm_sync
+dev,1,crm_sync
+SRE,1,crm_sync
+Marketing Mgr,1,crm_sync
+Sales Rep,1,crm_sync
+Acct Manager,1,crm_sync
+biz analyst,1,crm_sync
+Ing. de Software,1,manual_entry
+Ingeniero/a de Software,1,manual_entry
+Sr. Financial Analyst,1,crm_sync
+Jr. Data Analyst,1,crm_sync
+Data Analytics,1,crm_sync
+Head of Product,1,linkedin_import
+Director of Engineering,1,linkedin_import
+Directeur Technique,1,manual_entry
+VP Engineering,1,linkedin_import
+Responsable Ingeniería,1,manual_entry
+Chief Product Officer,1,linkedin_import
+CPO,1,crm_sync
+design lead,1,crm_sync
+UX/UI designer,1,crm_sync
+Diseñador de Interfaces,1,manual_entry
+Konzeptdesigner,1,manual_entry
+Cloud Infrastructure Engineer,1,linkedin_import
+Arquitecto de Soluciones,1,manual_entry
+Lösungsarchitekt,1,manual_entry
+Talent Acquisition,1,crm_sync
+Recruiter,1,linkedin_import
+Reclutador/a,1,manual_entry
+People Operations,1,linkedin_import
+HRBP,1,crm_sync
+Customer Success Manager,1,linkedin_import
+Responsable de Éxito del Cliente,1,manual_entry
+CSM,1,crm_sync
+Growth Manager,1,linkedin_import
+Responsable de Crecimiento,1,manual_entry
+Wachstumsmanager,1,manual_entry
+Jefe de Ventas,1,manual_entry
+Vertriebsleiter,1,manual_entry
+Directeur Commercial,1,manual_entry
+Sales Director,1,linkedin_import
+Security Engineer,1,linkedin_import
+Ingeniero de Seguridad,1,manual_entry
+Sicherheitsingenieur,1,manual_entry
+Mobile Developer,1,linkedin_import
+Desarrollador Móvil,1,manual_entry
+iOS Developer,1,linkedin_import
+Android Developer,1,linkedin_import
+Agile Coach,1,linkedin_import
+Program Manager,1,linkedin_import
+Director de Programa,1,manual_entry
+Programmleiter,1,manual_entry
+Chief Financial Officer,1,linkedin_import
+CFO,1,crm_sync
+Directeur Financier,1,manual_entry
+Controller,1,linkedin_import
+Contrôleur de Gestion,1,manual_entry
+Tesorero,1,manual_entry
+Operations Manager,1,linkedin_import
+Gerente de Operaciones,1,manual_entry
+Betriebsleiter,1,manual_entry
+Responsable Opérations,1,manual_entry
+Supply Chain Manager,1,linkedin_import
+Responsable de Cadena de Suministro,1,manual_entry
+Procurement Specialist,1,linkedin_import
+Especialista en Compras,1,manual_entry
+Legal Counsel,1,linkedin_import
+Asesor Legal,1,manual_entry
+Compliance Officer,1,linkedin_import
+Responsable de Cumplimiento,1,manual_entry
+Datenschutzbeauftragter,1,manual_entry
+Technical Writer,1,linkedin_import
+Redactor Técnico,1,manual_entry
+Community Manager,1,linkedin_import
+Social Media Manager,1,linkedin_import
+Responsable de Redes Sociales,1,manual_entry
+Brand Manager,1,linkedin_import
+Responsable de Marca,1,manual_entry
+SEO Specialist,1,linkedin_import
+Especialista SEO,1,manual_entry
+Performance Marketing,1,crm_sync
+Paid Media Specialist,1,linkedin_import
+CRM Manager,1,linkedin_import
+Responsable CRM,1,manual_entry
+Administrateur Base de Données,1,manual_entry
+Datenbankadministrator,1,manual_entry
+Administrador de Base de Datos,1,manual_entry
+AI Engineer,1,linkedin_import
+Ingeniero de IA,1,manual_entry
+NLP Engineer,1,linkedin_import
+Research Scientist,1,linkedin_import
+Científico de Investigación,1,manual_entry
+Chercheur Scientifique,1,manual_entry
+Forschungswissenschaftler,1,manual_entry

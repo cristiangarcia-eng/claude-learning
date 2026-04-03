@@ -131,6 +131,9 @@ Take the self-assessment or pick your level:
 | 8 | [Subagents](04-subagents/) | Intermediate+ | 1.5 hours |
 | 9 | [Advanced Features](09-advanced-features/) | Advanced | 2-3 hours |
 | 10 | [Plugins](07-plugins/) | Advanced | 2 hours |
+| 11 | [Hands-On Exercises](11-exercises/) | All levels | 6+ hours |
+
+> **New:** [11 hands-on exercises](11-exercises/) with real data files (CSVs, JSONs, screenshots). Practice everything you've learned — no coding required. Designed for **any role**: sales, finance, HR, ops, product, marketing.
 
 **[Complete Learning Roadmap ->](LEARNING-ROADMAP.md)**
 
@@ -705,6 +708,19 @@ Claude:
 │   ├── planning-mode-examples.md
 │   └── README.md
 ├── 10-cli/
+│   └── README.md
+├── 11-exercises/
+│   ├── exercise-01-context-engineering/
+│   ├── exercise-02-messy-spreadsheet/
+│   ├── exercise-03-research-landscape/
+│   ├── exercise-04-taxonomy-from-chaos/
+│   ├── exercise-05-conversation-analysis/
+│   ├── exercise-06-evaluate-ai-output/
+│   ├── exercise-07-screenshots-to-spec/
+│   ├── exercise-08-prioritize-from-chaos/
+│   ├── exercise-09-folder-audit/
+│   ├── exercise-10-end-to-end-pipeline/
+│   ├── exercise-11-connect-systems/
 │   └── README.md
 └── README.md (this file)
 ```

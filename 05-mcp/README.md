@@ -133,6 +133,12 @@ For personal tools, the default is fine. For team-wide tools, ask your team lead
 | Tool not responding | Type `/mcp` to check connection status |
 | "Connection timeout" | Check your internet connection and try again |
 
+## Practice Exercise
+
+> **[Exercise 11: Connect Systems](../11-exercises/exercise-11-connect-systems/)** — Set up a real MCP server (filesystem, GitHub, or database) and build a cross-system workflow. You will practice MCP configuration, connection scopes, and credential management.
+>
+> **Time:** 30 min | **Setup:** Choose from filesystem (no API key), GitHub, or database
+
 ## Additional Resources
 
 - [Official MCP Documentation](https://code.claude.com/docs/en/mcp)

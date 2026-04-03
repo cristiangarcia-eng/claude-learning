@@ -1,0 +1,51 @@
+id,title,description,submitted_by,date,priority,status,department
+1,New request,Compartir dashboards entre equipos,Maria Garcia,15/03/2025,alta,Pendiente,Operations
+2,Need CRM access,,Thomas Mueller,2025-03-15,high,open,Sales
+3,Untitled,Fix the login page timeout issue,Sarah Chen,March 16 2025,high,In Progress,Engineering
+4,New request,Compartir dashboards entre equipos,Maria Garcia,15/03/2025,alta,pendiente,Operations
+5,Update pricing,Change Q2 pricing for enterprise tier,James Wilson,2025-03-17,medium,done,Sales
+6,Solicitud nueva,Necesitamos automatizar el reporte mensual de ventas,Carlos Lopez,17/03/2025,media,En proceso,Finance
+7,New request,Add SSO for the marketing team,Lisa Park,March 18,high,open,IT
+8,Budget approval,Aprobar presupuesto para nueva herramienta de analytics,Ana Torres,18/03/2025,alta,Pendiente,Finance
+9,Fix thing,The export button doesn't work on Safari,David Kim,2025-03-19,high,IN PROGRESS,Engineering
+10,Untitled,,Emma Brown,19-03-2025,low,Open,HR
+11,Hire more people,We need 3 more engineers for the platform team,Emma Brown,19/03/2025,high,open,HR
+12,New request,Integrar el CRM con el sistema de facturación,Carlos Lopez,2025-03-20,high,abierto,Sales
+13,Update pricing,Change Q2 pricing for enterprise tier,James Wilson,17/03/2025,medium,Done,Sales
+14,Laptop replacement,My laptop is 4 years old and crashes daily,Thomas Mueller,March 20 2025,medium,Pendiente,IT
+15,Solicitud nueva,Crear un dashboard para métricas de retención de clientes,Ana Torres,20/03/2025,media,pendiente,Product
+16,New request,,Lisa Park,2025-03-21,medium,open,Marketing
+17,Onboarding docs,Los documentos de onboarding están desactualizados y faltan secciones,Maria Garcia,21/03/2025,baja,pendiente,HR
+18,server issue,Production server response time increased 40% this week,David Kim,2025-03-21,Critical,in progress,Engineering
+19,Untitled,Need access to the analytics dashboard,James Wilson,March 22 2025,low,open,Sales
+20,New request,Actualizar la política de trabajo remoto,Emma Brown,22/03/2025,baja,abierto,HR
+21,Cancel subscription,Cancel the unused Figma licenses — we have 20 seats but only use 8,Lisa Park,2025-03-22,medium,done,Finance
+22,URGENT - fix now,Customer data export failing for accounts with special characters,Sarah Chen,22/03/2025,Critical,in progress,Engineering
+23,Solicitud nueva,Necesitamos un proceso formal para aprobar gastos mayores a 5000€,Carlos Lopez,23/03/2025,alta,pendiente,Finance
+24,New request,Set up automated weekly email digest for the sales team,Thomas Mueller,March 23 2025,medium,open,Sales
+25,Untitled,Untitled,Ana Torres,2025-03-24,,pending,
+26,Fix thing,Safari export bug - same as ticket #9,David Kim,24/03/2025,high,In Progress,Engineering
+27,Training request,Organizar formación sobre la nueva herramienta de BI para todo el equipo,Maria Garcia,24/03/2025,media,pendiente,Operations
+28,New request,Add dark mode to the internal portal,James Wilson,2025-03-25,low,open,Engineering
+29,Solicitud nueva,Mejorar el proceso de aprobación de vacaciones — actualmente tarda 2 semanas,Emma Brown,25/03/2025,media,abierto,HR
+30,Update docs,Update API documentation with new endpoints from v2.3 release,Sarah Chen,March 25 2025,medium,in progress,Engineering
+31,New request,,Carlos Lopez,26/03/2025,low,pendiente,Finance
+32,Office supplies,Necesitamos sillas ergonómicas para la oficina de Barcelona,Ana Torres,2025-03-26,baja,pendiente,Operations
+33,New request,Create template for monthly board report,Lisa Park,26/03/2025,medium,open,Finance
+34,Bug fix,Login timeout — same issue as #3 but happening on mobile too,David Kim,2025-03-27,high,open,Engineering
+35,Untitled,Reorganize the shared Google Drive — files are impossible to find,Thomas Mueller,March 27 2025,low,open,Operations
+36,Solicitud nueva,Implementar un sistema de feedback 360 para evaluaciones trimestrales,Maria Garcia,27/03/2025,media,pendiente,HR
+37,New request,Cambiar el logo en todas las presentaciones corporativas,James Wilson,28/03/2025,baja,abierto,Marketing
+38,Vendor review,Revisar y comparar 3 proveedores de cloud para migración,Carlos Lopez,2025-03-28,alta,en proceso,IT
+39,New request,Add two-factor authentication to admin panel,Sarah Chen,March 28 2025,Critical,open,Engineering
+40,Cancel subscription,Cancel Figma — duplicate of #21,Lisa Park,28/03/2025,medium,Completado,Finance
+41,Solicitud nueva,Necesitamos un canal de Slack dedicado para incidencias de producción,David Kim,29/03/2025,media,abierto,Engineering
+42,Untitled,,Emma Brown,2025-03-29,,,
+43,New request,Preparar informe de satisfacción del cliente Q1,Ana Torres,29/03/2025,alta,pendiente,Product
+44,Data migration,Migrate legacy customer data from old CRM to new system,Thomas Mueller,March 30 2025,high,in progress,IT
+45,New request,Automatizar la generación de facturas para clientes recurrentes,Maria Garcia,30/03/2025,alta,pendiente,Finance
+46,Solicitud nueva,Evaluar herramientas de project management — Jira vs Linear vs Asana,Carlos Lopez,2025-03-31,media,abierto,Operations
+47,URGENT,Production database running at 95% capacity,David Kim,31/03/2025,Critical,IN PROGRESS,Engineering
+48,New request,Diseñar nueva landing page para la campaña de Q2,Lisa Park,2025-03-31,media,pendiente,Marketing
+49,Untitled,Set up recurring 1:1 templates in our calendar tool,James Wilson,March 31 2025,low,open,HR
+50,Solicitud nueva,Crear un playbook de ventas para el mercado DACH,Ana Torres,31/03/2025,alta,abierto,Sales

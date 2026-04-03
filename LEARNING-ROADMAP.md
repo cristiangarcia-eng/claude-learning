@@ -694,6 +694,30 @@ Use these checklists to track your progress by level. Run `/self-assessment` any
 
 ---
 
+## 🏋️ Practice: Hands-On Exercises
+
+Once you've learned the features, test your skills with real-world tasks. The [11-exercises/](11-exercises/) module has 11 exercises with real data files — no coding experience required.
+
+| # | Exercise | Level | What You'll Practice |
+|---|----------|-------|---------------------|
+| 1 | [Context Engineering](11-exercises/exercise-01-context-engineering/) | Beginner | Setting up CLAUDE.md for any project |
+| 2 | [Tame a Messy Spreadsheet](11-exercises/exercise-02-messy-spreadsheet/) | Beginner | Claude generating and running Python scripts |
+| 3 | [Research & Structure](11-exercises/exercise-03-research-landscape/) | Beginner | Research + structured markdown output |
+| 4 | [Build a Taxonomy](11-exercises/exercise-04-taxonomy-from-chaos/) | Intermediate | Pattern recognition on 200 messy entries |
+| 5 | [Conversation Analysis](11-exercises/exercise-05-conversation-analysis/) | Intermediate | Data analysis on 100 conversations (JSON) |
+| 6 | [Evaluate AI Output](11-exercises/exercise-06-evaluate-ai-output/) | Intermediate | Systematic QA of 20 AI-generated texts |
+| 7 | [Screenshots to Spec](11-exercises/exercise-07-screenshots-to-spec/) | Intermediate | Multimodal: images to structured documents |
+| 8 | [Prioritize from Chaos](11-exercises/exercise-08-prioritize-from-chaos/) | Intermediate | Structuring 60 unstructured ideas |
+| 9 | [Folder Audit](11-exercises/exercise-09-folder-audit/) | Advanced | Navigating and synthesizing large info |
+| 10 | [Content Pipeline](11-exercises/exercise-10-end-to-end-pipeline/) | Advanced | Multi-step: brief → research → document → summary |
+| 11 | [Connect Systems](11-exercises/exercise-11-connect-systems/) | Advanced | MCP integrations with external tools |
+
+**Who are these for?** Everyone — sales, finance, HR, ops, product, marketing, engineering. Each exercise teaches a Claude Code skill through a universal business task.
+
+> **Tip**: Start with exercises 1-3 after Level 1. Try 4-8 after Level 2. Tackle 9-11 after Level 3.
+
+---
+
 ## 🎯 What's Next After Completion?
 
 Once you've completed all milestones:

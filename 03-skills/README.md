@@ -184,6 +184,12 @@ Flag items with no owner as "TBD". Flag missing due dates. Keep factual.
 
 **Skill triggers when I do not want it to**: Add `disable-model-invocation: true` to the header. Then only you can trigger it with `/skill-name`.
 
+## Practice Exercise
+
+> **[Exercise 3: Research & Structure a Landscape](../11-exercises/exercise-03-research-landscape/)** — Do a competitive analysis, then turn your research process into an auto-triggered skill. You will practice creating SKILL.md files with keyword-rich descriptions, templates, and auto-invocation.
+>
+> **Time:** 30 min | **Data:** Example output showing what good research looks like
+
 ## Related Guides
 
 - [Slash Commands](../01-slash-commands/) -- Built-in shortcuts

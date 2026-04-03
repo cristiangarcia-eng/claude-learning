@@ -293,6 +293,12 @@ Checkpoints let you go back — but how do you know *when* you should? As your c
 - **[Hooks](../06-hooks/)** - Event-driven automation
 - **[Plugins](../07-plugins/)** - Bundled extension packages
 
+## Practice Exercise
+
+> **[Exercise 4: Build a Taxonomy from Chaos](../11-exercises/exercise-04-taxonomy-from-chaos/)** — Try 3 different taxonomy approaches on 200 messy entries, use checkpoints to navigate between them, compare results, and keep the best one. You will practice creating checkpoints, rewinding, and comparing approaches safely.
+>
+> **Time:** 40 min | **Data:** 200-row CSV of messy job titles in 5+ languages
+
 ## Additional Resources
 
 - [Official Checkpointing Documentation](https://code.claude.com/docs/en/checkpointing)

@@ -1,0 +1,16 @@
+customer_id,name,country,segment,signup_date,status
+C001,TechFlow GmbH,Germany,Enterprise,2024-03-15,active
+C002,Solaris SL,Spain,SMB,2024-05-22,active
+C003,Nordic Innovations,Sweden,Enterprise,2024-01-10,active
+C004,Fintech Hub Ltd,UK,Mid-Market,2024-07-01,churned
+C005,DataWave srl,Italy,SMB,2024-02-28,active
+C006,Alpine Solutions AG,Switzerland,Enterprise,2024-04-12,active
+C007,Porto Digital Lda,Portugal,SMB,2024-08-19,active
+C008,BrightPath BV,Netherlands,Mid-Market,2024-06-05,active
+C009,Lumiere SARL,France,Enterprise,2024-01-30,active
+C010,Zenith Systems,Ireland,Mid-Market,2024-09-14,active
+C011,Orbit Analytics,Germany,SMB,2024-11-01,active
+C012,Summit Partners,Spain,Enterprise,2024-03-08,churned
+C013,FlowState AB,Sweden,SMB,2024-10-20,active
+C014,Catalyst Ventures,UK,Mid-Market,2024-04-25,active
+C015,Novo Dynamics,Portugal,SMB,2024-12-01,active

@@ -102,6 +102,12 @@ Switch during a session with `Option+P` (Mac) or `Alt+P` (Windows/Linux).
 
 ---
 
+## Practice Exercise
+
+> **[Exercise 9: Folder Audit](../11-exercises/exercise-09-folder-audit/)** — Use `claude -p`, piping, and JSON output to build a reusable folder audit script. Practice print mode, piping content into Claude, and scripting with structured output.
+>
+> **Time:** 30 min | **Data:** Audit the exercises folder itself (meta!)
+
 ## Additional Resources
 
 - [Official CLI Reference](https://code.claude.com/docs/en/cli-reference)

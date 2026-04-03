@@ -1151,6 +1151,12 @@ For the most up-to-date information, refer to the official Claude Code documenta
 7. Local Project Memory
 8. Auto Memory (lowest precedence)
 
+## Practice Exercise
+
+> **[Exercise 1: Context Engineering](../11-exercises/exercise-01-context-engineering/)** — Create a CLAUDE.md for a sample project and experience the before/after difference. You will practice project memory, user memory, and the memory hierarchy.
+>
+> **Time:** 20 min | **Data:** A full sample project with CSVs, reports, and scripts
+
 ## Related Concepts Links
 
 ### Integration Points

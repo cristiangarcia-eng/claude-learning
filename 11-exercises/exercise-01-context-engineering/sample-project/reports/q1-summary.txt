@@ -1,0 +1,30 @@
+Meridian Analytics — Q1 2025 Revenue Summary
+=============================================
+
+Generated: 2025-04-01
+Period: January - March 2025
+
+Total Revenue: €126,060
+  Subscriptions: €103,410
+  Add-ons: €22,100
+  Refunds: -€17,200
+
+Active Customers: 13
+Churned: 2 (C004 - Fintech Hub, C012 - Summit Partners)
+
+Top Segments:
+  Enterprise: €84,400 (67%)
+  Mid-Market: €17,000 (13%)
+  SMB: €24,660 (20%)
+
+Top Countries:
+  Germany: €19,560
+  France: €30,000
+  Sweden: €18,720
+  Switzerland: €17,000
+
+Notes:
+- Two refunds processed (C004 churned mid-quarter, C012 churned at renewal)
+- Consulting add-ons growing — C001 bought twice
+- Monthly subscription base is stable but average ticket is low
+- Need to review pricing for SMB segment

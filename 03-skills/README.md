@@ -162,6 +162,23 @@ Action Items (task / owner / due date / priority as a table), Discussion
 Summary, and Parking Lot (deferred items).
 Flag items with no owner as "TBD". Flag missing due dates. Keep factual.
 
+## Skills Marketplace
+
+You don't have to create every skill from scratch. There's a community marketplace with ready-to-use skills you can install in one click:
+
+**[skillsmp.com](https://skillsmp.com/)**
+
+Browse the most popular skills, sorted by likes, and install the ones that fit your workflow. It's like an app store for Claude Code capabilities.
+
+### How to install a skill from the marketplace
+
+1. Go to [skillsmp.com](https://skillsmp.com/)
+2. Browse or search for a skill
+3. Follow the install instructions (usually one command)
+4. The skill is ready to use immediately
+
+> **Try it now**: Visit the marketplace and install one of the top-liked skills. It's a great way to see what's possible before creating your own.
+
 ## Managing Your Skills
 
 **See what is available**: Type `/` in Claude Code and browse, or ask "What skills are available?" **Edit a skill**: Open the SKILL.md file in any text editor and restart Claude Code. **Share with your team**: Put skills in your project's `.claude/skills/` folder and commit them to version control.

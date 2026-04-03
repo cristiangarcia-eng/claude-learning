@@ -1,197 +1,95 @@
-# Subagents -- Asistentes de IA Especializados
+# Subagentes — Cuando Claude Necesita Ayuda
 
-## ¿Qué son los Subagents?
+## Skills vs Subagentes: ¿cuál es la diferencia?
 
-Los subagents son asistentes de IA especializados a los que Claude puede delegar tareas. Cada subagent tiene un área de enfoque específica, trabaja en su propio espacio separado y devuelve los resultados a la conversación principal.
+Ya conoces los Skills — instrucciones que Claude sigue directamente, como una receta. Los Subagentes son diferentes: en vez de seguir instrucciones él mismo, Claude **lanza un asistente separado** para manejar una tarea específica.
 
-Piensa en ello como tener un equipo de especialistas. En lugar de que una persona haga todo, le entregas tareas especificas al experto adecuado: un investigador profundiza en los datos, un revisor de contenido verifica tu escritura y un analista de competencia escanea el mercado. Cada uno trabaja de forma independiente y reporta los resultados.
+La distinción clave:
 
-## ¿Por qué usar Subagents?
+| | Skill | Subagente |
+|---|---|---|
+| **Qué es** | Instrucciones que Claude sigue | Un asistente separado al que Claude delega |
+| **Analogía** | Le das una receta a un colega | Le delegas una tarea a un especialista |
+| **Contexto** | Trabaja en tu conversación | Trabaja en su propio espacio separado |
+| **Ideal para** | Formato, plantillas, output consistente | Investigación, análisis, tareas grandes que requieren foco |
+| **Ejemplo** | "Formatea estas notas como informe" | "Investiga todo sobre la estrategia DTC de Nike y vuelve con un briefing" |
 
-| Beneficio | Qué significa para ti |
-|-----------|----------------------|
-| **Experiencia especializada** | Cada subagent está afinado para un tipo de trabajo específico |
-| **Mantiene tu conversación limpia** | La investigacion compleja sucede en segundo plano, sin saturar tu chat |
-| **Trabajo en paralelo** | Multiples subagents pueden trabajar en diferentes partes de un proyecto al mismo tiempo |
-| **Reutilizable** | Configura un subagent una vez, usalo en muchos proyectos |
+### ¿Cuándo usar cuál?
 
-## Cómo funcionan los Subagents
+**Usa un Skill cuando:**
+- Quieres que Claude siga un formato o plantilla específica
+- La tarea es directa y ocurre en la conversación actual
+- Quieres output consistente cada vez (notas de reunión, voz de marca, etc.)
 
-1. Le pides algo a Claude (o Claude reconoce la necesidad)
-2. Claude delega la tarea al subagent adecuado
-3. El subagent trabaja en su propio contexto, separado de tu conversación
-4. El subagent devuelve sus hallazgos a Claude
+**Usa un Subagente cuando:**
+- La tarea requiere investigación o análisis profundo
+- Quieres que se haga en segundo plano mientras sigues trabajando
+- La tarea es lo suficientemente compleja como para desordenar tu conversación principal
+- Quieres una perspectiva de especialista (analista de competencia, revisor de contenido, etc.)
+
+Piénsalo así: un Skill es como una receta que Claude sigue. Un Subagente es como llamar a un especialista que se va, hace el trabajo, y vuelve con un informe.
+
+## Cómo funcionan los subagentes
+
+1. Le pides a Claude algo complejo
+2. Claude delega la tarea a un subagente
+3. El subagente trabaja en su propio espacio — no desordenará tu conversación
+4. El subagente vuelve con sus hallazgos
 5. Claude te presenta los resultados
 
-No necesitas administrar este proceso. Claude maneja la delegacion automaticamente basandose en las descripciones de subagents que hayas configurado.
+No necesitas gestionar esto. Claude maneja la delegación automáticamente.
 
-## Donde viven los archivos de Subagents
+## Pruébalo: crea un analista de competencia
 
-| Ubicación | Alcance |
-|-----------|---------|
-| `.claude/agents/` en tu proyecto | Disponible para todo tu equipo |
-| `~/.claude/agents/` en tu carpeta personal | Disponible solo para ti, en todos los proyectos |
-
-## Creando un Subagent
-
-Un subagent es un solo archivo markdown con un encabezado y una descripción del rol del agente.
-
-### Formato básico
+Vamos a crear un subagente para tu proyecto de Nike. En Claude Code, pide:
 
 ```
----
-name: your-agent-name
-description: What this agent does and when to use it
----
-
-Your agent's instructions go here. Describe its role, what it should
-focus on, and how it should present its findings.
+Crea un subagente llamado "competitor-analyst" que analice
+competidores a partir de los documentos disponibles. Debe perfilar
+cada competidor (qué hacen, fortalezas, debilidades, precios),
+mapear el panorama, y recomendar ángulos de posicionamiento.
+Guárdalo en .claude/agents/
 ```
 
-### Campos requeridos
+Claude creará el archivo por ti. Ahora prueba usarlo:
 
-| Campo | Qué hace |
-|-------|---------|
-| `name` | El identificador del agente (minusculas, solo guiones) |
-| `description` | Le dice a Claude cuando usar este agente. Incluye palabras clave que coincidan con solicitudes naturales |
+> `Analiza Adidas y New Balance como competidores basándote en nuestros archivos. Dame una tabla comparativa y recomendaciones de posicionamiento.`
 
-### Campos opcionales
+Claude delegará esto a tu subagente competitor-analyst, que trabajará los archivos metódicamente y volverá con resultados estructurados.
 
-| Campo | Qué hace |
-|-------|---------|
-| `model` | Que modelo de Claude usar: `haiku` (rápido), `sonnet` (balanceado), `opus` (exhaustivo) |
-| `memory` | Establecer en `user` o `project` para que el agente recuerde cosas entre sesiones |
-| `background` | Establecer en `true` para ejecutar el agente en segundo plano mientras sigues trabajando |
+### Ejecútalo en segundo plano
 
-## Ejemplos prácticos de Subagents
+Para tareas más largas, puedes enviar el subagente a trabajar en segundo plano mientras sigues chateando con Claude. Presiona **Ctrl+B** mientras está trabajando, y Claude te notificará cuando termine.
 
-Aqui hay cinco agentes adecuados para roles no tecnicos. Cada uno muestra el contenido completo del archivo.
+## Ideas prácticas de subagentes
 
-### Analista de investigacion (`.claude/agents/research-analyst.md`)
+| Subagente | Qué hace | Cuándo usarlo |
+|----------|----------|---------------|
+| **research-analyst** | Investigación profunda sobre cualquier tema, produce informes estructurados | "Investiga tendencias de trabajo remoto para nuestra planificación de Q3" |
+| **content-reviewer** | Revisa documentos por claridad, tono y precisión | "Revisa este post del blog antes de publicar" |
+| **sales-proposal** | Estructura propuestas con enfoque en el cliente | "Ayúdame a escribir una propuesta para la cuenta de Nike" |
+| **weekly-reporter** | Resume la actividad del proyecto en un informe de estado | "¿Qué pasó en este proyecto esta semana?" |
 
-```
----
-name: research-analyst
-description: Conduct in-depth research and produce structured reports. Use when asked to research a topic, investigate a question, or prepare a briefing.
----
+## Crear subagentes
 
-You are a research analyst. Search available files and documents,
-then present findings as: Executive Summary (3-5 sentences),
-Key Findings (numbered with evidence), Analysis, Recommendations,
-and Sources/Gaps. Flag assumptions clearly.
-```
+Hay tres formas:
 
-### Revisor de contenido (`.claude/agents/content-reviewer.md`)
+1. **Pídele a Claude** (la más fácil): "Crea un subagente llamado research-analyst que..."
+2. **Usa `/agents`**: Menú interactivo para crear, ver, editar y eliminar subagentes
+3. **Crea el archivo manualmente**: Agrega un archivo `.md` a `.claude/agents/`
 
-```
----
-name: content-reviewer
-description: Review documents for quality, clarity, and consistency. Use when asked to review, proofread, or provide feedback on written materials.
----
+### Dónde viven
 
-Evaluate content on four dimensions: Clarity (main message clear,
-jargon-free), Structure (logical flow, good headings), Accuracy
-(facts consistent, claims supported), Impact (achieves purpose,
-clear call to action). Rate each: Strong / Adequate / Needs Work.
-```
-
-### Retroalimentación de diseno (`.claude/agents/design-feedback.md`)
-
-```
----
-name: design-feedback
-description: Provide structured feedback on designs, mockups, and wireframes. Use when the user shares a design or asks for design critique.
----
-
-Evaluate designs on: First Impressions, Usability (clear purpose,
-findable elements, visual hierarchy), Consistency (colors, fonts,
-spacing, brand alignment), Accessibility (readable text, target
-sizes). Prioritize as Must Fix / Should Improve / Nice to Have.
-Be specific -- say what to change and why.
-```
-
-### Propuesta de ventas (`.claude/agents/sales-proposal.md`)
-
-```
----
-name: sales-proposal
-description: Help create and improve sales proposals and pitch materials. Use when working on proposals, pitch outlines, or client-facing sales documents.
----
-
-Structure new proposals as: Client situation, Proposed solution,
-Proof points, Investment (framed as value), Timeline, Next steps.
-For reviews, check: leads with client problem (not product),
-clear value prop, quantified benefits, justified pricing,
-specific ask. Use "you/your" more than "we/our".
-```
-
-### Analisis de competencia (`.claude/agents/competitor-analysis.md`)
-
-```
----
-name: competitor-analysis
-description: Analyze competitors and market positioning from available documents. Use when asked about competitors, market landscape, or comparative analysis.
----
-
-Review available documents for competitor mentions. For each
-competitor, profile: what they do, target audience, strengths,
-weaknesses, pricing model. Then map the competitive landscape:
-overlaps, differentiators, market gaps. Produce a comparison
-table and recommend positioning angles. Flag assumptions.
-```
-
-## Usando Subagents
-
-**Automático**: Claude delega al subagent adecuado cuando tu solicitud coincide con su descripción. Simplemente pregunta de forma natural -- "Investiga las tendencias en herramientas de trabajo remoto para la planificacion del Q3" -- y Claude usa el agente `research-analyst` si existe uno.
-
-**Explicito**: Pide un agente específico por nombre: "Usa el agente content-reviewer para revisar este borrador de blog."
-
-**En segundo plano**: Establece `background: true` para que el agente trabaje mientras continuas tu conversación. Presiona `Ctrl+B` para enviar un agente en ejecucion al segundo plano.
-
-**Memoria persistente**: Establece `memory: user` o `memory: project` para que un agente recuerde hallazgos entre sesiones.
-
-## Configurando Subagents
-
-Hay tres maneras de crear un subagent:
-
-1. **Pidele a Claude** (lo más fácil): "Create a new subagent called weekly-reporter that summarizes project activity. Save it to .claude/agents/"
-2. **Usa /agents**: Escribe `/agents` para un menú interactivo para crear, ver, editar y eliminar subagents
-3. **Crea el archivo manualmente**: Agrega un archivo `.md` a `.claude/agents/` (equipo) o `~/.claude/agents/` (personal)
+| Ubicación | Quién puede usarlo |
+|----------|---------------|
+| `.claude/agents/` en tu proyecto | Todo tu equipo |
+| `~/.claude/agents/` en tu carpeta personal | Solo tú, en todos los proyectos |
 
 ## Consejos
 
-| Hacer | Evitar |
-|-------|--------|
-| Dale a cada agente un enfoque claro y unico | Hacer un agente que haga todo |
-| Escribe descripciones detalladas con palabras clave | Descripciones vagas que Claude no puede asociar a solicitudes |
-| Comienza con 2-3 agentes y agrega más según sea necesario | Crear una docena de agentes antes de probar alguno |
-| Usa `memory` para agentes que construyen conocimiento con el tiempo | Esperar que los agentes recuerden cosas sin configurar `memory` |
-| Comparte agentes útiles con tu equipo via la carpeta del proyecto | Mantener agentes útiles solo en tu carpeta personal |
+- **Empieza con un subagente** y ve cómo funciona antes de crear más
+- **Dale a cada agente un solo foco** — un investigador, un revisor, un redactor de propuestas. No uno que haga todo.
+- **Usa el modo de segundo plano** para tareas pesadas y sigue trabajando
+- **Skills para formato, subagentes para pensar** — si necesitas aplicar una plantilla, usa un Skill. Si necesitas un análisis, usa un Subagente.
 
-## Solución de problemas
-
-**Claude no usa mi agente**: Verifica que el campo `description` contenga palabras clave que coincidan con como pides ayuda. Intenta solicitar el agente por nombre para verificar que funciona.
-
-**El agente no aparece**: Confirma que el archivo está en `.claude/agents/` (no en `.claude/skills/`). Ejecuta `/agents` para ver todos los agentes disponibles.
-
-**El agente da resultados inconsistentes**: Agrega instrucciones más especificas al system prompt. Incluye ejemplos del formato de salida que esperas.
-
-## Ejercicio practico
-
-> **[Ejercicio 5: Extraer Insights de Conversaciones](../11-exercises/exercise-05-conversation-analysis/)** — Analiza 100 conversaciones, luego crea un subagent reutilizable `data-analyst`. Practicaras archivos de agentes, restricciones de herramientas, prioridades y formatos de salida estructurados.
->
-> **Tiempo:** 45 min | **Datos:** 100 conversaciones en JSON con patrones por descubrir
-
-## Guias relacionadas
-
-- [Slash Commands](../01-slash-commands/) -- Atajos incorporados
-- [Skills](../03-skills/README.es.md) -- Instrucciones reutilizables de tareas
-- [Memoria](../02-memory/README.es.md) -- Contexto persistente con CLAUDE.md
-
-## Recursos adicionales
-
-- [Documentación oficial de Subagents](https://code.claude.com/docs/en/sub-agents)
-
----
-
-*Parte de la serie de guias [Claude How To](../)*
+**Siguiente paso**: [Controla cómo Claude piensa y trabaja con Planificación y Modo Auto →](../11-planning-mode/README.es.md)

@@ -2,16 +2,14 @@
 
 ## ¿Por qué VS Code?
 
-Para usar Claude Code, necesitas una terminal. *Podrías* abrir la terminal directamente (como vimos en [Conceptos Básicos de la Terminal](../00-terminal-basics/README.es.md)), pero hay una opción mucho mejor: **usarla desde dentro de un editor de código**.
-
-Visual Studio Code (VS Code) es un **editor gratuito** hecho por Microsoft que combina:
+Visual Studio Code (VS Code) es donde harás todo en este curso. Es un **editor gratuito** hecho por Microsoft que combina:
 - Un **explorador de archivos** para ver todos los archivos de tu proyecto
 - Un **editor de texto** para ver y editar cualquier archivo
 - Una **terminal integrada** para ejecutar Claude Code
 
-Todo en una ventana. En lugar de cambiar entre aplicaciones, tienes todo junto — puedes ver los archivos que Claude está cambiando mientras hablas con el.
+Todo en una ventana. En lugar de cambiar entre aplicaciones, tienes todo junto — puedes ver los archivos que Claude está cambiando mientras hablas con él.
 
-> **Esta es la forma recomendada de usar Claude Code.** La terminal sola funciona, pero VS Code te da el contexto visual que hace todo más fácil de seguir.
+> **Este es tu entorno de trabajo para todo el curso.** Usaremos VS Code para todo — editar archivos, usar la terminal y hablar con Claude.
 
 ## Instalar VS Code
 

@@ -6,31 +6,23 @@ Una terminal (también llamada "línea de comandos" o "shell") es una forma basa
 
 Piensa en ello como enviarle mensajes de texto a tu computadora en vez de tocar aplicaciones.
 
-> No necesitas convertirte en un experto en la terminal. Solo necesitas saber lo suficiente para iniciar Claude Code y navegar a tus archivos.
+> No necesitas convertirte en un experto en la terminal. Solo necesitas 4 comandos para navegar tus archivos.
 
-## Abrir la terminal
+## Abrir la terminal en VS Code
 
-### En Mac
+Ya tienes VS Code instalado de la lección anterior. La terminal está integrada:
 
-1. Presiona **Cmd + Espacio** para abrir Spotlight
-2. Escribe **Terminal**
-3. Presiona **Enter**
+1. Abre **VS Code**
+2. Presiona `` Ctrl+` `` (la tecla de acento grave, junto al número 1)
+3. Un panel de terminal aparece en la parte inferior
 
-Verás una ventana con un cursor parpadeante. Esa es tu terminal.
-
-### En Windows
-
-1. Presiona **Win + R**
-2. Escribe **cmd** o **powershell**
-3. Presiona **Enter**
-
-O busca "Terminal" en el menú Inicio.
+Eso es todo — verás un cursor parpadeante listo para comandos. No necesitas abrir una aplicación separada.
 
 ## Tus primeros comandos
 
-Cuando abres la terminal, estas "dentro" de una carpeta en tu computadora — igual que tener una ventana de Finder o Explorador abierta. Estos son los comandos básicos que necesitas:
+Cuando abres la terminal, estás "dentro" de una carpeta en tu computadora — igual que tener una ventana de Finder o Explorador abierta. Estos son los comandos básicos que necesitas:
 
-### Ver donde estas: `pwd`
+### Ver dónde estás: `pwd`
 
 ```bash
 pwd
@@ -44,7 +36,7 @@ Esto muestra la **carpeta actual** en la que te encuentras. Por ejemplo:
 
 Piensa en ello como "¿Dónde estoy ahora mismo?"
 
-### Ver que hay en está carpeta: `ls`
+### Ver qué hay en esta carpeta: `ls`
 
 ```bash
 ls
@@ -79,10 +71,10 @@ Esto **crea un directorio** (carpeta) llamado `my-project`.
 
 ## Un flujo de trabajo típico
 
-Así se ve una sesión real. Abres la terminal y:
+Así se ve una sesión real. Abre la terminal en VS Code (`` Ctrl+` ``) y prueba:
 
 ```bash
-# Ver donde estas
+# Ver dónde estás
 pwd
 # /Users/maria
 
@@ -90,24 +82,16 @@ pwd
 cd ~/Desktop
 
 # Crear una nueva carpeta para tu proyecto
-mkdir my-first-project
+mkdir mi-primer-proyecto
 
 # Entrar a esa carpeta
-cd my-first-project
+cd mi-primer-proyecto
 
-# ¡Ahora estas listo para iniciar Claude Code!
-claude
+# Ver qué hay dentro (nada todavía — ¡es nueva!)
+ls
 ```
 
-## Errores comunes (y como solucionarlos)
-
-### "command not found"
-
-```
-zsh: command not found: claud
-```
-
-Probablemente tienes un **error de escritura**. Revisa la ortografia. Es `claude`, no `claud`.
+## Errores comunes (y cómo solucionarlos)
 
 ### "No such file or directory"
 
@@ -122,10 +106,10 @@ El nombre de la carpeta está mal. Usa `ls` para ver los nombres reales de las c
 Intenta agregar `sudo` antes del comando (te pedirá tu contraseña):
 
 ```bash
-sudo your-command-here
+sudo tu-comando-aqui
 ```
 
-### Estoy perdido — ¿donde estoy?
+### Estoy perdido — ¿dónde estoy?
 
 Solo escribe `pwd` para ver tu ubicación actual. Siempre puedes volver al inicio con `cd ~`.
 
@@ -138,10 +122,10 @@ Solo escribe `pwd` para ver tu ubicación actual. Siempre puedes volver al inici
 | **Ctrl + C** | Cancela el comando actual |
 | **Ctrl + L** | Limpia la pantalla |
 
-> **Consejo profesional**: Empieza a escribir un nombre de carpeta y presiona **Tab** — la terminal lo completará por ti. ¡No necesitas escribir el nombre completo!
+> **Consejo**: Empieza a escribir un nombre de carpeta y presiona **Tab** — la terminal lo completará por ti. ¡No necesitas escribir el nombre completo!
 
 ## Eso es todo lo que necesitas
 
-En serio — `pwd`, `ls`, `cd` y `mkdir` son los unicos comandos que necesitas para empezar con Claude Code. Una vez que Claude está corriendo, le hablas en español simple, no con comandos de terminal.
+En serio — `pwd`, `ls`, `cd` y `mkdir` son los únicos comandos que necesitarás. Una vez que Claude Code esté corriendo, le hablas en español simple, no con comandos de terminal.
 
-**Siguiente paso**: [Instala Claude Code y comienza tu primera sesión →](../00b-quickstart/README.es.md)
+**Siguiente paso**: [Configura la entrada por voz para trabajar sin escribir →](../00g-voice-input/README.es.md)

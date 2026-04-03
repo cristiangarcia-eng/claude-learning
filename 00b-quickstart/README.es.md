@@ -1,15 +1,15 @@
-# Inicio Rápido: Tu Primera Sesion
+# Configurar Claude Code
 
 ## Lo que necesitas
 
 Antes de comenzar, asegúrate de tener:
 
-- Una terminal abierta (consulta [Conceptos Básicos de la Terminal](../00-terminal-basics/README.es.md) si nunca has usado una)
-- Una [suscripcion a Claude](https://claude.com/pricing) (Pro, Max o Teams)
+- **VS Code abierto** con una carpeta de proyecto (como la carpeta `nike-analysis` de las lecciones anteriores)
+- Una [suscripción a Claude](https://claude.com/pricing) (Pro, Max o Teams)
 
 ## Paso 1: Instalar Claude Code
 
-Abre tu terminal y pega este comando:
+Abre la terminal dentro de VS Code (presiona `` Ctrl+` ``) y pega este comando:
 
 **Mac / Linux:**
 ```bash
@@ -21,126 +21,87 @@ curl -fsSL https://claude.ai/install.sh | bash
 irm https://claude.ai/install.ps1 | iex
 ```
 
-Eso es todo. Se instala automaticamente y se mantiene actualizado.
-
-> **Otras opciones**: Tambien puedes usar la [aplicacion de escritorio](https://claude.com/download), la [extensión de VS Code](https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code), o [Claude Code en la web](https://claude.ai/code) — sin necesidad de terminal.
+Eso es todo. Se instala automáticamente y se mantiene actualizado.
 
 ## Paso 2: Iniciar Claude Code
 
-Navega a cualquier carpeta y escribe:
+En la misma terminal de VS Code, escribe:
 
 ```bash
 claude
 ```
 
-La primera vez, se te pedirá iniciar sesión. Sigue las instrucciones — se abrira tu navegador para autenticarte.
+La primera vez, se te pedirá iniciar sesión. Sigue las instrucciones — se abrirá tu navegador para autenticarte.
 
-Una vez que inicies sesión, verás una pantalla de bienvenida con un cursor esperando tu entrada. ¡Ya estas dentro!
+Una vez que inicies sesión, verás una pantalla de bienvenida con un cursor esperando tu entrada. ¡Ya estás dentro!
 
 ## Paso 3: Haz tu primera pregunta
 
 Solo escribe en español normal. Prueba una de estas:
 
 ```
-¿que hace este proyecto?
+¿qué hace este proyecto?
 ```
 
 ```
-¿que archivos hay en esta carpeta?
+¿qué archivos hay en esta carpeta?
 ```
 
 ```
-explica que tecnologias usa este proyecto
+explica qué tecnologías usa este proyecto
 ```
 
-Claude leera tus archivos y te dará un resumen. No se necesita configuración — simplemente funciona.
+Claude leerá tus archivos y te dará un resumen. No se necesita configuración — simplemente funciona.
 
 > **Le hablas a Claude como a un colega.** Sin sintaxis especial, sin lenguaje de programación. Solo describe lo que quieres.
 
 ## Paso 4: Haz tu primer cambio
 
-Pidele a Claude que haga algo:
+Pídele a Claude que haga algo:
 
 ```
-crea un archivo llamado notes.md con un resumen de este proyecto
+crea un archivo llamado resumen.md con un resumen de este proyecto
 ```
 
 Claude:
-1. Pensara en que escribir
-2. Te mostrara los cambios propuestos
+1. Pensará en qué escribir
+2. Te mostrará los cambios propuestos
 3. **Te pedirá permiso** antes de hacer el cambio
-4. Creara el archivo
+4. Creará el archivo
 
-> **Claude siempre pide permiso antes de cambiar cosas.** Tu mantienes el control. Nada sucede sin tu aprobacion.
+Verás el nuevo archivo aparecer en la barra lateral de VS Code inmediatamente.
 
-## Paso 5: Usa Git con Claude
+> **Claude siempre pide permiso antes de cambiar cosas.** Tú mantienes el control. Nada sucede sin tu aprobación.
 
-Si tu proyecto usa Git (la mayoría lo hace), Claude puede ayudar:
+## Paso 5: Prueba tareas comunes
 
-```
-¿que archivos han cambiado recientemente?
-```
+Estas son cosas que personas no técnicas comúnmente le piden a Claude:
 
-```
-haz commit de mis cambios con un mensaje descriptivo
-```
-
-```
-muestrame los ultimos 5 cambios hechos a este proyecto
-```
-
-¿No sabes que es Git? Es una herramienta que rastrea cada cambio en un proyecto, como "Control de Cambios" en Google Docs pero para todos tus archivos.
-
-## Paso 6: Prueba tareas comunes
-
-Estas son cosas que personas no tecnicas comúnmente le piden a Claude:
-
-### Entender un codebase
+### Entender un proyecto
 ```
 explica este proyecto como si fuera un product manager
 ```
 
 ```
-¿cuales son las funcionalidades principales de esta aplicacion?
-```
-
-```
-dibuja un diagrama de como se conectan las diferentes partes
+¿cuáles son los archivos principales y qué hace cada uno?
 ```
 
 ### Encontrar información
 ```
-¿donde esta definida la pagina de precios?
+¿cuáles son las mayores amenazas de Nike según el análisis?
 ```
 
 ```
-encuentra todo el texto que los usuarios ven en la pagina de checkout
+resume los datos de ventas por región
+```
+
+### Hacer cambios
+```
+agrega una sección sobre la estrategia digital de Nike al análisis competitivo
 ```
 
 ```
-¿que eventos de analytics se estan rastreando?
-```
-
-### Hacer cambios simples
-```
-cambia el nombre de la empresa de "Acme" a "Nova" en todas partes
-```
-
-```
-actualiza el año de copyright a 2026 en el footer
-```
-
-```
-agrega una nueva entrada de FAQ sobre la politica de reembolsos
-```
-
-### Analizar datos
-```
-lee el archivo CSV en /data y resume las metricas clave
-```
-
-```
-¿cuantos usuarios se registraron el mes pasado segun los logs?
+crea un resumen de los ingresos trimestrales listo para gráficos
 ```
 
 ## Comandos esenciales para recordar
@@ -157,8 +118,4 @@ lee el archivo CSV en /data y resume las metricas clave
 
 ## ¿Qué sigue?
 
-Ahora que tuviste tu primera sesión, aprende:
-
-- [Cómo funciona Claude Code](../00c-how-it-works/README.es.md) — entiende que sucede detrás de escena
-- [Mejores practicas](../00d-best-practices/README.es.md) — obtén mejores resultados de tus conversaciones
-- [Flujos de trabajo prácticos](../00e-workflows/README.es.md) — tareas reales para PMs, diseñadores y ventas
+**Siguiente paso**: [Entiende cómo funciona Claude Code detrás de escena →](../00c-how-it-works/README.es.md)

@@ -1,15 +1,15 @@
-# Quickstart: Your First Session
+# Setting Up Claude Code
 
 ## What you need
 
 Before starting, make sure you have:
 
-- A terminal open (see [Terminal Basics](../00-terminal-basics/) if you've never used one)
+- **VS Code open** with a project folder (like the `nike-analysis` folder from the previous lessons)
 - A [Claude subscription](https://claude.com/pricing) (Pro, Max, or Teams)
 
 ## Step 1: Install Claude Code
 
-Open your terminal and paste this command:
+Open the terminal inside VS Code (press `` Ctrl+` ``) and paste this command:
 
 **Mac / Linux:**
 ```bash
@@ -23,11 +23,9 @@ irm https://claude.ai/install.ps1 | iex
 
 That's it. It installs automatically and keeps itself up to date.
 
-> **Other options**: You can also use the [Desktop app](https://claude.com/download), the [VS Code extension](https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code), or [Claude Code on the web](https://claude.ai/code) — no terminal needed.
-
 ## Step 2: Start Claude Code
 
-Navigate to any folder and type:
+In the same VS Code terminal, type:
 
 ```bash
 claude
@@ -71,76 +69,39 @@ Claude will:
 3. **Ask for your permission** before making the change
 4. Create the file
 
+You'll see the new file appear in VS Code's sidebar immediately.
+
 > **Claude always asks before changing things.** You stay in control. Nothing happens without your approval.
 
-## Step 5: Use Git with Claude
-
-If your project uses Git (most do), Claude can help:
-
-```
-what files have changed recently?
-```
-
-```
-commit my changes with a descriptive message
-```
-
-```
-show me the last 5 changes made to this project
-```
-
-Don't know what Git is? It's a tool that tracks every change to a project, like "Track Changes" in Google Docs but for all your files.
-
-## Step 6: Try common tasks
+## Step 5: Try common tasks
 
 Here are things non-developers commonly ask Claude to do:
 
-### Understand a codebase
+### Understand a project
 ```
 explain this project like I'm a product manager
 ```
 
 ```
-what are the main features of this app?
-```
-
-```
-draw a diagram of how the different parts connect
+what are the main files and what does each one do?
 ```
 
 ### Find information
 ```
-where is the pricing page defined?
+what are Nike's biggest threats according to the analysis?
 ```
 
 ```
-find all the text that users see on the checkout page
+summarize the sales data by region
+```
+
+### Make changes
+```
+add a section about Nike's digital strategy to the competitive analysis
 ```
 
 ```
-what analytics events are being tracked?
-```
-
-### Make simple changes
-```
-change the company name from "Acme" to "Nova" everywhere
-```
-
-```
-update the copyright year to 2026 in the footer
-```
-
-```
-add a new FAQ entry about refund policy
-```
-
-### Analyze data
-```
-read the CSV file in /data and summarize the key metrics
-```
-
-```
-how many users signed up last month based on the logs?
+create a chart-ready summary of the quarterly revenue data
 ```
 
 ## Essential commands to remember

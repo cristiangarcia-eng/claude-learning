@@ -17,181 +17,62 @@ Todo en una ventana. En lugar de cambiar entre aplicaciones, tienes todo junto �
 
 1. Ve a [code.visualstudio.com](https://code.visualstudio.com)
 2. Haz clic en el botón grande de **Download**
-3. Instálalo como cualquier otra aplicacion
+3. Instálalo como cualquier otra aplicación
 
 Es gratuito y funciona en Mac, Windows y Linux.
 
 ### Primer inicio
 
-Cuando abres VS Code por primera vez:
-- Verás una pestaña de **Bienvenida** — puedes cerrarla
-- La barra lateral izquierda tiene iconos para archivos, búsqueda, extensiones, etc.
-- La barra inferior muestra información util como el tipo de archivo actual
-
-## La interfaz de un vistazo
+Cuando abres VS Code por primera vez, verás una pantalla de bienvenida:
 
 ![Pantalla de bienvenida de VS Code](/vscode-welcome.png)
 
-### Los iconos de la barra lateral (de arriba a abajo)
+Puedes cerrarla — no la necesitaremos.
 
-| Icono | Nombre | Qué hace |
-|------|------|-------------|
-| 📁 | Explorador | Navegar archivos y carpetas en tu proyecto |
-| 🔍 | Búsqueda | Encontrar texto en todos los archivos |
-| 🔀 | Control de Código | Ver cambios en archivos (Git) |
-| 🧩 | Extensiones | Instalar complementos como Claude Code |
-| ▶️ | Ejecutar y Depurar | Ejecutar scripts (no lo necesitarás mucho) |
+## La barra lateral: tu explorador de archivos
 
-## Abrir un proyecto
+Por ahora, lo único que necesitas conocer es el **Explorador** — el primer icono en la barra lateral izquierda (parece dos archivos superpuestos). Aquí es donde verás todos los archivos y carpetas de tu proyecto, igual que Finder en Mac o Explorador de Archivos en Windows.
 
-### Opción 1: Abrir una carpeta
+Exploraremos los otros iconos de la barra lateral más adelante en el curso.
+
+## Tu primer proyecto
+
+Abramos un proyecto real para que veas VS Code en acción.
+
+### Descarga el proyecto de práctica
+
+1. [Descarga esta carpeta](https://github.com/cristiangarcia-eng/claude-learning/raw/main/resources/nike-analysis.zip) a tu Escritorio
+2. Descomprímela — obtendrás una carpeta llamada `nike-analysis`
+
+Es un análisis competitivo sencillo de Nike con algunos archivos dentro.
+
+### Ábrelo en VS Code
 
 1. Ve a **File > Open Folder** (o `Cmd+O` en Mac)
-2. Selecciona la carpeta con tu proyecto
-3. VS Code muestra todos los archivos en la barra lateral
+2. Navega a tu **Escritorio** y selecciona la carpeta `nike-analysis`
+3. Haz clic en **Open**
 
-### Opción 2: Arrastrar y soltar
+Deberías ver los archivos aparecer en el Explorador a la izquierda. Haz clic en cualquier archivo para abrirlo — ¡eso es todo!
 
-Arrastra una carpeta desde Finder/Explorador directamente a VS Code.
+## Guardar archivos
 
-### Opción 3: Desde la terminal
+Cuando editas un archivo, notarás que aparece un **punto** en la pestaña junto al nombre del archivo. Ese punto significa que tienes **cambios sin guardar**.
 
-```bash
-cd ~/Desktop/my-project
-code .
-```
+Para guardar: presiona `Cmd+S` (Mac) o `Ctrl+S` (Windows).
 
-El comando `code .` abre la carpeta actual en VS Code.
-
-> **Consejo**: Si `code .` no funciona, abre VS Code, presiona `Cmd+Shift+P`, escribe "shell command", y selecciona **Install 'code' command in PATH**.
-
-## Atajos de teclado esenciales
-
-No necesitas memorizar todos estos. Empieza con los 5 principales.
-
-### Los 5 atajos principales
-
-| Atajo (Mac) | Atajo (Windows) | Qué hace |
-|----------------|--------------------|----|
-| `Cmd+P` | `Ctrl+P` | **Apertura Rápida** — encontrar cualquier archivo por nombre |
-| `Cmd+Shift+P` | `Ctrl+Shift+P` | **Paleta de Comandos** — buscar cualquier acción |
-| `Cmd+F` | `Ctrl+F` | Buscar texto en el archivo actual |
-| `Cmd+Shift+F` | `Ctrl+Shift+F` | Buscar texto en TODOS los archivos |
-| `Cmd+S` | `Ctrl+S` | Guardar el archivo actual |
-
-
-> **Consejo profesional**: La **Paleta de Comandos** (`Cmd+Shift+P`) es tu mejor amiga. Si no sabes como hacer algo, abrela y escribe lo que quieres. VS Code encontrara la acción por ti.
-
-## Instalar la extensión de Claude Code
-
-Así es como usas Claude Code dentro de VS Code en lugar de la terminal.
-
-### Paso a paso
-
-1. Haz clic en el icono de **Extensiones** en la barra lateral (🧩) o presiona `Cmd+Shift+X`
-2. Busca **"Claude Code"**
-3. Haz clic en **Install** en la de Anthropic
-4. Después de instalar, presiona `Cmd+Shift+P` y escribe **"Claude Code"**
-5. Selecciona **Open in New Tab**
-
-### Usar Claude Code en VS Code
-
-Una vez que la extensión está abierta, obtienes:
-
-- **Un panel de chat** donde hablas con Claude
-- **Diffs en línea** — Claude muestra cambios en archivos lado a lado (lineas agregadas en verde, eliminadas en rojo)
-- **Menciones con @** — escribe `@nombre-archivo` para referenciar archivos directamente
-- **Historial de conversaciones** — tus sesiones se guardan
-
-Funciona exactamente como la version de terminal, pero con una interfaz visual.
-
-### Por qué VS Code + Claude Code es genial para no desarrolladores
-
-| Terminal | VS Code |
-|----------|---------|
-| Solo ves texto | Ves archivos, carpetas y cambios visualmente |
-| Los cambios se describen en texto | Los cambios se muestran como diffs a color |
-| Necesitas escribir comandos para abrir archivos | Haz clic para abrir cualquier archivo |
-| Sin resaltado de sintaxis en la salida | El código está colorizado y es fácil de leer |
-
-## Trabajar con archivos
-
-### Crear un nuevo archivo
-
-1. Haz clic derecho en la barra lateral del Explorador
-2. Selecciona **New File**
-3. Escribe el nombre del archivo y presiona Enter
-
-O usa `Cmd+N` para un nuevo archivo sin titulo rápido.
-
-### Editar archivos
-
-- Haz clic en cualquier archivo en la barra lateral para abrirlo
-- Haz tus cambios
-- Presiona `Cmd+S` para guardar
-- El punto en la pestaña significa **cambios sin guardar**
-
-### Buscar en archivos
-
-Presiona `Cmd+Shift+F` para abrir el panel de búsqueda:
-
-1. Escribe tu termino de búsqueda
-2. VS Code muestra cada coincidencia en todos los archivos
-3. Haz clic en un resultado para saltar a ese archivo y línea
-
-Esto es increiblemente util para encontrar cosas como:
-- Donde aparece un texto específico en tu sitio web
-- Todas las menciones de un nombre de empresa, email o numero de telefono
-- Dónde está implementada una funcionalidad específica
+> **Consejo**: Ve a **File > Auto Save** y actívalo. Ahora tus archivos se guardan automáticamente — no más preocupaciones por perder cambios.
 
 ## La terminal integrada
 
-VS Code tiene una terminal integrada. Presiona `` Ctrl+` `` para alternarla.
+VS Code tiene una terminal integrada. Presiona `` Ctrl+` `` (la tecla de acento grave, junto al número 1) para abrirla.
 
 Esto significa que puedes:
 - Navegar archivos visualmente en la barra lateral
-- Ejecutar comandos de terminal en la parte inferior
 - Editar archivos en el área principal
+- Ejecutar comandos de terminal en la parte inferior
 
-Todo en una ventana. No necesitas cambiar entre aplicaciones.
+Todo en una ventana. Usaremos esta terminal en la siguiente lección.
 
-## Configuraciones que vale la pena cambiar
+## Siguiente paso
 
-Abre Configuración con `Cmd+,` y busca estas:
-
-| Configuración | Valor recomendado | Por qué |
-|---------|-------------------|-----|
-| Font Size | 14 o 16 | Mas legible |
-| Word Wrap | On | Las lineas largas se ajustan en lugar de hacer scroll |
-| Auto Save | afterDelay | Los archivos se guardan automaticamente |
-| Theme | Tu preferencia | Prueba "Dark+" (predeterminado) o "GitHub Dark" |
-
-## Extensiones que vale la pena instalar
-
-Ademas de Claude Code, estas extensiones son útiles para no desarrolladores:
-
-| Extensión | Qué hace |
-|-----------|-------------|
-| **Prettier** | Formatea automaticamente tus archivos para que se vean limpios |
-| **Markdown Preview** | Vista previa de archivos .md como texto formateado |
-| **GitLens** | Ver quien cambio que y cuando |
-
-## Referencia rápida
-
-| Quiero... | Como |
-|-------------|-----|
-| Abrir un proyecto | File > Open Folder |
-| Encontrar un archivo | `Cmd+P` y escribir el nombre |
-| Buscar texto en todos los archivos | `Cmd+Shift+F` |
-| Abrir la terminal | `` Ctrl+` `` |
-| Instalar una extensión | Clic en 🧩, buscar, instalar |
-| Ejecutar cualquier acción | `Cmd+Shift+P` (Paleta de Comandos) |
-| Abrir Claude Code | `Cmd+Shift+P` > "Claude Code: Open" |
-
-## Siguientes pasos
-
-Ahora que tienes VS Code configurado:
-
-- [Instala Claude Code](../00b-quickstart/README.es.md) y comienza tu primera sesión
-- Intenta abrir un proyecto y pedirle a Claude que lo explique
-- Usa `Cmd+Shift+F` para buscar algo, luego preguntale a Claude sobre lo que encontraste
+**Siguiente paso**: [Aprende los 4 comandos de terminal que necesitas dentro de VS Code →](../00-terminal-basics/README.es.md)

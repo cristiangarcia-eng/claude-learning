@@ -34,22 +34,50 @@ Cuando tengas dudas, escribe `/help`. Muestra cada comando disponible para ti, i
 
 Usa `/clear` cuando quieras comenzar un nuevo tema. Limpia la conversación para que Claude no se confunda con el contexto anterior. Alias: `/reset`, `/new`.
 
-### /memory -- Enseñale a Claude Sobre Tu Trabajo
+### /memory -- Enséñale a Claude Sobre Ti y Tus Proyectos
 
-El comando `/memory` abre un archivo llamado CLAUDE.md. Todo lo que escribas aquí, Claude lo lee al inicio de cada conversación. Cosas buenas para poner en tu archivo de memoria:
+Escribe `/memory` y verás este menú:
 
-- Tu rol y en que trabajas
-- Estilo o tono de escritura preferido
-- Nombres de proyectos y que significan
-- Terminología específica de tu empresa
+![El menú de /memory en Claude Code](/claude-memory-menu.png)
 
-**Ejemplo de archivo de memoria:**
+Hay dos tipos de memoria, y entender la diferencia es clave:
+
+**1. User memory** (`~/.claude/CLAUDE.md`) — Es sobre **ti**. Te sigue en todos los proyectos. Pon aquí cosas que Claude siempre debe saber sobre ti:
+- Tu rol (PM, diseñador, ventas, etc.)
+- Tu idioma y tono preferido
+- Cómo te gustan las respuestas (bullet points, párrafos cortos, etc.)
+
+**2. Project memory** (`./CLAUDE.md`) — Es sobre **el proyecto en el que estás trabajando**. Vive dentro de la carpeta del proyecto y solo aplica ahí. Pon aquí cosas como:
+- De qué trata el proyecto
+- Terminología o nombres clave
+- Reglas específicas de este proyecto
+
+### Cómo empezar con la memoria
+
+Abre Claude Code en tu carpeta `nike-analysis` y prueba esto:
+
+1. Escribe `/memory` y selecciona **User memory** (opción 1)
+2. Agrega unas líneas sobre ti, por ejemplo:
+
 ```
-I am a product manager at Acme Corp.
-Our main product is called "Launchpad" -- a project management tool.
-When I ask for summaries, keep them under 200 words.
-I prefer bullet points over paragraphs.
+Soy product manager.
+Prefiero las respuestas en español.
+Mantén los resúmenes en menos de 200 palabras.
+Usa bullet points en vez de párrafos largos.
 ```
+
+3. Guarda y cierra el archivo (`Cmd+S`, luego cierra la pestaña)
+
+Ahora haz lo mismo con Project memory (opción 2):
+
+```
+Este es un proyecto de análisis competitivo de Nike.
+Los archivos principales son: competitive-analysis.md (el informe),
+sales-data.csv (ingresos trimestrales por región), y
+notes.txt (notas de reunión de la revisión de estrategia).
+```
+
+A partir de ahora, Claude leerá ambos archivos al inicio de cada conversación — sabrá quién eres y de qué trata este proyecto, sin que tengas que explicarlo de nuevo.
 
 ### /init -- Configurar un Nuevo Proyecto
 

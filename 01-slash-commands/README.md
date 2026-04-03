@@ -34,22 +34,50 @@ When in doubt, type `/help`. It shows every command available to you, including 
 
 Use `/clear` when you want to begin a new topic. It wipes the conversation so Claude is not confused by earlier context. Aliases: `/reset`, `/new`.
 
-### /memory -- Teach Claude About Your Work
+### /memory -- Teach Claude About You and Your Projects
 
-The `/memory` command opens a file called CLAUDE.md. Anything you write here, Claude reads at the start of every conversation. Good things to put in your memory file:
+Type `/memory` and you'll see this menu:
 
-- Your role and what you work on
-- Preferred writing style or tone
-- Project names and what they mean
-- Terminology specific to your company
+![The /memory menu in Claude Code](/claude-memory-menu.png)
 
-**Example memory file:**
+There are two types of memory, and understanding the difference is key:
+
+**1. User memory** (`~/.claude/CLAUDE.md`) — This is about **you**. It follows you across every project. Put things here that Claude should always know about you:
+- Your role (PM, designer, sales, etc.)
+- Your preferred language and tone
+- How you like responses formatted (bullet points, short paragraphs, etc.)
+
+**2. Project memory** (`./CLAUDE.md`) — This is about **the project you're working on**. It lives inside the project folder and only applies there. Put things here like:
+- What the project is about
+- Key terminology or names
+- Rules specific to this project
+
+### Getting started with memory
+
+Open Claude Code in your `nike-analysis` folder and try this:
+
+1. Type `/memory` and select **User memory** (option 1)
+2. Add a few lines about yourself, for example:
+
 ```
-I am a product manager at Acme Corp.
-Our main product is called "Launchpad" -- a project management tool.
-When I ask for summaries, keep them under 200 words.
-I prefer bullet points over paragraphs.
+I am a product manager.
+I prefer responses in Spanish.
+Keep summaries under 200 words.
+Use bullet points over long paragraphs.
 ```
+
+3. Save and close the file (`Cmd+S`, then close the tab)
+
+Now do the same for Project memory (option 2):
+
+```
+This is a competitive analysis project for Nike.
+The main files are: competitive-analysis.md (the report),
+sales-data.csv (quarterly revenue by region), and
+notes.txt (meeting notes from the strategy review).
+```
+
+From now on, Claude will read both files at the start of every conversation — it will know who you are and what this project is about, without you having to explain again.
 
 ### /init -- Set Up a New Project
 

@@ -26,9 +26,7 @@ const LEVEL_ICONS = {
 
 const LEVEL_COLORS = {
   starter: "text-brand-green",
-  beginner: "text-green-500",
-  intermediate: "text-blue-500",
-  advanced: "text-red-500",
+  pro: "text-blue-500",
 } as const;
 
 export default function ProgressPage() {

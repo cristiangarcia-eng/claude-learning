@@ -72,9 +72,7 @@ export function getBadges(): Badge[] {
   const quizzes = progress.quizScores;
 
   const starterSlugs = LESSONS.filter((l) => l.level === "starter").map((l) => l.slug);
-  const beginnerSlugs = LESSONS.filter((l) => l.level === "beginner").map((l) => l.slug);
-  const intermediateSlugs = LESSONS.filter((l) => l.level === "intermediate").map((l) => l.slug);
-  const advancedSlugs = LESSONS.filter((l) => l.level === "advanced").map((l) => l.slug);
+  const proSlugs = LESSONS.filter((l) => l.level === "pro").map((l) => l.slug);
 
   return [
     {
@@ -90,22 +88,10 @@ export function getBadges(): Badge[] {
       earned: starterSlugs.every((s) => completed.has(s)),
     },
     {
-      id: "beginner-complete",
-      title: "Beginner Graduate",
-      description: "Complete all beginner lessons",
-      earned: beginnerSlugs.every((s) => completed.has(s)),
-    },
-    {
-      id: "intermediate-complete",
-      title: "Intermediate Pro",
-      description: "Complete all intermediate lessons",
-      earned: intermediateSlugs.every((s) => completed.has(s)),
-    },
-    {
-      id: "advanced-complete",
-      title: "Advanced Master",
-      description: "Complete all advanced lessons",
-      earned: advancedSlugs.every((s) => completed.has(s)),
+      id: "pro-complete",
+      title: "Pro Graduate",
+      description: "Complete all pro lessons",
+      earned: proSlugs.every((s) => completed.has(s)),
     },
     {
       id: "quiz-perfect",

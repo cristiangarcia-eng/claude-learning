@@ -185,18 +185,6 @@ export const LESSONS: LessonMeta[] = [
     order: 13,
   },
   {
-    folder: "11-planning-mode",
-    slug: "planning-mode",
-    title: "Planning & Auto Mode",
-    titleEs: "Planificacion y Modo Auto",
-    description: "Plan before executing, control autonomy, and extend thinking",
-    descriptionEs: "Planifica antes de ejecutar, controla la autonomia y extiende el razonamiento",
-    level: "pro",
-    duration: "15 min",
-    complexity: 3,
-    order: 14,
-  },
-  {
     folder: "12-voice-and-remote",
     slug: "voice-and-remote",
     title: "Voice & Remote Control",

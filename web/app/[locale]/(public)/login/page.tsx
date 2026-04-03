@@ -6,6 +6,8 @@ import { signIn } from "next-auth/react";
 import { Mail, ArrowLeft, Loader2 } from "lucide-react";
 import { Logo } from "@/components/logo";
 import Link from "next/link";
+import { useLocale } from "@/components/locale-provider";
+import { t } from "@/lib/i18n";
 
 function LoginForm() {
   const [email, setEmail] = useState("");
@@ -13,6 +15,7 @@ function LoginForm() {
   const [error, setError] = useState("");
   const searchParams = useSearchParams();
   const sent = searchParams.get("sent") === "true";
+  const locale = useLocale();
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -22,17 +25,17 @@ function LoginForm() {
     try {
       const result = await signIn("nodemailer", {
         email,
-        callbackUrl: "/dashboard",
+        callbackUrl: `/${locale}/dashboard`,
         redirect: false,
       });
 
       if (result?.error) {
-        setError("This email is not authorized. Contact the instructor for access.");
+        setError(t(locale, "emailNotAuthorized"));
       } else {
-        window.location.href = "/login?sent=true";
+        window.location.href = `/${locale}/login?sent=true`;
       }
     } catch {
-      setError("Something went wrong. Please try again.");
+      setError(t(locale, "somethingWentWrong"));
     } finally {
       setLoading(false);
     }
@@ -43,9 +46,9 @@ function LoginForm() {
       {sent ? (
         <div className="text-center p-6 rounded-lg border border-brand-green/30 bg-brand-green/5">
           <Mail className="h-8 w-8 text-brand-green mx-auto mb-3" />
-          <h2 className="font-semibold mb-1">Check your email</h2>
+          <h2 className="font-semibold mb-1">{t(locale, "checkYourEmail")}</h2>
           <p className="text-sm text-muted-foreground">
-            We sent a login link. Click it to access the course.
+            {t(locale, "checkEmailDesc")}
           </p>
         </div>
       ) : (
@@ -72,10 +75,10 @@ function LoginForm() {
             {loading ? (
               <>
                 <Loader2 className="h-4 w-4 animate-spin" />
-                Sending...
+                {t(locale, "sending")}
               </>
             ) : (
-              "Send Magic Link"
+              t(locale, "sendMagicLink")
             )}
           </button>
         </form>
@@ -85,6 +88,8 @@ function LoginForm() {
 }
 
 export default function LoginPage() {
+  const locale = useLocale();
+
   return (
     <div className="min-h-screen flex items-center justify-center px-6">
       <div className="w-full max-w-sm">
@@ -93,7 +98,7 @@ export default function LoginPage() {
             <Logo />
           </div>
           <p className="text-sm text-muted-foreground mt-2">
-            Enter your email to access the course
+            {t(locale, "enterEmail")}
           </p>
         </div>
 
@@ -103,11 +108,11 @@ export default function LoginPage() {
 
         <div className="mt-6 text-center">
           <Link
-            href="/"
+            href={`/${locale}`}
             className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
             <ArrowLeft className="h-3.5 w-3.5" />
-            Back to home
+            {t(locale, "backToHome")}
           </Link>
         </div>
       </div>

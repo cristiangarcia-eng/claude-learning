@@ -3,72 +3,78 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Logo } from "./logo";
-import { LESSONS, getLessonsByLevel } from "@/lib/lessons";
+import { LESSONS, getLessonsByLevel, getLessonTitle } from "@/lib/lessons";
 import type { LessonMeta } from "@/lib/lessons";
 import { ThemeToggle } from "./theme-toggle";
+import { LanguageSwitcher } from "./language-switcher";
+import { useLocale } from "./locale-provider";
 import { useProgress } from "./progress/progress-provider";
 import { Progress } from "./ui/progress";
 import { LESSONS as ALL_LESSONS } from "@/lib/lessons";
+import { t } from "@/lib/i18n";
 import {
   BarChart3,
   BookOpen,
-  GraduationCap,
   Home,
   Menu,
   X,
 } from "lucide-react";
 import { useState } from "react";
 
-const LEVELS: { key: LessonMeta["level"]; label: string; color: string }[] = [
-  { key: "starter", label: "Start Here", color: "text-brand-green" },
-  { key: "beginner", label: "Beginner", color: "text-green-500" },
-  { key: "intermediate", label: "Intermediate", color: "text-blue-500" },
-  { key: "advanced", label: "Advanced", color: "text-red-500" },
-];
-
 function SidebarContent({ onClose }: { onClose?: () => void }) {
   const pathname = usePathname();
+  const locale = useLocale();
+
+  const LEVELS: { key: LessonMeta["level"]; labelKey: "startHere" | "beginner" | "intermediate" | "advanced"; color: string }[] = [
+    { key: "starter", labelKey: "startHere", color: "text-brand-green" },
+    { key: "beginner", labelKey: "beginner", color: "text-green-500" },
+    { key: "intermediate", labelKey: "intermediate", color: "text-blue-500" },
+    { key: "advanced", labelKey: "advanced", color: "text-red-500" },
+  ];
 
   return (
     <div className="flex flex-col h-full">
       {/* Logo */}
       <div className="p-4 border-b border-border flex items-center justify-between">
         <Link
-          href="/"
+          href={`/${locale}`}
           className="flex items-center gap-2"
           onClick={onClose}
         >
           <Logo size="sm" />
         </Link>
-        <ThemeToggle />
+        <div className="flex items-center gap-2">
+          <LanguageSwitcher />
+          <ThemeToggle />
+        </div>
       </div>
 
       {/* Nav */}
       <nav className="flex-1 overflow-y-auto p-3 space-y-6">
         <Link
-          href="/"
+          href={`/${locale}`}
           onClick={onClose}
           className={`flex items-center gap-2 px-3 py-2 rounded-md text-sm transition-colors ${
-            pathname === "/"
+            pathname === `/${locale}` || pathname === `/${locale}/`
               ? "bg-brand-green/10 text-brand-green"
               : "text-muted-foreground hover:text-foreground hover:bg-muted"
           }`}
         >
           <Home className="h-4 w-4" />
-          Home
+          {t(locale, "home")}
         </Link>
 
         <Link
-          href="/progress"
+          href={`/${locale}/progress`}
           onClick={onClose}
           className={`flex items-center gap-2 px-3 py-2 rounded-md text-sm transition-colors ${
-            pathname === "/progress"
+            pathname === `/${locale}/progress`
               ? "bg-brand-green/10 text-brand-green"
               : "text-muted-foreground hover:text-foreground hover:bg-muted"
           }`}
         >
           <BarChart3 className="h-4 w-4" />
-          Progress
+          {t(locale, "progress")}
         </Link>
 
         {LEVELS.map((level) => {
@@ -78,17 +84,17 @@ function SidebarContent({ onClose }: { onClose?: () => void }) {
               <h3
                 className={`text-xs font-semibold uppercase tracking-wider px-3 mb-2 ${level.color}`}
               >
-                {level.label}
+                {t(locale, level.labelKey)}
               </h3>
               <ul className="space-y-0.5">
                 {lessons.map((lesson) => {
                   const isActive = pathname.startsWith(
-                    `/lessons/${lesson.slug}`
+                    `/${locale}/lessons/${lesson.slug}`
                   );
                   return (
                     <li key={lesson.slug}>
                       <Link
-                        href={`/lessons/${lesson.slug}`}
+                        href={`/${locale}/lessons/${lesson.slug}`}
                         onClick={onClose}
                         className={`flex items-center gap-2 px-3 py-2 rounded-md text-sm transition-colors ${
                           isActive
@@ -97,7 +103,7 @@ function SidebarContent({ onClose }: { onClose?: () => void }) {
                         }`}
                       >
                         <BookOpen className="h-3.5 w-3.5 flex-shrink-0" />
-                        {lesson.title}
+                        {getLessonTitle(lesson, locale)}
                       </Link>
                     </li>
                   );
@@ -116,6 +122,7 @@ function SidebarContent({ onClose }: { onClose?: () => void }) {
 
 function SidebarProgress() {
   const { progress } = useProgress();
+  const locale = useLocale();
   const completed = progress.completedLessons.length;
   const total = ALL_LESSONS.length;
   const percent = total > 0 ? Math.round((completed / total) * 100) : 0;
@@ -123,7 +130,7 @@ function SidebarProgress() {
   return (
     <div className="p-4 border-t border-border">
       <div className="flex items-center justify-between text-xs text-muted-foreground mb-2">
-        <span>{completed}/{total} completed</span>
+        <span>{completed}/{total} {t(locale, "completedCount")}</span>
         <span className="text-brand-green font-medium">{percent}%</span>
       </div>
       <Progress value={percent} className="h-2" />

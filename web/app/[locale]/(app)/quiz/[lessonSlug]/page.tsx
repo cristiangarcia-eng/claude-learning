@@ -2,8 +2,10 @@
 
 import { use, useState } from "react";
 import { getQuizBySlug } from "@/lib/quiz-data";
-import { getLessonBySlug } from "@/lib/lessons";
+import { getLessonBySlug, getLessonTitle } from "@/lib/lessons";
 import { useProgress } from "@/components/progress/progress-provider";
+import { useLocale } from "@/components/locale-provider";
+import { t } from "@/lib/i18n";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import {
@@ -18,12 +20,13 @@ import Link from "next/link";
 export default function QuizPage({
   params,
 }: {
-  params: Promise<{ lessonSlug: string }>;
+  params: Promise<{ locale: string; lessonSlug: string }>;
 }) {
-  const { lessonSlug } = use(params);
+  const { locale, lessonSlug } = use(params);
   const quiz = getQuizBySlug(lessonSlug);
   const lesson = getLessonBySlug(lessonSlug);
   const { saveQuizScore } = useProgress();
+  const currentLocale = useLocale();
 
   const [currentIdx, setCurrentIdx] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
@@ -34,12 +37,12 @@ export default function QuizPage({
   if (!quiz || !lesson) {
     return (
       <div className="max-w-2xl mx-auto px-6 py-16 text-center">
-        <h1 className="text-2xl font-bold mb-4">No Quiz Available</h1>
+        <h1 className="text-2xl font-bold mb-4">{t(currentLocale, "noQuizAvailable")}</h1>
         <p className="text-muted-foreground mb-6">
-          This lesson doesn&apos;t have a quiz yet.
+          {t(currentLocale, "noQuizYet")}
         </p>
-        <Link href={`/lessons/${lessonSlug}`} className="text-brand-green hover:underline">
-          Back to lesson
+        <Link href={`/${locale}/lessons/${lessonSlug}`} className="text-brand-green hover:underline">
+          {t(currentLocale, "backToLesson")}
         </Link>
       </div>
     );
@@ -106,8 +109,8 @@ export default function QuizPage({
               : "text-muted-foreground"
           }`}
         />
-        <h1 className="text-3xl font-bold mb-2">Quiz Complete!</h1>
-        <p className="text-xl text-muted-foreground mb-2">{lesson.title}</p>
+        <h1 className="text-3xl font-bold mb-2">{t(currentLocale, "quizComplete")}</h1>
+        <p className="text-xl text-muted-foreground mb-2">{getLessonTitle(lesson, currentLocale)}</p>
         <p className="text-4xl font-bold my-6">
           <span className="text-brand-green">{score}</span>
           <span className="text-muted-foreground">
@@ -116,21 +119,21 @@ export default function QuizPage({
         </p>
         <p className="text-muted-foreground mb-8">
           {percent === 100
-            ? "Perfect score! You've mastered this topic."
+            ? t(currentLocale, "perfectScore")
             : percent >= 60
-            ? "Great job! Review the missed questions to solidify your knowledge."
-            : "Keep studying! Review the lesson and try again."}
+            ? t(currentLocale, "greatJob")
+            : t(currentLocale, "keepStudying")}
         </p>
         <div className="flex justify-center gap-4">
           <Button variant="outline" onClick={handleRestart}>
             <RotateCcw className="h-4 w-4 mr-2" />
-            Retry
+            {t(currentLocale, "retry")}
           </Button>
           <Link
-            href={`/lessons/${lessonSlug}`}
+            href={`/${locale}/lessons/${lessonSlug}`}
             className="inline-flex items-center justify-center h-8 px-2.5 rounded-lg text-sm font-medium bg-primary text-primary-foreground hover:bg-primary/80 transition-colors"
           >
-            Back to Lesson
+            {t(currentLocale, "backToLesson")}
           </Link>
         </div>
       </div>
@@ -142,14 +145,14 @@ export default function QuizPage({
       {/* Header */}
       <div className="mb-8">
         <Link
-          href={`/lessons/${lessonSlug}`}
+          href={`/${locale}/lessons/${lessonSlug}`}
           className="text-sm text-muted-foreground hover:text-foreground"
         >
-          {lesson.title}
+          {getLessonTitle(lesson, currentLocale)}
         </Link>
-        <h1 className="text-2xl font-bold mt-1">Quiz</h1>
+        <h1 className="text-2xl font-bold mt-1">{t(currentLocale, "quiz")}</h1>
         <p className="text-sm text-muted-foreground mt-1">
-          Question {currentIdx + 1} of {quiz.questions.length}
+          {t(currentLocale, "question")} {currentIdx + 1} {t(currentLocale, "of")} {quiz.questions.length}
         </p>
         {/* Progress dots */}
         <div className="flex gap-1.5 mt-3">
@@ -231,7 +234,7 @@ export default function QuizPage({
           }`}
         >
           <p className="text-sm font-medium mb-1">
-            {isCorrect ? "Correct!" : "Incorrect"}
+            {isCorrect ? t(currentLocale, "correct") : t(currentLocale, "incorrect")}
           </p>
           <p className="text-sm text-muted-foreground">
             {question.explanation}
@@ -246,16 +249,16 @@ export default function QuizPage({
             onClick={handleSubmit}
             disabled={selectedAnswer === null}
           >
-            Check Answer
+            {t(currentLocale, "checkAnswer")}
           </Button>
         ) : (
           <Button onClick={handleNext}>
             {currentIdx < quiz.questions.length - 1 ? (
               <>
-                Next <ArrowRight className="h-4 w-4 ml-1" />
+                {t(currentLocale, "next")} <ArrowRight className="h-4 w-4 ml-1" />
               </>
             ) : (
-              "See Results"
+              t(currentLocale, "seeResults")
             )}
           </Button>
         )}

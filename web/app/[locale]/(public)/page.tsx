@@ -1,12 +1,11 @@
 import Link from "next/link";
 import { Logo } from "@/components/logo";
-import { LESSONS, getLessonsByLevel } from "@/lib/lessons";
+import { LESSONS, getLessonsByLevel, getLessonTitle } from "@/lib/lessons";
 import {
   BookOpen,
   Calendar,
   CheckCircle,
   Clock,
-  GraduationCap,
   MessageSquare,
   Palette,
   Presentation,
@@ -16,44 +15,43 @@ import {
   Zap,
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { type Locale, isValidLocale, t } from "@/lib/i18n";
+import { notFound } from "next/navigation";
+import { LanguageSwitcher } from "@/components/language-switcher";
 
 const CALENDLY_URL = process.env.NEXT_PUBLIC_CALENDLY_URL || "#";
 
-const AUDIENCE = [
-  {
-    icon: Presentation,
-    title: "Product Managers",
-    description:
-      "Understand codebases, scope features, write specs, and track technical debt — without writing code.",
-  },
-  {
-    icon: Palette,
-    title: "Designers",
-    description:
-      "Audit UI consistency, change colors and fonts, check accessibility, and update designs directly.",
-  },
-  {
-    icon: TrendingUp,
-    title: "Sales & Marketing",
-    description:
-      "Update website copy, manage SEO, edit pricing pages, and analyze content — all by yourself.",
-  },
-  {
-    icon: Users,
-    title: "Anyone curious",
-    description:
-      "No coding experience needed. If you can type a message, you can use Claude Code.",
-  },
+const AUDIENCE_KEYS = [
+  { icon: Presentation, titleKey: "productManagers" as const, descKey: "productManagersDesc" as const },
+  { icon: Palette, titleKey: "designers" as const, descKey: "designersDesc" as const },
+  { icon: TrendingUp, titleKey: "salesMarketing" as const, descKey: "salesMarketingDesc" as const },
+  { icon: Users, titleKey: "anyoneCurious" as const, descKey: "anyoneCuriousDesc" as const },
 ];
 
 const LEVEL_LABELS = {
-  starter: { label: "Start Here", color: "text-brand-green" },
-  beginner: { label: "Beginner", color: "text-green-500" },
-  intermediate: { label: "Intermediate", color: "text-blue-500" },
-  advanced: { label: "Advanced", color: "text-red-500" },
+  starter: "startHere",
+  beginner: "beginner",
+  intermediate: "intermediate",
+  advanced: "advanced",
 } as const;
 
-export default function LandingPage() {
+const LEVEL_COLORS = {
+  starter: "text-brand-green",
+  beginner: "text-green-500",
+  intermediate: "text-blue-500",
+  advanced: "text-red-500",
+} as const;
+
+export default async function LandingPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  if (!isValidLocale(locale)) notFound();
+
+  const l = locale as Locale;
+
   return (
     <div className="min-h-screen">
       {/* Nav */}
@@ -63,11 +61,12 @@ export default function LandingPage() {
             <Logo />
           </div>
           <div className="flex items-center gap-4">
+            <LanguageSwitcher />
             <Link
-              href="/login"
+              href={`/${locale}/login`}
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
-              Log in
+              {t(l, "logIn")}
             </Link>
             <a
               href={CALENDLY_URL}
@@ -75,7 +74,7 @@ export default function LandingPage() {
               rel="noopener noreferrer"
               className="text-sm font-medium px-4 py-2 rounded-lg bg-brand-green text-black hover:bg-brand-green/90 transition-colors"
             >
-              Book a Call
+              {t(l, "bookACall")}
             </a>
           </div>
         </div>
@@ -85,16 +84,15 @@ export default function LandingPage() {
       <header className="max-w-6xl mx-auto px-6 py-20 text-center">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-green/10 text-brand-green text-sm font-medium mb-6">
           <Sparkles className="h-4 w-4" />
-          No coding experience needed
+          {t(l, "noCodingNeeded")}
         </div>
         <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-          Master Claude Code
+          {t(l, "masterClaudeCode")}
           <br />
-          <span className="text-muted-foreground">without writing code</span>
+          <span className="text-muted-foreground">{t(l, "withoutWritingCode")}</span>
         </h1>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
-          The hands-on course for product managers, designers, and non-technical
-          teams who want to 10x their productivity with AI.
+          {t(l, "heroSubtitle")}
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
@@ -104,13 +102,13 @@ export default function LandingPage() {
             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-brand-green text-black font-semibold hover:bg-brand-green/90 transition-colors text-lg"
           >
             <Calendar className="h-5 w-5" />
-            Book a Free Call
+            {t(l, "bookFreeCall")}
           </a>
           <a
             href="#pricing"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border text-foreground font-medium hover:bg-muted transition-colors text-lg"
           >
-            See Pricing
+            {t(l, "seePricing")}
           </a>
         </div>
       </header>
@@ -119,22 +117,21 @@ export default function LandingPage() {
       <section className="border-t border-border py-20">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-4">
-            Built for non-developers
+            {t(l, "builtForNonDev")}
           </h2>
           <p className="text-muted-foreground text-center mb-12 max-w-xl mx-auto">
-            You don&apos;t need to be a programmer. If you can describe what you
-            want in plain English, Claude Code can do it.
+            {t(l, "builtForNonDevDesc")}
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {AUDIENCE.map((item) => {
+            {AUDIENCE_KEYS.map((item) => {
               const Icon = item.icon;
               return (
-                <Card key={item.title}>
+                <Card key={item.titleKey}>
                   <CardContent className="p-6">
                     <Icon className="h-8 w-8 text-brand-green mb-4" />
-                    <h3 className="font-semibold mb-2">{item.title}</h3>
+                    <h3 className="font-semibold mb-2">{t(l, item.titleKey)}</h3>
                     <p className="text-sm text-muted-foreground">
-                      {item.description}
+                      {t(l, item.descKey)}
                     </p>
                   </CardContent>
                 </Card>
@@ -148,23 +145,21 @@ export default function LandingPage() {
       <section className="border-t border-border py-20">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-4">
-            {LESSONS.length} lessons, from zero to mastery
+            {LESSONS.length} {t(l, "lessonsFromZero")}
           </h2>
           <p className="text-muted-foreground text-center mb-12 max-w-xl mx-auto">
-            Start with terminal basics and progress to advanced workflows.
-            Each lesson includes interactive quizzes and real-world examples.
+            {t(l, "lessonsFromZeroDesc")}
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {(["starter", "beginner", "intermediate", "advanced"] as const).map(
               (level) => {
                 const lessons = getLessonsByLevel(level);
-                const config = LEVEL_LABELS[level];
                 return (
                   <div key={level}>
                     <h3
-                      className={`text-sm font-semibold uppercase tracking-wider mb-3 ${config.color}`}
+                      className={`text-sm font-semibold uppercase tracking-wider mb-3 ${LEVEL_COLORS[level]}`}
                     >
-                      {config.label}
+                      {t(l, LEVEL_LABELS[level])}
                     </h3>
                     <ul className="space-y-2">
                       {lessons.map((lesson) => (
@@ -174,7 +169,7 @@ export default function LandingPage() {
                         >
                           <CheckCircle className="h-4 w-4 text-muted-foreground/30 flex-shrink-0" />
                           <span className="flex-1 text-sm font-medium">
-                            {lesson.title}
+                            {getLessonTitle(lesson, l)}
                           </span>
                           <span className="text-xs text-muted-foreground flex items-center gap-1">
                             <Clock className="h-3 w-3" />
@@ -195,40 +190,39 @@ export default function LandingPage() {
       <section id="pricing" className="border-t border-border py-20">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-4">
-            Simple pricing
+            {t(l, "simplePricing")}
           </h2>
           <p className="text-muted-foreground text-center mb-12">
-            Choose the option that works for you.
+            {t(l, "choosePlan")}
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
             {/* Course only */}
             <Card className="relative">
               <CardContent className="p-8">
-                <h3 className="text-xl font-semibold mb-2">Course Only</h3>
+                <h3 className="text-xl font-semibold mb-2">{t(l, "courseOnly")}</h3>
                 <p className="text-muted-foreground text-sm mb-6">
-                  Full access to all {LESSONS.length} lessons, quizzes, and
-                  progress tracking.
+                  {t(l, "courseOnlyDesc")}
                 </p>
                 <div className="mb-6">
                   <span className="text-4xl font-bold">$99</span>
-                  <span className="text-muted-foreground ml-1">one-time</span>
+                  <span className="text-muted-foreground ml-1">{t(l, "oneTime")}</span>
                 </div>
                 <ul className="space-y-3 mb-8 text-sm">
                   <li className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 text-brand-green" />
-                    {LESSONS.length} interactive lessons
+                    {LESSONS.length} {t(l, "interactiveLessons")}
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 text-brand-green" />
-                    Quizzes with instant feedback
+                    {t(l, "quizzesWithFeedback")}
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 text-brand-green" />
-                    Progress tracking
+                    {t(l, "progressTracking")}
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 text-brand-green" />
-                    Lifetime access
+                    {t(l, "lifetimeAccess")}
                   </li>
                 </ul>
                 <a
@@ -237,7 +231,7 @@ export default function LandingPage() {
                   rel="noopener noreferrer"
                   className="block w-full text-center px-4 py-3 rounded-lg border border-border font-medium hover:bg-muted transition-colors"
                 >
-                  Get Access
+                  {t(l, "getAccess")}
                 </a>
               </CardContent>
             </Card>
@@ -246,37 +240,36 @@ export default function LandingPage() {
             <Card className="relative overflow-visible border-brand-green/50">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
                 <span className="px-3 py-1 rounded-full bg-brand-green text-black text-xs font-semibold">
-                  Most Popular
+                  {t(l, "mostPopular")}
                 </span>
               </div>
               <CardContent className="p-8">
                 <h3 className="text-xl font-semibold mb-2">
-                  Course + Mentoring
+                  {t(l, "coursePlusMentoring")}
                 </h3>
                 <p className="text-muted-foreground text-sm mb-6">
-                  Everything in Course, plus a 2-hour personal mentoring
-                  session.
+                  {t(l, "coursePlusMentoringDesc")}
                 </p>
                 <div className="mb-6">
                   <span className="text-4xl font-bold">$299</span>
-                  <span className="text-muted-foreground ml-1">one-time</span>
+                  <span className="text-muted-foreground ml-1">{t(l, "oneTime")}</span>
                 </div>
                 <ul className="space-y-3 mb-8 text-sm">
                   <li className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 text-brand-green" />
-                    Everything in Course Only
+                    {t(l, "everythingInCourse")}
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 text-brand-green" />
-                    2h personal mentoring session
+                    {t(l, "personalMentoring")}
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 text-brand-green" />
-                    Tailored to your use case
+                    {t(l, "tailoredUseCase")}
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 text-brand-green" />
-                    Follow-up support via email
+                    {t(l, "followUpSupport")}
                   </li>
                 </ul>
                 <a
@@ -285,7 +278,7 @@ export default function LandingPage() {
                   rel="noopener noreferrer"
                   className="block w-full text-center px-4 py-3 rounded-lg bg-brand-green text-black font-semibold hover:bg-brand-green/90 transition-colors"
                 >
-                  Book a Call
+                  {t(l, "bookACall")}
                 </a>
               </CardContent>
             </Card>
@@ -297,7 +290,7 @@ export default function LandingPage() {
       <section className="border-t border-border py-20">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-12">
-            What students say
+            {t(l, "whatStudentsSay")}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
@@ -319,16 +312,16 @@ export default function LandingPage() {
                 name: "Ana R.",
                 role: "UI Designer",
               },
-            ].map((t) => (
-              <Card key={t.name}>
+            ].map((testimonial) => (
+              <Card key={testimonial.name}>
                 <CardContent className="p-6">
                   <MessageSquare className="h-5 w-5 text-brand-green mb-3" />
                   <p className="text-sm mb-4 italic">
-                    &ldquo;{t.quote}&rdquo;
+                    &ldquo;{testimonial.quote}&rdquo;
                   </p>
                   <div>
-                    <p className="text-sm font-semibold">{t.name}</p>
-                    <p className="text-xs text-muted-foreground">{t.role}</p>
+                    <p className="text-sm font-semibold">{testimonial.name}</p>
+                    <p className="text-xs text-muted-foreground">{testimonial.role}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -348,11 +341,11 @@ export default function LandingPage() {
                 className="w-full max-w-md rounded-2xl object-cover aspect-square"
               />
               <div className="absolute -bottom-4 -right-4 md:right-4 bg-brand-green text-black px-4 py-2 rounded-lg font-semibold text-sm shadow-lg">
-                8+ years in Product
+                8+ {t(l, "yearsInProduct")}
               </div>
             </div>
             <div>
-              <p className="text-brand-green text-sm font-semibold uppercase tracking-wider mb-2">Meet your instructor</p>
+              <p className="text-brand-green text-sm font-semibold uppercase tracking-wider mb-2">{t(l, "meetYourInstructor")}</p>
               <h2 className="text-3xl font-bold mb-2">Cristian Garcia</h2>
               <p className="text-lg text-muted-foreground mb-6">
                 Chief Product Officer &middot; Claude Code Expert
@@ -368,13 +361,7 @@ export default function LandingPage() {
                   As CPO at
                   <strong className="text-foreground"> Nova Talent</strong>, I
                   integrate AI into every part of our product workflow. Claude Code
-                  is my daily driver — I use it to ship features, analyze data,
-                  and automate tasks that used to take hours.
-                </p>
-                <p>
-                  This course is what I wish existed when I started: a practical,
-                  no-jargon guide designed for product people, not engineers. Everything
-                  I teach comes from real work, not theory.
+                  is my daily driver.
                 </p>
               </div>
             </div>
@@ -383,38 +370,28 @@ export default function LandingPage() {
                 <Card>
                   <CardContent className="p-5 text-center">
                     <p className="text-3xl font-bold text-brand-green">8+</p>
-                    <p className="text-sm text-muted-foreground mt-1">Years in Product</p>
+                    <p className="text-sm text-muted-foreground mt-1">{t(l, "yearsInProduct")}</p>
                   </CardContent>
                 </Card>
                 <Card>
                   <CardContent className="p-5 text-center">
                     <p className="text-3xl font-bold text-brand-green">CPO</p>
-                    <p className="text-sm text-muted-foreground mt-1">at Nova Talent</p>
+                    <p className="text-sm text-muted-foreground mt-1">{t(l, "atNovaTalent")}</p>
                   </CardContent>
                 </Card>
                 <Card>
                   <CardContent className="p-5 text-center">
                     <p className="text-3xl font-bold text-brand-green">BBVA</p>
-                    <p className="text-sm text-muted-foreground mt-1">Risk & Technology</p>
+                    <p className="text-sm text-muted-foreground mt-1">{t(l, "riskAndTechnology")}</p>
                   </CardContent>
                 </Card>
                 <Card>
                   <CardContent className="p-5 text-center">
                     <p className="text-3xl font-bold text-brand-green">Santander</p>
-                    <p className="text-sm text-muted-foreground mt-1">Built the global app</p>
+                    <p className="text-sm text-muted-foreground mt-1">{t(l, "builtGlobalApp")}</p>
                   </CardContent>
                 </Card>
               </div>
-              <Card>
-                <CardContent className="p-5">
-                  <p className="text-sm text-muted-foreground italic">
-                    &ldquo;I&apos;m not a developer by training. I learned to code at Ironhack,
-                    then spent years bridging the gap between business and engineering.
-                    Claude Code changed everything — now I can do in minutes what used
-                    to require a developer and a ticket in the backlog.&rdquo;
-                  </p>
-                </CardContent>
-              </Card>
             </div>
           </div>
         </div>
@@ -423,10 +400,9 @@ export default function LandingPage() {
       {/* CTA */}
       <section className="border-t border-border py-20 text-center">
         <div className="max-w-2xl mx-auto px-6">
-          <h2 className="text-3xl font-bold mb-4">Ready to get started?</h2>
+          <h2 className="text-3xl font-bold mb-4">{t(l, "readyToGetStarted")}</h2>
           <p className="text-muted-foreground mb-8">
-            Book a free 15-minute call. No commitment, no pressure — just a
-            conversation about how Claude Code can help your workflow.
+            {t(l, "readyToGetStartedDesc")}
           </p>
           <a
             href={CALENDLY_URL}
@@ -435,14 +411,14 @@ export default function LandingPage() {
             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-brand-green text-black font-semibold hover:bg-brand-green/90 transition-colors text-lg"
           >
             <Calendar className="h-5 w-5" />
-            Book a Free Call
+            {t(l, "bookFreeCall")}
           </a>
         </div>
       </section>
 
       {/* Footer */}
       <footer className="border-t border-border py-8 text-center text-sm text-muted-foreground">
-        <p><Logo size="sm" /> &middot; Master Claude Code without writing code</p>
+        <p><Logo size="sm" /> &middot; {t(l, "masterClaudeCodeFooter")}</p>
       </footer>
     </div>
   );

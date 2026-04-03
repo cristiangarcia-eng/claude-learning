@@ -9,34 +9,42 @@ import { Clock, Star, GraduationCap } from "lucide-react";
 import Link from "next/link";
 import { CompleteButton } from "@/components/progress/complete-button";
 import { getQuizBySlug } from "@/lib/quiz-data";
+import { SUPPORTED_LOCALES, type Locale, isValidLocale, t } from "@/lib/i18n";
 
 export function generateStaticParams() {
-  return LESSONS.map((l) => ({ lessonSlug: l.slug }));
+  const params: { locale: string; lessonSlug: string }[] = [];
+  for (const locale of SUPPORTED_LOCALES) {
+    for (const lesson of LESSONS) {
+      params.push({ locale, lessonSlug: lesson.slug });
+    }
+  }
+  return params;
 }
 
 export function generateMetadata({
   params,
 }: {
-  params: Promise<{ lessonSlug: string }>;
+  params: Promise<{ locale: string; lessonSlug: string }>;
 }) {
-  // Next.js 16 requires async params - but generateMetadata can return sync
-  // We'll handle this in the component
   return {};
 }
 
 export default async function LessonPage({
   params,
 }: {
-  params: Promise<{ lessonSlug: string }>;
+  params: Promise<{ locale: string; lessonSlug: string }>;
 }) {
-  const { lessonSlug } = await params;
+  const { locale, lessonSlug } = await params;
+  if (!isValidLocale(locale)) notFound();
+
   const lesson = getLessonBySlug(lessonSlug);
   if (!lesson) notFound();
 
-  const content = getLessonContent(lesson);
+  const typedLocale = locale as Locale;
+  const content = getLessonContent(lesson, undefined, typedLocale);
   if (!content) notFound();
 
-  const files = getLessonFiles(lesson);
+  const files = getLessonFiles(lesson, typedLocale);
   const { prev, next } = getAdjacentLessons(lessonSlug);
   const hasQuiz = !!getQuizBySlug(lessonSlug);
 
@@ -75,13 +83,13 @@ export default async function LessonPage({
         {files.length > 0 && (
           <div className="mb-8 rounded-lg border border-border bg-card p-4">
             <h3 className="text-sm font-semibold mb-2 text-muted-foreground uppercase tracking-wide">
-              Files in this lesson
+              {t(typedLocale, "filesInThisLesson")}
             </h3>
             <div className="flex flex-wrap gap-2">
               {files.map((f) => (
                 <Link
                   key={f.slug}
-                  href={`/lessons/${lessonSlug}/${f.slug}`}
+                  href={`/${locale}/lessons/${lessonSlug}/${f.slug}`}
                   className="text-sm px-3 py-1 rounded-md bg-muted hover:bg-muted/80 transition-colors"
                 >
                   {f.title}
@@ -99,11 +107,11 @@ export default async function LessonPage({
           <CompleteButton lessonSlug={lessonSlug} />
           {hasQuiz && (
             <Link
-              href={`/quiz/${lessonSlug}`}
+              href={`/${locale}/quiz/${lessonSlug}`}
               className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium bg-brand-green/10 text-brand-green border border-brand-green/30 hover:bg-brand-green/20 transition-colors"
             >
               <GraduationCap className="h-4 w-4" />
-              Take Quiz
+              {t(typedLocale, "takeQuiz")}
             </Link>
           )}
         </div>

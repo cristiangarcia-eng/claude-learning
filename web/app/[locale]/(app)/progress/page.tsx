@@ -1,10 +1,10 @@
 "use client";
 
 import { useProgress } from "@/components/progress/progress-provider";
-import { LESSONS, getLessonsByLevel } from "@/lib/lessons";
+import { LESSONS, getLessonsByLevel, getLessonTitle } from "@/lib/lessons";
 import { getBadges, getOverallProgress } from "@/lib/progress";
 import { Progress } from "@/components/ui/progress";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import {
   Trophy,
   CheckCircle,
@@ -16,6 +16,8 @@ import {
   Award,
 } from "lucide-react";
 import Link from "next/link";
+import { useLocale } from "@/components/locale-provider";
+import { t } from "@/lib/i18n";
 
 const LEVEL_ICONS = {
   starter: Sparkles,
@@ -33,6 +35,7 @@ const LEVEL_COLORS = {
 
 export default function ProgressPage() {
   const { progress } = useProgress();
+  const locale = useLocale();
   const completed = new Set(progress.completedLessons);
   const overallPercent = getOverallProgress();
   const badges = getBadges();
@@ -40,15 +43,15 @@ export default function ProgressPage() {
 
   return (
     <div className="max-w-4xl mx-auto px-6 py-8">
-      <h1 className="text-3xl font-bold mb-8">Your Progress</h1>
+      <h1 className="text-3xl font-bold mb-8">{t(locale, "yourProgress")}</h1>
 
       {/* Overall progress */}
       <Card className="mb-8">
         <CardContent className="p-6">
           <div className="flex items-center justify-between mb-3">
-            <span className="text-sm font-medium">Overall Progress</span>
+            <span className="text-sm font-medium">{t(locale, "overallProgress")}</span>
             <span className="text-sm text-muted-foreground">
-              {completed.size}/{LESSONS.length} lessons
+              {completed.size}/{LESSONS.length} {t(locale, "lessons")}
             </span>
           </div>
           <Progress value={overallPercent} className="h-3" />
@@ -61,7 +64,7 @@ export default function ProgressPage() {
       {/* Badges */}
       <h2 className="text-xl font-semibold mb-4 flex items-center gap-2">
         <Trophy className="h-5 w-5 text-brand-green" />
-        Badges ({earnedBadges.length}/{badges.length})
+        {t(locale, "badges")} ({earnedBadges.length}/{badges.length})
       </h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-10">
         {badges.map((badge) => (
@@ -109,7 +112,7 @@ export default function ProgressPage() {
                 return (
                   <Link
                     key={lesson.slug}
-                    href={`/lessons/${lesson.slug}`}
+                    href={`/${locale}/lessons/${lesson.slug}`}
                     className="flex items-center gap-3 p-3 rounded-lg border border-border hover:border-brand-green/30 transition-colors"
                   >
                     {done ? (
@@ -118,7 +121,7 @@ export default function ProgressPage() {
                       <Circle className="h-5 w-5 text-muted-foreground flex-shrink-0" />
                     )}
                     <div className="flex-1">
-                      <span className="font-medium">{lesson.title}</span>
+                      <span className="font-medium">{getLessonTitle(lesson, locale)}</span>
                       <span className="text-xs text-muted-foreground ml-2">
                         {lesson.duration}
                       </span>

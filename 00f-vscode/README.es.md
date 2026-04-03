@@ -30,22 +30,7 @@ Cuando abres VS Code por primera vez:
 
 ## La interfaz de un vistazo
 
-```
-┌──────────────────────────────────────────────┐
-│  Barra de Menu (File, Edit, View...)         │
-├────────┬─────────────────────────────────────┤
-│        │                                     │
-│  Barra │      Area del Editor                │
-│  Late- │      (tus archivos se abren aqui)   │
-│  ral   │                                     │
-│  📁    │                                     │
-│  🔍    │                                     │
-│  🧩    │                                     │
-│        │                                     │
-├────────┴─────────────────────────────────────┤
-│  Panel de Terminal (alternar con Ctrl+`)     │
-└──────────────────────────────────────────────┘
-```
+![Pantalla de bienvenida de VS Code](/vscode-welcome.png)
 
 ### Los iconos de la barra lateral (de arriba a abajo)
 

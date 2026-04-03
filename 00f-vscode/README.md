@@ -30,22 +30,7 @@ When you open VS Code for the first time:
 
 ## The interface at a glance
 
-```
-┌──────────────────────────────────────────────┐
-│  Menu Bar (File, Edit, View...)              │
-├────────┬─────────────────────────────────────┤
-│        │                                     │
-│  Side  │      Editor Area                    │
-│  Bar   │      (your files open here)         │
-│        │                                     │
-│  📁    │                                     │
-│  🔍    │                                     │
-│  🧩    │                                     │
-│        │                                     │
-├────────┴─────────────────────────────────────┤
-│  Terminal Panel (toggle with Ctrl+`)         │
-└──────────────────────────────────────────────┘
-```
+![VS Code welcome screen](/vscode-welcome.png)
 
 ### The sidebar icons (top to bottom)
 

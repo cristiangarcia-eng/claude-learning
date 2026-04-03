@@ -62,6 +62,8 @@ Esto activa pulsar-para-hablar directamente dentro de Claude Code. Mantén presi
 
 La diferencia es que `/voice` solo funciona dentro de Claude Code, mientras que Wispr Flow funciona en todas las apps de tu computadora. Para la mayoría de personas, Wispr Flow es la mejor opción porque lo usarás en todos lados — no solo con Claude.
 
+> **Nota para hispanohablantes**: El `/voice` integrado de Claude está optimizado para inglés. Si hablas en español u otros idiomas, la precisión de la transcripción baja bastante. Wispr Flow maneja múltiples idiomas mucho mejor, lo cual es otra razón por la que lo recomendamos.
+
 ## Consejos para la entrada por voz
 
 - **Habla con naturalidad** — no intentes "sonar técnico". Solo describe lo que quieres como se lo dirías a un colega

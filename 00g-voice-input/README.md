@@ -62,6 +62,8 @@ This activates push-to-talk directly inside Claude Code. Hold the trigger key, s
 
 The difference is that `/voice` only works inside Claude Code, while Wispr Flow works in every app on your computer. For most people, Wispr Flow is the better choice because you'll use it everywhere — not just with Claude.
 
+> **Note for non-English speakers**: Claude's built-in `/voice` is optimized for English. If you speak Spanish or other languages, the transcription accuracy drops noticeably. Wispr Flow handles multiple languages much better, which is another reason we recommend it.
+
 ## Tips for voice input
 
 - **Speak naturally** — don't try to "sound technical". Just describe what you want like you'd tell a colleague

@@ -113,6 +113,20 @@ graph TD
 
 ---
 
+## 📖 Extra: Prerequisite Knowledge Blocks
+
+**For**: Non-technical users who need foundational knowledge before diving into the main lessons. Complete these **before** starting Level 1 if any of the topics are unfamiliar.
+
+| Extra | Topic | Time | You need this if... |
+|-------|-------|------|-------------------|
+| [Git Basics](00g-git-basics/) | Version control fundamentals | 20 min | You don't know what a "commit" or "branch" is |
+| [JSON Essentials](00h-json-essentials/) | Configuration file format | 15 min | You've never edited a `.json` file |
+| [Hidden Files & Paths](00i-hidden-files/) | System paths and hidden folders | 15 min | You don't know what `~/.claude/` means |
+
+> **Note**: These are not required for everyone. If you already use Git, edit JSON files, or navigate hidden folders comfortably, skip them and go straight to Level 1.
+
+---
+
 ## 🟢 Level 1: Beginner — Getting Started
 
 **For**: Users with 0-2 quiz checks

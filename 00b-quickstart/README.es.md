@@ -39,23 +39,21 @@ claude
 
 La primera vez, se te pedirá iniciar sesión. Sigue las instrucciones — se abrirá tu navegador para autenticarte.
 
-Una vez que inicies sesión, verás una pantalla de bienvenida con un cursor esperando tu entrada. ¡Ya estás dentro!
+Una vez que inicies sesión, verás una pantalla como esta — con los archivos de Nike a la izquierda y Claude listo para conversar en la parte inferior:
+
+![Claude Code corriendo en VS Code con el proyecto Nike](/claude-code-running.png)
+
+¡Ya estás dentro! Ese cursor en la parte inferior es donde escribes tus solicitudes.
 
 ## Paso 3: Haz tu primera pregunta
 
-¿Recuerdas los archivos de Nike que exploraste en VS Code? Ahora preguntémosle a Claude sobre ellos. Solo escribe en español normal:
+¿Recuerdas los archivos de Nike que exploraste en VS Code? Ahora preguntémosle a Claude sobre ellos. Solo escribe en español normal. Prueba cualquiera de estas:
 
-```
-resume el análisis competitivo
-```
+> `resume el análisis competitivo`
 
-```
-¿cuáles son las principales fortalezas y amenazas de Nike?
-```
+> `¿cuáles son las principales fortalezas y amenazas de Nike?`
 
-```
-analiza los datos de ventas y dime qué región creció más
-```
+> `analiza los datos de ventas y dime qué región creció más`
 
 Claude leerá los archivos y te dará una respuesta detallada. No se necesita configuración — simplemente funciona.
 
@@ -65,9 +63,7 @@ Claude leerá los archivos y te dará una respuesta detallada. No se necesita co
 
 Ahora pídele a Claude que modifique uno de los archivos:
 
-```
-agrega una sección sobre la estrategia digital de Nike al análisis competitivo
-```
+> `agrega una sección sobre la estrategia digital de Nike al análisis competitivo`
 
 Claude:
 1. Pensará en qué escribir
@@ -84,31 +80,22 @@ Verás los cambios aparecer en VS Code inmediatamente — el archivo se actualiz
 Aquí hay más cosas que puedes pedirle a Claude sobre el proyecto de Nike:
 
 ### Analizar datos
-```
-lee el CSV de ventas y crea una tabla resumen por región con ingresos totales y crecimiento promedio
-```
 
-```
-¿qué trimestre tuvo el mejor rendimiento general?
-```
+> `lee el CSV de ventas y crea una tabla resumen por región con ingresos totales y crecimiento promedio`
+
+> `¿qué trimestre tuvo el mejor rendimiento general?`
 
 ### Extraer insights
-```
-basándote en las notas de reunión y el análisis competitivo, ¿qué debería priorizar Nike el próximo trimestre?
-```
 
-```
-escribe 3 puntos clave que pueda compartir con mi equipo sobre los mayores riesgos de Nike
-```
+> `basándote en las notas de reunión y el análisis competitivo, ¿qué debería priorizar Nike el próximo trimestre?`
+
+> `escribe 3 puntos clave que pueda compartir con mi equipo sobre los mayores riesgos de Nike`
 
 ### Crear contenido nuevo
-```
-crea un resumen ejecutivo de una página combinando el análisis competitivo y los datos de ventas
-```
 
-```
-redacta un email para el equipo resumiendo los hallazgos clave del análisis de Nike
-```
+> `crea un resumen ejecutivo de una página combinando el análisis competitivo y los datos de ventas`
+
+> `redacta un email para el equipo resumiendo los hallazgos clave del análisis de Nike`
 
 ## Comandos esenciales para recordar
 

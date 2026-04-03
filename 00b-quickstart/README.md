@@ -39,23 +39,21 @@ claude
 
 The first time, you'll be asked to log in. Follow the prompts — it opens your browser to authenticate.
 
-Once logged in, you'll see a welcome screen with a cursor waiting for your input. You're in!
+Once logged in, you'll see a welcome screen like this — with the Nike project files on the left and Claude ready to chat at the bottom:
+
+![Claude Code running in VS Code with the Nike project](/claude-code-running.png)
+
+You're in! That cursor at the bottom is where you type your requests.
 
 ## Step 3: Ask your first question
 
-Remember the Nike files you explored in VS Code? Now let's ask Claude about them. Just type in plain English:
+Remember the Nike files you explored in VS Code? Now let's ask Claude about them. Just type in plain English. Try any of these:
 
-```
-summarize the competitive analysis
-```
+> `summarize the competitive analysis`
 
-```
-what are Nike's main strengths and threats?
-```
+> `what are Nike's main strengths and threats?`
 
-```
-analyze the sales data and tell me which region grew the most
-```
+> `analyze the sales data and tell me which region grew the most`
 
 Claude will read the files and give you a detailed answer. No setup needed — it just works.
 
@@ -65,9 +63,7 @@ Claude will read the files and give you a detailed answer. No setup needed — i
 
 Now ask Claude to modify one of the files:
 
-```
-add a section about Nike's digital strategy to the competitive analysis
-```
+> `add a section about Nike's digital strategy to the competitive analysis`
 
 Claude will:
 1. Think about what to write
@@ -84,31 +80,22 @@ You'll see the changes appear in VS Code immediately — the file updates in rea
 Here are more things you can ask Claude about the Nike project:
 
 ### Analyze data
-```
-read the sales CSV and create a summary table by region with total revenue and average growth
-```
 
-```
-which quarter had the best performance overall?
-```
+> `read the sales CSV and create a summary table by region with total revenue and average growth`
+
+> `which quarter had the best performance overall?`
 
 ### Extract insights
-```
-based on the meeting notes and competitive analysis, what should Nike prioritize next quarter?
-```
 
-```
-write 3 bullet points I can share with my team about Nike's biggest risks
-```
+> `based on the meeting notes and competitive analysis, what should Nike prioritize next quarter?`
+
+> `write 3 bullet points I can share with my team about Nike's biggest risks`
 
 ### Create new content
-```
-create a one-page executive summary combining the competitive analysis and sales data
-```
 
-```
-draft an email to the team summarizing the key findings from the Nike analysis
-```
+> `create a one-page executive summary combining the competitive analysis and sales data`
+
+> `draft an email to the team summarizing the key findings from the Nike analysis`
 
 ## Essential commands to remember
 

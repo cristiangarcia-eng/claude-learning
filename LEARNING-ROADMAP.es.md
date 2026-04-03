@@ -5,48 +5,48 @@
 
 # 📚 Hoja de Ruta de Aprendizaje de Claude Code
 
-**Nuevo en Claude Code?** Esta guía te ayuda a dominar las funciones de Claude Code a tu propio ritmo. Ya seas un principiante o un desarrollador experimentado, comienza con el cuestionario de autoevaluación para encontrar el camino correcto para ti.
+**¿Eres nuevo en Claude Code?** Esta guía te ayuda a dominar las funcionalidades de Claude Code a tu propio ritmo. Ya seas un principiante absoluto o un desarrollador con experiencia, comienza con el cuestionario de autoevaluación a continuación para encontrar el camino adecuado para ti.
 
 ---
 
 ## 🧭 Encuentra Tu Nivel
 
-No todos empiezan desde el mismo lugar. Toma está autoevaluación rápida para encontrar tu punto de entrada.
+No todos empiezan desde el mismo punto. Realiza está autoevaluación rápida para encontrar el punto de entrada correcto.
 
 **Responde estas preguntas con honestidad:**
 
-- [ ] I can start Claude Code and have a conversation (`claude`)
-- [ ] I have created or edited a CLAUDE.md file
-- [ ] I have used at least 3 built-in slash commands (e.g., /help, /compact, /model)
-- [ ] I have created a custom slash command or skill (SKILL.md)
-- [ ] I have configured an MCP server (e.g., GitHub, database)
-- [ ] I have set up hooks in ~/.claude/settings.json
-- [ ] I have created or used custom subagents (.claude/agents/)
-- [ ] I have used print mode (`claude -p`) for scripting or CI/CD
+- [ ] Puedo iniciar Claude Code y tener una conversación (`claude`)
+- [ ] He creado o editado un archivo CLAUDE.md
+- [ ] He usado al menos 3 comandos slash integrados (p. ej., /help, /compact, /model)
+- [ ] He creado un comando slash personalizado o skill (SKILL.md)
+- [ ] He configurado un servidor MCP (p. ej., GitHub, base de datos)
+- [ ] He configurado hooks en ~/.claude/settings.json
+- [ ] He creado o usado subagentes personalizados (.claude/agents/)
+- [ ] He usado el modo print (`claude -p`) para scripting o CI/CD
 
 **Tu Nivel:**
 
-| Checks | Nivel | Empezar En | Tiempo para Completar |
-|--------|-------|----------|------------------|
-| 0-2 | **Level 1: Beginner** — Getting Started | [Milestone 1A](#milestone-1a-first-commands--memory) | ~3 hours |
-| 3-5 | **Level 2: Intermediate** — Building Workflows | [Milestone 2A](#milestone-2a-automation-skills--hooks) | ~5 hours |
-| 6-8 | **Level 3: Advanced** — Power User & Team Lead | [Milestone 3A](#milestone-3a-advanced-features) | ~5 hours |
+| Respuestas | Nivel | Comienza En | Tiempo para Completar |
+|------------|-------|-------------|----------------------|
+| 0-2 | **Nivel 1: Principiante** — Primeros Pasos | [Hito 1A](#milestone-1a-first-commands--memory) | ~3 horas |
+| 3-5 | **Nivel 2: Intermedio** — Construyendo Flujos de Trabajo | [Hito 2A](#milestone-2a-automation-skills--hooks) | ~5 horas |
+| 6-8 | **Nivel 3: Avanzado** — Usuario Experto y Líder de Equipo | [Hito 3A](#milestone-3a-advanced-features) | ~5 horas |
 
-> **Tip**: If you're unsure, start one level lower. It's better to review familiar material quickly than to miss foundational concepts.
+> **Consejo**: Si no estás seguro, empieza un nivel más abajo. Es mejor repasar material conocido rápidamente que perderse conceptos fundamentales.
 
-> **Interactive version**: Run `/self-assessment` in Claude Code for a guided, interactive quiz that scores your proficiency across all 10 feature areas and generates a personalized learning path.
+> **Versión interactiva**: Ejecuta `/self-assessment` en Claude Code para obtener un cuestionario guiado e interactivo que evalúa tu competencia en las 10 áreas de funcionalidades y genera una ruta de aprendizaje personalizada.
 
 ---
 
 ## 🎯 Filosofía de Aprendizaje
 
-Las carpetas en este repositorio están numeradas en **orden de aprendizaje recomendado** basado en tres principios clave:
+Las carpetas en este repositorio están numeradas en el **orden de aprendizaje recomendado**, basado en tres principios clave:
 
-1. **Dependencias** - Los conceptos fundamentales van primero
-2. **Complejidad** - Funciones faciles antes que avanzadas
-3. **Frecuencia de Uso** - Las funciones más comunes se enseñan primero
+1. **Dependencias** — Los conceptos fundamentales van primero
+2. **Complejidad** — Las funcionalidades más sencillas antes que las avanzadas
+3. **Frecuencia de Uso** — Las funcionalidades más comunes se enseñan primero
 
-Este enfoque asegura que construyas una base solida mientras obtienes beneficios de productividad inmediatos.
+Este enfoque asegura que construyas una base sólida mientras obtienes beneficios inmediatos de productividad.
 
 ---
 
@@ -86,28 +86,28 @@ graph TD
 ```
 
 **Leyenda de Colores:**
-- 💜 Purple: Self-Assessment Quiz
-- 🟢 Green: Level 1 — Beginner path
-- 🔵 Blue / 🟡 Gold: Level 2 — Intermediate path
-- 🔴 Red: Level 3 — Advanced path
+- 💜 Morado: Cuestionario de Autoevaluación
+- 🟢 Verde: Nivel 1 — Ruta para principiantes
+- 🔵 Azul / 🟡 Dorado: Nivel 2 — Ruta intermedia
+- 🔴 Rojo: Nivel 3 — Ruta avanzada
 
 ---
 
 ## 📊 Tabla Completa de la Hoja de Ruta
 
-| Paso | Función | Complejidad | Tiempo | Nivel | Dependencias | Por Que Aprenderlo | Beneficios Clave |
-|------|---------|-----------|------|-------|--------------|----------------|--------------|
-| **1** | [Slash Commands](01-slash-commands/) | ⭐ Beginner | 30 min | Level 1 | None | Quick productivity wins (55+ built-in + 5 bundled skills) | Instant automation, team standards |
-| **2** | [Memory](02-memory/) | ⭐⭐ Beginner+ | 45 min | Level 1 | None | Essential for all features | Persistent context, preferences |
-| **3** | [Checkpoints](08-checkpoints/) | ⭐⭐ Intermediate | 45 min | Level 1 | Session management | Safe exploration | Experimentation, recovery |
-| **4** | [CLI Basics](10-cli/) | ⭐⭐ Beginner+ | 30 min | Level 1 | None | Core CLI usage | Interactive & print mode |
-| **5** | [Skills](03-skills/) | ⭐⭐ Intermediate | 1 hour | Level 2 | Slash Commands | Automatic expertise | Reusable capabilities, consistency |
-| **6** | [Hooks](06-hooks/) | ⭐⭐ Intermediate | 1 hour | Level 2 | Tools, Commands | Workflow automation (25 events, 4 types) | Validation, quality gates |
-| **7** | [MCP](05-mcp/) | ⭐⭐⭐ Intermediate+ | 1 hour | Level 2 | Configuration | Live data access | Real-time integration, APIs |
-| **8** | [Subagents](04-subagents/) | ⭐⭐⭐ Intermediate+ | 1.5 hours | Level 2 | Memory, Commands | Complex task handling (6 built-in including Bash) | Delegation, specialized expertise |
-| **9** | [Advanced Features](09-advanced-features/) | ⭐⭐⭐⭐⭐ Advanced | 2-3 hours | Level 3 | All previous | Power user tools | Planning, Auto Mode, Channels, Voice Dictation, permissions |
-| **10** | [Plugins](07-plugins/) | ⭐⭐⭐⭐ Advanced | 2 hours | Level 3 | All previous | Complete solutions | Team onboarding, distribution |
-| **11** | [CLI Mastery](10-cli/) | ⭐⭐⭐ Advanced | 1 hour | Level 3 | Recommended: All | Master command-line usage | Scripting, CI/CD, automation |
+| Paso | Funcionalidad | Complejidad | Tiempo | Nivel | Dependencias | Por Qué Aprenderlo | Beneficios Clave |
+|------|--------------|-------------|--------|-------|--------------|-------------------|-----------------|
+| **1** | [Slash Commands](01-slash-commands/) | ⭐ Principiante | 30 min | Nivel 1 | Ninguna | Ganancias rápidas de productividad (55+ integrados + 5 skills incluidos) | Automatización instantánea, estándares de equipo |
+| **2** | [Memory](02-memory/) | ⭐⭐ Principiante+ | 45 min | Nivel 1 | Ninguna | Esencial para todas las funcionalidades | Contexto persistente, preferencias |
+| **3** | [Checkpoints](08-checkpoints/) | ⭐⭐ Intermedio | 45 min | Nivel 1 | Gestión de sesiones | Exploración segura | Experimentación, recuperación |
+| **4** | [CLI Basics](10-cli/) | ⭐⭐ Principiante+ | 30 min | Nivel 1 | Ninguna | Uso básico del CLI | Modo interactivo y print |
+| **5** | [Skills](03-skills/) | ⭐⭐ Intermedio | 1 hora | Nivel 2 | Slash Commands | Experiencia automática | Capacidades reutilizables, consistencia |
+| **6** | [Hooks](06-hooks/) | ⭐⭐ Intermedio | 1 hora | Nivel 2 | Herramientas, Comandos | Automatización de flujos de trabajo (25 eventos, 4 tipos) | Validación, controles de calidad |
+| **7** | [MCP](05-mcp/) | ⭐⭐⭐ Intermedio+ | 1 hora | Nivel 2 | Configuración | Acceso a datos en vivo | Integración en tiempo real, APIs |
+| **8** | [Subagents](04-subagents/) | ⭐⭐⭐ Intermedio+ | 1.5 horas | Nivel 2 | Memory, Commands | Manejo de tareas complejas (6 integrados incluyendo Bash) | Delegación, experiencia especializada |
+| **9** | [Advanced Features](09-advanced-features/) | ⭐⭐⭐⭐⭐ Avanzado | 2-3 horas | Nivel 3 | Todos los anteriores | Herramientas para usuarios expertos | Planificación, Modo Auto, Canales, Dictado por Voz, permisos |
+| **10** | [Plugins](07-plugins/) | ⭐⭐⭐⭐ Avanzado | 2 horas | Nivel 3 | Todos los anteriores | Soluciones completas | Incorporación de equipos, distribución |
+| **11** | [CLI Mastery](10-cli/) | ⭐⭐⭐ Avanzado | 1 hora | Nivel 3 | Recomendado: Todos | Dominar el uso de línea de comandos | Scripting, CI/CD, automatización |
 
 **Tiempo Total de Aprendizaje**: ~11-13 horas (o salta a tu nivel y ahorra tiempo)
 
@@ -115,146 +115,146 @@ graph TD
 
 ## 🟢 Nivel 1: Principiante — Primeros Pasos
 
-**Para**: Users with 0-2 quiz checks
-**Tiempo**: ~3 hours
-**Enfoque**: Immediate productivity, understanding fundamentals
-**Resultado**: Comfortable daily user, ready for Level 2
+**Para**: Usuarios con 0-2 respuestas en el cuestionario
+**Tiempo**: ~3 horas
+**Enfoque**: Productividad inmediata, comprensión de los fundamentos
+**Resultado**: Usuario cómodo en el día a día, listo para el Nivel 2
 
-> **Antes de empezar**: Asegúrate de haber completado los modulos fundamentales (serie 00). En particular, si nunca has usado Git, completa [Git Basics](00g-git-basics/) primero — Claude Code usa conceptos de Git como commits, branches y diffs a lo largo del curso.
+> **Antes de comenzar**: Asegúrate de haber completado los módulos fundamentales (serie 00). En particular, si nunca has usado Git, completa [Git Basics](00g-git-basics/) primero — Claude Code usa conceptos de Git como commits, ramas y diffs a lo largo del curso.
 
 ### Hito 1A: Primeros Comandos y Memoria
 
 **Temas**: Slash Commands + Memory
-**Tiempo**: 1-2 hours
-**Complejidad**: ⭐ Beginner
-**Objetivo**: Immediate productivity boost with custom commands and persistent context
+**Tiempo**: 1-2 horas
+**Complejidad**: ⭐ Principiante
+**Objetivo**: Impulso inmediato de productividad con comandos personalizados y contexto persistente
 
-#### Lo Que Lograras
-✅ Create custom slash commands for repetitive tasks
-✅ Set up project memory for team standards
-✅ Configure personal preferences
-✅ Understand how Claude loads context automatically
+#### Qué Lograrás
+✅ Crear comandos slash personalizados para tareas repetitivas
+✅ Configurar la memoria del proyecto para los estándares del equipo
+✅ Configurar preferencias personales
+✅ Entender cómo Claude carga el contexto automáticamente
 
 #### Ejercicios Prácticos
 
 ```bash
-# Exercise 1: Install your first slash command
+# Ejercicio 1: Instala tu primer slash command
 mkdir -p .claude/commands
 cp 01-slash-commands/optimize.md .claude/commands/
 
-# Exercise 2: Create project memory
+# Ejercicio 2: Crea la memoria del proyecto
 cp 02-memory/project-CLAUDE.md ./CLAUDE.md
 
-# Exercise 3: Try it out
-# In Claude Code, type: /optimize
+# Ejercicio 3: Pruébalo
+# En Claude Code, escribe: /optimize
 ```
 
-#### Criterios de Exito
-- [ ] Successfully invoke `/optimize` command
-- [ ] Claude remembers your project standards from CLAUDE.md
-- [ ] You understand when to use slash commands vs. memory
+#### Criterios de Éxito
+- [ ] Invocas exitosamente el comando `/optimize`
+- [ ] Claude recuerda los estándares de tu proyecto desde CLAUDE.md
+- [ ] Entiendes cuándo usar slash commands vs. memoria
 
-#### Proximos Pasos
-Cuando te sientas comodo, lee:
-- [01-slash-commands/README.md](01-slash-commands/README.md)
-- [02-memory/README.md](02-memory/README.md)
+#### Próximos Pasos
+Una vez que te sientas cómodo, lee:
+- [01-slash-commands/README.es.md](01-slash-commands/README.es.md)
+- [02-memory/README.es.md](02-memory/README.es.md)
 
-> **Check your understanding**: Run `/lesson-quiz slash-commands` or `/lesson-quiz memory` in Claude Code to test what you've learned.
+> **Verifica tu comprensión**: Ejecuta `/lesson-quiz slash-commands` o `/lesson-quiz memory` en Claude Code para poner a prueba lo que has aprendido.
 
 ---
 
-### Hito 1B: Exploracion Segura
+### Hito 1B: Exploración Segura
 
 **Temas**: Checkpoints + CLI Basics
-**Tiempo**: 1 hour
-**Complejidad**: ⭐⭐ Beginner+
-**Objetivo**: Learn to experiment safely and use core CLI commands
+**Tiempo**: 1 hora
+**Complejidad**: ⭐⭐ Principiante+
+**Objetivo**: Aprender a experimentar con seguridad y usar los comandos CLI básicos
 
-#### Lo Que Lograras
-✅ Create and restore checkpoints for safe experimentation
-✅ Understand interactive vs. print mode
-✅ Use basic CLI flags and options
-✅ Process files via piping
+#### Qué Lograrás
+✅ Crear y restaurar checkpoints para experimentar con seguridad
+✅ Entender el modo interactivo vs. el modo print
+✅ Usar flags y opciones básicas del CLI
+✅ Procesar archivos mediante piping
 
 #### Ejercicios Prácticos
 
 ```bash
-# Exercise 1: Try checkpoint workflow
-# In Claude Code:
-# Make some experimental changes, then press Esc+Esc or use /rewind
-# Select the checkpoint before your experiment
-# Choose "Restore code and conversation" to go back
+# Ejercicio 1: Prueba el flujo de trabajo con checkpoints
+# En Claude Code:
+# Haz algunos cambios experimentales, luego presiona Esc+Esc o usa /rewind
+# Selecciona el checkpoint anterior a tu experimento
+# Elige "Restore code and conversation" para volver atrás
 
-# Exercise 2: Interactive vs Print mode
-claude "explain this project"           # Interactive mode
-claude -p "explain this function"       # Print mode (non-interactive)
+# Ejercicio 2: Modo interactivo vs. modo print
+claude "explain this project"           # Modo interactivo
+claude -p "explain this function"       # Modo print (no interactivo)
 
-# Exercise 3: Process file content via piping
+# Ejercicio 3: Procesa el contenido de un archivo mediante piping
 cat error.log | claude -p "explain this error"
 ```
 
-#### Criterios de Exito
-- [ ] Created and reverted to a checkpoint
-- [ ] Used both interactive and print mode
-- [ ] Piped a file to Claude for analysis
-- [ ] Understand when to use checkpoints for safe experimentation
+#### Criterios de Éxito
+- [ ] Creaste y revertiste a un checkpoint
+- [ ] Usaste tanto el modo interactivo como el modo print
+- [ ] Enviaste un archivo a Claude mediante piping para análisis
+- [ ] Entiendes cuándo usar checkpoints para experimentar con seguridad
 
-#### Proximos Pasos
-- Read: [08-checkpoints/README.md](08-checkpoints/README.md)
-- Read: [10-cli/README.md](10-cli/README.md)
-- **Ready for Level 2!** Proceed to [Milestone 2A](#milestone-2a-automation-skills--hooks)
+#### Próximos Pasos
+- Leer: [08-checkpoints/README.es.md](08-checkpoints/README.es.md)
+- Leer: [10-cli/README.es.md](10-cli/README.es.md)
+- **¡Listo para el Nivel 2!** Continúa con el [Hito 2A](#milestone-2a-automation-skills--hooks)
 
-> **Check your understanding**: Run `/lesson-quiz checkpoints` or `/lesson-quiz cli` to verify you're ready for Level 2.
+> **Verifica tu comprensión**: Ejecuta `/lesson-quiz checkpoints` o `/lesson-quiz cli` para confirmar que estás listo para el Nivel 2.
 
 ---
 
 ## 🔵 Nivel 2: Intermedio — Construyendo Flujos de Trabajo
 
-**Para**: Users with 3-5 quiz checks
-**Tiempo**: ~5 hours
-**Enfoque**: Automation, integration, task delegation
-**Resultado**: Automated workflows, external integrations, ready for Level 3
+**Para**: Usuarios con 3-5 respuestas en el cuestionario
+**Tiempo**: ~5 horas
+**Enfoque**: Automatización, integración, delegación de tareas
+**Resultado**: Flujos de trabajo automatizados, integraciones externas, listo para el Nivel 3
 
-### Verificación de Prerequisitos
+### Verificación de Prerrequisitos
 
-Antes de comenzar el Nivel 2, asegúrate de estar comodo con estos conceptos del Nivel 1:
+Antes de comenzar el Nivel 2, asegúrate de sentirte cómodo con estos conceptos del Nivel 1:
 
-- [ ] Can create and use slash commands ([01-slash-commands/](01-slash-commands/))
-- [ ] Have set up project memory via CLAUDE.md ([02-memory/](02-memory/))
-- [ ] Know how to create and restore checkpoints ([08-checkpoints/](08-checkpoints/))
-- [ ] Can use `claude` and `claude -p` from the command line ([10-cli/](10-cli/))
+- [ ] Puedes crear y usar slash commands ([01-slash-commands/](01-slash-commands/))
+- [ ] Has configurado la memoria del proyecto mediante CLAUDE.md ([02-memory/](02-memory/))
+- [ ] Sabes cómo crear y restaurar checkpoints ([08-checkpoints/](08-checkpoints/))
+- [ ] Puedes usar `claude` y `claude -p` desde la línea de comandos ([10-cli/](10-cli/))
 
-> **Gaps?** Review the linked tutorials above before continuing.
+> **¿Tienes lagunas?** Repasa los tutoriales enlazados arriba antes de continuar.
 
 ---
 
-### Hito 2A: Automatizacion (Skills + Hooks)
+### Hito 2A: Automatización (Skills + Hooks)
 
 **Temas**: Skills + Hooks
-**Tiempo**: 2-3 hours
-**Complejidad**: ⭐⭐ Intermediate
-**Objetivo**: Automate common workflows and quality checks
+**Tiempo**: 2-3 horas
+**Complejidad**: ⭐⭐ Intermedio
+**Objetivo**: Automatizar flujos de trabajo comunes y verificaciones de calidad
 
-#### Lo Que Lograras
-✅ Auto-invoke specialized capabilities with YAML frontmatter (including `effort` and `shell` fields)
-✅ Set up event-driven automation across 25 hook events
-✅ Use all 4 hook types (command, http, prompt, agent)
-✅ Enforce code quality standards
-✅ Create custom hooks for your workflow
+#### Qué Lograrás
+✅ Invocar automáticamente capacidades especializadas con frontmatter YAML (incluidos los campos `effort` y `shell`)
+✅ Configurar automatización basada en eventos en 25 eventos de hooks
+✅ Usar los 4 tipos de hooks (command, http, prompt, agent)
+✅ Aplicar estándares de calidad de código
+✅ Crear hooks personalizados para tu flujo de trabajo
 
 #### Ejercicios Prácticos
 
 ```bash
-# Exercise 1: Install a skill
+# Ejercicio 1: Instala un skill
 cp -r 03-skills/code-review ~/.claude/skills/
 
-# Exercise 2: Set up hooks
+# Ejercicio 2: Configura hooks
 mkdir -p ~/.claude/hooks
 cp 06-hooks/pre-tool-check.sh ~/.claude/hooks/
 chmod +x ~/.claude/hooks/pre-tool-check.sh
 
-# Exercise 3: Configure hooks in settings
-# Add to ~/.claude/settings.json:
+# Ejercicio 3: Configura los hooks en settings
+# Agrega a ~/.claude/settings.json:
 {
   "hooks": {
     "PreToolUse": [
@@ -272,257 +272,259 @@ chmod +x ~/.claude/hooks/pre-tool-check.sh
 }
 ```
 
-#### Criterios de Exito
-- [ ] Code review skill automatically invoked when relevant
-- [ ] PreToolUse hook runs before tool execution
-- [ ] You understand skill auto-invocation vs. hook event triggers
+#### Criterios de Éxito
+- [ ] El skill de revisión de código se invoca automáticamente cuando es relevante
+- [ ] El hook PreToolUse se ejecuta antes de la ejecución de herramientas
+- [ ] Entiendes la diferencia entre la auto-invocación de skills y los disparadores de eventos de hooks
 
-#### Proximos Pasos
-- Create your own custom skill
-- Set up additional hooks for your workflow
-- Read: [03-skills/README.md](03-skills/README.md)
-- Read: [06-hooks/README.md](06-hooks/README.md)
+#### Próximos Pasos
+- Crea tu propio skill personalizado
+- Configura hooks adicionales para tu flujo de trabajo
+- Leer: [03-skills/README.es.md](03-skills/README.es.md)
+- Leer: [06-hooks/README.es.md](06-hooks/README.es.md)
 
-> **Check your understanding**: Run `/lesson-quiz skills` or `/lesson-quiz hooks` to test your knowledge before moving on.
+> **Verifica tu comprensión**: Ejecuta `/lesson-quiz skills` o `/lesson-quiz hooks` para poner a prueba tus conocimientos antes de continuar.
 
 ---
 
 ### Hito 2B: Integración (MCP + Subagentes)
 
 **Temas**: MCP + Subagents
-**Tiempo**: 2-3 hours
-**Complejidad**: ⭐⭐⭐ Intermediate+
-**Objetivo**: Integrate external services and delegate complex tasks
+**Tiempo**: 2-3 horas
+**Complejidad**: ⭐⭐⭐ Intermedio+
+**Objetivo**: Integrar servicios externos y delegar tareas complejas
 
-#### Lo Que Lograras
-✅ Access live data from GitHub, databases, etc.
-✅ Delegate work to specialized AI agents
-✅ Understand when to use MCP vs. subagents
-✅ Build integrated workflows
+#### Qué Lograrás
+✅ Acceder a datos en vivo de GitHub, bases de datos, etc.
+✅ Delegar trabajo a agentes de IA especializados
+✅ Entender cuándo usar MCP vs. subagentes
+✅ Construir flujos de trabajo integrados
 
 #### Ejercicios Prácticos
 
 ```bash
-# Exercise 1: Set up GitHub MCP
+# Ejercicio 1: Configura GitHub MCP
 export GITHUB_TOKEN="your_github_token"
 claude mcp add github -- npx -y @modelcontextprotocol/server-github
 
-# Exercise 2: Test MCP integration
-# In Claude Code: /mcp__github__list_prs
+# Ejercicio 2: Prueba la integración MCP
+# En Claude Code: /mcp__github__list_prs
 
-# Exercise 3: Install subagents
+# Ejercicio 3: Instala subagentes
 mkdir -p .claude/agents
 cp 04-subagents/*.md .claude/agents/
 ```
 
 #### Ejercicio de Integración
-Try this complete workflow:
-1. Use MCP to fetch a GitHub PR
-2. Let Claude delegate review to code-reviewer subagent
-3. Use hooks to run tests automatically
+Prueba este flujo de trabajo completo:
+1. Usa MCP para obtener un PR de GitHub
+2. Deja que Claude delegue la revisión al subagente code-reviewer
+3. Usa hooks para ejecutar pruebas automáticamente
 
-#### Criterios de Exito
-- [ ] Successfully query GitHub data via MCP
-- [ ] Claude delegates complex tasks to subagents
-- [ ] You understand the difference between MCP and subagents
-- [ ] Combined MCP + subagents + hooks in a workflow
+#### Criterios de Éxito
+- [ ] Consultas exitosamente datos de GitHub mediante MCP
+- [ ] Claude delega tareas complejas a subagentes
+- [ ] Entiendes la diferencia entre MCP y subagentes
+- [ ] Combinaste MCP + subagentes + hooks en un flujo de trabajo
 
-#### Proximos Pasos
-- Set up additional MCP servers (database, Slack, etc.)
-- Create custom subagents for your domain
-- Read: [05-mcp/README.md](05-mcp/README.md)
-- Read: [04-subagents/README.md](04-subagents/README.md)
-- **Ready for Level 3!** Proceed to [Milestone 3A](#milestone-3a-advanced-features)
+#### Próximos Pasos
+- Configura servidores MCP adicionales (base de datos, Slack, etc.)
+- Crea subagentes personalizados para tu dominio
+- Leer: [05-mcp/README.es.md](05-mcp/README.es.md)
+- Leer: [04-subagents/README.es.md](04-subagents/README.es.md)
+- **¡Listo para el Nivel 3!** Continúa con el [Hito 3A](#milestone-3a-advanced-features)
 
-> **Check your understanding**: Run `/lesson-quiz mcp` or `/lesson-quiz subagents` to verify you're ready for Level 3.
-
----
-
-## 🔴 Nivel 3: Avanzado — Usuario Avanzado y Lider de Equipo
-
-**Para**: Users with 6-8 quiz checks
-**Tiempo**: ~5 hours
-**Enfoque**: Team tooling, CI/CD, enterprise features, plugin development
-**Resultado**: Power user, can set up team workflows and CI/CD
-
-### Verificación de Prerequisitos
-
-Antes de comenzar el Nivel 3, asegúrate de estar comodo con estos conceptos del Nivel 2:
-
-- [ ] Can create and use skills with auto-invocation ([03-skills/](03-skills/))
-- [ ] Have set up hooks for event-driven automation ([06-hooks/](06-hooks/))
-- [ ] Can configure MCP servers for external data ([05-mcp/](05-mcp/))
-- [ ] Know how to use subagents for task delegation ([04-subagents/](04-subagents/))
-
-> **Gaps?** Review the linked tutorials above before continuing.
+> **Verifica tu comprensión**: Ejecuta `/lesson-quiz mcp` o `/lesson-quiz subagents` para confirmar que estás listo para el Nivel 3.
 
 ---
 
-### Hito 3A: Funciones Avanzadas
+## 🔴 Nivel 3: Avanzado — Usuario Experto y Líder de Equipo
 
-**Temas**: Advanced Features (Planning, Permissions, Extended Thinking, Auto Mode, Channels, Voice Dictation, Remote/Desktop/Web)
-**Tiempo**: 2-3 hours
-**Complejidad**: ⭐⭐⭐⭐⭐ Advanced
-**Objetivo**: Master advanced workflows and power user tools
+**Para**: Usuarios con 6-8 respuestas en el cuestionario
+**Tiempo**: ~5 horas
+**Enfoque**: Herramientas de equipo, CI/CD, funcionalidades empresariales, desarrollo de plugins
+**Resultado**: Usuario experto, capaz de configurar flujos de trabajo en equipo y CI/CD
 
-#### Lo Que Lograras
-✅ Planning mode for complex features
-✅ Fine-grained permission control with 6 modes (default, acceptEdits, plan, auto, dontAsk, bypassPermissions)
-✅ Extended thinking via Alt+T / Option+T toggle
-✅ Background task management
-✅ Auto Memory for learned preferences
-✅ Auto Mode with background safety classifier
-✅ Channels for structured multi-session workflows
-✅ Voice Dictation for hands-free interaction
-✅ Remote control, desktop app, and web sessions
-✅ Agent Teams for multi-agent collaboration
+### Verificación de Prerrequisitos
+
+Antes de comenzar el Nivel 3, asegúrate de sentirte cómodo con estos conceptos del Nivel 2:
+
+- [ ] Puedes crear y usar skills con auto-invocación ([03-skills/](03-skills/))
+- [ ] Has configurado hooks para automatización basada en eventos ([06-hooks/](06-hooks/))
+- [ ] Puedes configurar servidores MCP para datos externos ([05-mcp/](05-mcp/))
+- [ ] Sabes cómo usar subagentes para delegación de tareas ([04-subagents/](04-subagents/))
+
+> **¿Tienes lagunas?** Repasa los tutoriales enlazados arriba antes de continuar.
+
+---
+
+### Hito 3A: Funcionalidades Avanzadas
+
+**Temas**: Funcionalidades Avanzadas (Planificación, Permisos, Pensamiento Extendido, Modo Auto, Canales, Dictado por Voz, Remoto/Escritorio/Web)
+**Tiempo**: 2-3 horas
+**Complejidad**: ⭐⭐⭐⭐⭐ Avanzado
+**Objetivo**: Dominar flujos de trabajo avanzados y herramientas para usuarios expertos
+
+#### Qué Lograrás
+✅ Modo de planificación para funcionalidades complejas
+✅ Control de permisos granular con 6 modos (default, acceptEdits, plan, auto, dontAsk, bypassPermissions)
+✅ Pensamiento extendido mediante el atajo Alt+T / Option+T
+✅ Gestión de tareas en segundo plano
+✅ Memoria Automática para preferencias aprendidas
+✅ Modo Auto con clasificador de seguridad en segundo plano
+✅ Canales para flujos de trabajo estructurados de múltiples sesiones
+✅ Dictado por Voz para interacción manos libres
+✅ Control remoto, aplicación de escritorio y sesiones web
+✅ Equipos de Agentes para colaboración multi-agente
 
 #### Ejercicios Prácticos
 
 ```bash
-# Exercise 1: Use planning mode
+# Ejercicio 1: Usa el modo de planificación
 /plan Implement user authentication system
 
-# Exercise 2: Try permission modes (6 available: default, acceptEdits, plan, auto, dontAsk, bypassPermissions)
+# Ejercicio 2: Prueba los modos de permisos (6 disponibles: default, acceptEdits, plan, auto, dontAsk, bypassPermissions)
 claude --permission-mode plan "analyze this codebase"
 claude --permission-mode acceptEdits "refactor the auth module"
 claude --permission-mode auto "implement the feature"
 
-# Exercise 3: Enable extended thinking
-# Press Alt+T (Option+T on macOS) during a session to toggle
+# Ejercicio 3: Activa el pensamiento extendido
+# Presiona Alt+T (Option+T en macOS) durante una sesión para activar/desactivar
 
-# Exercise 4: Advanced checkpoint workflow
-# 1. Create checkpoint "Clean state"
-# 2. Use planning mode to design a feature
-# 3. Implement with subagent delegation
-# 4. Run tests in background
-# 5. If tests fail, rewind to checkpoint
-# 6. Try alternative approach
+# Ejercicio 4: Flujo de trabajo avanzado con checkpoints
+# 1. Crea un checkpoint "Estado limpio"
+# 2. Usa el modo de planificación para diseñar una funcionalidad
+# 3. Implementa con delegación a subagentes
+# 4. Ejecuta pruebas en segundo plano
+# 5. Si las pruebas fallan, rebobina al checkpoint
+# 6. Prueba un enfoque alternativo
+```
+# 6. Prueba un enfoque alternativo
 
-# Exercise 5: Try auto mode (background safety classifier)
+# Ejercicio 5: Prueba el modo auto (clasificador de seguridad en segundo plano)
 claude --permission-mode auto "implement user settings page"
 
-# Exercise 6: Enable agent teams
+# Ejercicio 6: Habilita equipos de agentes
 export CLAUDE_AGENT_TEAMS=1
-# Ask Claude: "Implement feature X using a team approach"
+# Pregúntale a Claude: "Implement feature X using a team approach"
 
-# Exercise 7: Scheduled tasks
+# Ejercicio 7: Tareas programadas
 /loop 5m /check-status
-# Or use CronCreate for persistent scheduled tasks
+# O usa CronCreate para tareas programadas persistentes
 
-# Exercise 8: Channels for multi-session workflows
-# Use channels to organize work across sessions
+# Ejercicio 8: Canales para flujos de trabajo multi-sesión
+# Usa canales para organizar el trabajo entre sesiones
 
-# Exercise 9: Voice Dictation
-# Use voice input for hands-free interaction with Claude Code
+# Ejercicio 9: Dictado por voz
+# Usa entrada de voz para interactuar con Claude Code sin usar las manos
 ```
 
-#### Criterios de Exito
-- [ ] Used planning mode for a complex feature
-- [ ] Configured permission modes (plan, acceptEdits, auto, dontAsk)
-- [ ] Toggled extended thinking with Alt+T / Option+T
-- [ ] Used auto mode with background safety classifier
-- [ ] Used background tasks for long operations
-- [ ] Explored Channels for multi-session workflows
-- [ ] Tried Voice Dictation for hands-free input
-- [ ] Understand Remote Control, Desktop App, and Web sessions
-- [ ] Enabled and used Agent Teams for collaborative tasks
-- [ ] Used `/loop` for recurring tasks or scheduled monitoring
+#### Criterios de Éxito
+- [ ] Usé el modo de planificación para una función compleja
+- [ ] Configuré los modos de permisos (plan, acceptEdits, auto, dontAsk)
+- [ ] Activé/desactivé el pensamiento extendido con Alt+T / Option+T
+- [ ] Usé el modo auto con el clasificador de seguridad en segundo plano
+- [ ] Usé tareas en segundo plano para operaciones largas
+- [ ] Exploré Canales para flujos de trabajo multi-sesión
+- [ ] Probé el Dictado por Voz para entrada sin manos
+- [ ] Entiendo el Control Remoto, la Aplicación de Escritorio y las sesiones Web
+- [ ] Habilité y usé Equipos de Agentes para tareas colaborativas
+- [ ] Usé `/loop` para tareas recurrentes o monitoreo programado
 
-#### Proximos Pasos
-- Read: [09-advanced-features/README.md](09-advanced-features/README.md)
+#### Próximos Pasos
+- Leer: [09-advanced-features/README.md](09-advanced-features/README.md)
 
-> **Check your understanding**: Run `/lesson-quiz advanced` to test your mastery of power user features.
+> **Comprueba tu comprensión**: Ejecuta `/lesson-quiz advanced` para poner a prueba tu dominio de las funciones avanzadas.
 
 ---
 
-### Hito 3B: Equipo y Distribucion (Plugins + Dominio de CLI)
+### Hito 3B: Equipo y Distribución (Plugins + Dominio de CLI)
 
-**Temas**: Plugins + CLI Mastery + CI/CD
-**Tiempo**: 2-3 hours
-**Complejidad**: ⭐⭐⭐⭐ Advanced
-**Objetivo**: Build team tooling, create plugins, master CI/CD integration
+**Temas**: Plugins + Dominio de CLI + CI/CD
+**Tiempo**: 2-3 horas
+**Complejidad**: ⭐⭐⭐⭐ Avanzado
+**Objetivo**: Construir herramientas de equipo, crear plugins, dominar la integración CI/CD
 
-#### Lo Que Lograras
-✅ Install and create complete bundled plugins
-✅ Master CLI for scripting and automation
-✅ Set up CI/CD integration with `claude -p`
-✅ JSON output for automated pipelines
-✅ Session management and batch processing
+#### Qué Vas a Lograr
+✅ Instalar y crear plugins empaquetados completos
+✅ Dominar la CLI para scripting y automatización
+✅ Configurar la integración CI/CD con `claude -p`
+✅ Salida JSON para pipelines automatizados
+✅ Gestión de sesiones y procesamiento por lotes
 
 #### Ejercicios Prácticos
 
 ```bash
-# Exercise 1: Install a complete plugin
-# In Claude Code: /plugin install pr-review
+# Ejercicio 1: Instala un plugin completo
+# En Claude Code: /plugin install pr-review
 
-# Exercise 2: Print mode for CI/CD
+# Ejercicio 2: Modo print para CI/CD
 claude -p "Run all tests and generate report"
 
-# Exercise 3: JSON output for scripts
+# Ejercicio 3: Salida JSON para scripts
 claude -p --output-format json "list all functions"
 
-# Exercise 4: Session management and resumption
+# Ejercicio 4: Gestión y reanudación de sesiones
 claude -r "feature-auth" "continue implementation"
 
-# Exercise 5: CI/CD integration with constraints
+# Ejercicio 5: Integración CI/CD con restricciones
 claude -p --max-turns 3 --output-format json "review code"
 
-# Exercise 6: Batch processing
+# Ejercicio 6: Procesamiento por lotes
 for file in *.md; do
   claude -p --output-format json "summarize this: $(cat $file)" > ${file%.md}.summary.json
 done
 ```
 
 #### Ejercicio de Integración CI/CD
-Create a simple CI/CD script:
-1. Use `claude -p` to review changed files
-2. Output results as JSON
-3. Process with `jq` for specific issues
-4. Integrate into GitHub Actions workflow
+Crea un script sencillo de CI/CD:
+1. Usa `claude -p` para revisar los archivos modificados
+2. Genera los resultados en formato JSON
+3. Procésalos con `jq` para identificar problemas específicos
+4. Intégralo en un flujo de trabajo de GitHub Actions
 
-#### Criterios de Exito
-- [ ] Installed and used a plugin
-- [ ] Built or modified a plugin for your team
-- [ ] Used print mode (`claude -p`) in CI/CD
-- [ ] Generated JSON output for scripting
-- [ ] Resumed a previous session successfully
-- [ ] Created a batch processing script
-- [ ] Integrated Claude into a CI/CD workflow
+#### Criterios de Éxito
+- [ ] Instalé y usé un plugin
+- [ ] Construí o modifiqué un plugin para mi equipo
+- [ ] Usé el modo print (`claude -p`) en CI/CD
+- [ ] Generé salida JSON para scripting
+- [ ] Reanudé una sesión anterior exitosamente
+- [ ] Creé un script de procesamiento por lotes
+- [ ] Integré Claude en un flujo de trabajo CI/CD
 
 #### Casos de Uso Reales para CLI
-- **Code Review Automation**: Run code reviews in CI/CD pipelines
-- **Log Analysis**: Analyze error logs and system outputs
-- **Documentation Generation**: Batch generate documentation
-- **Testing Insights**: Analyze test failures
-- **Performance Analysis**: Review performance metrics
-- **Data Processing**: Transform and analyze data files
+- **Automatización de Revisión de Código**: Ejecuta revisiones de código en pipelines CI/CD
+- **Análisis de Logs**: Analiza logs de errores y salidas del sistema
+- **Generación de Documentación**: Genera documentación en lotes
+- **Insights de Pruebas**: Analiza fallos en las pruebas
+- **Análisis de Rendimiento**: Revisa métricas de rendimiento
+- **Procesamiento de Datos**: Transforma y analiza archivos de datos
 
-#### Proximos Pasos
-- Read: [07-plugins/README.md](07-plugins/README.md)
-- Read: [10-cli/README.md](10-cli/README.md)
-- Create team-wide CLI shortcuts and plugins
-- Set up batch processing scripts
+#### Próximos Pasos
+- Leer: [07-plugins/README.md](07-plugins/README.md)
+- Leer: [10-cli/README.md](10-cli/README.md)
+- Crear atajos de CLI y plugins para todo el equipo
+- Configurar scripts de procesamiento por lotes
 
-> **Check your understanding**: Run `/lesson-quiz plugins` or `/lesson-quiz cli` to confirm your mastery.
+> **Comprueba tu comprensión**: Ejecuta `/lesson-quiz plugins` o `/lesson-quiz cli` para confirmar tu dominio.
 
 ---
 
-## 🧪 Pon a Prueba Tu Conocimiento
+## 🧪 Pon a Prueba tu Conocimiento
 
-This repository includes two interactive skills you can use anytime in Claude Code to evaluate your understanding:
+Este repositorio incluye dos habilidades interactivas que puedes usar en cualquier momento dentro de Claude Code para evaluar tu comprensión:
 
 | Habilidad | Comando | Propósito |
-|-------|---------|---------|
-| **Self-Assessment** | `/self-assessment` | Evaluate your overall proficiency across all 10 features. Choose Quick (2 min) or Deep (5 min) mode to get a personalized skill profile and learning path. |
-| **Lesson Quiz** | `/lesson-quiz [lesson]` | Test your understanding of a specific lesson with 10 questions. Use before a lesson (pre-test), during (progress check), or after (mastery verification). |
+|-----------|---------|-----------|
+| **Autoevaluación** | `/self-assessment` | Evalúa tu nivel general en las 10 funciones. Elige el modo Rápido (2 min) o Profundo (5 min) para obtener un perfil de habilidades personalizado y una ruta de aprendizaje. |
+| **Quiz de Lección** | `/lesson-quiz [lección]` | Pon a prueba tu comprensión de una lección específica con 10 preguntas. Úsalo antes de la lección (pre-test), durante (revisión de progreso) o después (verificación de dominio). |
 
-**Examples:**
+**Ejemplos:**
 ```
-/self-assessment                  # Find your overall level
-/lesson-quiz hooks                # Quiz on Lesson 06: Hooks
-/lesson-quiz 03                   # Quiz on Lesson 03: Skills
-/lesson-quiz advanced-features    # Quiz on Lesson 09
+/self-assessment                  # Encuentra tu nivel general
+/lesson-quiz hooks                # Quiz sobre la Lección 06: Hooks
+/lesson-quiz 03                   # Quiz sobre la Lección 03: Skills
+/lesson-quiz advanced-features    # Quiz sobre la Lección 09
 ```
 
 ---
@@ -530,243 +532,243 @@ This repository includes two interactive skills you can use anytime in Claude Co
 ## ⚡ Rutas de Inicio Rápido
 
 ### Si Solo Tienes 15 Minutos
-**Objetivo**: Get your first win
+**Objetivo**: Consigue tu primera victoria
 
-1. Copy one slash command: `cp 01-slash-commands/optimize.md .claude/commands/`
-2. Try it in Claude Code: `/optimize`
-3. Read: [01-slash-commands/README.md](01-slash-commands/README.md)
+1. Copia un slash command: `cp 01-slash-commands/optimize.md .claude/commands/`
+2. Pruébalo en Claude Code: `/optimize`
+3. Lee: [01-slash-commands/README.md](01-slash-commands/README.md)
 
-**Resultado**: You'll have a working slash command and understand the basics
+**Resultado**: Tendrás un slash command funcionando y entenderás los conceptos básicos
 
 ---
 
 ### Si Tienes 1 Hora
-**Objetivo**: Set up essential productivity tools
+**Objetivo**: Configurar las herramientas de productividad esenciales
 
-1. **Slash commands** (15 min): Copy and test `/optimize` and `/pr`
-2. **Project memory** (15 min): Create CLAUDE.md with your project standards
-3. **Install a skill** (15 min): Set up code-review skill
-4. **Try them together** (15 min): See how they work in harmony
+1. **Slash commands** (15 min): Copia y prueba `/optimize` y `/pr`
+2. **Memoria de proyecto** (15 min): Crea CLAUDE.md con los estándares de tu proyecto
+3. **Instala una habilidad** (15 min): Configura la habilidad de revisión de código
+4. **Pruébalas juntas** (15 min): Ve cómo funcionan en armonía
 
-**Resultado**: Basic productivity boost with commands, memory, and auto-skills
+**Resultado**: Aumento básico de productividad con comandos, memoria y habilidades automáticas
 
 ---
 
 ### Si Tienes un Fin de Semana
-**Objetivo**: Become proficient with most features
+**Objetivo**: Adquirir dominio de la mayoría de las funciones
 
-**Saturday Morning** (3 hours):
-- Complete Milestone 1A: Slash Commands + Memory
-- Complete Milestone 1B: Checkpoints + CLI Basics
+**Sábado por la Mañana** (3 horas):
+- Completa el Hito 1A: Slash Commands + Memoria
+- Completa el Hito 1B: Checkpoints + Fundamentos de CLI
 
-**Saturday Afternoon** (3 hours):
-- Complete Milestone 2A: Skills + Hooks
-- Complete Milestone 2B: MCP + Subagents
+**Sábado por la Tarde** (3 horas):
+- Completa el Hito 2A: Skills + Hooks
+- Completa el Hito 2B: MCP + Subagentes
 
-**Sunday** (4 hours):
-- Complete Milestone 3A: Advanced Features
-- Complete Milestone 3B: Plugins + CLI Mastery + CI/CD
-- Build a custom plugin for your team
+**Domingo** (4 horas):
+- Completa el Hito 3A: Funciones Avanzadas
+- Completa el Hito 3B: Plugins + Dominio de CLI + CI/CD
+- Construye un plugin personalizado para tu equipo
 
-**Resultado**: You'll be a Claude Code power user ready to train others and automate complex workflows
+**Resultado**: Serás un usuario avanzado de Claude Code, listo para capacitar a otros y automatizar flujos de trabajo complejos
 
 ---
 
 ## 💡 Consejos de Aprendizaje
 
-### ✅ Hacer
+### ✅ Haz
 
-- **Take the quiz first** to find your starting point
-- **Complete hands-on exercises** for each milestone
-- **Start simple** and add complexity gradually
-- **Test each feature** before moving to the next
-- **Take notes** on what works for your workflow
-- **Refer back** to earlier concepts as you learn advanced topics
-- **Experiment safely** using checkpoints
-- **Share knowledge** with your team
+- **Toma el quiz primero** para encontrar tu punto de partida
+- **Completa los ejercicios prácticos** de cada hito
+- **Empieza simple** y agrega complejidad gradualmente
+- **Prueba cada función** antes de pasar a la siguiente
+- **Toma notas** sobre lo que funciona para tu flujo de trabajo
+- **Vuelve a consultar** conceptos anteriores a medida que aprendes temas avanzados
+- **Experimenta con seguridad** usando checkpoints
+- **Comparte el conocimiento** con tu equipo
 
-### ❌ No Hacer
+### ❌ No Hagas
 
-- **Skip the prerequisites check** when jumping to a higher level
-- **Try to learn everything at once** - it's overwhelming
-- **Copy configurations without understanding them** - you won't know how to debug
-- **Forget to test** - always verify features work
-- **Rush through milestones** - take time to understand
-- **Ignore the documentation** - each README has valuable details
-- **Work in isolation** - discuss with teammates
+- **Saltarte la verificación de prerrequisitos** al saltar a un nivel superior
+- **Intentar aprender todo a la vez** — es abrumador
+- **Copiar configuraciones sin entenderlas** — no sabrás cómo depurarlas
+- **Olvidar hacer pruebas** — siempre verifica que las funciones funcionen
+- **Apresurarte por los hitos** — tómate el tiempo para entender
+- **Ignorar la documentación** — cada README tiene detalles valiosos
+- **Trabajar en aislamiento** — habla con tus compañeros de equipo
 
 ---
 
 ## 🎓 Estilos de Aprendizaje
 
-### Aprendizaje Visual
-- Study the mermaid diagrams in each README
-- Watch the command execution flow
-- Draw your own workflow diagrams
-- Use the visual learning path above
+### Aprendices Visuales
+- Estudia los diagramas mermaid en cada README
+- Observa el flujo de ejecución de los comandos
+- Dibuja tus propios diagramas de flujo de trabajo
+- Usa la ruta de aprendizaje visual que aparece arriba
 
-### Aprendizaje Practico
-- Complete every hands-on exercise
-- Experiment with variations
-- Break things and fix them (use checkpoints!)
-- Create your own examples
+### Aprendices Prácticos
+- Completa todos los ejercicios prácticos
+- Experimenta con variaciones
+- Rompe cosas y arréglalas (¡usa checkpoints!)
+- Crea tus propios ejemplos
 
-### Aprendizaje por Lectura
-- Read each README thoroughly
-- Study the code examples
-- Review the comparison tables
-- Read the blog posts linked in resources
+### Aprendices por Lectura
+- Lee cada README a fondo
+- Estudia los ejemplos de código
+- Revisa las tablas de comparación
+- Lee los posts del blog enlazados en los recursos
 
-### Aprendizaje Social
-- Set up pair programming sessions
-- Teach concepts to teammates
-- Join Claude Code community discussions
-- Share your custom configurations
+### Aprendices Sociales
+- Organiza sesiones de programación en pareja
+- Enseña conceptos a tus compañeros de equipo
+- Únete a las discusiones de la comunidad de Claude Code
+- Comparte tus configuraciones personalizadas
 
 ---
 
-## 📈 Seguimiento de Progreso
+## 📈 Seguimiento del Progreso
 
-Usa estas listas para dar seguimiento a tu progreso por nivel. Run `/self-assessment` anytime to get an updated skill profile, or `/lesson-quiz [lesson]` after each tutorial to verify your understanding.
+Usa estas listas de verificación para seguir tu progreso por nivel. Ejecuta `/self-assessment` en cualquier momento para obtener un perfil de habilidades actualizado, o `/lesson-quiz [lección]` después de cada tutorial para verificar tu comprensión.
 
 ### 🟢 Nivel 1: Principiante
-- [ ] Completed [01-slash-commands](01-slash-commands/)
-- [ ] Completed [02-memory](02-memory/)
-- [ ] Created first custom slash command
-- [ ] Set up project memory
-- [ ] **Milestone 1A achieved**
-- [ ] Completed [08-checkpoints](08-checkpoints/)
-- [ ] Completed [10-cli](10-cli/) basics
-- [ ] Created and reverted to a checkpoint
-- [ ] Used interactive and print mode
-- [ ] **Milestone 1B achieved**
+- [ ] Completé [01-slash-commands](01-slash-commands/)
+- [ ] Completé [02-memory](02-memory/)
+- [ ] Creé mi primer slash command personalizado
+- [ ] Configuré la memoria de proyecto
+- [ ] **Hito 1A logrado**
+- [ ] Completé [08-checkpoints](08-checkpoints/)
+- [ ] Completé los fundamentos de [10-cli](10-cli/)
+- [ ] Creé y revertí a un checkpoint
+- [ ] Usé el modo interactivo y el modo print
+- [ ] **Hito 1B logrado**
 
 ### 🔵 Nivel 2: Intermedio
-- [ ] Completed [03-skills](03-skills/)
-- [ ] Completed [06-hooks](06-hooks/)
-- [ ] Installed first skill
-- [ ] Set up PreToolUse hook
-- [ ] **Milestone 2A achieved**
-- [ ] Completed [05-mcp](05-mcp/)
-- [ ] Completed [04-subagents](04-subagents/)
-- [ ] Connected GitHub MCP
-- [ ] Created custom subagent
-- [ ] Combined integrations in a workflow
-- [ ] **Milestone 2B achieved**
+- [ ] Completé [03-skills](03-skills/)
+- [ ] Completé [06-hooks](06-hooks/)
+- [ ] Instalé mi primera habilidad
+- [ ] Configuré un hook PreToolUse
+- [ ] **Hito 2A logrado**
+- [ ] Completé [05-mcp](05-mcp/)
+- [ ] Completé [04-subagents](04-subagents/)
+- [ ] Conecté GitHub MCP
+- [ ] Creé un subagente personalizado
+- [ ] Combiné integraciones en un flujo de trabajo
+- [ ] **Hito 2B logrado**
 
 ### 🔴 Nivel 3: Avanzado
-- [ ] Completed [09-advanced-features](09-advanced-features/)
-- [ ] Used planning mode successfully
-- [ ] Configured permission modes (6 modes including auto)
-- [ ] Used auto mode with safety classifier
-- [ ] Used extended thinking toggle
-- [ ] Explored Channels and Voice Dictation
-- [ ] **Milestone 3A achieved**
-- [ ] Completed [07-plugins](07-plugins/)
-- [ ] Completed [10-cli](10-cli/) advanced usage
-- [ ] Set up print mode (`claude -p`) CI/CD
-- [ ] Created JSON output for automation
-- [ ] Integrated Claude into CI/CD pipeline
-- [ ] Created team plugin
-- [ ] **Milestone 3B achieved**
+- [ ] Completé [09-advanced-features](09-advanced-features/)
+- [ ] Usé el modo de planificación exitosamente
+- [ ] Configuré los modos de permisos (6 modos incluyendo auto)
+- [ ] Usé el modo auto con el clasificador de seguridad
+- [ ] Usé el toggle de pensamiento extendido
+- [ ] Exploré Canales y Dictado por Voz
+- [ ] **Hito 3A logrado**
+- [ ] Completé [07-plugins](07-plugins/)
+- [ ] Completé el uso avanzado de [10-cli](10-cli/)
+- [ ] Configuré el modo print (`claude -p`) en CI/CD
+- [ ] Creé salida JSON para automatización
+- [ ] Integré Claude en un pipeline CI/CD
+- [ ] Creé un plugin de equipo
+- [ ] **Hito 3B logrado**
 
 ---
 
-## 🆘 Desafios Comunes de Aprendizaje
+## 🆘 Desafíos Comunes de Aprendizaje
 
-### Challenge 1: "Too many concepts at once"
-**Solution**: Focus on one milestone at a time. Complete all exercises before moving forward.
+### Desafío 1: "Demasiados conceptos a la vez"
+**Solución**: Enfócate en un hito a la vez. Completa todos los ejercicios antes de avanzar.
 
-### Challenge 2: "Don't know which feature to use when"
-**Solution**: Refer to the [Use Case Matrix](README.md#use-case-matrix) in the main README.
+### Desafío 2: "No sé qué función usar en cada situación"
+**Solución**: Consulta la [Matriz de Casos de Uso](README.es.md#use-case-matrix) en el README principal.
 
-### Challenge 3: "Configuration not working"
-**Solution**: Check the [Troubleshooting](README.md#troubleshooting) section and verify file locations.
+### Desafío 3: "La configuración no funciona"
+**Solución**: Revisa la sección de [Solución de Problemas](README.es.md#troubleshooting) y verifica las ubicaciones de los archivos.
 
-### Challenge 4: "Concepts seem to overlap"
-**Solution**: Review the [Feature Comparison](README.md#feature-comparison) table to understand differences.
+### Desafío 4: "Los conceptos parecen superponerse"
+**Solución**: Revisa la tabla de [Comparación de Funciones](README.es.md#feature-comparison) para entender las diferencias.
 
-### Challenge 5: "Hard to remember everything"
-**Solution**: Create your own cheat sheet. Use checkpoints to experiment safely.
+### Desafío 5: "Es difícil recordar todo"
+**Solución**: Crea tu propia hoja de referencia rápida. Usa checkpoints para experimentar con seguridad.
 
-### Challenge 6: "I'm experienced but not sure where to start"
-**Solution**: Take the [Self-Assessment Quiz](#-find-your-level) above. Skip to your level and use the prerequisites check to identify any gaps.
+### Desafío 6: "Tengo experiencia pero no sé por dónde empezar"
+**Solución**: Toma el [Quiz de Autoevaluación](#-encuentra-tu-nivel) que aparece arriba. Salta a tu nivel y usa la verificación de prerrequisitos para identificar cualquier brecha.
 
 ---
 
 ## 🏋️ Práctica: Ejercicios Prácticos
 
-Once you've learned the features, test your skills with real-world tasks. The [11-exercises/](11-exercises/) module has 11 exercises with real data files — no coding experience required.
+Una vez que hayas aprendido las funciones, pon a prueba tus habilidades con tareas del mundo real. El módulo [11-exercises/](11-exercises/) tiene 11 ejercicios con archivos de datos reales — no se necesita experiencia en programación.
 
-| # | Ejercicio | Nivel | Que Practicaras |
-|---|----------|-------|---------------------|
-| 1 | [Context Engineering](11-exercises/exercise-01-context-engineering/) | Beginner | Setting up CLAUDE.md for any project |
-| 2 | [Tame a Messy Spreadsheet](11-exercises/exercise-02-messy-spreadsheet/) | Beginner | Claude generating and running Python scripts |
-| 3 | [Research & Structure](11-exercises/exercise-03-research-landscape/) | Beginner | Research + structured markdown output |
-| 4 | [Build a Taxonomy](11-exercises/exercise-04-taxonomy-from-chaos/) | Intermediate | Pattern recognition on 200 messy entries |
-| 5 | [Conversation Analysis](11-exercises/exercise-05-conversation-analysis/) | Intermediate | Data analysis on 100 conversations (JSON) |
-| 6 | [Evaluate AI Output](11-exercises/exercise-06-evaluate-ai-output/) | Intermediate | Systematic QA of 20 AI-generated texts |
-| 7 | [Screenshots to Spec](11-exercises/exercise-07-screenshots-to-spec/) | Intermediate | Multimodal: images to structured documents |
-| 8 | [Prioritize from Chaos](11-exercises/exercise-08-prioritize-from-chaos/) | Intermediate | Structuring 60 unstructured ideas |
-| 9 | [Folder Audit](11-exercises/exercise-09-folder-audit/) | Advanced | Navigating and synthesizing large info |
-| 10 | [Content Pipeline](11-exercises/exercise-10-end-to-end-pipeline/) | Advanced | Multi-step: brief → research → document → summary |
-| 11 | [Connect Systems](11-exercises/exercise-11-connect-systems/) | Advanced | MCP integrations with external tools |
+| # | Ejercicio | Nivel | Qué Vas a Practicar |
+|---|-----------|-------|---------------------|
+| 1 | [Ingeniería de Contexto](11-exercises/exercise-01-context-engineering/) | Principiante | Configurar CLAUDE.md para cualquier proyecto |
+| 2 | [Doma una Hoja de Cálculo Desordenada](11-exercises/exercise-02-messy-spreadsheet/) | Principiante | Claude genera y ejecuta scripts de Python |
+| 3 | [Investigación y Estructura](11-exercises/exercise-03-research-landscape/) | Principiante | Investigación + salida en markdown estructurado |
+| 4 | [Construye una Taxonomía](11-exercises/exercise-04-taxonomy-from-chaos/) | Intermedio | Reconocimiento de patrones en 200 entradas desordenadas |
+| 5 | [Análisis de Conversaciones](11-exercises/exercise-05-conversation-analysis/) | Intermedio | Análisis de datos en 100 conversaciones (JSON) |
+| 6 | [Evalúa Salida de IA](11-exercises/exercise-06-evaluate-ai-output/) | Intermedio | QA sistemático de 20 textos generados por IA |
+| 7 | [Capturas de Pantalla a Especificación](11-exercises/exercise-07-screenshots-to-spec/) | Intermedio | Multimodal: imágenes a documentos estructurados |
+| 8 | [Prioriza desde el Caos](11-exercises/exercise-08-prioritize-from-chaos/) | Intermedio | Estructurar 60 ideas no estructuradas |
+| 9 | [Auditoría de Carpetas](11-exercises/exercise-09-folder-audit/) | Avanzado | Navegar y sintetizar información extensa |
+| 10 | [Pipeline de Contenido](11-exercises/exercise-10-end-to-end-pipeline/) | Avanzado | Multi-paso: brief → investigación → documento → resumen |
+| 11 | [Conecta Sistemas](11-exercises/exercise-11-connect-systems/) | Avanzado | Integraciones MCP con herramientas externas |
 
-**Who are these for?** Everyone — sales, finance, HR, ops, product, marketing, engineering. Each exercise teaches a Claude Code skill through a universal business task.
+**¿Para quién son estos ejercicios?** Para todos — ventas, finanzas, RRHH, operaciones, producto, marketing, ingeniería. Cada ejercicio enseña una habilidad de Claude Code a través de una tarea empresarial universal.
 
-> **Tip**: Start with exercises 1-3 after Level 1. Try 4-8 after Level 2. Tackle 9-11 after Level 3.
+> **Consejo**: Empieza con los ejercicios 1-3 después del Nivel 1. Prueba del 4 al 8 después del Nivel 2. Aborda del 9 al 11 después del Nivel 3.
 
 ---
 
-## 🎯 Que Sigue Después de Completar?
+## 🎯 ¿Qué Sigue Después de Completarlo?
 
 Una vez que hayas completado todos los hitos:
 
-1. **Create team documentation** - Document your team's Claude Code setup
-2. **Build custom plugins** - Package your team's workflows
-3. **Explore Remote Control** - Control Claude Code sessions programmatically from external tools
-4. **Try Web Sessions** - Use Claude Code through browser-based interfaces for remote development
-5. **Use the Desktop App** - Access Claude Code features through the native desktop application
-6. **Use Auto Mode** - Let Claude work autonomously with a background safety classifier
-7. **Leverage Auto Memory** - Let Claude learn your preferences automatically over time
-8. **Set up Agent Teams** - Coordinate multiple agents on complex, multi-faceted tasks
-9. **Use Channels** - Organize work across structured multi-session workflows
-10. **Try Voice Dictation** - Use hands-free voice input for interaction with Claude Code
-11. **Use Scheduled Tasks** - Automate recurring checks with `/loop` and cron tools
-12. **Contribute examples** - Share with the community
-13. **Mentor others** - Help teammates learn
-14. **Optimize workflows** - Continuously improve based on usage
-15. **Stay updated** - Follow Claude Code releases and new features
+1. **Crea documentación de equipo** — Documenta la configuración de Claude Code de tu equipo
+2. **Construye plugins personalizados** — Empaqueta los flujos de trabajo de tu equipo
+3. **Explora el Control Remoto** — Controla sesiones de Claude Code programáticamente desde herramientas externas
+4. **Prueba las Sesiones Web** — Usa Claude Code a través de interfaces basadas en navegador para desarrollo remoto
+5. **Usa la Aplicación de Escritorio** — Accede a las funciones de Claude Code a través de la aplicación de escritorio nativa
+6. **Usa el Modo Auto** — Deja que Claude trabaje de forma autónoma con un clasificador de seguridad en segundo plano
+7. **Aprovecha la Memoria Automática** — Deja que Claude aprenda tus preferencias automáticamente con el tiempo
+8. **Configura Equipos de Agentes** — Coordina múltiples agentes en tareas complejas y multifacéticas
+9. **Usa Canales** — Organiza el trabajo en flujos de trabajo multi-sesión estructurados
+10. **Prueba el Dictado por Voz** — Usa entrada de voz sin manos para interactuar con Claude Code
+11. **Usa Tareas Programadas** — Automatiza verificaciones recurrentes con `/loop` y herramientas cron
+12. **Contribuye con ejemplos** — Comparte con la comunidad
+13. **Mentoriza a otros** — Ayuda a tus compañeros a aprender
+14. **Optimiza flujos de trabajo** — Mejora continuamente según el uso
+15. **Mantente actualizado/a** — Sigue los lanzamientos y nuevas funciones de Claude Code
 
 ---
 
 ## 📚 Recursos Adicionales
 
 ### Documentación Oficial
-- [Claude Code Documentation](https://code.claude.com/docs/en/overview)
-- [Anthropic Documentation](https://docs.anthropic.com)
-- [MCP Protocol Specification](https://modelcontextprotocol.io)
+- [Documentación de Claude Code](https://code.claude.com/docs/en/overview)
+- [Documentación de Anthropic](https://docs.anthropic.com)
+- [Especificación del Protocolo MCP](https://modelcontextprotocol.io)
 
-### Publicaciones de Blog
+### Posts del Blog
 - [Discovering Claude Code Slash Commands](https://medium.com/@luongnv89/discovering-claude-code-slash-commands-cdc17f0dfb29)
 
 ### Comunidad
 - [Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook)
-- [MCP Servers Repository](https://github.com/modelcontextprotocol/servers)
+- [Repositorio de Servidores MCP](https://github.com/modelcontextprotocol/servers)
 
 ---
 
 ## 💬 Retroalimentación y Soporte
 
-- **Found an issue?** Create an issue in the repository
-- **Have a suggestion?** Submit a pull request
-- **Need help?** Check the documentation or ask the community
+- **¿Encontraste un problema?** Crea un issue en el repositorio
+- **¿Tienes una sugerencia?** Envía un pull request
+- **¿Necesitas ayuda?** Consulta la documentación o pregunta a la comunidad
 
 ---
 
-**Última Actualizacion**: Marzo 2026
-**Mantenido por**: Colaboradores de Claude How-To
-**Licencia**: Propositos educativos, libre para usar y adaptar
+**Última Actualización**: Marzo 2026
+**Mantenido por**: Claude How-To Contributors
+**Licencia**: Fines educativos, libre de usar y adaptar
 
 ---
 

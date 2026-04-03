@@ -114,4 +114,4 @@ Claude hara preguntas inteligentes sobre cosas que quizás no habias considerado
 6. **Corrige rápido** — Esc y redirige si va por mal camino
 7. **Técnica de entrevista** — para tareas grandes, deja que Claude haga preguntas primero
 
-**Siguiente paso**: [Descubre los comandos slash — más de 55 atajos que te ahorran tiempo →](../01-slash-commands/README.es.md)
+**Siguiente paso**: [Enséñale a Claude a recordar quién eres y en qué estás trabajando →](../02-memory/README.es.md)

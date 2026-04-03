@@ -114,4 +114,4 @@ Claude will ask smart questions about things you might not have considered. Once
 6. **Course-correct fast** — Esc and redirect if it's going wrong
 7. **Interview technique** — for big tasks, let Claude ask questions first
 
-**Next step**: [Discover slash commands — 55+ shortcuts that save you time →](../01-slash-commands/)
+**Next step**: [Teach Claude to remember who you are and what you're working on →](../02-memory/)

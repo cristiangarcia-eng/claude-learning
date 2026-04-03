@@ -70,6 +70,20 @@ This memory has a limit. When it fills up, Claude may start forgetting earlier p
 
 > **Rule of thumb**: If you're switching to a completely different topic, start with `/clear`. It's like opening a fresh document instead of adding to an already long one.
 
+## Useful commands
+
+Claude Code has a few built-in commands that start with `/`. You don't need to memorize many — just these:
+
+| Command | What it does |
+|---------|-------------|
+| `/clear` | Starts a fresh conversation (use this often!) |
+| `/memory` | Opens your memory files — where Claude stores what it should remember about you and your project |
+| `/compact` | Summarizes a long conversation to free up space |
+| `/help` | Shows all available commands |
+| `/model` | Switches between Claude models (Haiku, Sonnet, Opus) |
+
+You'll learn more about `/memory` in the Memory lesson. For now, the most important one is `/clear` — use it every time you switch topics.
+
 ## Permissions: you're always in control
 
 Claude Code has three modes:

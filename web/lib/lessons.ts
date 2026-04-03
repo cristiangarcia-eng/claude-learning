@@ -113,18 +113,6 @@ export const LESSONS: LessonMeta[] = [
   },
   // === BEGINNER: Core Claude Code features ===
   {
-    folder: "01-slash-commands",
-    slug: "slash-commands",
-    title: "Slash Commands",
-    titleEs: "Comandos Slash",
-    description: "55+ built-in commands and custom shortcuts",
-    descriptionEs: "Mas de 55 comandos integrados y atajos personalizados",
-    level: "beginner",
-    duration: "30 min",
-    complexity: 2,
-    order: 7,
-  },
-  {
     folder: "02-memory",
     slug: "memory",
     title: "Memory",

@@ -74,7 +74,11 @@ Para guardar: presiona `Cmd+S` (Mac) o `Ctrl+S` (Windows).
 
 ## La terminal integrada
 
-VS Code tiene una terminal integrada. Presiona `` Ctrl+` `` (la tecla de acento grave, junto al número 1) para abrirla.
+VS Code tiene una terminal integrada. La forma más fácil de abrirla es haciendo clic en el **icono de terminal** en la parte superior derecha de la ventana:
+
+![Icono de terminal en VS Code](/vscode-terminal-icon.png)
+
+También puedes presionar `` Ctrl+` `` (la tecla de acento grave, junto al número 1).
 
 Esto significa que puedes:
 - Navegar archivos visualmente en la barra lateral

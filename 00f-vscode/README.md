@@ -74,7 +74,11 @@ To save: press `Cmd+S` (Mac) or `Ctrl+S` (Windows).
 
 ## The built-in terminal
 
-VS Code has a terminal built right in. Press `` Ctrl+` `` (the backtick key, next to the number 1) to open it.
+VS Code has a terminal built right in. The easiest way to open it is clicking the **terminal icon** in the top-right area of the window:
+
+![Terminal icon in VS Code](/vscode-terminal-icon.png)
+
+You can also press `` Ctrl+` `` (the backtick key, next to the number 1).
 
 This means you can:
 - Browse files visually in the sidebar

@@ -32,6 +32,16 @@ export const LESSONS: LessonMeta[] = [
     order: 2,
   },
   {
+    folder: "00g-voice-input",
+    slug: "voice-input",
+    title: "Working with Your Voice",
+    description: "Talk instead of type — set up Wispr Flow for 10x faster input",
+    level: "starter",
+    duration: "10 min",
+    complexity: 1,
+    order: 3,
+  },
+  {
     folder: "00b-quickstart",
     slug: "quickstart",
     title: "Quickstart",

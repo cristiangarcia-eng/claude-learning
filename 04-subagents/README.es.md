@@ -1,25 +1,25 @@
 # Subagents -- Asistentes de IA Especializados
 
-## ¿Que son los Subagents?
+## ¿Qué son los Subagents?
 
-Los subagents son asistentes de IA especializados a los que Claude puede delegar tareas. Cada subagent tiene un area de enfoque especifica, trabaja en su propio espacio separado y devuelve los resultados a la conversacion principal.
+Los subagents son asistentes de IA especializados a los que Claude puede delegar tareas. Cada subagent tiene un área de enfoque específica, trabaja en su propio espacio separado y devuelve los resultados a la conversación principal.
 
 Piensa en ello como tener un equipo de especialistas. En lugar de que una persona haga todo, le entregas tareas especificas al experto adecuado: un investigador profundiza en los datos, un revisor de contenido verifica tu escritura y un analista de competencia escanea el mercado. Cada uno trabaja de forma independiente y reporta los resultados.
 
-## ¿Por que usar Subagents?
+## ¿Por qué usar Subagents?
 
-| Beneficio | Que significa para ti |
+| Beneficio | Qué significa para ti |
 |-----------|----------------------|
-| **Experiencia especializada** | Cada subagent esta afinado para un tipo de trabajo especifico |
-| **Mantiene tu conversacion limpia** | La investigacion compleja sucede en segundo plano, sin saturar tu chat |
+| **Experiencia especializada** | Cada subagent está afinado para un tipo de trabajo específico |
+| **Mantiene tu conversación limpia** | La investigacion compleja sucede en segundo plano, sin saturar tu chat |
 | **Trabajo en paralelo** | Multiples subagents pueden trabajar en diferentes partes de un proyecto al mismo tiempo |
 | **Reutilizable** | Configura un subagent una vez, usalo en muchos proyectos |
 
-## Como funcionan los Subagents
+## Cómo funcionan los Subagents
 
 1. Le pides algo a Claude (o Claude reconoce la necesidad)
 2. Claude delega la tarea al subagent adecuado
-3. El subagent trabaja en su propio contexto, separado de tu conversacion
+3. El subagent trabaja en su propio contexto, separado de tu conversación
 4. El subagent devuelve sus hallazgos a Claude
 5. Claude te presenta los resultados
 
@@ -27,16 +27,16 @@ No necesitas administrar este proceso. Claude maneja la delegacion automaticamen
 
 ## Donde viven los archivos de Subagents
 
-| Ubicacion | Alcance |
+| Ubicación | Alcance |
 |-----------|---------|
 | `.claude/agents/` en tu proyecto | Disponible para todo tu equipo |
 | `~/.claude/agents/` en tu carpeta personal | Disponible solo para ti, en todos los proyectos |
 
 ## Creando un Subagent
 
-Un subagent es un solo archivo markdown con un encabezado y una descripcion del rol del agente.
+Un subagent es un solo archivo markdown con un encabezado y una descripción del rol del agente.
 
-### Formato basico
+### Formato básico
 
 ```
 ---
@@ -50,20 +50,20 @@ focus on, and how it should present its findings.
 
 ### Campos requeridos
 
-| Campo | Que hace |
+| Campo | Qué hace |
 |-------|---------|
 | `name` | El identificador del agente (minusculas, solo guiones) |
 | `description` | Le dice a Claude cuando usar este agente. Incluye palabras clave que coincidan con solicitudes naturales |
 
 ### Campos opcionales
 
-| Campo | Que hace |
+| Campo | Qué hace |
 |-------|---------|
-| `model` | Que modelo de Claude usar: `haiku` (rapido), `sonnet` (balanceado), `opus` (exhaustivo) |
+| `model` | Que modelo de Claude usar: `haiku` (rápido), `sonnet` (balanceado), `opus` (exhaustivo) |
 | `memory` | Establecer en `user` o `project` para que el agente recuerde cosas entre sesiones |
 | `background` | Establecer en `true` para ejecutar el agente en segundo plano mientras sigues trabajando |
 
-## Ejemplos practicos de Subagents
+## Ejemplos prácticos de Subagents
 
 Aqui hay cinco agentes adecuados para roles no tecnicos. Cada uno muestra el contenido completo del archivo.
 
@@ -95,7 +95,7 @@ jargon-free), Structure (logical flow, good headings), Accuracy
 clear call to action). Rate each: Strong / Adequate / Needs Work.
 ```
 
-### Retroalimentacion de diseno (`.claude/agents/design-feedback.md`)
+### Retroalimentación de diseno (`.claude/agents/design-feedback.md`)
 
 ```
 ---
@@ -142,11 +142,11 @@ table and recommend positioning angles. Flag assumptions.
 
 ## Usando Subagents
 
-**Automatico**: Claude delega al subagent adecuado cuando tu solicitud coincide con su descripcion. Simplemente pregunta de forma natural -- "Investiga las tendencias en herramientas de trabajo remoto para la planificacion del Q3" -- y Claude usa el agente `research-analyst` si existe uno.
+**Automático**: Claude delega al subagent adecuado cuando tu solicitud coincide con su descripción. Simplemente pregunta de forma natural -- "Investiga las tendencias en herramientas de trabajo remoto para la planificacion del Q3" -- y Claude usa el agente `research-analyst` si existe uno.
 
-**Explicito**: Pide un agente especifico por nombre: "Usa el agente content-reviewer para revisar este borrador de blog."
+**Explicito**: Pide un agente específico por nombre: "Usa el agente content-reviewer para revisar este borrador de blog."
 
-**En segundo plano**: Establece `background: true` para que el agente trabaje mientras continuas tu conversacion. Presiona `Ctrl+B` para enviar un agente en ejecucion al segundo plano.
+**En segundo plano**: Establece `background: true` para que el agente trabaje mientras continuas tu conversación. Presiona `Ctrl+B` para enviar un agente en ejecucion al segundo plano.
 
 **Memoria persistente**: Establece `memory: user` o `memory: project` para que un agente recuerde hallazgos entre sesiones.
 
@@ -154,8 +154,8 @@ table and recommend positioning angles. Flag assumptions.
 
 Hay tres maneras de crear un subagent:
 
-1. **Pidele a Claude** (lo mas facil): "Create a new subagent called weekly-reporter that summarizes project activity. Save it to .claude/agents/"
-2. **Usa /agents**: Escribe `/agents` para un menu interactivo para crear, ver, editar y eliminar subagents
+1. **Pidele a Claude** (lo más fácil): "Create a new subagent called weekly-reporter that summarizes project activity. Save it to .claude/agents/"
+2. **Usa /agents**: Escribe `/agents` para un menú interactivo para crear, ver, editar y eliminar subagents
 3. **Crea el archivo manualmente**: Agrega un archivo `.md` a `.claude/agents/` (equipo) o `~/.claude/agents/` (personal)
 
 ## Consejos
@@ -164,17 +164,17 @@ Hay tres maneras de crear un subagent:
 |-------|--------|
 | Dale a cada agente un enfoque claro y unico | Hacer un agente que haga todo |
 | Escribe descripciones detalladas con palabras clave | Descripciones vagas que Claude no puede asociar a solicitudes |
-| Comienza con 2-3 agentes y agrega mas segun sea necesario | Crear una docena de agentes antes de probar alguno |
+| Comienza con 2-3 agentes y agrega más según sea necesario | Crear una docena de agentes antes de probar alguno |
 | Usa `memory` para agentes que construyen conocimiento con el tiempo | Esperar que los agentes recuerden cosas sin configurar `memory` |
-| Comparte agentes utiles con tu equipo via la carpeta del proyecto | Mantener agentes utiles solo en tu carpeta personal |
+| Comparte agentes útiles con tu equipo via la carpeta del proyecto | Mantener agentes útiles solo en tu carpeta personal |
 
-## Solucion de problemas
+## Solución de problemas
 
 **Claude no usa mi agente**: Verifica que el campo `description` contenga palabras clave que coincidan con como pides ayuda. Intenta solicitar el agente por nombre para verificar que funciona.
 
-**El agente no aparece**: Confirma que el archivo esta en `.claude/agents/` (no en `.claude/skills/`). Ejecuta `/agents` para ver todos los agentes disponibles.
+**El agente no aparece**: Confirma que el archivo está en `.claude/agents/` (no en `.claude/skills/`). Ejecuta `/agents` para ver todos los agentes disponibles.
 
-**El agente da resultados inconsistentes**: Agrega instrucciones mas especificas al system prompt. Incluye ejemplos del formato de salida que esperas.
+**El agente da resultados inconsistentes**: Agrega instrucciones más especificas al system prompt. Incluye ejemplos del formato de salida que esperas.
 
 ## Ejercicio practico
 
@@ -190,7 +190,7 @@ Hay tres maneras de crear un subagent:
 
 ## Recursos adicionales
 
-- [Documentacion oficial de Subagents](https://code.claude.com/docs/en/sub-agents)
+- [Documentación oficial de Subagents](https://code.claude.com/docs/en/sub-agents)
 
 ---
 

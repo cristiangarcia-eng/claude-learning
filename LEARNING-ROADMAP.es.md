@@ -5,13 +5,13 @@
 
 # 📚 Hoja de Ruta de Aprendizaje de Claude Code
 
-**Nuevo en Claude Code?** Esta guia te ayuda a dominar las funciones de Claude Code a tu propio ritmo. Ya seas un principiante o un desarrollador experimentado, comienza con el cuestionario de autoevaluacion para encontrar el camino correcto para ti.
+**Nuevo en Claude Code?** Esta guía te ayuda a dominar las funciones de Claude Code a tu propio ritmo. Ya seas un principiante o un desarrollador experimentado, comienza con el cuestionario de autoevaluación para encontrar el camino correcto para ti.
 
 ---
 
 ## 🧭 Encuentra Tu Nivel
 
-No todos empiezan desde el mismo lugar. Toma esta autoevaluacion rapida para encontrar tu punto de entrada.
+No todos empiezan desde el mismo lugar. Toma está autoevaluación rápida para encontrar tu punto de entrada.
 
 **Responde estas preguntas con honestidad:**
 
@@ -38,13 +38,13 @@ No todos empiezan desde el mismo lugar. Toma esta autoevaluacion rapida para enc
 
 ---
 
-## 🎯 Filosofia de Aprendizaje
+## 🎯 Filosofía de Aprendizaje
 
-Las carpetas en este repositorio estan numeradas en **orden de aprendizaje recomendado** basado en tres principios clave:
+Las carpetas en este repositorio están numeradas en **orden de aprendizaje recomendado** basado en tres principios clave:
 
 1. **Dependencias** - Los conceptos fundamentales van primero
 2. **Complejidad** - Funciones faciles antes que avanzadas
-3. **Frecuencia de Uso** - Las funciones mas comunes se ensenan primero
+3. **Frecuencia de Uso** - Las funciones más comunes se enseñan primero
 
 Este enfoque asegura que construyas una base solida mientras obtienes beneficios de productividad inmediatos.
 
@@ -95,7 +95,7 @@ graph TD
 
 ## 📊 Tabla Completa de la Hoja de Ruta
 
-| Paso | Funcion | Complejidad | Tiempo | Nivel | Dependencias | Por Que Aprenderlo | Beneficios Clave |
+| Paso | Función | Complejidad | Tiempo | Nivel | Dependencias | Por Que Aprenderlo | Beneficios Clave |
 |------|---------|-----------|------|-------|--------------|----------------|--------------|
 | **1** | [Slash Commands](01-slash-commands/) | ⭐ Beginner | 30 min | Level 1 | None | Quick productivity wins (55+ built-in + 5 bundled skills) | Instant automation, team standards |
 | **2** | [Memory](02-memory/) | ⭐⭐ Beginner+ | 45 min | Level 1 | None | Essential for all features | Persistent context, preferences |
@@ -120,7 +120,7 @@ graph TD
 **Enfoque**: Immediate productivity, understanding fundamentals
 **Resultado**: Comfortable daily user, ready for Level 2
 
-> **Antes de empezar**: Asegurate de haber completado los modulos fundamentales (serie 00). En particular, si nunca has usado Git, completa [Git Basics](00g-git-basics/) primero — Claude Code usa conceptos de Git como commits, branches y diffs a lo largo del curso.
+> **Antes de empezar**: Asegúrate de haber completado los modulos fundamentales (serie 00). En particular, si nunca has usado Git, completa [Git Basics](00g-git-basics/) primero — Claude Code usa conceptos de Git como commits, branches y diffs a lo largo del curso.
 
 ### Hito 1A: Primeros Comandos y Memoria
 
@@ -135,7 +135,7 @@ graph TD
 ✅ Configure personal preferences
 ✅ Understand how Claude loads context automatically
 
-#### Ejercicios Practicos
+#### Ejercicios Prácticos
 
 ```bash
 # Exercise 1: Install your first slash command
@@ -176,7 +176,7 @@ Cuando te sientas comodo, lee:
 ✅ Use basic CLI flags and options
 ✅ Process files via piping
 
-#### Ejercicios Practicos
+#### Ejercicios Prácticos
 
 ```bash
 # Exercise 1: Try checkpoint workflow
@@ -215,9 +215,9 @@ cat error.log | claude -p "explain this error"
 **Enfoque**: Automation, integration, task delegation
 **Resultado**: Automated workflows, external integrations, ready for Level 3
 
-### Verificacion de Prerequisitos
+### Verificación de Prerequisitos
 
-Antes de comenzar el Nivel 2, asegurate de estar comodo con estos conceptos del Nivel 1:
+Antes de comenzar el Nivel 2, asegúrate de estar comodo con estos conceptos del Nivel 1:
 
 - [ ] Can create and use slash commands ([01-slash-commands/](01-slash-commands/))
 - [ ] Have set up project memory via CLAUDE.md ([02-memory/](02-memory/))
@@ -242,7 +242,7 @@ Antes de comenzar el Nivel 2, asegurate de estar comodo con estos conceptos del 
 ✅ Enforce code quality standards
 ✅ Create custom hooks for your workflow
 
-#### Ejercicios Practicos
+#### Ejercicios Prácticos
 
 ```bash
 # Exercise 1: Install a skill
@@ -287,7 +287,7 @@ chmod +x ~/.claude/hooks/pre-tool-check.sh
 
 ---
 
-### Hito 2B: Integracion (MCP + Subagentes)
+### Hito 2B: Integración (MCP + Subagentes)
 
 **Temas**: MCP + Subagents
 **Tiempo**: 2-3 hours
@@ -300,7 +300,7 @@ chmod +x ~/.claude/hooks/pre-tool-check.sh
 ✅ Understand when to use MCP vs. subagents
 ✅ Build integrated workflows
 
-#### Ejercicios Practicos
+#### Ejercicios Prácticos
 
 ```bash
 # Exercise 1: Set up GitHub MCP
@@ -315,7 +315,7 @@ mkdir -p .claude/agents
 cp 04-subagents/*.md .claude/agents/
 ```
 
-#### Ejercicio de Integracion
+#### Ejercicio de Integración
 Try this complete workflow:
 1. Use MCP to fetch a GitHub PR
 2. Let Claude delegate review to code-reviewer subagent
@@ -345,9 +345,9 @@ Try this complete workflow:
 **Enfoque**: Team tooling, CI/CD, enterprise features, plugin development
 **Resultado**: Power user, can set up team workflows and CI/CD
 
-### Verificacion de Prerequisitos
+### Verificación de Prerequisitos
 
-Antes de comenzar el Nivel 3, asegurate de estar comodo con estos conceptos del Nivel 2:
+Antes de comenzar el Nivel 3, asegúrate de estar comodo con estos conceptos del Nivel 2:
 
 - [ ] Can create and use skills with auto-invocation ([03-skills/](03-skills/))
 - [ ] Have set up hooks for event-driven automation ([06-hooks/](06-hooks/))
@@ -377,7 +377,7 @@ Antes de comenzar el Nivel 3, asegurate de estar comodo con estos conceptos del 
 ✅ Remote control, desktop app, and web sessions
 ✅ Agent Teams for multi-agent collaboration
 
-#### Ejercicios Practicos
+#### Ejercicios Prácticos
 
 ```bash
 # Exercise 1: Use planning mode
@@ -450,7 +450,7 @@ export CLAUDE_AGENT_TEAMS=1
 ✅ JSON output for automated pipelines
 ✅ Session management and batch processing
 
-#### Ejercicios Practicos
+#### Ejercicios Prácticos
 
 ```bash
 # Exercise 1: Install a complete plugin
@@ -474,7 +474,7 @@ for file in *.md; do
 done
 ```
 
-#### Ejercicio de Integracion CI/CD
+#### Ejercicio de Integración CI/CD
 Create a simple CI/CD script:
 1. Use `claude -p` to review changed files
 2. Output results as JSON
@@ -512,7 +512,7 @@ Create a simple CI/CD script:
 
 This repository includes two interactive skills you can use anytime in Claude Code to evaluate your understanding:
 
-| Habilidad | Comando | Proposito |
+| Habilidad | Comando | Propósito |
 |-------|---------|---------|
 | **Self-Assessment** | `/self-assessment` | Evaluate your overall proficiency across all 10 features. Choose Quick (2 min) or Deep (5 min) mode to get a personalized skill profile and learning path. |
 | **Lesson Quiz** | `/lesson-quiz [lesson]` | Test your understanding of a specific lesson with 10 questions. Use before a lesson (pre-test), during (progress check), or after (mastery verification). |
@@ -527,7 +527,7 @@ This repository includes two interactive skills you can use anytime in Claude Co
 
 ---
 
-## ⚡ Rutas de Inicio Rapido
+## ⚡ Rutas de Inicio Rápido
 
 ### Si Solo Tienes 15 Minutos
 **Objetivo**: Get your first win
@@ -694,7 +694,7 @@ Usa estas listas para dar seguimiento a tu progreso por nivel. Run `/self-assess
 
 ---
 
-## 🏋️ Practica: Ejercicios Practicos
+## 🏋️ Práctica: Ejercicios Prácticos
 
 Once you've learned the features, test your skills with real-world tasks. The [11-exercises/](11-exercises/) module has 11 exercises with real data files — no coding experience required.
 
@@ -718,7 +718,7 @@ Once you've learned the features, test your skills with real-world tasks. The [1
 
 ---
 
-## 🎯 Que Sigue Despues de Completar?
+## 🎯 Que Sigue Después de Completar?
 
 Una vez que hayas completado todos los hitos:
 
@@ -742,7 +742,7 @@ Una vez que hayas completado todos los hitos:
 
 ## 📚 Recursos Adicionales
 
-### Documentacion Oficial
+### Documentación Oficial
 - [Claude Code Documentation](https://code.claude.com/docs/en/overview)
 - [Anthropic Documentation](https://docs.anthropic.com)
 - [MCP Protocol Specification](https://modelcontextprotocol.io)
@@ -756,7 +756,7 @@ Una vez que hayas completado todos los hitos:
 
 ---
 
-## 💬 Retroalimentacion y Soporte
+## 💬 Retroalimentación y Soporte
 
 - **Found an issue?** Create an issue in the repository
 - **Have a suggestion?** Submit a pull request
@@ -764,7 +764,7 @@ Una vez que hayas completado todos los hitos:
 
 ---
 
-**Ultima Actualizacion**: Marzo 2026
+**Última Actualizacion**: Marzo 2026
 **Mantenido por**: Colaboradores de Claude How-To
 **Licencia**: Propositos educativos, libre para usar y adaptar
 

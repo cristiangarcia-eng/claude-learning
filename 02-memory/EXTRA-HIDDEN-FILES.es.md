@@ -1,14 +1,14 @@
 # Extra: Archivos Ocultos y Rutas del Sistema
 
-## Por que esto importa
+## Por qué esto importa
 
-Claude Code almacena toda su configuracion en **carpetas ocultas**. Si no sabes que existen, te sentiras perdido cada vez que el curso diga "edita `.claude/settings.json`" o "pon tu skill en `~/.claude/skills/`."
+Claude Code almacena toda su configuración en **carpetas ocultas**. Si no sabes que existen, te sentiras perdido cada vez que el curso diga "edita `.claude/settings.json`" o "pon tu skill en `~/.claude/skills/`."
 
-Esta guia te da el mapa mental.
+Esta guía te da el mapa mental.
 
-## ¿Que son los archivos ocultos?
+## ¿Qué son los archivos ocultos?
 
-Cualquier archivo o carpeta cuyo nombre empiece con un **punto** (`.`) esta oculto por defecto. Tu computadora los oculta para mantener las cosas limpias — generalmente son archivos de configuracion que no necesitas ver a diario.
+Cualquier archivo o carpeta cuyo nombre empiece con un **punto** (`.`) está oculto por defecto. Tu computadora los oculta para mantener las cosas limpias — generalmente son archivos de configuración que no necesitas ver a diario.
 
 ```
 my-project/
@@ -22,7 +22,7 @@ my-project/
 
 Oculto no significa secreto o peligroso. Solo significa "no se muestra por defecto."
 
-## Como ver archivos ocultos
+## Cómo ver archivos ocultos
 
 ### En la terminal
 
@@ -41,9 +41,9 @@ El `-a` significa "all" (todos) — incluyendo archivos ocultos.
 
 VS Code muestra archivos ocultos por defecto en la barra lateral. Pero si no ves `.claude/`:
 
-1. Abre la Configuracion de VS Code (Cmd+, en Mac, Ctrl+, en Windows)
+1. Abre la Configuración de VS Code (Cmd+, en Mac, Ctrl+, en Windows)
 2. Busca "exclude"
-3. Busca `files.exclude` — elimina cualquier patron que oculte `.claude`
+3. Busca `files.exclude` — elimina cualquier patrón que oculte `.claude`
 
 ### En Finder de Mac
 
@@ -81,12 +81,12 @@ TU CARPETA DE INICIO (~/)                TU CARPETA DE PROYECTO (./my-project/)
 
 ### La diferencia clave
 
-| Ubicacion | Simbolo | A quien afecta | ¿Se sube a Git? | Ejemplo de uso |
+| Ubicación | Simbolo | A quien afecta | ¿Se sube a Git? | Ejemplo de uso |
 |----------|--------|---------------|-------------------|-------------|
 | **Carpeta de inicio** `~/.claude/` | `~` | Solo a ti, en todos los proyectos | No | Tus preferencias personales, estilo |
 | **Carpeta del proyecto** `.claude/` | `.` | A todos en este proyecto | Si (generalmente) | Estandares del equipo, skills compartidos |
 
-### ¿Que significa `~`?
+### ¿Qué significa `~`?
 
 La tilde `~` es un atajo para **tu carpeta de inicio**:
 
@@ -103,9 +103,9 @@ echo ~
 # /Users/maria
 ```
 
-### ¿Que significa `.`?
+### ¿Qué significa `.`?
 
-Un punto solo `.` significa **la carpeta actual** (donde sea que estes ahora):
+Un punto solo `.` significa **la carpeta actual** (donde sea que estés ahora):
 
 ```bash
 pwd
@@ -117,9 +117,9 @@ ls .claude/
 
 ## Mapa completo de archivos de Claude Code
 
-Aqui esta cada ubicacion que usa Claude Code, organizada por proposito:
+Aqui está cada ubicación que usa Claude Code, organizada por propósito:
 
-### Archivos de memoria (Leccion 02)
+### Archivos de memoria (Lección 02)
 
 ```
 ~/.claude/CLAUDE.md              → Tus preferencias personales (todos los proyectos)
@@ -129,9 +129,9 @@ Aqui esta cada ubicacion que usa Claude Code, organizada por proposito:
 ./src/CLAUDE.md                  → Memoria especifica del directorio
 ```
 
-**Regla**: Lo especifico gana sobre lo general. La memoria del proyecto anula la personal. La memoria del directorio anula la del proyecto.
+**Regla**: Lo específico gana sobre lo general. La memoria del proyecto anula la personal. La memoria del directorio anula la del proyecto.
 
-### Archivos de configuracion (Leccion 06)
+### Archivos de configuración (Lección 06)
 
 ```
 ~/.claude/settings.json          → Tu configuracion global y hooks
@@ -139,28 +139,28 @@ Aqui esta cada ubicacion que usa Claude Code, organizada por proposito:
 ./.claude/settings.local.json    → Tu configuracion local (no compartida)
 ```
 
-### Skills (Leccion 03)
+### Skills (Lección 03)
 
 ```
 ~/.claude/skills/name/SKILL.md   → Tus skills personales
 ./.claude/skills/name/SKILL.md   → Skills del proyecto (compartidos con el equipo)
 ```
 
-### Subagentes (Leccion 04)
+### Subagentes (Lección 04)
 
 ```
 ~/.claude/agents/name/AGENT.md   → Tus agentes personales
 ./.claude/agents/name/AGENT.md   → Agentes del proyecto (compartidos con el equipo)
 ```
 
-### Reglas (Leccion 02)
+### Reglas (Lección 02)
 
 ```
 ~/.claude/rules/name.md          → Tus reglas personales
 ./.claude/rules/name.md          → Reglas del proyecto (compartidas con el equipo)
 ```
 
-### Comandos (Leccion 01)
+### Comandos (Lección 01)
 
 ```
 ./.claude/commands/name.md       → Comandos slash del proyecto
@@ -170,7 +170,7 @@ Aqui esta cada ubicacion que usa Claude Code, organizada por proposito:
 
 ### "Guarde el archivo pero nada cambio"
 
-Puede que lo hayas guardado en la ubicacion equivocada. Verifica:
+Puede que lo hayas guardado en la ubicación equivocada. Verifica:
 
 ```bash
 # ¿Estoy en la carpeta correcta?
@@ -180,7 +180,7 @@ pwd
 ls -la .claude/
 ```
 
-### "Mi skill funciona en mi maquina pero no en la de mi compañero"
+### "Mi skill funciona en mi máquina pero no en la de mi compañero"
 
 Probablemente lo guardaste en `~/.claude/skills/` (personal) en lugar de `.claude/skills/` (proyecto). Muevelo:
 
@@ -189,7 +189,7 @@ Probablemente lo guardaste en `~/.claude/skills/` (personal) en lugar de `.claud
 mv ~/.claude/skills/my-skill .claude/skills/my-skill
 ```
 
-Luego haz commit a Git para que tu equipo tambien lo tenga.
+Luego haz commit a Git para que tu equipo también lo tenga.
 
 ### "Veo dos archivos CLAUDE.md — ¿cual edito?"
 
@@ -200,9 +200,9 @@ Luego haz commit a Git para que tu equipo tambien lo tenga.
 
 En caso de duda: edita el del **proyecto** (`.claude/CLAUDE.md`).
 
-### "¿Donde puso Claude la memoria automatica?"
+### "¿Dónde puso Claude la memoria automática?"
 
-Las memorias generadas automaticamente van a una ubicacion especial:
+Las memorias generadas automaticamente van a una ubicación especial:
 
 ```bash
 ls ~/.claude/projects/
@@ -210,7 +210,7 @@ ls ~/.claude/projects/
 
 Cada proyecto tiene su propia subcarpeta con archivos de memoria que Claude crea automaticamente.
 
-## Referencia rapida de navegacion
+## Referencia rápida de navegación
 
 ```bash
 # Ir a tu configuracion personal de Claude
@@ -229,15 +229,15 @@ ls -la .claude/
 find . -name "CLAUDE.md"
 ```
 
-## Lista de verificacion: ¿Puedes responder esto?
+## Lista de verificación: ¿Puedes responder esto?
 
-Antes de continuar, asegurate de poder responder:
+Antes de continuar, asegúrate de poder responder:
 
-- [ ] ¿Que hace que un archivo sea "oculto"? → Empieza con un punto (`.`)
-- [ ] ¿Como ves archivos ocultos en la terminal? → `ls -a`
-- [ ] ¿Que significa `~`? → Tu carpeta de inicio
-- [ ] ¿Donde se guardan las configuraciones personales? → `~/.claude/`
-- [ ] ¿Donde se guardan las configuraciones del proyecto? → `.claude/` (dentro del proyecto)
+- [ ] ¿Qué hace que un archivo sea "oculto"? → Empieza con un punto (`.`)
+- [ ] ¿Cómo ves archivos ocultos en la terminal? → `ls -a`
+- [ ] ¿Qué significa `~`? → Tu carpeta de inicio
+- [ ] ¿Dónde se guardan las configuraciones personales? → `~/.claude/`
+- [ ] ¿Dónde se guardan las configuraciones del proyecto? → `.claude/` (dentro del proyecto)
 - [ ] Si un skill funciona para ti pero no para tu equipo, ¿que paso? → Esta en `~/` en lugar de `./`
 
-**Siguiente paso**: [Volver a la leccion de Memoria →](README.es.md)
+**Siguiente paso**: [Volver a la lección de Memoria →](README.es.md)

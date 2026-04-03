@@ -3,15 +3,15 @@
   <img alt="Claude How To" src="../resources/logos/claude-howto-logo.svg">
 </picture>
 
-# Guia de Memoria
+# Guía de Memoria
 
-La memoria permite a Claude retener contexto entre sesiones y conversaciones. Existe en dos formas: sintesis automatica en claude.ai, y archivos CLAUDE.md en Claude Code.
+La memoria permite a Claude retener contexto entre sesiones y conversaciones. Existe en dos formas: sintesis automática en claude.ai, y archivos CLAUDE.md en Claude Code.
 
-## Descripcion General
+## Descripción General
 
 La memoria en Claude Code proporciona contexto persistente que se mantiene entre multiples sesiones y conversaciones. A diferencia de las ventanas de contexto temporales, los archivos de memoria te permiten:
 
-> **Nuevo con archivos ocultos y rutas?** Esta leccion usa rutas como `~/.claude/` y `.claude/` extensivamente. Si terminos como "carpeta oculta" o `~` no te son familiares, lee la guia [Extra: Archivos Ocultos y Rutas](EXTRA-HIDDEN-FILES.es.md) guide first (15 min).
+> **Nuevo con archivos ocultos y rutas?** Esta lección usa rutas como `~/.claude/` y `.claude/` extensivamente. Si terminos como "carpeta oculta" o `~` no te son familiares, lee la guía [Extra: Archivos Ocultos y Rutas](EXTRA-HIDDEN-FILES.es.md) guide first (15 min).
 
 - Share project standards across your team
 - Store personal development preferences
@@ -21,9 +21,9 @@ La memoria en Claude Code proporciona contexto persistente que se mantiene entre
 
 The memory system operates at multiple levels, from global personal preferences down to specific subdirectories, allowing for fine-grained control over what Claude remembers and how it applies that knowledge.
 
-## Referencia Rapida de Comandos de Memoria
+## Referencia Rápida de Comandos de Memoria
 
-| Comando | Proposito | Uso | Cuando Usar |
+| Comando | Propósito | Uso | Cuando Usar |
 |---------|---------|-------|-------------|
 | `/init` | Initialize project memory | `/init` | Starting new project, first-time CLAUDE.md setup |
 | `/memory` | Edit memory files in editor | `/memory` | Extensive updates, reorganization, reviewing content |
@@ -32,7 +32,7 @@ The memory system operates at multiple levels, from global personal preferences 
 | `# remember this` | Natural language memory | `# remember this<br/>Your instruction` | Conversational memory updates |
 | `@path/to/file` | Import external content | `@README.md` or `@docs/api.md` | Referencing existing documentation in CLAUDE.md |
 
-## Inicio Rapido: Inicializando la Memoria
+## Inicio Rápido: Inicializando la Memoria
 
 ### The `/init` Command
 
@@ -44,7 +44,7 @@ The `/init` command is the fastest way to set up project memory in Claude Code. 
 /init
 ```
 
-**Que hace:**
+**Qué hace:**
 
 - Creates a new CLAUDE.md file in your project (typically at `./CLAUDE.md` or `./.claude/CLAUDE.md`)
 - Establishes project conventions and guidelines
@@ -106,7 +106,7 @@ You can quickly add information to memory during any conversation by starting yo
 # Use kebab-case for file names
 ```
 
-**Como funciona:**
+**Cómo funciona:**
 
 1. Start your message with `#` followed by your rule
 2. Claude recognizes this as a memory update request
@@ -137,7 +137,7 @@ The `/memory` command provides direct access to edit your CLAUDE.md memory files
 /memory
 ```
 
-**Que hace:**
+**Qué hace:**
 
 - Opens your memory files in your system's default editor
 - Allows you to make extensive additions, modifications, and reorganizations
@@ -194,7 +194,7 @@ See @docs/architecture.md for system design
 @~/.claude/my-project-instructions.md
 ```
 
-**Funciones de importacion:**
+**Funciones de importación:**
 
 - Both relative and absolute paths are supported (e.g., `@docs/api.md` or `@~/.claude/my-project-instructions.md`)
 - Recursive imports are supported with a maximum depth of 5
@@ -220,7 +220,7 @@ graph TB
     A -->|Uses context| C
 ```
 
-## Jerarquia de Memoria en Claude Code
+## Jerarquía de Memoria en Claude Code
 
 Claude Code uses a multi-tier hierarchical memory system. Memory files are automatically loaded when Claude Code launches, with higher-level files taking precedence.
 
@@ -304,11 +304,11 @@ Patterns are matched against paths relative to the project root. This is particu
 - Repositories that contain vendored or third-party CLAUDE.md files
 - Reducing noise in Claude's context window by excluding stale or unrelated instructions
 
-## Jerarquia de Archivos de Configuracion
+## Jerarquía de Archivos de Configuración
 
 Claude Code settings (including `autoMemoryDirectory`, `claudeMdExcludes`, and other configuration) are resolved from a five-level hierarchy, with higher levels taking precedence:
 
-| Nivel | Ubicacion | Alcance |
+| Nivel | Ubicación | Alcance |
 |-------|----------|-------|
 | 1 (Highest) | Managed policy (system-level) | Organization-wide enforcement |
 | 2 | `managed-settings.d/` (v2.1.83+) | Modular policy drop-ins, merged alphabetically |
@@ -382,7 +382,7 @@ Rules in `.claude/rules/` support two organizational features:
 
 ## Tabla de Ubicaciones de Memoria
 
-| Ubicacion | Alcance | Prioridad | Compartida | Acceso | Ideal Para |
+| Ubicación | Alcance | Prioridad | Compartida | Acceso | Ideal Para |
 |----------|-------|----------|--------|--------|----------|
 | `/Library/Application Support/ClaudeCode/CLAUDE.md` (macOS) | Managed Policy | 1 (Highest) | Organization | System | Company-wide policies |
 | `/etc/claude-code/CLAUDE.md` (Linux/WSL) | Managed Policy | 1 (Highest) | Organization | System | Organization standards |
@@ -416,11 +416,11 @@ sequenceDiagram
     Claude-->>User: "Memory saved!"
 ```
 
-## Memoria Automatica
+## Memoria Automática
 
 Auto memory is a persistent directory where Claude automatically records learnings, patterns, and insights as it works with your project. Unlike CLAUDE.md files which you write and maintain manually, auto memory is written by Claude itself during sessions.
 
-### Como Funciona la Memoria Automatica
+### Cómo Funciona la Memoria Automática
 
 - **Location**: `~/.claude/projects/<project>/memory/`
 - **Entrypoint**: `MEMORY.md` serves as the main file in the auto memory directory
@@ -428,7 +428,7 @@ Auto memory is a persistent directory where Claude automatically records learnin
 - **Loading behavior**: The first 200 lines of `MEMORY.md` are loaded into the system prompt at session start. Topic files are loaded on demand, not at startup.
 - **Read/write**: Claude reads and writes memory files during sessions as it discovers patterns and project-specific knowledge
 
-### Memoria Automatica Architecture
+### Memoria Automática Architecture
 
 ```mermaid
 graph TD
@@ -453,7 +453,7 @@ graph TD
     style I fill:#f3e5f5,stroke:#333,color:#333
 ```
 
-### Memoria Automatica Directory Structure
+### Memoria Automática Directory Structure
 
 ```
 ~/.claude/projects/<project>/memory/
@@ -471,7 +471,7 @@ Auto memory requires **Claude Code v2.1.59 or later**. If you are on an older ve
 npm install -g @anthropic-ai/claude-code@latest
 ```
 
-### Directorio Personalizado de Memoria Automatica
+### Directorio Personalizado de Memoria Automática
 
 By default, auto memory is stored in `~/.claude/projects/<project>/memory/`. You can change this location using the `autoMemoryDirectory` setting (available since **v2.1.74**):
 
@@ -506,7 +506,7 @@ memory: local     # Load local memory only
 
 This allows subagents to operate with focused context rather than inheriting the full memory hierarchy.
 
-### Controlando la Memoria Automatica
+### Controlando la Memoria Automática
 
 Auto memory can be controlled via the `CLAUDE_CODE_DISABLE_AUTO_MEMORY` environment variable:
 
@@ -542,7 +542,7 @@ claude --add-dir /path/to/other/project
 
 Claude will load CLAUDE.md from the specified additional directory alongside the memory files from your current working directory.
 
-## Ejemplos Practicos
+## Ejemplos Prácticos
 
 ### Example 1: Project Memory Structure
 
@@ -842,9 +842,9 @@ Added to ./CLAUDE.md:
 - Update existing sections instead of duplicating content
 - Choose the appropriate memory scope (project vs. personal)
 
-## Comparacion de Funciones de Memoria
+## Comparación de Funciones de Memoria
 
-| Funcion | Claude Web/Desktop | Claude Code (CLAUDE.md) |
+| Función | Claude Web/Desktop | Claude Code (CLAUDE.md) |
 |---------|-------------------|------------------------|
 | Auto-synthesis | ✅ Every 24h | ❌ Manual |
 | Cross-project | ✅ Shared | ❌ Project-specific |
@@ -948,7 +948,7 @@ graph LR
 
 **Choose the right memory level:**
 
-| Caso de Uso | Nivel de Memoria | Razon |
+| Caso de Uso | Nivel de Memoria | Razón |
 |----------|-------------|-----------|
 | Company security policy | Managed Policy | Applies to all projects organization-wide |
 | Team code style guide | Project | Shared with team via git |
@@ -973,7 +973,7 @@ graph LR
 # Instead of copying README content into CLAUDE.md, just import it
 ```
 
-## Instrucciones de Instalacion
+## Instrucciones de Instalación
 
 ### Configurar Memoria de Proyecto
 
@@ -1100,7 +1100,7 @@ Claude will prompt you to choose which memory file to update.
    git commit -m "Add [directory] memory configuration"
    ```
 
-### Verificar la Configuracion
+### Verificar la Configuración
 
 1. **Check memory locations:**
    ```bash
@@ -1115,7 +1115,7 @@ Claude will prompt you to choose which memory file to update.
 
 3. **Test with Claude Code** by starting a new session in your project
 
-## Documentacion Oficial
+## Documentación Oficial
 
 For the most up-to-date information, refer to the official Claude Code documentation:
 
@@ -1123,7 +1123,7 @@ For the most up-to-date information, refer to the official Claude Code documenta
 - **[Slash Commands Reference](https://code.claude.com/docs/en/interactive-mode)** - All built-in commands including `/init` and `/memory`
 - **[CLI Reference](https://code.claude.com/docs/en/cli-reference)** - Command-line interface documentation
 
-### Detalles Tecnicos Clave de la Documentacion Oficial
+### Detalles Tecnicos Clave de la Documentación Oficial
 
 **Memory Loading:**
 
@@ -1159,7 +1159,7 @@ For the most up-to-date information, refer to the official Claude Code documenta
 
 ## Enlaces a Conceptos Relacionados
 
-### Puntos de Integracion
+### Puntos de Integración
 - [MCP Protocol](../05-mcp/) - Live data access alongside memory
 - [Slash Commands](../01-slash-commands/) - Session-specific shortcuts
 - [Skills](../03-skills/) - Automated workflows with memory context

@@ -1,6 +1,6 @@
-# Flujos de Trabajo Practicos
+# Flujos de Trabajo Prácticos
 
-Tareas reales que puedes hacer con Claude Code — sin necesidad de experiencia en programacion.
+Tareas reales que puedes hacer con Claude Code — sin necesidad de experiencia en programación.
 
 ## Para Product Managers
 
@@ -44,7 +44,7 @@ de especificacion tecnica que describa como funciona, incluyendo
 un diagrama. Escribelo para una audiencia no tecnica.
 ```
 
-### Rastrear deuda tecnica
+### Rastrear deuda técnica
 
 ```
 Encuentra todos los comentarios TODO y FIXME en el codebase.
@@ -178,7 +178,7 @@ Encuentra cada mencion de "Acme Corp" en el proyecto.
 ¿Donde esta definido el email de contacto? Necesito actualizarlo.
 ```
 
-### Generar documentacion
+### Generar documentación
 
 ```
 Crea un archivo README que explique que es este proyecto,
@@ -195,7 +195,7 @@ Lee el archivo CSV en data/users.csv y dime:
 - ¿Algun problema obvio de calidad de datos?
 ```
 
-### Crear reportes desde el codigo
+### Crear reportes desde el código
 
 ```
 ¿Cuantas paginas tiene este sitio web? Lista cada
@@ -210,17 +210,17 @@ pagina con su ruta URL y una descripcion de una linea.
 Siempre empieza pidiendo a Claude que explique lo que existe antes de hacer cambios.
 
 ### Usa el Modo Plan primero
-Presiona **Shift+Tab** dos veces para entrar al Modo Plan cuando estes explorando. Claude solo leera, nunca escribira.
+Presiona **Shift+Tab** dos veces para entrar al Modo Plan cuando estés explorando. Claude solo leera, nunca escribira.
 
 ### Referencia archivos con @
-En lugar de describir donde esta un archivo, usa `@` para referenciarlo directamente:
+En lugar de describir donde está un archivo, usa `@` para referenciarlo directamente:
 
 ```
 Explica que hace @src/pages/pricing.tsx
 ```
 
-### Pide un resumen despues de los cambios
-Despues de que Claude haga cambios, pidele que resuma lo que hizo:
+### Pide un resumen después de los cambios
+Después de que Claude haga cambios, pidele que resuma lo que hizo:
 
 ```
 Resume todos los cambios que acabas de hacer en una lista de viñetas

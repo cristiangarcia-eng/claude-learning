@@ -1,30 +1,30 @@
 # Comandos Slash
 
-## ¿Que Son los Comandos Slash?
+## ¿Qué Son los Comandos Slash?
 
-Los comandos slash son atajos que escribes en Claude Code para controlar su comportamiento. Piensa en ellos como opciones de menu -- escribes `/` seguido de un nombre de comando, y Claude realiza una accion especifica.
+Los comandos slash son atajos que escribes en Claude Code para controlar su comportamiento. Piensa en ellos como opciones de menú -- escribes `/` seguido de un nombre de comando, y Claude realiza una acción específica.
 
 No necesitas conocimientos tecnicos para usarlos. Si puedes escribir una barra diagonal, puedes usar comandos slash.
 
 ## Primeros Pasos
 
-Abre Claude Code y escribe `/` para ver una lista de comandos disponibles. Empieza a escribir letras despues de la barra para filtrar la lista. Presiona Enter para ejecutar el que quieras.
+Abre Claude Code y escribe `/` para ver una lista de comandos disponibles. Empieza a escribir letras después de la barra para filtrar la lista. Presiona Enter para ejecutar el que quieras.
 
 ## Comandos Esenciales para el Uso Diario
 
-Estos son los comandos que usaras con mas frecuencia.
+Estos son los comandos que usarás con más frecuencia.
 
 | Comando | Que Hace |
 |---------|-------------|
 | `/help` | Muestra una lista de todos los comandos disponibles y que hacen |
-| `/clear` | Limpia la conversacion actual y empieza de cero |
+| `/clear` | Limpia la conversación actual y empieza de cero |
 | `/memory` | Abre tu archivo CLAUDE.md donde Claude almacena notas que debe recordar |
 | `/init` | Crea un archivo CLAUDE.md para un nuevo proyecto para que Claude conozca el contexto |
-| `/config` | Abre tu menu de configuracion |
-| `/compact` | Resume la conversacion hasta el momento para liberar espacio |
+| `/config` | Abre tu menú de configuración |
+| `/compact` | Resume la conversación hasta el momento para liberar espacio |
 | `/model` | Te permite cambiar entre diferentes modelos de Claude (Sonnet, Opus, Haiku) |
 
-## Guia Comando por Comando
+## Guía Comando por Comando
 
 ### /help -- Tu Punto de Partida
 
@@ -32,16 +32,16 @@ Cuando tengas dudas, escribe `/help`. Muestra cada comando disponible para ti, i
 
 ### /clear -- Empezar de Cero
 
-Usa `/clear` cuando quieras comenzar un nuevo tema. Limpia la conversacion para que Claude no se confunda con el contexto anterior. Alias: `/reset`, `/new`.
+Usa `/clear` cuando quieras comenzar un nuevo tema. Limpia la conversación para que Claude no se confunda con el contexto anterior. Alias: `/reset`, `/new`.
 
 ### /memory -- Enseñale a Claude Sobre Tu Trabajo
 
-El comando `/memory` abre un archivo llamado CLAUDE.md. Todo lo que escribas aqui, Claude lo lee al inicio de cada conversacion. Cosas buenas para poner en tu archivo de memoria:
+El comando `/memory` abre un archivo llamado CLAUDE.md. Todo lo que escribas aquí, Claude lo lee al inicio de cada conversación. Cosas buenas para poner en tu archivo de memoria:
 
 - Tu rol y en que trabajas
 - Estilo o tono de escritura preferido
 - Nombres de proyectos y que significan
-- Terminologia especifica de tu empresa
+- Terminología específica de tu empresa
 
 **Ejemplo de archivo de memoria:**
 ```
@@ -55,13 +55,13 @@ I prefer bullet points over paragraphs.
 
 Cuando empiezas a trabajar en una nueva carpeta, ejecuta `/init` para crear un archivo CLAUDE.md. Claude te hara preguntas sobre el proyecto y generara un archivo de memoria inicial.
 
-### /config -- Ajustar Tu Configuracion
+### /config -- Ajustar Tu Configuración
 
-Abre el panel de configuracion donde puedes cambiar preferencias como tu modelo predeterminado, permisos y opciones de visualizacion.
+Abre el panel de configuración donde puedes cambiar preferencias como tu modelo predeterminado, permisos y opciones de visualizacion.
 
 ### /compact -- Liberar Espacio
 
-Las conversaciones largas consumen la ventana de contexto de Claude (su memoria de trabajo). Cuando las cosas se alargan, ejecuta `/compact` para que Claude resuma la conversacion hasta el momento. Puedes agregar instrucciones de enfoque:
+Las conversaciones largas consumen la ventana de contexto de Claude (su memoria de trabajo). Cuando las cosas se alargan, ejecuta `/compact` para que Claude resuma la conversación hasta el momento. Puedes agregar instrucciones de enfoque:
 
 ```
 /compact focus on the Q3 marketing plan discussion
@@ -83,23 +83,23 @@ Mas alla de lo esencial, vale la pena conocer estos comandos.
 
 | Comando | Que Hace |
 |---------|-------------|
-| `/cost` | Muestra cuantos tokens has usado en esta sesion |
-| `/copy` | Copia la ultima respuesta de Claude a tu portapapeles |
-| `/export` | Guarda la conversacion en un archivo |
-| `/resume` | Retoma una conversacion anterior donde la dejaste |
+| `/cost` | Muestra cuantos tokens has usado en está sesión |
+| `/copy` | Copia la última respuesta de Claude a tu portapapeles |
+| `/export` | Guarda la conversación en un archivo |
+| `/resume` | Retoma una conversación anterior donde la dejaste |
 | `/voice` | Activa pulsar-para-hablar para que puedas hablar en vez de escribir |
-| `/rename` | Dale un nombre a tu sesion para encontrarla despues |
-| `/branch` | Divide la conversacion en una nueva sesion para explorar una direccion diferente |
+| `/rename` | Dale un nombre a tu sesión para encontrarla después |
+| `/branch` | Divide la conversación en una nueva sesión para explorar una direccion diferente |
 | `/context` | Muestra cuanta memoria de trabajo de Claude se ha usado |
 | `/schedule` | Crea una tarea recurrente que se ejecuta en un horario |
 | `/effort` | Establece cuanto esfuerzo de pensamiento pone Claude en las respuestas (low, medium, high) |
-| `/plan` | Pide a Claude crear un plan antes de tomar accion |
+| `/plan` | Pide a Claude crear un plan antes de tomar acción |
 
-## Ejemplos Practicos para No Desarrolladores
+## Ejemplos Prácticos para No Desarrolladores
 
 ### Buscar en Archivos
 
-Tienes una carpeta llena de reportes y necesitas encontrar informacion especifica:
+Tienes una carpeta llena de reportes y necesitas encontrar información específica:
 
 ```
 Find all mentions of "Q3 revenue" in the files in this folder
@@ -116,9 +116,9 @@ Summarize the main findings from the attached report.
 Focus on action items and deadlines.
 ```
 
-Usa `/compact focus on action items` si la conversacion se alarga.
+Usa `/compact focus on action items` si la conversación se alarga.
 
-### Organizar Informacion
+### Organizar Información
 
 Necesitas convertir notas desordenadas en algo estructurado:
 
@@ -146,33 +146,33 @@ Tu equipo puede crear comandos slash personalizados adaptados a sus flujos de tr
 - `/weekly-update` -- Genera un reporte de estado a partir de la actividad reciente
 - `/brand-check` -- Revisa contenido contra tus lineamientos de marca
 
-Para ver que comandos personalizados estan disponibles, escribe `/` y desplazate por la lista, o preguntale a Claude:
+Para ver que comandos personalizados están disponibles, escribe `/` y desplazate por la lista, o preguntale a Claude:
 
 ```
 What skills are available?
 ```
 
-Para detalles sobre como crear los tuyos, consulta la [Guia de Skills](../03-skills/README.es.md).
+Para detalles sobre como crear los tuyos, consulta la [Guía de Skills](../03-skills/README.es.md).
 
 ## Consejos
 
 | Haz | Evita |
 |----|-------|
 | Usa `/clear` al cambiar de tema | Dejar que las conversaciones se alarguen demasiado sin compactar |
-| Agrega tus preferencias a `/memory` | Re-explicar tu rol en cada conversacion |
+| Agrega tus preferencias a `/memory` | Re-explicar tu rol en cada conversación |
 | Usa `/compact` cuando Claude parezca olvidar contexto | Asumir que Claude recuerda sesiones anteriores |
-| Prueba `/voice` para preguntas rapidas | Escribir pasajes largos cuando podrias dictarlos |
-| Usa `/export` para guardar conversaciones importantes | Perder una conversacion util al cerrar la ventana |
+| Prueba `/voice` para preguntas rapidas | Escribir pasajes largos cuando podrías dictarlos |
+| Usa `/export` para guardar conversaciones importantes | Perder una conversación util al cerrar la ventana |
 
-## Solucion de Problemas
+## Solución de Problemas
 
-**Claude no reconoce un comando**: Asegurate de escribir el `/` al principio. Revisa la ortografia. Ejecuta `/help` para ver la lista completa.
+**Claude no reconoce un comando**: Asegúrate de escribir el `/` al principio. Revisa la ortografia. Ejecuta `/help` para ver la lista completa.
 
-**Claude olvido de que estabamos hablando**: La conversacion puede estar muy larga. Ejecuta `/compact` para resumir y liberar espacio.
+**Claude olvido de que estabamos hablando**: La conversación puede estar muy larga. Ejecuta `/compact` para resumir y liberar espacio.
 
 **Quiero que Claude recuerde algo permanentemente**: Usa `/memory` para agregarlo a tu archivo CLAUDE.md. Todo lo que este ahi persiste entre sesiones.
 
-**Faltan comandos personalizados**: Pregunta a tu equipo si han configurado skills en el proyecto. Verifica que estes en la carpeta correcta del proyecto.
+**Faltan comandos personalizados**: Pregunta a tu equipo si han configurado skills en el proyecto. Verifica que estés en la carpeta correcta del proyecto.
 
 ## Guias Relacionadas
 
@@ -182,8 +182,8 @@ Para detalles sobre como crear los tuyos, consulta la [Guia de Skills](../03-ski
 
 ## Recursos Adicionales
 
-- [Documentacion Oficial del Modo Interactivo](https://code.claude.com/docs/en/interactive-mode)
-- [Documentacion Oficial de Skills](https://code.claude.com/docs/en/skills)
+- [Documentación Oficial del Modo Interactivo](https://code.claude.com/docs/en/interactive-mode)
+- [Documentación Oficial de Skills](https://code.claude.com/docs/en/skills)
 
 ---
 

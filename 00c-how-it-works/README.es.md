@@ -1,4 +1,4 @@
-# Como Funciona Claude Code
+# Cómo Funciona Claude Code
 
 ## El panorama general
 
@@ -10,7 +10,7 @@ Piensa en ello como tener un colega muy capaz sentado a tu lado que puede:
 - Ejecutar comandos en tu computadora
 - Explicar cosas en español simple
 
-## El ciclo de conversacion
+## El ciclo de conversación
 
 Cada interaccion sigue un ciclo simple:
 
@@ -34,7 +34,7 @@ graph TD
 4. **Tu apruebas** cualquier cambio (Claude siempre pregunta primero)
 5. **Repite** hasta que la tarea este completa
 
-## Que puede hacer Claude
+## Qué puede hacer Claude
 
 ### Leer archivos
 Claude puede abrir y leer cualquier archivo en tu proyecto. Lo hace automaticamente cuando necesita contexto.
@@ -46,51 +46,51 @@ Claude puede modificar archivos — agregando, cambiando o eliminando contenido.
 Claude puede ejecutar comandos de terminal — como correr pruebas, instalar paquetes o verificar el estado de Git. De nuevo, pregunta primero.
 
 ### Buscar en tu codebase
-Claude puede buscar en todos tus archivos para encontrar texto especifico, patrones o funcionalidades.
+Claude puede buscar en todos tus archivos para encontrar texto específico, patrones o funcionalidades.
 
 ## La ventana de contexto
 
-Claude tiene una **ventana de contexto** — piensa en ella como la memoria a corto plazo de Claude para tu conversacion.
+Claude tiene una **ventana de contexto** — piensa en ella como la memoria a corto plazo de Claude para tu conversación.
 
-Todo entra en esta memoria:
+Todo entra en está memoria:
 - Tus mensajes
 - Archivos que Claude lee
 - Salidas de comandos
 - Respuestas de Claude
 
-Esta memoria tiene un limite. Cuando se llena, Claude puede empezar a olvidar partes anteriores de la conversacion.
+Esta memoria tiene un límite. Cuando se llena, Claude puede empezar a olvidar partes anteriores de la conversación.
 
-### Como manejarla
+### Cómo manejarla
 
-| Problema | Solucion |
+| Problema | Solución |
 |---------|----------|
-| La conversacion se hace larga | Escribe `/clear` para empezar de cero |
-| Claude olvido algo que dijiste antes | Recuerdaselo, o inicia una nueva sesion |
+| La conversación se hace larga | Escribe `/clear` para empezar de cero |
+| Claude olvido algo que dijiste antes | Recuerdaselo, o inicia una nueva sesión |
 | Claude parece confundido | Escribe `/clear` y reformula tu solicitud |
 
-> **Regla general**: Si vas a cambiar a un tema completamente diferente, empieza con `/clear`. Es como abrir un documento nuevo en lugar de agregar a uno que ya esta muy largo.
+> **Regla general**: Si vas a cambiar a un tema completamente diferente, empieza con `/clear`. Es como abrir un documento nuevo en lugar de agregar a uno que ya está muy largo.
 
 ## Permisos: siempre tienes el control
 
 Claude Code tiene tres modos:
 
-| Modo | Que significa |
+| Modo | Qué significa |
 |------|--------------|
 | **Normal** (predeterminado) | Claude pide permiso para cada cambio |
-| **Auto-aceptar** | Claude hace cambios sin preguntar (usar con precaucion) |
+| **Auto-aceptar** | Claude hace cambios sin preguntar (usar con precaución) |
 | **Modo plan** | Claude solo lee y planifica — no se permiten cambios |
 
-Presiona **Shift+Tab** para alternar entre modos. La mayoria de las personas empiezan en modo Normal.
+Presiona **Shift+Tab** para alternar entre modos. La mayoría de las personas empiezan en modo Normal.
 
 > **El modo plan es genial para aprender.** Puedes pedirle a Claude que analice tu proyecto sin riesgo de cambios.
 
-## Donde se guardan las cosas
+## Dónde se guardan las cosas
 
 - **Las conversaciones** se guardan localmente en tu computadora
-- **La configuracion** vive en `~/.claude/` (tu carpeta de inicio)
-- **La configuracion del proyecto** vive en `.claude/` dentro de tu carpeta de proyecto
+- **La configuración** vive en `~/.claude/` (tu carpeta de inicio)
+- **La configuración del proyecto** vive en `.claude/` dentro de tu carpeta de proyecto
 
-Nada se envia a la nube excepto tus mensajes a Claude (igual que usar ChatGPT o cualquier chat de IA).
+Nada se envía a la nube excepto tus mensajes a Claude (igual que usar ChatGPT o cualquier chat de IA).
 
 ## Puntos clave
 

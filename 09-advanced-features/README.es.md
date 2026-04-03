@@ -1,6 +1,6 @@
 # Funcionalidades Avanzadas
 
-Esta leccion cubre las funcionalidades avanzadas de Claude Code: planificacion de tareas, control de autonomia, entrada de voz, acceso remoto y gestion de sesiones.
+Esta lección cubre las funcionalidades avanzadas de Claude Code: planificacion de tareas, control de autonomia, entrada de voz, acceso remoto y gestion de sesiones.
 
 ---
 
@@ -42,7 +42,7 @@ Ready to proceed? (yes / no / modify plan)
 
 ## Extended Thinking
 
-Le dice a Claude que dedique mas tiempo razonando antes de responder. Produce respuestas mas exhaustivas para preguntas complejas.
+Le dice a Claude que dedique más tiempo razonando antes de responder. Produce respuestas más exhaustivas para preguntas complejas.
 
 **Como activarlo:** `Option+T` (Mac) o `Alt+T` (Windows/Linux), o escribe `/effort high`.
 
@@ -59,7 +59,7 @@ Le dice a Claude que dedique mas tiempo razonando antes de responder. Produce re
 
 Los modos de permisos controlan cuanta libertad tiene Claude. Presiona `Shift+Tab` para alternar entre ellos.
 
-| Modo | Que puede hacer Claude | Mejor para |
+| Modo | Qué puede hacer Claude | Mejor para |
 |------|----------------------|-----------|
 | `default` | Lee libremente; pregunta antes de otras acciones | Uso general |
 | `acceptEdits` | Lee y edita libremente; pregunta antes de comandos | Trabajo enfocado |
@@ -72,7 +72,7 @@ Los modos de permisos controlan cuanta libertad tiene Claude. Presiona `Shift+Ta
 
 ## Dictado por voz
 
-Habla tus solicitudes en lugar de escribirlas. Util para lluvia de ideas e instrucciones mas largas.
+Habla tus solicitudes en lugar de escribirlas. Util para lluvia de ideas e instrucciones más largas.
 
 ```
 /voice
@@ -84,13 +84,13 @@ Soporta push-to-talk con 20 idiomas. Configura la tecla de activacion via `/keyb
 
 ## Control remoto
 
-Continua una sesion de Claude Code desde tu telefono, tablet o cualquier navegador. Tu sesion permanece en tu computadora.
+Continua una sesión de Claude Code desde tu telefono, tablet o cualquier navegador. Tu sesión permanece en tu computadora.
 
 ```bash
 claude remote-control
 ```
 
-Conectate via la URL impresa, un codigo QR (presiona `spacebar`), o encuentra tu sesion en claude.ai/code.
+Conectate via la URL impresa, un código QR (presiona `spacebar`), o encuentra tu sesión en claude.ai/code.
 
 **Casos de uso:** Revisar informes desde una reunion, continuar tareas desde tu telefono, monitorear progreso remotamente.
 
@@ -100,20 +100,20 @@ Conectate via la URL impresa, un codigo QR (presiona `spacebar`), o encuentra tu
 
 **Sesiones web:** Ejecuta Claude Code en tu navegador en claude.ai/code, o inicia una desde la terminal con `claude --remote "your task"`. Muevete entre web y terminal con `claude --teleport`.
 
-**Aplicacion de escritorio:** Aplicacion independiente para macOS y Windows con vista visual de diff, sesiones paralelas, tareas programadas y conectores para Slack, Linear, Notion, Asana y Calendar. Transfiere una sesion de terminal con `/desktop`.
+**Aplicacion de escritorio:** Aplicacion independiente para macOS y Windows con vista visual de diff, sesiones paralelas, tareas programadas y conectores para Slack, Linear, Notion, Asana y Calendar. Transfiere una sesión de terminal con `/desktop`.
 
 ---
 
 ## Gestion de sesiones
 
-Organiza tareas en conversaciones con nombre a las que puedes volver despues.
+Organiza tareas en conversaciones con nombre a las que puedes volver después.
 
-| Comando | Que hace |
+| Comando | Qué hace |
 |---------|---------|
-| `claude -c` | Continuar la conversacion mas reciente |
-| `claude -r "name"` | Reanudar una sesion con nombre |
-| `claude -n "name"` | Iniciar una sesion con un nombre |
-| `/rename name` | Renombrar la sesion actual |
+| `claude -c` | Continuar la conversación más reciente |
+| `claude -r "name"` | Reanudar una sesión con nombre |
+| `claude -n "name"` | Iniciar una sesión con un nombre |
+| `/rename name` | Renombrar la sesión actual |
 | `/resume` | Explorar sesiones pasadas |
 | `/fork` | Bifurcar para probar un enfoque diferente |
 
@@ -134,23 +134,23 @@ claude --resume marketing-report --fork-session "try shorter format"
 
 ### Atajos de teclado
 
-| Atajo | Que hace |
+| Atajo | Qué hace |
 |-------|---------|
 | `Shift+Tab` | Cambiar modos de permisos |
 | `Option+T` / `Alt+T` | Alternar extended thinking |
 | `Option+P` / `Alt+P` | Cambiar modelo de IA |
-| `Ctrl+C` | Cancelar operacion actual |
+| `Ctrl+C` | Cancelar operación actual |
 | `Ctrl+R` | Buscar historial de comandos |
 | `Ctrl+T` | Alternar lista de tareas |
-| `Esc+Esc` | Deshacer ultima accion |
+| `Esc+Esc` | Deshacer última acción |
 
-### Entrada multi-linea
+### Entrada multi-línea
 
-Comienza con `\` y termina con `\end` para solicitudes mas largas.
+Comienza con `\` y termina con `\end` para solicitudes más largas.
 
 ---
 
-## Integracion con Chrome
+## Integración con Chrome
 
 Conecta Claude Code a tu navegador Chrome con `claude --chrome` o `/chrome`. Claude puede leer paginas web, extraer datos e interactuar con aplicaciones autenticadas (Gmail, Google Docs, Notion). Solo funciona en sitios que permitas explicitamente.
 
@@ -158,26 +158,26 @@ Conecta Claude Code a tu navegador Chrome con `claude --chrome` o `/chrome`. Cla
 
 ## Lista de tareas y sugerencias de prompts
 
-**Lista de tareas:** Presiona `Ctrl+T` para una lista de verificacion persistente que sobrevive incluso cuando el historial de conversacion se recorta.
+**Lista de tareas:** Presiona `Ctrl+T` para una lista de verificación persistente que sobrevive incluso cuando el historial de conversación se recorta.
 
 **Sugerencias de prompts:** Sugerencias en gris aparecen debajo de tu entrada. Presiona `Tab` para aceptar, o sigue escribiendo para ignorar.
 
 ---
 
-## Ejercicios practicos
+## Ejercicios prácticos
 
-> **[Ejercicio 7: De Capturas de Pantalla a Especificacion](../11-exercises/exercise-07-screenshots-to-spec/)** — Usa el modo plan para estructurar una especificacion a partir de capturas de pantalla, luego ejecuta. Practica el modo plan, entrada multimodal y extended thinking.
+> **[Ejercicio 7: De Capturas de Pantalla a Especificacion](../11-exercises/exercise-07-screenshots-to-spec/)** — Usa el modo plan para estructurar una especificacion a partir de capturas de pantalla, luego ejecuta. Práctica el modo plan, entrada multimodal y extended thinking.
 >
 > **Tiempo:** 30 min | **Datos:** Tus propias capturas de pantalla (arrastra PNGs a la carpeta)
 
-> **[Ejercicio 8: Priorizar del Caos](../11-exercises/exercise-08-prioritize-from-chaos/)** — Disena un framework de priorizacion en modo plan, luego evalua 60 ideas. Practica ciclos de plan/ejecucion y refinamiento de planes.
+> **[Ejercicio 8: Priorizar del Caos](../11-exercises/exercise-08-prioritize-from-chaos/)** — Disena un framework de priorizacion en modo plan, luego evalua 60 ideas. Práctica ciclos de plan/ejecucion y refinamiento de planes.
 >
 > **Tiempo:** 40 min | **Datos:** CSV de 60 filas con ideas no estructuradas de 6 departamentos
 
 ## Recursos adicionales
 
-- [Documentacion de funcionalidades avanzadas](https://code.claude.com/docs/en)
-- [Inicio rapido de la aplicacion de escritorio](https://code.claude.com/docs/en/desktop-quickstart)
+- [Documentación de funcionalidades avanzadas](https://code.claude.com/docs/en)
+- [Inicio rápido de la aplicacion de escritorio](https://code.claude.com/docs/en/desktop-quickstart)
 
 ---
 

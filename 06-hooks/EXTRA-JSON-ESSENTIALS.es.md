@@ -1,6 +1,6 @@
 # Extra: Fundamentos de JSON
 
-## ¿Que es JSON?
+## ¿Qué es JSON?
 
 JSON es un **formato para escribir configuraciones y ajustes**. Piensa en ello como una forma muy estricta de escribir una lista de opciones.
 
@@ -41,7 +41,7 @@ Cada dato tiene un **nombre** (clave) y un **valor**, separados por dos puntos:
 
 La clave siempre va entre comillas. Siempre. Sin excepciones.
 
-### Regla 3: Separa los pares con comas — pero NO despues del ultimo
+### Regla 3: Separa los pares con comas — pero NO después del último
 
 ```json
 {
@@ -51,7 +51,7 @@ La clave siempre va entre comillas. Siempre. Sin excepciones.
 }
 ```
 
-Nota: hay una coma despues de `"Maria"` y despues de `"Product Manager"`, pero **NO** despues de `"Growth"`. Esta es la fuente de errores #1.
+Nota: hay una coma después de `"Maria"` y después de `"Product Manager"`, pero **NO** después de `"Growth"`. Esta es la fuente de errores #1.
 
 ```
 ✅  "name": "Maria",       ← coma (siguen mas elementos)
@@ -77,7 +77,7 @@ Nota: hay una coma despues de `"Maria"` y despues de `"Product Manager"`, pero *
 | Verdadero/Falso | `true` o `false` | No (¡y en minusculas!) |
 | Vacio/Nada | `null` | No |
 
-> **Importante**: JSON solo acepta comillas dobles `"asi"`. Las comillas simples `'asi'` no funcionan.
+> **Importante**: JSON solo acepta comillas dobles `"así"`. Las comillas simples `'así'` no funcionan.
 
 ### Regla 5: Las listas usan `[]`, los objetos anidados usan `{}`
 
@@ -123,13 +123,13 @@ Encontraras JSON en estos archivos:
 
 | Archivo | Que configura | Cuando lo editaras |
 |------|-------------------|-------------------|
-| `~/.claude/settings.json` | Configuracion personal, hooks, permisos | Leccion 06 (Hooks) |
-| `.claude/settings.json` | Configuracion compartida del proyecto | Leccion 06 (Hooks) |
-| Configuraciones de servidores MCP | Conexiones a herramientas externas | Leccion 05 (MCP) |
+| `~/.claude/settings.json` | Configuración personal, hooks, permisos | Lección 06 (Hooks) |
+| `.claude/settings.json` | Configuración compartida del proyecto | Lección 06 (Hooks) |
+| Configuraciones de servidores MCP | Conexiones a herramientas externas | Lección 05 (MCP) |
 
-### Un archivo real de configuracion de Claude Code
+### Un archivo real de configuración de Claude Code
 
-Asi se ve un `settings.json` tipico:
+Así se ve un `settings.json` típico:
 
 ```json
 {
@@ -179,7 +179,7 @@ Desglosemoslo:
 }                                           ← Fin del archivo
 ```
 
-## Los 5 errores mas comunes (y como corregirlos)
+## Los 5 errores más comunes (y como corregirlos)
 
 ### Error 1: Coma al final
 
@@ -197,7 +197,7 @@ Desglosemoslo:
 }
 ```
 
-**La solucion**: Elimina la coma despues del ultimo elemento en cualquier lista u objeto.
+**La solución**: Elimina la coma después del último elemento en cualquier lista u objeto.
 
 ### Error 2: Coma faltante
 
@@ -215,7 +215,7 @@ Desglosemoslo:
 }
 ```
 
-**La solucion**: Agrega una coma entre elementos (excepto el ultimo).
+**La solución**: Agrega una coma entre elementos (excepto el último).
 
 ### Error 3: Comillas simples en lugar de dobles
 
@@ -231,7 +231,7 @@ Desglosemoslo:
 }
 ```
 
-**La solucion**: Siempre usa comillas dobles `"`, nunca comillas simples `'`.
+**La solución**: Siempre usa comillas dobles `"`, nunca comillas simples `'`.
 
 ### Error 4: Falta un corchete de cierre
 
@@ -253,7 +253,7 @@ Desglosemoslo:
 }
 ```
 
-**La solucion**: Cada `{` necesita un `}`. Cada `[` necesita un `]`. Cuentalos.
+**La solución**: Cada `{` necesita un `}`. Cada `[` necesita un `]`. Cuentalos.
 
 ### Error 5: Comentarios en JSON
 
@@ -270,13 +270,13 @@ Desglosemoslo:
 }
 ```
 
-**La solucion**: JSON no permite comentarios. Elimina cualquier linea que empiece con `//` o `#`.
+**La solución**: JSON no permite comentarios. Elimina cualquier línea que empiece con `//` o `#`.
 
-> **Nota**: Algunos archivos de configuracion de Claude Code usan JSONC (JSON con Comentarios), que si permite comentarios `//`. Pero el JSON estandar no. En caso de duda, elimina los comentarios.
+> **Nota**: Algunos archivos de configuración de Claude Code usan JSONC (JSON con Comentarios), que si permite comentarios `//`. Pero el JSON estandar no. En caso de duda, elimina los comentarios.
 
 ## Como validar tu JSON
 
-### Opcion 1: Preguntale a Claude
+### Opción 1: Preguntale a Claude
 
 Solo pega tu JSON en Claude Code y di:
 
@@ -290,21 +290,21 @@ Solo pega tu JSON en Claude Code y di:
 
 Claude detectara la coma al final y lo corregira por ti.
 
-### Opcion 2: VS Code (recomendado)
+### Opción 2: VS Code (recomendado)
 
 Si estas usando VS Code:
 
 1. Abre el archivo `.json`
 2. VS Code automaticamente resalta errores con **subrayados rojos ondulados**
-3. Pasa el cursor sobre el error para ver que esta mal
+3. Pasa el cursor sobre el error para ver que está mal
 
-Esta es la forma mas facil — los errores son visibles mientras escribes.
+Esta es la forma más fácil — los errores son visibles mientras escribes.
 
-### Opcion 3: Validador en linea
+### Opción 3: Validador en línea
 
-Busca "JSON validator" en tu navegador y pega tu JSON. Te dira exactamente donde esta el error.
+Busca "JSON validator" en tu navegador y pega tu JSON. Te dira exactamente donde está el error.
 
-## Tarjeta de referencia rapida
+## Tarjeta de referencia rápida
 
 ```
 HOJA DE REFERENCIA JSON
@@ -323,4 +323,4 @@ Objeto:      {"key": "val"}  (llaves)
 ─────────────────────────────────────
 ```
 
-**Siguiente paso**: [Volver a la leccion de Hooks →](README.es.md)
+**Siguiente paso**: [Volver a la lección de Hooks →](README.es.md)

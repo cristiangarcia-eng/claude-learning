@@ -1,19 +1,19 @@
 # Mejores Practicas
 
-## Como hablarle a Claude de manera efectiva
+## Cómo hablarle a Claude de manera efectiva
 
-Claude Code es como un colega muy inteligente. Cuanto mas claro te comuniques, mejores resultados obtendras.
+Claude Code es como un colega muy inteligente. Cuanto más claro te comuniques, mejores resultados obtendras.
 
-## Se especifico, no vago
+## Se específico, no vago
 
-El consejo mas importante: **di exactamente lo que quieres**.
+El consejo más importante: **di exactamente lo que quieres**.
 
 | En lugar de... | Prueba... |
 |--------------|--------|
-| "Arregla la pagina de inicio" | "Cambia el titulo principal de la pagina de inicio a 'Bienvenido a Nova'" |
-| "Hazlo ver mejor" | "Aumenta el tamaño de fuente de los encabezados y agrega mas espacio entre secciones" |
-| "Hay un bug" | "Los usuarios ven una pantalla en blanco despues de hacer clic en el boton de login" |
-| "Actualiza la documentacion" | "Agrega una seccion sobre nuestra politica de reembolsos a la pagina de FAQ" |
+| "Arregla la página de inicio" | "Cambia el titulo principal de la página de inicio a 'Bienvenido a Nova'" |
+| "Hazlo ver mejor" | "Aumenta el tamaño de fuente de los encabezados y agrega más espacio entre secciones" |
+| "Hay un bug" | "Los usuarios ven una pantalla en blanco después de hacer clic en el botón de login" |
+| "Actualiza la documentación" | "Agrega una sección sobre nuestra politica de reembolsos a la página de FAQ" |
 
 ## Dale a Claude una forma de verificar su trabajo
 
@@ -65,15 +65,15 @@ En Modo Plan, Claude solo puede leer y analizar — nunca modificar archivos. Pe
 
 ## Manten las conversaciones enfocadas
 
-Cada conversacion tiene un limite de memoria. Cuando se llena, Claude empieza a olvidar.
+Cada conversación tiene un límite de memoria. Cuando se llena, Claude empieza a olvidar.
 
 **Haz esto:**
-- Un tema por sesion
+- Un tema por sesión
 - Escribe `/clear` al cambiar de tema
 - Manten tus solicitudes enfocadas
 
 **Evita esto:**
-- Preguntar sobre autenticacion, luego precios, luego diseño, luego bugs — todo en una sesion
+- Preguntar sobre autenticación, luego precios, luego diseño, luego bugs — todo en una sesión
 - Sesiones muy largas sin limpiar
 
 ## Corrige el rumbo temprano
@@ -81,14 +81,14 @@ Cada conversacion tiene un limite de memoria. Cuando se llena, Claude empieza a 
 Si Claude empieza a ir en la direccion equivocada:
 
 - Presiona **Esc** para detenerlo inmediatamente
-- Di "No, me referia a..." y redirige
-- Si esta realmente confundido, escribe `/clear` y empieza de nuevo con un mejor prompt
+- Di "No, me refería a..." y redirige
+- Si está realmente confundido, escribe `/clear` y empieza de nuevo con un mejor prompt
 
-> Despues de dos correcciones sobre el mismo tema, es mas rapido hacer `/clear` y escribir un mejor prompt inicial que seguir corrigiendo.
+> Después de dos correcciones sobre el mismo tema, es más rápido hacer `/clear` y escribir un mejor prompt inicial que seguir corrigiendo.
 
-## La tecnica de entrevista
+## La técnica de entrevista
 
-Para tareas mas grandes, deja que Claude te haga preguntas primero:
+Para tareas más grandes, deja que Claude te haga preguntas primero:
 
 ```
 Quiero rediseñar nuestro flujo de onboarding. Entrevistame
@@ -96,14 +96,14 @@ sobre lo que tengo en mente — pregunta sobre objetivos, tipos de usuario
 y restricciones antes de hacer cualquier cambio.
 ```
 
-Claude hara preguntas inteligentes sobre cosas que quizas no habias considerado. Una vez alineados, puede ejecutar con mucha mas precision.
+Claude hara preguntas inteligentes sobre cosas que quizás no habias considerado. Una vez alineados, puede ejecutar con mucha más precision.
 
 ## Resumen: las reglas de oro
 
-1. **Se especifico** — di exactamente lo que quieres
+1. **Se específico** — di exactamente lo que quieres
 2. **Explora primero** — deja que Claude entienda antes de cambiar
 3. **Limpia seguido** — `/clear` entre diferentes temas
 4. **Usa el Modo Plan** — cuando solo quieres entender, no cambiar
 5. **Deja que Claude verifique** — dile como revisar su propio trabajo
-6. **Corrige rapido** — Esc y redirige si va por mal camino
+6. **Corrige rápido** — Esc y redirige si va por mal camino
 7. **Tecnica de entrevista** — para tareas grandes, deja que Claude haga preguntas primero

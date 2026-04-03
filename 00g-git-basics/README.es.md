@@ -1,21 +1,21 @@
-# Extra: Conceptos Basicos de Git
+# Extra: Conceptos Básicos de Git
 
-## ¿Que es Git?
+## ¿Qué es Git?
 
-Git es una **maquina del tiempo para tus archivos**. Guarda capturas de tu proyecto para que siempre puedas volver a una version anterior.
+Git es una **máquina del tiempo para tus archivos**. Guarda capturas de tu proyecto para que siempre puedas volver a una version anterior.
 
-Piensa en ello asi:
+Piensa en ello así:
 
 - **Sin Git**: Guardas `reporte-v1.docx`, `reporte-v2.docx`, `reporte-FINAL.docx`, `reporte-FINAL-FINAL.docx`
 - **Con Git**: Guardas `reporte.docx` y Git recuerda cada version automaticamente
 
-> Claude Code usa Git detras de escena. No necesitas convertirte en un experto en Git — solo entender estos conceptos basicos para saber que esta haciendo Claude cuando menciona "commits" o "branches."
+> Claude Code usa Git detrás de escena. No necesitas convertirte en un experto en Git — solo entender estos conceptos básicos para saber que está haciendo Claude cuando menciona "commits" o "branches."
 
 ## Los 5 conceptos que necesitas
 
 ### 1. Repositorio (repo)
 
-Un **repositorio** es simplemente una carpeta que Git esta vigilando. Cuando ejecutas `git init` o clonas un proyecto, esa carpeta se convierte en un repo.
+Un **repositorio** es simplemente una carpeta que Git está vigilando. Cuando ejecutas `git init` o clonas un proyecto, esa carpeta se convierte en un repo.
 
 Piensa en ello como: **una carpeta con memoria**.
 
@@ -30,7 +30,7 @@ my-project/          ← Este es tu repo
 
 Un **commit** es una captura — un momento guardado en el tiempo. Cada commit tiene:
 
-- **Que cambio** (que archivos fueron modificados)
+- **Qué cambió** (que archivos fueron modificados)
 - **Un mensaje** (una nota corta explicando por que)
 - **Una marca de tiempo** (cuando sucedio)
 
@@ -46,7 +46,7 @@ Commit 3: "Update contact email"
 
 Antes de hacer commit, necesitas **preparar (stage)** tus cambios — decirle a Git que cambios incluir en la captura.
 
-Piensa en ello como: **poner articulos en un carrito de compras antes de pagar**.
+Piensa en ello como: **poner artículos en un carrito de compras antes de pagar**.
 
 ```
 Cambiaste 3 archivos:
@@ -70,15 +70,15 @@ main (la version real)
 
 ### 5. Status
 
-**Status** te dice que esta pasando ahora mismo — que cambio, que esta preparado y que Git aun no conoce.
+**Status** te dice que está pasando ahora mismo — que cambio, que está preparado y que Git aun no conoce.
 
-Piensa en ello como: **preguntar "¿que cambie desde la ultima vez?"**
+Piensa en ello como: **preguntar "¿que cambie desde la última vez?"**
 
 ## Los 5 comandos que necesitas
 
 Solo necesitas cinco comandos. Esto es lo que hacen:
 
-### `git status` — "¿Que cambio?"
+### `git status` — "¿Qué cambio?"
 
 ```bash
 git status
@@ -98,23 +98,23 @@ git add index.html          # Preparar un archivo especifico
 git add index.html styles.css   # Preparar multiples archivos
 ```
 
-Esto mueve archivos al area de preparacion (el "carrito de compras").
+Esto mueve archivos al área de preparacion (el "carrito de compras").
 
-> **Consejo del curso**: Evita `git add .` (que prepara todo). Se especifico sobre lo que estas guardando — esto previene hacer commit accidentalmente de archivos con contraseñas o secretos.
+> **Consejo del curso**: Evita `git add .` (que prepara todo). Se específico sobre lo que estas guardando — esto previene hacer commit accidentalmente de archivos con contraseñas o secretos.
 
-### `git commit` — "Guardar esta captura"
+### `git commit` — "Guardar está captura"
 
 ```bash
 git commit -m "Fix broken link in navigation"
 ```
 
-Esto crea una captura permanente con tu mensaje. La bandera `-m` te permite escribir el mensaje en linea.
+Esto crea una captura permanente con tu mensaje. La bandera `-m` te permite escribir el mensaje en línea.
 
 **Buenos mensajes de commit** explican **por que**, no que:
 - ❌ "Changed index.html"
 - ✅ "Fix broken link in navigation bar"
 
-### `git log` — "Muestrame el historial"
+### `git log` — "Muéstrame el historial"
 
 ```bash
 git log --oneline
@@ -130,7 +130,7 @@ c1a8f03 Initial project setup
 
 Las letras/numeros al inicio son IDs unicos para cada captura. La bandera `--oneline` lo mantiene compacto.
 
-### `git diff` — "¿Que cambio exactamente?"
+### `git diff` — "¿Qué cambio exactamente?"
 
 ```bash
 git diff
@@ -147,7 +147,7 @@ Las lineas que empiezan con `-` fueron eliminadas. Las lineas que empiezan con `
 
 ## Como Claude Code usa Git
 
-Cuando trabajas con Claude Code, esto es lo que sucede detras de escena:
+Cuando trabajas con Claude Code, esto es lo que sucede detrás de escena:
 
 | Cuando tu... | Claude hace... | Concepto de Git |
 |------------|---------------|-------------|
@@ -161,14 +161,14 @@ Cuando trabajas con Claude Code, esto es lo que sucede detras de escena:
 | Claude dice... | Significa... |
 |---------------|-------------|
 | "I'll commit these changes" | "Guardare una captura del estado actual" |
-| "There are uncommitted changes" | "Hay archivos que cambiaron desde el ultimo punto de guardado" |
+| "There are uncommitted changes" | "Hay archivos que cambiaron desde el último punto de guardado" |
 | "Let me check the git log" | "Dejame ver el historial de cambios" |
 | "I'll create a branch" | "Trabajare en una copia separada para no romper nada" |
 | "I'll push to remote" | "Subire los cambios a GitHub (la nube)" |
 
 ## Un ejemplo real
 
-Aqui esta un flujo de trabajo completo, paso a paso:
+Aqui está un flujo de trabajo completo, paso a paso:
 
 ```bash
 # 1. Ver que esta pasando
@@ -194,7 +194,7 @@ git log --oneline
 
 ### "Nothing to commit, working tree clean"
 
-**¡Buenas noticias!** Esto significa que todos tus cambios estan guardados. No hay nada nuevo para hacer commit.
+**¡Buenas noticias!** Esto significa que todos tus cambios están guardados. No hay nada nuevo para hacer commit.
 
 ### "Changes not staged for commit"
 
@@ -213,7 +213,7 @@ Solo necesitas hacer esto una vez.
 
 ### "Merge conflict"
 
-Dos cambios ocurrieron en la misma linea. No entres en panico — dile a Claude "there's a merge conflict" y te ayudara a resolverlo.
+Dos cambios ocurrieron en la misma línea. No entres en pánico — dile a Claude "there's a merge conflict" y te ayudara a resolverlo.
 
 ## Lo que NO necesitas aprender aun
 
@@ -222,18 +222,18 @@ No necesitas saber sobre:
 - `git rebase` — Reescritura avanzada del historial
 - `git cherry-pick` — Movimiento avanzado de commits
 - `git stash` — Almacenamiento temporal
-- `git bisect` — Herramienta de busqueda de bugs
+- `git bisect` — Herramienta de búsqueda de bugs
 
 Estas son herramientas avanzadas. Claude las maneja por ti si es necesario.
 
-## Tarjeta de referencia rapida
+## Tarjeta de referencia rápida
 
-| Comando | Que hace | Analogia |
+| Comando | Qué hace | Analogia |
 |---------|-------------|---------|
-| `git status` | Mostrar que cambio | "¿Que es diferente?" |
+| `git status` | Mostrar que cambio | "¿Qué es diferente?" |
 | `git add archivo` | Preparar un archivo | "Poner en el carrito de compras" |
 | `git commit -m "msg"` | Guardar una captura | "Guardar + nota adhesiva" |
 | `git log --oneline` | Mostrar historial | "Mostrar mi historial de guardados" |
-| `git diff` | Mostrar cambios linea por linea | "Muestrame exactamente que cambio" |
+| `git diff` | Mostrar cambios línea por línea | "Muéstrame exactamente que cambio" |
 
 **Siguiente paso**: [Comienza el curso con Comandos Slash →](../01-slash-commands/README.es.md)

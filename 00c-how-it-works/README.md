@@ -82,6 +82,8 @@ Claude Code has a few built-in commands that start with `/`. You don't need to m
 | `/help` | Shows all available commands |
 | `/model` | Switches between Claude models (Haiku, Sonnet, Opus) |
 
+We recommend using **Opus 4.6** — it's the most capable model and produces the best results. You can check which model you're using at the bottom of the Claude Code screen, and switch with `/model` if needed.
+
 You'll learn more about `/memory` in the Memory lesson. For now, the most important one is `/clear` — use it every time you switch topics.
 
 ## Permissions: you're always in control

@@ -82,6 +82,8 @@ Claude Code tiene algunos comandos integrados que empiezan con `/`. No necesitas
 | `/help` | Muestra todos los comandos disponibles |
 | `/model` | Cambia entre modelos de Claude (Haiku, Sonnet, Opus) |
 
+Recomendamos usar **Opus 4.6** — es el modelo más capaz y produce los mejores resultados. Puedes ver qué modelo estás usando en la parte inferior de la pantalla de Claude Code, y cambiarlo con `/model` si es necesario.
+
 Aprenderás más sobre `/memory` en la lección de Memoria. Por ahora, el más importante es `/clear` — úsalo cada vez que cambies de tema.
 
 ## Permisos: siempre tienes el control

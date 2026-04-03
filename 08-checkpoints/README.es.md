@@ -1,317 +1,56 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="../resources/logos/claude-howto-logo-dark.svg">
-  <img alt="Claude How To" src="../resources/logos/claude-howto-logo.svg">
-</picture>
+# Checkpoints
 
-# Checkpoints y Rewind
+## ¿Qué son los checkpoints?
 
-Los checkpoints te permiten guardar el estado de la conversación y retroceder a puntos anteriores en tu sesión de Claude Code. Esto es invaluable para explorar diferentes enfoques, recuperarte de errores o comparar soluciones alternativas.
+Cada vez que envías un mensaje a Claude, automáticamente guarda un **checkpoint** — una foto del estado de tu conversación y archivos en ese momento. Piensa en ello como un botón de "deshacer" ilimitado.
 
-## Descripción general
+Si Claude hace un cambio que no te gusta, o quieres probar un enfoque diferente, puedes rebobinar a cualquier punto anterior y empezar de nuevo desde ahí.
 
-Los checkpoints te permiten guardar el estado de la conversación y retroceder a puntos anteriores, permitiendo la experimentacion segura y la exploracion de multiples enfoques. Son capturas del estado de tu conversación, incluyendo:
-- Todos los mensajes intercambiados
-- Modificaciones de archivos realizadas
-- Historial de uso de herramientas
-- Contexto de la sesión
+## Cómo rebobinar
 
-Los checkpoints son invaluables cuando exploras diferentes enfoques, te recuperas de errores o comparas soluciones alternativas.
+Presiona **Esc dos veces** (Esc + Esc) para abrir el navegador de checkpoints. Verás una lista de todos tus checkpoints con marcas de tiempo.
 
-## Conceptos clave
+Selecciona cualquier checkpoint y verás estas opciones:
 
-| Concepto | Descripción |
-|----------|-------------|
-| **Checkpoint** | Captura del estado de la conversación incluyendo mensajes, archivos y contexto |
-| **Rewind** | Retornar a un checkpoint anterior, descartando los cambios subsecuentes |
-| **Punto de bifurcacion** | Checkpoint desde el cual se exploran multiples enfoques |
+1. **Restore code and conversation** — volver a ese punto exacto (archivos + conversación)
+2. **Restore conversation** — rebobinar el chat pero mantener tus archivos actuales
+3. **Restore code** — revertir los archivos pero mantener la conversación
+4. **Never mind** — cancelar y quedarte donde estás
 
-## Accediendo a los Checkpoints
+La mayoría de las veces, querrás la opción 1 — un rebobinado completo.
 
-Puedes acceder y administrar checkpoints de dos maneras principales:
+## Cuándo usar checkpoints
 
-### Usando el atajo de teclado
-Presiona `Esc` dos veces (`Esc` + `Esc`) para abrir la interfaz de checkpoints y explorar los checkpoints guardados.
+### No te gusta lo que hizo Claude
 
-### Usando Slash Command
-Usa el comando `/rewind` (alias: `/checkpoint`) para acceso rápido:
+Le pediste a Claude que reescribiera una sección de tu informe y fue en la dirección equivocada. En vez de intentar arreglarlo, simplemente rebobina:
 
-```bash
-# Abrir interfaz de rewind
-/rewind
+1. Presiona **Esc + Esc**
+2. Selecciona el checkpoint antes del cambio
+3. Elige **Restore code and conversation**
+4. Pídele a Claude de nuevo con una instrucción más clara
 
-# O usa el alias
-/checkpoint
-```
+### Quieres probar dos enfoques
 
-## Opciones de Rewind
+No estás seguro de cómo estructurar tu análisis. Prueba ambos:
 
-Cuando haces rewind, se te presenta un menú con cinco opciones:
+1. Pídele a Claude el enfoque A
+2. Revisa el resultado
+3. Presiona **Esc + Esc** y rebobina a antes del enfoque A
+4. Pídele a Claude el enfoque B
+5. Compara y quédate con el que prefieras
 
-1. **Restaurar código y conversación** -- Revertir tanto archivos como mensajes a ese checkpoint
-2. **Restaurar conversación** -- Retroceder solo mensajes, mantener tu código actual tal cual
-3. **Restaurar código** -- Revertir cambios de archivos solamente, mantener el historial completo de conversación
-4. **Resumir desde aquí** -- Comprimir la conversación desde este punto en adelante en un resumen generado por IA en lugar de descartarla. Los mensajes originales se preservan en la transcripcion. Opcionalmente puedes proporcionar instrucciones para enfocar el resumen en temas especificos.
-5. **No importa** -- Cancelar y regresar al estado actual
+### Algo salió mal
 
-## Checkpoints automaticos
+Claude hizo varios cambios y ahora las cosas están desordenadas. No hay problema — rebobina al último punto donde todo estaba bien.
 
-Claude Code crea checkpoints automaticamente para ti:
+## Cosas que debes saber
 
-- **Cada prompt del usuario** - Se crea un nuevo checkpoint con cada entrada del usuario
-- **Persistentes** - Los checkpoints persisten entre sesiones
-- **Auto-limpieza** - Los checkpoints se limpian automaticamente después de 30 dias
+- **Los checkpoints son automáticos** — no necesitas crearlos manualmente
+- **Se crean con cada mensaje** — así que puedes rebobinar a cualquier punto de tu conversación
+- **Duran 30 días** — los checkpoints viejos se limpian automáticamente
+- **Presiona Esc + Esc** — es todo lo que necesitas recordar
 
-Esto significa que siempre puedes retroceder a cualquier punto anterior en tu conversación, desde hace unos minutos hasta dias atras.
+> **La idea clave:** Los checkpoints te permiten experimentar sin miedo. Prueba cosas, y si no funcionan, rebobina. Así de simple.
 
-## Casos de uso
-
-| Escenario | Flujo de trabajo |
-|-----------|-----------------|
-| **Explorar enfoques** | Guardar → Probar A → Guardar → Rewind → Probar B → Comparar |
-| **Refactorizacion segura** | Guardar → Refactorizar → Probar → Si falla: Rewind |
-| **Pruebas A/B** | Guardar → Diseno A → Guardar → Rewind → Diseno B → Comparar |
-| **Recuperacion de errores** | Notar problema → Rewind al último estado bueno |
-
-## Usando Checkpoints
-
-### Ver y hacer Rewind
-
-Presiona `Esc` dos veces o usa `/rewind` para abrir el explorador de checkpoints. Verás una lista de todos los checkpoints disponibles con marcas de tiempo. Selecciona cualquier checkpoint para retroceder a ese estado.
-
-### Detalles del Checkpoint
-
-Cada checkpoint muestra:
-- Marca de tiempo de cuando se creo
-- Archivos que fueron modificados
-- Numero de mensajes en la conversación
-- Herramientas que se usaron
-
-## Ejemplos prácticos
-
-### Ejemplo 1: Explorando diferentes enfoques
-
-```
-User: Let's add a caching layer to the API
-
-Claude: I'll add Redis caching to your API endpoints...
-[Makes changes at checkpoint A]
-
-User: Actually, let's try in-memory caching instead
-
-Claude: I'll rewind to explore a different approach...
-[User presses Esc+Esc and rewinds to checkpoint A]
-[Implements in-memory caching at checkpoint B]
-
-User: Now I can compare both approaches
-```
-
-### Ejemplo 2: Recuperandose de errores
-
-```
-User: Refactor the authentication module to use JWT
-
-Claude: I'll refactor the authentication module...
-[Makes extensive changes]
-
-User: Wait, that broke the OAuth integration. Let's go back.
-
-Claude: I'll help you rewind to before the refactoring...
-[User presses Esc+Esc and selects the checkpoint before the refactor]
-
-User: Let's try a more conservative approach this time
-```
-
-### Ejemplo 3: Experimentacion segura
-
-```
-User: Let's try rewriting this in a functional style
-[Creates checkpoint before experiment]
-
-Claude: [Makes experimental changes]
-
-User: The tests are failing. Let's rewind.
-[User presses Esc+Esc and rewinds to the checkpoint]
-
-Claude: I've rewound the changes. Let's try a different approach.
-```
-
-### Ejemplo 4: Bifurcacion de enfoques
-
-```
-User: I want to compare two database designs
-[Takes note of checkpoint - call it "Start"]
-
-Claude: I'll create the first design...
-[Implements Schema A]
-
-User: Now let me go back and try the second approach
-[User presses Esc+Esc and rewinds to "Start"]
-
-Claude: Now I'll implement Schema B...
-[Implements Schema B]
-
-User: Great! Now I have both schemas to choose from
-```
-
-## Retencion de Checkpoints
-
-Claude Code administra tus checkpoints automaticamente:
-
-- Los checkpoints se crean automaticamente con cada prompt del usuario
-- Los checkpoints antiguos se retienen hasta por 30 dias
-- Los checkpoints se limpian automaticamente para prevenir crecimiento ilimitado de almacenamiento
-
-## Patrones de flujo de trabajo
-
-### Estrategia de bifurcacion para exploracion
-
-Cuando exploras multiples enfoques:
-
-```
-1. Comenzar con implementacion inicial → Checkpoint A
-2. Probar Enfoque 1 → Checkpoint B
-3. Rewind al Checkpoint A
-4. Probar Enfoque 2 → Checkpoint C
-5. Comparar resultados de B y C
-6. Elegir el mejor enfoque y continuar
-```
-
-### Patrón de refactorizacion segura
-
-Cuando haces cambios significativos:
-
-```
-1. Estado actual → Checkpoint (auto)
-2. Comenzar refactorizacion
-3. Ejecutar pruebas
-4. Si las pruebas pasan → Continuar trabajando
-5. Si las pruebas fallan → Rewind e intentar enfoque diferente
-```
-
-## Mejores practicas
-
-Como los checkpoints se crean automaticamente, puedes enfocarte en tu trabajo sin preocuparte por guardar estado manualmente. Sin embargo, ten en cuenta estas practicas:
-
-### Usando Checkpoints efectivamente
-
-✅ **Hacer:**
-- Revisar checkpoints disponibles antes de hacer rewind
-- Usar rewind cuando quieras explorar diferentes direcciones
-- Mantener checkpoints para comparar diferentes enfoques
-- Entender que hace cada opción de rewind (restaurar código y conversación, restaurar conversación, restaurar código o resumir)
-
-❌ **No hacer:**
-- Depender solo de checkpoints para la preservacion de código
-- Esperar que los checkpoints rastreen cambios externos del sistema de archivos
-- Usar checkpoints como sustituto de commits de git
-
-## Configuración
-
-Puedes activar o desactivar los checkpoints automaticos en tu configuración:
-
-```json
-{
-  "autoCheckpoint": true
-}
-```
-
-- `autoCheckpoint`: Habilitar o deshabilitar la creacion automática de checkpoints en cada prompt del usuario (por defecto: `true`)
-
-## Limitaciones
-
-Los checkpoints tienen las siguientes limitaciones:
-
-- **Cambios por comandos Bash NO rastreados** - Operaciones como `rm`, `mv`, `cp` en el sistema de archivos no se capturan en checkpoints
-- **Cambios externos NO rastreados** - Cambios hechos fuera de Claude Code (en tu editor, terminal, etc.) no se capturan
-- **No es un reemplazo del control de versiones** - Usa git para cambios permanentes y auditables en tu código
-
-## Solución de problemas
-
-### Checkpoints faltantes
-
-**Problema**: Checkpoint esperado no encontrado
-
-**Solución**:
-- Verifica si los checkpoints fueron limpiados
-- Confirma que `autoCheckpoint` está habilitado en tu configuración
-- Verifica el espacio en disco
-
-### Rewind fallido
-
-**Problema**: No se puede hacer rewind a un checkpoint
-
-**Solución**:
-- Asegúrate de que no haya cambios sin commit en conflicto
-- Verifica si el checkpoint está corrupto
-- Intenta hacer rewind a un checkpoint diferente
-
-## Integración con Git
-
-Los checkpoints complementan (pero no reemplazan) a git:
-
-| Caracteristica | Git | Checkpoints |
-|---------------|-----|-------------|
-| Alcance | Sistema de archivos | Conversación + archivos |
-| Persistencia | Permanente | Basado en sesión |
-| Granularidad | Commits | Cualquier punto |
-| Velocidad | Mas lento | Instantaneo |
-| Compartir | Si | Limitado |
-
-Usa ambos juntos:
-1. Usa checkpoints para experimentacion rápida
-2. Usa commits de git para cambios finalizados
-3. Crea un checkpoint antes de operaciones de git
-4. Haz commit de estados exitosos de checkpoints a git
-
-## Guía de inicio rápido
-
-### Flujo de trabajo básico
-
-1. **Trabaja normalmente** - Claude Code crea checkpoints automaticamente
-2. **¿Quieres volver atras?** - Presiona `Esc` dos veces o usa `/rewind`
-3. **Elige un checkpoint** - Selecciona de la lista para retroceder
-4. **Selecciona que restaurar** - Elige entre restaurar código y conversación, restaurar conversación, restaurar código, resumir desde aquí o cancelar
-5. **Continua trabajando** - Estas de vuelta en ese punto
-
-### Atajos de teclado
-
-- **`Esc` + `Esc`** - Abrir explorador de checkpoints
-- **`/rewind`** - Forma alternativa de acceder a checkpoints
-- **`/checkpoint`** - Alias para `/rewind`
-
-## Saber cuando hacer Rewind: Monitoreo de contexto
-
-Los checkpoints te permiten retroceder -- pero ¿como sabes *cuando* deberias hacerlo? A medida que tu conversación crece, la ventana de contexto de Claude se llena y la calidad del modelo se degrada silenciosamente. Podrías estar trabajando con un modelo medio ciego sin darte cuenta.
-
-**[cc-context-stats](https://github.com/luongnv89/cc-context-stats)** resuelve esto agregando **zonas de contexto** en tiempo real a tu barra de estado de Claude Code. Rastrea donde estas en la ventana de contexto -- desde **Plan** (verde, seguro para planificar y codificar) pasando por **Code** (amarillo, evita iniciar nuevos planes) hasta **Dump** (naranja, termina y haz rewind). Cuando ves que la zona cambia, sabes que es momento de hacer checkpoint y empezar de nuevo en lugar de seguir adelante con resultados degradados.
-
-## Conceptos relacionados
-
-- **[Funcionalidades avanzadas](../09-advanced-features/README.es.md)** - Modo de planificacion y otras capacidades avanzadas
-- **[Gestion de memoria](../02-memory/README.es.md)** - Administrar historial de conversación y contexto
-- **[Slash Commands](../01-slash-commands/)** - Atajos invocados por el usuario
-- **[Hooks](../06-hooks/README.es.md)** - Automatizacion basada en eventos
-- **[Plugins](../07-plugins/README.es.md)** - Paquetes de extensiones empaquetados
-
-## Ejercicio practico
-
-> **[Ejercicio 4: Construir una Taxonomia del Caos](../11-exercises/exercise-04-taxonomy-from-chaos/)** — Prueba 3 enfoques diferentes de taxonomia en 200 entradas desordenadas, usa checkpoints para navegar entre ellos, compara resultados y queda con el mejor. Practicaras la creacion de checkpoints, rewind y comparacion segura de enfoques.
->
-> **Tiempo:** 40 min | **Datos:** CSV de 200 filas con titulos de trabajo desordenados en 5+ idiomas
-
-## Recursos adicionales
-
-- [Documentación oficial de Checkpointing](https://code.claude.com/docs/en/checkpointing)
-- [Guía de funcionalidades avanzadas](../09-advanced-features/README.es.md) - Extended thinking y otras capacidades
-
-## Resumen
-
-Los checkpoints son una funcionalidad automática en Claude Code que te permite explorar diferentes enfoques de forma segura sin miedo a perder trabajo. Cada prompt del usuario crea un nuevo checkpoint automaticamente, así que puedes retroceder a cualquier punto anterior en tu sesión.
-
-Beneficios clave:
-- Experimenta sin miedo con multiples enfoques
-- Recuperate rapidamente de errores
-- Compara diferentes soluciones lado a lado
-- Integra de forma segura con sistemas de control de versiones
-
-Recuerda: los checkpoints no son un reemplazo de git. Usa checkpoints para experimentacion rápida y git para cambios permanentes de código.
+**Siguiente paso**: [Domina la CLI — modo de impresión, piping y scripting →](../10-cli/README.es.md)

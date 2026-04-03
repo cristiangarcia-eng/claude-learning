@@ -28,6 +28,18 @@ export function getLessonDescription(lesson: LessonMeta, locale: Locale = "en"):
 export const LESSONS: LessonMeta[] = [
   // === STARTER: Absolute beginners (no terminal experience) ===
   {
+    folder: "00-intro",
+    slug: "intro",
+    title: "Why Claude Code?",
+    titleEs: "Por que Claude Code?",
+    description: "What makes Claude Code different and why the terminal is your superpower",
+    descriptionEs: "Que hace diferente a Claude Code y por que el terminal es tu superpoder",
+    level: "starter",
+    duration: "5 min",
+    complexity: 1,
+    order: 1,
+  },
+  {
     folder: "00-terminal-basics",
     slug: "terminal-basics",
     title: "Terminal Basics",
@@ -37,7 +49,7 @@ export const LESSONS: LessonMeta[] = [
     level: "starter",
     duration: "15 min",
     complexity: 1,
-    order: 1,
+    order: 2,
   },
   {
     folder: "00f-vscode",

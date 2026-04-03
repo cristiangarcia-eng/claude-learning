@@ -20,7 +20,7 @@ We strongly recommend installing **Wispr Flow** — a voice-to-text app that wor
 
 ### How to set it up
 
-1. Download **Wispr Flow** from [wispr.com](https://www.wispr.com)
+1. Download **Wispr Flow** from [wisprflow.ai](https://www.wisprflow.ai)
 2. Install and open it
 3. Hold the **shortcut key** (it shows you which one during setup)
 4. Start talking — your words appear as text wherever your cursor is

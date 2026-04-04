@@ -55,6 +55,8 @@ Antes de hacer cambios, siempre empieza en **Modo Plan**. Presiona **Shift+Tab**
 
 En Modo Plan, Claude solo puede leer y analizar — no modificará ningún archivo. Esta es la mejor forma de empezar cualquier tarea porque Claude pensará en el enfoque antes de hacer nada.
 
+Los datos lo confirman: **las tareas que empiezan con Modo Plan tienen éxito al primer intento el 77% de las veces**, comparado con solo el 40% cuando se salta directamente a los cambios. Planificar primero casi duplica tu tasa de éxito.
+
 ### Pruébalo: planifica un informe de mercado de Nike
 
 Abre Claude Code en tu carpeta `nike-analysis` y activa el Modo Plan (Shift+Tab dos veces). Luego escribe:
@@ -81,6 +83,12 @@ Cada conversación tiene un límite de memoria. Cuando se llena, Claude empieza 
 **Evita esto:**
 - Preguntar sobre autenticación, luego precios, luego diseño, luego bugs — todo en una sesión
 - Sesiones muy largas sin limpiar
+
+## La regla de las 2 correcciones
+
+Si corriges a Claude dos veces sobre el mismo tema y sigue sin entenderlo, **deja de corregir y empieza de nuevo**. Escribe `/clear` y reescribe tu prompt desde cero — esta vez siendo más específico sobre lo que quieres.
+
+Seguir corrigiendo a un Claude confundido pierde tiempo. Un prompt nuevo y bien escrito da mejores resultados más rápido que una cadena de correcciones.
 
 ## Corrige el rumbo temprano
 

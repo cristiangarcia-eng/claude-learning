@@ -58,7 +58,13 @@ Everything goes into this memory:
 - Command outputs
 - Claude's responses
 
-This memory has a limit. When it fills up, Claude may start forgetting earlier parts of the conversation.
+This memory has a limit. When it fills up, Claude's quality degrades:
+
+- At **70% full** — quality starts dropping, responses become less precise
+- At **85% full** — frequent errors, Claude misses important details
+- At **90%+** — Claude forgets key parts of the conversation
+
+You can check how full your context is by typing `/context`.
 
 ### How to manage it
 

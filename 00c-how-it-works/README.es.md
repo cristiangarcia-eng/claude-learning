@@ -58,7 +58,13 @@ Todo entra en está memoria:
 - Salidas de comandos
 - Respuestas de Claude
 
-Esta memoria tiene un límite. Cuando se llena, Claude puede empezar a olvidar partes anteriores de la conversación.
+Esta memoria tiene un límite. Cuando se llena, la calidad de Claude se degrada:
+
+- Al **70% llena** — la calidad empieza a bajar, las respuestas se vuelven menos precisas
+- Al **85% llena** — errores frecuentes, Claude pierde detalles importantes
+- Al **90%+** — Claude olvida partes clave de la conversación
+
+Puedes verificar cuánto contexto has usado escribiendo `/context`.
 
 ### Cómo manejarla
 

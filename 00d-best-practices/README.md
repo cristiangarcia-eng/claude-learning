@@ -55,6 +55,8 @@ Before making changes, always start in **Plan Mode**. Press **Shift+Tab** twice 
 
 In Plan Mode, Claude can only read and analyze — it won't modify any files. This is the best way to start any task because Claude will think through the approach before doing anything.
 
+The data backs this up: **tasks started with Plan Mode succeed on the first try 77% of the time**, compared to just 40% when jumping straight to changes. Planning first nearly doubles your success rate.
+
 ### Try it: plan a Nike market report
 
 Open Claude Code in your `nike-analysis` folder and activate Plan Mode (Shift+Tab twice). Then type:
@@ -81,6 +83,12 @@ Each conversation has a memory limit. When it fills up, Claude starts forgetting
 **Avoid this:**
 - Asking about authentication, then pricing, then design, then bugs — all in one session
 - Very long sessions without clearing
+
+## The two-correction rule
+
+If you correct Claude twice on the same issue and it's still not getting it right, **stop correcting and start over**. Type `/clear` and rewrite your prompt from scratch — this time being more specific about what you want.
+
+Continuing to correct a confused Claude wastes time. A fresh, well-written prompt gets better results faster than a chain of corrections.
 
 ## Course-correct early
 

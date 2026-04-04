@@ -92,7 +92,7 @@ Claude las agregará a tu memoria de proyecto automáticamente.
 
 ## Consejos para una buena memoria
 
-**Mantenla concisa.** Claude lee todo tu archivo de memoria al inicio de cada conversación. Una memoria enfocada y bien organizada funciona mejor que una larga.
+**Mantenla concisa.** Claude lee todo tu archivo de memoria al inicio de cada conversación. **Mantenla por debajo de 150-200 instrucciones** — más allá de eso, Claude empieza a ignorar reglas. Una memoria enfocada y bien organizada funciona mucho mejor que una larga.
 
 **Actualízala regularmente.** A medida que tu proyecto evoluciona, actualiza la memoria. Elimina cosas que ya no son verdad. Agrega nuevo contexto conforme lo aprendes.
 

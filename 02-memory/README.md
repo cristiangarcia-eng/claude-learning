@@ -92,7 +92,7 @@ Claude will add these to your project memory automatically.
 
 ## Tips for good memory
 
-**Keep it concise.** Claude reads your entire memory file at the start of every conversation. A focused, well-organized memory works better than a long one.
+**Keep it concise.** Claude reads your entire memory file at the start of every conversation. **Keep it under 150-200 instructions** — beyond that, Claude starts ignoring rules. A focused, well-organized memory works much better than a long one.
 
 **Update it regularly.** As your project evolves, update the memory. Remove things that are no longer true. Add new context as you learn it.
 

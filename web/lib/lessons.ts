@@ -7,7 +7,7 @@ export interface LessonMeta {
   titleEs?: string;
   description: string;
   descriptionEs?: string;
-  level: "starter" | "pro";
+  level: "starter" | "pro" | "projects";
   duration: string;
   complexity: number; // 1-5 stars
   order: number; // pedagogical order
@@ -243,6 +243,20 @@ export const LESSONS: LessonMeta[] = [
     duration: "10 min",
     complexity: 3,
     order: 15,
+  },
+
+  // === PROJECTS: Hands-on exercises ===
+  {
+    folder: "11-exercises",
+    slug: "projects",
+    title: "Projects",
+    titleEs: "Proyectos",
+    description: "11 hands-on exercises to practice everything you've learned",
+    descriptionEs: "11 ejercicios prácticos para practicar todo lo que has aprendido",
+    level: "projects",
+    duration: "6+ hours",
+    complexity: 2,
+    order: 20,
   },
 ];
 

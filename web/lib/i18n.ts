@@ -41,6 +41,7 @@ const dictionaries = {
     progress: "Progress",
     startHere: "Getting Started",
     pro: "Pro",
+    projects: "Projects",
 
     // Lesson page
     filesInThisLesson: "Files in this lesson",
@@ -151,8 +152,10 @@ const dictionaries = {
     // Level descriptions (dashboard)
     starterDesc: "No experience needed — perfect for PMs, designers, and non-devs",
     proDesc: "Memory, checkpoints, skills, MCP, and advanced features",
+    projectsDesc: "11 hands-on exercises to practice everything you've learned",
     starterTime: "~1.5 hours",
     proTime: "~5 hours",
+    projectsTime: "~6 hours",
 
     // Instructor section
     yearsInProduct: "Years in Product",
@@ -166,6 +169,7 @@ const dictionaries = {
     progress: "Progreso",
     startHere: "Iniciación",
     pro: "Pro",
+    projects: "Proyectos",
 
     // Lesson page
     filesInThisLesson: "Archivos en esta leccion",
@@ -276,8 +280,10 @@ const dictionaries = {
     // Level descriptions (dashboard)
     starterDesc: "Sin experiencia necesaria — perfecto para PMs, diseñadores y no-devs",
     proDesc: "Memoria, checkpoints, skills, MCP y funcionalidades avanzadas",
+    projectsDesc: "11 ejercicios prácticos para practicar todo lo que has aprendido",
     starterTime: "~1.5 horas",
     proTime: "~5 horas",
+    projectsTime: "~6 horas",
 
     // Instructor section
     yearsInProduct: "Anos en Producto",

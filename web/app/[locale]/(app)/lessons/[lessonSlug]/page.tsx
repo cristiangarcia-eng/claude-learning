@@ -51,6 +51,7 @@ export default async function LessonPage({
   const levelColors = {
     starter: "bg-brand-green/10 text-brand-green border-brand-green/20",
     pro: "bg-blue-500/10 text-blue-500 border-blue-500/20",
+    projects: "bg-orange-500/10 text-orange-500 border-orange-500/20",
   };
 
   return (

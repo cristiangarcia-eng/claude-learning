@@ -22,11 +22,13 @@ import { t } from "@/lib/i18n";
 const LEVEL_ICONS = {
   starter: Sparkles,
   pro: Rocket,
+  projects: Zap,
 } as const;
 
 const LEVEL_COLORS = {
   starter: "text-brand-green",
   pro: "text-blue-500",
+  projects: "text-orange-500",
 } as const;
 
 export default function ProgressPage() {
@@ -86,7 +88,7 @@ export default function ProgressPage() {
       </div>
 
       {/* Lessons by level */}
-      {(["starter", "pro"] as const).map((level) => {
+      {(["starter", "pro", "projects"] as const).map((level) => {
         const lessons = getLessonsByLevel(level);
         const Icon = LEVEL_ICONS[level];
         const levelCompleted = lessons.filter((l) =>

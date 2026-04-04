@@ -23,6 +23,22 @@ irm https://claude.ai/install.ps1 | iex
 
 That's it. It installs automatically and keeps itself up to date.
 
+### Recommended: stop screen flickering
+
+Claude Code's terminal can flicker while it's working. To fix this, run this once:
+
+**Mac / Linux:**
+```bash
+echo 'export CLAUDE_CODE_NO_FLICKER=1' >> ~/.zshrc && source ~/.zshrc
+```
+
+**Windows PowerShell:**
+```powershell
+[System.Environment]::SetEnvironmentVariable('CLAUDE_CODE_NO_FLICKER', '1', 'User')
+```
+
+This makes the terminal much smoother — you only need to do it once.
+
 ## Step 2: Navigate to your project
 
 In the same VS Code terminal, navigate to the Nike project on your Desktop:

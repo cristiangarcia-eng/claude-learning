@@ -23,6 +23,22 @@ irm https://claude.ai/install.ps1 | iex
 
 Eso es todo. Se instala automáticamente y se mantiene actualizado.
 
+### Recomendado: eliminar el parpadeo de pantalla
+
+La terminal de Claude Code puede parpadear mientras trabaja. Para solucionarlo, ejecuta esto una sola vez:
+
+**Mac / Linux:**
+```bash
+echo 'export CLAUDE_CODE_NO_FLICKER=1' >> ~/.zshrc && source ~/.zshrc
+```
+
+**Windows PowerShell:**
+```powershell
+[System.Environment]::SetEnvironmentVariable('CLAUDE_CODE_NO_FLICKER', '1', 'User')
+```
+
+Esto hace que la terminal sea mucho más fluida — solo necesitas hacerlo una vez.
+
 ## Paso 2: Navega a tu proyecto
 
 En la misma terminal de VS Code, navega al proyecto de Nike en tu Escritorio:

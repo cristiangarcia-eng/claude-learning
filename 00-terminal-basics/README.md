@@ -128,4 +128,3 @@ Just type `pwd` to see your current location. You can always go home with `cd ~`
 
 Seriously — `pwd`, `ls`, `cd`, and `mkdir` are the only commands you'll ever need. Once Claude Code is running, you talk to it in plain English, not terminal commands.
 
-**Next step**: [Set up voice input for hands-free coding →](../00g-voice-input/)

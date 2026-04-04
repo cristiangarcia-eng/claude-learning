@@ -113,4 +113,3 @@ Here are more things you can ask Claude about the Nike project:
 
 ## What's next?
 
-**Next step**: [Understand how Claude Code actually works behind the scenes →](../00c-how-it-works/)

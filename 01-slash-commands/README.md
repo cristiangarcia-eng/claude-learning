@@ -219,7 +219,6 @@ For details on creating your own, see the [Skills Guide](../03-skills/).
 - [Official Interactive Mode Documentation](https://code.claude.com/docs/en/interactive-mode)
 - [Official Skills Documentation](https://code.claude.com/docs/en/skills)
 
-**Next step**: [Make Claude remember your preferences across sessions →](../02-memory/)
 
 ---
 

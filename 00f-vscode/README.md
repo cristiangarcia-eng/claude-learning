@@ -87,6 +87,4 @@ This means you can:
 
 All in one window. We'll use this terminal in the next lesson.
 
-## Next step
 
-**Next step**: [Learn the 4 terminal commands you need inside VS Code →](../00-terminal-basics/)

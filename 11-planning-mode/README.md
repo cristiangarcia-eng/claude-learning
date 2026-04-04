@@ -73,4 +73,3 @@ Press **Shift+Tab** to cycle between modes:
 
 > **Tip**: Start in Plan Mode when exploring something new. Switch to Normal or Auto when you're ready to execute.
 
-**Next step**: [Control Claude from your phone with voice and remote sessions →](../12-voice-and-remote/)

@@ -1,175 +1,201 @@
-original_text,frequency,source
-Senior Software Engineer,342,linkedin_import
-Software Engineer,289,linkedin_import
-Project Manager,187,manual_entry
-Sr. Developer,156,crm_sync
-Product Manager,143,linkedin_import
-Desarrollador Senior,134,manual_entry
-Data Analyst,128,linkedin_import
-Marketing Manager,119,manual_entry
-Ingeniero de Software,112,crm_sync
-Sales Representative,98,linkedin_import
-DevOps Engineer,94,linkedin_import
-Account Manager,91,crm_sync
-Gerente de Proyecto,88,manual_entry
-UX Designer,85,linkedin_import
-Full Stack Developer,82,linkedin_import
-Software Developer,79,linkedin_import
-Business Analyst,76,manual_entry
-HR Manager,73,crm_sync
-Analista de Datos,71,manual_entry
-Senior Dev,68,crm_sync
-Front End Developer,65,linkedin_import
-Backend Developer,62,linkedin_import
-Representante de Ventas,59,manual_entry
-Scrum Master,56,linkedin_import
-Data Scientist,54,linkedin_import
-QA Engineer,52,linkedin_import
-Diseñador UX,50,manual_entry
-Financial Analyst,48,crm_sync
-Cloud Architect,46,linkedin_import
-Technical Lead,44,linkedin_import
-Jefe de Marketing,42,manual_entry
-Chief Technology Officer,40,linkedin_import
-Solutions Architect,38,crm_sync
-Ingeniero DevOps,36,manual_entry
-Product Owner,34,linkedin_import
-Gerente de RRHH,33,manual_entry
-CTO,31,crm_sync
-Fullstack Dev,30,crm_sync
-Sr Software Engineer,29,linkedin_import
-Développeur Senior,28,manual_entry
-FrontEnd Dev,27,crm_sync
-VP of Sales,26,linkedin_import
-Analista Financiero,25,manual_entry
-Database Administrator,24,linkedin_import
-Ingénieur Logiciel,23,manual_entry
-Machine Learning Engineer,22,linkedin_import
-Gerente de Cuentas,21,manual_entry
-Senior QA,20,crm_sync
-UI/UX Designer,19,linkedin_import
-Tech Lead,18,crm_sync
-Infrastructure Engineer,17,linkedin_import
-Content Marketing Manager,16,manual_entry
-Directeur Marketing,15,manual_entry
-Analista de Negocio,14,manual_entry
-Software Eng.,13,crm_sync
-Site Reliability Engineer,12,linkedin_import
-Release Manager,11,crm_sync
-Wissenschaftlicher Mitarbeiter,10,manual_entry
-Produktmanager,9,manual_entry
-Head of Engineering,8,linkedin_import
-Responsable RH,7,manual_entry
-DBA,6,crm_sync
-VP Sales,5,crm_sync
-front-end developer,4,crm_sync
-SENIOR SOFTWARE ENGINEER,3,crm_sync
-back end developer,2,crm_sync
-sr. soft. eng.,1,crm_sync
-Architecte Cloud,1,manual_entry
-Datenwissenschaftler,1,manual_entry
-Responsable de Produit,1,manual_entry
-Projektleiter,1,manual_entry
-SE,1,crm_sync
-PM,1,crm_sync
-sviluppatore senior,1,manual_entry
-analista dati,1,manual_entry
-chef de projet,1,manual_entry
-Quality Assurance Engineer,1,linkedin_import
-MLOps Engineer,1,linkedin_import
-Platform Engineer,1,linkedin_import
-swe,1,crm_sync
-software engineering,1,crm_sync
-dev,1,crm_sync
-SRE,1,crm_sync
-Marketing Mgr,1,crm_sync
-Sales Rep,1,crm_sync
-Acct Manager,1,crm_sync
-biz analyst,1,crm_sync
-Ing. de Software,1,manual_entry
-Ingeniero/a de Software,1,manual_entry
-Sr. Financial Analyst,1,crm_sync
-Jr. Data Analyst,1,crm_sync
-Data Analytics,1,crm_sync
-Head of Product,1,linkedin_import
-Director of Engineering,1,linkedin_import
-Directeur Technique,1,manual_entry
-VP Engineering,1,linkedin_import
-Responsable Ingeniería,1,manual_entry
-Chief Product Officer,1,linkedin_import
-CPO,1,crm_sync
-design lead,1,crm_sync
-UX/UI designer,1,crm_sync
-Diseñador de Interfaces,1,manual_entry
-Konzeptdesigner,1,manual_entry
-Cloud Infrastructure Engineer,1,linkedin_import
-Arquitecto de Soluciones,1,manual_entry
-Lösungsarchitekt,1,manual_entry
-Talent Acquisition,1,crm_sync
-Recruiter,1,linkedin_import
-Reclutador/a,1,manual_entry
-People Operations,1,linkedin_import
-HRBP,1,crm_sync
-Customer Success Manager,1,linkedin_import
-Responsable de Éxito del Cliente,1,manual_entry
-CSM,1,crm_sync
-Growth Manager,1,linkedin_import
-Responsable de Crecimiento,1,manual_entry
-Wachstumsmanager,1,manual_entry
-Jefe de Ventas,1,manual_entry
-Vertriebsleiter,1,manual_entry
-Directeur Commercial,1,manual_entry
-Sales Director,1,linkedin_import
-Security Engineer,1,linkedin_import
-Ingeniero de Seguridad,1,manual_entry
-Sicherheitsingenieur,1,manual_entry
-Mobile Developer,1,linkedin_import
-Desarrollador Móvil,1,manual_entry
-iOS Developer,1,linkedin_import
-Android Developer,1,linkedin_import
-Agile Coach,1,linkedin_import
-Program Manager,1,linkedin_import
-Director de Programa,1,manual_entry
-Programmleiter,1,manual_entry
-Chief Financial Officer,1,linkedin_import
-CFO,1,crm_sync
-Directeur Financier,1,manual_entry
-Controller,1,linkedin_import
-Contrôleur de Gestion,1,manual_entry
-Tesorero,1,manual_entry
-Operations Manager,1,linkedin_import
-Gerente de Operaciones,1,manual_entry
-Betriebsleiter,1,manual_entry
-Responsable Opérations,1,manual_entry
-Supply Chain Manager,1,linkedin_import
-Responsable de Cadena de Suministro,1,manual_entry
-Procurement Specialist,1,linkedin_import
-Especialista en Compras,1,manual_entry
-Legal Counsel,1,linkedin_import
-Asesor Legal,1,manual_entry
-Compliance Officer,1,linkedin_import
-Responsable de Cumplimiento,1,manual_entry
-Datenschutzbeauftragter,1,manual_entry
-Technical Writer,1,linkedin_import
-Redactor Técnico,1,manual_entry
-Community Manager,1,linkedin_import
-Social Media Manager,1,linkedin_import
-Responsable de Redes Sociales,1,manual_entry
-Brand Manager,1,linkedin_import
-Responsable de Marca,1,manual_entry
-SEO Specialist,1,linkedin_import
-Especialista SEO,1,manual_entry
-Performance Marketing,1,crm_sync
-Paid Media Specialist,1,linkedin_import
-CRM Manager,1,linkedin_import
-Responsable CRM,1,manual_entry
-Administrateur Base de Données,1,manual_entry
-Datenbankadministrator,1,manual_entry
-Administrador de Base de Datos,1,manual_entry
-AI Engineer,1,linkedin_import
-Ingeniero de IA,1,manual_entry
-NLP Engineer,1,linkedin_import
-Research Scientist,1,linkedin_import
-Científico de Investigación,1,manual_entry
-Chercheur Scientifique,1,manual_entry
-Forschungswissenschaftler,1,manual_entry
+feedback_id,feedback_text,source,date_submitted
+FB-001,"App crashes when I try to export my weekly report to PDF",app_store_review,2025-11-02
+FB-002,"Would love a dark mode option",in_app_survey,2025-11-03
+FB-003,"The Gantt chart view is amazing! Best feature ever",app_store_review,2025-11-03
+FB-004,"cant find where to add team members super confusing",support_ticket,2025-11-04
+FB-005,"Integration with Google Calendar would be a game changer",feature_request_form,2025-11-04
+FB-006,"Too slow loading projects with 50+ tasks",support_ticket,2025-11-05
+FB-007,"I love the drag and drop for prioritizing tasks",in_app_survey,2025-11-05
+FB-008,"Notifications are way too aggressive. I get pinged for everything",in_app_survey,2025-11-06
+FB-009,"Would be great to have recurring tasks",feature_request_form,2025-11-06
+FB-010,"The mobile app is basically unusable on Android",app_store_review,2025-11-07
+FB-011,"Export to CSV doesn't include subtasks — that's a dealbreaker for my reports",support_ticket,2025-11-07
+FB-012,"LOVE the new board view update!!!",app_store_review,2025-11-08
+FB-013,"Why can't I assign a task to multiple people?",support_ticket,2025-11-08
+FB-014,"Please add Slack integration",feature_request_form,2025-11-09
+FB-015,"The onboarding tutorial was super helpful, got set up in 5 min",in_app_survey,2025-11-09
+FB-016,"keeps logging me out every hour very annoying",support_ticket,2025-11-10
+FB-017,"Need better reporting — can't see team workload at a glance",feature_request_form,2025-11-10
+FB-018,"The search function is terrible. Can never find old tasks",support_ticket,2025-11-11
+FB-019,"Honestly the best project management tool I've used",app_store_review,2025-11-11
+FB-020,"Please let me customize the dashboard widgets",feature_request_form,2025-11-12
+FB-021,"Crashed 3 times today when switching between projects",support_ticket,2025-11-12
+FB-022,"Calendar sync doesn't work with Outlook",support_ticket,2025-11-13
+FB-023,"The pricing is fair for what you get. Love the free tier",app_store_review,2025-11-13
+FB-024,"Need API access for our internal tools",feature_request_form,2025-11-14
+FB-025,"Can you add time tracking built in? Using a separate app is painful",feature_request_form,2025-11-14
+FB-026,"I accidentally deleted a project and there's no undo or trash. Lost 3 weeks of work",support_ticket,2025-11-15
+FB-027,"Dark mode dark mode dark mode PLEASE",in_app_survey,2025-11-15
+FB-028,"The templates for sprint planning are chef's kiss",in_app_survey,2025-11-16
+FB-029,"attachment uploads fail if file is over 10MB — need higher limit",support_ticket,2025-11-16
+FB-030,"Would pay more for a portfolio view across all projects",feature_request_form,2025-11-17
+FB-031,"App is great but the Android widget is broken",app_store_review,2025-11-17
+FB-032,"My team loves the comments feature on tasks",in_app_survey,2025-11-18
+FB-033,"SSO login doesn't work with our Okta setup",support_ticket,2025-11-18
+FB-034,"Wish I could set dependencies between tasks visually",feature_request_form,2025-11-19
+FB-035,"The color coding for priority levels is really intuitive",in_app_survey,2025-11-19
+FB-036,"Loading spinner just sits there forever on the reports page",support_ticket,2025-11-20
+FB-037,"Please add a way to duplicate projects as templates",feature_request_form,2025-11-20
+FB-038,"Just switched from Competitor X and Orbit is so much cleaner",app_store_review,2025-11-21
+FB-039,"The email digest is useless — too much info, not actionable",in_app_survey,2025-11-21
+FB-040,"Need custom fields on tasks for our workflow",feature_request_form,2025-11-22
+FB-041,"Two-factor authentication should be mandatory option for enterprise",feature_request_form,2025-11-22
+FB-042,"I can't figure out how to archive completed projects",support_ticket,2025-11-23
+FB-043,"Board view needs swimlanes badly",feature_request_form,2025-11-23
+FB-044,"Great tool but the learning curve is steep for new users",app_store_review,2025-11-24
+FB-045,"Text formatting in task descriptions is buggy — bold doesn't always render",support_ticket,2025-11-24
+FB-046,"Love that I can mention teammates in comments with @",in_app_survey,2025-11-25
+FB-047,"The free plan is too limited — only 5 projects feels stingy",app_store_review,2025-11-25
+FB-048,"Need a way to track billable hours per client project",feature_request_form,2025-11-26
+FB-049,"Everything about notifications needs to be rethought",in_app_survey,2025-11-26
+FB-050,"The iOS app is smooth. Android feels like an afterthought though",app_store_review,2025-11-27
+FB-051,"When I copy a task link, it should include the task title not just a URL",feature_request_form,2025-11-27
+FB-052,"Your customer support team is fantastic — got help in under 10 minutes",in_app_survey,2025-11-28
+FB-053,"The subtask feature needs nesting — I need sub-subtasks",feature_request_form,2025-11-28
+FB-054,"PDF export looks terrible — formatting is all messed up",support_ticket,2025-11-29
+FB-055,"Can you add a Pomodoro timer feature? Would be perfect for focus mode",feature_request_form,2025-11-29
+FB-056,"Accidentally shared a private project externally — permissions are confusing",support_ticket,2025-11-30
+FB-057,"Orbit is the first tool my whole team actually uses consistently",app_store_review,2025-11-30
+FB-058,"File attachments disappear after a few weeks — is there a storage limit?",support_ticket,2025-12-01
+FB-059,"Need better mobile notifications — I miss deadlines because push doesn't work",support_ticket,2025-12-01
+FB-060,"Would love AI-powered task suggestions based on project patterns",feature_request_form,2025-12-02
+FB-061,"The quick-add shortcut (Cmd+K) is brilliant",in_app_survey,2025-12-02
+FB-062,"Bulk editing tasks is impossible — I have to update them one by one",support_ticket,2025-12-03
+FB-063,"Please add a table/spreadsheet view for tasks",feature_request_form,2025-12-03
+FB-064,"My manager loves the progress dashboard — makes standups faster",in_app_survey,2025-12-04
+FB-065,"Crashes on iPad when rotating from portrait to landscape",support_ticket,2025-12-04
+FB-066,"Integration with Figma would be incredible for our design team",feature_request_form,2025-12-05
+FB-067,"The weekly email summary is actually useful — rare for a SaaS tool",in_app_survey,2025-12-05
+FB-068,"Why is there no way to set task templates? I create the same tasks every sprint",feature_request_form,2025-12-06
+FB-069,"Tried to import from Trello and half my cards got corrupted",support_ticket,2025-12-06
+FB-070,"Your pricing page is confusing — unclear what's in each tier",app_store_review,2025-12-07
+FB-071,"The real-time collaboration is smooth — we edit tasks simultaneously",in_app_survey,2025-12-07
+FB-072,"Need guest access for clients who don't need full accounts",feature_request_form,2025-12-08
+FB-073,"Search should support filters like 'assigned to me' or 'due this week'",feature_request_form,2025-12-08
+FB-074,"The app randomly logs me out on Safari",support_ticket,2025-12-09
+FB-075,"Best $12/month I spend on tools. Seriously",app_store_review,2025-12-09
+FB-076,"Our team of 50 finds the admin panel really lacking",support_ticket,2025-12-10
+FB-077,"Would love to see burndown charts for sprints",feature_request_form,2025-12-10
+FB-078,"The drag-and-drop is glitchy on Firefox — tasks jump around",support_ticket,2025-12-11
+FB-079,"Please add a 'my day' view like some competitors have",feature_request_form,2025-12-11
+FB-080,"Set up our whole product launch in Orbit — the timeline view is perfect",in_app_survey,2025-12-12
+FB-081,"NO DARK MODE IN 2025?? Come on",app_store_review,2025-12-12
+FB-082,"The help docs are outdated — screenshots don't match the current UI",support_ticket,2025-12-13
+FB-083,"Can't sort tasks by custom fields — only by date and priority",support_ticket,2025-12-13
+FB-084,"Please add a way to track OKRs alongside tasks",feature_request_form,2025-12-14
+FB-085,"Onboarding was confusing for my non-tech teammates",in_app_survey,2025-12-14
+FB-086,"Email notifications come 30 mins late sometimes",support_ticket,2025-12-15
+FB-087,"I want to be able to print a task list for offline standups",feature_request_form,2025-12-15
+FB-088,"This replaced 3 tools for us — project management, docs, and task tracking",app_store_review,2025-12-16
+FB-089,"The keyboard shortcuts are great but there's no cheat sheet in the app",in_app_survey,2025-12-16
+FB-090,"File preview for PDFs doesn't work — just shows a blank page",support_ticket,2025-12-17
+FB-091,"Need audit logs to see who changed what on a task",feature_request_form,2025-12-17
+FB-092,"Can I get a discount for nonprofits? We're a small charity",app_store_review,2025-12-18
+FB-093,"The quick filters on the sidebar save me so much time",in_app_survey,2025-12-18
+FB-094,"When I complete a task, it should auto-archive after 30 days not clutter my board",feature_request_form,2025-12-19
+FB-095,"We hit the project limit on the team plan — need unlimited",support_ticket,2025-12-19
+FB-096,"Your onboarding webinar was super helpful. More of these please",in_app_survey,2025-12-20
+FB-097,"The API documentation is sparse — need more examples",feature_request_form,2025-12-20
+FB-098,"The app takes 8 seconds to load on my phone. Way too slow",support_ticket,2025-12-21
+FB-099,"Added all my personal tasks here too — it's that good",app_store_review,2025-12-21
+FB-100,"Please add workload balancing — I can't see who's overloaded",feature_request_form,2025-12-22
+FB-101,"Our exec team wants a high-level portfolio dashboard",feature_request_form,2025-12-22
+FB-102,"Undo button for bulk actions would prevent disasters",feature_request_form,2025-12-23
+FB-103,"Can't change the start day of the week to Monday in settings",support_ticket,2025-12-23
+FB-104,"Compared 5 PM tools and Orbit won on simplicity",app_store_review,2025-12-24
+FB-105,"The automation rules are powerful but the UI for setting them up is clunky",in_app_survey,2025-12-24
+FB-106,"Need role-based permissions — not everyone should edit everything",feature_request_form,2025-12-25
+FB-107,"My tasks keep reordering themselves randomly after refresh",support_ticket,2025-12-25
+FB-108,"Markdown support in descriptions is great but needs tables",feature_request_form,2025-12-26
+FB-109,"First tool our sales team adopted voluntarily — that says a lot",in_app_survey,2025-12-26
+FB-110,"Import from Asana failed completely — no error message, just blank screen",support_ticket,2025-12-27
+FB-111,"Gantt chart needs milestones, not just tasks",feature_request_form,2025-12-27
+FB-112,"Honestly the customer support alone is worth the subscription",app_store_review,2025-12-28
+FB-113,"When are you adding AI features? Every competitor has them now",feature_request_form,2025-12-28
+FB-114,"The archive function should let me search archived items too",feature_request_form,2025-12-29
+FB-115,"Touch ID login on mobile would be nice",feature_request_form,2025-12-29
+FB-116,"We need GDPR compliance docs before legal approves the tool",support_ticket,2025-12-30
+FB-117,"Dashboard loads slowly when you have 100+ tasks — needs pagination or lazy loading",support_ticket,2025-12-30
+FB-118,"PLEASE fix the Android app before adding new features",app_store_review,2025-12-31
+FB-119,"Our design team wants a Kanban board with image previews on cards",feature_request_form,2025-12-31
+FB-120,"Accidentally assigned a task to someone from another project — permission leak?",support_ticket,2026-01-01
+FB-121,"The progress bar on projects is motivating — small thing but love it",in_app_survey,2026-01-01
+FB-122,"Can I hide completed tasks without deleting them?",support_ticket,2026-01-02
+FB-123,"Orbit needs a desktop app — browser tabs get lost",feature_request_form,2026-01-02
+FB-124,"Love the weekly goals feature. Keeps me focused",in_app_survey,2026-01-03
+FB-125,"The mobile app needs offline mode desperately",feature_request_form,2026-01-03
+FB-126,"Comments don't support @ mentions on mobile",support_ticket,2026-01-04
+FB-127,"Why does the due date picker not have a 'today' shortcut?",in_app_survey,2026-01-04
+FB-128,"Need GitHub integration for our engineering tasks",feature_request_form,2026-01-05
+FB-129,"Video attachments won't play in-app — have to download first",support_ticket,2026-01-05
+FB-130,"Switched my whole freelance workflow to Orbit. 10/10",app_store_review,2026-01-06
+FB-131,"The project summary AI feature is underwhelming — just restates tasks",in_app_survey,2026-01-06
+FB-132,"Need ability to lock task fields so only admins can edit certain things",feature_request_form,2026-01-07
+FB-133,"Copy-paste from Google Docs into task description strips all formatting",support_ticket,2026-01-07
+FB-134,"A resource management view would make this a complete PM tool",feature_request_form,2026-01-08
+FB-135,"Love the color themes — the purple one is my favorite",in_app_survey,2026-01-08
+FB-136,"The Chrome extension for clipping emails into tasks would be amazing",feature_request_form,2026-01-09
+FB-137,"Two of my projects merged somehow — data integrity issue??",support_ticket,2026-01-09
+FB-138,"We use Orbit for wedding planning. Works great for personal stuff too!",app_store_review,2026-01-10
+FB-139,"Due date reminders should be customizable — not just 'day before'",feature_request_form,2026-01-10
+FB-140,"The empty state for new projects should suggest a template",in_app_survey,2026-01-11
+FB-141,"Can't change my email address in account settings — button does nothing",support_ticket,2026-01-11
+FB-142,"Subtask progress should roll up to the parent task percentage",feature_request_form,2026-01-12
+FB-143,"The tutorial videos on YouTube are outdated — please update them",support_ticket,2026-01-12
+FB-144,"Our CEO checks the executive dashboard daily — please don't change it",in_app_survey,2026-01-13
+FB-145,"Need to set task dependencies — 'Task B starts when Task A completes'",feature_request_form,2026-01-13
+FB-146,"The invite link expires too quickly — team members can't join",support_ticket,2026-01-14
+FB-147,"Gorgeous UI. Finally a PM tool that doesn't look like it's from 2010",app_store_review,2026-01-14
+FB-148,"Integration with Zapier would open up so many automations",feature_request_form,2026-01-15
+FB-149,"Starred/favorited tasks should sync across devices. They don't",support_ticket,2026-01-15
+FB-150,"Can Orbit do capacity planning? Need to see team availability",feature_request_form,2026-01-16
+FB-151,"Stop sending me marketing emails when I'm already a paying customer",in_app_survey,2026-01-16
+FB-152,"The chart colors in reports are too similar — hard to distinguish",support_ticket,2026-01-17
+FB-153,"Adding a 'blocked' status for tasks would be super useful",feature_request_form,2026-01-17
+FB-154,"We demoed Orbit to 3 other teams and they all signed up",in_app_survey,2026-01-18
+FB-155,"Task descriptions have a character limit?? Hit it writing a spec",support_ticket,2026-01-18
+FB-156,"Multi-language support for the interface would help our global team",feature_request_form,2026-01-19
+FB-157,"The activity feed is noisy — need filters for 'meaningful changes only'",in_app_survey,2026-01-19
+FB-158,"Can't resize columns in the table view — they're too narrow for long task names",support_ticket,2026-01-20
+FB-159,"A public roadmap of upcoming features would build trust",feature_request_form,2026-01-20
+FB-160,"Love how lightweight it feels compared to heavyweight PM tools",app_store_review,2026-01-21
+FB-161,"When I duplicate a task, the attachments don't copy over",support_ticket,2026-01-21
+FB-162,"Need a 'review and approve' workflow for content tasks",feature_request_form,2026-01-22
+FB-163,"The recent items shortcut is clutch when I have 20 projects",in_app_survey,2026-01-22
+FB-164,"Please add an 'effort' or 'story points' field to tasks",feature_request_form,2026-01-23
+FB-165,"The page just shows 'something went wrong' — no details, no way to report it",support_ticket,2026-01-23
+FB-166,"Orbit + our Slack channel = productivity dream team",in_app_survey,2026-01-24
+FB-167,"Would love to embed Orbit tasks in Notion pages",feature_request_form,2026-01-24
+FB-168,"Login page sometimes redirects to a 404 after SSO",support_ticket,2026-01-25
+FB-169,"Started using Orbit for my side projects too. That's the highest compliment",app_store_review,2026-01-25
+FB-170,"Relative due dates like 'T+3 days from task creation' would help with templates",feature_request_form,2026-01-26
+FB-171,"Honestly? Nothing major to complain about. Just keep improving",in_app_survey,2026-01-26
+FB-172,"The progress tracking has transformed how we run client projects",in_app_survey,2026-01-27
+FB-173,"Custom notification schedules — I only want pings during work hours",feature_request_form,2026-01-27
+FB-174,"Image attachments don't show thumbnails in list view",support_ticket,2026-01-28
+FB-175,"Referral program? I'd happily refer 5 teams",in_app_survey,2026-01-28
+FB-176,"Need approval workflows for budget-related tasks",feature_request_form,2026-01-29
+FB-177,"The drag handle on mobile is too small — hard to reorder tasks",support_ticket,2026-01-29
+FB-178,"Orbit feels like it was designed by people who actually manage projects",app_store_review,2026-01-30
+FB-179,"The calendar view should show tasks from all projects by default",feature_request_form,2026-01-30
+FB-180,"Status page for uptime/incidents would be reassuring",feature_request_form,2026-01-31
+FB-181,"Auto-save on task edits please — I lost a long description because I navigated away",support_ticket,2026-01-31
+FB-182,"The performance has improved SO much since last quarter. Thank you!",in_app_survey,2026-02-01
+FB-183,"A global inbox for all my mentions and assignments across projects",feature_request_form,2026-02-01
+FB-184,"Keyboard navigation in the board view doesn't work",support_ticket,2026-02-02
+FB-185,"We built our entire Q1 plan in Orbit. The timeline feature sealed it",in_app_survey,2026-02-02
+FB-186,"Support for right-to-left languages (Arabic, Hebrew)",feature_request_form,2026-02-03
+FB-187,"The confetti animation when completing a project is delightful",in_app_survey,2026-02-03
+FB-188,"Please add a way to link related tasks across different projects",feature_request_form,2026-02-04
+FB-189,"Data export is incomplete — comments and attachments don't come through",support_ticket,2026-02-04
+FB-190,"The quick-add feature understands natural language dates which is magic",in_app_survey,2026-02-05
+FB-191,"Would love to set goals that auto-calculate progress from linked tasks",feature_request_form,2026-02-05
+FB-192,"My entire team agrees: Orbit is the one tool we couldn't give up",app_store_review,2026-02-06
+FB-193,"Webhook support for custom integrations please",feature_request_form,2026-02-06
+FB-194,"The onboarding checklist helped but I still don't get how automations work",in_app_survey,2026-02-07
+FB-195,"Can't export a single project — it's all-or-nothing which is annoying",support_ticket,2026-02-07
+FB-196,"A dark mode with OLED black option would be amazing for late nights",feature_request_form,2026-02-08
+FB-197,"Orbit just works. No setup headaches, no consultants needed",app_store_review,2026-02-08
+FB-198,"Need email-to-task: forward an email and it becomes a task",feature_request_form,2026-02-09
+FB-199,"Timer keeps resetting when I switch between tasks — time tracking bug",support_ticket,2026-02-09
+FB-200,"Truly the best PM tool for small teams. Period.",app_store_review,2026-02-10

@@ -75,4 +75,3 @@ Como Claude usa tu Chrome (donde ya tienes la sesión iniciada), puede acceder a
 
 > **Consejo**: La Integración con Chrome funciona genial con Computer Use — Claude puede ver el navegador e interactuar con él naturalmente, tal como lo harías tú.
 
-**Siguiente paso**: [Potencia Claude con paquetes de plugins preconfigurados →](../07-plugins/README.es.md)

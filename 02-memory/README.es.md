@@ -110,4 +110,3 @@ La memoria **no** es un historial de conversaciones. Claude no recuerda de qué 
 
 Piensa en ella como un documento de briefing que le entregas a un nuevo miembro del equipo en su primer día — no ha estado en tus reuniones, pero si el briefing es bueno, puede ponerse al día rápidamente.
 
-**Siguiente paso**: [Aprende a experimentar sin miedo con los checkpoints →](../08-checkpoints/README.es.md)

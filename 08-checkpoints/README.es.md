@@ -53,4 +53,3 @@ Claude hizo varios cambios y ahora las cosas están desordenadas. No hay problem
 
 > **La idea clave:** Los checkpoints te permiten experimentar sin miedo. Prueba cosas, y si no funcionan, rebobina. Así de simple.
 
-**Siguiente paso**: [Domina la CLI — modo de impresión, piping y scripting →](../10-cli/README.es.md)

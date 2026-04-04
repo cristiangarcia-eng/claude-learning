@@ -116,4 +116,3 @@ Nothing is sent to the cloud except your messages to Claude (just like using Cha
 4. **Plan mode is safe** — Claude can only read, not write
 5. **Everything is reversible** — Claude creates checkpoints you can rewind to
 
-**Next step**: [Learn the golden rules to get great results from Claude →](../00d-best-practices/)

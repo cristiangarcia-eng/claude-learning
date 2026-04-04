@@ -110,4 +110,3 @@ Memory is **not** a conversation history. Claude doesn't remember what you talke
 
 Think of it like a briefing document you hand to a new team member on their first day — they haven't been in your meetings, but if the briefing is good, they can get up to speed quickly.
 
-**Next step**: [Learn to experiment fearlessly with checkpoints →](../08-checkpoints/)

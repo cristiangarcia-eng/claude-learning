@@ -88,4 +88,3 @@ Once created, you can use a skill in two ways:
 | Include examples of expected output in your skill | Leaving Claude to guess the format |
 | Share useful skills with your team | Keeping helpful workflows to yourself |
 
-**Next step**: [Connect Claude to live data with MCP →](../05-mcp/)

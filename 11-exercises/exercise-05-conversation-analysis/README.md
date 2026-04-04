@@ -1,94 +1,140 @@
-# Exercise 5: Extract Insights from Conversations
+# Exercise 5: Analyze Customer Support Conversations
 
 **Time:** 45 minutes | **Level:** Intermediate
 **Module:** [04-subagents](../../04-subagents/) — Delegating specialized tasks to agents
-**Skill:** Creating a data-analyst subagent that handles analysis tasks
+**Skill:** Creating a reusable data-analyst subagent for recurring analysis tasks
+
+## Objective
+
+You will learn how to create a **subagent** — a specialized Claude Code agent that you can delegate tasks to again and again. First, you will do analysis manually to understand what "good analysis" looks like. Then you will encode that knowledge into a reusable subagent that can handle similar analysis tasks in the future.
+
+This is a key skill for business users: instead of repeating the same analytical work every week or month, you build a specialist once and delegate to it forever.
 
 ## Scenario
 
-You have 100 conversations and need insights: What patterns exist? What's working? Where should you focus? Instead of doing this analysis yourself every time, you'll **create a data-analyst subagent** that you can delegate any data analysis task to in the future.
+You are a Customer Success Manager at **Orbit Task Manager**, a fictional project management tool. Your team logs every customer support conversation — live chat and email — in a JSON file. Your VP of Customer Experience has asked you to find patterns: What issues come up most? Which channels work best? Where are customers most frustrated? What should the product and support teams focus on?
 
 ## What You Have
 
-A JSON file at `data/conversations.json` with 100 conversations. Each has sender/recipient info, channel, timestamps, messages, outcome, and tags.
+A JSON file at `data/conversations.json` with 40 customer support conversations. Each conversation includes:
+- **customer** — the customer's name
+- **plan** — Free, Pro, or Team
+- **channel** — live_chat or email
+- **category** — billing, bug_report, feature_question, or how_to
+- **satisfaction_score** — 1 to 5
+- **resolution** — resolved, escalated, or unresolved
+- **messages** — the full conversation thread
 
-## Your Task
+## Step-by-Step Instructions
 
-### Part 1: Do the analysis manually first
+### Part 1: Do the analysis manually (15 minutes)
 
-1. **Get the overview.** Ask Claude:
-   ```
-   Read data/conversations.json and give me:
-   - How many conversations? Messages total?
-   - Distribution of outcomes (replied, no-reply, meeting-booked, not-interested)
-   - Channels used and their split
-   ```
+Before building a subagent, you need to understand what good analysis looks like for this data.
 
-2. **Find what predicts success.** Ask Claude:
-   ```
-   Write a Python script that analyzes which factors correlate
-   with positive outcomes (replied, meeting-booked):
-   - Channel (email vs LinkedIn vs chat)
-   - Day of the week
-   - Message length
-   - Tags (cold-outreach vs warm-intro vs referral)
-   Show results as tables. Highlight the strongest patterns.
-   ```
+**Step 1.** Ask Claude to explore the data:
 
-3. **Classify the replies.** Ask Claude:
-   ```
-   Read the message content in conversations that got replies.
-   Classify into: Interested, Polite decline, Asking for more info,
-   Redirected, Negative. Show counts and examples of each.
-   ```
+```
+Read data/conversations.json and give me an overview:
+- How many conversations total?
+- Distribution by category (billing, bug_report, etc.)
+- Distribution by channel (live_chat vs email)
+- Distribution by plan (Free, Pro, Team)
+- Distribution by resolution (resolved, escalated, unresolved)
+- Average satisfaction score overall
+```
 
-### Part 2: Create a data-analyst subagent (the real exercise)
+**Step 2.** Ask Claude to dig deeper into satisfaction patterns:
 
-4. Now that you know what good analysis looks like, **create a reusable subagent.** Ask Claude:
-   ```
-   Help me create a subagent called "data-analyst" following the format
-   from the 04-subagents module. It should:
-   - Be an expert at exploratory data analysis
-   - Have access to: Read, Bash, Glob, Grep tools
-   - Follow this process: explore → hypothesize → analyze → visualize → report
-   - Always start by understanding the data structure
-   - Always end with an insight report as a markdown file
-   - Be able to handle CSV, JSON, and Excel files
+```
+Now analyze what factors correlate with low satisfaction scores
+(1 or 2 out of 5):
+- Which categories have the lowest average satisfaction?
+- Does channel affect satisfaction (live_chat vs email)?
+- Does plan level affect satisfaction?
+- What do the low-satisfaction conversations have in common?
+Show the results as tables.
+```
 
-   Save it at .claude/agents/data-analyst.md
-   ```
+**Step 3.** Ask Claude to extract actionable insights from the actual conversation content:
 
-5. **Test the subagent.** Start a new conversation and delegate:
-   ```
-   @data-analyst Analyze data/conversations.json. Focus on what
-   predicts meeting-booked outcomes. Save the report as insight_report.md
-   ```
+```
+Read through the message content in conversations with
+satisfaction scores of 1 or 2. What are the top complaints
+or frustrations? Group them into themes and suggest specific
+actions the support or product team could take.
+Save this as a markdown file called manual_analysis.md
+```
 
-### Part 3: Refine the agent
+### Part 2: Create a data-analyst subagent (20 minutes)
 
-6. Based on the results, improve your subagent:
-   - Is the output format useful? Adjust the template in the agent definition.
-   - Does it run the right kind of analysis? Add more specific priorities.
-   - Should it auto-generate charts? Add that to its checklist.
+Now that you know what good analysis looks like, encode it into a reusable subagent.
 
-## Connection to Module 04 (Subagents)
+**Step 4.** Ask Claude to help you build the subagent:
 
-| Subagent Concept | How You Use It Here |
-|-----------------|-------------------|
-| **Agent file** (`.claude/agents/`) | You create `data-analyst.md` |
-| **Tools restriction** | Only Read, Bash, Glob, Grep — safe, read-focused |
-| **Description for delegation** | Keywords that let Claude auto-delegate analysis tasks |
-| **Structured output** | Agent always produces a markdown insight report |
-| **Priorities list** | Ordered checklist the agent follows every time |
+```
+Help me create a subagent called "data-analyst" that I can
+delegate data analysis tasks to. Based on the analysis I just
+did manually, the subagent should:
 
-## Success Criteria
+- Be an expert at exploratory data analysis for business users
+- Have access to: Read, Bash, Glob, Grep tools
+- Follow this process every time:
+  1. Explore the data structure and summarize what it contains
+  2. Calculate key distributions and counts
+  3. Look for patterns and correlations
+  4. Identify outliers and anomalies
+  5. Write plain-English insights with specific recommendations
+- Always save its output as a markdown report
+- Write for a non-technical audience (no jargon)
+- Be able to handle CSV and JSON files
 
-- [ ] You explored the data and found key patterns (channel, day, tags)
-- [ ] A Python analysis script ran successfully
-- [ ] `.claude/agents/data-analyst.md` exists with proper frontmatter
+Save the agent definition at .claude/agents/data-analyst.md
+```
+
+**Step 5.** Test your subagent by delegating the same analysis to it:
+
+```
+@data-analyst Analyze data/conversations.json. Focus on finding
+patterns that explain customer satisfaction. Save the report
+as satisfaction_report.md
+```
+
+Compare the subagent's output to your manual analysis from Part 1. Did it cover the same ground? Did it find anything you missed?
+
+### Part 3: Refine and reuse (10 minutes)
+
+**Step 6.** Based on the results, improve your subagent:
+
+```
+Update the data-analyst subagent based on what I've learned:
+- The report should always include a "Top 3 Actions" section
+  at the very top (busy executives read this first)
+- It should flag any data quality issues it finds
+- It should compare segments (e.g., Free vs Pro vs Team)
+  whenever the data allows it
+Update .claude/agents/data-analyst.md with these improvements.
+```
+
+**Step 7.** Think about where else you could use this subagent. It is not limited to support data — you could delegate analysis of survey results, sales data, usage metrics, or any structured dataset.
+
+## What Subagents Let You Do Here
+
+| Subagent Concept | How You Used It |
+|---|---|
+| **Agent file** (`.claude/agents/`) | You created `data-analyst.md` with expertise and instructions |
+| **Tools restriction** | Only Read, Bash, Glob, Grep — safe, read-only tools |
+| **Structured process** | The agent follows the same analysis steps every time |
+| **Delegation** (`@data-analyst`) | You hand off the analysis instead of doing it yourself |
+| **Reusability** | The same agent works on any dataset, not just this one |
+
+## Success Checklist
+
+- [ ] You explored the support data and found satisfaction patterns
+- [ ] A `manual_analysis.md` report exists with insights
+- [ ] `.claude/agents/data-analyst.md` exists with a defined process
 - [ ] Delegating to `@data-analyst` produces a useful report
-- [ ] The agent works on other datasets, not just this one
+- [ ] The subagent report includes actionable recommendations
 
 ## What You Learned
 
-**Subagents are specialists you build once and delegate to forever.** The first time you do a task, you learn what "good" looks like. The second time, you encode it into an agent. From then on, you delegate — and the agent does it the same way every time, freeing you for higher-value work.
+Subagents are specialists you build once and delegate to forever. The first time you do a task, you learn what "good" looks like by doing it manually. The second time, you encode that knowledge into an agent definition. From then on, you delegate — and the agent follows the same quality process every time, freeing you for higher-value work. This is especially powerful for recurring analysis tasks like weekly reports, monthly reviews, or quarterly check-ins.

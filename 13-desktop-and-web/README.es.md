@@ -70,4 +70,3 @@ Las tareas se ejecutan en la infraestructura en la nube de Anthropic — funcion
 
 > **Consejo**: La App de Escritorio es la mejor experiencia para no desarrolladores. Los diffs visuales hacen mucho más fácil revisar cambios que leer texto en la terminal.
 
-**Siguiente paso**: [Deja que Claude vea y controle tu pantalla con Computer Use →](../14-computer-use/README.es.md)

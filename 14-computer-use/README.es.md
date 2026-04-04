@@ -69,4 +69,3 @@ capturas de pantalla de cada página. Señala cualquier problema de diseño.
 
 > **Consejo**: Computer Use es especialmente poderoso para tareas repetitivas en apps que no tienen API — como llenar formularios, actualizar contenido en un CMS, o navegar herramientas internas.
 
-**Siguiente paso**: [Conecta Claude directamente a tu navegador con la Integración de Chrome →](../15-chrome/README.es.md)

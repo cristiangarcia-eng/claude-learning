@@ -57,4 +57,3 @@ Claude works autonomously. When it's done, the results are waiting for you.
 
 > **Tip**: Combine Remote Control with Voice Dictation — speak commands from your phone while Claude executes on your computer.
 
-**Next step**: [Explore the Desktop App and Web interface →](../13-desktop-and-web/)

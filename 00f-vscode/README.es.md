@@ -87,6 +87,4 @@ Esto significa que puedes:
 
 Todo en una ventana. Usaremos esta terminal en la siguiente lección.
 
-## Siguiente paso
 
-**Siguiente paso**: [Aprende los 4 comandos de terminal que necesitas dentro de VS Code →](../00-terminal-basics/README.es.md)

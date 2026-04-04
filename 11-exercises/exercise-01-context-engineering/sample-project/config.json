@@ -1,16 +1,13 @@
 {
-  "company": "Meridian Analytics",
-  "currency": "EUR",
+  "project": "Nike Competitive Analysis",
+  "team": "Competitive Strategy",
+  "currency": "USD",
   "fiscal_year_start": "January",
-  "report_recipients": ["cfo@meridian.com", "ops-team@meridian.com"],
+  "report_recipients": ["strategy-team@example.com", "vp-product@example.com"],
   "data_sources": {
-    "customers": "data/customers.csv",
-    "transactions": "data/transactions.csv"
+    "market_share": "data/market-share.csv",
+    "retail_channels": "data/retail-channels.csv"
   },
   "output_dir": "reports/",
-  "monthly_report": {
-    "script": "scripts/monthly-report.py",
-    "schedule": "1st of each month",
-    "format": "markdown"
-  }
+  "competitors": ["Orbit Sports", "Velocity Gear", "Apex Athletics", "Summit Run"]
 }

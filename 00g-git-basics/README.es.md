@@ -236,4 +236,3 @@ Estas son herramientas avanzadas. Claude las maneja por ti si es necesario.
 | `git log --oneline` | Mostrar historial | "Mostrar mi historial de guardados" |
 | `git diff` | Mostrar cambios línea por línea | "Muéstrame exactamente que cambio" |
 
-**Siguiente paso**: [Comienza el curso con Comandos Slash →](../01-slash-commands/README.es.md)

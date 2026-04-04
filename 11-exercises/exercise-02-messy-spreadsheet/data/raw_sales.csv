@@ -1,0 +1,42 @@
+partner,region,sales_rep,date,amount,units,status,product_line,notes
+Orbit Sports,North America,Dana Okafor,2025-01-15,125000,340,shipped,Running,
+ORBIT SPORTS,North America,Dana Okafor,15/01/2025,125000,340,Shipped,Running,duplicate from system
+Velocity Gear,Europe,Marco Vitelli,January 18 2025,87500,210,shipped,Training,
+Apex Athletics Corp,North America,Priya Sharma,2025-01-20,94000,275,pending,Lifestyle,
+summit run,Europe,Marco Vitelli,Jan 22 2025,62000,145,SHIPPED,Trail,
+Pinnacle Fitness,Asia Pacific,Kenji Watanabe,2025-01-25,43500,120,shipped,Training,
+Orbit sports Inc.,North America,Dana Okafor,2025-01-28,"$78,200",195,shipped,Lifestyle,
+Velocity gear,,Marco Vitelli,01/30/2025,55000 (estimated),130,pending,Running,amount is estimate
+APEX ATHLETICS,North America,Priya Sharma,2025-02-01,112000,310,Shipped,Running,
+Summit Run Co.,Europe,,Feb 3 2025,48000,110,shipped,Trail,missing rep
+Orbit Sports,Asia Pacific,Kenji Watanabe,2025-02-05,91200,250,shipped,Training,
+PINNACLE FITNESS,,Asia Pacific,2025-02-07,38000,95,Pending,Lifestyle,region in wrong column
+Velocity Gear,North America,Dana Okafor,02/10/2025,"$66,400",160,shipped,Training,
+Apex Athletics,Europe,Marco Vitelli,2025-02-12,73500,200,SHIPPED,Lifestyle,
+Summit Run,North America,Priya Sharma,February 14 2025,52000,125,shipped,Trail,
+Orbit Sports,Europe,Marco Vitelli,2025-02-15,98700,265,delivered,Running,
+VELOCITY GEAR LLC,North America,Dana Okafor,2025-02-18,71000,175,shipped,Running,
+Apex Athletics,Asia Pacific,Kenji Watanabe,Feb 20 2025,85300,230,pending,Lifestyle,
+Pinnacle fitness,Europe,Marco Vitelli,2025-02-22,41200,100,Shipped,Training,
+Summit Run,Asia Pacific,Kenji Watanabe,22/02/2025,33500,80,shipped,Trail,
+Orbit Sports,North America,Dana Okafor,2025-02-25,145000,385,shipped,Running,
+Orbit Sports,North America,Dana Okafor,2025-02-25,145000,385,Shipped,Running,system duplicate
+Velocity Gear,Europe,Marco Vitelli,2025-02-28,$55.5K,135,complete,Training,
+Apex Athletics,North America,Priya Sharma,March 1 2025,97600,280,shipped,Running,
+Summit Run Co.,,Marco Vitelli,2025-03-03,58000,140,Shipped,Trail,
+Pinnacle Fitness,Asia Pacific,Kenji Watanabe,03/05/2025,45800,115,shipped,Training,
+ORBIT SPORTS,Europe,Marco Vitelli,2025-03-07,82400,220,pending,Lifestyle,
+Velocity Gear,North America,Dana Okafor,2025-03-10,$72K,180,shipped,Running,
+Apex Athletics Corp,Europe,,Mar 12 2025,69000,185,SHIPPED,Lifestyle,missing rep
+summit run,North America,Priya Sharma,2025-03-14,47500,115,shipped,Trail,
+Pinnacle Fitness,North America,Dana Okafor,March 15 2025,36800,90,Pending,Training,
+Orbit Sports,Asia Pacific,Kenji Watanabe,2025-03-17,88900,240,shipped,Running,
+VELOCITY GEAR,Europe,Marco Vitelli,17/03/2025,61000,150,Shipped,Training,
+Apex Athletics,,Priya Sharma,2025-03-20,105000,295,shipped,Running,
+Summit Run,Europe,Marco Vitelli,Mar 22 2025,54500,130,shipped,Trail,
+PINNACLE FITNESS,Asia Pacific,Kenji Watanabe,2025-03-24,"$42,100",105,returned,Lifestyle,customer returned order
+Orbit Sports,North America,Dana Okafor,2025-03-26,132000,350,shipped,Running,
+Velocity Gear,Asia Pacific,Kenji Watanabe,03/28/2025,49800 (estimated),120,pending,Running,amount is estimate
+Apex Athletics,North America,Priya Sharma,2025-03-29,88200,245,cancelled,Lifestyle,order cancelled by partner
+Summit Run,North America,Priya Sharma,March 30 2025,41000,100,shipped,Trail,
+Pinnacle fitness,Europe,Marco Vitelli,2025-03-31,37500,92,Shipped,Training,

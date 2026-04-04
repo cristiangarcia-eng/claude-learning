@@ -92,4 +92,3 @@ Hay tres formas:
 - **Usa el modo de segundo plano** para tareas pesadas y sigue trabajando
 - **Skills para formato, subagentes para pensar** — si necesitas aplicar una plantilla, usa un Skill. Si necesitas un análisis, usa un Subagente.
 
-**Siguiente paso**: [Controla Claude desde tu teléfono con voz y sesiones remotas →](../12-voice-and-remote/README.es.md)

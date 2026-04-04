@@ -113,4 +113,3 @@ Aquí hay más cosas que puedes pedirle a Claude sobre el proyecto de Nike:
 
 ## ¿Qué sigue?
 
-**Siguiente paso**: [Entiende cómo funciona Claude Code detrás de escena →](../00c-how-it-works/README.es.md)

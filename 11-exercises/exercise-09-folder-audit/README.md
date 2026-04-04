@@ -1,88 +1,130 @@
-# Exercise 9: Folder Audit
+# Exercise 9: Folder Audit with CLI Print Mode
 
 **Time:** 30 minutes | **Level:** Advanced
-**Module:** [10-cli](../../10-cli/) — Print mode, piping, and CLI automation
-**Skill:** Using `claude -p` and piping to run batch analysis from the terminal
+**Module:** [10-cli](../../10-cli/) -- Print mode, piping, and CLI automation
+**Skill:** Using `claude -p` (print mode) for batch operations from the terminal
+
+## Objective
+
+You will learn how to use Claude Code's **print mode** (`claude -p`) to analyze files non-interactively from the command line. Instead of opening an interactive session, you will run one-off commands that read files, analyze them, and produce output -- the kind of workflow you can repeat on any folder of documents.
+
+This is a key skill for anyone who needs to audit, review, or quality-check a set of files quickly.
 
 ## Scenario
 
-You need to audit a project folder: What's in here? How's it organized? What's the quality? Instead of using interactive mode, you'll use **CLI print mode** and piping to run the audit as a series of terminal commands — the kind of workflow you could script and run on any folder.
+You are a Project Manager at **Orbit Task Manager** and your team just wrapped Phase 1 of a product launch. The project folder (`docs/`) contains the key documents that were produced: a project brief, a requirements doc, a launch checklist, meeting notes, and a status report. Before the Phase 2 kickoff, your director asked you to audit these documents for completeness and quality.
 
-## What You Have
+You will use `claude -p` to analyze each document without opening an interactive session -- fast, repeatable, and scriptable.
 
-For this exercise, audit the `11-exercises/` folder itself (meta!). But the real skill is using CLI mode on **any folder** — a codebase, a shared drive, a data project.
+## What You Will Learn
 
-## Your Task
+- How `claude -p` (print mode) works and when to use it instead of interactive mode
+- How to pipe file contents into Claude for analysis
+- How to run batch analysis across multiple files
+- How to get structured (JSON) output for automation
+
+## Step-by-Step Instructions
 
 ### Part 1: Print mode basics
 
-1. **Run a quick analysis in print mode** (non-interactive):
+1. Open your terminal and navigate to this exercise folder:
+
    ```bash
-   claude -p "List all files in the 11-exercises/ folder, organized by type (CSV, JSON, MD, PY). Count each type."
+   cd 11-exercises/exercise-09-folder-audit
    ```
 
-2. **Pipe content into Claude:**
+2. **Run your first print mode command.** This sends a prompt to Claude and prints the response -- no interactive session:
+
    ```bash
-   find 11-exercises/ -name "*.csv" | claude -p "These are CSV files in a project. What data do they likely contain based on the file names?"
+   claude -p "List all the files in the docs/ folder and describe what each one appears to be based on its filename."
    ```
 
-3. **Chain analysis steps:**
+3. **Pipe a file into Claude for analysis:**
+
    ```bash
-   cat 11-exercises/exercise-02-messy-spreadsheet/data/raw_requests.csv | claude -p "Analyze this CSV. How many rows? What are the quality issues? Output a JSON summary."
+   cat docs/project-brief.md | claude -p "Review this project brief. Rate it 1-5 on: clarity of goals, completeness of scope, and stakeholder identification. Explain each rating."
    ```
 
-### Part 2: Build a folder audit script
+4. **Analyze another file:**
 
-4. **Create a reusable audit script.** Ask Claude (in interactive mode):
-   ```
-   Help me create a bash script called audit.sh that uses claude -p
-   to audit any folder passed as an argument. The script should:
-   1. List the directory tree
-   2. Pipe each file type count to Claude for analysis
-   3. Validate all CSV and JSON files
-   4. Check README consistency
-   5. Output a markdown audit report
-
-   Use claude -p for each step and save the combined result
-   as audit_report.md. Make it work on any folder, not just this one.
-   ```
-
-5. **Run the script:**
    ```bash
-   chmod +x audit.sh
-   ./audit.sh 11-exercises/
+   cat docs/launch-checklist.md | claude -p "Review this launch checklist. Are there any obvious missing steps? Is the order logical? What would you add?"
    ```
 
-### Part 3: JSON output for automation
+### Part 2: Batch analysis across all documents
 
-6. **Use structured output** for machine-readable results:
+5. **Run a quality check on every document.** Use a loop to analyze each file:
+
    ```bash
-   claude -p "Analyze the 11-exercises/ folder. Output a JSON object with: total_files, files_by_type (object), quality_issues (array), overall_score (1-10)" --output-format json
+   for file in docs/*.md; do
+     echo "=== Analyzing: $file ==="
+     cat "$file" | claude -p "Review this document for completeness and quality. Score it 1-10 and list the top 3 issues or gaps. Be specific. Start your response with the score as a number."
+     echo ""
+   done
    ```
 
-7. **Combine with other tools:**
+6. **Generate a combined audit report.** Pipe all documents together:
+
    ```bash
-   claude -p "List quality issues in 11-exercises/" --output-format json | jq '.quality_issues[]'
+   cat docs/*.md | claude -p "These are all the project documents for a product launch. Audit them as a set:
+   - Is anything missing that a complete project should have?
+   - Are there contradictions between documents?
+   - Which document needs the most improvement and why?
+   - Overall readiness score 1-10.
+   Write your response as a brief audit report."
    ```
+
+### Part 3: Structured output
+
+7. **Get JSON output** for machine-readable results:
+
+   ```bash
+   cat docs/requirements.md | claude -p "Analyze this requirements doc. Return a JSON object with: total_requirements (number), unclear_requirements (array of strings), missing_sections (array of strings), quality_score (1-10)" --output-format json
+   ```
+
+8. **Combine with other command-line tools:**
+
+   ```bash
+   cat docs/status-report.md | claude -p "List all risks mentioned in this status report as a JSON array of objects with 'risk' and 'severity' (high/medium/low) fields" --output-format json | jq '.[] | select(.severity == "high")'
+   ```
+
+### Part 4: Create a reusable audit command
+
+9. **Build a one-liner you can reuse on any folder:**
+
+   ```bash
+   ls docs/*.md | while read file; do echo "## $file"; cat "$file" | claude -p "Score this document 1-10 for completeness. One paragraph summary of gaps."; echo ""; done > audit_report.md
+   ```
+
+10. Open `audit_report.md` and review the results.
+
+## When to Use Print Mode vs Interactive Mode
+
+| Use Print Mode (`claude -p`) when... | Use Interactive Mode when... |
+|---------------------------------------|-------------------------------|
+| You have a specific, single question | You need a back-and-forth conversation |
+| You want to script or automate | You want to explore and iterate |
+| You are processing multiple files | You need Claude to remember context |
+| You want repeatable commands | The task requires judgment calls |
 
 ## Connection to Module 10 (CLI)
 
-| CLI Concept | How You Use It Here |
-|------------|-------------------|
-| **Print mode** (`claude -p`) | Non-interactive, scriptable analysis |
-| **Piping** (`cat file \| claude -p`) | Feed data into Claude from terminal |
-| **JSON output** (`--output-format json`) | Machine-readable results |
-| **Session naming** (`-n "audit"`) | Name the session for later reference |
-| **Scripting** | Build a reusable bash script using `claude -p` |
+| CLI Concept | How You Used It |
+|------------|----------------|
+| **Print mode** (`claude -p`) | Non-interactive, one-shot analysis |
+| **Piping** (`cat file \| claude -p`) | Fed document content to Claude |
+| **Loops** | Batch-processed multiple files |
+| **JSON output** (`--output-format json`) | Got machine-readable results |
+| **Combining tools** (`jq`) | Filtered and processed Claude's output |
 
 ## Success Criteria
 
 - [ ] You ran at least 3 `claude -p` commands successfully
 - [ ] You piped file content into Claude for analysis
-- [ ] A bash audit script exists and runs on any folder
-- [ ] An audit report was generated as markdown
-- [ ] (Bonus) JSON output was used for structured results
+- [ ] You analyzed multiple files using a loop
+- [ ] You generated structured JSON output from at least one command
+- [ ] An audit report was saved as a markdown file
 
 ## What You Learned
 
-**Print mode turns Claude Code into a building block for automation.** Interactive mode is for exploration; print mode is for scripts, pipelines, and CI/CD. Any analysis you can do interactively, you can script with `claude -p` and run unattended on any folder, codebase, or dataset.
+**Print mode turns Claude Code into a building block for automation.** Interactive mode is for exploration and conversation; print mode is for scripts, pipelines, and repeatable workflows. Any analysis you can do interactively, you can script with `claude -p` and run on any folder, any dataset, any time.

@@ -1,19 +1,5 @@
-# Screenshots for Exercise 7
+# Screenshots (Optional)
 
-This folder is intentionally empty. To complete the exercise, add your own screenshots:
+This folder is available if you want to add screenshots or mockups to enhance your spec. The main exercise uses the rough notes in the `notes/` folder.
 
-1. **UI mockups** — Figma exports, wireframes, or design comps
-2. **Competitor screenshots** — Screenshots of a competitor's product
-3. **Dashboard screenshots** — Any analytics or reporting tool
-4. **Whiteboard photos** — Planning session outputs
-
-Drop 3-4 images here (PNG, JPG, or WEBP) and follow the exercise instructions.
-
-## Quick Test
-
-If you don't have your own screenshots, try this:
-1. Take a screenshot of any website you use for work
-2. Take a screenshot of a settings or configuration page
-3. Take a screenshot of a form or input page
-
-Save them here as `screenshot-1.png`, `screenshot-2.png`, etc.
+If you have visual references (whiteboard photos, quick sketches, competitor screenshots), drop them here and ask Claude to reference them while writing the spec.

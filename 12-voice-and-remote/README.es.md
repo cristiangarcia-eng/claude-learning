@@ -57,4 +57,3 @@ Claude trabaja de forma autónoma. Cuando termina, los resultados te están espe
 
 > **Consejo**: Combina Control Remoto con Dictado por Voz — habla comandos desde tu teléfono mientras Claude ejecuta en tu computadora.
 
-**Siguiente paso**: [Explora la App de Escritorio y la interfaz Web →](../13-desktop-and-web/README.es.md)

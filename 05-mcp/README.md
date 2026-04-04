@@ -92,4 +92,3 @@ You can always reconnect them later when you need them. Think of it like browser
 - **Disconnect when done** — remove MCPs you're not actively using to save context space
 - **Check with `/mcp`** — type this inside Claude Code to see what's connected and if it's working
 
-**Next step**: [Delegate complex tasks to specialized subagents →](../04-subagents/)

@@ -1,86 +1,161 @@
-# Exercise 6: Evaluate & QA an AI Output
+# Exercise 6: Check AI Content Against Brand Guidelines
 
 **Time:** 40 minutes | **Level:** Intermediate
 **Module:** [06-hooks](../../06-hooks/) — Event-driven automation
-**Skill:** Building a hook that automatically checks AI output quality
+**Skill:** Building a simple hook that automatically checks output quality
+
+## Objective
+
+You will learn how **hooks** work in Claude Code — small scripts that run automatically when certain events happen. Hooks are like quality gates: they check work automatically so you do not have to remember to check manually every time.
+
+In this exercise, you will first evaluate content by hand, then build a simple hook that does the checking for you. Hooks are one of the more advanced features in Claude Code, but this exercise keeps things accessible by walking through each step.
 
 ## Scenario
 
-Your company uses AI to generate outreach emails. It works most of the time, but sometimes the AI invents names, uses the wrong tone, exceeds character limits, or ignores instructions. You'll evaluate the outputs manually — then **build a hook that runs quality checks automatically** before any AI-generated content gets saved.
+You are a Marketing Coordinator at **Orbit Task Manager**, a fictional project management tool. Your team uses AI to draft social media posts, emails, and blog intros. Most of the time the drafts are good, but sometimes they violate your brand guidelines — the tone is too aggressive, there are too many emojis, forbidden phrases sneak in, or required elements are missing.
+
+Your Brand Manager has asked you to set up a quality check so that every piece of AI-generated content gets reviewed against the guidelines before it goes out.
 
 ## What You Have
 
-A JSON file at `data/ai_outputs.json` with 20 AI-generated texts. Each has the input, constraints (tone, length limit, language), and the actual output. Some have intentional flaws.
+A JSON file at `data/ai_outputs.json` with 20 AI-generated content drafts. Each entry includes:
+- **type** — what kind of content (social_media_post, email_subject_line, blog_intro, customer_email)
+- **platform** — where it will be published
+- **draft** — the actual content text
+- **brand_guidelines** — the rules it should follow (tone, emoji limit, forbidden phrases, max length, required elements)
 
-## Your Task
+Some drafts follow the guidelines perfectly. Others have intentional violations for you to catch.
 
-### Part 1: Manual evaluation (warm-up)
+## Step-by-Step Instructions
 
-1. **Define your criteria.** Ask Claude:
-   ```
-   Read data/ai_outputs.json. Based on the constraints in each entry,
-   define a quality checklist: length limit, tone, required fields,
-   hallucinated info, language, formatting issues.
-   ```
+### Part 1: Manual evaluation (15 minutes)
 
-2. **Evaluate all outputs.** Ask Claude:
-   ```
-   Evaluate all 20 outputs against your checklist. For each:
-   Pass/Fail, which criteria failed, severity (Critical/Medium/Low),
-   one-line explanation. Output as a markdown table.
-   ```
+Before automating anything, understand what "good" and "bad" look like.
 
-3. **Find patterns.** Ask Claude:
-   ```
-   What's the overall pass rate? Which criteria fail most often?
-   Are there patterns (certain tones = more errors)? Group the failures.
-   Write a QA report and save as qa_report.md
-   ```
+**Step 1.** Ask Claude to read the data and create a checklist:
 
-### Part 2: Build a quality-check hook (the real exercise)
+```
+Read data/ai_outputs.json. For each entry, the brand_guidelines
+field defines the rules. Create a quality checklist that covers
+all the rule types across all entries: tone, emoji count,
+forbidden phrases, length limits, and required elements.
+```
 
-4. Now **automate this quality check as a hook.** Ask Claude:
-   ```
-   Help me create a hook that runs after Claude writes any file.
-   Following the format from the 06-hooks module, the hook should:
-   - Trigger on PostToolUse for the Write tool
-   - Check if the file being written contains AI-generated content
-     (look for patterns like email templates, outreach messages)
-   - Validate: no markdown in plain text fields, length within limits,
-     no placeholder text like {{firstName}} left unresolved
-   - Output a warning if quality issues are found
+**Step 2.** Ask Claude to evaluate every draft:
 
-   Create the hook script at ~/.claude/hooks/qa-check.sh
-   and show me the settings.json configuration.
-   ```
+```
+Evaluate all 20 content drafts against their brand guidelines.
+For each one, give me:
+- Pass or Fail
+- Which specific rules were violated (if any)
+- Severity: Critical (would damage the brand), Medium (noticeable
+  issue), or Low (minor nitpick)
 
-5. **Test the hook.** Ask Claude to generate a new outreach email and save it. The hook should run automatically and flag any issues.
+Show results as a markdown table. Save it as evaluation_results.md
+```
 
-### Part 3: Make it smarter
+**Step 3.** Ask Claude to find patterns:
 
-6. Improve your hook:
-   - Add a severity threshold (only block on Critical issues, warn on Medium)
-   - Log all checks to a `qa_log.txt` for tracking over time
-   - Consider using a `PreToolUse` hook instead — catch issues *before* the file is written
+```
+Based on the evaluation:
+- What's the overall pass rate?
+- Which types of content fail most often?
+- Which rule violations are most common?
+- What recommendations would you give to the AI content
+  generation team?
+Add this analysis to evaluation_results.md
+```
 
-## Connection to Module 06 (Hooks)
+### Part 2: Build a quality-check hook (15 minutes)
 
-| Hook Concept | How You Use It Here |
-|-------------|-------------------|
-| **PostToolUse event** | Triggers after Claude writes a file |
-| **Hook script** (`~/.claude/hooks/`) | Your `qa-check.sh` quality validator |
-| **settings.json config** | Maps the event to your hook |
-| **Exit codes** | Non-zero blocks the action (for PreToolUse) |
-| **Matcher** | Only triggers for `Write` tool, not all tools |
+Now automate the quality check as a hook. A hook is a script that Claude Code runs automatically when a specific event happens — in this case, after a file is written.
 
-## Success Criteria
+**Step 4.** Ask Claude to help you create the hook:
 
-- [ ] All 20 outputs are evaluated with pass/fail and reasoning
-- [ ] A QA report exists identifying patterns and recommendations
-- [ ] `~/.claude/hooks/qa-check.sh` exists and is executable
-- [ ] `settings.json` has the hook configured for PostToolUse:Write
-- [ ] The hook runs automatically when Claude writes a file
+```
+Help me create a hook that checks brand guideline compliance.
+Following the format from the 06-hooks module, I want:
+
+- A script that checks any written file for common brand issues:
+  * More than 2 emojis
+  * ALL CAPS words (shouting)
+  * Forbidden marketing phrases like "URGENT", "ACT NOW",
+    "crushing it", "game-changing", "limited time"
+  * Unresolved placeholders like {{firstName}} or [First Name]
+- The script should output warnings listing what it found
+- It should be a simple shell script (no coding experience needed)
+
+Create the hook script at hooks/brand-check.sh
+and show me the settings.json configuration that would
+make this run after Claude writes any file.
+```
+
+**Step 5.** Review the hook script Claude created. Ask it to explain each part:
+
+```
+Walk me through the brand-check.sh script line by line.
+Explain what each part does in plain English.
+I'm not a developer, so keep it simple.
+```
+
+**Step 6.** Test the hook by asking Claude to generate content that would trigger it:
+
+```
+Write a promotional social media post about Orbit's new feature
+and save it as test_post.txt. Make it enthusiastic but don't
+worry about brand guidelines — I want to see if the hook catches
+any issues.
+```
+
+If the hook is configured correctly, it should automatically flag any brand guideline issues in the generated content.
+
+### Part 3: Understand and improve (10 minutes)
+
+**Step 7.** Reflect on what the hook does and where it fits:
+
+```
+Explain the difference between:
+- A PreToolUse hook (runs BEFORE Claude does something)
+- A PostToolUse hook (runs AFTER Claude does something)
+
+For brand guideline checking, which makes more sense and why?
+```
+
+**Step 8.** Think about other hooks that could help your workflow. For example:
+- A hook that checks if files being saved contain sensitive data (customer emails, phone numbers)
+- A hook that ensures every markdown file has a title heading
+- A hook that warns if a file is getting too long
+
+You do not need to build these — just think about what automatic quality gates would help your work.
+
+## What Hooks Let You Do Here
+
+| Hook Concept | How You Used It |
+|---|---|
+| **Event trigger** | The hook fires when a file is written |
+| **Hook script** | A shell script that checks for brand violations |
+| **Automatic execution** | The check runs without you remembering to ask |
+| **Warnings** | Issues are flagged immediately, not discovered later |
+| **Settings configuration** | The hook is registered in settings.json |
+
+## A Note on Hooks for Non-Developers
+
+Hooks involve a small amount of scripting, but you do not need to write the scripts yourself — Claude Code will write them for you. Your job is to:
+1. Know what you want checked (the brand guidelines)
+2. Ask Claude to build the hook
+3. Understand what the hook does at a high level
+4. Test it and refine the rules
+
+Think of hooks like email filters: you set the rules once, and they run automatically from then on.
+
+## Success Checklist
+
+- [ ] All 20 content drafts are evaluated with pass/fail and reasoning
+- [ ] An `evaluation_results.md` report identifies patterns and recommendations
+- [ ] A `hooks/brand-check.sh` script exists that checks for common violations
+- [ ] You understand the settings.json configuration for the hook
+- [ ] You can explain what the hook does in plain English
 
 ## What You Learned
 
-**Hooks are quality gates that run without you thinking about them.** Instead of manually checking every AI output, you encode your quality criteria into a hook that fires automatically. This is the difference between "checking quality when you remember" and "quality is always checked."
+Hooks are quality gates that run without you thinking about them. Instead of manually reviewing every piece of AI-generated content, you encode your quality criteria into a hook that fires automatically. This is the difference between "checking quality when you remember" and "quality is always checked." For marketing and content teams, this means brand consistency at scale.

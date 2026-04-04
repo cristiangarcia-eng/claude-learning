@@ -73,4 +73,3 @@ Presiona **Shift+Tab** para alternar entre modos:
 
 > **Consejo**: Empieza en Modo Plan cuando explores algo nuevo. Cambia a Normal o Auto cuando estés listo para ejecutar.
 
-**Siguiente paso**: [Controla Claude desde tu teléfono con voz y sesiones remotas →](../12-voice-and-remote/README.es.md)

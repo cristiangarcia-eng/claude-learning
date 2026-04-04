@@ -73,4 +73,3 @@ La diferencia es que `/voice` solo funciona dentro de Claude Code, mientras que 
 
 > **Esto lo cambia todo.** Una vez que te acostumbras a la entrada por voz, volver a escribir se siente dolorosamente lento. La mayoría de personas que lo prueban nunca vuelven atrás.
 
-**Siguiente paso**: [Configura Claude Code y ten tu primera conversación →](../00b-quickstart/README.es.md)

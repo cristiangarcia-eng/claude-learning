@@ -70,4 +70,3 @@ Tasks run on Anthropic's cloud infrastructure — they work even when your compu
 
 > **Tip**: The Desktop App is the best experience for non-developers. Visual diffs make it much easier to review changes than reading terminal output.
 
-**Next step**: [Let Claude see and control your screen with Computer Use →](../14-computer-use/)

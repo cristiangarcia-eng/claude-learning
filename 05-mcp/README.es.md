@@ -92,4 +92,3 @@ Siempre puedes reconectarlos después cuando los necesites. Piensa en ello como 
 - **Desconecta cuando termines** — elimina MCPs que no estés usando activamente para ahorrar espacio de contexto
 - **Revisa con `/mcp`** — escribe esto dentro de Claude Code para ver qué está conectado y si funciona
 
-**Siguiente paso**: [Delega tareas complejas a subagentes especializados →](../04-subagents/README.es.md)

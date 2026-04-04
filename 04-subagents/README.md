@@ -92,4 +92,3 @@ There are three ways:
 - **Use background mode** for heavy tasks so you can keep working
 - **Skills for format, subagents for thinking** — if you need a template applied, use a Skill. If you need analysis done, use a Subagent.
 
-**Next step**: [Control Claude from your phone with voice and remote sessions →](../12-voice-and-remote/)

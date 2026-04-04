@@ -88,4 +88,3 @@ Una vez creado, puedes usar un skill de dos formas:
 | Incluye ejemplos del resultado esperado en tu skill | Dejar que Claude adivine el formato |
 | Comparte skills útiles con tu equipo | Guardarte flujos de trabajo útiles |
 
-**Siguiente paso**: [Conecta Claude a datos en vivo con MCP →](../05-mcp/README.es.md)

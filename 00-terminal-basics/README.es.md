@@ -128,4 +128,3 @@ Solo escribe `pwd` para ver tu ubicación actual. Siempre puedes volver al inici
 
 En serio — `pwd`, `ls`, `cd` y `mkdir` son los únicos comandos que necesitarás. Una vez que Claude Code esté corriendo, le hablas en español simple, no con comandos de terminal.
 
-**Siguiente paso**: [Configura la entrada por voz para trabajar sin escribir →](../00g-voice-input/README.es.md)

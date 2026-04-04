@@ -53,4 +53,3 @@ Claude made several changes and now things are messy. No problem — rewind to t
 
 > **The key idea:** Checkpoints let you experiment without fear. Try things, and if they don't work, rewind. It's that simple.
 
-**Next step**: [Master the CLI — print mode, piping, and scripting →](../10-cli/)

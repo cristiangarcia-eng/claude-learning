@@ -106,13 +106,18 @@ did manually, the subagent should:
 Save the agent definition at .claude/agents/data-analyst.md
 ```
 
-**Step 5.** Test your subagent by delegating the same analysis to it:
+**Step 5.** Test your subagent by delegating the same analysis to it.
+
+> **How custom agents work in Claude Code:**
+> Files in `.claude/agents/` become available as slash commands. When you type `/data-analyst`, Claude loads the system prompt from that `.md` file and uses it to guide its response.
 
 ```
-@data-analyst Analyze data/conversations.json. Focus on finding
+/data-analyst Analyze data/conversations.json. Focus on finding
 patterns that explain customer satisfaction. Save the report
 as satisfaction_report.md
 ```
+
+> **Tip:** The agent runs within your current conversation, so it has access to your earlier analysis. To test it "fresh," start a new conversation first (`/clear`) and then invoke `/data-analyst`.
 
 Compare the subagent's output to your manual analysis from Part 1. Did it cover the same ground? Did it find anything you missed?
 
@@ -139,7 +144,7 @@ Update .claude/agents/data-analyst.md with these improvements.
 | **Agent file** (`.claude/agents/`) | You created `data-analyst.md` with expertise and instructions |
 | **Tools restriction** | Only Read, Bash, Glob, Grep — safe, read-only tools |
 | **Structured process** | The agent follows the same analysis steps every time |
-| **Delegation** (`@data-analyst`) | You hand off the analysis instead of doing it yourself |
+| **Delegation** (`/data-analyst`) | You hand off the analysis instead of doing it yourself |
 | **Reusability** | The same agent works on any dataset, not just this one |
 
 ## Success Checklist
@@ -147,7 +152,7 @@ Update .claude/agents/data-analyst.md with these improvements.
 - [ ] You explored the support data and found satisfaction patterns
 - [ ] A `manual_analysis.md` report exists with insights
 - [ ] `.claude/agents/data-analyst.md` exists with a defined process
-- [ ] Delegating to `@data-analyst` produces a useful report
+- [ ] Delegating to `/data-analyst` produces a useful report
 - [ ] The subagent report includes actionable recommendations
 
 ## What You Learned

@@ -106,13 +106,18 @@ did manually, the subagent should:
 Save the agent definition at .claude/agents/data-analyst.md
 ```
 
-**Paso 5.** Prueba tu subagent delegándole el mismo análisis:
+**Paso 5.** Prueba tu subagent delegándole el mismo análisis.
+
+> **Cómo funcionan los agentes custom en Claude Code:**
+> Los archivos en `.claude/agents/` se convierten en slash commands. Cuando escribes `/data-analyst`, Claude carga las instrucciones de ese archivo `.md` y las usa para guiar su respuesta.
 
 ```
-@data-analyst Analyze data/conversations.json. Focus on finding
+/data-analyst Analyze data/conversations.json. Focus on finding
 patterns that explain customer satisfaction. Save the report
 as satisfaction_report.md
 ```
+
+> **Tip:** El agente corre dentro de tu conversación actual, así que tiene acceso a tu análisis anterior. Para probarlo "en limpio," inicia una conversación nueva primero (`/clear`) y luego invoca `/data-analyst`.
 
 Compara la salida del subagent con tu análisis manual de la Parte 1. ¿Cubrió el mismo terreno? ¿Encontró algo que se te escapó?
 
@@ -139,7 +144,7 @@ Update .claude/agents/data-analyst.md with these improvements.
 | **Archivo de agente** (`.claude/agents/`) | Creaste `data-analyst.md` con experiencia e instrucciones |
 | **Restricción de herramientas** | Solo Read, Bash, Glob, Grep — herramientas seguras y de solo lectura |
 | **Proceso estructurado** | El agente sigue los mismos pasos de análisis cada vez |
-| **Delegación** (`@data-analyst`) | Delegas el análisis en lugar de hacerlo tú |
+| **Delegación** (`/data-analyst`) | Delegas el análisis en lugar de hacerlo tú |
 | **Reutilización** | El mismo agente funciona con cualquier conjunto de datos, no solo este |
 
 ## Lista de verificación
@@ -147,7 +152,7 @@ Update .claude/agents/data-analyst.md with these improvements.
 - [ ] Exploraste los datos de soporte y encontraste patrones de satisfacción
 - [ ] Existe un informe `manual_analysis.md` con hallazgos
 - [ ] Existe `.claude/agents/data-analyst.md` con un proceso definido
-- [ ] Delegar a `@data-analyst` produce un informe útil
+- [ ] Delegar a `/data-analyst` produce un informe útil
 - [ ] El informe del subagent incluye recomendaciones accionables
 
 ## Lo que aprendiste

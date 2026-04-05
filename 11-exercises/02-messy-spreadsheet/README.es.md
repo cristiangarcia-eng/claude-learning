@@ -61,6 +61,10 @@ data, inconsistencies). Show me specific examples of each problem.
 
 Revisa el diagnóstico. Entender los problemas es la mitad del trabajo.
 
+**Quieres ver el desorden con tus propios ojos?** Abre `data/raw_sales.csv` en Excel o Google Sheets. Verás algo así:
+
+![Datos de ventas en bruto en Google Sheets -- nota los nombres inconsistentes, formatos de fecha mezclados y notas en campos numéricos](images/raw-sales-sheets.png)
+
 ### Paso 2: Limpia los datos (10 minutos)
 
 Pídele a Claude Code que arregle todo:
@@ -93,7 +97,9 @@ Apply these rules:
 Save the clean file as data/clean_sales.csv
 ```
 
-Revisa el resultado. Abre `data/clean_sales.csv` y verifica que se vea bien.
+Revisa el resultado. Abre `data/clean_sales.csv` en Excel o Google Sheets para verificar que se vea bien. Compáralo con el original -- la diferencia debería ser dramática:
+
+![Datos de ventas limpios en Google Sheets -- nombres estandarizados, fechas consistentes, duplicados eliminados, sin notas en campos numéricos](images/clean-sales-sheets.png)
 
 ### Paso 3: Construye el skill (10 minutos)
 

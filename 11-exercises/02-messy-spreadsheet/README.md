@@ -61,6 +61,10 @@ data, inconsistencies). Show me specific examples of each problem.
 
 Review the diagnosis. Understanding the problems is half the work.
 
+**Want to see the mess for yourself?** Open `data/raw_sales.csv` in Excel or Google Sheets. You will see something like this:
+
+![Raw sales data in Google Sheets -- notice the inconsistent names, mixed date formats, and notes in number fields](images/raw-sales-sheets.png)
+
 ### Step 2: Clean the data (10 minutes)
 
 Ask Claude Code to fix everything:
@@ -93,7 +97,9 @@ Apply these rules:
 Save the clean file as data/clean_sales.csv
 ```
 
-Check the output. Open `data/clean_sales.csv` and verify it looks right.
+Check the output. Open `data/clean_sales.csv` in Excel or Google Sheets to verify it looks right. Compare it with the original -- the difference should be dramatic:
+
+![Clean sales data in Google Sheets -- names standardized, dates consistent, duplicates removed, no more notes in number fields](images/clean-sales-sheets.png)
 
 ### Step 3: Build the skill (10 minutes)
 

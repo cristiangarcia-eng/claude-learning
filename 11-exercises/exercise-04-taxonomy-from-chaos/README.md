@@ -22,6 +22,21 @@ A CSV file at `data/raw_entries.csv` with 200 feedback entries. Each row has:
 - **source** — where it came from (app_store_review, support_ticket, in_app_survey, feature_request_form)
 - **date_submitted** — when it was submitted
 
+## Setup
+
+This exercise uses data files included in the course repository. If you haven't already, clone the repo and navigate to this exercise:
+
+```bash
+git clone https://github.com/cristiangarcia-eng/claude-learning.git
+cd claude-learning/11-exercises/exercise-04-taxonomy-from-chaos
+```
+
+If you already cloned the repo, just navigate to the exercise folder:
+
+```bash
+cd claude-learning/11-exercises/exercise-04-taxonomy-from-chaos
+```
+
 ## Step-by-Step Instructions
 
 ### Part 1: Explore the data (10 minutes)

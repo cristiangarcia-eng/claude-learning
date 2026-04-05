@@ -32,6 +32,21 @@ A CSV file at `data/raw_sales.csv` with ~40 rows of retail partner sales data. T
 - **Notes mixed into number fields** ("12500 (estimated)", "$8,200 USD")
 - **Inconsistent currency formatting** ("$12,500", "12500", "$12.5K")
 
+## Setup
+
+This exercise uses data files included in the course repository. If you haven't already, clone the repo and navigate to this exercise:
+
+```bash
+git clone https://github.com/cristiangarcia-eng/claude-learning.git
+cd claude-learning/11-exercises/exercise-02-messy-spreadsheet
+```
+
+If you already cloned the repo, just navigate to the exercise folder:
+
+```bash
+cd claude-learning/11-exercises/exercise-02-messy-spreadsheet
+```
+
 ## Step-by-Step Instructions
 
 ### Step 1: Explore the mess (5 minutes)

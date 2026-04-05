@@ -25,6 +25,21 @@ Un archivo JSON en `data/conversations.json` con 40 conversaciones de soporte al
 - **resolution** — resolved, escalated o unresolved
 - **messages** — el hilo completo de la conversación
 
+## Preparación
+
+Este ejercicio usa archivos de datos incluidos en el repositorio del curso. Si aún no lo has hecho, clona el repo y navega a este ejercicio:
+
+```bash
+git clone https://github.com/cristiangarcia-eng/claude-learning.git
+cd claude-learning/11-exercises/exercise-05-conversation-analysis
+```
+
+Si ya clonaste el repo, solo navega a la carpeta del ejercicio:
+
+```bash
+cd claude-learning/11-exercises/exercise-05-conversation-analysis
+```
+
 ## Instrucciones paso a paso
 
 ### Parte 1: Hacer el análisis manualmente (15 minutos)

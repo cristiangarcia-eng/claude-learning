@@ -27,14 +27,14 @@ Un archivo CSV en `data/raw_entries.csv` con 200 entradas de feedback. Cada fila
 Este ejercicio usa archivos de datos incluidos en el repositorio del curso. Si aún no lo has hecho, clona el repo y navega a este ejercicio:
 
 ```bash
-git clone https://github.com/cristiangarcia-eng/claude-learning.git
-cd claude-learning/11-exercises/exercise-04-taxonomy-from-chaos
+git clone https://github.com/cristiangarcia-eng/claude-learning.git ~/Desktop/claude-learning
+cd ~/Desktop/claude-learning/11-exercises/exercise-04-taxonomy-from-chaos
 ```
 
 Si ya clonaste el repo, solo navega a la carpeta del ejercicio:
 
 ```bash
-cd claude-learning/11-exercises/exercise-04-taxonomy-from-chaos
+cd ~/Desktop/claude-learning/11-exercises/exercise-04-taxonomy-from-chaos
 ```
 
 ## Instrucciones paso a paso

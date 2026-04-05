@@ -39,14 +39,14 @@ sample-project/
 This exercise uses data files included in the course repository. If you haven't already, clone the repo and navigate to this exercise:
 
 ```bash
-git clone https://github.com/cristiangarcia-eng/claude-learning.git
-cd claude-learning/11-exercises/exercise-01-context-engineering
+git clone https://github.com/cristiangarcia-eng/claude-learning.git ~/Desktop/claude-learning
+cd ~/Desktop/claude-learning/11-exercises/exercise-01-context-engineering
 ```
 
 If you already cloned the repo, just navigate to the exercise folder:
 
 ```bash
-cd claude-learning/11-exercises/exercise-01-context-engineering
+cd ~/Desktop/claude-learning/11-exercises/exercise-01-context-engineering
 ```
 
 ## Step-by-Step Instructions

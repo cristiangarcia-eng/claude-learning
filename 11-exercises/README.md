@@ -14,17 +14,17 @@ You don't just use Claude Code — you extend it.
 
 | # | Exercise | Module | Feature You Build | Level |
 |---|----------|--------|-------------------|-------|
-| 1 | [Context Engineering](exercise-01-context-engineering/) | [02-memory](../02-memory/) | CLAUDE.md with layered memory | Beginner |
-| 2 | [Tame a Messy Spreadsheet](exercise-02-messy-spreadsheet/) | [01-slash-commands](../01-slash-commands/) | A reusable `/clean-csv` command | Beginner |
-| 3 | [Research & Structure](exercise-03-research-landscape/) | [03-skills](../03-skills/) | An auto-triggered research skill | Beginner |
-| 4 | [Build a Taxonomy](exercise-04-taxonomy-from-chaos/) | [08-checkpoints](../08-checkpoints/) | Checkpoint-based approach comparison | Intermediate |
-| 5 | [Conversation Analysis](exercise-05-conversation-analysis/) | [04-subagents](../04-subagents/) | A `data-analyst` subagent | Intermediate |
-| 6 | [Evaluate AI Output](exercise-06-evaluate-ai-output/) | [06-hooks](../06-hooks/) | A quality-check hook | Intermediate |
-| 7 | [Screenshots to Spec](exercise-07-screenshots-to-spec/) | [09-advanced](../09-advanced-features/) | Plan mode + multimodal workflow | Intermediate |
-| 8 | [Prioritize from Chaos](exercise-08-prioritize-from-chaos/) | [09-advanced](../09-advanced-features/) | Plan mode for framework design | Intermediate |
-| 9 | [Folder Audit](exercise-09-folder-audit/) | [10-cli](../10-cli/) | CLI scripts with `claude -p` | Advanced |
-| 10 | [Content Pipeline](exercise-10-end-to-end-pipeline/) | [07-plugins](../07-plugins/) | A complete distributable plugin | Advanced |
-| 11 | [Connect Systems](exercise-11-connect-systems/) | [05-mcp](../05-mcp/) | MCP server + cross-system workflow | Advanced |
+| 1 | [Context Engineering](01-context-engineering/) | [02-memory](../02-memory/) | CLAUDE.md with layered memory | Beginner |
+| 2 | [Tame a Messy Spreadsheet](02-messy-spreadsheet/) | [01-slash-commands](../01-slash-commands/) | A reusable `/clean-csv` command | Beginner |
+| 3 | [Research & Structure](03-research-landscape/) | [03-skills](../03-skills/) | An auto-triggered research skill | Beginner |
+| 4 | [Build a Taxonomy](04-taxonomy-from-chaos/) | [08-checkpoints](../08-checkpoints/) | Checkpoint-based approach comparison | Intermediate |
+| 5 | [Conversation Analysis](05-conversation-analysis/) | [04-subagents](../04-subagents/) | A `data-analyst` subagent | Intermediate |
+| 6 | [Evaluate AI Output](06-evaluate-ai-output/) | [06-hooks](../06-hooks/) | A quality-check hook | Intermediate |
+| 7 | [Screenshots to Spec](07-screenshots-to-spec/) | [09-advanced](../09-advanced-features/) | Plan mode + multimodal workflow | Intermediate |
+| 8 | [Prioritize from Chaos](08-prioritize-from-chaos/) | [09-advanced](../09-advanced-features/) | Plan mode for framework design | Intermediate |
+| 9 | [Folder Audit](09-folder-audit/) | [10-cli](../10-cli/) | CLI scripts with `claude -p` | Advanced |
+| 10 | [Content Pipeline](10-end-to-end-pipeline/) | [07-plugins](../07-plugins/) | A complete distributable plugin | Advanced |
+| 11 | [Connect Systems](11-connect-systems/) | [05-mcp](../05-mcp/) | MCP server + cross-system workflow | Advanced |
 
 ## Who Are These For?
 

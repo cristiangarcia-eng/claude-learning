@@ -104,7 +104,7 @@ Cambia durante una sesión con `Option+P` (Mac) o `Alt+P` (Windows/Linux).
 
 ## Ejercicio practico
 
-> **[Ejercicio 9: Auditoria de carpeta](../11-exercises/exercise-09-folder-audit/)** — Usa `claude -p`, piping y salida JSON para construir un script reutilizable de auditoria de carpeta. Práctica el modo print, enviar contenido a Claude via piping y scripting con salida estructurada.
+> **[Ejercicio 9: Auditoria de carpeta](../11-exercises/09-folder-audit/)** — Usa `claude -p`, piping y salida JSON para construir un script reutilizable de auditoria de carpeta. Práctica el modo print, enviar contenido a Claude via piping y scripting con salida estructurada.
 >
 > **Tiempo:** 30 min | **Datos:** Audita la carpeta de ejercicios misma (¡meta!)
 

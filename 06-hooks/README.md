@@ -1153,7 +1153,7 @@ Edit `~/.claude/settings.json` or `.claude/settings.json` with the hook configur
 
 ## Practice Exercise
 
-> **[Exercise 6: Evaluate & QA an AI Output](../11-exercises/exercise-06-evaluate-ai-output/)** — Evaluate 20 AI-generated texts for quality, then build a PostToolUse hook that automatically checks output quality. You will practice hook scripts, settings.json configuration, matchers, and exit codes.
+> **[Exercise 6: Evaluate & QA an AI Output](../11-exercises/06-evaluate-ai-output/)** — Evaluate 20 AI-generated texts for quality, then build a PostToolUse hook that automatically checks output quality. You will practice hook scripts, settings.json configuration, matchers, and exit codes.
 >
 > **Time:** 40 min | **Data:** 20 AI outputs with intentional flaws to catch
 

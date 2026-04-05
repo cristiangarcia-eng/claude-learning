@@ -28,13 +28,13 @@ This exercise uses data files included in the course repository. If you haven't 
 
 ```bash
 git clone https://github.com/cristiangarcia-eng/claude-learning.git ~/Desktop/claude-learning
-cd ~/Desktop/claude-learning/11-exercises/exercise-04-taxonomy-from-chaos
+cd ~/Desktop/claude-learning/11-exercises/04-taxonomy-from-chaos
 ```
 
 If you already cloned the repo, just navigate to the exercise folder:
 
 ```bash
-cd ~/Desktop/claude-learning/11-exercises/exercise-04-taxonomy-from-chaos
+cd ~/Desktop/claude-learning/11-exercises/04-taxonomy-from-chaos
 ```
 
 ## Step-by-Step Instructions

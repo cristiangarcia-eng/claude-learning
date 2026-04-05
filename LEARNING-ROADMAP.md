@@ -700,17 +700,17 @@ Once you've learned the features, test your skills with real-world tasks. The [1
 
 | # | Exercise | Level | What You'll Practice |
 |---|----------|-------|---------------------|
-| 1 | [Context Engineering](11-exercises/exercise-01-context-engineering/) | Beginner | Setting up CLAUDE.md for any project |
-| 2 | [Tame a Messy Spreadsheet](11-exercises/exercise-02-messy-spreadsheet/) | Beginner | Claude generating and running Python scripts |
-| 3 | [Research & Structure](11-exercises/exercise-03-research-landscape/) | Beginner | Research + structured markdown output |
-| 4 | [Build a Taxonomy](11-exercises/exercise-04-taxonomy-from-chaos/) | Intermediate | Pattern recognition on 200 messy entries |
-| 5 | [Conversation Analysis](11-exercises/exercise-05-conversation-analysis/) | Intermediate | Data analysis on 100 conversations (JSON) |
-| 6 | [Evaluate AI Output](11-exercises/exercise-06-evaluate-ai-output/) | Intermediate | Systematic QA of 20 AI-generated texts |
-| 7 | [Screenshots to Spec](11-exercises/exercise-07-screenshots-to-spec/) | Intermediate | Multimodal: images to structured documents |
-| 8 | [Prioritize from Chaos](11-exercises/exercise-08-prioritize-from-chaos/) | Intermediate | Structuring 60 unstructured ideas |
-| 9 | [Folder Audit](11-exercises/exercise-09-folder-audit/) | Advanced | Navigating and synthesizing large info |
-| 10 | [Content Pipeline](11-exercises/exercise-10-end-to-end-pipeline/) | Advanced | Multi-step: brief → research → document → summary |
-| 11 | [Connect Systems](11-exercises/exercise-11-connect-systems/) | Advanced | MCP integrations with external tools |
+| 1 | [Context Engineering](11-exercises/01-context-engineering/) | Beginner | Setting up CLAUDE.md for any project |
+| 2 | [Tame a Messy Spreadsheet](11-exercises/02-messy-spreadsheet/) | Beginner | Claude generating and running Python scripts |
+| 3 | [Research & Structure](11-exercises/03-research-landscape/) | Beginner | Research + structured markdown output |
+| 4 | [Build a Taxonomy](11-exercises/04-taxonomy-from-chaos/) | Intermediate | Pattern recognition on 200 messy entries |
+| 5 | [Conversation Analysis](11-exercises/05-conversation-analysis/) | Intermediate | Data analysis on 100 conversations (JSON) |
+| 6 | [Evaluate AI Output](11-exercises/06-evaluate-ai-output/) | Intermediate | Systematic QA of 20 AI-generated texts |
+| 7 | [Screenshots to Spec](11-exercises/07-screenshots-to-spec/) | Intermediate | Multimodal: images to structured documents |
+| 8 | [Prioritize from Chaos](11-exercises/08-prioritize-from-chaos/) | Intermediate | Structuring 60 unstructured ideas |
+| 9 | [Folder Audit](11-exercises/09-folder-audit/) | Advanced | Navigating and synthesizing large info |
+| 10 | [Content Pipeline](11-exercises/10-end-to-end-pipeline/) | Advanced | Multi-step: brief → research → document → summary |
+| 11 | [Connect Systems](11-exercises/11-connect-systems/) | Advanced | MCP integrations with external tools |
 
 **Who are these for?** Everyone — sales, finance, HR, ops, product, marketing, engineering. Each exercise teaches a Claude Code skill through a universal business task.
 

@@ -1,10 +1,11 @@
-# Claude Code Plugins
+# Plugins
+**The distribution layer**
 
-## What Are Plugins?
+You've built Skills, created Subagents, connected MCP servers. Powerful stuff — but sharing this setup with your team means sending files, explaining configuration, and hoping everyone sets things up the same way. What if you could package everything into a single install command?
 
-Plugins are pre-built bundles that add new capabilities to Claude Code with a single install command. Instead of manually configuring tools one by one, a plugin installs everything you need in one step -- commands, integrations, and settings all packaged together.
+> **A plugin is a Skill, a Subagent, an MCP config, and settings — all in one install.**
 
-Think of plugins like apps on your phone: you find one that does what you need, install it, and start using it immediately.
+Plugins are pre-built bundles that add new capabilities to Claude Code with a single command. Think of them like apps on your phone: you find one that does what you need, install it, and start using it immediately.
 
 ## Why Use Plugins?
 
@@ -91,7 +92,7 @@ Your organization may have its own plugin marketplace with company-specific tool
 
 ## Practice Exercise
 
-> **[Exercise 10: End-to-End Content Pipeline](../11-exercises/exercise-10-end-to-end-pipeline/)** — Execute a brief-to-document pipeline (research, outline, document, summary), then package it as a distributable plugin with a slash command, subagent, skill, and templates.
+> **[Exercise 10: End-to-End Content Pipeline](../11-exercises/10-end-to-end-pipeline/)** — Execute a brief-to-document pipeline (research, outline, document, summary), then package it as a distributable plugin with a slash command, subagent, skill, and templates.
 >
 > **Time:** 45 min | **Data:** Choose a brief for your role (sales, finance, HR, etc.)
 

@@ -166,11 +166,11 @@ Conecta Claude Code a tu navegador Chrome con `claude --chrome` o `/chrome`. Cla
 
 ## Ejercicios prácticos
 
-> **[Ejercicio 7: De Capturas de Pantalla a Especificacion](../11-exercises/exercise-07-screenshots-to-spec/)** — Usa el modo plan para estructurar una especificacion a partir de capturas de pantalla, luego ejecuta. Práctica el modo plan, entrada multimodal y extended thinking.
+> **[Ejercicio 7: De Capturas de Pantalla a Especificacion](../11-exercises/07-screenshots-to-spec/)** — Usa el modo plan para estructurar una especificacion a partir de capturas de pantalla, luego ejecuta. Práctica el modo plan, entrada multimodal y extended thinking.
 >
 > **Tiempo:** 30 min | **Datos:** Tus propias capturas de pantalla (arrastra PNGs a la carpeta)
 
-> **[Ejercicio 8: Priorizar del Caos](../11-exercises/exercise-08-prioritize-from-chaos/)** — Disena un framework de priorizacion en modo plan, luego evalua 60 ideas. Práctica ciclos de plan/ejecucion y refinamiento de planes.
+> **[Ejercicio 8: Priorizar del Caos](../11-exercises/08-prioritize-from-chaos/)** — Disena un framework de priorizacion en modo plan, luego evalua 60 ideas. Práctica ciclos de plan/ejecucion y refinamiento de planes.
 >
 > **Tiempo:** 40 min | **Datos:** CSV de 60 filas con ideas no estructuradas de 6 departamentos
 

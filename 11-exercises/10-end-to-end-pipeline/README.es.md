@@ -26,7 +26,7 @@ A continuación se proporciona un brief del producto. También encontrarás un a
 
 1. Navega a la carpeta de este ejercicio:
    ```
-   cd 11-exercises/exercise-10-end-to-end-pipeline
+   cd 11-exercises/10-end-to-end-pipeline
    ```
 2. Abre el brief de ejemplo para entender el punto de partida:
    ```

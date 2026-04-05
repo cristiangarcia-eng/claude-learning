@@ -26,7 +26,7 @@ A product brief is provided below. You will also find a sample brief file at `sa
 
 1. Navigate to this exercise folder:
    ```
-   cd 11-exercises/exercise-10-end-to-end-pipeline
+   cd 11-exercises/10-end-to-end-pipeline
    ```
 2. Open the sample brief so you understand the starting point:
    ```

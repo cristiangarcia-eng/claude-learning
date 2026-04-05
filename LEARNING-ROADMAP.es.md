@@ -702,17 +702,17 @@ Una vez que hayas aprendido las funciones, pon a prueba tus habilidades con tare
 
 | # | Ejercicio | Nivel | Qué Vas a Practicar |
 |---|-----------|-------|---------------------|
-| 1 | [Ingeniería de Contexto](11-exercises/exercise-01-context-engineering/) | Principiante | Configurar CLAUDE.md para cualquier proyecto |
-| 2 | [Doma una Hoja de Cálculo Desordenada](11-exercises/exercise-02-messy-spreadsheet/) | Principiante | Claude genera y ejecuta scripts de Python |
-| 3 | [Investigación y Estructura](11-exercises/exercise-03-research-landscape/) | Principiante | Investigación + salida en markdown estructurado |
-| 4 | [Construye una Taxonomía](11-exercises/exercise-04-taxonomy-from-chaos/) | Intermedio | Reconocimiento de patrones en 200 entradas desordenadas |
-| 5 | [Análisis de Conversaciones](11-exercises/exercise-05-conversation-analysis/) | Intermedio | Análisis de datos en 100 conversaciones (JSON) |
-| 6 | [Evalúa Salida de IA](11-exercises/exercise-06-evaluate-ai-output/) | Intermedio | QA sistemático de 20 textos generados por IA |
-| 7 | [Capturas de Pantalla a Especificación](11-exercises/exercise-07-screenshots-to-spec/) | Intermedio | Multimodal: imágenes a documentos estructurados |
-| 8 | [Prioriza desde el Caos](11-exercises/exercise-08-prioritize-from-chaos/) | Intermedio | Estructurar 60 ideas no estructuradas |
-| 9 | [Auditoría de Carpetas](11-exercises/exercise-09-folder-audit/) | Avanzado | Navegar y sintetizar información extensa |
-| 10 | [Pipeline de Contenido](11-exercises/exercise-10-end-to-end-pipeline/) | Avanzado | Multi-paso: brief → investigación → documento → resumen |
-| 11 | [Conecta Sistemas](11-exercises/exercise-11-connect-systems/) | Avanzado | Integraciones MCP con herramientas externas |
+| 1 | [Ingeniería de Contexto](11-exercises/01-context-engineering/) | Principiante | Configurar CLAUDE.md para cualquier proyecto |
+| 2 | [Doma una Hoja de Cálculo Desordenada](11-exercises/02-messy-spreadsheet/) | Principiante | Claude genera y ejecuta scripts de Python |
+| 3 | [Investigación y Estructura](11-exercises/03-research-landscape/) | Principiante | Investigación + salida en markdown estructurado |
+| 4 | [Construye una Taxonomía](11-exercises/04-taxonomy-from-chaos/) | Intermedio | Reconocimiento de patrones en 200 entradas desordenadas |
+| 5 | [Análisis de Conversaciones](11-exercises/05-conversation-analysis/) | Intermedio | Análisis de datos en 100 conversaciones (JSON) |
+| 6 | [Evalúa Salida de IA](11-exercises/06-evaluate-ai-output/) | Intermedio | QA sistemático de 20 textos generados por IA |
+| 7 | [Capturas de Pantalla a Especificación](11-exercises/07-screenshots-to-spec/) | Intermedio | Multimodal: imágenes a documentos estructurados |
+| 8 | [Prioriza desde el Caos](11-exercises/08-prioritize-from-chaos/) | Intermedio | Estructurar 60 ideas no estructuradas |
+| 9 | [Auditoría de Carpetas](11-exercises/09-folder-audit/) | Avanzado | Navegar y sintetizar información extensa |
+| 10 | [Pipeline de Contenido](11-exercises/10-end-to-end-pipeline/) | Avanzado | Multi-paso: brief → investigación → documento → resumen |
+| 11 | [Conecta Sistemas](11-exercises/11-connect-systems/) | Avanzado | Integraciones MCP con herramientas externas |
 
 **¿Para quién son estos ejercicios?** Para todos — ventas, finanzas, RRHH, operaciones, producto, marketing, ingeniería. Cada ejercicio enseña una habilidad de Claude Code a través de una tarea empresarial universal.
 

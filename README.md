@@ -710,17 +710,17 @@ Claude:
 ├── 10-cli/
 │   └── README.md
 ├── 11-exercises/
-│   ├── exercise-01-context-engineering/
-│   ├── exercise-02-messy-spreadsheet/
-│   ├── exercise-03-research-landscape/
-│   ├── exercise-04-taxonomy-from-chaos/
-│   ├── exercise-05-conversation-analysis/
-│   ├── exercise-06-evaluate-ai-output/
-│   ├── exercise-07-screenshots-to-spec/
-│   ├── exercise-08-prioritize-from-chaos/
-│   ├── exercise-09-folder-audit/
-│   ├── exercise-10-end-to-end-pipeline/
-│   ├── exercise-11-connect-systems/
+│   ├── 01-context-engineering/
+│   ├── 02-messy-spreadsheet/
+│   ├── 03-research-landscape/
+│   ├── 04-taxonomy-from-chaos/
+│   ├── 05-conversation-analysis/
+│   ├── 06-evaluate-ai-output/
+│   ├── 07-screenshots-to-spec/
+│   ├── 08-prioritize-from-chaos/
+│   ├── 09-folder-audit/
+│   ├── 10-end-to-end-pipeline/
+│   ├── 11-connect-systems/
 │   └── README.md
 └── README.md (this file)
 ```

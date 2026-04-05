@@ -1154,7 +1154,7 @@ Edita `~/.claude/settings.json` o `.claude/settings.json` con la configuración 
 
 ## Ejercicio práctico
 
-> **[Ejercicio 6: Evaluar y controlar calidad de una salida IA](../11-exercises/exercise-06-evaluate-ai-output/)** — Evalúa 20 textos generados por IA en cuanto a calidad y luego construye un hook PostToolUse que compruebe automáticamente la calidad de la salida. Practicarás scripts de hooks, configuración de settings.json, matchers y códigos de salida.
+> **[Ejercicio 6: Evaluar y controlar calidad de una salida IA](../11-exercises/06-evaluate-ai-output/)** — Evalúa 20 textos generados por IA en cuanto a calidad y luego construye un hook PostToolUse que compruebe automáticamente la calidad de la salida. Practicarás scripts de hooks, configuración de settings.json, matchers y códigos de salida.
 >
 > **Tiempo:** 40 min | **Datos:** 20 salidas de IA con fallas intencionales para detectar
 

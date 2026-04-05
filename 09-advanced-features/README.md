@@ -166,11 +166,11 @@ Connect Claude Code to your Chrome browser with `claude --chrome` or `/chrome`. 
 
 ## Practice Exercises
 
-> **[Exercise 7: From Screenshots to Spec](../11-exercises/exercise-07-screenshots-to-spec/)** — Use plan mode to structure a spec from screenshots, then execute. Practice plan mode, multimodal input, and extended thinking.
+> **[Exercise 7: From Screenshots to Spec](../11-exercises/07-screenshots-to-spec/)** — Use plan mode to structure a spec from screenshots, then execute. Practice plan mode, multimodal input, and extended thinking.
 >
 > **Time:** 30 min | **Data:** Your own screenshots (drop PNGs into the folder)
 
-> **[Exercise 8: Prioritize from Chaos](../11-exercises/exercise-08-prioritize-from-chaos/)** — Design a prioritization framework in plan mode, then score 60 ideas. Practice plan/execute cycles and plan refinement.
+> **[Exercise 8: Prioritize from Chaos](../11-exercises/08-prioritize-from-chaos/)** — Design a prioritization framework in plan mode, then score 60 ideas. Practice plan/execute cycles and plan refinement.
 >
 > **Time:** 40 min | **Data:** 60-row CSV of unstructured ideas from 6 departments
 

@@ -204,7 +204,7 @@ For details on creating your own, see the [Skills Guide](../03-skills/).
 
 ## Practice Exercise
 
-> **[Exercise 2: Tame a Messy Spreadsheet](../11-exercises/exercise-02-messy-spreadsheet/)** — Clean a messy CSV with Claude Code, then turn your cleanup workflow into a reusable `/clean-csv` slash command. You will practice creating custom commands with proper frontmatter, descriptions, and allowed-tools.
+> **[Exercise 2: Tame a Messy Spreadsheet](../11-exercises/02-messy-spreadsheet/)** — Clean a messy CSV with Claude Code, then turn your cleanup workflow into a reusable `/clean-csv` slash command. You will practice creating custom commands with proper frontmatter, descriptions, and allowed-tools.
 >
 > **Time:** 30 min | **Data:** 50-row CSV with mixed languages, duplicates, and formatting issues
 

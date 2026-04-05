@@ -91,7 +91,7 @@ Tu organizacion puede tener su propio marketplace de plugins con herramientas es
 
 ## Ejercicio practico
 
-> **[Ejercicio 10: Pipeline de Contenido de Principio a Fin](../11-exercises/exercise-10-end-to-end-pipeline/)** — Ejecuta un pipeline de brief-a-documento (investigacion, esquema, documento, resumen), luego empaquetalo como un plugin distribuible con un slash command, subagent, skill y plantillas.
+> **[Ejercicio 10: Pipeline de Contenido de Principio a Fin](../11-exercises/10-end-to-end-pipeline/)** — Ejecuta un pipeline de brief-a-documento (investigacion, esquema, documento, resumen), luego empaquetalo como un plugin distribuible con un slash command, subagent, skill y plantillas.
 >
 > **Tiempo:** 45 min | **Datos:** Elige un brief para tu rol (ventas, finanzas, RRHH, etc.)
 

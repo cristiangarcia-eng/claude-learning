@@ -30,7 +30,7 @@ Usarás `claude -p` para analizar cada documento sin abrir una sesión interacti
 1. Abre tu terminal y navega a la carpeta de este ejercicio:
 
    ```bash
-   cd 11-exercises/exercise-09-folder-audit
+   cd 11-exercises/09-folder-audit
    ```
 
 2. **Ejecuta tu primer comando en modo print.** Esto envía un prompt a Claude e imprime la respuesta -- sin sesión interactiva:

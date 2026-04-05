@@ -80,7 +80,19 @@ Here is what to include:
 - I prefer concise summaries with a "So What?" section at the end
 ```
 
-Después de que Claude lo cree, abre el archivo y revísalo. Esta es tu **User Memory** -- te acompaña en todos los proyectos.
+Después de que Claude lo cree, revísalo pidiéndole a Claude:
+
+```
+Read the file at ~/.claude/CLAUDE.md and show me what it says
+```
+
+O ábrelo directamente en tu terminal:
+
+```bash
+cat ~/.claude/CLAUDE.md
+```
+
+Esta es tu **User Memory** -- te acompaña en todos los proyectos.
 
 ### Paso 3: Configura Project Memory (8 minutos)
 

@@ -80,7 +80,19 @@ Here is what to include:
 - I prefer concise summaries with a "So What?" section at the end
 ```
 
-After Claude creates it, open the file and review it. This is your **User Memory** -- it follows you across all projects.
+After Claude creates it, review it by asking Claude:
+
+```
+Read the file at ~/.claude/CLAUDE.md and show me what it says
+```
+
+Or open it directly in your terminal:
+
+```bash
+cat ~/.claude/CLAUDE.md
+```
+
+This is your **User Memory** -- it follows you across all projects.
 
 ### Step 3: Set up Project Memory (8 minutes)
 

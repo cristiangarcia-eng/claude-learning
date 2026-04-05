@@ -20,7 +20,22 @@ Tu VP pregunta: "¿Puedes armar un panorama del mercado de calzado deportivo? Qu
 
 ## Lo que tienes
 
-Un ejemplo de cómo se ve un buen resultado de investigación en `examples/example-output.md`. Este es tu estándar de calidad. Léelo antes de empezar.
+Un ejemplo de cómo se ve un buen resultado de investigación en `examples/example-output.md`. Este es tu estándar de calidad -- le pedirás a Claude que lo lea en la Parte 1.
+
+## Preparación
+
+Este ejercicio usa archivos incluidos en el repositorio del curso. Si aún no lo has hecho, clona el repo y navega a este ejercicio:
+
+```bash
+git clone https://github.com/cristiangarcia-eng/claude-learning.git ~/Desktop/claude-learning
+cd ~/Desktop/claude-learning/11-exercises/03-research-landscape
+```
+
+Si ya clonaste el repo, solo navega a la carpeta del ejercicio:
+
+```bash
+cd ~/Desktop/claude-learning/11-exercises/03-research-landscape
+```
 
 ## Instrucciones paso a paso
 

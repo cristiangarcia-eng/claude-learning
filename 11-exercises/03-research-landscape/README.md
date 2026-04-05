@@ -20,7 +20,22 @@ Your VP asks: "Can you put together a landscape of the athletic footwear market?
 
 ## What You Have
 
-An example of what good research output looks like at `examples/example-output.md`. This is your quality bar. Read it before you start.
+An example of what good research output looks like at `examples/example-output.md`. This is your quality bar -- you will ask Claude to read it in Part 1.
+
+## Setup
+
+This exercise uses files included in the course repository. If you haven't already, clone the repo and navigate to this exercise:
+
+```bash
+git clone https://github.com/cristiangarcia-eng/claude-learning.git ~/Desktop/claude-learning
+cd ~/Desktop/claude-learning/11-exercises/03-research-landscape
+```
+
+If you already cloned the repo, just navigate to the exercise folder:
+
+```bash
+cd ~/Desktop/claude-learning/11-exercises/03-research-landscape
+```
 
 ## Step-by-Step Instructions
 

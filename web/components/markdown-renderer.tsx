@@ -128,6 +128,8 @@ const components: Components = {
       resolvedSrc = resolvedSrc.replace(/.*resources\/logos\//, "/logos/");
     } else if (resolvedSrc.includes("resources/icons/")) {
       resolvedSrc = resolvedSrc.replace(/.*resources\/icons\//, "/icons/");
+    } else if (resolvedSrc.startsWith("images/")) {
+      resolvedSrc = resolvedSrc.replace("images/", "/exercise-images/");
     }
     return (
       <img

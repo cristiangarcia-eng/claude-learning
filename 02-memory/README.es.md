@@ -152,6 +152,17 @@ Claude las agregará a tu memoria de proyecto automáticamente.
 | "Compara todos los competidores contra Nike como referencia" | "Haz buen análisis" |
 | "Las cifras de ingresos están en millones de USD" | "Ten cuidado con los números" |
 
+## Cómo interactúan las dos capas
+
+Cuando ambas memorias están configuradas, Claude las lee al inicio de cada conversación. Si hay un conflicto, **la memoria de proyecto gana sobre la de usuario** para ese proyecto.
+
+| Capa | Ubicación | Alcance | Ejemplo |
+|------|-----------|---------|---------|
+| **User Memory** | `~/.claude/CLAUDE.md` | Todos tus proyectos | "Soy PM, usa viñetas" |
+| **Project Memory** | `./CLAUDE.md` en la raíz del proyecto | Solo este proyecto | "Los competidores son Adidas, New Balance..." |
+
+Por ejemplo: si tu User Memory dice "usa EUR para moneda" pero la Project Memory dice "usa USD", Claude usará USD para ese proyecto.
+
 ## Lo que la memoria NO es
 
 La memoria **no** es un historial de conversaciones. Claude no recuerda de qué hablaste ayer. La memoria es un conjunto de instrucciones y contexto que Claude lee de nuevo cada vez.

@@ -153,6 +153,17 @@ Claude will add these to your project memory automatically.
 | "Compare all competitors against Nike as the baseline" | "Do good analysis" |
 | "Revenue figures are in millions USD" | "Be careful with numbers" |
 
+## How the two layers interact
+
+When both memories are set up, Claude reads them both at the start of every conversation. If there's a conflict, **Project Memory wins over User Memory** for that project.
+
+| Layer | Location | Scope | Example |
+|-------|----------|-------|---------|
+| **User Memory** | `~/.claude/CLAUDE.md` | All your projects | "I'm a PM, use bullet points" |
+| **Project Memory** | `./CLAUDE.md` in the project root | Only this project | "Competitors are Adidas, New Balance..." |
+
+For example: if your User Memory says "use EUR for currency" but the Project Memory says "use USD", Claude will use USD for that project.
+
 ## What memory is NOT
 
 Memory is **not** a conversation history. Claude doesn't remember what you talked about yesterday. Memory is a set of instructions and context that Claude reads fresh every time.

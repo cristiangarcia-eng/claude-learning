@@ -247,18 +247,6 @@ export const LESSONS: LessonMeta[] = [
 
   // === PROJECTS: Hands-on exercises ===
   {
-    folder: "11-exercises/01-context-engineering",
-    slug: "project-context-engineering",
-    title: "Context Engineering",
-    titleEs: "Ingeniería de Contexto",
-    description: "Set up User Memory and Project Memory for the Nike project",
-    descriptionEs: "Configura User Memory y Project Memory para el proyecto Nike",
-    level: "projects",
-    duration: "15 min",
-    complexity: 1,
-    order: 20,
-  },
-  {
     folder: "11-exercises/02-messy-spreadsheet",
     slug: "project-messy-spreadsheet",
     title: "Data Cleanup",

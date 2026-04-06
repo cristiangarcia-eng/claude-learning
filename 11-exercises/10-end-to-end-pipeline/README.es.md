@@ -20,18 +20,45 @@ Tu equipo de marketing en Nike está preparando el lanzamiento de un nuevo produ
 
 ## Lo que tienes
 
-A continuación se proporciona un brief del producto. También encontrarás un archivo de ejemplo en `sample-brief.md` en la carpeta de este ejercicio.
+Un brief de producto en `data/data/sample-brief.md` — la entrada inicial para tu pipeline.
 
-## Configuración
+## Preparación
 
-1. Navega a la carpeta de este ejercicio:
-   ```
-   cd 11-exercises/10-end-to-end-pipeline
-   ```
-2. Abre el brief de ejemplo para entender el punto de partida:
-   ```
-   Lee sample-brief.md — esta es la entrada para nuestro pipeline
-   ```
+> **Este es el mismo flujo de trabajo que usarás en proyectos reales.** Crea un proyecto, copia tus datos, y trabaja desde ahí.
+
+**Descarga los archivos del curso** (solo la primera vez):
+
+```bash
+git clone https://github.com/cristiangarcia-eng/claude-learning.git ~/Desktop/claude-learning
+```
+
+**Crea tu proyecto:**
+
+```bash
+mkdir -p ~/Desktop/Claude/projects/end-to-end-pipeline/data
+mkdir ~/Desktop/Claude/projects/end-to-end-pipeline/output
+```
+
+**Copia los datos del ejercicio:**
+
+```bash
+cp ~/Desktop/claude-learning/11-exercises/10-end-to-end-pipeline/data/sample-brief.md ~/Desktop/Claude/projects/end-to-end-pipeline/data/
+```
+
+**Abre el proyecto:**
+
+```bash
+cd ~/Desktop/Claude/projects/end-to-end-pipeline
+```
+
+Inicia Claude Code aquí (`claude`). Tu proyecto se ve así:
+
+```
+end-to-end-pipeline/
+├── data/
+│   └── data/sample-brief.md
+└── output/          ← Claude guarda los resultados del pipeline aquí
+```
 
 ## Tu tarea
 
@@ -43,41 +70,41 @@ Trabaja cada etapa en orden. Cada paso se construye sobre la salida del anterior
 
 Pídele a Claude:
 ```
-Basándote en el brief de sample-brief.md, haz una investigación para este
+Basándote en el brief de data/sample-brief.md, haz una investigación para este
 lanzamiento de producto. Cubre: perfil del público objetivo, panorama
 competitivo (qué están haciendo otras marcas con materiales reciclados),
 ángulos clave de mensajes y posibles riesgos u objeciones. Guarda el
-resultado como 01-research-notes.md
+resultado como output/01-research-notes.md
 ```
 
 **Etapa 2 — Esquema**
 
 ```
-Usando la investigación en 01-research-notes.md, crea un esquema detallado
+Usando la investigación en output/01-research-notes.md, crea un esquema detallado
 para un paquete de contenido de lanzamiento. Incluye secciones para:
 comunicado de prensa, copy para redes sociales (3 plataformas), anuncio
 por email y puntos de conversación para el equipo de ventas interno.
 Señala dónde necesitamos datos reales vs. estimaciones.
-Guarda como 02-content-outline.md
+Guarda como output/02-content-outline.md
 ```
 
 **Etapa 3 — Borrador completo**
 
 ```
-Escribe el paquete de contenido completo basándote en 02-content-outline.md.
+Escribe el paquete de contenido completo basándote en output/02-content-outline.md.
 Hazlo profesional y alineado con la marca de una gran empresa deportiva.
 Incluye todas las secciones del esquema. Usa tablas donde sea útil.
-Guarda como 03-full-draft.md
+Guarda como output/03-full-draft.md
 ```
 
 **Etapa 4 — Revisión y resumen ejecutivo**
 
 ```
-Revisa 03-full-draft.md en cuanto a consistencia de tono, claridad de
+Revisa output/03-full-draft.md en cuanto a consistencia de tono, claridad de
 mensajes y completitud. Luego crea un resumen ejecutivo de una página con:
 la recomendación de lanzamiento, 3-5 mensajes clave, una tabla de
 cronograma y próximos pasos claros. Guarda el resumen como
-04-executive-summary.md
+output/04-executive-summary.md
 ```
 
 **Punto de control:** Ahora deberías tener cuatro archivos que forman la salida completa del pipeline. Abre cada uno y confirma que cada etapa se construye claramente sobre la anterior.

@@ -28,17 +28,40 @@ Algunos borradores siguen los lineamientos perfectamente. Otros tienen violacion
 
 ## Preparación
 
-Este ejercicio usa archivos de datos incluidos en el repositorio del curso. Si aún no lo has hecho, clona el repo y navega a este ejercicio:
+> **Este es el mismo flujo de trabajo que usarás en proyectos reales.** Crea un proyecto, copia tus datos, y trabaja desde ahí.
+
+**Descarga los archivos del curso** (solo la primera vez):
 
 ```bash
 git clone https://github.com/cristiangarcia-eng/claude-learning.git ~/Desktop/claude-learning
-cd ~/Desktop/claude-learning/11-exercises/06-evaluate-ai-output
 ```
 
-Si ya clonaste el repo, solo navega a la carpeta del ejercicio:
+**Crea tu proyecto:**
 
 ```bash
-cd ~/Desktop/claude-learning/11-exercises/06-evaluate-ai-output
+mkdir -p ~/Desktop/Claude/projects/evaluate-ai-output/data
+mkdir ~/Desktop/Claude/projects/evaluate-ai-output/output
+```
+
+**Copia los datos del ejercicio:**
+
+```bash
+cp ~/Desktop/claude-learning/11-exercises/06-evaluate-ai-output/data/ai_outputs.json ~/Desktop/Claude/projects/evaluate-ai-output/data/
+```
+
+**Abre el proyecto:**
+
+```bash
+cd ~/Desktop/Claude/projects/evaluate-ai-output
+```
+
+Inicia Claude Code aquí (`claude`). Tu proyecto se ve así:
+
+```
+evaluate-ai-output/
+├── data/
+│   └── ai_outputs.json
+└── output/          ← Claude guarda los resultados aquí
 ```
 
 ## Instrucciones paso a paso
@@ -66,7 +89,7 @@ For each one, give me:
 - Severity: Critical (would damage the brand), Medium (noticeable
   issue), or Low (minor nitpick)
 
-Show results as a markdown table. Save it as evaluation_results.md
+Show results as a markdown table. Save it as output/evaluation_results.md
 ```
 
 **Paso 3.** Pídele a Claude que encuentre patrones:
@@ -78,7 +101,7 @@ Based on the evaluation:
 - Which rule violations are most common?
 - What recommendations would you give to the AI content
   generation team?
-Add this analysis to evaluation_results.md
+Add this analysis to output/evaluation_results.md
 ```
 
 ### Parte 2: Construir un hook de verificación de calidad (15 minutos)
@@ -117,7 +140,7 @@ I'm not a developer, so keep it simple.
 
 ```
 Write a promotional social media post about Orbit's new feature
-and save it as test_post.txt. Make it enthusiastic but don't
+and save it as output/test_post.txt. Make it enthusiastic but don't
 worry about brand guidelines — I want to see if the hook catches
 any issues.
 ```
@@ -166,7 +189,7 @@ Piensa en los hooks como filtros de correo electrónico: configuras las reglas u
 ## Lista de verificación
 
 - [ ] Los 20 borradores de contenido están evaluados con aprobado/reprobado y justificación
-- [ ] Un informe `evaluation_results.md` identifica patrones y recomendaciones
+- [ ] Un informe `output/evaluation_results.md` identifica patrones y recomendaciones
 - [ ] Existe un script `hooks/brand-check.sh` que verifica violaciones comunes
 - [ ] Entiendes la configuración de settings.json para el hook
 - [ ] Puedes explicar lo que hace el hook en lenguaje sencillo

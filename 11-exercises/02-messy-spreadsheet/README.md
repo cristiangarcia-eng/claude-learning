@@ -34,24 +34,47 @@ A CSV file at `data/raw_sales.csv` with ~40 rows of retail partner sales data. T
 
 ## Setup
 
-This exercise uses data files included in the course repository. If you haven't already, clone the repo and navigate to this exercise:
+> **This is the same workflow you'll use for real projects.** Create a project, copy in your data, and work from there.
+
+**Get the course files** (first time only):
 
 ```bash
 git clone https://github.com/cristiangarcia-eng/claude-learning.git ~/Desktop/claude-learning
-cd ~/Desktop/claude-learning/11-exercises/02-messy-spreadsheet
 ```
 
-If you already cloned the repo, just navigate to the exercise folder:
+**Create your project:**
 
 ```bash
-cd ~/Desktop/claude-learning/11-exercises/02-messy-spreadsheet
+mkdir -p ~/Desktop/Claude/projects/messy-spreadsheet/data
+mkdir ~/Desktop/Claude/projects/messy-spreadsheet/output
+```
+
+**Copy the exercise data:**
+
+```bash
+cp ~/Desktop/claude-learning/11-exercises/02-messy-spreadsheet/data/raw_sales.csv ~/Desktop/Claude/projects/messy-spreadsheet/data/
+```
+
+**Open the project:**
+
+```bash
+cd ~/Desktop/Claude/projects/messy-spreadsheet
+```
+
+Start Claude Code here (`claude`). Your project looks like this:
+
+```
+messy-spreadsheet/
+├── data/
+│   └── raw_sales.csv
+└── output/          ← Claude saves results here
 ```
 
 ## Step-by-Step Instructions
 
 ### Step 1: Explore the mess (5 minutes)
 
-Open Claude Code in this exercise folder and ask:
+Open Claude Code in your project folder and ask:
 
 ```
 Read data/raw_sales.csv and give me a full diagnosis. How many issues
@@ -70,7 +93,7 @@ Review the diagnosis. Understanding the problems is half the work.
 Ask Claude Code to fix everything:
 
 ```
-Clean up data/raw_sales.csv and save the result as data/clean_sales.csv.
+Clean up data/raw_sales.csv and save the result as output/clean_sales.csv.
 Apply these rules:
 
 1. Standardize company names to their canonical form:
@@ -94,10 +117,10 @@ Apply these rules:
 7. Generate a cleanup report showing what changed (how many fixes
    per category)
 
-Save the clean file as data/clean_sales.csv
+Save the clean file as output/clean_sales.csv
 ```
 
-Check the output. Open `data/clean_sales.csv` in Excel or Google Sheets to verify it looks right. Compare it with the original -- the difference should be dramatic:
+Check the output. Open `output/clean_sales.csv` in Excel or Google Sheets to verify it looks right. Compare it with the original -- the difference should be dramatic:
 
 ![Clean sales data in Google Sheets -- names standardized, dates consistent, duplicates removed, no more notes in number fields](images/clean-sales-sheets.png)
 
@@ -117,7 +140,7 @@ The skill should:
   fix dates to YYYY-MM-DD, remove duplicates, normalize status fields,
   clean number formatting, fill gaps where possible
 - Always output a cleanup report showing what changed
-- Save the clean file with a _clean suffix (e.g., raw_sales_clean.csv)
+- Save the clean file in the output/ folder with a _clean suffix (e.g., output/raw_sales_clean.csv)
 
 Use the SKILL.md format from the 03-skills module.
 ```
@@ -143,7 +166,7 @@ The skill should trigger automatically and apply the same cleanup process withou
 
 ## Success Criteria
 
-- [ ] `data/clean_sales.csv` exists with standardized, deduplicated data
+- [ ] `output/clean_sales.csv` exists with standardized, deduplicated data
 - [ ] `.claude/skills/clean-csv/SKILL.md` exists with proper structure
 - [ ] The skill auto-triggers when you ask to "clean" or "standardize" a CSV
 - [ ] The skill works on any messy CSV, not just the sales data

@@ -25,8 +25,47 @@ Este ejercicio entrega ambos.
 
 ## Lo que tienes
 
-- `nike-competitive-snapshot.md` — tu análisis competitivo existente (datos locales, unos meses de antigüedad)
-- `competitor-urls.md` — una lista de páginas de competidores para consultar
+- `data/data/nike-competitive-snapshot.md` — tu análisis competitivo existente (datos locales, unos meses de antigüedad)
+- `data/data/competitor-urls.md` — una lista de páginas de competidores para consultar
+
+## Preparación
+
+> **Este es el mismo flujo de trabajo que usarás en proyectos reales.** Crea un proyecto, copia tus datos, y trabaja desde ahí.
+
+**Descarga los archivos del curso** (solo la primera vez):
+
+```bash
+git clone https://github.com/cristiangarcia-eng/claude-learning.git ~/Desktop/claude-learning
+```
+
+**Crea tu proyecto:**
+
+```bash
+mkdir -p ~/Desktop/Claude/projects/competitive-intelligence/data
+mkdir ~/Desktop/Claude/projects/competitive-intelligence/output
+```
+
+**Copia los datos del ejercicio:**
+
+```bash
+cp ~/Desktop/claude-learning/11-exercises/11-connect-systems/data/nike-competitive-snapshot.md ~/Desktop/claude-learning/11-exercises/11-connect-systems/data/competitor-urls.md ~/Desktop/Claude/projects/competitive-intelligence/data/
+```
+
+**Abre el proyecto:**
+
+```bash
+cd ~/Desktop/Claude/projects/competitive-intelligence
+```
+
+Inicia Claude Code aquí (`claude`). Tu proyecto se ve así:
+
+```
+competitive-intelligence/
+├── data/
+│   ├── data/nike-competitive-snapshot.md
+│   └── data/competitor-urls.md
+└── output/          ← Claude guarda los resultados aquí
+```
 
 ## Instrucciones paso a paso
 
@@ -78,11 +117,11 @@ Esta memoria informará cada análisis futuro en esta carpeta del proyecto.
 
    ```
    /plan I need to produce an updated competitive analysis that combines
-   our local data (nike-competitive-snapshot.md) with live web data.
+   our local data (data/nike-competitive-snapshot.md) with live web data.
 
    Plan the approach:
    - What should we fetch from each competitor's website?
-     (Read competitor-urls.md for the list)
+     (Read data/competitor-urls.md for the list)
    - How should we structure the comparison? (Remember our quality
      standards in CLAUDE.md)
    - How do we clearly distinguish "old local data" from "fresh web data"
@@ -111,14 +150,14 @@ Esta memoria informará cada análisis futuro en esta carpeta del proyecto.
    ```
    Execute the plan:
 
-   1. Read our local nike-competitive-snapshot.md
-   2. Read competitor-urls.md for the URLs to check
+   1. Read our local data/nike-competitive-snapshot.md
+   2. Read data/competitor-urls.md for the URLs to check
    3. Use Fetch MCP to pull data from each competitor URL listed
       (if a URL fails, note it and move on — some sites block automated access)
    4. Combine the local snapshot data with the fresh web data
    5. Write the full updated report following the plan structure
 
-   Save as updated-competitive-analysis.md
+   Save as output/updated-competitive-analysis.md
 
    Remember: cite every claim with its source — [local snapshot] or
    [web fetch, DATE].
@@ -145,7 +184,7 @@ Esta memoria informará cada análisis futuro en esta carpeta del proyecto.
     - Follow this process:
       1. Read local CLAUDE.md for project context and quality standards
       2. Read the most recent competitive analysis file
-      3. Read competitor-urls.md for URLs to fetch
+      3. Read data/competitor-urls.md for URLs to fetch
       4. Use Fetch MCP to pull live data from competitor websites
       5. Combine local + web data into updated analysis
       6. Include "Data Freshness" header, comparison table,
@@ -199,7 +238,7 @@ Este es tu sistema terminado. Un compañero de equipo que abra esta carpeta del 
 - [ ] Fetch MCP está instalado y funcionando
 - [ ] `CLAUDE.md` existe con contexto del proyecto y estándares de calidad
 - [ ] Usaste Plan Mode para diseñar la estructura del análisis antes de ejecutar
-- [ ] `updated-competitive-analysis.md` existe con fuentes citadas (local vs. web)
+- [ ] `output/updated-competitive-analysis.md` existe con fuentes citadas (local vs. web)
 - [ ] `.claude/skills/competitive-intel/SKILL.md` existe y se activa automáticamente
 - [ ] El skill funciona en una conversación nueva sin re-explicar el proceso
 - [ ] Puedes explicar cómo Memory, Skills, MCP y Plan Mode trabajan juntos

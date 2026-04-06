@@ -25,8 +25,47 @@ This exercise delivers both.
 
 ## What You Have
 
-- `nike-competitive-snapshot.md` — your existing competitive analysis (local data, a few months old)
-- `competitor-urls.md` — a list of competitor pages to check
+- `data/data/nike-competitive-snapshot.md` — your existing competitive analysis (local data, a few months old)
+- `data/data/competitor-urls.md` — a list of competitor pages to check
+
+## Setup
+
+> **This is the same workflow you'll use for real projects.** Create a project, copy in your data, and work from there.
+
+**Get the course files** (first time only):
+
+```bash
+git clone https://github.com/cristiangarcia-eng/claude-learning.git ~/Desktop/claude-learning
+```
+
+**Create your project:**
+
+```bash
+mkdir -p ~/Desktop/Claude/projects/competitive-intelligence/data
+mkdir ~/Desktop/Claude/projects/competitive-intelligence/output
+```
+
+**Copy the exercise data:**
+
+```bash
+cp ~/Desktop/claude-learning/11-exercises/11-connect-systems/data/nike-competitive-snapshot.md ~/Desktop/claude-learning/11-exercises/11-connect-systems/data/competitor-urls.md ~/Desktop/Claude/projects/competitive-intelligence/data/
+```
+
+**Open the project:**
+
+```bash
+cd ~/Desktop/Claude/projects/competitive-intelligence
+```
+
+Start Claude Code here (`claude`). Your project looks like this:
+
+```
+competitive-intelligence/
+├── data/
+│   ├── data/nike-competitive-snapshot.md
+│   └── data/competitor-urls.md
+└── output/          ← Claude saves results here
+```
 
 ## Step-by-Step Instructions
 
@@ -78,11 +117,11 @@ This memory will inform every future analysis in this project folder.
 
    ```
    /plan I need to produce an updated competitive analysis that combines
-   our local data (nike-competitive-snapshot.md) with live web data.
+   our local data (data/nike-competitive-snapshot.md) with live web data.
 
    Plan the approach:
    - What should we fetch from each competitor's website?
-     (Read competitor-urls.md for the list)
+     (Read data/competitor-urls.md for the list)
    - How should we structure the comparison? (Remember our quality
      standards in CLAUDE.md)
    - How do we clearly distinguish "old local data" from "fresh web data"
@@ -111,14 +150,14 @@ This memory will inform every future analysis in this project folder.
    ```
    Execute the plan:
 
-   1. Read our local nike-competitive-snapshot.md
-   2. Read competitor-urls.md for the URLs to check
+   1. Read our local data/nike-competitive-snapshot.md
+   2. Read data/competitor-urls.md for the URLs to check
    3. Use Fetch MCP to pull data from each competitor URL listed
       (if a URL fails, note it and move on — some sites block automated access)
    4. Combine the local snapshot data with the fresh web data
    5. Write the full updated report following the plan structure
 
-   Save as updated-competitive-analysis.md
+   Save as output/updated-competitive-analysis.md
 
    Remember: cite every claim with its source — [local snapshot] or
    [web fetch, DATE].
@@ -145,7 +184,7 @@ This memory will inform every future analysis in this project folder.
     - Follow this process:
       1. Read local CLAUDE.md for project context and quality standards
       2. Read the most recent competitive analysis file
-      3. Read competitor-urls.md for URLs to fetch
+      3. Read data/competitor-urls.md for URLs to fetch
       4. Use Fetch MCP to pull live data from competitor websites
       5. Combine local + web data into updated analysis
       6. Include "Data Freshness" header, comparison table,
@@ -199,7 +238,7 @@ This is your finished system. A teammate who opens this project folder with Clau
 - [ ] Fetch MCP is installed and working
 - [ ] `CLAUDE.md` exists with project context and quality standards
 - [ ] You used Plan Mode to design the analysis structure before executing
-- [ ] `updated-competitive-analysis.md` exists with cited sources (local vs. web)
+- [ ] `output/updated-competitive-analysis.md` exists with cited sources (local vs. web)
 - [ ] `.claude/skills/competitive-intel/SKILL.md` exists and auto-triggers
 - [ ] The skill works in a fresh conversation without re-explaining the process
 - [ ] You can explain how Memory, Skills, MCP, and Plan Mode work together

@@ -24,24 +24,47 @@ Un archivo CSV en `data/raw_entries.csv` con 200 entradas de feedback. Cada fila
 
 ## Preparación
 
-Este ejercicio usa archivos de datos incluidos en el repositorio del curso. Si aún no lo has hecho, clona el repo y navega a este ejercicio:
+> **Este es el mismo flujo de trabajo que usarás en proyectos reales.** Crea un proyecto, copia tus datos, y trabaja desde ahí.
+
+**Descarga los archivos del curso** (solo la primera vez):
 
 ```bash
 git clone https://github.com/cristiangarcia-eng/claude-learning.git ~/Desktop/claude-learning
-cd ~/Desktop/claude-learning/11-exercises/04-taxonomy-from-chaos
 ```
 
-Si ya clonaste el repo, solo navega a la carpeta del ejercicio:
+**Crea tu proyecto:**
 
 ```bash
-cd ~/Desktop/claude-learning/11-exercises/04-taxonomy-from-chaos
+mkdir -p ~/Desktop/Claude/projects/taxonomy-from-chaos/data
+mkdir ~/Desktop/Claude/projects/taxonomy-from-chaos/output
+```
+
+**Copia los datos del ejercicio:**
+
+```bash
+cp ~/Desktop/claude-learning/11-exercises/04-taxonomy-from-chaos/data/raw_entries.csv ~/Desktop/Claude/projects/taxonomy-from-chaos/data/
+```
+
+**Abre el proyecto:**
+
+```bash
+cd ~/Desktop/Claude/projects/taxonomy-from-chaos
+```
+
+Inicia Claude Code aquí (`claude`). Tu proyecto se ve así:
+
+```
+taxonomy-from-chaos/
+├── data/
+│   └── raw_entries.csv
+└── output/          ← Claude guarda los resultados aquí
 ```
 
 ## Instrucciones paso a paso
 
 ### Parte 1: Explora los datos (10 minutos)
 
-**Paso 1.** Abre Claude Code en la carpeta del ejercicio y pídele que lea y resuma los datos:
+**Paso 1.** Abre Claude Code en la carpeta de tu proyecto y pídele que lea y resuma los datos:
 
 ```
 Read data/raw_entries.csv and give me a summary:
@@ -63,7 +86,7 @@ Aquí es donde los checkpoints brillan. Probarás tres formas distintas de categ
 Propose a taxonomy that groups this feedback by type of feedback:
 bug reports, feature requests, praise, complaints, and questions.
 Map every entry to one category.
-Save the result as taxonomy_by_type.md with a summary table
+Save the result as output/taxonomy_by_type.md with a summary table
 showing how many entries fall into each category.
 ```
 
@@ -78,7 +101,7 @@ Now try a completely different approach. Group the feedback by
 product area: mobile app, performance, integrations, UI/UX,
 notifications, collaboration, reporting, and anything else that
 emerges from the data. Map every entry to one area.
-Save as taxonomy_by_area.md with the same summary format.
+Save as output/taxonomy_by_area.md with the same summary format.
 ```
 
 **Paso 5.** Prueba el Enfoque C — categorizar por **acción necesaria del equipo**:
@@ -88,7 +111,7 @@ One more approach. Group feedback by what action the team should take:
 fix now (bugs/crashes), build next (most-requested features),
 improve existing (enhancements to current features),
 no action (praise/positive feedback), and investigate (unclear issues).
-Map every entry. Save as taxonomy_by_action.md.
+Map every entry. Save as output/taxonomy_by_action.md.
 ```
 
 ### Parte 3: Compara y elige (10 minutos)
@@ -111,7 +134,7 @@ Recommend the best approach and explain your reasoning.
 
 ```
 Using the best taxonomy approach, create a final report called
-feedback_analysis.md that includes:
+output/feedback_analysis.md that includes:
 - The taxonomy with category names and descriptions
 - A count of entries per category
 - The top 3 most common pieces of feedback in each category
@@ -133,7 +156,7 @@ feedback_analysis.md that includes:
 - [ ] Probaste al menos 2 enfoques de taxonomía diferentes
 - [ ] Usaste `/rewind` o checkpoints para navegar entre enfoques
 - [ ] Comparaste los enfoques y elegiste el mejor con justificación
-- [ ] Existe un reporte final `feedback_analysis.md` con categorías priorizadas
+- [ ] Existe un reporte final `output/feedback_analysis.md` con categorías priorizadas
 
 ## Lo que aprendiste
 

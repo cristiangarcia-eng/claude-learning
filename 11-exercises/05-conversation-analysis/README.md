@@ -27,17 +27,40 @@ A JSON file at `data/conversations.json` with 40 customer support conversations.
 
 ## Setup
 
-This exercise uses data files included in the course repository. If you haven't already, clone the repo and navigate to this exercise:
+> **This is the same workflow you'll use for real projects.** Create a project, copy in your data, and work from there.
+
+**Get the course files** (first time only):
 
 ```bash
 git clone https://github.com/cristiangarcia-eng/claude-learning.git ~/Desktop/claude-learning
-cd ~/Desktop/claude-learning/11-exercises/05-conversation-analysis
 ```
 
-If you already cloned the repo, just navigate to the exercise folder:
+**Create your project:**
 
 ```bash
-cd ~/Desktop/claude-learning/11-exercises/05-conversation-analysis
+mkdir -p ~/Desktop/Claude/projects/conversation-analysis/data
+mkdir ~/Desktop/Claude/projects/conversation-analysis/output
+```
+
+**Copy the exercise data:**
+
+```bash
+cp ~/Desktop/claude-learning/11-exercises/05-conversation-analysis/data/conversations.json ~/Desktop/Claude/projects/conversation-analysis/data/
+```
+
+**Open the project:**
+
+```bash
+cd ~/Desktop/Claude/projects/conversation-analysis
+```
+
+Start Claude Code here (`claude`). Your project looks like this:
+
+```
+conversation-analysis/
+├── data/
+│   └── conversations.json
+└── output/          ← Claude saves results here
 ```
 
 ## Step-by-Step Instructions
@@ -77,7 +100,7 @@ Read through the message content in conversations with
 satisfaction scores of 1 or 2. What are the top complaints
 or frustrations? Group them into themes and suggest specific
 actions the support or product team could take.
-Save this as a markdown file called manual_analysis.md
+Save this as a markdown file called output/manual_analysis.md
 ```
 
 ### Part 2: Create a data-analyst subagent (20 minutes)
@@ -114,7 +137,7 @@ Save the agent definition at .claude/agents/data-analyst.md
 Start a new terminal and run the agent directly:
 
 ```bash
-claude --agent data-analyst "Analyze data/conversations.json. Focus on finding patterns that explain customer satisfaction. Save the report as satisfaction_report.md"
+claude --agent data-analyst "Analyze data/conversations.json. Focus on finding patterns that explain customer satisfaction. Save the report as output/satisfaction_report.md"
 ```
 
 This launches a fresh Claude session that follows only the instructions from your `data-analyst.md` agent file.
@@ -150,7 +173,7 @@ Update .claude/agents/data-analyst.md with these improvements.
 ## Success Checklist
 
 - [ ] You explored the support data and found satisfaction patterns
-- [ ] A `manual_analysis.md` report exists with insights
+- [ ] A `output/manual_analysis.md` report exists with insights
 - [ ] `.claude/agents/data-analyst.md` exists with a defined process
 - [ ] Running `claude --agent data-analyst` produces a useful report
 - [ ] The subagent report includes actionable recommendations

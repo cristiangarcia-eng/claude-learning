@@ -20,31 +20,54 @@ Your VP asks: "Can you put together a landscape of the athletic footwear market?
 
 ## What You Have
 
-An example of what good research output looks like at `examples/example-output.md`. This is your quality bar -- you will ask Claude to read it in Part 1.
+A reference example showing what good research output looks like — `data/example-output.md`. This is not input data; it is your quality bar. You will ask Claude to read it in Part 1.
 
 ## Setup
 
-This exercise uses files included in the course repository. If you haven't already, clone the repo and navigate to this exercise:
+> **This is the same workflow you'll use for real projects.** Create a project, copy in your data, and work from there.
+
+**Get the course files** (first time only):
 
 ```bash
 git clone https://github.com/cristiangarcia-eng/claude-learning.git ~/Desktop/claude-learning
-cd ~/Desktop/claude-learning/11-exercises/03-research-landscape
 ```
 
-If you already cloned the repo, just navigate to the exercise folder:
+**Create your project:**
 
 ```bash
-cd ~/Desktop/claude-learning/11-exercises/03-research-landscape
+mkdir -p ~/Desktop/Claude/projects/research-landscape/data
+mkdir ~/Desktop/Claude/projects/research-landscape/output
+```
+
+**Copy the exercise data:**
+
+```bash
+cp ~/Desktop/claude-learning/11-exercises/03-research-landscape/data/example-output.md ~/Desktop/Claude/projects/research-landscape/data/
+```
+
+**Open the project:**
+
+```bash
+cd ~/Desktop/Claude/projects/research-landscape
+```
+
+Start Claude Code here (`claude`). Your project looks like this:
+
+```
+research-landscape/
+├── data/
+│   └── example-output.md    ← reference example (your quality bar)
+└── output/                  ← Claude saves reports here
 ```
 
 ## Step-by-Step Instructions
 
 ### Part 1: Set the quality bar (3 minutes)
 
-Read through `examples/example-output.md`:
+Read through `data/example-output.md`:
 
 ```
-Read examples/example-output.md and tell me: what makes this report
+Read data/example-output.md and tell me: what makes this report
 actually useful vs. generic? Point out specific things it does well.
 ```
 
@@ -75,13 +98,13 @@ Then create a scoring matrix rating each brand 1-5 on:
 End with a "So What?" section: what should Nike's competitive strategy
 team pay attention to?
 
-Save the full report as landscape-report-v1.md
+Save the full report as output/landscape-report-v1.md
 ```
 
 Now **critique the output yourself.** Read it critically. Then ask Claude to evaluate its own work:
 
 ```
-Read landscape-report-v1.md and compare it against examples/example-output.md.
+Read output/landscape-report-v1.md and compare it against data/example-output.md.
 Be brutally honest:
 - Where is the analysis vague or generic? ("strong brand presence" means nothing)
 - Where are specific numbers or evidence missing?
@@ -95,7 +118,7 @@ List every weakness you find.
 Use the critique to push for a better version:
 
 ```
-Rewrite the report as landscape-report-v2.md, fixing every weakness
+Rewrite the report as output/landscape-report-v2.md, fixing every weakness
 you identified. Specifically:
 - Replace vague claims with specific numbers or evidence
 - Make each scoring matrix rating include a 1-sentence justification
@@ -112,9 +135,9 @@ A good research approach works beyond one industry. Test it:
 
 ```
 Using the exact same structure and quality standards from
-landscape-report-v2.md, produce a competitive landscape for
+output/landscape-report-v2.md, produce a competitive landscape for
 the project management software market. Compare Asana, Monday.com,
-ClickUp, Notion, and Linear. Save as landscape-report-pm-tools.md
+ClickUp, Notion, and Linear. Save as output/landscape-report-pm-tools.md
 ```
 
 Review the result. Does the structure transfer well? If the PM tools report is significantly weaker than the footwear one, your approach has a blind spot — the structure only works when Claude has strong training data about the domain.
@@ -139,7 +162,7 @@ Auto-trigger on: "competitive analysis", "landscape review",
 
 ## Example Output
 
-Here is what a strong research report looks like (see `examples/example-output.md` for the full version):
+Here is what a strong research report looks like (see `data/example-output.md` for the full version):
 
 **Scoring Matrix with justifications (v2 quality):**
 
@@ -166,10 +189,10 @@ Notice: every score has a reason. This is the difference between useful analysis
 
 ## Success Criteria
 
-- [ ] `landscape-report-v1.md` exists (first draft)
+- [ ] `output/landscape-report-v1.md` exists (first draft)
 - [ ] You identified specific weaknesses in v1 (not "it's fine")
-- [ ] `landscape-report-v2.md` exists with clear improvements over v1
-- [ ] `landscape-report-pm-tools.md` exists (stress test on different industry)
+- [ ] `output/landscape-report-v2.md` exists with clear improvements over v1
+- [ ] `output/landscape-report-pm-tools.md` exists (stress test on different industry)
 - [ ] `.claude/skills/competitive-landscape/SKILL.md` exists and includes the critique step
 - [ ] The skill auto-triggers when you ask for a "competitive analysis"
 

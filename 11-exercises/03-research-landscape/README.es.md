@@ -20,31 +20,54 @@ Tu VP pregunta: "¿Puedes armar un panorama del mercado de calzado deportivo? Qu
 
 ## Lo que tienes
 
-Un ejemplo de cómo se ve un buen resultado de investigación en `examples/example-output.md`. Este es tu estándar de calidad -- le pedirás a Claude que lo lea en la Parte 1.
+Un ejemplo de referencia que muestra cómo se ve un buen resultado de investigación — `data/example-output.md`. No son datos de entrada; es tu estándar de calidad. Le pedirás a Claude que lo lea en la Parte 1.
 
 ## Preparación
 
-Este ejercicio usa archivos incluidos en el repositorio del curso. Si aún no lo has hecho, clona el repo y navega a este ejercicio:
+> **Este es el mismo flujo de trabajo que usarás en proyectos reales.** Crea un proyecto, copia tus datos, y trabaja desde ahí.
+
+**Descarga los archivos del curso** (solo la primera vez):
 
 ```bash
 git clone https://github.com/cristiangarcia-eng/claude-learning.git ~/Desktop/claude-learning
-cd ~/Desktop/claude-learning/11-exercises/03-research-landscape
 ```
 
-Si ya clonaste el repo, solo navega a la carpeta del ejercicio:
+**Crea tu proyecto:**
 
 ```bash
-cd ~/Desktop/claude-learning/11-exercises/03-research-landscape
+mkdir -p ~/Desktop/Claude/projects/research-landscape/data
+mkdir ~/Desktop/Claude/projects/research-landscape/output
+```
+
+**Copia los datos del ejercicio:**
+
+```bash
+cp ~/Desktop/claude-learning/11-exercises/03-research-landscape/data/example-output.md ~/Desktop/Claude/projects/research-landscape/data/
+```
+
+**Abre el proyecto:**
+
+```bash
+cd ~/Desktop/Claude/projects/research-landscape
+```
+
+Inicia Claude Code aquí (`claude`). Tu proyecto se ve así:
+
+```
+research-landscape/
+├── data/
+│   └── example-output.md    ← ejemplo de referencia (tu estándar de calidad)
+└── output/                  ← Claude guarda los reportes aquí
 ```
 
 ## Instrucciones paso a paso
 
 ### Parte 1: Establece el estándar de calidad (3 minutos)
 
-Lee `examples/example-output.md`:
+Lee `data/example-output.md`:
 
 ```
-Read examples/example-output.md and tell me: what makes this report
+Read data/example-output.md and tell me: what makes this report
 actually useful vs. generic? Point out specific things it does well.
 ```
 
@@ -75,13 +98,13 @@ Then create a scoring matrix rating each brand 1-5 on:
 End with a "So What?" section: what should Nike's competitive strategy
 team pay attention to?
 
-Save the full report as landscape-report-v1.md
+Save the full report as output/landscape-report-v1.md
 ```
 
 Ahora **critica el resultado tú mismo.** Léelo de forma crítica. Luego pídele a Claude que evalúe su propio trabajo:
 
 ```
-Read landscape-report-v1.md and compare it against examples/example-output.md.
+Read output/landscape-report-v1.md and compare it against data/example-output.md.
 Be brutally honest:
 - Where is the analysis vague or generic? ("strong brand presence" means nothing)
 - Where are specific numbers or evidence missing?
@@ -95,7 +118,7 @@ List every weakness you find.
 Usa la crítica para producir una versión mejor:
 
 ```
-Rewrite the report as landscape-report-v2.md, fixing every weakness
+Rewrite the report as output/landscape-report-v2.md, fixing every weakness
 you identified. Specifically:
 - Replace vague claims with specific numbers or evidence
 - Make each scoring matrix rating include a 1-sentence justification
@@ -112,9 +135,9 @@ Un buen enfoque de investigación funciona más allá de una industria. Pruébal
 
 ```
 Using the exact same structure and quality standards from
-landscape-report-v2.md, produce a competitive landscape for
+output/landscape-report-v2.md, produce a competitive landscape for
 the project management software market. Compare Asana, Monday.com,
-ClickUp, Notion, and Linear. Save as landscape-report-pm-tools.md
+ClickUp, Notion, and Linear. Save as output/landscape-report-pm-tools.md
 ```
 
 Revisa el resultado. ¿La estructura se transfiere bien? Si el reporte de herramientas PM es significativamente más débil que el de calzado, tu enfoque tiene un punto ciego — la estructura solo funciona cuando Claude tiene buenos datos de entrenamiento sobre el dominio.
@@ -139,7 +162,7 @@ Auto-trigger on: "competitive analysis", "landscape review",
 
 ## Ejemplo de resultado
 
-Así se ve un reporte de investigación sólido (consulta `examples/example-output.md` para la versión completa):
+Así se ve un reporte de investigación sólido (consulta `data/example-output.md` para la versión completa):
 
 **Matriz de puntuación con justificaciones (calidad v2):**
 
@@ -166,10 +189,10 @@ Observa: cada puntuación tiene una razón. Esta es la diferencia entre análisi
 
 ## Criterios de éxito
 
-- [ ] `landscape-report-v1.md` existe (primer borrador)
+- [ ] `output/landscape-report-v1.md` existe (primer borrador)
 - [ ] Identificaste debilidades específicas en v1 (no "está bien")
-- [ ] `landscape-report-v2.md` existe con mejoras claras sobre v1
-- [ ] `landscape-report-pm-tools.md` existe (prueba de estrés en otra industria)
+- [ ] `output/landscape-report-v2.md` existe con mejoras claras sobre v1
+- [ ] `output/landscape-report-pm-tools.md` existe (prueba de estrés en otra industria)
 - [ ] `.claude/skills/competitive-landscape/SKILL.md` existe e incluye el paso de crítica
 - [ ] El skill se activa automáticamente cuando pides un "competitive analysis"
 

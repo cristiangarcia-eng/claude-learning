@@ -20,18 +20,45 @@ Your marketing team at Nike is preparing for the launch of a fictional new produ
 
 ## What You Have
 
-A product brief is provided below. You will also find a sample brief file at `sample-brief.md` in this exercise folder.
+A product brief at `data/data/sample-brief.md` — the starting input for your pipeline.
 
 ## Setup
 
-1. Navigate to this exercise folder:
-   ```
-   cd 11-exercises/10-end-to-end-pipeline
-   ```
-2. Open the sample brief so you understand the starting point:
-   ```
-   Read sample-brief.md — this is the input for our pipeline
-   ```
+> **This is the same workflow you'll use for real projects.** Create a project, copy in your data, and work from there.
+
+**Get the course files** (first time only):
+
+```bash
+git clone https://github.com/cristiangarcia-eng/claude-learning.git ~/Desktop/claude-learning
+```
+
+**Create your project:**
+
+```bash
+mkdir -p ~/Desktop/Claude/projects/end-to-end-pipeline/data
+mkdir ~/Desktop/Claude/projects/end-to-end-pipeline/output
+```
+
+**Copy the exercise data:**
+
+```bash
+cp ~/Desktop/claude-learning/11-exercises/10-end-to-end-pipeline/data/sample-brief.md ~/Desktop/Claude/projects/end-to-end-pipeline/data/
+```
+
+**Open the project:**
+
+```bash
+cd ~/Desktop/Claude/projects/end-to-end-pipeline
+```
+
+Start Claude Code here (`claude`). Your project looks like this:
+
+```
+end-to-end-pipeline/
+├── data/
+│   └── data/sample-brief.md
+└── output/          ← Claude saves pipeline results here
+```
 
 ## Your Task
 
@@ -43,38 +70,38 @@ Work through each stage in order. Each step builds on the output of the previous
 
 Ask Claude:
 ```
-Based on the brief in sample-brief.md, do research for this product launch.
+Based on the brief in data/sample-brief.md, do research for this product launch.
 Cover: target audience profile, competitive landscape (what other brands
 are doing with recycled materials), key messaging angles, and potential
-risks or objections. Save the output as 01-research-notes.md
+risks or objections. Save the output as output/01-research-notes.md
 ```
 
 **Stage 2 — Outline**
 
 ```
-Using the research in 01-research-notes.md, create a detailed outline
+Using the research in output/01-research-notes.md, create a detailed outline
 for a launch content package. Include sections for: press release,
 social media copy (3 platforms), email announcement, and internal
 sales talking points. Flag where we need real data vs. estimates.
-Save as 02-content-outline.md
+Save as output/02-content-outline.md
 ```
 
 **Stage 3 — Full draft**
 
 ```
-Write the full content package based on 02-content-outline.md.
+Write the full content package based on output/02-content-outline.md.
 Make it professional and on-brand for a major athletic company.
 Include all sections from the outline. Use tables where helpful.
-Save as 03-full-draft.md
+Save as output/03-full-draft.md
 ```
 
 **Stage 4 — Review and executive summary**
 
 ```
-Review 03-full-draft.md for tone consistency, messaging clarity,
+Review output/03-full-draft.md for tone consistency, messaging clarity,
 and completeness. Then create a one-page executive summary with:
 the launch recommendation, 3-5 key messages, a timeline table,
-and clear next steps. Save the summary as 04-executive-summary.md
+and clear next steps. Save the summary as output/04-executive-summary.md
 ```
 
 **Checkpoint:** You should now have four files that form a complete pipeline output. Open each one and confirm that every stage clearly builds on the one before it.

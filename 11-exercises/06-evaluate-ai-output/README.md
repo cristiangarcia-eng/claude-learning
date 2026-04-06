@@ -28,17 +28,40 @@ Some drafts follow the guidelines perfectly. Others have intentional violations 
 
 ## Setup
 
-This exercise uses data files included in the course repository. If you haven't already, clone the repo and navigate to this exercise:
+> **This is the same workflow you'll use for real projects.** Create a project, copy in your data, and work from there.
+
+**Get the course files** (first time only):
 
 ```bash
 git clone https://github.com/cristiangarcia-eng/claude-learning.git ~/Desktop/claude-learning
-cd ~/Desktop/claude-learning/11-exercises/06-evaluate-ai-output
 ```
 
-If you already cloned the repo, just navigate to the exercise folder:
+**Create your project:**
 
 ```bash
-cd ~/Desktop/claude-learning/11-exercises/06-evaluate-ai-output
+mkdir -p ~/Desktop/Claude/projects/evaluate-ai-output/data
+mkdir ~/Desktop/Claude/projects/evaluate-ai-output/output
+```
+
+**Copy the exercise data:**
+
+```bash
+cp ~/Desktop/claude-learning/11-exercises/06-evaluate-ai-output/data/ai_outputs.json ~/Desktop/Claude/projects/evaluate-ai-output/data/
+```
+
+**Open the project:**
+
+```bash
+cd ~/Desktop/Claude/projects/evaluate-ai-output
+```
+
+Start Claude Code here (`claude`). Your project looks like this:
+
+```
+evaluate-ai-output/
+├── data/
+│   └── ai_outputs.json
+└── output/          ← Claude saves results here
 ```
 
 ## Step-by-Step Instructions
@@ -66,7 +89,7 @@ For each one, give me:
 - Severity: Critical (would damage the brand), Medium (noticeable
   issue), or Low (minor nitpick)
 
-Show results as a markdown table. Save it as evaluation_results.md
+Show results as a markdown table. Save it as output/evaluation_results.md
 ```
 
 **Step 3.** Ask Claude to find patterns:
@@ -78,7 +101,7 @@ Based on the evaluation:
 - Which rule violations are most common?
 - What recommendations would you give to the AI content
   generation team?
-Add this analysis to evaluation_results.md
+Add this analysis to output/evaluation_results.md
 ```
 
 ### Part 2: Build a quality-check hook (15 minutes)
@@ -117,7 +140,7 @@ I'm not a developer, so keep it simple.
 
 ```
 Write a promotional social media post about Orbit's new feature
-and save it as test_post.txt. Make it enthusiastic but don't
+and save it as output/test_post.txt. Make it enthusiastic but don't
 worry about brand guidelines — I want to see if the hook catches
 any issues.
 ```
@@ -166,7 +189,7 @@ Think of hooks like email filters: you set the rules once, and they run automati
 ## Success Checklist
 
 - [ ] All 20 content drafts are evaluated with pass/fail and reasoning
-- [ ] An `evaluation_results.md` report identifies patterns and recommendations
+- [ ] An `output/evaluation_results.md` report identifies patterns and recommendations
 - [ ] A `hooks/brand-check.sh` script exists that checks for common violations
 - [ ] You understand the settings.json configuration for the hook
 - [ ] You can explain what the hook does in plain English

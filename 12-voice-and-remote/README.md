@@ -1,30 +1,6 @@
-# Voice and Remote Control
-**The mobility layer**
+# Remote Control
 
-Everything you've learned so far — Memory, Skills, MCP, Subagents — requires you to be sitting at your keyboard, typing. But some of your best ideas happen in meetings, on a walk, or while commuting. And sometimes you need to check on a task Claude is running without going back to your desk.
-
-> **Your hands shouldn't be a bottleneck. Your keyboard shouldn't be a leash.**
-
-Work with Claude from anywhere — speak instead of type, or continue sessions from your phone.
-
-## Voice Dictation
-
-Speak your requests instead of typing. Great for brainstorming, longer instructions, or when you're away from your keyboard.
-
-```
-/voice
-```
-
-- **Push-to-talk**: Hold the trigger key to speak, release to send
-- **20 languages** supported
-- Configure the trigger key with `/keybindings`
-
-### When it's useful
-
-- Brainstorming ideas out loud
-- Dictating long descriptions or requirements
-- Working hands-free while reviewing something on screen
-- Describing visual changes you want to make
+Work with Claude from anywhere — continue sessions from your phone, tablet, or any browser.
 
 ## Remote Control
 
@@ -60,5 +36,5 @@ Send tasks to Claude from your phone and let it work in the background.
 
 Claude works autonomously. When it's done, the results are waiting for you.
 
-> **Tip**: Combine Remote Control with Voice Dictation — speak commands from your phone while Claude executes on your computer.
+> **Tip**: Combine Remote Control with the voice dictation you learned earlier — speak commands from your phone while Claude executes on your computer.
 

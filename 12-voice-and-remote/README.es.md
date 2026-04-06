@@ -1,25 +1,6 @@
-# Voz y Control Remoto
+# Control Remoto
 
-Trabaja con Claude desde cualquier lugar — habla en vez de escribir, o continúa sesiones desde tu teléfono.
-
-## Dictado por Voz
-
-Habla tus solicitudes en vez de escribirlas. Genial para brainstorming, instrucciones largas, o cuando estás lejos del teclado.
-
-```
-/voice
-```
-
-- **Pulsar para hablar**: Mantén presionada la tecla de activación para hablar, suelta para enviar
-- **20 idiomas** soportados
-- Configura la tecla de activación con `/keybindings`
-
-### Cuándo es útil
-
-- Hacer brainstorming de ideas en voz alta
-- Dictar descripciones largas o requisitos
-- Trabajar manos libres mientras revisas algo en pantalla
-- Describir cambios visuales que quieres hacer
+Trabaja con Claude desde cualquier lugar — continúa sesiones desde tu teléfono, tablet o cualquier navegador.
 
 ## Control Remoto
 
@@ -55,5 +36,5 @@ Envía tareas a Claude desde tu teléfono y déjalo trabajar en segundo plano.
 
 Claude trabaja de forma autónoma. Cuando termina, los resultados te están esperando.
 
-> **Consejo**: Combina Control Remoto con Dictado por Voz — habla comandos desde tu teléfono mientras Claude ejecuta en tu computadora.
+> **Consejo**: Combina Control Remoto con el dictado por voz que aprendiste antes — habla comandos desde tu teléfono mientras Claude ejecuta en tu computadora.
 

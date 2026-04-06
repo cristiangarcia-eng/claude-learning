@@ -150,49 +150,60 @@ Each session is independent — they don't interfere with each other. This is on
 
 ## Organizing your workspace
 
-Before you start creating more projects, set up a simple folder structure on your Desktop. This keeps everything clean and helps Claude work better — it performs best when each project has its own focused folder.
+Before you start creating more projects, set up a simple folder structure. This keeps everything clean and helps Claude work better — it performs best when each project has its own focused folder.
 
-### Create your Claude workspace
+### Step 1: Create the main folder
 
-Run these commands to create your workspace:
+Create a folder called **`claude-projects`** on your Desktop. You can do this however you prefer:
 
+- **From Finder**: right-click on Desktop → New Folder → name it `claude-projects`
+- **From the terminal**:
 ```bash
-mkdir ~/Desktop/Claude
-mkdir ~/Desktop/Claude/projects
-mkdir ~/Desktop/Claude/resources
+mkdir ~/Desktop/claude-projects
 ```
 
-Then move the Nike project there:
+### Step 2: Create the structure inside
+
+Inside `claude-projects`, create these folders:
 
 ```bash
-mv ~/Desktop/nike-analysis ~/Desktop/Claude/projects/nike-analysis
+mkdir ~/Desktop/claude-projects/resources
 ```
 
-Now open `~/Desktop/Claude` in VS Code (`File > Open Folder`) and you'll see everything in the sidebar.
+And move the Nike project we created earlier:
+
+```bash
+mv ~/Desktop/nike-analysis ~/Desktop/claude-projects/nike-analysis
+```
+
+### Step 3: Open it in VS Code
+
+Open the `claude-projects` folder in VS Code (`File > Open Folder` → find your Desktop → select `claude-projects`). You'll see everything organized in the sidebar.
 
 ### The structure
 
+This is what your workspace should look like over time:
+
 ```
-~/Desktop/Claude/
-├── projects/                    ← one folder per project
-│   ├── nike-analysis/
-│   │   ├── data/                ← files you give Claude (CSVs, PDFs, exports)
-│   │   └── output/              ← files Claude creates (reports, summaries)
-│   ├── q4-planning/
-│   │   ├── data/
-│   │   └── output/
-│   └── client-acme/
-│       ├── data/
-│       └── output/
-└── resources/                   ← shared across all projects
+~/Desktop/claude-projects/
+├── nike-analysis/
+│   ├── data/                ← files you give Claude (CSVs, PDFs, exports)
+│   └── output/              ← files Claude creates (reports, summaries)
+├── q4-planning/
+│   ├── data/
+│   └── output/
+├── client-acme/
+│   ├── data/
+│   └── output/
+└── resources/               ← shared across all projects
     ├── brand-guidelines.md
     ├── competitor-list.csv
     └── pricing-sheets/
 ```
 
-**`projects/`** is where your work lives. Each project gets its own folder with `data/` (what you give Claude) and `output/` (what Claude creates for you).
+Each project gets its own folder with `data/` (what you give Claude) and `output/` (what Claude creates for you).
 
-**`resources/`** is for reference material that applies across projects — brand guidelines, pricing sheets, competitor data, team directories. When Claude needs this info, you can tell it: "check the resources folder for our brand guidelines."
+**`resources/`** is for reference material that applies across projects — brand guidelines, pricing sheets, competitor data. When Claude needs this info, you can tell it: "check the resources folder for our brand guidelines."
 
 ### The rules
 
@@ -203,12 +214,11 @@ Now open `~/Desktop/Claude` in VS Code (`File > Open Folder`) and you'll see eve
 
 ### Starting a new project
 
-Every time you start something new:
+Every time you start something new, create a folder inside `claude-projects` with `data/` and `output/` subfolders:
 
 ```bash
-mkdir ~/Desktop/Claude/projects/my-new-project
-mkdir ~/Desktop/Claude/projects/my-new-project/data
-mkdir ~/Desktop/Claude/projects/my-new-project/output
+mkdir -p ~/Desktop/claude-projects/my-new-project/data
+mkdir ~/Desktop/claude-projects/my-new-project/output
 ```
 
 Open the project folder in VS Code, start Claude Code, and you're ready to work.

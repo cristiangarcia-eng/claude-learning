@@ -101,56 +101,55 @@ export const QUIZZES: LessonQuiz[] = [
       },
       {
         id: "mcp2",
-        question: "Where is MCP server configuration stored?",
+        question: "What command installs the Fetch MCP server?",
         options: [
-          "mcp.json",
-          "CLAUDE.md",
-          ".claude/settings.json or ~/.claude/settings.json",
-          "package.json",
+          "claude install fetch",
+          "npm install @anthropic-ai/fetch-mcp",
+          "claude mcp add fetch -s user -- npx -y @anthropic-ai/fetch-mcp",
+          "/mcp install fetch",
         ],
         correctIndex: 2,
         explanation:
-          "MCP servers are configured in settings.json at the project or user level.",
+          "The claude mcp add command registers a new MCP server. The -s user flag makes it available across all projects.",
       },
       {
         id: "mcp3",
-        question: "What can MCP servers provide to Claude?",
+        question: "Why should you say 'Use the Fetch MCP' in your prompt instead of just asking Claude to check a website?",
         options: [
-          "Only data",
-          "Only tools",
-          "Tools, resources, and prompts",
-          "Only API access",
-        ],
-        correctIndex: 2,
-        explanation:
-          "MCP servers can provide tools (actions), resources (data), and prompts (templates) to Claude.",
-      },
-      {
-        id: "mcp4",
-        question: "Which transport protocols does MCP support?",
-        options: [
-          "HTTP only",
-          "WebSocket only",
-          "stdio and SSE (Server-Sent Events)",
-          "gRPC only",
-        ],
-        correctIndex: 2,
-        explanation:
-          "MCP supports stdio (local processes) and SSE (Server-Sent Events) for remote servers.",
-      },
-      {
-        id: "mcp5",
-        question:
-          "What is a common use case for the GitHub MCP server?",
-        options: [
-          "Deploying code",
-          "Reading issues, PRs, and repo data directly",
-          "Managing CI/CD pipelines",
-          "Hosting websites",
+          "Fetch MCP is faster than web search",
+          "Claude might do a web search instead, which gives search results, not the actual page content",
+          "Web search doesn't work in Claude Code",
+          "Fetch MCP is the only way to access the internet",
         ],
         correctIndex: 1,
         explanation:
-          "The GitHub MCP server lets Claude directly access issues, pull requests, and repository data.",
+          "Claude can search the web on its own, but that returns search results. Fetch MCP reads the actual page content, which is what you need for detailed analysis.",
+      },
+      {
+        id: "mcp4",
+        question: "Why is it recommended to keep only 2-3 MCP servers connected at a time?",
+        options: [
+          "Claude Code has a limit of 3 servers",
+          "More servers slow down your internet connection",
+          "Each connected server takes up context window space, even if you're not using it",
+          "MCP servers conflict with each other",
+        ],
+        correctIndex: 2,
+        explanation:
+          "Every MCP server takes up space in Claude's context window. Too many connected servers means less room for your actual conversation, leading to worse results.",
+      },
+      {
+        id: "mcp5",
+        question: "How do you check which MCP servers are currently connected?",
+        options: [
+          "Type /settings in Claude Code",
+          "Type /mcp in Claude Code or run claude mcp list in the terminal",
+          "Check the CLAUDE.md file",
+          "MCP servers are always visible in the sidebar",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Type /mcp inside Claude Code for an interactive view, or run claude mcp list in the terminal to see all connected servers.",
       },
     ],
   },

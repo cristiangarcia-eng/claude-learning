@@ -35,8 +35,8 @@ export default function ProgressPage() {
   const { progress } = useProgress();
   const locale = useLocale();
   const completed = new Set(progress.completedLessons);
-  const overallPercent = getOverallProgress();
-  const badges = getBadges();
+  const overallPercent = getOverallProgress(progress);
+  const badges = getBadges(progress);
   const earnedBadges = badges.filter((b) => b.earned);
 
   return (

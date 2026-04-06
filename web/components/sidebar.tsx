@@ -15,7 +15,7 @@ import { t } from "@/lib/i18n";
 import {
   BarChart3,
   BookOpen,
-  Home,
+  LayoutDashboard,
   Menu,
   X,
 } from "lucide-react";
@@ -36,7 +36,7 @@ function SidebarContent({ onClose }: { onClose?: () => void }) {
       {/* Logo */}
       <div className="p-4 border-b border-border flex items-center justify-between">
         <Link
-          href={`/${locale}`}
+          href={`/${locale}/dashboard`}
           className="flex items-center gap-2"
           onClick={onClose}
         >
@@ -51,16 +51,16 @@ function SidebarContent({ onClose }: { onClose?: () => void }) {
       {/* Nav */}
       <nav className="flex-1 overflow-y-auto p-3 space-y-6">
         <Link
-          href={`/${locale}`}
+          href={`/${locale}/dashboard`}
           onClick={onClose}
           className={`flex items-center gap-2 px-3 py-2 rounded-md text-sm transition-colors ${
-            pathname === `/${locale}` || pathname === `/${locale}/`
+            pathname === `/${locale}/dashboard` || pathname === `/${locale}/dashboard/`
               ? "bg-brand-green/10 text-brand-green"
               : "text-muted-foreground hover:text-foreground hover:bg-muted"
           }`}
         >
-          <Home className="h-4 w-4" />
-          {t(locale, "home")}
+          <LayoutDashboard className="h-4 w-4" />
+          Dashboard
         </Link>
 
         <Link

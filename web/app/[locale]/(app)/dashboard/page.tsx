@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Logo } from "@/components/logo";
 import { getLessonsByLevel, getLessonTitle, getLessonDescription } from "@/lib/lessons";
 import type { LessonMeta } from "@/lib/lessons";
 import {
@@ -9,12 +8,12 @@ import {
   ArrowRight,
   Sparkles,
   Zap,
-  Brain,
   Rocket,
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { type Locale, isValidLocale, t } from "@/lib/i18n";
 import { notFound } from "next/navigation";
+import { DashboardHero } from "@/components/dashboard-hero";
 
 function LessonCard({ lesson, locale }: { lesson: LessonMeta; locale: Locale }) {
   return (
@@ -99,34 +98,8 @@ export default async function HomePage({
 
   return (
     <div className="min-h-screen">
-      {/* Hero */}
-      <header className="border-b border-border">
-        <div className="max-w-6xl mx-auto px-6 py-16 text-center">
-          <div className="flex justify-center mb-6">
-            <Logo size="lg" />
-          </div>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-            {t(typedLocale, "dashboardHeroDesc")}
-          </p>
-          <p className="text-sm text-muted-foreground max-w-xl mx-auto mb-8">
-            {t(typedLocale, "dashboardHeroSubDesc")}
-          </p>
-          <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
-            <span className="flex items-center gap-1.5">
-              <BookOpen className="h-4 w-4 text-brand-green" />
-              15 {t(typedLocale, "lessonsLabel")}
-            </span>
-            <span className="flex items-center gap-1.5">
-              <Zap className="h-4 w-4 text-brand-green" />
-              {t(typedLocale, "examplesLabel")}
-            </span>
-            <span className="flex items-center gap-1.5">
-              <Clock className="h-4 w-4 text-brand-green" />
-              {t(typedLocale, "totalTimeLabel")}
-            </span>
-          </div>
-        </div>
-      </header>
+      {/* Hero with progress */}
+      <DashboardHero />
 
       {/* Learning path by level */}
       <main className="max-w-6xl mx-auto px-6 py-12 space-y-12">

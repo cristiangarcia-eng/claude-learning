@@ -136,6 +136,13 @@ const dictionaries = {
     // Language switcher
     language: "Language",
 
+    // Dashboard progress hero
+    welcomeBack: "Welcome back",
+    continueNextLesson: "Continue next lesson",
+    startFirstLesson: "Start your first lesson",
+    lessonsCompleted: "lessons completed",
+    allLessonsCompleted: "You completed all lessons!",
+
     // Misc
     completedCount: "completed",
 
@@ -156,6 +163,12 @@ const dictionaries = {
     starterTime: "~1.5 hours",
     proTime: "~5 hours",
     projectsTime: "~6 hours",
+
+    // Welcome modal
+    welcomeTitle: "This is where it starts.",
+    welcomeBody: "You just took the first step toward a career leap. In a weekend, you'll go from \"I don't code\" to confidently using AI to do things that used to require a developer.",
+    welcomeSubtext: "No terminal experience needed. No programming knowledge. Just you, Claude, and a bit of curiosity.",
+    welcomeCta: "Let's go",
 
     // Instructor section
     yearsInProduct: "Years in Product",
@@ -264,6 +277,13 @@ const dictionaries = {
     // Language switcher
     language: "Idioma",
 
+    // Dashboard progress hero
+    welcomeBack: "Bienvenido de nuevo",
+    continueNextLesson: "Continuar siguiente leccion",
+    startFirstLesson: "Empieza tu primera leccion",
+    lessonsCompleted: "lecciones completadas",
+    allLessonsCompleted: "Completaste todas las lecciones!",
+
     // Misc
     completedCount: "completadas",
 
@@ -284,6 +304,12 @@ const dictionaries = {
     starterTime: "~1.5 horas",
     proTime: "~5 horas",
     projectsTime: "~6 horas",
+
+    // Welcome modal
+    welcomeTitle: "Aqui empieza todo.",
+    welcomeBody: "Acabas de dar el primer paso hacia un salto en tu carrera. En un fin de semana, pasaras de \"yo no programo\" a usar IA con confianza para hacer cosas que antes requerian un desarrollador.",
+    welcomeSubtext: "No necesitas experiencia con la terminal. Ni conocimientos de programacion. Solo tu, Claude y un poco de curiosidad.",
+    welcomeCta: "Vamos",
 
     // Instructor section
     yearsInProduct: "Anos en Producto",

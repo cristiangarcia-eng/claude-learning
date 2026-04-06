@@ -48,6 +48,9 @@ Claude puede ejecutar comandos de terminal en tu computadora. Pregunta primero a
 ### Buscar en tus archivos
 Claude puede buscar en todos tus archivos para encontrar información específica — como cada mención de un nombre de cliente, una cifra de precios, o una fecha límite.
 
+### Buscar en Internet
+Claude puede buscar en Internet para encontrar información actual — webs de competidores, datos de mercado, noticias, documentación. Puedes pedirle que busque algo y traerá los resultados directamente a tu conversación, combinando lo que encuentra online con los archivos de tu proyecto.
+
 ## La ventana de contexto
 
 Claude tiene una **ventana de contexto** — piensa en ella como la memoria a corto plazo de Claude para tu conversación.

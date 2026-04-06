@@ -74,10 +74,30 @@ Claude creará el archivo por ti en la ubicación correcta.
 
 ### Usando tus skills
 
-Una vez creado, puedes usar un skill de dos formas:
+Una vez creado, puedes usar un skill de tres formas:
 
-- **Escribe el comando**: `/meeting-notes` y luego pega tus notas
-- **Solo pídelo naturalmente**: "Aquí están mis notas de reunión de hoy, por favor organízalas" — Claude reconoce la solicitud y activa el skill automáticamente
+- **Escribe el slash command**: `/meeting-notes` y luego pega tus notas
+- **Mencionalo en tu prompt**: "Crea una landing page para la campana DTC de Nike **usando el skill de frontend-design**" — esto asegura que Claude use el skill en vez de hacerlo por libre
+- **Solo pidelo naturalmente**: "Aqui estan mis notas de reunion de hoy, por favor organizalas" — Claude puede reconocer la solicitud y activar el skill automaticamente
+
+> **Importante:** Claude no siempre activa los skills por su cuenta. Si instalas un skill como **frontend-design** y solo pides "crea una landing page," Claude podria hacerlo sin usar el skill — y el resultado no sera tan bueno. Para asegurarte, **menciona el skill en tu prompt** o usa el slash command.
+
+### Haz que un skill este siempre activo en un proyecto
+
+Si quieres que Claude **siempre** use un skill especifico en un proyecto, anadelo a tu memoria de proyecto (`CLAUDE.md`):
+
+```
+code CLAUDE.md
+```
+
+Anade una linea como:
+
+```
+Cuando crees cualquier interfaz frontend, usa siempre el skill frontend-design.
+Cuando formatees notas de reunión, usa siempre el skill meeting-notes.
+```
+
+Asi no tienes que acordarte de mencionar el skill cada vez — Claude lo usara automaticamente en cada conversacion de ese proyecto.
 
 ## Consejos
 

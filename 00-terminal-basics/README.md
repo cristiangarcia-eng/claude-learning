@@ -91,29 +91,27 @@ cd my-first-project
 ls
 ```
 
-## Common mistakes (and how to fix them)
+## That's all you need
 
-### "No such file or directory"
+Seriously — `pwd`, `ls`, `cd`, and `mkdir` are the only commands you'll ever need. Once Claude Code is running, you talk to it in plain English, not terminal commands.
 
-```
-cd: no such file or directory: Docments
-```
+---
 
-The folder name is wrong. Use `ls` to see the actual folder names, then try again.
+## Bonus: When something goes wrong
 
-### "Permission denied"
+### Common errors
 
-Try adding `sudo` before the command (it will ask for your password):
+**"No such file or directory"** — The folder name is wrong. Use `ls` to see the actual folder names, then try again.
+
+**"Permission denied"** — Try adding `sudo` before the command (it will ask for your password):
 
 ```bash
 sudo your-command-here
 ```
 
-### I'm lost — where am I?
+**I'm lost — where am I?** — Just type `pwd` to see your current location. You can always go home with `cd ~`.
 
-Just type `pwd` to see your current location. You can always go home with `cd ~`.
-
-## Keyboard shortcuts that save time
+### Keyboard shortcuts that save time
 
 | Shortcut | What it does |
 |----------|-------------|
@@ -124,7 +122,9 @@ Just type `pwd` to see your current location. You can always go home with `cd ~`
 
 > **Pro tip**: Start typing a folder name and press **Tab** — the terminal will complete it for you. No need to type the full name!
 
-## That's all you need
+### The real trick: let Claude fix it for you
 
-Seriously — `pwd`, `ls`, `cd`, and `mkdir` are the only commands you'll ever need. Once Claude Code is running, you talk to it in plain English, not terminal commands.
+If you ever see an error in the terminal and don't know what it means — **don't worry.** Just copy the error message (or take a screenshot of your terminal) and paste it into Claude. It will tell you exactly what went wrong and how to fix it.
+
+You can do this inside Claude Code itself, or even in the [Desktop App](https://claude.com/download) or [claude.ai](https://claude.ai) browser chat. Describe what you were trying to do, show the error, and Claude will walk you through the solution.
 

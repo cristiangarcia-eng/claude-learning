@@ -1,10 +1,11 @@
 # Memory
+**The persistence layer**
 
-## Why memory matters
+Every time you start a new conversation with Claude, it starts from zero — it doesn't know who you are, what you're working on, or how you like things done. You'd have to explain everything again. And again. And again.
 
-Every time you start a new conversation with Claude, it starts from zero — it doesn't know who you are, what you're working on, or how you like things done. You'd have to explain everything again.
+> **Without memory, every conversation is a first date.**
 
-**Memory fixes this.** It's a simple text file that Claude reads at the beginning of every conversation. You write down what Claude should know, and it remembers — automatically, every time.
+Memory fixes this. It's a simple text file that Claude reads at the beginning of every conversation. You write down what Claude should know, and it remembers — automatically, every time. This is the foundation everything else in this course builds on.
 
 ## Two types of memory
 
@@ -38,9 +39,26 @@ This only applies to the current project. It stays with the folder. Put things h
 
 Let's set up both types using the Nike project you've been working with.
 
-### Step 1: Set up your User memory
+### Step 1: Enable the `code` command in VS Code
 
-Open Claude Code in your `nike-analysis` folder, type `/memory` and select **User memory** (option 1). A file will open — add something like this:
+Before we start, make sure you can open files from the terminal using VS Code. This makes editing memory files much easier:
+
+1. Open VS Code
+2. Press `Cmd+Shift+P` (Mac) or `Ctrl+Shift+P` (Windows)
+3. Type **"Shell Command: Install 'code' command in PATH"** and select it
+4. Done — now you can open any file from the terminal with `code filename`
+
+You only need to do this once.
+
+### Step 2: Set up your User memory
+
+Instead of using the `/memory` command (which opens a small terminal editor), open the file directly in VS Code where it's much more comfortable to edit:
+
+```bash
+code ~/.claude/CLAUDE.md
+```
+
+This opens your User memory file in a full VS Code tab. Add something like this:
 
 ```
 I am a product manager.
@@ -50,11 +68,25 @@ Use bullet points instead of long paragraphs.
 Always explain things in simple, non-technical language.
 ```
 
-Save the file (`Cmd+S`) and close it.
+Save the file (`Cmd+S`) and you're done.
 
-### Step 2: Set up your Project memory
+### Step 3: Set up your Project memory
 
-Type `/memory` again and select **Project memory** (option 2). Add something like this:
+For project memory, the best practice is: **every time you start working in a new project folder, run `/init` as your first command.** Claude will scan your files, understand the project, and create a `CLAUDE.md` for you automatically.
+
+1. Open Claude Code in your project folder
+2. Type `/init`
+3. Claude reads your files and generates a `CLAUDE.md` with the project context
+
+That's it. Claude figures out what the project is about, what the key files are, and writes the memory for you.
+
+You can review and edit what Claude generated:
+
+```bash
+code CLAUDE.md
+```
+
+For example, Claude might generate something like this for the Nike project:
 
 ```
 This is a competitive analysis project for Nike.
@@ -70,7 +102,9 @@ Important context:
 - China recovery is a key concern for the team
 ```
 
-Save and close.
+Review it, tweak anything that's missing, save and you're done.
+
+> **Make it a habit.** Every time you open a new project folder, run `/init` first. It takes 30 seconds and Claude starts every conversation already knowing what you're working on.
 
 ### Step 3: See the difference
 

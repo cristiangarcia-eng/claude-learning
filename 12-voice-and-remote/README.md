@@ -1,4 +1,9 @@
 # Voice and Remote Control
+**The mobility layer**
+
+Everything you've learned so far — Memory, Skills, MCP, Subagents — requires you to be sitting at your keyboard, typing. But some of your best ideas happen in meetings, on a walk, or while commuting. And sometimes you need to check on a task Claude is running without going back to your desk.
+
+> **Your hands shouldn't be a bottleneck. Your keyboard shouldn't be a leash.**
 
 Work with Claude from anywhere — speak instead of type, or continue sessions from your phone.
 

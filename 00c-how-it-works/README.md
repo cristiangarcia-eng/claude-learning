@@ -48,6 +48,9 @@ Claude can execute terminal commands on your computer. It asks first before runn
 ### Search your files
 Claude can search through all your files to find specific information — like every mention of a client name, a pricing figure, or a deadline.
 
+### Search the web
+Claude can search the internet to find current information — competitor websites, market data, news, documentation. You can ask it to look something up and it will bring the results directly into your conversation, combining what it finds online with your local project files.
+
 ## The context window
 
 Claude has a **context window** — think of it as Claude's short-term memory for your conversation.

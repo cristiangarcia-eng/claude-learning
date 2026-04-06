@@ -1,6 +1,11 @@
 # Chrome Integration
+**The browser layer**
 
-Connect Claude Code to your Chrome browser so it can read, interact with, and extract data from web pages.
+Computer Use can see and control your screen, but it's generic — it doesn't know you're already logged into Gmail, Notion, or your company dashboard. It has to navigate from scratch every time. Chrome Integration is more direct: Claude connects to your actual browser, where you're already authenticated, and works with your open tabs.
+
+> **Computer Use sees your screen. Chrome Integration *is* your browser.**
+
+Connect Claude Code to your Chrome browser so it can read, interact with, and extract data from web pages — including apps where you're already logged in.
 
 ## What it does
 

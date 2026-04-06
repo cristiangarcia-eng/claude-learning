@@ -23,6 +23,8 @@ irm https://claude.ai/install.ps1 | iex
 
 That's it. It installs automatically and keeps itself up to date.
 
+> **Installation issues? Don't panic.** Sometimes your computer needs an update, or is missing some software that Claude Code depends on (like Node.js). This is normal. If you see errors during installation, just copy the terminal output and paste it into [claude.ai](https://claude.ai) (the browser chat). Describe what you were trying to do and Claude will walk you through the fix. A couple of back-and-forth messages usually solves it.
+
 ### Recommended: stop screen flickering
 
 Claude Code's terminal can flicker while it's working. To fix this, run this once:
@@ -126,6 +128,25 @@ Here are more things you can ask Claude about the Nike project:
 | `/clear` | Start fresh (clear conversation) |
 | `Esc` | Stop Claude mid-action |
 | `exit` or `Ctrl+C` | Exit Claude Code |
+
+## Power tip: Run multiple sessions in parallel
+
+You're not limited to one Claude conversation at a time. In VS Code, you can open multiple terminals — each one running its own Claude Code session with its own conversation thread.
+
+**How to do it:**
+
+1. Click the **+** icon in the terminal panel (or press `` Ctrl+Shift+` ``) to open a new terminal
+2. Type `claude` in the new terminal to start a second session
+3. Repeat as many times as you want
+
+Now you can have Claude working on three things simultaneously:
+- **Terminal 1**: Analyzing your sales data
+- **Terminal 2**: Rewriting the competitive analysis
+- **Terminal 3**: Drafting an email summary
+
+Each session is independent — they don't interfere with each other. This is one of the biggest productivity gains with Claude Code: while Claude is working on a big task in one terminal, you can start something else in another.
+
+> **Think of it like having multiple assistants instead of one.** Each terminal is its own specialist working on its own task.
 
 ## What's next?
 

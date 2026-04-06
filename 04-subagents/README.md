@@ -1,8 +1,11 @@
-# Subagents — When Claude Needs Help
+# Subagents
+**The delegation layer**
 
-## Skills vs Subagents: what's the difference?
+Skills automate *how* Claude does a task. MCP gives Claude access to external data. But what happens when a task is too big or complex for a single conversation? You ask Claude to research a competitor, and the analysis clutters your chat with intermediate findings. Or you need deep work done while you keep moving on something else.
 
-You already know Skills — instructions that Claude follows directly, like a recipe card. Subagents are different: instead of following instructions himself, Claude **launches a separate assistant** to handle a specific task.
+> **Skills are recipes Claude follows. Subagents are specialists Claude hires.**
+
+You already know Skills — instructions that Claude follows directly. Subagents are different: instead of following instructions himself, Claude **launches a separate assistant** to handle a specific task.
 
 Here's the key distinction:
 

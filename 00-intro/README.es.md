@@ -13,6 +13,12 @@ Probablemente has usado ChatGPT, Gemini o Claude en una ventana de chat. Escribe
 
 Piensalo asi: el chat de IA normal es como enviar mensajes a un amigo inteligente pidiendo consejo. Claude Code es como tener a ese amigo sentandose en tu ordenador y haciendo el trabajo contigo.
 
+---
+
+> **Que no te engane el nombre.** Se llama "Claude Code", pero no necesitas escribir ni una sola linea de codigo para usarlo. Lo que realmente tienes es un agente de IA completo con acceso a tu ordenador — lee documentos, navega por la web, controla aplicaciones y ejecuta tareas complejas de forma autonoma. Investigacion de mercado, analisis competitivo, limpieza de datos, pipelines de contenido, generacion de informes — todo eso es territorio de Claude Code. El "Code" del nombre se refiere a como funciona por dentro, no a lo que tu necesitas saber.
+
+---
+
 ## Las diferentes formas de usar Claude Code
 
 Claude Code esta disponible en varios sitios:
@@ -31,7 +37,7 @@ El terminal es donde Claude Code tiene mas poder. Tiene acceso a todo en tu maqu
 
 Sabemos lo que estas pensando: *"El terminal? Esa pantalla negra con texto? Eso es para programadores!"*
 
-La realidad es que **solo necesitas saber 4 comandos.** Eso es todo. Cuatro.
+La realidad es que **solo necesitas saber 4 comandos.** Eso es todo. Cuatro. Te ensenamos a usarlos en el modulo de [Conceptos Basicos del Terminal](../00-terminal-basics/) — pero aqui va un adelanto:
 
 | Comando | Que hace | En espanol |
 |---------|----------|------------|

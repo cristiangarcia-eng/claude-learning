@@ -91,29 +91,27 @@ cd mi-primer-proyecto
 ls
 ```
 
-## Errores comunes (y cómo solucionarlos)
+## Eso es todo lo que necesitas
 
-### "No such file or directory"
+En serio — `pwd`, `ls`, `cd` y `mkdir` son los únicos comandos que necesitarás. Una vez que Claude Code esté corriendo, le hablas en español simple, no con comandos de terminal.
 
-```
-cd: no such file or directory: Docments
-```
+---
 
-El nombre de la carpeta está mal. Usa `ls` para ver los nombres reales de las carpetas, luego intenta de nuevo.
+## Bonus: Cuando algo sale mal
 
-### "Permission denied"
+### Errores comunes
 
-Intenta agregar `sudo` antes del comando (te pedirá tu contraseña):
+**"No such file or directory"** — El nombre de la carpeta está mal. Usa `ls` para ver los nombres reales, luego intenta de nuevo.
+
+**"Permission denied"** — Intenta agregar `sudo` antes del comando (te pedirá tu contraseña):
 
 ```bash
 sudo tu-comando-aqui
 ```
 
-### Estoy perdido — ¿dónde estoy?
+**Estoy perdido — ¿dónde estoy?** — Solo escribe `pwd` para ver tu ubicación actual. Siempre puedes volver al inicio con `cd ~`.
 
-Solo escribe `pwd` para ver tu ubicación actual. Siempre puedes volver al inicio con `cd ~`.
-
-## Atajos de teclado que ahorran tiempo
+### Atajos de teclado que ahorran tiempo
 
 | Atajo | Qué hace |
 |----------|-------------|
@@ -124,7 +122,9 @@ Solo escribe `pwd` para ver tu ubicación actual. Siempre puedes volver al inici
 
 > **Consejo**: Empieza a escribir un nombre de carpeta y presiona **Tab** — la terminal lo completará por ti. ¡No necesitas escribir el nombre completo!
 
-## Eso es todo lo que necesitas
+### El truco real: deja que Claude lo arregle por ti
 
-En serio — `pwd`, `ls`, `cd` y `mkdir` son los únicos comandos que necesitarás. Una vez que Claude Code esté corriendo, le hablas en español simple, no con comandos de terminal.
+Si alguna vez ves un error en la terminal y no sabes qué significa — **no te preocupes.** Solo copia el mensaje de error (o hazle un screenshot a tu terminal) y pégalo en Claude. Te dirá exactamente qué salió mal y cómo arreglarlo.
+
+Puedes hacerlo dentro del propio Claude Code, o incluso en la [App de Escritorio](https://claude.com/download) o en el chat de [claude.ai](https://claude.ai) desde el navegador. Describe lo que intentabas hacer, muestra el error, y Claude te guiará paso a paso hacia la solución.
 

@@ -29,15 +29,17 @@ Esto le dice a Claude Code: "Quiero que puedas leer páginas web."
 
 Abre Claude Code en tu carpeta `nike-analysis` y prueba:
 
-> `Ve a adidas.com y analiza su línea de zapatillas de running. Compara su posicionamiento con las fortalezas de Nike de nuestro análisis competitivo.`
+> `Usa el Fetch MCP para ir a adidas.com y analizar su linea de zapatillas de running. Compara su posicionamiento con las fortalezas de Nike de nuestro analisis competitivo.`
 
-Claude buscará el sitio web de Adidas, lo leerá, y lo comparará con tus archivos locales de Nike. Este es el poder de MCP — combinar datos externos en vivo con tu proyecto.
+Claude usara el Fetch MCP para leer el sitio web de Adidas y compararlo con tus archivos locales de Nike. Este es el poder de MCP — combinar datos externos en vivo con tu proyecto.
 
-Más cosas que puedes hacer con Fetch:
+> **¿Por que decir "Usa el Fetch MCP"?** Claude tambien puede buscar en la web por su cuenta (web search), pero eso es otra cosa — te da resultados de busqueda, no el contenido real de la pagina. Cuando quieres que Claude lea un sitio web especifico y extraiga informacion detallada, necesitas decirle que use el Fetch MCP explicitamente. Si no, podria hacer solo una busqueda web.
 
-> `Lee https://www.nike.com/sustainability y agrega una sección de sostenibilidad a nuestro análisis competitivo basándote en lo que encuentres`
+Mas cosas que puedes hacer con Fetch:
 
-> `Revisa qué está haciendo New Balance en newbalance.com y actualiza la sección de amenazas`
+> `Usa Fetch MCP para leer https://www.nike.com/sustainability y agregar una seccion de sostenibilidad a nuestro analisis competitivo basandote en lo que encuentres`
+
+> `Usa Fetch para revisar que esta haciendo New Balance en newbalance.com y actualizar la seccion de amenazas`
 
 ## El ecosistema MCP
 

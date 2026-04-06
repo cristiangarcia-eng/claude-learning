@@ -1,10 +1,11 @@
-# Skills — Reusable Capabilities for Claude
+# Skills
+**The automation layer**
 
-## What Are Skills?
+Memory tells Claude who you are and what you're working on. But it doesn't tell Claude *how* to do specific tasks. Every time you want meeting notes formatted a certain way, or a report structured with the same sections, you have to re-explain the process. Memory remembers context — but it can't remember workflows.
 
-Skills are reusable instructions that Claude follows automatically. Instead of re-explaining the same task every conversation, a Skill saves the instructions once. Claude then uses them whenever they're relevant.
+> **Memory is who you are. Skills are what you know how to do.**
 
-Think of a skill like a recipe card. You write down the steps once, and Claude follows them every time — producing consistent results.
+Skills are reusable instructions that Claude follows automatically. Think of a skill like a recipe card — you write down the steps once, and Claude follows them every time, producing consistent results.
 
 | Benefit | Example |
 |---------|---------|
@@ -74,10 +75,30 @@ Claude will create the file for you in the right location.
 
 ### Using your skills
 
-Once created, you can use a skill in two ways:
+Once created, you can use a skill in three ways:
 
-- **Type the command**: `/meeting-notes` and then paste your notes
-- **Just ask naturally**: "Here are my meeting notes from today, please organize them" — Claude recognizes the request and activates the skill automatically
+- **Type the slash command**: `/meeting-notes` and then paste your notes
+- **Mention it in your prompt**: "Create a landing page for Nike's DTC campaign **using the frontend-design skill**" — this makes sure Claude uses the skill instead of doing it freestyle
+- **Just ask naturally**: "Here are my meeting notes from today, please organize them" — Claude may recognize the request and activate the skill automatically
+
+> **Important:** Claude doesn't always activate skills on its own. If you install a skill like **frontend-design** and just ask "create a landing page," Claude might do it without using the skill at all — and the result won't be as good. To be safe, **mention the skill in your prompt** or use the slash command.
+
+### Make a skill always active for a project
+
+If you want Claude to **always** use a specific skill in a project, add it to your project memory (`CLAUDE.md`):
+
+```
+code CLAUDE.md
+```
+
+Add a line like:
+
+```
+When creating any frontend UI, always use the frontend-design skill.
+When formatting meeting notes, always use the meeting-notes skill.
+```
+
+This way you don't have to remember to mention the skill every time — Claude will use it automatically for every conversation in that project.
 
 ## Tips
 

@@ -1,15 +1,11 @@
 # Computer Use
+**The visual layer**
 
-Let Claude see and control your screen — clicking buttons, filling forms, and navigating apps just like you would.
+Claude can read your files, fetch web pages, and run commands. But it can't *see*. It can't look at your CMS and click "Publish." It can't open a Google Sheet and fill in a row. It can't navigate your internal dashboard. Any task that requires eyes and a mouse is still 100% on you.
 
-## What is Computer Use?
+> **Computer Use gives Claude eyes and hands — it can see your screen and interact with it like you would.**
 
-Computer Use lets Claude interact with your computer visually. Instead of just reading files and running commands, Claude can:
-
-- See what's on your screen
-- Move the mouse and click
-- Type into any application
-- Navigate websites and apps
+Computer Use lets Claude interact with your computer visually. Instead of just reading files and running commands, Claude can see what's on your screen, move the mouse, click, and type into any application.
 
 Think of it as giving Claude the ability to sit next to you and use your computer.
 

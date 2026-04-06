@@ -1,10 +1,11 @@
 # Checkpoints
+**The safety layer**
 
-## What are checkpoints?
+Memory gives Claude context, but it doesn't protect you from mistakes. You ask Claude to rewrite a section of your report and it goes in the wrong direction. Or you try an approach and realize it was a dead end. Without a way to go back, you're stuck cleaning up the mess.
 
-Every time you send a message to Claude, it automatically saves a **checkpoint** — a snapshot of your conversation and files at that moment. Think of it like an unlimited "undo" button.
+> **Checkpoints let you experiment without fear. Try anything — if it doesn't work, rewind.**
 
-If Claude makes a change you don't like, or you want to try a different approach, you can rewind to any previous point and start again from there.
+Every time you send a message to Claude, it automatically saves a checkpoint — a snapshot of your conversation and files at that moment. Think of it like an unlimited "undo" button. You can rewind to any previous point and start again from there.
 
 ## How to rewind
 

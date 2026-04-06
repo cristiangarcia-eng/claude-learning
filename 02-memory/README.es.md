@@ -38,9 +38,26 @@ Solo aplica al proyecto actual. Se queda con la carpeta. Pon aquí cosas como:
 
 Vamos a configurar ambos tipos usando el proyecto de Nike con el que has estado trabajando.
 
-### Paso 1: Configura tu User memory
+### Paso 1: Activa el comando `code` en VS Code
 
-Abre Claude Code en tu carpeta `nike-analysis`, escribe `/memory` y selecciona **User memory** (opción 1). Se abrirá un archivo — agrega algo así:
+Antes de empezar, asegurate de que puedes abrir archivos desde la terminal usando VS Code. Esto hace que editar archivos de memoria sea mucho mas comodo:
+
+1. Abre VS Code
+2. Presiona `Cmd+Shift+P` (Mac) o `Ctrl+Shift+P` (Windows)
+3. Escribe **"Shell Command: Install 'code' command in PATH"** y seleccionalo
+4. Listo — ahora puedes abrir cualquier archivo desde la terminal con `code nombre-archivo`
+
+Solo necesitas hacer esto una vez.
+
+### Paso 2: Configura tu User memory
+
+En vez de usar el comando `/memory` (que abre un editor pequeño en la terminal), abre el archivo directamente en VS Code donde es mucho mas comodo editarlo:
+
+```bash
+code ~/.claude/CLAUDE.md
+```
+
+Esto abre tu archivo de User memory en una pestana completa de VS Code. Agrega algo asi:
 
 ```
 Soy product manager.
@@ -50,11 +67,25 @@ Usa bullet points en vez de párrafos largos.
 Siempre explica las cosas en lenguaje simple, no técnico.
 ```
 
-Guarda el archivo (`Cmd+S`) y ciérralo.
+Guarda el archivo (`Cmd+S`) y listo.
 
-### Paso 2: Configura tu Project memory
+### Paso 3: Configura tu Project memory
 
-Escribe `/memory` de nuevo y selecciona **Project memory** (opción 2). Agrega algo así:
+Para la memoria de proyecto, la mejor practica es: **cada vez que empieces a trabajar en una carpeta de proyecto nueva, ejecuta `/init` como tu primer comando.** Claude escaneara tus archivos, entendera el proyecto, y creara un `CLAUDE.md` automaticamente.
+
+1. Abre Claude Code en tu carpeta de proyecto
+2. Escribe `/init`
+3. Claude lee tus archivos y genera un `CLAUDE.md` con el contexto del proyecto
+
+Eso es todo. Claude descubre de que trata el proyecto, cuales son los archivos clave, y escribe la memoria por ti.
+
+Puedes revisar y editar lo que Claude genero:
+
+```bash
+code CLAUDE.md
+```
+
+Por ejemplo, para el proyecto de Nike, Claude podria generar algo asi:
 
 ```
 Este es un proyecto de análisis competitivo de Nike.
@@ -70,7 +101,9 @@ Contexto importante:
 - La recuperación en China es una preocupación clave del equipo
 ```
 
-Guarda y cierra.
+Revisalo, ajusta lo que falte, guarda y listo.
+
+> **Hazlo un habito.** Cada vez que abras una carpeta de proyecto nueva, ejecuta `/init` primero. Te toma 30 segundos y Claude empieza cada conversacion sabiendo en que estas trabajando.
 
 ### Paso 3: Ve la diferencia
 

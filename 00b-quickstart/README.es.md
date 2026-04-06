@@ -23,6 +23,8 @@ irm https://claude.ai/install.ps1 | iex
 
 Eso es todo. Se instala automáticamente y se mantiene actualizado.
 
+> **¿Problemas al instalar? No te preocupes.** A veces tu ordenador necesita una actualizacion, o le falta algun software del que Claude Code depende (como Node.js). Esto es normal. Si ves errores durante la instalacion, simplemente copia lo que muestra la terminal y pegalo en [claude.ai](https://claude.ai) (el chat del navegador). Describe lo que intentabas hacer y Claude te guiara para solucionarlo. Con un par de mensajes de ida y vuelta, normalmente se resuelve.
+
 ### Recomendado: eliminar el parpadeo de pantalla
 
 La terminal de Claude Code puede parpadear mientras trabaja. Para solucionarlo, ejecuta esto una sola vez:
@@ -126,6 +128,25 @@ Aquí hay más cosas que puedes pedirle a Claude sobre el proyecto de Nike:
 | `/clear` | Empezar de cero (limpiar conversación) |
 | `Esc` | Detener a Claude a mitad de una acción |
 | `exit` o `Ctrl+C` | Salir de Claude Code |
+
+## Consejo avanzado: Ejecuta varias sesiones en paralelo
+
+No estás limitado a una sola conversación con Claude a la vez. En VS Code, puedes abrir múltiples terminales — cada una ejecutando su propia sesión de Claude Code con su propio hilo de conversación.
+
+**Cómo hacerlo:**
+
+1. Haz clic en el icono **+** del panel de terminal (o presiona `` Ctrl+Shift+` ``) para abrir una nueva terminal
+2. Escribe `claude` en la nueva terminal para iniciar una segunda sesión
+3. Repite tantas veces como quieras
+
+Ahora puedes tener a Claude trabajando en tres cosas a la vez:
+- **Terminal 1**: Analizando tus datos de ventas
+- **Terminal 2**: Reescribiendo el análisis competitivo
+- **Terminal 3**: Redactando un email de resumen
+
+Cada sesión es independiente — no se interfieren entre sí. Esta es una de las mayores ganancias de productividad con Claude Code: mientras Claude trabaja en una tarea grande en una terminal, puedes empezar otra cosa en otra.
+
+> **Piénsalo como tener varios asistentes en vez de uno.** Cada terminal es su propio especialista trabajando en su propia tarea.
 
 ## ¿Qué sigue?
 

@@ -1,10 +1,11 @@
-# MCP — Connecting Claude to External Data
+# MCP
+**The reach layer**
 
-## What is MCP?
+Memory gives Claude context. Skills give Claude workflows. But both are limited to what's already on your computer. Need to check what a competitor is saying on their website? Pull data from your team's Slack channel? Read a Google Doc? Claude can't reach any of that — it only sees your local files.
 
-MCP (Model Context Protocol) is how Claude Code connects to the outside world. Without MCP, Claude only knows what's in your project files. With MCP, Claude can read web pages, access your Slack messages, check your Google Docs, and much more.
+> **Without MCP, Claude is brilliant but blind to the outside world.**
 
-Think of MCP servers as "adapters" — each one gives Claude access to a specific tool or data source.
+MCP (Model Context Protocol) is how Claude Code connects to external systems. Think of MCP servers as "adapters" — each one gives Claude access to a specific tool or data source.
 
 ```
 You  →  Claude Code  →  MCP Server  →  The outside world
@@ -29,15 +30,17 @@ This tells Claude Code: "I want you to be able to read web pages."
 
 Open Claude Code in your `nike-analysis` folder and try:
 
-> `Go to adidas.com and analyze their running shoe lineup. Compare their positioning with Nike's strengths from our competitive analysis.`
+> `Use the Fetch MCP to go to adidas.com and analyze their running shoe lineup. Compare their positioning with Nike's strengths from our competitive analysis.`
 
-Claude will fetch the Adidas website, read it, and compare it with your local Nike files. This is the power of MCP — combining live external data with your project.
+Claude will use the Fetch MCP to read the Adidas website and compare it with your local Nike files. This is the power of MCP — combining live external data with your project.
+
+> **Why say "Use the Fetch MCP"?** Claude can also search the web on its own (web search), but that's a different thing — it gives you search results, not the actual page content. When you want Claude to read a specific website and extract detailed information, you need to tell it to use the Fetch MCP explicitly. Otherwise it might just do a web search instead.
 
 More things you can do with Fetch:
 
-> `Read https://www.nike.com/sustainability and add a sustainability section to our competitive analysis based on what you find`
+> `Use Fetch MCP to read https://www.nike.com/sustainability and add a sustainability section to our competitive analysis based on what you find`
 
-> `Check what New Balance is doing on newbalance.com and update the threats section`
+> `Use Fetch to check what New Balance is doing on newbalance.com and update the threats section`
 
 ## The MCP ecosystem
 

@@ -1,4 +1,9 @@
 # Desktop App and Web Sessions
+**The interface layer**
+
+The terminal works, but let's be honest — reviewing file changes as text diffs isn't for everyone. And if you want to start a task and check on it from your phone later, the terminal can't help you. Claude Code is powerful, but its default interface wasn't designed for visual thinkers.
+
+> **Same Claude, better window.**
 
 Use Claude Code beyond the terminal — in a standalone app or directly in your browser.
 

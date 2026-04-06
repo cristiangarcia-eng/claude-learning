@@ -108,7 +108,7 @@ const dictionaries = {
     whatStudentsSay: "What students say",
     meetYourInstructor: "Meet your instructor",
     readyToGetStarted: "Ready to get started?",
-    readyToGetStartedDesc: "Book a free 15-minute call. No commitment, no pressure -- just a conversation about how Claude Code can help your workflow.",
+    readyToGetStartedDesc: "Start learning today. Get instant access to all lessons, quizzes, and hands-on exercises.",
     masterClaudeCodeFooter: "Master Claude Code without writing code",
 
     // Dashboard hero
@@ -175,6 +175,17 @@ const dictionaries = {
     atNovaTalent: "at Nova Talent",
     riskAndTechnology: "Risk & Technology",
     builtGlobalApp: "Built the global app",
+
+    // Checkout & payment
+    getStarted: "Get Started",
+    processing: "Processing...",
+    startLearning: "Start Learning",
+    paymentSuccess: "Payment successful!",
+    checkEmailToLogin: "Check your email to log in. We sent you a magic link to access the course.",
+    scheduleMentoring: "Schedule your mentoring session",
+    scheduleMentoringDesc: "Book your 2-hour personal mentoring session with Cristian. Pick a time that works for you.",
+    scheduleNow: "Schedule Now",
+    goToLogin: "Go to Login",
   },
   es: {
     // Navigation
@@ -249,7 +260,7 @@ const dictionaries = {
     whatStudentsSay: "Lo que dicen los estudiantes",
     meetYourInstructor: "Conoce a tu instructor",
     readyToGetStarted: "Listo para empezar?",
-    readyToGetStartedDesc: "Reserva una llamada gratuita de 15 minutos. Sin compromiso, sin presion -- solo una conversacion sobre como Claude Code puede ayudarte.",
+    readyToGetStartedDesc: "Empieza a aprender hoy. Obtén acceso instantáneo a todas las lecciones, quizzes y ejercicios prácticos.",
     masterClaudeCodeFooter: "Domina Claude Code sin escribir codigo",
 
     // Dashboard hero
@@ -316,6 +327,17 @@ const dictionaries = {
     atNovaTalent: "en Nova Talent",
     riskAndTechnology: "Riesgo y Tecnologia",
     builtGlobalApp: "Creo la app global",
+
+    // Checkout & payment
+    getStarted: "Empezar",
+    processing: "Procesando...",
+    startLearning: "Empezar a aprender",
+    paymentSuccess: "Pago exitoso!",
+    checkEmailToLogin: "Revisa tu email para acceder. Te enviamos un enlace magico para entrar al curso.",
+    scheduleMentoring: "Agenda tu sesion de mentoria",
+    scheduleMentoringDesc: "Reserva tu sesion de mentoria personal de 2 horas con Cristian. Elige el horario que te convenga.",
+    scheduleNow: "Agendar Ahora",
+    goToLogin: "Ir al Login",
   },
 } as const;
 

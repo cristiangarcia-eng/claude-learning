@@ -4,6 +4,7 @@ import { UnstorageAdapter } from "@auth/unstorage-adapter";
 import { createStorage } from "unstorage";
 import upstashRedisDriver from "unstorage/drivers/upstash";
 import { createTransport } from "nodemailer";
+import { seedAllowList, isAllowed } from "./allowlist";
 
 const storage = createStorage({
   driver: upstashRedisDriver({
@@ -59,10 +60,9 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
   },
   callbacks: {
     async signIn({ user }) {
-      const allowed = (process.env.ALLOWED_EMAILS || "")
-        .split(",")
-        .map((e) => e.trim().toLowerCase());
-      return allowed.includes(user.email?.toLowerCase() ?? "");
+      if (!user.email) return false;
+      await seedAllowList();
+      return isAllowed(user.email);
     },
   },
 });

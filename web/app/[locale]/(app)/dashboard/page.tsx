@@ -14,6 +14,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { type Locale, isValidLocale, t } from "@/lib/i18n";
 import { notFound } from "next/navigation";
 import { DashboardHero } from "@/components/dashboard-hero";
+import { MentoringCard } from "@/components/mentoring-card";
+import { auth } from "@/lib/auth";
 
 function LessonCard({ lesson, locale }: { lesson: LessonMeta; locale: Locale }) {
   return (
@@ -95,11 +97,16 @@ export default async function HomePage({
   if (!isValidLocale(locale)) notFound();
 
   const typedLocale = locale as Locale;
+  const session = await auth();
+  const userEmail = session?.user?.email;
 
   return (
     <div className="min-h-screen">
       {/* Hero with progress */}
       <DashboardHero />
+
+      {/* Mentoring card (only for mentoring tier) */}
+      {userEmail && <MentoringCard email={userEmail} />}
 
       {/* Learning path by level */}
       <main className="max-w-6xl mx-auto px-6 py-12 space-y-12">

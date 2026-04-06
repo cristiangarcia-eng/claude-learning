@@ -4,7 +4,6 @@ import { LESSONS, getLessonsByLevel, getLessonTitle } from "@/lib/lessons";
 import {
   ArrowRight,
   BookOpen,
-  Calendar,
   CheckCircle,
   Clock,
   MessageSquare,
@@ -20,8 +19,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { type Locale, isValidLocale, t } from "@/lib/i18n";
 import { notFound } from "next/navigation";
 import { LanguageSwitcher } from "@/components/language-switcher";
-
-const CALENDLY_URL = process.env.NEXT_PUBLIC_CALENDLY_URL || "#";
+import { CheckoutButton } from "@/components/checkout-button";
 
 const AUDIENCE_KEYS = [
   { icon: Presentation, titleKey: "productManagers" as const, descKey: "productManagersDesc" as const },
@@ -73,12 +71,10 @@ export default async function LandingPage({
               {t(l, "logIn")}
             </Link>
             <a
-              href={CALENDLY_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#pricing"
               className="text-sm font-medium px-4 py-2 rounded-lg bg-brand-green text-black hover:bg-brand-green/90 transition-all hover:shadow-[0_0_20px_rgba(34,197,94,0.3)]"
             >
-              {t(l, "bookACall")}
+              {t(l, "getStarted")}
             </a>
           </div>
         </div>
@@ -105,13 +101,10 @@ export default async function LandingPage({
               </p>
               <div className="animate-fade-up delay-3 flex flex-col sm:flex-row items-start gap-4">
                 <a
-                  href={CALENDLY_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#pricing"
                   className="group inline-flex items-center gap-2 px-6 py-3.5 rounded-lg bg-brand-green text-black font-semibold hover:bg-brand-green/90 transition-all hover:shadow-[0_0_30px_rgba(34,197,94,0.25)] text-base"
                 >
-                  <Calendar className="h-4 w-4" />
-                  {t(l, "bookFreeCall")}
+                  {t(l, "startLearning")}
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
                 </a>
                 <a
@@ -278,14 +271,14 @@ export default async function LandingPage({
                   <span className="text-muted-foreground">{t(l, "lifetimeAccess")}</span>
                 </li>
               </ul>
-              <a
-                href={CALENDLY_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block w-full text-center px-4 py-3 rounded-lg border border-border/60 font-medium text-muted-foreground hover:text-foreground hover:border-foreground/20 transition-all"
+              <CheckoutButton
+                tier="course"
+                locale={locale}
+                loadingText={t(l, "processing")}
+                className="block w-full text-center px-4 py-3 rounded-lg border border-border/60 font-medium text-muted-foreground hover:text-foreground hover:border-foreground/20 transition-all cursor-pointer disabled:opacity-50"
               >
                 {t(l, "getAccess")}
-              </a>
+              </CheckoutButton>
             </div>
 
             {/* Course + Mentoring */}
@@ -323,14 +316,14 @@ export default async function LandingPage({
                   {t(l, "followUpSupport")}
                 </li>
               </ul>
-              <a
-                href={CALENDLY_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block w-full text-center px-4 py-3 rounded-lg bg-brand-green text-black font-semibold hover:bg-brand-green/90 transition-all hover:shadow-[0_0_24px_rgba(34,197,94,0.2)]"
+              <CheckoutButton
+                tier="mentoring"
+                locale={locale}
+                loadingText={t(l, "processing")}
+                className="block w-full text-center px-4 py-3 rounded-lg bg-brand-green text-black font-semibold hover:bg-brand-green/90 transition-all hover:shadow-[0_0_24px_rgba(34,197,94,0.2)] cursor-pointer disabled:opacity-50"
               >
-                {t(l, "bookACall")}
-              </a>
+                {t(l, "getStarted")}
+              </CheckoutButton>
             </div>
           </div>
         </div>
@@ -454,13 +447,10 @@ export default async function LandingPage({
             {t(l, "readyToGetStartedDesc")}
           </p>
           <a
-            href={CALENDLY_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#pricing"
             className="relative group inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-brand-green text-black font-bold hover:bg-brand-green/90 transition-all hover:shadow-[0_0_40px_rgba(34,197,94,0.3)] text-lg"
           >
-            <Calendar className="h-5 w-5" />
-            {t(l, "bookFreeCall")}
+            {t(l, "startLearning")}
             <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
           </a>
         </div>

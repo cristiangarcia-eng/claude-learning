@@ -51,7 +51,9 @@ Le dice a Claude que dedique más tiempo razonando antes de responder. Produce r
 | `low` | Preguntas rapidas, busquedas simples |
 | `medium` | Analisis y resumenes estandar |
 | `high` | Analisis complejos, decisiones estrategicas |
-| `max` | Evaluacion profunda multi-factor (solo Opus) |
+| `max` | Evaluacion profunda multi-factor (solo Opus 4.6) |
+
+> **Recomendación:** Claude tiende a ponerte en `medium` por defecto para ahorrar tokens. Recomendamos mantener siempre el nivel en `max`. Para que persista, añade `export CLAUDE_CODE_EFFORT_LEVEL=max` a tu `.zshrc`/`.bashrc`, o pon `"effortLevel": "max"` en tu archivo de settings. El comando `/effort max` funciona por sesión pero no persiste entre sesiones (a diferencia de `low`, `medium` y `high` que sí persisten). Nota: `max` solo está disponible en Opus 4.6.
 
 ---
 

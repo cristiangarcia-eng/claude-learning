@@ -34,6 +34,16 @@ graph TD
 4. **Tu apruebas** cualquier cambio (Claude siempre pregunta primero)
 5. **Repite** hasta que la tarea este completa
 
+## Espera iteración, no perfección
+
+Claude no siempre acertará a la primera — y eso es completamente normal. El valor de la IA no es la perfección al primer intento, es la **velocidad de iteración**.
+
+Una persona podría pasar 2 horas creando un informe perfecto. Claude llega al 80% en 2 minutos, luego al 90% después de tu primera corrección, y al 95% después de la segunda. En 5-10 minutos, tienes un resultado que habría tomado mucho más tiempo a mano.
+
+**La mentalidad correcta:** No juzgues a Claude por su primer resultado. Júzgalo por lo rápido que llega a "suficientemente bueno" con tu guía.
+
+> **Tip: Observa cómo piensa Claude.** Mientras Claude trabaja, puedes hacer clic en la etiqueta **"thinking"** para ver su razonamiento interno — qué planea hacer, qué archivos está considerando y cómo está abordando tu solicitud. Esto te ayuda a entender qué está pasando y cuándo corregir el rumbo.
+
 ## Qué puede hacer Claude
 
 ### Leer archivos
@@ -69,6 +79,12 @@ Esta memoria tiene un límite. Cuando se llena, la calidad de Claude se degrada:
 
 Puedes verificar cuánto contexto has usado escribiendo `/context`.
 
+### Auto-compactación
+
+Cuando tu conversación se hace muy larga, Claude comprime automáticamente los mensajes más antiguos en resúmenes de alta densidad. Esto pasa en segundo plano — no necesitas hacer nada. Preserva la información importante mientras libera espacio para trabajo nuevo.
+
+También puedes activar esto manualmente con `/compact` si quieres liberar espacio sin empezar de cero.
+
 ### Cómo manejarla
 
 | Problema | Solución |
@@ -93,6 +109,26 @@ Claude Code tiene algunos comandos integrados que empiezan con `/`. No necesitas
 
 Recomendamos usar **Opus 4.6** — es el modelo más capaz y produce los mejores resultados. Puedes ver qué modelo estás usando en la parte inferior de la pantalla de Claude Code, y cambiarlo con `/model` si es necesario.
 
+### Nivel de esfuerzo: ponlo siempre al máximo
+
+Además de elegir el modelo, Claude tiene un ajuste de **nivel de esfuerzo** (`/effort`) que controla cuánto razona antes de responder. Por defecto, Claude tiende a ponerte en `medium` para consumir menos tokens — pero nosotros recomendamos tenerlo siempre en el máximo para obtener las mejores respuestas.
+
+Tienes varias formas de ponerlo por defecto:
+
+**Variable de entorno (la más fiable, persiste siempre):**
+
+```bash
+export CLAUDE_CODE_EFFORT_LEVEL=max
+```
+
+Añade esa línea a tu `.bashrc` o `.zshrc` para que se aplique en cada sesión.
+
+**Archivo de settings:** Añade `"effortLevel": "max"` en tu archivo de configuración de Claude Code.
+
+**Comando por sesión:** Escribe `/effort max` en Claude Code. Los niveles `low`, `medium` y `high` persisten entre sesiones, pero `max` no persiste entre sesiones excepto a través de la variable de entorno.
+
+> **Nota:** `max` solo está disponible en Opus 4.6 — si usas Sonnet dará error.
+
 Aprenderás más sobre `/memory` en la lección de Memoria. Por ahora, el más importante es `/clear` — úsalo cada vez que cambies de tema.
 
 ## Permisos: siempre tienes el control
@@ -116,6 +152,16 @@ Presiona **Shift+Tab** para alternar entre modos. La mayoría de las personas em
 - **La configuración del proyecto** vive en `.claude/` dentro de tu carpeta de proyecto
 
 Nada se envía a la nube excepto tus mensajes a Claude (igual que usar ChatGPT o cualquier chat de IA).
+
+## Cuánto cuesta?
+
+Claude Code usa tokens (piensa en ellos como palabras) cada vez que tienes una conversación. Tu suscripción incluye una cantidad mensual de tokens.
+
+**Ver el coste de tu sesión:** Escribe `/cost` en Claude Code para ver cuántos tokens has usado en la sesión actual.
+
+**Ver tu uso mensual:** Ve a [claude.ai](https://claude.ai) → Settings → Usage para ver tu consumo general y cuánto de tu cuota mensual has usado.
+
+> **Dato útil:** Leer archivos grandes y trabajar con imágenes consume más tokens que las conversaciones simples de texto. Si estás trabajando en un proyecto grande, vigila tu uso con `/cost`.
 
 ## Puntos clave
 

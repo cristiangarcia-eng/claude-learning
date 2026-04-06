@@ -34,6 +34,16 @@ graph TD
 4. **You approve** any changes (Claude always asks first)
 5. **Repeat** until the task is done
 
+## Expect iteration, not perfection
+
+Claude won't always get it right on the first try — and that's completely normal. The value of AI isn't one-shot perfection, it's **speed of iteration**.
+
+A human might spend 2 hours crafting a perfect report. Claude gets to 80% in 2 minutes, then 90% after your first correction, then 95% after the second. Within 5-10 minutes, you're at a result that would have taken much longer by hand.
+
+**The right mindset:** Don't judge Claude by its first output. Judge it by how fast it gets to "good enough" with your guidance.
+
+> **Tip: Watch Claude think.** While Claude is working, you can click on the **"thinking"** label to see its internal reasoning — what it's planning to do, what files it's considering, and how it's approaching your request. This helps you understand what's happening and when to course-correct.
+
 ## What Claude can do
 
 ### Read files
@@ -69,6 +79,12 @@ This memory has a limit. When it fills up, Claude's quality degrades:
 
 You can check how full your context is by typing `/context`.
 
+### Auto-compaction
+
+When your conversation gets very long, Claude automatically compresses older messages into high-density summaries. This happens in the background — you don't need to do anything. It preserves the important information while freeing up space for new work.
+
+You can also trigger this manually with `/compact` if you want to free up space without starting over.
+
 ### How to manage it
 
 | Problem | Solution |
@@ -93,6 +109,26 @@ Claude Code has a few built-in commands that start with `/`. You don't need to m
 
 We recommend using **Opus 4.6** — it's the most capable model and produces the best results. You can check which model you're using at the bottom of the Claude Code screen, and switch with `/model` if needed.
 
+### Effort level: always set it to max
+
+Besides choosing the model, Claude has an **effort level** setting (`/effort`) that controls how much it reasons before answering. By default, Claude tends to put you on `medium` to consume fewer tokens — but we recommend always keeping it at max for the best responses.
+
+You have several ways to set it as default:
+
+**Environment variable (most reliable, always persists):**
+
+```bash
+export CLAUDE_CODE_EFFORT_LEVEL=max
+```
+
+Add that line to your `.bashrc` or `.zshrc` so it applies in every session.
+
+**Settings file:** Add `"effortLevel": "max"` in your Claude Code configuration file.
+
+**Per-session command:** Type `/effort max` in Claude Code. The levels `low`, `medium`, and `high` persist between sessions, but `max` does not persist between sessions except through the environment variable.
+
+> **Note:** `max` is only available on Opus 4.6 — using it with Sonnet will throw an error.
+
 You'll learn more about `/memory` in the Memory lesson. For now, the most important one is `/clear` — use it every time you switch topics.
 
 ## Permissions: you're always in control
@@ -116,6 +152,16 @@ Press **Shift+Tab** to cycle between modes. Most people start in Normal mode.
 - **Project settings** live in `.claude/` inside your project folder
 
 Nothing is sent to the cloud except your messages to Claude (just like using ChatGPT or any AI chat).
+
+## How much does it cost?
+
+Claude Code uses tokens (think of them as words) every time you have a conversation. Your subscription includes a monthly token allowance.
+
+**Check your session cost:** Type `/cost` in Claude Code to see how many tokens you've used in the current session.
+
+**Check your monthly usage:** Go to [claude.ai](https://claude.ai) → Settings → Usage to see your overall consumption and how much of your monthly allowance you've used.
+
+> **Good to know:** Reading large files and working with images uses more tokens than simple text conversations. If you're working on a big project, keep an eye on your usage with `/cost`.
 
 ## Key takeaways
 

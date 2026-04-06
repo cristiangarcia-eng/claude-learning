@@ -1,7 +1,7 @@
 export function Logo({ size = "default" }: { size?: "sm" | "default" | "lg" }) {
   const sizes = {
-    sm: "text-lg",
-    default: "text-xl",
+    sm: "text-base",
+    default: "text-lg",
     lg: "text-4xl md:text-5xl",
   };
 

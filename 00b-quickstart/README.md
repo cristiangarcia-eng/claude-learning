@@ -148,67 +148,74 @@ Each session is independent — they don't interfere with each other. This is on
 
 > **Think of it like having multiple assistants instead of one.** Each terminal is its own specialist working on its own task.
 
-## Organizing your projects
+## Organizing your workspace
 
-Before you start creating more projects, set up a simple folder structure. This keeps things clean and helps Claude work better — it performs best when each project has its own focused folder.
+Before you start creating more projects, set up a simple folder structure on your Desktop. This keeps everything clean and helps Claude work better — it performs best when each project has its own focused folder.
 
-### Create a projects folder
+### Create your Claude workspace
 
-Pick one place for all your Claude work. We recommend a `Projects` folder:
+Run these commands to create your workspace:
 
 ```bash
-mkdir ~/Projects
+mkdir ~/Desktop/Claude
+mkdir ~/Desktop/Claude/projects
+mkdir ~/Desktop/Claude/resources
 ```
 
 Then move the Nike project there:
 
 ```bash
-mv ~/Desktop/nike-analysis ~/Projects/nike-analysis
+mv ~/Desktop/nike-analysis ~/Desktop/Claude/projects/nike-analysis
 ```
 
-From now on, open `~/Projects` in VS Code and you'll see all your projects in the sidebar.
+Now open `~/Desktop/Claude` in VS Code (`File > Open Folder`) and you'll see everything in the sidebar.
 
-### Structure inside each project
-
-Every project should follow the same simple pattern:
+### The structure
 
 ```
-~/Projects/
-├── nike-analysis/
-│   ├── CLAUDE.md          ← project memory (created by /init)
-│   ├── data/              ← files you give Claude (CSVs, PDFs, exports)
-│   ├── output/            ← files Claude creates (reports, summaries)
-│   └── notes/             ← meeting notes, research, context
-├── q4-planning/
-│   ├── CLAUDE.md
-│   ├── data/
-│   └── output/
-└── client-acme/
-    ├── CLAUDE.md
-    ├── data/
-    └── output/
+~/Desktop/Claude/
+├── projects/                    ← one folder per project
+│   ├── nike-analysis/
+│   │   ├── data/                ← files you give Claude (CSVs, PDFs, exports)
+│   │   └── output/              ← files Claude creates (reports, summaries)
+│   ├── q4-planning/
+│   │   ├── data/
+│   │   └── output/
+│   └── client-acme/
+│       ├── data/
+│       └── output/
+└── resources/                   ← shared across all projects
+    ├── brand-guidelines.md
+    ├── competitor-list.csv
+    └── pricing-sheets/
 ```
+
+**`projects/`** is where your work lives. Each project gets its own folder with `data/` (what you give Claude) and `output/` (what Claude creates for you).
+
+**`resources/`** is for reference material that applies across projects — brand guidelines, pricing sheets, competitor data, team directories. When Claude needs this info, you can tell it: "check the resources folder for our brand guidelines."
 
 ### The rules
 
 1. **One folder per project** — Claude works best with focused context. Don't mix Nike files with Q4 planning files.
 2. **`data/`** for inputs — everything you want Claude to read (spreadsheets, documents, exports)
 3. **`output/`** for results — everything Claude creates for you (reports, analysis, drafts)
-4. **Don't create `CLAUDE.md` by hand** — run `/init` when you start working in a new project folder. Claude will scan your files and write the memory for you.
+4. **`resources/`** for shared material — things that don't belong to any single project
 
 ### Starting a new project
 
 Every time you start something new:
 
 ```bash
-mkdir ~/Projects/my-new-project
-mkdir ~/Projects/my-new-project/data
-mkdir ~/Projects/my-new-project/output
+mkdir ~/Desktop/Claude/projects/my-new-project
+mkdir ~/Desktop/Claude/projects/my-new-project/data
+mkdir ~/Desktop/Claude/projects/my-new-project/output
 ```
 
-Open the folder in VS Code, start Claude Code, and run `/init`. That's it — you're ready to work.
+Open the project folder in VS Code, start Claude Code, and you're ready to work.
 
-> **The payoff compounds.** After a few weeks, you'll have a clean library of projects, each with its own memory. You can jump between any of them and Claude immediately knows the context.
+> **The payoff compounds.** After a few weeks, you'll have a clean library of projects. You can jump between any of them and Claude immediately picks up where you left off.
+
+> **Later in the course** you'll learn how to give each project its own memory so Claude remembers context between sessions.
 
 ## What's next?
 

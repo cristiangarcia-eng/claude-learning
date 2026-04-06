@@ -148,67 +148,74 @@ Cada sesión es independiente — no se interfieren entre sí. Esta es una de la
 
 > **Piénsalo como tener varios asistentes en vez de uno.** Cada terminal es su propio especialista trabajando en su propia tarea.
 
-## Organiza tus proyectos
+## Organiza tu espacio de trabajo
 
-Antes de crear más proyectos, configura una estructura de carpetas simple. Esto mantiene todo ordenado y ayuda a Claude a trabajar mejor — funciona mejor cuando cada proyecto tiene su propia carpeta enfocada.
+Antes de crear más proyectos, configura una estructura de carpetas simple en tu Escritorio. Esto mantiene todo ordenado y ayuda a Claude a trabajar mejor — funciona mejor cuando cada proyecto tiene su propia carpeta enfocada.
 
-### Crea una carpeta de proyectos
+### Crea tu espacio de trabajo Claude
 
-Elige un solo lugar para todo tu trabajo con Claude. Recomendamos una carpeta `Projects`:
+Ejecuta estos comandos para crear tu espacio de trabajo:
 
 ```bash
-mkdir ~/Projects
+mkdir ~/Desktop/Claude
+mkdir ~/Desktop/Claude/projects
+mkdir ~/Desktop/Claude/resources
 ```
 
 Luego mueve el proyecto de Nike ahí:
 
 ```bash
-mv ~/Desktop/nike-analysis ~/Projects/nike-analysis
+mv ~/Desktop/nike-analysis ~/Desktop/Claude/projects/nike-analysis
 ```
 
-De ahora en adelante, abre `~/Projects` en VS Code y verás todos tus proyectos en la barra lateral.
+Ahora abre `~/Desktop/Claude` en VS Code (`File > Open Folder`) y verás todo en la barra lateral.
 
-### Estructura dentro de cada proyecto
-
-Cada proyecto debería seguir el mismo patrón simple:
+### La estructura
 
 ```
-~/Projects/
-├── nike-analysis/
-│   ├── CLAUDE.md          ← memoria del proyecto (se crea con /init)
-│   ├── data/              ← archivos que le das a Claude (CSVs, PDFs, exports)
-│   ├── output/            ← archivos que Claude crea (informes, resúmenes)
-│   └── notes/             ← notas de reunión, investigación, contexto
-├── q4-planning/
-│   ├── CLAUDE.md
-│   ├── data/
-│   └── output/
-└── client-acme/
-    ├── CLAUDE.md
-    ├── data/
-    └── output/
+~/Desktop/Claude/
+├── projects/                    ← una carpeta por proyecto
+│   ├── nike-analysis/
+│   │   ├── data/                ← archivos que le das a Claude (CSVs, PDFs, exports)
+│   │   └── output/              ← archivos que Claude crea (informes, resúmenes)
+│   ├── q4-planning/
+│   │   ├── data/
+│   │   └── output/
+│   └── client-acme/
+│       ├── data/
+│       └── output/
+└── resources/                   ← compartido entre todos los proyectos
+    ├── brand-guidelines.md
+    ├── competitor-list.csv
+    └── pricing-sheets/
 ```
+
+**`projects/`** es donde vive tu trabajo. Cada proyecto tiene su propia carpeta con `data/` (lo que le das a Claude) y `output/` (lo que Claude crea para ti).
+
+**`resources/`** es para material de referencia que aplica a varios proyectos — guías de marca, listas de precios, datos de competidores, directorios de equipo. Cuando Claude necesite esta info, puedes decirle: "revisa la carpeta resources para nuestras guías de marca."
 
 ### Las reglas
 
 1. **Una carpeta por proyecto** — Claude funciona mejor con contexto enfocado. No mezcles archivos de Nike con archivos de planificación de Q4.
 2. **`data/`** para inputs — todo lo que quieras que Claude lea (hojas de cálculo, documentos, exports)
 3. **`output/`** para resultados — todo lo que Claude crea para ti (informes, análisis, borradores)
-4. **No crees `CLAUDE.md` a mano** — ejecuta `/init` cuando empieces a trabajar en una carpeta nueva. Claude escaneará tus archivos y escribirá la memoria por ti.
+4. **`resources/`** para material compartido — cosas que no pertenecen a un solo proyecto
 
 ### Empezar un proyecto nuevo
 
 Cada vez que empieces algo nuevo:
 
 ```bash
-mkdir ~/Projects/mi-nuevo-proyecto
-mkdir ~/Projects/mi-nuevo-proyecto/data
-mkdir ~/Projects/mi-nuevo-proyecto/output
+mkdir ~/Desktop/Claude/projects/mi-nuevo-proyecto
+mkdir ~/Desktop/Claude/projects/mi-nuevo-proyecto/data
+mkdir ~/Desktop/Claude/projects/mi-nuevo-proyecto/output
 ```
 
-Abre la carpeta en VS Code, inicia Claude Code y ejecuta `/init`. Eso es todo — ya puedes trabajar.
+Abre la carpeta del proyecto en VS Code, inicia Claude Code y listo — ya puedes trabajar.
 
-> **El beneficio se acumula.** Después de unas semanas, tendrás una biblioteca ordenada de proyectos, cada uno con su propia memoria. Puedes saltar entre cualquiera de ellos y Claude sabe el contexto inmediatamente.
+> **El beneficio se acumula.** Después de unas semanas, tendrás una biblioteca ordenada de proyectos. Puedes saltar entre cualquiera de ellos y Claude retoma justo donde lo dejaste.
+
+> **Más adelante en el curso** aprenderás a darle memoria a cada proyecto para que Claude recuerde el contexto entre sesiones.
 
 ## ¿Qué sigue?
 

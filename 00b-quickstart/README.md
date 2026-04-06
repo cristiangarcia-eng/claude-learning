@@ -154,54 +154,56 @@ Before you start creating more projects, set up a simple folder structure. This 
 
 ### Step 1: Create the main folder
 
-Create a folder called **`claude-projects`** on your Desktop. You can do this however you prefer:
+Create a folder called **`Claude`** on your Desktop. You can do this however you prefer:
 
-- **From Finder**: right-click on Desktop → New Folder → name it `claude-projects`
+- **From Finder**: right-click on Desktop → New Folder → name it `Claude`
 - **From the terminal**:
 ```bash
-mkdir ~/Desktop/claude-projects
+mkdir ~/Desktop/Claude
 ```
 
 ### Step 2: Create the structure inside
 
-Inside `claude-projects`, create these folders:
+Inside `Claude`, create these folders:
 
 ```bash
-mkdir ~/Desktop/claude-projects/resources
+mkdir ~/Desktop/Claude/projects
+mkdir ~/Desktop/Claude/resources
 ```
 
 And move the Nike project we created earlier:
 
 ```bash
-mv ~/Desktop/nike-analysis ~/Desktop/claude-projects/nike-analysis
+mv ~/Desktop/nike-analysis ~/Desktop/Claude/projects/nike-analysis
 ```
 
 ### Step 3: Open it in VS Code
 
-Open the `claude-projects` folder in VS Code (`File > Open Folder` → find your Desktop → select `claude-projects`). You'll see everything organized in the sidebar.
+Open the `Claude` folder in VS Code (`File > Open Folder` → find your Desktop → select `Claude`). You'll see everything organized in the sidebar.
 
 ### The structure
 
 This is what your workspace should look like over time:
 
 ```
-~/Desktop/claude-projects/
-├── nike-analysis/
-│   ├── data/                ← files you give Claude (CSVs, PDFs, exports)
-│   └── output/              ← files Claude creates (reports, summaries)
-├── q4-planning/
-│   ├── data/
-│   └── output/
-├── client-acme/
-│   ├── data/
-│   └── output/
-└── resources/               ← shared across all projects
+~/Desktop/Claude/
+├── projects/                    ← one folder per project
+│   ├── nike-analysis/
+│   │   ├── data/                ← files you give Claude (CSVs, PDFs, exports)
+│   │   └── output/              ← files Claude creates (reports, summaries)
+│   ├── q4-planning/
+│   │   ├── data/
+│   │   └── output/
+│   └── client-acme/
+│       ├── data/
+│       └── output/
+└── resources/                   ← shared across all projects
     ├── brand-guidelines.md
     ├── competitor-list.csv
     └── pricing-sheets/
 ```
 
-Each project gets its own folder with `data/` (what you give Claude) and `output/` (what Claude creates for you).
+**`projects/`** is where your work lives. Each project gets its own folder with `data/` (what you give Claude) and `output/` (what Claude creates for you).
 
 **`resources/`** is for reference material that applies across projects — brand guidelines, pricing sheets, competitor data. When Claude needs this info, you can tell it: "check the resources folder for our brand guidelines."
 
@@ -214,11 +216,11 @@ Each project gets its own folder with `data/` (what you give Claude) and `output
 
 ### Starting a new project
 
-Every time you start something new, create a folder inside `claude-projects` with `data/` and `output/` subfolders:
+Every time you start something new, create a folder inside `projects/` with `data/` and `output/` subfolders:
 
 ```bash
-mkdir -p ~/Desktop/claude-projects/my-new-project/data
-mkdir ~/Desktop/claude-projects/my-new-project/output
+mkdir -p ~/Desktop/Claude/projects/my-new-project/data
+mkdir ~/Desktop/Claude/projects/my-new-project/output
 ```
 
 Open the project folder in VS Code, start Claude Code, and you're ready to work.

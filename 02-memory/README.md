@@ -35,6 +35,21 @@ This only applies to the current project. It stays with the folder. Put things h
 - Terminology and names
 - Rules specific to this project
 
+## The 4 pillars of great memory
+
+The best CLAUDE.md files cover four things:
+
+| Pillar | What it does | Example |
+|--------|-------------|---------|
+| **Knowledge compression** | Summarize key info so Claude doesn't have to read every file | "The main product is a B2B SaaS for HR teams. Revenue model is per-seat pricing." |
+| **Preferences & conventions** | How you like things done | "Always use bullet points. Write in a casual, friendly tone." |
+| **Capabilities** | What Claude can and should do in this context | "You have access to Google Docs via MCP. Use it to update the weekly report." |
+| **Lessons learned** | What worked and what didn't in past sessions | "Don't use tables for comparisons — the team prefers bullet lists." |
+
+Most people only do the first two. Adding capabilities and lessons learned makes Claude dramatically more effective over time.
+
+> **Think of it as training a new hire.** You wouldn't just tell them what the company does — you'd also tell them your preferences, what tools they have access to, and mistakes to avoid.
+
 ## Setting up your memory
 
 Let's set up both types using the Nike project you've been working with.

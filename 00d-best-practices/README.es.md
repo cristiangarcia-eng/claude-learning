@@ -112,6 +112,22 @@ y restricciones antes de hacer cualquier cambio.
 
 Claude hara preguntas inteligentes sobre cosas que quizás no habias considerado. Una vez alineados, puede ejecutar con mucha más precision.
 
+## El bucle de aprendizaje
+
+La mayor diferencia entre los buenos y los excelentes usuarios de Claude Code es el **bucle de aprendizaje**. Despues de cada proyecto o sesion:
+
+1. **Anota que funciono** — que prompts dieron buenos resultados a la primera?
+2. **Anota que no funciono** — donde fue Claude en la direccion equivocada?
+3. **Actualiza tu CLAUDE.md** — anade las lecciones para que Claude no repita errores
+
+```
+Anade a mi memoria de proyecto: "Cuando crees informes, siempre
+incluye un resumen ejecutivo arriba. El equipo se quejo la
+ultima vez cuando estaba enterrado al final."
+```
+
+Con el tiempo, tu CLAUDE.md se convierte en un documento vivo que hace a Claude mas inteligente con cada proyecto. Las personas que sacan mas valor de Claude Code son las que iteran en sus archivos de memoria — no las que escriben los mejores prompts.
+
 ## Resumen: las reglas de oro
 
 1. **Empieza con un plan** — siempre usa el Modo Plan antes de hacer cambios

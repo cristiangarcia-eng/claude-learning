@@ -34,6 +34,21 @@ Solo aplica al proyecto actual. Se queda con la carpeta. Pon aquí cosas como:
 - Terminología y nombres
 - Reglas específicas de este proyecto
 
+## Los 4 pilares de una buena memoria
+
+Los mejores archivos CLAUDE.md cubren cuatro cosas:
+
+| Pilar | Que hace | Ejemplo |
+|-------|----------|---------|
+| **Compresion de conocimiento** | Resume info clave para que Claude no tenga que leer cada archivo | "El producto principal es un SaaS B2B para equipos de RRHH. Modelo de ingresos por puesto." |
+| **Preferencias y convenciones** | Como te gusta que se hagan las cosas | "Siempre usa viñetas. Escribe en un tono casual y amigable." |
+| **Capacidades** | Que puede y debe hacer Claude en este contexto | "Tienes acceso a Google Docs via MCP. Usalo para actualizar el informe semanal." |
+| **Lecciones aprendidas** | Que funciono y que no en sesiones anteriores | "No uses tablas para comparaciones — el equipo prefiere listas con viñetas." |
+
+La mayoria de la gente solo hace los dos primeros. Agregar capacidades y lecciones aprendidas hace que Claude sea dramaticamente mas efectivo con el tiempo.
+
+> **Piensalo como entrenar a un nuevo empleado.** No solo le dirias que hace la empresa — tambien le dirias tus preferencias, que herramientas tiene disponibles y errores a evitar.
+
 ## Configurando tu memoria
 
 Vamos a configurar ambos tipos usando el proyecto de Nike con el que has estado trabajando.

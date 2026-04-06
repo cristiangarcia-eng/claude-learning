@@ -112,6 +112,22 @@ and constraints before making any changes.
 
 Claude will ask smart questions about things you might not have considered. Once aligned, it can execute much more accurately.
 
+## The learning loop
+
+The biggest difference between good and great Claude Code users is the **learning loop**. After every project or session:
+
+1. **Note what worked** — which prompts got great results on the first try?
+2. **Note what didn't** — where did Claude go in the wrong direction?
+3. **Update your CLAUDE.md** — add the lessons so Claude doesn't repeat mistakes
+
+```
+Add to my project memory: "When creating reports, always
+include an executive summary at the top. The team complained
+last time when it was buried at the end."
+```
+
+Over time, your CLAUDE.md becomes a living document that makes Claude smarter with every project. The people who get the most value from Claude Code are the ones who iterate on their memory files — not the ones who write the best prompts.
+
 ## Summary: the golden rules
 
 1. **Start with a plan** — always use Plan Mode before making changes

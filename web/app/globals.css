@@ -216,26 +216,10 @@
   color: oklch(0.95 0 0);
 }
 
-/* Animated gradient border for featured card */
-.gradient-border {
-  position: relative;
+/* Featured card with static green border */
+.featured-card {
+  border: 1px solid rgba(34, 197, 94, 0.3);
   background: var(--card);
-  z-index: 0;
-}
-
-.gradient-border::before {
-  content: "";
-  position: absolute;
-  inset: -1px;
-  border-radius: inherit;
-  background: conic-gradient(from 0deg, #22C55E, oklch(0.5 0.15 180), #22C55E);
-  z-index: -1;
-  opacity: 0.5;
-  animation: spin-border 8s linear infinite;
-}
-
-@keyframes spin-border {
-  to { rotate: 360deg; }
 }
 
 /* Fade-in animation for sections */

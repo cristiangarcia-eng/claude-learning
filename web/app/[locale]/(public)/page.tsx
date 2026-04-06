@@ -289,7 +289,7 @@ export default async function LandingPage({
             </div>
 
             {/* Course + Mentoring */}
-            <div className="gradient-border rounded-2xl p-8 relative">
+            <div className="featured-card rounded-2xl p-8 relative">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
                 <span className="px-4 py-1 rounded-full bg-brand-green text-black text-xs font-bold tracking-wide uppercase">
                   {t(l, "mostPopular")}

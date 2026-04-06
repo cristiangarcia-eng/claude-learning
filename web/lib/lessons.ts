@@ -173,6 +173,18 @@ export const LESSONS: LessonMeta[] = [
     order: 13,
   },
   {
+    folder: "16-parallel-agents",
+    slug: "parallel-agents",
+    title: "Working with Multiple Agents",
+    titleEs: "Trabajar con Multiples Agentes",
+    description: "Run agents in parallel, build consensus, and create specialist pipelines",
+    descriptionEs: "Ejecuta agentes en paralelo, construye consenso y crea pipelines de especialistas",
+    level: "pro",
+    duration: "15 min",
+    complexity: 3,
+    order: 14,
+  },
+  {
     folder: "12-voice-and-remote",
     slug: "voice-and-remote",
     title: "Voice & Remote Control",
@@ -231,18 +243,6 @@ export const LESSONS: LessonMeta[] = [
     duration: "10 min",
     complexity: 3,
     order: 15,
-  },
-  {
-    folder: "16-parallel-agents",
-    slug: "parallel-agents",
-    title: "Working with Multiple Agents",
-    titleEs: "Trabajar con Multiples Agentes",
-    description: "Run agents in parallel, build consensus, and create specialist pipelines",
-    descriptionEs: "Ejecuta agentes en paralelo, construye consenso y crea pipelines de especialistas",
-    level: "pro",
-    duration: "15 min",
-    complexity: 3,
-    order: 19,
   },
 
   // === PROJECTS: Hands-on exercises ===

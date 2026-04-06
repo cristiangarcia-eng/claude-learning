@@ -148,5 +148,67 @@ Each session is independent — they don't interfere with each other. This is on
 
 > **Think of it like having multiple assistants instead of one.** Each terminal is its own specialist working on its own task.
 
+## Organizing your projects
+
+Before you start creating more projects, set up a simple folder structure. This keeps things clean and helps Claude work better — it performs best when each project has its own focused folder.
+
+### Create a projects folder
+
+Pick one place for all your Claude work. We recommend a `Projects` folder:
+
+```bash
+mkdir ~/Projects
+```
+
+Then move the Nike project there:
+
+```bash
+mv ~/Desktop/nike-analysis ~/Projects/nike-analysis
+```
+
+From now on, open `~/Projects` in VS Code and you'll see all your projects in the sidebar.
+
+### Structure inside each project
+
+Every project should follow the same simple pattern:
+
+```
+~/Projects/
+├── nike-analysis/
+│   ├── CLAUDE.md          ← project memory (created by /init)
+│   ├── data/              ← files you give Claude (CSVs, PDFs, exports)
+│   ├── output/            ← files Claude creates (reports, summaries)
+│   └── notes/             ← meeting notes, research, context
+├── q4-planning/
+│   ├── CLAUDE.md
+│   ├── data/
+│   └── output/
+└── client-acme/
+    ├── CLAUDE.md
+    ├── data/
+    └── output/
+```
+
+### The rules
+
+1. **One folder per project** — Claude works best with focused context. Don't mix Nike files with Q4 planning files.
+2. **`data/`** for inputs — everything you want Claude to read (spreadsheets, documents, exports)
+3. **`output/`** for results — everything Claude creates for you (reports, analysis, drafts)
+4. **Don't create `CLAUDE.md` by hand** — run `/init` when you start working in a new project folder. Claude will scan your files and write the memory for you.
+
+### Starting a new project
+
+Every time you start something new:
+
+```bash
+mkdir ~/Projects/my-new-project
+mkdir ~/Projects/my-new-project/data
+mkdir ~/Projects/my-new-project/output
+```
+
+Open the folder in VS Code, start Claude Code, and run `/init`. That's it — you're ready to work.
+
+> **The payoff compounds.** After a few weeks, you'll have a clean library of projects, each with its own memory. You can jump between any of them and Claude immediately knows the context.
+
 ## What's next?
 

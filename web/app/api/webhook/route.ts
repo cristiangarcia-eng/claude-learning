@@ -3,6 +3,7 @@ import type Stripe from "stripe";
 import { getStripe } from "@/lib/stripe";
 import { addToAllowList } from "@/lib/allowlist";
 import { setUserPayment, type Tier } from "@/lib/user-tier";
+import { sendWelcomeEmail } from "@/lib/welcome-email";
 
 export async function POST(request: Request) {
   const body = await request.text();
@@ -37,6 +38,11 @@ export async function POST(request: Request) {
         paidAt: new Date().toISOString(),
         stripeSessionId: session.id,
       });
+      // Send welcome email (non-blocking)
+      sendWelcomeEmail(email, tier).catch((err) =>
+        console.error("Failed to send welcome email:", err)
+      );
+
       console.log(`Payment processed: ${email} → ${tier}`);
     } else {
       console.warn("Webhook missing email or tier metadata:", session.id);

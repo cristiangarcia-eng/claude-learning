@@ -4,12 +4,6 @@
 
 Claude Code es como un colega muy inteligente. Cuanto más claro te comuniques, mejores resultados obtendras.
 
-> **El anti-ejemplo perfecto:**
->
-> Cuando se lanzó Claude Cowork, Twitter se llenó de usuarios pidiéndole cosas como: *"Claude, accede a mi cuenta bancaria. Haz que ese número suba a $1,000 millones. Make no mistakes."* Otro le pasó la foto de su crush y le pidió: *"Make her my GF. Make no mistakes."*
->
-> "Make no mistakes" se convirtió en la frase del año — y en el ejemplo perfecto de expectativas vagas vs. instrucciones útiles. ([Fast Company](https://www.fastcompany.com/91477813/claude-cowork-is-here-and-so-are-the-memes))
-
 ## Se específico, no vago
 
 El consejo más importante: **di exactamente lo que quieres**.

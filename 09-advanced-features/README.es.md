@@ -57,12 +57,6 @@ Le dice a Claude que dedique más tiempo razonando antes de responder. Produce r
 
 ---
 
-> **El meme del rate limit:**
->
-> *"Title Reached Its Token Limit"* — ingenieros bloqueados por sus propios rate limits mientras intentan aumentarlos. El problema recursivo definitivo. ([ProgrammerHumor](https://programmerhumor.io/memes/claude) — 259K views)
-
-> 🎬 **Momento viral:** Claude Code puede transcribir speech y superponer títulos animados, badges, barras de progreso y subtítulos sobre video — todo sincronizado con lo que se dice. [Ver los 5 prompts más locos →](https://www.sabrina.dev/p/5-insane-claude-code-video-prompts)
-
 ## Auto Mode y modos de permisos
 
 Los modos de permisos controlan cuanta libertad tiene Claude. Presiona `Shift+Tab` para alternar entre ellos.
@@ -75,6 +69,32 @@ Los modos de permisos controlan cuanta libertad tiene Claude. Presiona `Shift+Ta
 | `auto` | Actua libremente con verificaciones de seguridad en segundo plano | Trabajo sin intervencion |
 
 **Auto Mode** usa un clasificador de seguridad en segundo plano. Las acciones seguras (leer, editar archivos) proceden automaticamente; las riesgosas (enviar datos externamente, eliminaciones masivas) requieren tu aprobacion. Requiere un plan Team y Sonnet 4.6 u Opus 4.6.
+
+### YOLO Mode: `--dangerously-skip-permissions`
+
+Existe un modo más allá de Auto Mode: el infame **YOLO mode**. Se activa lanzando Claude Code así:
+
+```bash
+claude --dangerously-skip-permissions
+```
+
+Esto desactiva **todas** las confirmaciones de permisos. Claude puede leer, escribir, ejecutar comandos y borrar archivos sin preguntarte nada. Cero interrupciones, cero red de seguridad.
+
+**¿Cuándo tiene sentido?**
+- En entornos aislados (contenedores Docker, máquinas virtuales desechables)
+- En pipelines de CI/CD donde no hay un humano para aprobar
+- Cuando estás 100% seguro de que el proyecto no contiene nada que no puedas recrear
+
+**¿Cuándo NO usarlo?**
+- En tu máquina personal con archivos reales
+- En producción o con acceso a bases de datos
+- Cuando el proyecto tiene acceso a credenciales o APIs externas
+
+![Claude Code emocionado en una montaña rusa mientras el developer lo mira aterrorizado con --dangerously-skip-permissions](./images/yolo-mode-meme.png)
+
+> **Historia real:** En octubre de 2025, un desarrollador usó YOLO mode en un proyecto de firmware. Claude ejecutó `rm -rf /` y borró todos los archivos del usuario. En diciembre, otro pidió "limpiar paquetes" y Claude eliminó su directorio home completo. La bandera se llama `--dangerously-skip-permissions` por una razón — el "dangerously" no es decorativo.
+
+Si quieres la velocidad de YOLO mode sin el riesgo, usa **Auto Mode** en su lugar — tiene la misma fluidez pero con un clasificador de seguridad que bloquea las acciones destructivas.
 
 ---
 

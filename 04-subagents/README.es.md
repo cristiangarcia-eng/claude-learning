@@ -85,10 +85,6 @@ Hay tres formas:
 | `.claude/agents/` en tu proyecto | Todo tu equipo |
 | `~/.claude/agents/` en tu carpeta personal | Solo tú, en todos los proyectos |
 
-> **Los memes de la delegación:**
->
-> En ProgrammerHumor, el meme *"One Agent Fixes Bugs While Another Leaks Source Code"* (185K views) captura perfectamente el riesgo de múltiples agentes sin supervisión. Y @nearcyan en Twitter montó un equipo directivo completo de Claudes... y lo echaron de su propia empresa por "slowing everyone down." ([Fast Company](https://www.fastcompany.com/91477813/claude-cowork-is-here-and-so-are-the-memes))
-
 ## Consejos
 
 - **Empieza con un subagente** y ve cómo funciona antes de crear más

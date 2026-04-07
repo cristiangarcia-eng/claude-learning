@@ -76,10 +76,6 @@ Claude extraerá los requisitos clave de tu flujo de consciencia. No necesitas o
 
 > **Los voice dumps son 3x más rápidos que escribir** y a menudo producen mejores resultados porque incluyes detalles que te saltarías al escribir (como la queja de formato de la última vez).
 
-> **El diagnóstico:**
->
-> La comunidad ya tiene nombre para esto: *"Claudeholism: The New Addiction of the Century."* Una vez que combinas voz + Claude Code, volver a escribir se siente como volver al fax. Estás avisado.
-
 ## Consejos para la entrada por voz
 
 - **Habla con naturalidad** — no intentes "sonar técnico". Solo describe lo que quieres como se lo dirías a un colega

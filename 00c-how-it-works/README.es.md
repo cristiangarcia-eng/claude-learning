@@ -71,10 +71,6 @@ Todo entra en está memoria:
 - Salidas de comandos
 - Respuestas de Claude
 
-> **El meme:**
->
-> *"Claude Code mirando tres píxeles de contexto y declarando con toda confianza: 'Ahora tengo el panorama completo'"* ([ProgrammerHumor](https://programmerhumor.io/memes/claude) — 195K views)
-
 Esta memoria tiene un límite. Cuando se llena, la calidad de Claude se degrada:
 
 - Al **70% llena** — la calidad empieza a bajar, las respuestas se vuelven menos precisas
@@ -167,7 +163,7 @@ Claude Code usa tokens (piensa en ellos como palabras) cada vez que tienes una c
 
 > **Dato útil:** Leer archivos grandes y trabajar con imágenes consume más tokens que las conversaciones simples de texto. Si estás trabajando en un proyecto grande, vigila tu uso con `/cost`.
 
-> 🎬 **Momento viral:** Boris Cherny, el creador de Claude Code, compartió cómo usa su propia herramienta. El tweet acumuló 4.4 millones de views y Developer Twitter tuvo "una crisis existencial colectiva". [Ver el hilo original →](https://twitter-thread.com/t/2007179832300581177)
+![Claude Code: You've hit your limit, resets 7pm. Me from 5-6.59pm: Darth Maul esperando furioso](./images/rate-limit-meme.png)
 
 ## Puntos clave
 

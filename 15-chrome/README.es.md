@@ -75,5 +75,3 @@ Como Claude usa tu Chrome (donde ya tienes la sesión iniciada), puede acceder a
 
 > **Consejo**: La Integración con Chrome funciona genial con Computer Use — Claude puede ver el navegador e interactuar con él naturalmente, tal como lo harías tú.
 
-> 🎬 **El futuro de la interacción:** Josh Bickett describió Claude Imagine como "un ordenador generativo al que le hablas en lenguaje natural" — una forma completamente nueva de interactuar con la IA, más allá del chat. [Ver el tweet →](https://x.com/josh_bickett/status/1972729525319663692)
-

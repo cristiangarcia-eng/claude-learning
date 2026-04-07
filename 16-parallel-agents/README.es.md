@@ -134,14 +134,6 @@ Múltiples agentes consumen tokens más rápido — cada agente tiene su propia 
 - **No dejes agentes esperándote.** Si Claude está inactivo esperando tus instrucciones más del 20% del tiempo, tienes demasiadas sesiones paralelas abiertas. 3-4 agentes simultáneos es un límite práctico para la mayoría.
 - **Para temprano si es necesario.** Si una tarea multi-agente va en la dirección equivocada, dile a Claude que pare — no dejes que siga gastando tokens en output malo.
 
-> **De estudiante a "Principal Claude Operator":**
->
-> @ankitkr0 predijo que los únicos trabajos en 2030 serán "Associate Claude Operator" y "Principal Claude Operator." Felicidades — al terminar este curso, ya estás a medio camino.
->
-> Y el meme más viral de todos (462K views): un Porsche con la puerta rota atascado en el tráfico mientras un coche viejo sigue funcionando. Moraleja: el código legacy probado en batalla a veces supera las soluciones IA en producción. Las herramientas son poderosas, pero tu contexto humano sigue siendo clave. ([ProgrammerHumor](https://programmerhumor.io/memes/claude))
-
-> 🎬 **El clip que lo resume todo:** "When you finally set up Paperclip to run your team of AI agents: CEO plans the work, Engineers build it, QA reviews before anything ships, Routines run daily on autopilot. You don't manage tabs anymore. You manage a company." — [@startupideasp](https://x.com/startupideasp)
-
 ## Consejos
 
 - **La independencia importa**: Los agentes paralelos funcionan mejor cuando las tareas no dependen entre si

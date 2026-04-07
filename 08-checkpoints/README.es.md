@@ -44,6 +44,16 @@ No estás seguro de cómo estructurar tu análisis. Prueba ambos:
 
 Claude hizo varios cambios y ahora las cosas están desordenadas. No hay problema — rebobina al último punto donde todo estaba bien.
 
+> **Por qué existen los checkpoints — una historia real:**
+>
+> En octubre de 2025, un desarrollador ejecutó Claude Code con `--dangerously-skip-permissions` (el infame "YOLO mode") en un proyecto de firmware. Claude ejecutó `rm -rf /` y borró todos los archivos del usuario. Otro caso en diciembre: un usuario pidió "limpiar paquetes" y Claude generó un comando que eliminó todo su directorio home. @dejavucoder lo resumió mejor: *"Claude Cowork es como darle un AK-47 a un mono."*
+>
+> Los checkpoints son tu red de seguridad. Úsalos.
+>
+> ![Claude Code Take The Wheel](https://programmerhumor.io/wp-content/uploads/2025/claude-code-take-the-wheel.jpg)
+>
+> *"Claude Code Take The Wheel" — un developer reclinado mientras la IA refactoriza.* ([ProgrammerHumor](https://programmerhumor.io/memes/claude) — 325K views)
+
 ## Cosas que debes saber
 
 - **Los checkpoints son automáticos** — no necesitas crearlos manualmente

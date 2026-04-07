@@ -69,6 +69,34 @@ Usa un pipeline de agentes:
 
 Cada agente se enfoca en lo que mejor hace, produciendo mayor calidad que un solo agente haciendo todo.
 
+### 4. Debate (abogado del diablo)
+
+Haz que dos agentes argumenten **posiciones opuestas** sobre el mismo tema. Uno defiende, otro ataca. La fricción entre ellos saca a la luz riesgos y puntos ciegos que una sola perspectiva no vería.
+
+**Ejemplo: Decisión de entrada a mercado**
+
+```
+Estoy considerando lanzar nuestro producto en Japón.
+Usa 2 agentes en formato de debate:
+- Agente 1: Argumenta por qué SÍ deberíamos entrar al mercado japonés
+- Agente 2: Argumenta por qué NO deberíamos entrar al mercado japonés
+Después de 2-3 rondas de debate, sintetiza los argumentos
+más fuertes de cada lado en una recomendación final.
+```
+
+**Ejemplo: Decisión de inversión**
+
+```
+Estamos evaluando si adquirir CompanyX.
+Ejecuta un debate adversarial:
+- Agente 1: El caso A FAVOR de la adquisición
+- Agente 2: El caso EN CONTRA de la adquisición
+Incluye argumentos financieros, estratégicos y culturales.
+Sintetiza en una recomendación balanceada.
+```
+
+El patrón de debate produce conclusiones más robustas que simplemente preguntar "deberíamos hacer X?" — porque cada agente está motivado a encontrar los argumentos más fuertes posibles para su lado.
+
 ## Cuando usar cada patron
 
 | Patron | Ideal para | Ejemplo |
@@ -76,6 +104,7 @@ Cada agente se enfoca en lo que mejor hace, produciendo mayor calidad que un sol
 | **Paralelo** | Misma tarea en diferentes inputs | Analizar 5 competidores, revisar 10 documentos |
 | **Consenso** | Decisiones que necesitan multiples perspectivas | Naming, estrategia, evaluacion de riesgos |
 | **Pipeline** | Flujos multi-paso con diferentes habilidades | Investigar > Escribir > Editar > Publicar |
+| **Debate** | Decisiones con alto riesgo o incertidumbre | Entrada a mercado, adquisiciones, cambios de estrategia |
 
 ## Como lanzar multiples agentes
 
@@ -96,9 +125,26 @@ Combina en un unico informe comparativo.
 - **Planificacion de eventos**: Agentes paralelos gestionando venues, catering y ponentes
 - **Contratacion**: Analizar multiples perfiles de candidatos a la vez
 
+## Cuidado con los costos
+
+Múltiples agentes consumen tokens más rápido — cada agente tiene su propia conversación. Ten en cuenta estos tips:
+
+- **Empieza con 2-3 agentes**, no 10. Escala una vez que estés cómodo con los resultados y el costo.
+- **Revisa tu gasto** con `/cost` después de ejecutar tareas multi-agente para calibrar expectativas.
+- **No dejes agentes esperándote.** Si Claude está inactivo esperando tus instrucciones más del 20% del tiempo, tienes demasiadas sesiones paralelas abiertas. 3-4 agentes simultáneos es un límite práctico para la mayoría.
+- **Para temprano si es necesario.** Si una tarea multi-agente va en la dirección equivocada, dile a Claude que pare — no dejes que siga gastando tokens en output malo.
+
+> **De estudiante a "Principal Claude Operator":**
+>
+> @ankitkr0 predijo que los únicos trabajos en 2030 serán "Associate Claude Operator" y "Principal Claude Operator." Felicidades — al terminar este curso, ya estás a medio camino.
+>
+> Y el meme más viral de todos (462K views): un Porsche con la puerta rota atascado en el tráfico mientras un coche viejo sigue funcionando. Moraleja: el código legacy probado en batalla a veces supera las soluciones IA en producción. Las herramientas son poderosas, pero tu contexto humano sigue siendo clave. ([ProgrammerHumor](https://programmerhumor.io/memes/claude))
+
+> 🎬 **El clip que lo resume todo:** "When you finally set up Paperclip to run your team of AI agents: CEO plans the work, Engineers build it, QA reviews before anything ships, Routines run daily on autopilot. You don't manage tabs anymore. You manage a company." — [@startupideasp](https://x.com/startupideasp)
+
 ## Consejos
 
 - **La independencia importa**: Los agentes paralelos funcionan mejor cuando las tareas no dependen entre si
 - **Combina al final**: Siempre pide un paso de sintesis que fusione los resultados paralelos
-- **Calidad sobre velocidad**: Para decisiones importantes, usa el patron de consenso — detecta puntos ciegos
+- **Calidad sobre velocidad**: Para decisiones importantes, usa el patron de consenso o debate — detectan puntos ciegos
 - **Empieza simple**: Prueba paralelo con 2-3 agentes antes de escalar a equipos mas grandes

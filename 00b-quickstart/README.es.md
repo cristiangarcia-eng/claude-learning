@@ -23,6 +23,12 @@ irm https://claude.ai/install.ps1 | iex
 
 Eso es todo. Se instala automáticamente y se mantiene actualizado.
 
+> **Cómo se siente configurar Claude Code por primera vez:**
+>
+> ![Un cartel contradictorio que dice DO NOT PUSH y PUSH al mismo tiempo](https://programmerhumor.io/wp-content/uploads/2025/claude-code-devs-right-now.jpg)
+>
+> *Un cartel contradictorio dice "DO NOT PUSH" y "PUSH" al mismo tiempo. Así se siente la terminal al principio — pero te prometemos que pasa rápido.* ([ProgrammerHumor](https://programmerhumor.io/memes/claude) — 228K views)
+
 > **¿Problemas al instalar? No te preocupes.** A veces tu ordenador necesita una actualizacion, o le falta algun software del que Claude Code depende (como Node.js). Esto es normal. Si ves errores durante la instalacion, simplemente copia lo que muestra la terminal y pegalo en [claude.ai](https://claude.ai) (el chat del navegador). Describe lo que intentabas hacer y Claude te guiara para solucionarlo. Con un par de mensajes de ida y vuelta, normalmente se resuelve.
 
 ### Recomendado: eliminar el parpadeo de pantalla

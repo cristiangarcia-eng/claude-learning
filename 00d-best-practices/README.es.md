@@ -4,6 +4,12 @@
 
 Claude Code es como un colega muy inteligente. Cuanto más claro te comuniques, mejores resultados obtendras.
 
+> **El anti-ejemplo perfecto:**
+>
+> Cuando se lanzó Claude Cowork, Twitter se llenó de usuarios pidiéndole cosas como: *"Claude, accede a mi cuenta bancaria. Haz que ese número suba a $1,000 millones. Make no mistakes."* Otro le pasó la foto de su crush y le pidió: *"Make her my GF. Make no mistakes."*
+>
+> "Make no mistakes" se convirtió en la frase del año — y en el ejemplo perfecto de expectativas vagas vs. instrucciones útiles. ([Fast Company](https://www.fastcompany.com/91477813/claude-cowork-is-here-and-so-are-the-memes))
+
 ## Se específico, no vago
 
 El consejo más importante: **di exactamente lo que quieres**.
@@ -127,6 +133,23 @@ ultima vez cuando estaba enterrado al final."
 ```
 
 Con el tiempo, tu CLAUDE.md se convierte en un documento vivo que hace a Claude mas inteligente con cada proyecto. Las personas que sacan mas valor de Claude Code son las que iteran en sus archivos de memoria — no las que escriben los mejores prompts.
+
+## Comprime imágenes antes de subirlas
+
+Si le pasas a Claude una captura de pantalla, un mockup de diseño o cualquier imagen, asegúrate de que pese menos de **5 MB**. Las imágenes grandes consumen tu presupuesto de tokens rápidamente — una captura de 20 MB puede usar tantos tokens como una conversación entera.
+
+Usa una herramienta gratuita como [iLoveIMG](https://www.iloveimg.com/compress-image) para reducir imágenes antes de pasárselas a Claude. Esto ahorra tokens y hace que Claude procese la imagen más rápido.
+
+## Monitorea, no microgestiones
+
+Cuando Claude está trabajando en una tarea grande, déjalo trabajar. No lo interrumpas cada 10 segundos con correcciones — esto rompe su flujo y gasta contexto.
+
+En su lugar:
+- **Observa la pestaña thinking** para ver qué está planeando Claude
+- **Espera a que termine** antes de dar feedback
+- **Da todas tus correcciones de una vez** en lugar de una por una
+
+Piénsalo como delegar a un colega: le entregas la tarea, revisas cuando termina y das feedback en un solo lote. Las interrupciones constantes hacen a todos más lentos.
 
 ## Resumen: las reglas de oro
 

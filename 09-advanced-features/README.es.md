@@ -57,6 +57,12 @@ Le dice a Claude que dedique más tiempo razonando antes de responder. Produce r
 
 ---
 
+> **El meme del rate limit:**
+>
+> *"Title Reached Its Token Limit"* — ingenieros bloqueados por sus propios rate limits mientras intentan aumentarlos. El problema recursivo definitivo. ([ProgrammerHumor](https://programmerhumor.io/memes/claude) — 259K views)
+
+> 🎬 **Momento viral:** Claude Code puede transcribir speech y superponer títulos animados, badges, barras de progreso y subtítulos sobre video — todo sincronizado con lo que se dice. [Ver los 5 prompts más locos →](https://www.sabrina.dev/p/5-insane-claude-code-video-prompts)
+
 ## Auto Mode y modos de permisos
 
 Los modos de permisos controlan cuanta libertad tiene Claude. Presiona `Shift+Tab` para alternar entre ellos.

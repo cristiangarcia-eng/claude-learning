@@ -62,4 +62,14 @@ Aprenderas a:
 
 No se requiere experiencia en programacion. Si puedes describir lo que quieres en espanol, puedes usar Claude Code.
 
+---
+
+> **En la cultura popular...**
+>
+> "They didn't have Claude Code" — @0xgaut, sobre por qué Roma no se construyó en un día
+>
+> Y cuando alguien preguntó cómo Zuckerberg construyó Facebook sin Claude... la respuesta fue: *"He stole it from someone else."* ([ProgrammerHumor](https://programmerhumor.io/memes/claude) — 141K views)
+
+---
+
 **Empecemos.**

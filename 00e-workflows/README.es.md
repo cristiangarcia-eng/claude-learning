@@ -204,6 +204,14 @@ pagina con su ruta URL y una descripcion de una linea.
 
 ---
 
+> **El meme del "Full-Stack Engineer":**
+>
+> @0xgaut se burló de los ingenieros que presumen su stack técnico, pero resulta que es: Claude + Terminal + Cursor. Nada más. Y otro viral: el POV del solo-founder usando Claude — el humano solo mira mientras la IA hace todo el trabajo. Ese eres tú después de este módulo.
+
+> 🎬 **Momento viral:** Greg Isenberg conoció al creador de Paperclip — una herramienta que te deja armar un equipo completo de agentes IA (CEO, CTO, CMO) y gestionarlos desde un dashboard. 30,000 estrellas en GitHub en tres semanas. [Ver el tweet →](https://x.com/gregisenberg/status/2037262467684864075)
+
+---
+
 ## Consejos para todos los flujos de trabajo
 
 ### Empieza entendiendo

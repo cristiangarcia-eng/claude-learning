@@ -64,6 +64,22 @@ La diferencia es que `/voice` solo funciona dentro de Claude Code, mientras que 
 
 > **Nota para hispanohablantes**: El `/voice` integrado de Claude está optimizado para inglés. Si hablas en español u otros idiomas, la precisión de la transcripción baja bastante. Wispr Flow maneja múltiples idiomas mucho mejor, lo cual es otra razón por la que lo recomendamos.
 
+## Voice dumps: sáltate el brief largo
+
+En vez de pasar 20 minutos escribiendo un brief detallado o un documento de requisitos, prueba un **voice dump** — simplemente habla durante 2-3 minutos seguidos, describiendo todo lo que quieres.
+
+Por ejemplo, en vez de escribir un brief de proyecto cuidadosamente estructurado:
+
+> Mantén la tecla de Wispr Flow y di: *"A ver, lo que necesito es un análisis competitivo de nuestros tres principales competidores, enfócate en sus modelos de precios y cómo se posicionan ante clientes enterprise. Asegúrate de incluir su nivel gratuito si tienen uno. La última vez que hicimos esto el equipo se quejó de que el formato era difícil de escanear rápido, así que usa viñetas y mantén cada competidor en una página máximo. Ah y incluye una sección de recomendaciones al final sobre dónde deberíamos diferenciarnos..."*
+
+Claude extraerá los requisitos clave de tu flujo de consciencia. No necesitas organizar tus pensamientos perfectamente — ese es el trabajo de Claude.
+
+> **Los voice dumps son 3x más rápidos que escribir** y a menudo producen mejores resultados porque incluyes detalles que te saltarías al escribir (como la queja de formato de la última vez).
+
+> **El diagnóstico:**
+>
+> La comunidad ya tiene nombre para esto: *"Claudeholism: The New Addiction of the Century."* Una vez que combinas voz + Claude Code, volver a escribir se siente como volver al fax. Estás avisado.
+
 ## Consejos para la entrada por voz
 
 - **Habla con naturalidad** — no intentes "sonar técnico". Solo describe lo que quieres como se lo dirías a un colega

@@ -10,7 +10,7 @@ Ya entiendes el concepto de JSON — es como llenar un formulario:
 |------|------|
 | Nombre: Maria | `"name": "Maria"` |
 | Edad: 30 | `"age": 30` |
-| Activo: Si | `"active": true` |
+| Activo: Sí | `"active": true` |
 
 > Claude Code usa archivos JSON para almacenar configuraciones (hooks, conexiones MCP, permisos). No necesitas escribir JSON desde cero — principalmente copias ejemplos y ajustas valores. Pero conocer las reglas previene errores frustrantes.
 
@@ -54,13 +54,13 @@ La clave siempre va entre comillas. Siempre. Sin excepciones.
 Nota: hay una coma después de `"Maria"` y después de `"Product Manager"`, pero **NO** después de `"Growth"`. Esta es la fuente de errores #1.
 
 ```
-✅  "name": "Maria",       ← coma (siguen mas elementos)
-✅  "role": "PM",           ← coma (siguen mas elementos)
+✅  "name": "Maria",       ← coma (siguen más elementos)
+✅  "role": "PM",           ← coma (siguen más elementos)
 ✅  "team": "Growth"        ← SIN coma (ultimo elemento)
 ❌  "team": "Growth",       ← ¡MAL! La coma al final rompe todo
 ```
 
-### Regla 4: El texto usa comillas dobles `""`, los numeros y booleanos no
+### Regla 4: El texto usa comillas dobles `""`, los números y booleanos no
 
 ```json
 {
@@ -72,9 +72,9 @@ Nota: hay una coma después de `"Maria"` y después de `"Product Manager"`, pero
 
 | Tipo | Ejemplo | ¿Comillas? |
 |------|---------|---------|
-| Texto (string) | `"Maria"` | Si, siempre comillas dobles `""` |
-| Numero | `30` | No |
-| Verdadero/Falso | `true` o `false` | No (¡y en minusculas!) |
+| Texto (string) | `"Maria"` | Sí, siempre comillas dobles `""` |
+| Número | `30` | No |
+| Verdadero/Falso | `true` o `false` | No (¡y en minúsculas!) |
 | Vacio/Nada | `null` | No |
 
 > **Importante**: JSON solo acepta comillas dobles `"así"`. Las comillas simples `'así'` no funcionan.
@@ -100,7 +100,7 @@ Nota: hay una coma después de `"Maria"` y después de `"Product Manager"`, pero
 }
 ```
 
-**Ambos combinados** (comun en configuraciones de Claude Code):
+**Ambos combinados** (común en configuraciones de Claude Code):
 
 ```json
 {
@@ -117,15 +117,15 @@ Nota: hay una coma después de `"Maria"` y después de `"Product Manager"`, pero
 }
 ```
 
-## Donde Claude Code usa JSON
+## Dónde Claude Code usa JSON
 
-Encontraras JSON en estos archivos:
+Encontrarás JSON en estos archivos:
 
-| Archivo | Que configura | Cuando lo editaras |
+| Archivo | Qué configura | Cuándo lo editarás |
 |------|-------------------|-------------------|
 | `~/.claude/settings.json` | Configuración personal, hooks, permisos | Lección 06 (Hooks) |
 | `.claude/settings.json` | Configuración compartida del proyecto | Lección 06 (Hooks) |
-| Configuraciones de servidores MCP | Conexiones a herramientas externas | Lección 05 (MCP) |
+| Configuraciónes de servidores MCP | Conexiones a herramientas externas | Lección 05 (MCP) |
 
 ### Un archivo real de configuración de Claude Code
 
@@ -154,32 +154,32 @@ Así se ve un `settings.json` típico:
 }
 ```
 
-Desglosemoslo:
+Desglosémoslo:
 
 ```
 {                                           ← Inicio del archivo
-  "permissions": {                          ← Una seccion llamada "permissions"
+  "permissions": {                          ← Una sección llamada "permissions"
     "allow": [                              ← Una lista de herramientas permitidas
       "Read",                               ← Elemento 1 (coma: siguen mas)
       "Glob",                               ← Elemento 2 (coma: siguen mas)
       "Grep"                                ← Elemento 3 (SIN coma: ultimo)
-    ],                                      ← Fin de lista (coma: hay mas secciones)
+    ],                                      ← Fin de lista (coma: hay mas secciónes)
     "deny": [                               ← Una lista de acciones denegadas
       "Bash(rm -rf *)"                      ← Elemento 1 (SIN coma: ultimo)
-    ]                                       ← Fin de lista (SIN coma: ultima seccion)
-  },                                        ← Fin de permissions (coma: hay mas secciones)
-  "hooks": {                                ← Una seccion llamada "hooks"
+    ]                                       ← Fin de lista (SIN coma: ultima sección)
+  },                                        ← Fin de permissions (coma: hay mas secciónes)
+  "hooks": {                                ← Una sección llamada "hooks"
     "SessionStart": [                       ← Una lista de hooks para SessionStart
       {                                     ← Inicio del hook 1
         "type": "command",                  ← Tipo de hook
         "command": "echo 'Session started'" ← El comando a ejecutar
       }                                     ← Fin del hook 1 (SIN coma: ultimo)
     ]                                       ← Fin de lista
-  }                                         ← Fin de hooks (SIN coma: ultima seccion)
+  }                                         ← Fin de hooks (SIN coma: ultima sección)
 }                                           ← Fin del archivo
 ```
 
-## Los 5 errores más comunes (y como corregirlos)
+## Los 5 errores más comunes (y cómo corregirlos)
 
 ### Error 1: Coma al final
 
@@ -272,37 +272,37 @@ Desglosemoslo:
 
 **La solución**: JSON no permite comentarios. Elimina cualquier línea que empiece con `//` o `#`.
 
-> **Nota**: Algunos archivos de configuración de Claude Code usan JSONC (JSON con Comentarios), que si permite comentarios `//`. Pero el JSON estandar no. En caso de duda, elimina los comentarios.
+> **Nota**: Algunos archivos de configuración de Claude Code usan JSONC (JSON con Comentarios), que sí permite comentarios `//`. Pero el JSON estándar no. En caso de duda, elimina los comentarios.
 
 ## Como validar tu JSON
 
-### Opción 1: Preguntale a Claude
+### Opción 1: Pregúntale a Claude
 
 Solo pega tu JSON en Claude Code y di:
 
 ```
-¿Es este JSON valido? Corrige cualquier error:
+¿Es este JSON válido? Corrige cualquier error:
 {
   "name": "Maria",
   "tools": ["Read", "Write",]
 }
 ```
 
-Claude detectara la coma al final y lo corregira por ti.
+Claude detectará la coma al final y lo corregirá por ti.
 
 ### Opción 2: VS Code (recomendado)
 
-Si estas usando VS Code:
+Si estás usando VS Code:
 
 1. Abre el archivo `.json`
-2. VS Code automaticamente resalta errores con **subrayados rojos ondulados**
-3. Pasa el cursor sobre el error para ver que está mal
+2. VS Code automáticamente resalta errores con **subrayados rojos ondulados**
+3. Pasa el cursor sobre el error para ver qué está mal
 
 Esta es la forma más fácil — los errores son visibles mientras escribes.
 
 ### Opción 3: Validador en línea
 
-Busca "JSON validator" en tu navegador y pega tu JSON. Te dira exactamente donde está el error.
+Busca "JSON validator" en tu navegador y pega tu JSON. Te dirá exactamente dónde está el error.
 
 ## Tarjeta de referencia rápida
 
@@ -310,15 +310,15 @@ Busca "JSON validator" en tu navegador y pega tu JSON. Te dira exactamente donde
 HOJA DE REFERENCIA JSON
 ─────────────────────────────────────
 Texto:       "hello"          (comillas dobles)
-Numero:      42               (sin comillas)
-Booleano:    true / false     (sin comillas, minusculas)
-Nulo:        null             (sin comillas, minusculas)
+Número:      42               (sin comillas)
+Booleano:    true / false     (sin comillas, minúsculas)
+Nulo:        null             (sin comillas, minúsculas)
 Lista:       ["a", "b", "c"] (corchetes)
 Objeto:      {"key": "val"}  (llaves)
 ─────────────────────────────────────
 ✅ Comas ENTRE elementos
-❌ Sin coma despues del ULTIMO elemento
-✅ Solo comillas dobles "unicamente"
+❌ Sin coma después del ULTIMO elemento
+✅ Solo comillas dobles "únicamente"
 ❌ Sin comentarios (generalmente)
 ─────────────────────────────────────
 ```

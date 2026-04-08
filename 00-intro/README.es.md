@@ -1,66 +1,66 @@
-# Por que Claude Code?
+# Por qué Claude Code?
 
-## Que hace diferente a Claude Code
+## Qué hace diferente a Claude Code
 
-Probablemente has usado ChatGPT, Gemini o Claude en una ventana de chat. Escribes una pregunta, recibes una respuesta. Eso es util, pero es limitado. Tu eres quien hace todo el trabajo: copiar, pegar, cambiar entre aplicaciones, aplicar cambios manualmente.
+Probablemente has usado ChatGPT, Gemini o Claude en una ventana de chat. Escribes una pregunta, recibes una respuesta. Eso es útil, pero es limitado. Tú eres quien hace todo el trabajo: copiar, pegar, cambiar entre aplicaciones, aplicar cambios manualmente.
 
 **Claude Code es diferente.** No solo responde preguntas, sino que realmente hace cosas en tu ordenador:
 
 - **Lee tus archivos** — ve todo tu proyecto, no solo lo que le pegas
 - **Hace cambios** — edita archivos, crea nuevos, reorganiza contenido
 - **Ejecuta comandos** — puede buscar, analizar datos y ejecutar tareas
-- **Trabaja de forma autonoma** — tu describes lo que quieres, Claude descubre como hacerlo
+- **Trabaja de forma autónoma** — tu describes lo que quieres, Claude descubre cómo hacerlo
 
-Piensalo asi: el chat de IA normal es como enviar mensajes a un amigo inteligente pidiendo consejo. Claude Code es como tener a ese amigo sentandose en tu ordenador y haciendo el trabajo contigo.
+Piénsalo así: el chat de IA normal es como enviar mensajes a un amigo inteligente pidiendo consejo. Claude Code es como tener a ese amigo sentándose en tu ordenador y haciendo el trabajo contigo.
 
 ---
 
-> **Que no te engane el nombre.** Se llama "Claude Code", pero no necesitas escribir ni una sola linea de codigo para usarlo. Lo que realmente tienes es un agente de IA completo con acceso a tu ordenador — lee documentos, navega por la web, controla aplicaciones y ejecuta tareas complejas de forma autonoma. Investigacion de mercado, analisis competitivo, limpieza de datos, pipelines de contenido, generacion de informes — todo eso es territorio de Claude Code. El "Code" del nombre se refiere a como funciona por dentro, no a lo que tu necesitas saber.
+> **Que no te engañe el nombre.** Se llama "Claude Code", pero no necesitas escribir ni una sola línea de código para usarlo. Lo que realmente tienes es un agente de IA completo con acceso a tu ordenador — lee documentos, navega por la web, controla aplicaciones y ejecuta tareas complejas de forma autónoma. Investigación de mercado, análisis competitivo, limpieza de datos, pipelines de contenido, generación de informes — todo eso es territorio de Claude Code. El "Code" del nombre se refiere a cómo funciona por dentro, no a lo que tú necesitas saber.
 
 ---
 
 ## Las diferentes formas de usar Claude Code
 
-Claude Code esta disponible en varios sitios:
+Claude Code está disponible en varios sitios:
 
-| Opcion | Ideal para | Limitaciones |
+| Opción | Ideal para | Limitaciones |
 |--------|-----------|--------------|
-| **Terminal (CLI)** | Maximo poder, sin restricciones | Requiere conocimiento basico del terminal |
-| **Extension VS Code** | Visual + terminal en un solo lugar | Mismo poder que el terminal |
+| **Terminal (CLI)** | Máximo poder, sin restricciones | Requiere conocimiento básico del terminal |
+| **Extensión VS Code** | Visual + terminal en un solo lugar | Mismo poder que el terminal |
 | **App de Escritorio** | Diffs visuales, tareas programadas | Gran interfaz, algo menos flexible |
-| **Web (claude.ai/code)** | Tareas rapidas, sin instalar nada | Se ejecuta en la nube, no en tu maquina |
-| **Movil (app iOS)** | Tareas sobre la marcha | Limitado a sesiones web |
+| **Web (claude.ai/code)** | Tareas rápidas, sin instalar nada | Se ejecuta en la nube, no en tu máquina |
+| **Móvil (app iOS)** | Tareas sobre la marcha | Limitado a sesiones web |
 
-## Por que ensenamos el terminal
+## Por qué enseñamos el terminal
 
-El terminal es donde Claude Code tiene mas poder. Tiene acceso a todo en tu maquina, funciona sin limitaciones y es la forma mas rapida de trabajar.
+El terminal es donde Claude Code tiene más poder. Tiene acceso a todo en tu máquina, funciona sin limitaciones y es la forma más rápida de trabajar.
 
-Sabemos lo que estas pensando: *"El terminal? Esa pantalla negra con texto? Eso es para programadores!"*
+Sabemos lo que estás pensando: *"El terminal? Esa pantalla negra con texto? Eso es para programadores!"*
 
-La realidad es que **solo necesitas saber 4 comandos.** Eso es todo. Cuatro. Te ensenamos a usarlos en el modulo de [Conceptos Basicos del Terminal](../00-terminal-basics/) — pero aqui va un adelanto:
+La realidad es que **solo necesitas saber 4 comandos.** Eso es todo. Cuatro. Te enseñamos a usarlos en el módulo de [Conceptos Básicos del Terminal](../00-terminal-basics/) — pero aquí va un adelanto:
 
-| Comando | Que hace | En espanol |
+| Comando | Qué hace | En español |
 |---------|----------|------------|
-| `pwd` | Muestra donde estas | "En que carpeta estoy?" |
-| `ls` | Lista lo que hay aqui | "Que hay en esta carpeta?" |
+| `pwd` | Muestra dónde estás | "En qué carpeta estoy?" |
+| `ls` | Lista lo que hay aquí | "Qué hay en esta carpeta?" |
 | `cd` | Te mueve a otra carpeta | "Ve a esta carpeta" |
-| `claude` | Inicia Claude Code | "Vamos alla" |
+| `claude` | Inicia Claude Code | "Vamos allá" |
 
-Una vez que Claude Code esta funcionando, le hablas en espanol (o ingles). Sin comandos, sin codigo, sin sintaxis. Solo describe lo que quieres.
+Una vez que Claude Code está funcionando, le hablas en español (o inglés). Sin comandos, sin código, sin sintaxis. Solo describe lo que quieres.
 
-## Que aprenderas en este curso
+## Qué aprenderás en este curso
 
-Este curso te lleva de cero a productivo con Claude Code. Cada leccion esta disenada para personas no tecnicas: product managers, disenadores, equipos de ventas, y cualquier persona curiosa sobre IA.
+Este curso te lleva de cero a productivo con Claude Code. Cada lección está diseñada para personas no técnicas: product managers, diseñadores, equipos de ventas, y cualquier persona curiosa sobre IA.
 
-Aprenderas a:
-- Navegar por tu ordenador desde el terminal (es mas facil de lo que crees)
+Aprenderás a:
+- Navegar por tu ordenador desde el terminal (es más fácil de lo que crees)
 - Configurar VS Code como tu espacio de trabajo
 - Usar entrada de voz para casi no tener que escribir
 - Hacer que Claude analice, edite y organice tus archivos
 - Conectar Claude a tus herramientas de negocio
 - Automatizar tareas repetitivas
 
-No se requiere experiencia en programacion. Si puedes describir lo que quieres en espanol, puedes usar Claude Code.
+No se requiere experiencia en programación. Si puedes describir lo que quieres en español, puedes usar Claude Code.
 
 ---
 

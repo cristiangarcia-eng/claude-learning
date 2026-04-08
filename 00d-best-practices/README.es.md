@@ -1,23 +1,23 @@
-# Mejores Practicas
+# Mejores Prácticas
 
 ## Cómo hablarle a Claude de manera efectiva
 
-Claude Code es como un colega muy inteligente. Cuanto más claro te comuniques, mejores resultados obtendras.
+Claude Code es como un colega muy inteligente. Cuanto más claro te comuniques, mejores resultados obtendrás.
 
-## Se específico, no vago
+## Sé específico, no vago
 
 El consejo más importante: **di exactamente lo que quieres**.
 
 | En lugar de... | Prueba... |
 |--------------|--------|
-| "Arregla la página de inicio" | "Cambia el titulo principal de la página de inicio a 'Bienvenido a Nova'" |
+| "Arregla la página de inicio" | "Cambia el título principal de la página de inicio a 'Bienvenido a Nova'" |
 | "Hazlo ver mejor" | "Aumenta el tamaño de fuente de los encabezados y agrega más espacio entre secciones" |
 | "Hay un bug" | "Los usuarios ven una pantalla en blanco después de hacer clic en el botón de login" |
-| "Actualiza la documentación" | "Agrega una sección sobre nuestra politica de reembolsos a la página de FAQ" |
+| "Actualiza la documentación" | "Agrega una sección sobre nuestra política de reembolsos a la página de FAQ" |
 
 ## Dale a Claude una forma de verificar su trabajo
 
-Cuando sea posible, dile a Claude como verificar el resultado:
+Cuando sea posible, dile a Claude cómo verificar el resultado:
 
 ```
 Cambia el email de la empresa a hello@nova.com en todas partes.
@@ -71,14 +71,14 @@ Cuando el plan te parezca bien, sal del Modo Plan (presiona **Shift+Tab** para v
 
 Ahora Claude empezará a hacer los cambios reales. Este enfoque de **planificar primero, ejecutar después** te da resultados mucho mejores que ir directamente a los cambios.
 
-## Manten las conversaciones enfocadas
+## Mantén las conversaciones enfocadas
 
 Cada conversación tiene un límite de memoria. Cuando se llena, Claude empieza a olvidar.
 
 **Haz esto:**
 - Un tema por sesión
 - Escribe `/clear` al cambiar de tema
-- Manten tus solicitudes enfocadas
+- Mantén tus solicitudes enfocadas
 
 **Evita esto:**
 - Preguntar sobre autenticación, luego precios, luego diseño, luego bugs — todo en una sesión
@@ -92,7 +92,7 @@ Seguir corrigiendo a un Claude confundido pierde tiempo. Un prompt nuevo y bien 
 
 ## Corrige el rumbo temprano
 
-Si Claude empieza a ir en la direccion equivocada:
+Si Claude empieza a ir en la dirección equivocada:
 
 - Presiona **Esc** para detenerlo inmediatamente
 - Di "No, me refería a..." y redirige
@@ -110,15 +110,15 @@ sobre lo que tengo en mente — pregunta sobre objetivos, tipos de usuario
 y restricciones antes de hacer cualquier cambio.
 ```
 
-Claude hara preguntas inteligentes sobre cosas que quizás no habias considerado. Una vez alineados, puede ejecutar con mucha más precision.
+Claude hará preguntas inteligentes sobre cosas que quizás no habías considerado. Una vez alineados, puede ejecutar con mucha más precisión.
 
 ## El bucle de aprendizaje
 
-La mayor diferencia entre los buenos y los excelentes usuarios de Claude Code es el **bucle de aprendizaje**. Despues de cada proyecto o sesion:
+La mayor diferencia entre los buenos y los excelentes usuarios de Claude Code es el **bucle de aprendizaje**. Después de cada proyecto o sesión:
 
-1. **Anota que funciono** — que prompts dieron buenos resultados a la primera?
-2. **Anota que no funciono** — donde fue Claude en la direccion equivocada?
-3. **Actualiza tu CLAUDE.md** — anade las lecciones para que Claude no repita errores
+1. **Anota qué funcionó** — qué prompts dieron buenos resultados a la primera?
+2. **Anota qué no funcionó** — donde fue Claude en la dirección equivocada?
+3. **Actualiza tu CLAUDE.md** — añade las lecciones para que Claude no repita errores
 
 ```
 Anade a mi memoria de proyecto: "Cuando crees informes, siempre
@@ -126,7 +126,7 @@ incluye un resumen ejecutivo arriba. El equipo se quejo la
 ultima vez cuando estaba enterrado al final."
 ```
 
-Con el tiempo, tu CLAUDE.md se convierte en un documento vivo que hace a Claude mas inteligente con cada proyecto. Las personas que sacan mas valor de Claude Code son las que iteran en sus archivos de memoria — no las que escriben los mejores prompts.
+Con el tiempo, tu CLAUDE.md se convierte en un documento vivo que hace a Claude más inteligente con cada proyecto. Las personas que sacan más valor de Claude Code son las que iteran en sus archivos de memoria — no las que escriben los mejores prompts.
 
 ## Comprime imágenes antes de subirlas
 

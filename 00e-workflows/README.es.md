@@ -4,7 +4,7 @@ Tareas reales que puedes hacer con Claude Code — sin necesidad de experiencia 
 
 ## Para Product Managers
 
-### Entender que construyo el equipo
+### Entender qué construyó el equipo
 
 ```
 Explica las funcionalidades de este proyecto como si estuvieras
@@ -12,12 +12,12 @@ escribiendo notas de lanzamiento para los clientes.
 ```
 
 ```
-¿Que cambio en los ultimos 10 commits? Resume cada
+¿Qué cambió en los últimos 10 commits? Resume cada
 cambio en una oracion que un PM entenderia.
 ```
 
 ```
-Lista todos los endpoints de la API y que hace cada uno,
+Lista todos los endpoints de la API y qué hace cada uno,
 en formato de tabla.
 ```
 
@@ -25,23 +25,23 @@ en formato de tabla.
 
 ```
 Quiero agregar un toggle de "modo oscuro". ¿Que archivos
-necesitarian cambiar? ¿Que tan complejo es en una escala del 1 al 10?
+necesitarían cambiar? ¿Qué tan complejo es en una escala del 1 al 10?
 ```
 
 ```
 Necesitamos agregar traducciones al español en la app.
 Analiza el codebase actual y dime:
-1. ¿Como se maneja el texto actualmente?
+1. ¿Cómo se maneja el texto actualmente?
 2. ¿Cual es el esfuerzo para agregar soporte multi-idioma?
-3. ¿Cuales son los riesgos?
+3. ¿Cuáles son los riesgos?
 ```
 
 ### Escribir especificaciones desde el codebase
 
 ```
 Lee el flujo de autenticacion de usuarios y escribe un documento
-de especificacion tecnica que describa como funciona, incluyendo
-un diagrama. Escribelo para una audiencia no tecnica.
+de especificacion técnica que describa como funciona, incluyendo
+un diagrama. Escribelo para una audiencia no técnica.
 ```
 
 ### Rastrear deuda técnica
@@ -49,7 +49,7 @@ un diagrama. Escribelo para una audiencia no tecnica.
 ```
 Encuentra todos los comentarios TODO y FIXME en el codebase.
 Organizalos por prioridad y crea un resumen
-que pueda compartir con el equipo de ingenieria.
+que pueda compartir con el equipo de ingeniería.
 ```
 
 ---
@@ -64,12 +64,12 @@ y listalos. ¿Hay inconsistencias?
 ```
 
 ```
-¿Que fuentes se estan usando? Lista cada declaracion de
+¿Qué fuentes se están usando? Lista cada declaracion de
 font-family y donde aparece.
 ```
 
 ```
-Encuentra todos los estilos de botones en el proyecto. ¿Cuantas
+Encuentra todos los estilos de botones en el proyecto. ¿Cuántas
 variantes diferentes de botones existen?
 ```
 
@@ -95,7 +95,7 @@ landing page.
 ```
 Encuentra todos los diferentes valores de border-radius usados
 en el proyecto. Sugiere un conjunto consistente de valores
-en los que deberiamos estandarizar.
+en los que deberíamos estandarizar.
 ```
 
 ```
@@ -106,8 +106,8 @@ posibles conflictos de capas?
 ### Verificar accesibilidad
 
 ```
-Audita la pagina de inicio en busca de problemas de accesibilidad.
-Revisa contraste de colores, texto alternativo en imagenes,
+Audita la página de inicio en busca de problemas de accesibilidad.
+Revisa contraste de colores, texto alternativo en imágenes,
 y jerarquia adecuada de encabezados.
 ```
 
@@ -118,7 +118,7 @@ y jerarquia adecuada de encabezados.
 ### Actualizar texto del sitio web
 
 ```
-Cambia el eslogan en la pagina de inicio de
+Cambia el eslogan en la página de inicio de
 "Build faster" a "Ship with confidence".
 ```
 
@@ -128,7 +128,7 @@ Agrega un nuevo testimonio a la landing page:
 ```
 
 ```
-Actualiza la pagina de precios: renombra el plan "Pro"
+Actualiza la página de precios: renombra el plan "Pro"
 a "Growth" y cambia el precio de $49 a $59.
 ```
 
@@ -140,27 +140,27 @@ y cambialo a "14-day free trial".
 ```
 
 ```
-Lista todas las meta descriptions y titulos de pagina
-del sitio web. ¿Cuales faltan?
+Lista todas las meta descriptions y titulos de páginas
+del sitio web. ¿Cuáles faltan?
 ```
 
 ### Analizar la competencia
 
 ```
 Lee nuestra landing page y comparala con esta
-pagina de la competencia: [pega URL o contenido].
-¿Que nos falta?
+página de la competencia: [pega URL o contenido].
+¿Qué nos falta?
 ```
 
 ### Tareas de SEO
 
 ```
-Encuentra todas las imagenes sin texto alternativo en el proyecto.
+Encuentra todas las imágenes sin texto alternativo en el proyecto.
 Sugiere texto alternativo descriptivo para cada una.
 ```
 
 ```
-Lista todas las paginas y sus URLs. ¿Cuales
+Lista todas las páginas y sus URLs. ¿Cuáles
 no tienen meta tags adecuados?
 ```
 
@@ -171,7 +171,7 @@ no tienen meta tags adecuados?
 ### Buscar en archivos
 
 ```
-Encuentra cada mencion de "Acme Corp" en el proyecto.
+Encuentra cada mención de "Acme Corp" en el proyecto.
 ```
 
 ```
@@ -183,23 +183,23 @@ Encuentra cada mencion de "Acme Corp" en el proyecto.
 ```
 Crea un archivo README que explique que es este proyecto,
 como configurarlo, y a quien contactar para obtener ayuda.
-Escribelo para una audiencia no tecnica.
+Escribelo para una audiencia no técnica.
 ```
 
 ### Analizar archivos de datos
 
 ```
 Lee el archivo CSV en data/users.csv y dime:
-- ¿Cuantos registros hay?
-- ¿Cuales son las columnas?
-- ¿Algun problema obvio de calidad de datos?
+- ¿Cuántos registros hay?
+- ¿Cuáles son las columnas?
+- ¿Algún problema obvio de calidad de datos?
 ```
 
 ### Crear reportes desde el código
 
 ```
-¿Cuantas paginas tiene este sitio web? Lista cada
-pagina con su ruta URL y una descripcion de una linea.
+¿Cuántas páginas tiene este sitio web? Lista cada
+página con su ruta URL y una descripcion de una línea.
 ```
 
 ---
@@ -210,7 +210,7 @@ pagina con su ruta URL y una descripcion de una linea.
 Siempre empieza pidiendo a Claude que explique lo que existe antes de hacer cambios.
 
 ### Usa el Modo Plan primero
-Presiona **Shift+Tab** dos veces para entrar al Modo Plan cuando estés explorando. Claude solo leera, nunca escribira.
+Presiona **Shift+Tab** dos veces para entrar al Modo Plan cuando estés explorando. Claude solo leerá, nunca escribirá.
 
 ### Referencia archivos con @
 En lugar de describir donde está un archivo, usa `@` para referenciarlo directamente:
@@ -220,7 +220,7 @@ Explica que hace @src/pages/pricing.tsx
 ```
 
 ### Pide un resumen después de los cambios
-Después de que Claude haga cambios, pidele que resuma lo que hizo:
+Después de que Claude haga cambios, pídele que resuma lo que hizo:
 
 ```
 Resume todos los cambios que acabas de hacer en una lista de viñetas

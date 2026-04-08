@@ -4,7 +4,7 @@
 
 Los comandos slash son atajos que escribes en Claude Code para controlar su comportamiento. Piensa en ellos como opciones de menú -- escribes `/` seguido de un nombre de comando, y Claude realiza una acción específica.
 
-No necesitas conocimientos tecnicos para usarlos. Si puedes escribir una barra diagonal, puedes usar comandos slash.
+No necesitas conocimientos técnicos para usarlos. Si puedes escribir una barra diagonal, puedes usar comandos slash.
 
 ## Primeros Pasos
 
@@ -14,9 +14,9 @@ Abre Claude Code y escribe `/` para ver una lista de comandos disponibles. Empie
 
 Estos son los comandos que usarás con más frecuencia.
 
-| Comando | Que Hace |
+| Comando | Qué Hace |
 |---------|-------------|
-| `/help` | Muestra una lista de todos los comandos disponibles y que hacen |
+| `/help` | Muestra una lista de todos los comandos disponibles y qué hacen |
 | `/clear` | Limpia la conversación actual y empieza de cero |
 | `/memory` | Abre tu archivo CLAUDE.md donde Claude almacena notas que debe recordar |
 | `/init` | Crea un archivo CLAUDE.md para un nuevo proyecto para que Claude conozca el contexto |
@@ -81,11 +81,11 @@ A partir de ahora, Claude leerá ambos archivos al inicio de cada conversación 
 
 ### /init -- Configurar un Nuevo Proyecto
 
-Cuando empiezas a trabajar en una nueva carpeta, ejecuta `/init` para crear un archivo CLAUDE.md. Claude te hara preguntas sobre el proyecto y generara un archivo de memoria inicial.
+Cuando empiezas a trabajar en una nueva carpeta, ejecuta `/init` para crear un archivo CLAUDE.md. Claude te hará preguntas sobre el proyecto y generará un archivo de memoria inicial.
 
 ### /config -- Ajustar Tu Configuración
 
-Abre el panel de configuración donde puedes cambiar preferencias como tu modelo predeterminado, permisos y opciones de visualizacion.
+Abre el panel de configuración donde puedes cambiar preferencias como tu modelo predeterminado, permisos y opciones de visualización.
 
 ### /compact -- Liberar Espacio
 
@@ -97,30 +97,30 @@ Las conversaciones largas consumen la ventana de contexto de Claude (su memoria 
 
 ### /model -- Cambiar Modelos
 
-Usa `/model` para elegir que version de Claude quieres:
+Usa `/model` para elegir qué versión de Claude quieres:
 
 | Modelo | Mejor Para |
 |-------|----------|
-| **Haiku** | Preguntas rapidas, consultas simples |
+| **Haiku** | Preguntas rápidas, consultas simples |
 | **Sonnet** | Tareas cotidianas, buen balance de velocidad y calidad |
-| **Opus** | Analisis complejo, documentos largos, escritura con matices |
+| **Opus** | Análisis complejo, documentos largos, escritura con matices |
 
-## Mas Comandos Utiles
+## Más Comandos Útiles
 
-Mas alla de lo esencial, vale la pena conocer estos comandos.
+Más allá de lo esencial, vale la pena conocer estos comandos.
 
-| Comando | Que Hace |
+| Comando | Qué Hace |
 |---------|-------------|
-| `/cost` | Muestra cuantos tokens has usado en está sesión |
+| `/cost` | Muestra cuántos tokens has usado en esta sesión |
 | `/copy` | Copia la última respuesta de Claude a tu portapapeles |
 | `/export` | Guarda la conversación en un archivo |
 | `/resume` | Retoma una conversación anterior donde la dejaste |
 | `/voice` | Activa pulsar-para-hablar para que puedas hablar en vez de escribir |
 | `/rename` | Dale un nombre a tu sesión para encontrarla después |
-| `/branch` | Divide la conversación en una nueva sesión para explorar una direccion diferente |
-| `/context` | Muestra cuanta memoria de trabajo de Claude se ha usado |
+| `/branch` | Divide la conversación en una nueva sesión para explorar una dirección diferente |
+| `/context` | Muestra cuánta memoria de trabajo de Claude se ha usado |
 | `/schedule` | Crea una tarea recurrente que se ejecuta en un horario |
-| `/effort` | Establece cuanto esfuerzo de pensamiento pone Claude en las respuestas (low, medium, high) |
+| `/effort` | Establece cuánto esfuerzo de pensamiento pone Claude en las respuestas (low, medium, high) |
 | `/plan` | Pide a Claude crear un plan antes de tomar acción |
 
 ## Ejemplos Prácticos para No Desarrolladores
@@ -133,9 +133,9 @@ Tienes una carpeta llena de reportes y necesitas encontrar información específ
 Find all mentions of "Q3 revenue" in the files in this folder
 ```
 
-Claude buscara en tus documentos y extraera las secciones relevantes.
+Claude buscará en tus documentos y extraerá las secciones relevantes.
 
-### Obtener Resumenes
+### Obtener Resúmenes
 
 Recibiste un PDF largo o documento y necesitas los puntos clave:
 
@@ -159,7 +159,7 @@ Here are my meeting notes from today. Please organize them into:
 
 ### Comparar Opciones
 
-Estas evaluando proveedores o tomando una decision:
+Estás evaluando proveedores o tomando una decisión:
 
 ```
 I have three vendor proposals in this folder.
@@ -168,19 +168,19 @@ Create a comparison table covering price, features, and timeline.
 
 ## Comandos Personalizados (Skills)
 
-Tu equipo puede crear comandos slash personalizados adaptados a sus flujos de trabajo. Estos se llaman Skills y viven en una carpeta `.claude/skills/`. Por ejemplo, tu equipo podria configurar:
+Tu equipo puede crear comandos slash personalizados adaptados a sus flujos de trabajo. Estos se llaman Skills y viven en una carpeta `.claude/skills/`. Por ejemplo, tu equipo podría configurar:
 
-- `/meeting-notes` -- Formatea notas sin procesar en una plantilla estandar
+- `/meeting-notes` -- Formatea notas sin procesar en una plantilla estándar
 - `/weekly-update` -- Genera un reporte de estado a partir de la actividad reciente
 - `/brand-check` -- Revisa contenido contra tus lineamientos de marca
 
-Para ver que comandos personalizados están disponibles, escribe `/` y desplazate por la lista, o preguntale a Claude:
+Para ver qué comandos personalizados están disponibles, escribe `/` y desplázate por la lista, o pregúntale a Claude:
 
 ```
 What skills are available?
 ```
 
-Para detalles sobre como crear los tuyos, consulta la [Guía de Skills](../03-skills/README.es.md).
+Para detalles sobre cómo crear los tuyos, consulta la [Guía de Skills](../03-skills/README.es.md).
 
 ## Consejos
 
@@ -189,20 +189,20 @@ Para detalles sobre como crear los tuyos, consulta la [Guía de Skills](../03-sk
 | Usa `/clear` al cambiar de tema | Dejar que las conversaciones se alarguen demasiado sin compactar |
 | Agrega tus preferencias a `/memory` | Re-explicar tu rol en cada conversación |
 | Usa `/compact` cuando Claude parezca olvidar contexto | Asumir que Claude recuerda sesiones anteriores |
-| Prueba `/voice` para preguntas rapidas | Escribir pasajes largos cuando podrías dictarlos |
-| Usa `/export` para guardar conversaciones importantes | Perder una conversación util al cerrar la ventana |
+| Prueba `/voice` para preguntas rápidas | Escribir pasajes largos cuando podrías dictarlos |
+| Usa `/export` para guardar conversaciones importantes | Perder una conversación útil al cerrar la ventana |
 
 ## Solución de Problemas
 
-**Claude no reconoce un comando**: Asegúrate de escribir el `/` al principio. Revisa la ortografia. Ejecuta `/help` para ver la lista completa.
+**Claude no reconoce un comando**: Asegúrate de escribir el `/` al principio. Revisa la ortografía. Ejecuta `/help` para ver la lista completa.
 
-**Claude olvido de que estabamos hablando**: La conversación puede estar muy larga. Ejecuta `/compact` para resumir y liberar espacio.
+**Claude olvidó de qué estábamos hablando**: La conversación puede estar muy larga. Ejecuta `/compact` para resumir y liberar espacio.
 
-**Quiero que Claude recuerde algo permanentemente**: Usa `/memory` para agregarlo a tu archivo CLAUDE.md. Todo lo que este ahi persiste entre sesiones.
+**Quiero que Claude recuerde algo permanentemente**: Usa `/memory` para agregarlo a tu archivo CLAUDE.md. Todo lo que esté ahí persiste entre sesiones.
 
 **Faltan comandos personalizados**: Pregunta a tu equipo si han configurado skills en el proyecto. Verifica que estés en la carpeta correcta del proyecto.
 
-## Guias Relacionadas
+## Guías Relacionadas
 
 - [Memoria](../02-memory/README.es.md) -- Contexto persistente con CLAUDE.md
 - [Skills](../03-skills/README.es.md) -- Crear comandos personalizados reutilizables
@@ -215,4 +215,4 @@ Para detalles sobre como crear los tuyos, consulta la [Guía de Skills](../03-sk
 
 ---
 
-*Parte de la serie de guias [Claude How To](../)*
+*Parte de la serie de guías [Claude How To](../)*

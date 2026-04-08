@@ -1,18 +1,18 @@
-# Trabajar con Multiples Agentes
+# Trabajar con Múltiples Agentes
 
-## Por que usar multiples agentes?
+## Por qué usar múltiples agentes?
 
 Cuando le das a Claude una tarea compleja, la trabaja paso a paso — una cosa a la vez. Funciona, pero es lento para proyectos grandes.
 
-Con multiples agentes, puedes dividir el trabajo entre varias instancias de Claude ejecutandose **al mismo tiempo**. En vez de una tarea secuencial de 20 minutos, obtienes resultados en 8-12 minutos.
+Con múltiples agentes, puedes dividir el trabajo entre varias instancias de Claude ejecutándose **al mismo tiempo**. En vez de una tarea secuencial de 20 minutos, obtienes resultados en 8-12 minutos.
 
-## Tres patrones para multiples agentes
+## Tres patrones para múltiples agentes
 
-### 1. Ejecucion paralela
+### 1. Ejecución paralela
 
-Divide una tarea en partes independientes y ejecutalas simultaneamente.
+Divide una tarea en partes independientes y ejecutalas simultáneamente.
 
-**Ejemplo: Analisis competitivo**
+**Ejemplo: Análisis competitivo**
 
 En vez de:
 ```
@@ -21,7 +21,7 @@ Analiza los competidores A, B, C y D uno por uno
 
 Haz esto:
 ```
-Usa agentes paralelos para analizar estos competidores simultaneamente:
+Usa agentes paralelos para analizar estos competidores simultáneamente:
 - Agente 1: Analizar Competidor A (precios, features, posicionamiento)
 - Agente 2: Analizar Competidor B (precios, features, posicionamiento)
 - Agente 3: Analizar Competidor C (precios, features, posicionamiento)
@@ -29,11 +29,11 @@ Usa agentes paralelos para analizar estos competidores simultaneamente:
 Luego combina los resultados en una tabla comparativa.
 ```
 
-Los cuatro analisis ocurren al mismo tiempo en vez de uno detras de otro.
+Los cuatro análisis ocurren al mismo tiempo en vez de uno detrás de otro.
 
-### 2. Consenso (multiples perspectivas)
+### 2. Consenso (múltiples perspectivas)
 
-Pide a multiples agentes que resuelvan el mismo problema de forma independiente, y luego compara sus respuestas. Esto funciona porque las respuestas de IA son **estocasticas** — el mismo prompt produce resultados diferentes cada vez.
+Pide a múltiples agentes que resuelvan el mismo problema de forma independiente, y luego compara sus respuestas. Esto funciona porque las respuestas de IA son **estocásticas** — el mismo prompt produce resultados diferentes cada vez.
 
 **Ejemplo: Nombrar un producto**
 
@@ -41,22 +41,22 @@ Pide a multiples agentes que resuelvan el mismo problema de forma independiente,
 Necesito un nombre para nuestra nueva funcionalidad de analytics.
 Usa 3 agentes paralelos para hacer brainstorming de forma independiente,
 luego compara todas las sugerencias y elige las 5 mejores que
-aparezcan en multiples listas.
+aparezcan en múltiples listas.
 ```
 
-Cada agente trae ideas creativas diferentes. Los nombres que multiples agentes sugieren independientemente suelen ser los mas fuertes.
+Cada agente trae ideas creativas diferentes. Los nombres que múltiples agentes sugieren independientemente suelen ser los más fuertes.
 
-**Ejemplo: Evaluacion de riesgos**
+**Ejemplo: Evaluación de riesgos**
 
 ```
 Usa 3 agentes para evaluar independientemente los riesgos de
-lanzar en el mercado japones. Luego sintetiza: que riesgos
-identificaron los 3? Que solo capturo 1? Ordena por consenso.
+lanzar en el mercado japones. Luego sintetiza: qué riesgos
+identificaron los 3? Qué solo capturó 1? Ordena por consenso.
 ```
 
 ### 3. Pipeline (traspaso entre especialistas)
 
-Pasa el trabajo a traves de una cadena de especialistas, cada uno aportando su experiencia.
+Pasa el trabajo a través de una cadena de especialistas, cada uno aportando su experiencia.
 
 **Ejemplo: Produccion de contenido**
 
@@ -97,33 +97,33 @@ Sintetiza en una recomendación balanceada.
 
 El patrón de debate produce conclusiones más robustas que simplemente preguntar "deberíamos hacer X?" — porque cada agente está motivado a encontrar los argumentos más fuertes posibles para su lado.
 
-## Cuando usar cada patron
+## Cuándo usar cada patrón
 
-| Patron | Ideal para | Ejemplo |
+| Patrón | Ideal para | Ejemplo |
 |--------|-----------|---------|
 | **Paralelo** | Misma tarea en diferentes inputs | Analizar 5 competidores, revisar 10 documentos |
-| **Consenso** | Decisiones que necesitan multiples perspectivas | Naming, estrategia, evaluacion de riesgos |
+| **Consenso** | Decisiones que necesitan múltiples perspectivas | Naming, estrategia, evaluación de riesgos |
 | **Pipeline** | Flujos multi-paso con diferentes habilidades | Investigar > Escribir > Editar > Publicar |
 | **Debate** | Decisiones con alto riesgo o incertidumbre | Entrada a mercado, adquisiciones, cambios de estrategia |
 
-## Como lanzar multiples agentes
+## Cómo lanzar múltiples agentes
 
-Simplemente describe lo que quieres en tu prompt. Claude se encarga de la orquestacion:
+Simplemente describe lo que quieres en tu prompt. Claude se encarga de la orquestación:
 
 ```
 Usa subagentes para investigar estos 4 mercados en paralelo:
-EEUU, UK, Alemania, Japon. Para cada uno, encuentra tamano
+EEUU, UK, Alemania, Japon. Para cada uno, encuentra tamaño
 de mercado, top 3 competidores y requisitos regulatorios.
-Combina en un unico informe comparativo.
+Combina en un único informe comparativo.
 ```
 
 ## Aplicaciones del mundo real
 
-- **Investigacion de mercado**: Analizar multiples mercados o competidores simultaneamente
+- **Investigación de mercado**: Analizar múltiples mercados o competidores simultáneamente
 - **Contenido a escala**: Generar variaciones de emails, copy publicitario o posts en paralelo
-- **Due diligence**: Multiples agentes revisando diferentes aspectos de un deal
+- **Due diligence**: Múltiples agentes revisando diferentes aspectos de un deal
 - **Planificacion de eventos**: Agentes paralelos gestionando venues, catering y ponentes
-- **Contratacion**: Analizar multiples perfiles de candidatos a la vez
+- **Contratacion**: Analizar múltiples perfiles de candidatos a la vez
 
 ## Cuidado con los costos
 
@@ -136,7 +136,7 @@ Múltiples agentes consumen tokens más rápido — cada agente tiene su propia 
 
 ## Consejos
 
-- **La independencia importa**: Los agentes paralelos funcionan mejor cuando las tareas no dependen entre si
-- **Combina al final**: Siempre pide un paso de sintesis que fusione los resultados paralelos
-- **Calidad sobre velocidad**: Para decisiones importantes, usa el patron de consenso o debate — detectan puntos ciegos
-- **Empieza simple**: Prueba paralelo con 2-3 agentes antes de escalar a equipos mas grandes
+- **La independencia importa**: Los agentes paralelos funcionan mejor cuando las tareas no dependen entre sí
+- **Combina al final**: Siempre pide un paso de síntesis que fusione los resultados paralelos
+- **Calidad sobre velocidad**: Para decisiones importantes, usa el patrón de consenso o debate — detectan puntos ciegos
+- **Empieza simple**: Prueba paralelo con 2-3 agentes antes de escalar a equipos más grandes

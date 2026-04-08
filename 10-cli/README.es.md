@@ -12,7 +12,7 @@ Abre tu terminal y escribe:
 claude
 ```
 
-Esto inicia una conversación interactiva. Tambien puedes comenzar con una solicitud específica:
+Esto inicia una conversación interactiva. También puedes comenzar con una solicitud específica:
 
 ```bash
 claude "Summarize the documents in this folder"
@@ -37,9 +37,9 @@ claude "Summarize the documents in this folder"
 
 ---
 
-## Gestion de sesiones
+## Gestión de sesiónes
 
-Las sesiones guardan tus conversaciones para que puedas volver a ellas después.
+Las sesiónes guardan tus conversaciones para que puedas volver a ellas después.
 
 | Comando | Qué hace |
 |---------|---------|
@@ -47,19 +47,19 @@ Las sesiones guardan tus conversaciones para que puedas volver a ellas después.
 | `claude -c` | Continuar la conversación más reciente |
 | `claude -r "name"` | Reanudar una sesión con nombre |
 | `claude -r "name" "request"` | Reanudar y agregar una nueva solicitud |
-| `/resume` | Explorar sesiones pasadas interactivamente |
+| `/resume` | Explorar sesiónes pasadas interactivamente |
 | `/rename new-name` | Renombrar la sesión actual |
 | `/fork` | Bifurcar para probar un enfoque diferente |
 
-### Ejemplo: Multiples proyectos
+### Ejemplo: Múltiples proyectos
 
 ```bash
-claude -n "quarterly-report"       # Iniciar una sesion de informe
-claude -n "budget-review"          # Iniciar una sesion de presupuesto
+claude -n "quarterly-report"       # Iniciar una sesión de informe
+claude -n "budget-review"          # Iniciar una sesión de presupuesto
 claude -r "quarterly-report"       # Volver al informe
 ```
 
-### Bifurcacion
+### Bifurcación
 
 Prueba un enfoque diferente sin perder tu trabajo actual:
 
@@ -74,8 +74,8 @@ claude --resume quarterly-report --fork-session "try shorter version"
 | Modelo | Mejor para | Comando |
 |--------|-----------|---------|
 | **Sonnet** (por defecto) | Tareas cotidianas | `claude --model sonnet` |
-| **Opus** | Analisis complejos, pensamiento profundo | `claude --model opus` |
-| **Haiku** | Respuestas rapidas, el más veloz | `claude --model haiku` |
+| **Opus** | Análisis complejos, pensamiento profundo | `claude --model opus` |
+| **Haiku** | Respuestas rápidas, el más veloz | `claude --model haiku` |
 
 Cambia durante una sesión con `Option+P` (Mac) o `Alt+P` (Windows/Linux).
 
@@ -95,16 +95,16 @@ Cambia durante una sesión con `Option+P` (Mac) o `Alt+P` (Windows/Linux).
 
 ## Consejos
 
-- **Nombra las sesiones** con `-n "name"` para poder encontrarlas después.
+- **Nombra las sesiónes** con `-n "name"` para poder encontrarlas después.
 - **Usa `/plan`** para tareas complejas para que Claude muestre su enfoque primero.
-- **Escribe `/help`** si olvidas algun comando.
+- **Escribe `/help`** si olvidas algún comando.
 - **Bifurca libremente** -- la sesión original siempre se preserva.
 
 ---
 
-## Ejercicio practico
+## Ejercicio práctico
 
-> **[Ejercicio 9: Auditoria de carpeta](../11-exercises/09-folder-audit/)** — Usa `claude -p`, piping y salida JSON para construir un script reutilizable de auditoria de carpeta. Práctica el modo print, enviar contenido a Claude via piping y scripting con salida estructurada.
+> **[Ejercicio 9: Auditoría de carpeta](../11-exercises/09-folder-audit/)** — Usa `claude -p`, piping y salida JSON para construir un script reutilizable de auditoría de carpeta. Práctica el modo print, enviar contenido a Claude via piping y scripting con salida estructurada.
 >
 > **Tiempo:** 30 min | **Datos:** Audita la carpeta de ejercicios misma (¡meta!)
 
@@ -115,4 +115,4 @@ Cambia durante una sesión con `Option+P` (Mac) o `Alt+P` (Windows/Linux).
 
 ---
 
-*Parte de la serie de guias [Claude How To](../)*
+*Parte de la serie de guías [Claude How To](../)*

@@ -2,17 +2,17 @@
 
 ## El panorama general
 
-Claude Code es un **asistente de IA que vive en tu terminal**. Puede leer tus archivos, hacer cambios, ejecutar comandos y resolver problemas — mientras tu observas y lo guias.
+Claude Code es un **asistente de IA que vive en tu terminal**. Puede leer tus archivos, hacer cambios, ejecutar comandos y resolver problemas — mientras tú observas y lo guías.
 
 Piensa en ello como tener un colega muy capaz sentado a tu lado que puede:
 - Leer y entender cualquier archivo en tu proyecto
-- Hacer ediciones en multiples archivos a la vez
+- Hacer ediciones en múltiples archivos a la vez
 - Ejecutar comandos en tu computadora
 - Explicar cosas en español simple
 
 ## El ciclo de conversación
 
-Cada interaccion sigue un ciclo simple:
+Cada interacción sigue un ciclo simple:
 
 ```mermaid
 graph TD
@@ -65,7 +65,7 @@ Claude puede buscar en Internet para encontrar información actual — webs de c
 
 Claude tiene una **ventana de contexto** — piensa en ella como la memoria a corto plazo de Claude para tu conversación.
 
-Todo entra en está memoria:
+Todo entra en esta memoria:
 - Tus mensajes
 - Archivos que Claude lee
 - Salidas de comandos
@@ -90,7 +90,7 @@ También puedes activar esto manualmente con `/compact` si quieres liberar espac
 | Problema | Solución |
 |---------|----------|
 | La conversación se hace larga | Escribe `/clear` para empezar de cero |
-| Claude olvido algo que dijiste antes | Recuerdaselo, o inicia una nueva sesión |
+| Claude olvidó algo que dijiste antes | Recuérdaselo, o inicia una nueva sesión |
 | Claude parece confundido | Escribe `/clear` y reformula tu solicitud |
 
 > **Regla general**: Si vas a cambiar a un tema completamente diferente, empieza con `/clear`. Es como abrir un documento nuevo en lugar de agregar a uno que ya está muy largo.
@@ -153,7 +153,7 @@ Presiona **Shift+Tab** para alternar entre modos. La mayoría de las personas em
 
 Nada se envía a la nube excepto tus mensajes a Claude (igual que usar ChatGPT o cualquier chat de IA).
 
-## Cuánto cuesta?
+## ¿Cuánto cuesta?
 
 Claude Code usa tokens (piensa en ellos como palabras) cada vez que tienes una conversación. Tu suscripción incluye una cantidad mensual de tokens.
 

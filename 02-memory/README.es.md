@@ -38,16 +38,16 @@ Solo aplica al proyecto actual. Se queda con la carpeta. Pon aquí cosas como:
 
 Los mejores archivos CLAUDE.md cubren cuatro cosas:
 
-| Pilar | Que hace | Ejemplo |
+| Pilar | Qué hace | Ejemplo |
 |-------|----------|---------|
 | **Compresion de conocimiento** | Resume info clave para que Claude no tenga que leer cada archivo | "El producto principal es un SaaS B2B para equipos de RRHH. Modelo de ingresos por puesto." |
 | **Preferencias y convenciones** | Como te gusta que se hagan las cosas | "Siempre usa viñetas. Escribe en un tono casual y amigable." |
-| **Capacidades** | Que puede y debe hacer Claude en este contexto | "Tienes acceso a Google Docs via MCP. Usalo para actualizar el informe semanal." |
+| **Capacidades** | Que puede y debe hacer Claude en este contexto | "Tienes acceso a Google Docs via MCP. Úsalo para actualizar el informe semanal." |
 | **Lecciones aprendidas** | Que funciono y que no en sesiones anteriores | "No uses tablas para comparaciones — el equipo prefiere listas con viñetas." |
 
-La mayoria de la gente solo hace los dos primeros. Agregar capacidades y lecciones aprendidas hace que Claude sea dramaticamente mas efectivo con el tiempo.
+La mayoría de la gente solo hace los dos primeros. Agregar capacidades y lecciones aprendidas hace que Claude sea dramáticamente más efectivo con el tiempo.
 
-> **Piensalo como entrenar a un nuevo empleado.** No solo le dirias que hace la empresa — tambien le dirias tus preferencias, que herramientas tiene disponibles y errores a evitar.
+> **Piénsalo como entrenar a un nuevo empleado.** No solo le dirías que hace la empresa — también le dirías tus preferencias, que herramientas tiene disponibles y errores a evitar.
 
 ## Configurando tu memoria
 
@@ -55,7 +55,7 @@ Vamos a configurar ambos tipos usando el proyecto de Nike con el que has estado 
 
 ### Paso 1: Activa el comando `code` en VS Code
 
-Antes de empezar, asegurate de que puedes abrir archivos desde la terminal usando VS Code. Esto hace que editar archivos de memoria sea mucho mas comodo:
+Antes de empezar, asegúrate de que puedes abrir archivos desde la terminal usando VS Code. Esto hace que editar archivos de memoria sea mucho más cómodo:
 
 1. Abre VS Code
 2. Presiona `Cmd+Shift+P` (Mac) o `Ctrl+Shift+P` (Windows)
@@ -66,13 +66,13 @@ Solo necesitas hacer esto una vez.
 
 ### Paso 2: Configura tu User memory
 
-En vez de usar el comando `/memory` (que abre un editor pequeño en la terminal), abre el archivo directamente en VS Code donde es mucho mas comodo editarlo:
+En vez de usar el comando `/memory` (que abre un editor pequeño en la terminal), abre el archivo directamente en VS Code donde es mucho más cómodo editarlo:
 
 ```bash
 code ~/.claude/CLAUDE.md
 ```
 
-Esto abre tu archivo de User memory en una pestana completa de VS Code. Agrega algo asi:
+Esto abre tu archivo de User memory en una pestaña completa de VS Code. Agrega algo así:
 
 ```
 Soy product manager.
@@ -86,13 +86,13 @@ Guarda el archivo (`Cmd+S`) y listo.
 
 ### Paso 3: Configura tu Project memory
 
-Para la memoria de proyecto, la mejor practica es: **cada vez que empieces a trabajar en una carpeta de proyecto nueva, ejecuta `/init` como tu primer comando.** Claude escaneara tus archivos, entendera el proyecto, y creara un `CLAUDE.md` automaticamente.
+Para la memoria de proyecto, la mejor práctica es: **cada vez que empieces a trabajar en una carpeta de proyecto nueva, ejecuta `/init` como tu primer comando.** Claude escaneará tus archivos, entenderá el proyecto, y creará un `CLAUDE.md` automáticamente.
 
 1. Abre Claude Code en tu carpeta de proyecto
 2. Escribe `/init`
 3. Claude lee tus archivos y genera un `CLAUDE.md` con el contexto del proyecto
 
-Eso es todo. Claude descubre de que trata el proyecto, cuales son los archivos clave, y escribe la memoria por ti.
+Eso es todo. Claude descubre de qué trata el proyecto, cuáles son los archivos clave, y escribe la memoria por ti.
 
 Puedes revisar y editar lo que Claude genero:
 
@@ -100,7 +100,7 @@ Puedes revisar y editar lo que Claude genero:
 code CLAUDE.md
 ```
 
-Por ejemplo, para el proyecto de Nike, Claude podria generar algo asi:
+Por ejemplo, para el proyecto de Nike, Claude podría generar algo así:
 
 ```
 Este es un proyecto de análisis competitivo de Nike.
@@ -116,9 +116,9 @@ Contexto importante:
 - La recuperación en China es una preocupación clave del equipo
 ```
 
-Revisalo, ajusta lo que falte, guarda y listo.
+Revísalo, ajusta lo que falte, guarda y listo.
 
-> **Hazlo un habito.** Cada vez que abras una carpeta de proyecto nueva, ejecuta `/init` primero. Te toma 30 segundos y Claude empieza cada conversacion sabiendo en que estas trabajando.
+> **Hazlo un hábito.** Cada vez que abras una carpeta de proyecto nueva, ejecuta `/init` primero. Te toma 30 segundos y Claude empieza cada conversación sabiendo en que estas trabajando.
 
 ### Paso 3: Ve la diferencia
 

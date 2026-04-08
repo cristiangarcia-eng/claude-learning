@@ -11,7 +11,7 @@
 
 ## 🧭 Encuentra Tu Nivel
 
-No todos empiezan desde el mismo punto. Realiza está autoevaluación rápida para encontrar el punto de entrada correcto.
+No todos empiezan desde el mismo punto. Realiza esta autoevaluación rápida para encontrar el punto de entrada correcto.
 
 **Responde estas preguntas con honestidad:**
 

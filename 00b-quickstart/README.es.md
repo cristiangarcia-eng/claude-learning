@@ -23,7 +23,7 @@ irm https://claude.ai/install.ps1 | iex
 
 Eso es todo. Se instala automáticamente y se mantiene actualizado.
 
-> **¿Problemas al instalar? No te preocupes.** A veces tu ordenador necesita una actualizacion, o le falta algun software del que Claude Code depende (como Node.js). Esto es normal. Si ves errores durante la instalacion, simplemente copia lo que muestra la terminal y pegalo en [claude.ai](https://claude.ai) (el chat del navegador). Describe lo que intentabas hacer y Claude te guiara para solucionarlo. Con un par de mensajes de ida y vuelta, normalmente se resuelve.
+> **¿Problemas al instalar? No te preocupes.** A veces tu ordenador necesita una actualización, o le falta algún software del que Claude Code depende (como Node.js). Esto es normal. Si ves errores durante la instalación, simplemente copia lo que muestra la terminal y pegalo en [claude.ai](https://claude.ai) (el chat del navegador). Describe lo que intentabas hacer y Claude te guiará para solucionarlo. Con un par de mensajes de ida y vuelta, normalmente se resuelve.
 
 ### Recomendado: eliminar el parpadeo de pantalla
 

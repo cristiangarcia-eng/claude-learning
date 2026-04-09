@@ -23,7 +23,11 @@ irm https://claude.ai/install.ps1 | iex
 
 That's it. It installs automatically and keeps itself up to date.
 
-> **Installation issues? Don't panic.** Sometimes your computer needs an update, or is missing some software that Claude Code depends on (like Node.js). This is normal. If you see errors during installation, just copy the terminal output and paste it into [claude.ai](https://claude.ai) (the browser chat). Describe what you were trying to do and Claude will walk you through the fix. A couple of back-and-forth messages usually solves it.
+> **Important: close VS Code completely and reopen it** after installing. Opening a new terminal isn't enough — VS Code needs to reload its environment variables. Once reopened, type `claude` and it should start.
+
+> **Installation issues? Don't panic.** If you see errors, copy the terminal output and paste it into [claude.ai](https://claude.ai) (the browser chat). Describe what you were trying to do and Claude will walk you through the fix.
+>
+> ⚠️ **Heads up about what claude.ai may suggest:** the browser chat sometimes recommends installing Claude Code with `npm install -g @anthropic-ai/claude-code`. **Don't do this on Windows** — that path depends on Node.js, on PATH configuration, and ends in "command not found". If it suggests that, ignore it and re-run the `irm https://claude.ai/install.ps1 | iex` command above — that's the official installer and it doesn't need Node. On Mac/Linux, always use `curl ... install.sh | bash`.
 
 ### Recommended: stop screen flickering
 

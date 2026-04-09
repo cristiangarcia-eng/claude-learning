@@ -68,6 +68,34 @@ Use a pipeline of agents:
 
 Each agent focuses on what it does best, producing higher quality than one agent doing everything.
 
+### 4. Debate (devil's advocate)
+
+Have two agents argue **opposing positions** on the same topic. One defends, one attacks. The friction between them surfaces risks and blind spots that a single perspective would miss.
+
+**Example: Market entry decision**
+
+```
+I'm considering launching our product in Japan.
+Use 2 agents in a debate format:
+- Agent 1: Argue why we SHOULD enter the Japanese market
+- Agent 2: Argue why we should NOT enter the Japanese market
+After 2-3 rounds of debate, synthesize the strongest
+arguments from each side into a final recommendation.
+```
+
+**Example: Investment decision**
+
+```
+We're evaluating whether to acquire CompanyX.
+Run an adversarial debate:
+- Agent 1: The case FOR the acquisition
+- Agent 2: The case AGAINST the acquisition
+Include financial, strategic, and cultural arguments.
+Synthesize into a balanced recommendation.
+```
+
+The debate pattern produces more robust conclusions than simply asking "should we do X?" — because each agent is motivated to find the strongest possible arguments for its side.
+
 ## When to use each pattern
 
 | Pattern | Best for | Example |
@@ -75,6 +103,7 @@ Each agent focuses on what it does best, producing higher quality than one agent
 | **Parallel** | Same task on different inputs | Analyze 5 competitors, review 10 documents |
 | **Consensus** | Decisions that need multiple perspectives | Naming, strategy, risk assessment |
 | **Pipeline** | Multi-step workflows with different skills | Research > Write > Edit > Publish |
+| **Debate** | Decisions with high stakes or uncertainty | Market entry, acquisitions, strategy shifts |
 
 ## How to trigger multiple agents
 
@@ -95,9 +124,18 @@ Combine into a single comparison report.
 - **Event planning**: Parallel agents handling venue research, catering options, and speaker outreach
 - **Hiring**: Analyze multiple candidate profiles at once
 
+## Cost awareness
+
+Multiple agents consume tokens faster — each agent has its own conversation. Keep these tips in mind:
+
+- **Start with 2-3 agents**, not 10. Scale up once you're comfortable with the results and cost.
+- **Check your spend** with `/cost` after running multi-agent tasks to calibrate expectations.
+- **Don't let agents wait for you.** If Claude is idle waiting for your instructions more than 20% of the time, you have too many parallel sessions open. 3-4 simultaneous agents is a practical limit for most people.
+- **Stop early if needed.** If a multi-agent task is going in the wrong direction, tell Claude to stop — don't let it keep burning tokens on bad output.
+
 ## Tips
 
 - **Independence matters**: Parallel agents work best when tasks don't depend on each other
 - **Combine at the end**: Always ask for a synthesis step that merges the parallel results
-- **Quality over speed**: For important decisions, use the consensus pattern — it catches blind spots
+- **Quality over speed**: For important decisions, use the consensus or debate pattern — they catch blind spots
 - **Start simple**: Try parallel with 2-3 agents before scaling to larger teams

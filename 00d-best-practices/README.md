@@ -4,9 +4,11 @@
 
 Claude Code is like a very smart colleague. The clearer you communicate, the better results you get.
 
-## Be specific, not vague
+## Be specific, not vague (and skip the pleasantries)
 
 The single most important tip: **say exactly what you want**.
+
+"Hi Claude! Hope you're doing well. I was wondering if you could maybe help me with..." is burning tokens on zero-value words. Write as if you're paying per word — because you are.
 
 | Instead of... | Try... |
 |--------------|--------|
@@ -71,18 +73,20 @@ When the plan looks good, exit Plan Mode (press **Shift+Tab** to cycle back to n
 
 Now Claude will start making the actual changes. This **plan first, execute second** approach gives you much better results than jumping straight to changes.
 
-## Keep conversations focused
+## Keep conversations focused (this saves you real money)
 
-Each conversation has a memory limit. When it fills up, Claude starts forgetting.
+Every message you send reprocesses the ENTIRE previous conversation. A 10-turn chat silently multiplies your token spend by 10x. This is the number one hidden cost for most users.
 
 **Do this:**
 - One topic per session
 - Type `/clear` when switching topics
 - Keep your requests focused
+- Use `/cost` to check your current session's token usage
 
 **Avoid this:**
 - Asking about authentication, then pricing, then design, then bugs — all in one session
 - Very long sessions without clearing
+- Continuing a conversation "just because" when you've already moved on to a different task
 
 ## The two-correction rule
 
@@ -128,13 +132,58 @@ last time when it was buried at the end."
 
 Over time, your CLAUDE.md becomes a living document that makes Claude smarter with every project. The people who get the most value from Claude Code are the ones who iterate on their memory files — not the ones who write the best prompts.
 
+## Compress images before uploading
+
+If you're giving Claude a screenshot, a design mockup, or any image, make sure it's under **5 MB**. Large images eat up your token budget fast — a 20 MB screenshot can use as many tokens as an entire conversation.
+
+Use a free tool like [iLoveIMG](https://www.iloveimg.com/compress-image) to shrink images before passing them to Claude. This saves tokens and makes Claude process the image faster.
+
+Also worth knowing: adding or removing images between messages can break Claude's internal prompt caching. If you're working on a UI task with screenshots, try to include all the images you need upfront rather than adding them one at a time across multiple messages.
+
+## Use Caveman Mode to cut output tokens
+
+If Claude's responses feel too verbose for your needs, try installing [Caveman Mode](https://github.com/JuliusBrussee/caveman) — a skill that makes Claude respond in a compressed, direct style: no articles, no filler, no pleasantries, but full technical accuracy.
+
+In real benchmarks, a 1,180-token response drops to 159 tokens — that's ~65% fewer output tokens. Install it with:
+
+```
+/install-skill https://github.com/JuliusBrussee/caveman
+```
+
+## Delegate heavy tasks to subagents
+
+When Claude needs to run tests, process logs, or search through large documentation, all that verbose output floods your conversation context — eating tokens fast.
+
+Instead, let Claude delegate these tasks to subagents. The heavy output stays in the subagent's context, and only a concise summary comes back to your main conversation. Your main window stays clean and cheap.
+
+You don't need to do anything special — Claude Code automatically uses subagents when it makes sense. But if you notice your context growing fast, you can explicitly ask:
+
+```
+Use a subagent to search through all the log files
+and give me a summary of the errors.
+```
+
+## Monitor, don't micromanage
+
+When Claude is working on a big task, let it work. Don't interrupt every 10 seconds with corrections — this breaks its flow and wastes context.
+
+Instead:
+- **Watch the thinking tab** to see what Claude is planning
+- **Wait for it to finish** before giving feedback
+- **Give all your corrections at once** instead of one at a time
+
+Think of it like delegating to a colleague: you hand off the task, check in when they're done, and give feedback in one batch. Constant interruptions make everyone slower.
+
 ## Summary: the golden rules
 
 1. **Start with a plan** — always use Plan Mode before making changes
-2. **Be specific** — say exactly what you want
+2. **Be specific** — say exactly what you want, skip the pleasantries
 3. **Explore first** — let Claude understand before changing
-4. **Clear often** — `/clear` between different topics
+4. **Clear often** — `/clear` between different topics (each message reprocesses everything)
 5. **Let Claude verify** — tell it how to check its own work
 6. **Course-correct fast** — Esc and redirect if it's going wrong
 7. **Interview technique** — for big tasks, let Claude ask questions first
+8. **Compress images** — shrink before uploading, avoid adding them mid-conversation
+9. **Delegate heavy work** — let subagents handle verbose tasks
+10. **Monitor your spend** — use `/cost` to track token usage per session
 

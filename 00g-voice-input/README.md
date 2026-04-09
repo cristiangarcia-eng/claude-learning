@@ -64,6 +64,18 @@ The difference is that `/voice` only works inside Claude Code, while Wispr Flow 
 
 > **Note for non-English speakers**: Claude's built-in `/voice` is optimized for English. If you speak Spanish or other languages, the transcription accuracy drops noticeably. Wispr Flow handles multiple languages much better, which is another reason we recommend it.
 
+## Voice dumps: skip the long brief
+
+Instead of spending 20 minutes writing a detailed brief or requirements document, try a **voice dump** — just talk for 2-3 minutes straight, describing everything you want.
+
+For example, instead of typing a carefully structured project brief:
+
+> Hold the Wispr Flow key and say: *"Okay so here's what I need — I want a competitive analysis of our top three competitors, focus on their pricing models and how they position themselves to enterprise customers. Make sure to include their free tier if they have one. Last time we did this the team complained that the format was hard to scan quickly, so use bullet points and keep each competitor to one page max. Oh and include a recommendation section at the end about where we should differentiate..."*
+
+Claude will extract the key requirements from your stream of consciousness. You don't need to organize your thoughts perfectly — that's Claude's job.
+
+> **Voice dumps are 3x faster than typing** and often produce better results because you include details you'd skip when writing (like the formatting complaint from last time).
+
 ## Tips for voice input
 
 - **Speak naturally** — don't try to "sound technical". Just describe what you want like you'd tell a colleague

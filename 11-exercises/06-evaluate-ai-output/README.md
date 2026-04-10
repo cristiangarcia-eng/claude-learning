@@ -30,32 +30,22 @@ Some drafts follow the guidelines perfectly. Others have intentional violations 
 
 > **This is the same workflow you'll use for real projects.** Create a project, copy in your data, and work from there.
 
-**Get the course files** (first time only):
+**1. Create your project folder:**
 
-```bash
-git clone https://github.com/cristiangarcia-eng/claude-learning.git ~/Desktop/claude-learning
-```
+Open Finder (Mac) or File Explorer (Windows) and go to `Desktop/Claude/projects/`. Create these folders:
+- `evaluate-ai-output/`
+  - `data/` (inside evaluate-ai-output)
+  - `output/` (inside evaluate-ai-output)
 
-**Create your project:**
+**2. Copy the exercise data:**
 
-```bash
-mkdir -p ~/Desktop/Claude/projects/evaluate-ai-output/data
-mkdir ~/Desktop/Claude/projects/evaluate-ai-output/output
-```
+Find the file `ai_outputs.json` in your course materials at `11-exercises/06-evaluate-ai-output/data/` and drag it into your new `data/` folder.
 
-**Copy the exercise data:**
+**3. Open in Cursor and start Claude:**
 
-```bash
-cp ~/Desktop/claude-learning/11-exercises/06-evaluate-ai-output/data/ai_outputs.json ~/Desktop/Claude/projects/evaluate-ai-output/data/
-```
+In Cursor: **File → Open Folder** → select your `evaluate-ai-output` folder. Open the terminal panel (**Cmd+J** / **Ctrl+J**) and type `claude`.
 
-**Open the project:**
-
-```bash
-cd ~/Desktop/Claude/projects/evaluate-ai-output
-```
-
-Start Claude Code here (`claude`). Your project looks like this:
+Your project looks like this:
 
 ```
 evaluate-ai-output/

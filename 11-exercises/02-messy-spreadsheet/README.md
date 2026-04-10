@@ -36,32 +36,22 @@ A CSV file at `data/raw_sales.csv` with ~40 rows of retail partner sales data. T
 
 > **This is the same workflow you'll use for real projects.** Create a project, copy in your data, and work from there.
 
-**Get the course files** (first time only):
+**1. Create your project folder:**
 
-```bash
-git clone https://github.com/cristiangarcia-eng/claude-learning.git ~/Desktop/claude-learning
-```
+Open Finder (Mac) or File Explorer (Windows) and go to `Desktop/Claude/projects/`. Create these folders:
+- `messy-spreadsheet/`
+  - `data/` (inside messy-spreadsheet)
+  - `output/` (inside messy-spreadsheet)
 
-**Create your project:**
+**2. Copy the exercise data:**
 
-```bash
-mkdir -p ~/Desktop/Claude/projects/messy-spreadsheet/data
-mkdir ~/Desktop/Claude/projects/messy-spreadsheet/output
-```
+Find the file `raw_sales.csv` in your course materials at `11-exercises/02-messy-spreadsheet/data/` and drag it into your new `data/` folder.
 
-**Copy the exercise data:**
+**3. Open in Cursor and start Claude:**
 
-```bash
-cp ~/Desktop/claude-learning/11-exercises/02-messy-spreadsheet/data/raw_sales.csv ~/Desktop/Claude/projects/messy-spreadsheet/data/
-```
+In Cursor: **File → Open Folder** → select your `messy-spreadsheet` folder. Open the terminal panel (**Cmd+J** / **Ctrl+J**) and type `claude`.
 
-**Open the project:**
-
-```bash
-cd ~/Desktop/Claude/projects/messy-spreadsheet
-```
-
-Start Claude Code here (`claude`). Your project looks like this:
+Your project looks like this:
 
 ```
 messy-spreadsheet/
@@ -86,7 +76,7 @@ Review the diagnosis. Understanding the problems is half the work.
 
 **Want to see the mess for yourself?** Open `data/raw_sales.csv` in Excel or Google Sheets. You will see something like this:
 
-![Raw sales data in Google Sheets -- notice the inconsistent names, mixed date formats, and notes in number fields](images/raw-sales-sheets.png)
+![Raw sales data in Google Sheets -- notice the inconsistent names, mixed date formats, and notes in number fields](/exercise-images/raw-sales-sheets.png)
 
 ### Step 2: Clean the data (10 minutes)
 
@@ -122,7 +112,7 @@ Save the clean file as output/clean_sales.csv
 
 Check the output. Open `output/clean_sales.csv` in Excel or Google Sheets to verify it looks right. Compare it with the original -- the difference should be dramatic:
 
-![Clean sales data in Google Sheets -- names standardized, dates consistent, duplicates removed, no more notes in number fields](images/clean-sales-sheets.png)
+![Clean sales data in Google Sheets -- names standardized, dates consistent, duplicates removed, no more notes in number fields](/exercise-images/clean-sales-sheets.png)
 
 ### Step 3: Build the skill (10 minutes)
 

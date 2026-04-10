@@ -54,26 +54,9 @@ Most people only do the first two. Adding capabilities and lessons learned makes
 
 Let's set up both types using the Nike project you've been working with.
 
-### Step 1: Enable the `code` command in VS Code
+### Step 1: Set up your User memory
 
-Before we start, make sure you can open files from the terminal using VS Code. This makes editing memory files much easier:
-
-1. Open VS Code
-2. Press `Cmd+Shift+P` (Mac) or `Ctrl+Shift+P` (Windows)
-3. Type **"Shell Command: Install 'code' command in PATH"** and select it
-4. Done — now you can open any file from the terminal with `code filename`
-
-You only need to do this once.
-
-### Step 2: Set up your User memory
-
-Instead of using the `/memory` command (which opens a small terminal editor), open the file directly in VS Code where it's much more comfortable to edit:
-
-```bash
-code ~/.claude/CLAUDE.md
-```
-
-This opens your User memory file in a full VS Code tab. Add something like this:
+Open Claude Code and type `/memory`. Select **"Edit User memory"**. This opens your personal CLAUDE.md file. Add something like this:
 
 ```
 I am a product manager.
@@ -85,7 +68,7 @@ Always explain things in simple, non-technical language.
 
 Save the file (`Cmd+S`) and you're done.
 
-### Step 3: Set up your Project memory
+### Step 2: Set up your Project memory
 
 For project memory, the best practice is: **every time you start working in a new project folder, run `/init` as your first command.** Claude will scan your files, understand the project, and create a `CLAUDE.md` for you automatically.
 
@@ -95,11 +78,7 @@ For project memory, the best practice is: **every time you start working in a ne
 
 That's it. Claude figures out what the project is about, what the key files are, and writes the memory for you.
 
-You can review and edit what Claude generated:
-
-```bash
-code CLAUDE.md
-```
+You can review and edit what Claude generated. Just open `CLAUDE.md` from the file explorer in Cursor (it will appear in the sidebar after Claude creates it).
 
 For example, Claude might generate something like this for the Nike project:
 

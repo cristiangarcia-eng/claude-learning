@@ -20,43 +20,33 @@ Your marketing team at Nike is preparing for the launch of a fictional new produ
 
 ## What You Have
 
-A product brief at `data/data/sample-brief.md` — the starting input for your pipeline.
+A product brief at `data/sample-brief.md` — the starting input for your pipeline.
 
 ## Setup
 
 > **This is the same workflow you'll use for real projects.** Create a project, copy in your data, and work from there.
 
-**Get the course files** (first time only):
+**1. Create your project folder:**
 
-```bash
-git clone https://github.com/cristiangarcia-eng/claude-learning.git ~/Desktop/claude-learning
-```
+Open Finder (Mac) or File Explorer (Windows) and go to `Desktop/Claude/projects/`. Create these folders:
+- `end-to-end-pipeline/`
+  - `data/` (inside end-to-end-pipeline)
+  - `output/` (inside end-to-end-pipeline)
 
-**Create your project:**
+**2. Copy the exercise data:**
 
-```bash
-mkdir -p ~/Desktop/Claude/projects/end-to-end-pipeline/data
-mkdir ~/Desktop/Claude/projects/end-to-end-pipeline/output
-```
+Find the file `sample-brief.md` in your course materials at `11-exercises/10-end-to-end-pipeline/data/` and drag it into your new `data/` folder.
 
-**Copy the exercise data:**
+**3. Open in Cursor and start Claude:**
 
-```bash
-cp ~/Desktop/claude-learning/11-exercises/10-end-to-end-pipeline/data/sample-brief.md ~/Desktop/Claude/projects/end-to-end-pipeline/data/
-```
+In Cursor: **File → Open Folder** → select your `end-to-end-pipeline` folder. Open the terminal panel (**Cmd+J** / **Ctrl+J**) and type `claude`.
 
-**Open the project:**
-
-```bash
-cd ~/Desktop/Claude/projects/end-to-end-pipeline
-```
-
-Start Claude Code here (`claude`). Your project looks like this:
+Your project looks like this:
 
 ```
 end-to-end-pipeline/
 ├── data/
-│   └── data/sample-brief.md
+│   └── sample-brief.md
 └── output/          ← Claude saves pipeline results here
 ```
 

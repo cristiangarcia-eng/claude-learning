@@ -53,26 +53,9 @@ La mayoría de la gente solo hace los dos primeros. Agregar capacidades y leccio
 
 Vamos a configurar ambos tipos usando el proyecto de Nike con el que has estado trabajando.
 
-### Paso 1: Activa el comando `code` en VS Code
+### Paso 1: Configura tu User memory
 
-Antes de empezar, asegúrate de que puedes abrir archivos desde la terminal usando VS Code. Esto hace que editar archivos de memoria sea mucho más cómodo:
-
-1. Abre VS Code
-2. Presiona `Cmd+Shift+P` (Mac) o `Ctrl+Shift+P` (Windows)
-3. Escribe **"Shell Command: Install 'code' command in PATH"** y seleccionalo
-4. Listo — ahora puedes abrir cualquier archivo desde la terminal con `code nombre-archivo`
-
-Solo necesitas hacer esto una vez.
-
-### Paso 2: Configura tu User memory
-
-En vez de usar el comando `/memory` (que abre un editor pequeño en la terminal), abre el archivo directamente en VS Code donde es mucho más cómodo editarlo:
-
-```bash
-code ~/.claude/CLAUDE.md
-```
-
-Esto abre tu archivo de User memory en una pestaña completa de VS Code. Agrega algo así:
+Abre Claude Code y escribe `/memory`. Selecciona **"Edit User memory"**. Esto abre tu archivo personal CLAUDE.md. Agrega algo así:
 
 ```
 Soy product manager.
@@ -84,7 +67,7 @@ Siempre explica las cosas en lenguaje simple, no técnico.
 
 Guarda el archivo (`Cmd+S`) y listo.
 
-### Paso 3: Configura tu Project memory
+### Paso 2: Configura tu Project memory
 
 Para la memoria de proyecto, la mejor práctica es: **cada vez que empieces a trabajar en una carpeta de proyecto nueva, ejecuta `/init` como tu primer comando.** Claude escaneará tus archivos, entenderá el proyecto, y creará un `CLAUDE.md` automáticamente.
 
@@ -94,11 +77,7 @@ Para la memoria de proyecto, la mejor práctica es: **cada vez que empieces a tr
 
 Eso es todo. Claude descubre de qué trata el proyecto, cuáles son los archivos clave, y escribe la memoria por ti.
 
-Puedes revisar y editar lo que Claude genero:
-
-```bash
-code CLAUDE.md
-```
+Puedes revisar y editar lo que Claude generó. Solo abre `CLAUDE.md` desde el explorador de archivos en Cursor (aparecerá en la barra lateral después de que Claude lo cree).
 
 Por ejemplo, para el proyecto de Nike, Claude podría generar algo así:
 

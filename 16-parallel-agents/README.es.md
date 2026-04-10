@@ -6,7 +6,7 @@ Cuando le das a Claude una tarea compleja, la trabaja paso a paso — una cosa a
 
 Con múltiples agentes, puedes dividir el trabajo entre varias instancias de Claude ejecutándose **al mismo tiempo**. En vez de una tarea secuencial de 20 minutos, obtienes resultados en 8-12 minutos.
 
-## Tres patrones para múltiples agentes
+## Cuatro patrones para múltiples agentes
 
 ### 1. Ejecución paralela
 

@@ -26,35 +26,23 @@ Claude Code is available in several places:
 | Option | Best for | Limitations |
 |--------|----------|-------------|
 | **Terminal (CLI)** | Full power, no restrictions | Requires basic terminal knowledge |
-| **VS Code extension** | Visual + terminal in one place | Same power as terminal |
+| **Cursor** | Visual + terminal in one place | Same power as terminal |
 | **Desktop App** | Visual diffs, scheduled tasks | Great UI, slightly less flexible |
 | **Web (claude.ai/code)** | Quick tasks, no install needed | Runs on cloud, not your machine |
 | **Mobile (iOS app)** | On-the-go tasks | Limited to web sessions |
 
-## Why we teach the terminal
+## How you'll use it
 
-The terminal is where Claude Code is most powerful. It has access to everything on your machine, runs without limitations, and is the fastest way to work.
+Claude Code lives in the **terminal panel** — that's the bottom panel inside Cursor (your code editor). You open it, type `claude`, and start talking. That's the only command you need to know.
 
-We know what you're thinking: *"The terminal? That black screen with text? That's for developers!"*
-
-Here's the thing: **you only need to know 4 commands.** That's it. Four. We'll teach you how to use them in the [Terminal Basics](../00-terminal-basics/) lesson — but here's a preview:
-
-| Command | What it does | Plain English |
-|---------|-------------|---------------|
-| `pwd` | Shows where you are | "What folder am I in?" |
-| `ls` | Lists what's here | "What's in this folder?" |
-| `cd` | Moves to another folder | "Go to this folder" |
-| `claude` | Starts Claude Code | "Let's go" |
-
-Once Claude Code is running, you talk to it in plain English. No commands, no code, no syntax. Just describe what you want.
+Once Claude Code is running, you talk to it in plain language. No commands, no code, no syntax. Just describe what you want.
 
 ## What you'll learn in this course
 
 This course takes you from zero to productive with Claude Code. Every lesson is designed for non-technical people — product managers, designers, sales teams, and anyone curious about AI.
 
 You'll learn to:
-- Navigate your computer from the terminal (it's easier than you think)
-- Set up VS Code as your workspace
+- Set up Cursor as your workspace
 - Use voice input so you barely have to type
 - Have Claude analyze, edit, and organize your files
 - Connect Claude to your business tools
@@ -62,3 +50,10 @@ You'll learn to:
 
 No coding experience required. If you can describe what you want in plain English, you can use Claude Code.
 
+---
+
+![Rome wasn't built in a day but they didn't have Claude Code — 56.8M likes](./images/rome-meme.png)
+
+---
+
+**Let's get started.**

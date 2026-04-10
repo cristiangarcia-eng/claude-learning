@@ -27,34 +27,24 @@ Un archivo JSON en `data/conversations.json` con 40 conversaciones de soporte al
 
 ## Preparación
 
-> **Este es el mismo flujo de trabajo que usarás en proyectos reales.** Crea un proyecto, copia tus datos, y trabaja desde ahí.
+> **Este es el mismo flujo que usarás para proyectos reales.** Crea un proyecto, copia tus datos, y trabaja desde ahí.
 
-**Descarga los archivos del curso** (solo la primera vez):
+**1. Crea tu carpeta de proyecto:**
 
-```bash
-git clone https://github.com/cristiangarcia-eng/claude-learning.git ~/Desktop/claude-learning
-```
+Abre Finder (Mac) o Explorador de Archivos (Windows) y ve a `Escritorio/Claude/projects/`. Crea estas carpetas:
+- `conversation-analysis/`
+  - `data/` (dentro de conversation-analysis)
+  - `output/` (dentro de conversation-analysis)
 
-**Crea tu proyecto:**
+**2. Copia los datos del ejercicio:**
 
-```bash
-mkdir -p ~/Desktop/Claude/projects/conversation-analysis/data
-mkdir ~/Desktop/Claude/projects/conversation-analysis/output
-```
+Encuentra el archivo `conversations.json` en los materiales del curso en `11-exercises/05-conversation-analysis/data/` y arrástralo a tu nueva carpeta `data/`.
 
-**Copia los datos del ejercicio:**
+**3. Abre en Cursor e inicia Claude:**
 
-```bash
-cp ~/Desktop/claude-learning/11-exercises/05-conversation-analysis/data/conversations.json ~/Desktop/Claude/projects/conversation-analysis/data/
-```
+En Cursor: **File → Open Folder** → selecciona tu carpeta `conversation-analysis`. Abre el panel de terminal (**Cmd+J** / **Ctrl+J**) y escribe `claude`.
 
-**Abre el proyecto:**
-
-```bash
-cd ~/Desktop/Claude/projects/conversation-analysis
-```
-
-Inicia Claude Code aquí (`claude`). Tu proyecto se ve así:
+Tu proyecto se ve así:
 
 ```
 conversation-analysis/

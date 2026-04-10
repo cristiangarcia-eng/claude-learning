@@ -290,12 +290,12 @@ Solo pega tu JSON en Claude Code y di:
 
 Claude detectará la coma al final y lo corregirá por ti.
 
-### Opción 2: VS Code (recomendado)
+### Opción 2: Cursor (recomendado)
 
-Si estás usando VS Code:
+Si estás usando Cursor:
 
 1. Abre el archivo `.json`
-2. VS Code automáticamente resalta errores con **subrayados rojos ondulados**
+2. Cursor automáticamente resalta errores con **subrayados rojos ondulados**
 3. Pasa el cursor sobre el error para ver qué está mal
 
 Esta es la forma más fácil — los errores son visibles mientras escribes.

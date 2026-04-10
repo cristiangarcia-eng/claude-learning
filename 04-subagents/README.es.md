@@ -1,8 +1,13 @@
-# Subagentes — Cuando Claude Necesita Ayuda
+# Subagentes
+**La capa de delegación**
 
-## Skills vs Subagentes: ¿cuál es la diferencia?
+Los Skills automatizan *cómo* Claude hace una tarea. MCP le da a Claude acceso a datos externos. Pero ¿qué pasa cuando una tarea es demasiado grande o compleja para una sola conversación? Le pides a Claude que investigue un competidor, y el análisis llena tu chat de hallazgos intermedios. O necesitas trabajo profundo mientras tú sigues avanzando en otra cosa.
 
-Ya conoces los Skills — instrucciones que Claude sigue directamente, como una receta. Los Subagentes son diferentes: en vez de seguir instrucciones él mismo, Claude **lanza un asistente separado** para manejar una tarea específica.
+> **Los Skills son recetas que Claude sigue. Los Subagentes son especialistas que Claude contrata.**
+
+Ya conoces los Skills — instrucciones que Claude sigue directamente. Los Subagentes son diferentes: en vez de seguir instrucciones él mismo, Claude **lanza un asistente separado** para manejar una tarea específica.
+
+La distinción clave:
 
 La distinción clave:
 

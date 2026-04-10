@@ -1,4 +1,9 @@
 # App de Escritorio y Sesiones Web
+**La capa de interfaz**
+
+La terminal funciona, pero seamos honestos — revisar cambios en archivos como diffs de texto no es para todos. Y si quieres iniciar una tarea y revisarla desde tu teléfono después, la terminal no puede ayudarte. Claude Code es poderoso, pero su interfaz predeterminada no fue diseñada para quienes piensan visualmente.
+
+> **Mismo Claude, mejor ventana.**
 
 Usa Claude Code más allá de la terminal — en una app independiente o directamente en tu navegador.
 

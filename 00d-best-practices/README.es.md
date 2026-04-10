@@ -23,12 +23,12 @@ Cuando sea posible, dile a Claude cómo verificar el resultado:
 
 ```
 Cambia el email de la empresa a hello@nova.com en todas partes.
-Despues de hacer los cambios, busca en el codebase para confirmar
+Después de hacer los cambios, busca en el codebase para confirmar
 que no quedan referencias al email anterior.
 ```
 
 ```
-Actualiza los precios en el sitio web. Despues del cambio,
+Actualiza los precios en el sitio web. Después del cambio,
 toma una captura de pantalla para que pueda verificar que se ve bien.
 ```
 
@@ -125,9 +125,9 @@ La mayor diferencia entre los buenos y los excelentes usuarios de Claude Code es
 3. **Actualiza tu CLAUDE.md** — añade las lecciones para que Claude no repita errores
 
 ```
-Anade a mi memoria de proyecto: "Cuando crees informes, siempre
-incluye un resumen ejecutivo arriba. El equipo se quejo la
-ultima vez cuando estaba enterrado al final."
+Añade a mi memoria de proyecto: "Cuando crees informes, siempre
+incluye un resumen ejecutivo arriba. El equipo se quejó la
+última vez cuando estaba enterrado al final."
 ```
 
 Con el tiempo, tu CLAUDE.md se convierte en un documento vivo que hace a Claude más inteligente con cada proyecto. Las personas que sacan más valor de Claude Code son las que iteran en sus archivos de memoria — no las que escriben los mejores prompts.

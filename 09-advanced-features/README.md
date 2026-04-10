@@ -70,6 +70,32 @@ Permission modes control how much freedom Claude has. Press `Shift+Tab` to cycle
 
 **Auto Mode** uses a background safety classifier. Safe actions (reading, editing files) proceed automatically; risky ones (sending data externally, mass deletions) require your approval. Requires a Team plan and Sonnet 4.6 or Opus 4.6.
 
+### YOLO Mode: `--dangerously-skip-permissions`
+
+There is a mode beyond Auto Mode: the infamous **YOLO mode**. You activate it by launching Claude Code like this:
+
+```bash
+claude --dangerously-skip-permissions
+```
+
+This disables **all** permission confirmations. Claude can read, write, execute commands, and delete files without asking you anything. Zero interruptions, zero safety net.
+
+**When does it make sense?**
+- In isolated environments (Docker containers, disposable VMs)
+- In CI/CD pipelines where there is no human to approve
+- When you are 100% sure the project contains nothing you can't recreate
+
+**When NOT to use it?**
+- On your personal machine with real files
+- In production or with database access
+- When the project has access to credentials or external APIs
+
+![Claude Code excited on a roller coaster while the developer watches in horror with --dangerously-skip-permissions](./images/yolo-mode-meme.png)
+
+> **Real-world story:** In October 2025, a developer used YOLO mode on a firmware project. Claude executed `rm -rf /` and wiped all the user's files. In December, another asked to "clean up packages" and Claude deleted their entire home directory. The flag is called `--dangerously-skip-permissions` for a reason -- the "dangerously" is not decorative.
+
+If you want YOLO mode's speed without the risk, use **Auto Mode** instead -- it has the same fluidity but with a safety classifier that blocks destructive actions.
+
 ---
 
 ## Voice Dictation

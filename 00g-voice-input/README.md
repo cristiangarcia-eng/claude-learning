@@ -30,7 +30,7 @@ That's it. Now you can "type" by talking in any app.
 
 ### Using Wispr Flow with Claude Code
 
-Open Claude Code in your terminal or VS Code, then:
+Open Claude Code in your Cursor terminal, then:
 
 1. Click into the input area
 2. Hold the Wispr Flow shortcut key

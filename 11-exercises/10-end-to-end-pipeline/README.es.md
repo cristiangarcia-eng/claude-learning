@@ -20,43 +20,33 @@ Tu equipo de marketing en Nike está preparando el lanzamiento de un nuevo produ
 
 ## Lo que tienes
 
-Un brief de producto en `data/data/sample-brief.md` — la entrada inicial para tu pipeline.
+Un brief de producto en `data/sample-brief.md` — la entrada inicial para tu pipeline.
 
 ## Preparación
 
-> **Este es el mismo flujo de trabajo que usarás en proyectos reales.** Crea un proyecto, copia tus datos, y trabaja desde ahí.
+> **Este es el mismo flujo que usarás para proyectos reales.** Crea un proyecto, copia tus datos, y trabaja desde ahí.
 
-**Descarga los archivos del curso** (solo la primera vez):
+**1. Crea tu carpeta de proyecto:**
 
-```bash
-git clone https://github.com/cristiangarcia-eng/claude-learning.git ~/Desktop/claude-learning
-```
+Abre Finder (Mac) o Explorador de Archivos (Windows) y ve a `Escritorio/Claude/projects/`. Crea estas carpetas:
+- `end-to-end-pipeline/`
+  - `data/` (dentro de end-to-end-pipeline)
+  - `output/` (dentro de end-to-end-pipeline)
 
-**Crea tu proyecto:**
+**2. Copia los datos del ejercicio:**
 
-```bash
-mkdir -p ~/Desktop/Claude/projects/end-to-end-pipeline/data
-mkdir ~/Desktop/Claude/projects/end-to-end-pipeline/output
-```
+Encuentra el archivo `sample-brief.md` en los materiales del curso en `11-exercises/10-end-to-end-pipeline/data/` y arrástralo a tu nueva carpeta `data/`.
 
-**Copia los datos del ejercicio:**
+**3. Abre en Cursor e inicia Claude:**
 
-```bash
-cp ~/Desktop/claude-learning/11-exercises/10-end-to-end-pipeline/data/sample-brief.md ~/Desktop/Claude/projects/end-to-end-pipeline/data/
-```
+En Cursor: **File → Open Folder** → selecciona tu carpeta `end-to-end-pipeline`. Abre el panel de terminal (**Cmd+J** / **Ctrl+J**) y escribe `claude`.
 
-**Abre el proyecto:**
-
-```bash
-cd ~/Desktop/Claude/projects/end-to-end-pipeline
-```
-
-Inicia Claude Code aquí (`claude`). Tu proyecto se ve así:
+Tu proyecto se ve así:
 
 ```
 end-to-end-pipeline/
 ├── data/
-│   └── data/sample-brief.md
+│   └── sample-brief.md
 └── output/          ← Claude guarda los resultados del pipeline aquí
 ```
 

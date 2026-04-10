@@ -163,6 +163,8 @@ Claude Code uses tokens (think of them as words) every time you have a conversat
 
 > **Good to know:** Reading large files and working with images uses more tokens than simple text conversations. If you're working on a big project, keep an eye on your usage with `/cost`.
 
+![Claude Code: You've hit your limit, resets 7pm. Me from 5-6.59pm: Darth Maul waiting furiously](./images/rate-limit-meme.png)
+
 ## Key takeaways
 
 1. **Talk naturally** — Claude understands plain English

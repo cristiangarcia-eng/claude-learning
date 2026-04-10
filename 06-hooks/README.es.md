@@ -1105,7 +1105,7 @@ echo $?
 |---------|----------------|
 | **Timeout** | 60 segundos por defecto, configurable por comando |
 | **Paralelización** | Todos los hooks coincidentes se ejecutan en paralelo |
-| **Deduplicación** | Los comandos de hook idénticos se deduplicán |
+| **Deduplicación** | Los comandos de hook idénticos se deduplican |
 | **Entorno** | Se ejecuta en el directorio actual con el entorno de Claude Code |
 
 ## Solución de problemas

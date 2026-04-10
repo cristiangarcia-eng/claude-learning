@@ -18,7 +18,7 @@ The best way to understand MCP is to use one. **Fetch** is the simplest MCP serv
 
 ### Step 1: Install it
 
-In your VS Code terminal (outside of Claude Code), run:
+In your Cursor terminal (outside of Claude Code), run:
 
 ```bash
 claude mcp add fetch -s user -- npx -y @anthropic-ai/fetch-mcp

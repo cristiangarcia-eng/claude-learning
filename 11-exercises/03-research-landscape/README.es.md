@@ -24,34 +24,24 @@ Un ejemplo de referencia que muestra cómo se ve un buen resultado de investigac
 
 ## Preparación
 
-> **Este es el mismo flujo de trabajo que usarás en proyectos reales.** Crea un proyecto, copia tus datos, y trabaja desde ahí.
+> **Este es el mismo flujo que usarás para proyectos reales.** Crea un proyecto, copia tus datos, y trabaja desde ahí.
 
-**Descarga los archivos del curso** (solo la primera vez):
+**1. Crea tu carpeta de proyecto:**
 
-```bash
-git clone https://github.com/cristiangarcia-eng/claude-learning.git ~/Desktop/claude-learning
-```
+Abre Finder (Mac) o Explorador de Archivos (Windows) y ve a `Escritorio/Claude/projects/`. Crea estas carpetas:
+- `research-landscape/`
+  - `data/` (dentro de research-landscape)
+  - `output/` (dentro de research-landscape)
 
-**Crea tu proyecto:**
+**2. Copia los datos del ejercicio:**
 
-```bash
-mkdir -p ~/Desktop/Claude/projects/research-landscape/data
-mkdir ~/Desktop/Claude/projects/research-landscape/output
-```
+Encuentra el archivo `example-output.md` en los materiales del curso en `11-exercises/03-research-landscape/data/` y arrástralo a tu nueva carpeta `data/`.
 
-**Copia los datos del ejercicio:**
+**3. Abre en Cursor e inicia Claude:**
 
-```bash
-cp ~/Desktop/claude-learning/11-exercises/03-research-landscape/data/example-output.md ~/Desktop/Claude/projects/research-landscape/data/
-```
+En Cursor: **File → Open Folder** → selecciona tu carpeta `research-landscape`. Abre el panel de terminal (**Cmd+J** / **Ctrl+J**) y escribe `claude`.
 
-**Abre el proyecto:**
-
-```bash
-cd ~/Desktop/Claude/projects/research-landscape
-```
-
-Inicia Claude Code aquí (`claude`). Tu proyecto se ve así:
+Tu proyecto se ve así:
 
 ```
 research-landscape/

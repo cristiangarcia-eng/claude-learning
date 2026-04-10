@@ -25,45 +25,37 @@ This exercise delivers both.
 
 ## What You Have
 
-- `data/data/nike-competitive-snapshot.md` — your existing competitive analysis (local data, a few months old)
-- `data/data/competitor-urls.md` — a list of competitor pages to check
+- `data/nike-competitive-snapshot.md` — your existing competitive analysis (local data, a few months old)
+- `data/competitor-urls.md` — a list of competitor pages to check
 
 ## Setup
 
 > **This is the same workflow you'll use for real projects.** Create a project, copy in your data, and work from there.
 
-**Get the course files** (first time only):
+**1. Create your project folder:**
 
-```bash
-git clone https://github.com/cristiangarcia-eng/claude-learning.git ~/Desktop/claude-learning
-```
+Open Finder (Mac) or File Explorer (Windows) and go to `Desktop/Claude/projects/`. Create these folders:
+- `competitive-intelligence/`
+  - `data/` (inside competitive-intelligence)
+  - `output/` (inside competitive-intelligence)
 
-**Create your project:**
+**2. Copy the exercise data:**
 
-```bash
-mkdir -p ~/Desktop/Claude/projects/competitive-intelligence/data
-mkdir ~/Desktop/Claude/projects/competitive-intelligence/output
-```
+Find these two files in your course materials at `11-exercises/11-connect-systems/data/` and drag them into your new `data/` folder:
+- `nike-competitive-snapshot.md`
+- `competitor-urls.md`
 
-**Copy the exercise data:**
+**3. Open in Cursor and start Claude:**
 
-```bash
-cp ~/Desktop/claude-learning/11-exercises/11-connect-systems/data/nike-competitive-snapshot.md ~/Desktop/claude-learning/11-exercises/11-connect-systems/data/competitor-urls.md ~/Desktop/Claude/projects/competitive-intelligence/data/
-```
+In Cursor: **File → Open Folder** → select your `competitive-intelligence` folder. Open the terminal panel (**Cmd+J** / **Ctrl+J**) and type `claude`.
 
-**Open the project:**
-
-```bash
-cd ~/Desktop/Claude/projects/competitive-intelligence
-```
-
-Start Claude Code here (`claude`). Your project looks like this:
+Your project looks like this:
 
 ```
 competitive-intelligence/
 ├── data/
-│   ├── data/nike-competitive-snapshot.md
-│   └── data/competitor-urls.md
+│   ├── nike-competitive-snapshot.md
+│   └── competitor-urls.md
 └── output/          ← Claude saves results here
 ```
 

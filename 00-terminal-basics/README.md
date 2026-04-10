@@ -1,130 +1,79 @@
-# Terminal Basics
+# Opening Claude Code
 
-## What is a terminal?
+## The only command you need
 
-A terminal (also called "command line" or "shell") is a text-based way to talk to your computer. Instead of clicking buttons and icons, you type commands.
-
-Think of it like texting your computer instead of tapping on apps.
-
-> You don't need to become a terminal expert. You just need 4 commands to navigate your files.
-
-## Opening the terminal in VS Code
-
-You already have VS Code installed from the previous lesson. The terminal is built right in:
-
-1. Open **VS Code**
-2. Press `` Ctrl+` `` (the backtick key, next to the number 1)
-3. A terminal panel appears at the bottom
-
-That's it — you'll see a blinking cursor ready for commands. No need to open a separate app.
-
-## Your first commands
-
-When you open the terminal, you're "inside" a folder on your computer — just like having a Finder or Explorer window open. Here are the basic commands you need:
-
-### See where you are: `pwd`
-
-```bash
-pwd
-```
-
-This prints the **current folder** you're in. For example:
+To use Claude Code, you type exactly **one** thing:
 
 ```
-/Users/maria/Documents
+claude
 ```
 
-Think of it as "Where am I right now?"
+That's it. You type `claude`, press Enter, and start talking in plain Spanish or English. No programming, no technical knowledge, no memorizing commands.
 
-### See what's in this folder: `ls`
+This lesson shows you **where** to type it.
 
-```bash
-ls
+## Opening the terminal panel in Cursor
+
+The "terminal" is just the **bottom panel** in Cursor. It's where Claude lives. Here's how to open it:
+
+1. Open **Cursor**
+2. Press **Cmd + J** (Mac) or **Ctrl + J** (Windows)
+3. A panel appears at the bottom — that's the terminal
+4. Type `claude` and press Enter
+
+> **Think of the terminal panel like a chat window.** It just happens to be at the bottom of your editor instead of in a browser tab.
+
+![Claude Code running in Cursor — the terminal panel at the bottom is where you talk to Claude](/claude-code-running.png)
+
+## What you'll see
+
+The first time, Claude will ask you to log in. Follow the prompts — it opens your browser to authenticate. After that, you'll see something like this:
+
+```
+╭──────────────────────────────────────────╮
+│ ✻ Welcome to Claude Code!                │
+│                                          │
+│   /help for available commands           │
+╰──────────────────────────────────────────╯
+
+>
 ```
 
-This **lists** all files and folders in your current location. Like opening a folder in Finder.
+That `>` is where you type. Just write what you want in plain language:
 
-### Move to another folder: `cd`
+> `summarize the files in this folder`
 
-```bash
-cd Documents
-```
+> `what does this project do?`
 
-This **changes directory** — moves you into the `Documents` folder.
+> `create a summary of the sales data`
 
-Some useful patterns:
+## When something goes wrong
 
-| Command | What it does |
-|---------|-------------|
-| `cd Documents` | Go into the Documents folder |
-| `cd ..` | Go back one level (to the parent folder) |
-| `cd ~` | Go to your home folder |
-| `cd ~/Desktop` | Go to your Desktop |
+**The terminal shows an error you don't understand?**
 
-### Create a folder: `mkdir`
+Don't worry. Just select the error text, copy it, and paste it directly into Claude:
 
-```bash
-mkdir my-project
-```
+> `I got this error: [paste the error]. What does it mean and how do I fix it?`
 
-This **makes a directory** (folder) called `my-project`.
+Claude will explain what happened and walk you through the fix. You can also paste errors into [claude.ai](https://claude.ai) (the browser chat) or the [Desktop App](https://claude.com/download).
 
-## A typical workflow
+**Claude isn't starting?**
 
-Here's what a real session looks like. Open the terminal in VS Code (`` Ctrl+` ``) and try:
+If you type `claude` and see "command not found", it means Claude Code isn't installed yet. Go to the [next lesson (Setting Up Claude Code)](../00b-quickstart/) to install it.
 
-```bash
-# See where you are
-pwd
-# /Users/maria
+**The panel closed?**
 
-# Go to your Desktop
-cd ~/Desktop
+Press **Cmd + J** (Mac) or **Ctrl + J** (Windows) again to reopen it.
 
-# Create a new folder for your project
-mkdir my-first-project
-
-# Go into that folder
-cd my-first-project
-
-# Check what's inside (nothing yet — it's brand new!)
-ls
-```
-
-## That's all you need
-
-Seriously — `pwd`, `ls`, `cd`, and `mkdir` are the only commands you'll ever need. Once Claude Code is running, you talk to it in plain English, not terminal commands.
-
----
-
-## Bonus: When something goes wrong
-
-### Common errors
-
-**"No such file or directory"** — The folder name is wrong. Use `ls` to see the actual folder names, then try again.
-
-**"Permission denied"** — Try adding `sudo` before the command (it will ask for your password):
-
-```bash
-sudo your-command-here
-```
-
-**I'm lost — where am I?** — Just type `pwd` to see your current location. You can always go home with `cd ~`.
-
-### Keyboard shortcuts that save time
+## Useful keyboard shortcuts
 
 | Shortcut | What it does |
 |----------|-------------|
-| **Tab** | Auto-completes file and folder names |
-| **Up arrow** | Shows your previous command |
-| **Ctrl + C** | Cancels the current command |
-| **Ctrl + L** | Clears the screen |
+| **Cmd/Ctrl + J** | Open or close the terminal panel |
+| **Esc** | Stop Claude mid-action |
+| **Ctrl + C** | Cancel or exit Claude Code |
+| **Up arrow** | Show your previous message |
 
-> **Pro tip**: Start typing a folder name and press **Tab** — the terminal will complete it for you. No need to type the full name!
+## That's it — really
 
-### The real trick: let Claude fix it for you
-
-If you ever see an error in the terminal and don't know what it means — **don't worry.** Just copy the error message (or take a screenshot of your terminal) and paste it into Claude. It will tell you exactly what went wrong and how to fix it.
-
-You can do this inside Claude Code itself, or even in the [Desktop App](https://claude.com/download) or [claude.ai](https://claude.ai) browser chat. Describe what you were trying to do, show the error, and Claude will walk you through the solution.
-
+You don't need to learn "terminal commands." Claude handles navigating files, creating folders, and everything else behind the scenes. **Your job is to talk to Claude in plain language.** The terminal panel is just the place where you do it.

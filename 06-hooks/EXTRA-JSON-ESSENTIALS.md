@@ -290,12 +290,12 @@ Is this valid JSON? Fix any errors:
 
 Claude will spot the trailing comma and fix it for you.
 
-### Option 2: VS Code (recommended)
+### Option 2: Cursor (recommended)
 
-If you're using VS Code:
+If you're using Cursor:
 
 1. Open the `.json` file
-2. VS Code automatically highlights errors with **red squiggly underlines**
+2. Cursor automatically highlights errors with **red squiggly underlines**
 3. Hover over the error to see what's wrong
 
 This is the easiest way — errors are visible as you type.

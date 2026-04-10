@@ -26,32 +26,22 @@ A reference example showing what good research output looks like — `data/examp
 
 > **This is the same workflow you'll use for real projects.** Create a project, copy in your data, and work from there.
 
-**Get the course files** (first time only):
+**1. Create your project folder:**
 
-```bash
-git clone https://github.com/cristiangarcia-eng/claude-learning.git ~/Desktop/claude-learning
-```
+Open Finder (Mac) or File Explorer (Windows) and go to `Desktop/Claude/projects/`. Create these folders:
+- `research-landscape/`
+  - `data/` (inside research-landscape)
+  - `output/` (inside research-landscape)
 
-**Create your project:**
+**2. Copy the exercise data:**
 
-```bash
-mkdir -p ~/Desktop/Claude/projects/research-landscape/data
-mkdir ~/Desktop/Claude/projects/research-landscape/output
-```
+Find the file `example-output.md` in your course materials at `11-exercises/03-research-landscape/data/` and drag it into your new `data/` folder.
 
-**Copy the exercise data:**
+**3. Open in Cursor and start Claude:**
 
-```bash
-cp ~/Desktop/claude-learning/11-exercises/03-research-landscape/data/example-output.md ~/Desktop/Claude/projects/research-landscape/data/
-```
+In Cursor: **File → Open Folder** → select your `research-landscape` folder. Open the terminal panel (**Cmd+J** / **Ctrl+J**) and type `claude`.
 
-**Open the project:**
-
-```bash
-cd ~/Desktop/Claude/projects/research-landscape
-```
-
-Start Claude Code here (`claude`). Your project looks like this:
+Your project looks like this:
 
 ```
 research-landscape/

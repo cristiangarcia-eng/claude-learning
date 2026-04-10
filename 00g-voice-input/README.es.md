@@ -30,7 +30,7 @@ Eso es todo. Ahora puedes "escribir" hablando en cualquier app.
 
 ### Usar Wispr Flow con Claude Code
 
-Abre Claude Code en tu terminal de VS Code, luego:
+Abre Claude Code en tu terminal de Cursor, luego:
 
 1. Haz clic en el área de entrada
 2. Mantén presionada la tecla de atajo de Wispr Flow

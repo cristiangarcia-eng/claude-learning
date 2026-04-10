@@ -17,7 +17,7 @@ La mejor forma de entender MCP es usar uno. **Fetch** es el servidor MCP más si
 
 ### Paso 1: Instálalo
 
-En tu terminal de VS Code (fuera de Claude Code), ejecuta:
+En tu terminal de Cursor (fuera de Claude Code), ejecuta:
 
 ```bash
 claude mcp add fetch -s user -- npx -y @anthropic-ai/fetch-mcp
@@ -39,7 +39,7 @@ Más cosas que puedes hacer con Fetch:
 
 > `Usa Fetch MCP para leer https://www.nike.com/sustainability y agregar una sección de sostenibilidad a nuestro análisis competitivo basándote en lo que encuentres`
 
-> `Usa Fetch para revisar que esta haciendo New Balance en newbalance.com y actualizar la sección de amenazas`
+> `Usa Fetch para revisar qué está haciendo New Balance en newbalance.com y actualizar la sección de amenazas`
 
 ## El ecosistema MCP
 

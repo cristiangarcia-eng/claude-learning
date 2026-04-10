@@ -6,7 +6,7 @@ When you give Claude a complex task, it works through it step by step — one th
 
 With multiple agents, you can split work across several Claude instances running **at the same time**. Instead of a 20-minute sequential task, you get results in 8-12 minutes.
 
-## Three patterns for multiple agents
+## Four patterns for multiple agents
 
 ### 1. Parallel execution
 

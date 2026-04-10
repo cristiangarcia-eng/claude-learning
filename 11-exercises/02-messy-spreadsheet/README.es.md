@@ -34,34 +34,24 @@ Un archivo CSV en `data/raw_sales.csv` con ~40 filas de datos de ventas de socio
 
 ## Preparación
 
-> **Este es el mismo flujo de trabajo que usarás en proyectos reales.** Crea un proyecto, copia tus datos, y trabaja desde ahí.
+> **Este es el mismo flujo que usarás para proyectos reales.** Crea un proyecto, copia tus datos, y trabaja desde ahí.
 
-**Descarga los archivos del curso** (solo la primera vez):
+**1. Crea tu carpeta de proyecto:**
 
-```bash
-git clone https://github.com/cristiangarcia-eng/claude-learning.git ~/Desktop/claude-learning
-```
+Abre Finder (Mac) o Explorador de Archivos (Windows) y ve a `Escritorio/Claude/projects/`. Crea estas carpetas:
+- `messy-spreadsheet/`
+  - `data/` (dentro de messy-spreadsheet)
+  - `output/` (dentro de messy-spreadsheet)
 
-**Crea tu proyecto:**
+**2. Copia los datos del ejercicio:**
 
-```bash
-mkdir -p ~/Desktop/Claude/projects/messy-spreadsheet/data
-mkdir ~/Desktop/Claude/projects/messy-spreadsheet/output
-```
+Encuentra el archivo `raw_sales.csv` en los materiales del curso en `11-exercises/02-messy-spreadsheet/data/` y arrástralo a tu nueva carpeta `data/`.
 
-**Copia los datos del ejercicio:**
+**3. Abre en Cursor e inicia Claude:**
 
-```bash
-cp ~/Desktop/claude-learning/11-exercises/02-messy-spreadsheet/data/raw_sales.csv ~/Desktop/Claude/projects/messy-spreadsheet/data/
-```
+En Cursor: **File → Open Folder** → selecciona tu carpeta `messy-spreadsheet`. Abre el panel de terminal (**Cmd+J** / **Ctrl+J**) y escribe `claude`.
 
-**Abre el proyecto:**
-
-```bash
-cd ~/Desktop/Claude/projects/messy-spreadsheet
-```
-
-Inicia Claude Code aquí (`claude`). Tu proyecto se ve así:
+Tu proyecto se ve así:
 
 ```
 messy-spreadsheet/
@@ -86,7 +76,7 @@ Revisa el diagnóstico. Entender los problemas es la mitad del trabajo.
 
 **Quieres ver el desorden con tus propios ojos?** Abre `data/raw_sales.csv` en Excel o Google Sheets. Verás algo así:
 
-![Datos de ventas en bruto en Google Sheets -- nota los nombres inconsistentes, formatos de fecha mezclados y notas en campos numéricos](images/raw-sales-sheets.png)
+![Datos de ventas en bruto en Google Sheets -- nota los nombres inconsistentes, formatos de fecha mezclados y notas en campos numéricos](/exercise-images/raw-sales-sheets.png)
 
 ### Paso 2: Limpia los datos (10 minutos)
 
@@ -122,7 +112,7 @@ Save the clean file as output/clean_sales.csv
 
 Revisa el resultado. Abre `output/clean_sales.csv` en Excel o Google Sheets para verificar que se vea bien. Compáralo con el original -- la diferencia debería ser dramática:
 
-![Datos de ventas limpios en Google Sheets -- nombres estandarizados, fechas consistentes, duplicados eliminados, sin notas en campos numéricos](images/clean-sales-sheets.png)
+![Datos de ventas limpios en Google Sheets -- nombres estandarizados, fechas consistentes, duplicados eliminados, sin notas en campos numéricos](/exercise-images/clean-sales-sheets.png)
 
 ### Paso 3: Construye el skill (10 minutos)
 

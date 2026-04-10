@@ -25,45 +25,35 @@ Este ejercicio entrega ambos.
 
 ## Lo que tienes
 
-- `data/data/nike-competitive-snapshot.md` — tu análisis competitivo existente (datos locales, unos meses de antigüedad)
-- `data/data/competitor-urls.md` — una lista de páginas de competidores para consultar
+- `data/nike-competitive-snapshot.md` — tu análisis competitivo existente (datos locales, unos meses de antigüedad)
+- `data/competitor-urls.md` — una lista de páginas de competidores para consultar
 
 ## Preparación
 
-> **Este es el mismo flujo de trabajo que usarás en proyectos reales.** Crea un proyecto, copia tus datos, y trabaja desde ahí.
+> **Este es el mismo flujo que usarás para proyectos reales.** Crea un proyecto, copia tus datos, y trabaja desde ahí.
 
-**Descarga los archivos del curso** (solo la primera vez):
+**1. Crea tu carpeta de proyecto:**
 
-```bash
-git clone https://github.com/cristiangarcia-eng/claude-learning.git ~/Desktop/claude-learning
-```
+Abre Finder (Mac) o Explorador de Archivos (Windows) y ve a `Escritorio/Claude/projects/`. Crea estas carpetas:
+- `competitive-intelligence/`
+  - `data/` (dentro de competitive-intelligence)
+  - `output/` (dentro de competitive-intelligence)
 
-**Crea tu proyecto:**
+**2. Copia los datos del ejercicio:**
 
-```bash
-mkdir -p ~/Desktop/Claude/projects/competitive-intelligence/data
-mkdir ~/Desktop/Claude/projects/competitive-intelligence/output
-```
+Encuentra los archivos `nike-competitive-snapshot.md` y `competitor-urls.md` en los materiales del curso en `11-exercises/11-connect-systems/data/` y arrástralos a tu nueva carpeta `data/`.
 
-**Copia los datos del ejercicio:**
+**3. Abre en Cursor e inicia Claude:**
 
-```bash
-cp ~/Desktop/claude-learning/11-exercises/11-connect-systems/data/nike-competitive-snapshot.md ~/Desktop/claude-learning/11-exercises/11-connect-systems/data/competitor-urls.md ~/Desktop/Claude/projects/competitive-intelligence/data/
-```
+En Cursor: **File → Open Folder** → selecciona tu carpeta `competitive-intelligence`. Abre el panel de terminal (**Cmd+J** / **Ctrl+J**) y escribe `claude`.
 
-**Abre el proyecto:**
-
-```bash
-cd ~/Desktop/Claude/projects/competitive-intelligence
-```
-
-Inicia Claude Code aquí (`claude`). Tu proyecto se ve así:
+Tu proyecto se ve así:
 
 ```
 competitive-intelligence/
 ├── data/
-│   ├── data/nike-competitive-snapshot.md
-│   └── data/competitor-urls.md
+│   ├── nike-competitive-snapshot.md
+│   └── competitor-urls.md
 └── output/          ← Claude guarda los resultados aquí
 ```
 

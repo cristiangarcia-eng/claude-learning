@@ -13,7 +13,7 @@ escribiendo notas de lanzamiento para los clientes.
 
 ```
 ¿Qué cambió en los últimos 10 commits? Resume cada
-cambio en una oracion que un PM entenderia.
+cambio en una oración que un PM entendería.
 ```
 
 ```
@@ -108,7 +108,7 @@ posibles conflictos de capas?
 ```
 Audita la página de inicio en busca de problemas de accesibilidad.
 Revisa contraste de colores, texto alternativo en imágenes,
-y jerarquia adecuada de encabezados.
+y jerarquía adecuada de encabezados.
 ```
 
 ---

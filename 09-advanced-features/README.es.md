@@ -49,8 +49,8 @@ Le dice a Claude que dedique más tiempo razonando antes de responder. Produce r
 | Nivel de esfuerzo | Mejor para |
 |-------------------|-----------|
 | `low` | Preguntas rápidas, búsquedas simples |
-| `medium` | Analisis y resúmenes estándar |
-| `high` | Analisis complejos, decisiones estratégicas |
+| `medium` | Análisis y resúmenes estándar |
+| `high` | Análisis complejos, decisiones estratégicas |
 | `max` | Evaluación profunda multi-factor (solo Opus 4.6) |
 
 > **Recomendación:** Claude tiende a ponerte en `medium` por defecto para ahorrar tokens. Recomendamos mantener siempre el nivel en `max`. Para que persista, añade `export CLAUDE_CODE_EFFORT_LEVEL=max` a tu `.zshrc`/`.bashrc`, o pon `"effortLevel": "max"` en tu archivo de settings. El comando `/effort max` funciona por sesión pero no persiste entre sesiones (a diferencia de `low`, `medium` y `high` que sí persisten). Nota: `max` solo está disponible en Opus 4.6.
@@ -198,7 +198,7 @@ Conecta Claude Code a tu navegador Chrome con `claude --chrome` o `/chrome`. Cla
 >
 > **Tiempo:** 30 min | **Datos:** Tus propias capturas de pantalla (arrastra PNGs a la carpeta)
 
-> **[Ejercicio 8: Priorizar del Caos](../11-exercises/08-prioritize-from-chaos/)** — Disena un framework de priorización en modo plan, luego evalua 60 ideas. Práctica ciclos de plan/ejecución y refinamiento de planes.
+> **[Ejercicio 8: Priorizar del Caos](../11-exercises/08-prioritize-from-chaos/)** — Diseña un framework de priorización en modo plan, luego evalúa 60 ideas. Práctica ciclos de plan/ejecución y refinamiento de planes.
 >
 > **Tiempo:** 40 min | **Datos:** CSV de 60 filas con ideas no estructuradas de 6 departamentos
 

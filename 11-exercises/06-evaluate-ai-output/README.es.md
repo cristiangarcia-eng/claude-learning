@@ -28,34 +28,24 @@ Algunos borradores siguen los lineamientos perfectamente. Otros tienen violacion
 
 ## Preparación
 
-> **Este es el mismo flujo de trabajo que usarás en proyectos reales.** Crea un proyecto, copia tus datos, y trabaja desde ahí.
+> **Este es el mismo flujo que usarás para proyectos reales.** Crea un proyecto, copia tus datos, y trabaja desde ahí.
 
-**Descarga los archivos del curso** (solo la primera vez):
+**1. Crea tu carpeta de proyecto:**
 
-```bash
-git clone https://github.com/cristiangarcia-eng/claude-learning.git ~/Desktop/claude-learning
-```
+Abre Finder (Mac) o Explorador de Archivos (Windows) y ve a `Escritorio/Claude/projects/`. Crea estas carpetas:
+- `evaluate-ai-output/`
+  - `data/` (dentro de evaluate-ai-output)
+  - `output/` (dentro de evaluate-ai-output)
 
-**Crea tu proyecto:**
+**2. Copia los datos del ejercicio:**
 
-```bash
-mkdir -p ~/Desktop/Claude/projects/evaluate-ai-output/data
-mkdir ~/Desktop/Claude/projects/evaluate-ai-output/output
-```
+Encuentra el archivo `ai_outputs.json` en los materiales del curso en `11-exercises/06-evaluate-ai-output/data/` y arrástralo a tu nueva carpeta `data/`.
 
-**Copia los datos del ejercicio:**
+**3. Abre en Cursor e inicia Claude:**
 
-```bash
-cp ~/Desktop/claude-learning/11-exercises/06-evaluate-ai-output/data/ai_outputs.json ~/Desktop/Claude/projects/evaluate-ai-output/data/
-```
+En Cursor: **File → Open Folder** → selecciona tu carpeta `evaluate-ai-output`. Abre el panel de terminal (**Cmd+J** / **Ctrl+J**) y escribe `claude`.
 
-**Abre el proyecto:**
-
-```bash
-cd ~/Desktop/Claude/projects/evaluate-ai-output
-```
-
-Inicia Claude Code aquí (`claude`). Tu proyecto se ve así:
+Tu proyecto se ve así:
 
 ```
 evaluate-ai-output/

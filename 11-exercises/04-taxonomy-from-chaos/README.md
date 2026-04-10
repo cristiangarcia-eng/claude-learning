@@ -26,32 +26,22 @@ A CSV file at `data/raw_entries.csv` with 200 feedback entries. Each row has:
 
 > **This is the same workflow you'll use for real projects.** Create a project, copy in your data, and work from there.
 
-**Get the course files** (first time only):
+**1. Create your project folder:**
 
-```bash
-git clone https://github.com/cristiangarcia-eng/claude-learning.git ~/Desktop/claude-learning
-```
+Open Finder (Mac) or File Explorer (Windows) and go to `Desktop/Claude/projects/`. Create these folders:
+- `taxonomy-from-chaos/`
+  - `data/` (inside taxonomy-from-chaos)
+  - `output/` (inside taxonomy-from-chaos)
 
-**Create your project:**
+**2. Copy the exercise data:**
 
-```bash
-mkdir -p ~/Desktop/Claude/projects/taxonomy-from-chaos/data
-mkdir ~/Desktop/Claude/projects/taxonomy-from-chaos/output
-```
+Find the file `raw_entries.csv` in your course materials at `11-exercises/04-taxonomy-from-chaos/data/` and drag it into your new `data/` folder.
 
-**Copy the exercise data:**
+**3. Open in Cursor and start Claude:**
 
-```bash
-cp ~/Desktop/claude-learning/11-exercises/04-taxonomy-from-chaos/data/raw_entries.csv ~/Desktop/Claude/projects/taxonomy-from-chaos/data/
-```
+In Cursor: **File → Open Folder** → select your `taxonomy-from-chaos` folder. Open the terminal panel (**Cmd+J** / **Ctrl+J**) and type `claude`.
 
-**Open the project:**
-
-```bash
-cd ~/Desktop/Claude/projects/taxonomy-from-chaos
-```
-
-Start Claude Code here (`claude`). Your project looks like this:
+Your project looks like this:
 
 ```
 taxonomy-from-chaos/

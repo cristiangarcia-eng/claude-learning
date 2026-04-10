@@ -26,25 +26,14 @@ Claude Code está disponible en varios sitios:
 | Opción | Ideal para | Limitaciones |
 |--------|-----------|--------------|
 | **Terminal (CLI)** | Máximo poder, sin restricciones | Requiere conocimiento básico del terminal |
-| **Extensión VS Code** | Visual + terminal en un solo lugar | Mismo poder que el terminal |
+| **Cursor** | Visual + terminal en un solo lugar | Mismo poder que el terminal |
 | **App de Escritorio** | Diffs visuales, tareas programadas | Gran interfaz, algo menos flexible |
 | **Web (claude.ai/code)** | Tareas rápidas, sin instalar nada | Se ejecuta en la nube, no en tu máquina |
 | **Móvil (app iOS)** | Tareas sobre la marcha | Limitado a sesiones web |
 
-## Por qué enseñamos el terminal
+## Cómo lo vas a usar
 
-El terminal es donde Claude Code tiene más poder. Tiene acceso a todo en tu máquina, funciona sin limitaciones y es la forma más rápida de trabajar.
-
-Sabemos lo que estás pensando: *"El terminal? Esa pantalla negra con texto? Eso es para programadores!"*
-
-La realidad es que **solo necesitas saber 4 comandos.** Eso es todo. Cuatro. Te enseñamos a usarlos en el módulo de [Conceptos Básicos del Terminal](../00-terminal-basics/) — pero aquí va un adelanto:
-
-| Comando | Qué hace | En español |
-|---------|----------|------------|
-| `pwd` | Muestra dónde estás | "En qué carpeta estoy?" |
-| `ls` | Lista lo que hay aquí | "Qué hay en esta carpeta?" |
-| `cd` | Te mueve a otra carpeta | "Ve a esta carpeta" |
-| `claude` | Inicia Claude Code | "Vamos allá" |
+Claude Code vive en el **panel de terminal** — el panel inferior dentro de Cursor (tu editor de código). Lo abres, escribes `claude`, y empiezas a hablar. Ese es el único comando que necesitas saber.
 
 Una vez que Claude Code está funcionando, le hablas en español (o inglés). Sin comandos, sin código, sin sintaxis. Solo describe lo que quieres.
 
@@ -53,8 +42,7 @@ Una vez que Claude Code está funcionando, le hablas en español (o inglés). Si
 Este curso te lleva de cero a productivo con Claude Code. Cada lección está diseñada para personas no técnicas: product managers, diseñadores, equipos de ventas, y cualquier persona curiosa sobre IA.
 
 Aprenderás a:
-- Navegar por tu ordenador desde el terminal (es más fácil de lo que crees)
-- Configurar VS Code como tu espacio de trabajo
+- Configurar Cursor como tu espacio de trabajo
 - Usar entrada de voz para casi no tener que escribir
 - Hacer que Claude analice, edite y organice tus archivos
 - Conectar Claude a tus herramientas de negocio

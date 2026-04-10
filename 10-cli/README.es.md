@@ -37,9 +37,9 @@ claude "Summarize the documents in this folder"
 
 ---
 
-## Gestión de sesiónes
+## Gestión de sesiones
 
-Las sesiónes guardan tus conversaciones para que puedas volver a ellas después.
+Las sesiones guardan tus conversaciones para que puedas volver a ellas después.
 
 | Comando | Qué hace |
 |---------|---------|
@@ -47,7 +47,7 @@ Las sesiónes guardan tus conversaciones para que puedas volver a ellas después
 | `claude -c` | Continuar la conversación más reciente |
 | `claude -r "name"` | Reanudar una sesión con nombre |
 | `claude -r "name" "request"` | Reanudar y agregar una nueva solicitud |
-| `/resume` | Explorar sesiónes pasadas interactivamente |
+| `/resume` | Explorar sesiones pasadas interactivamente |
 | `/rename new-name` | Renombrar la sesión actual |
 | `/fork` | Bifurcar para probar un enfoque diferente |
 
@@ -95,7 +95,7 @@ Cambia durante una sesión con `Option+P` (Mac) o `Alt+P` (Windows/Linux).
 
 ## Consejos
 
-- **Nombra las sesiónes** con `-n "name"` para poder encontrarlas después.
+- **Nombra las sesiones** con `-n "name"` para poder encontrarlas después.
 - **Usa `/plan`** para tareas complejas para que Claude muestre su enfoque primero.
 - **Escribe `/help`** si olvidas algún comando.
 - **Bifurca libremente** -- la sesión original siempre se preserva.

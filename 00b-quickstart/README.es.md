@@ -4,12 +4,12 @@
 
 Antes de comenzar, asegúrate de tener:
 
-- **VS Code abierto** con la carpeta `nike-analysis` (la que descargaste en la [lección de VS Code](../00f-vscode/README.es.md))
+- **Cursor abierto** con la carpeta `nike-analysis` (la que descargaste en la [lección de Cursor](../00f-cursor/))
 - Una [suscripción a Claude](https://claude.com/pricing) (Pro, Max o Teams)
 
 ## Paso 1: Instalar Claude Code
 
-Abre la terminal dentro de VS Code (haz clic en el icono de terminal o presiona `` Ctrl+` ``) y pega este comando:
+Abre la terminal dentro de Cursor (**Cmd+J** en Mac, **Ctrl+J** en Windows) y pega este comando:
 
 **Mac / Linux:**
 ```bash
@@ -23,7 +23,7 @@ irm https://claude.ai/install.ps1 | iex
 
 Eso es todo. Se instala automáticamente y se mantiene actualizado.
 
-> **Importante: cierra VS Code del todo y vuelve a abrirlo** después de instalar. No basta con abrir una terminal nueva — VS Code tiene que releer las variables de entorno. Tras reabrir, escribe `claude` y debería arrancar.
+> **Importante: cierra Cursor del todo y vuelve a abrirlo** después de instalar. No basta con abrir una terminal nueva — Cursor tiene que releer las variables de entorno. Tras reabrir, escribe `claude` y debería arrancar.
 
 > **¿Problemas al instalar? No te preocupes.** Si ves errores, copia lo que muestra la terminal y pegalo en [claude.ai](https://claude.ai) (el chat del navegador). Describe lo que intentabas hacer y Claude te guiará.
 >
@@ -45,17 +45,13 @@ echo 'export CLAUDE_CODE_NO_FLICKER=1' >> ~/.zshrc && source ~/.zshrc
 
 Esto hace que la terminal sea mucho más fluida — solo necesitas hacerlo una vez.
 
-## Paso 2: Navega a tu proyecto
+## Paso 2: Inicia Claude Code
 
-En la misma terminal de VS Code, navega al proyecto de Nike en tu Escritorio:
+Ya deberías tener la carpeta `nike-analysis` abierta en Cursor desde la [lección anterior](../00f-cursor/). Si no, ábrela ahora: **File → Open Folder → Escritorio → nike-analysis**.
 
-```bash
-cd ~/Desktop/nike-analysis
+Abre el panel de terminal (**Cmd+J** en Mac, **Ctrl+J** en Windows) y escribe:
+
 ```
-
-Ahora inicia Claude Code:
-
-```bash
 claude
 ```
 
@@ -63,13 +59,13 @@ La primera vez, se te pedirá iniciar sesión. Sigue las instrucciones — se ab
 
 Una vez que inicies sesión, verás una pantalla como esta — con los archivos de Nike a la izquierda y Claude listo para conversar en la parte inferior:
 
-![Claude Code corriendo en VS Code con el proyecto Nike](/claude-code-running.png)
+![Claude Code corriendo en Cursor con el proyecto Nike](/claude-code-running.png)
 
 ¡Ya estás dentro! Ese cursor en la parte inferior es donde escribes tus solicitudes.
 
 ## Paso 3: Haz tu primera pregunta
 
-¿Recuerdas los archivos de Nike que exploraste en VS Code? Ahora preguntémosle a Claude sobre ellos. Solo escribe en español normal. Prueba cualquiera de estas:
+¿Recuerdas los archivos de Nike que exploraste en Cursor? Ahora preguntémosle a Claude sobre ellos. Solo escribe en español normal. Prueba cualquiera de estas:
 
 > `resume el análisis competitivo`
 
@@ -96,7 +92,7 @@ Verás tres opciones:
 2. **Yes, allow all edits during this session (shift+tab)** — aprobar este cambio y dejar que Claude haga ediciones similares sin preguntar de nuevo. **Esta es la opción recomendada** — mantiene el flujo sin interrupciones.
 3. **No** — rechazar el cambio
 
-Elige la opción 2, y verás el archivo actualizarse en VS Code inmediatamente.
+Elige la opción 2, y verás el archivo actualizarse en Cursor inmediatamente.
 
 > **Claude siempre pide permiso antes de cambiar cosas.** Tú mantienes el control. Si quieres detener a Claude en cualquier momento, presiona `Esc`.
 
@@ -135,11 +131,11 @@ Aquí hay más cosas que puedes pedirle a Claude sobre el proyecto de Nike:
 
 ## Consejo avanzado: Ejecuta varias sesiones en paralelo
 
-No estás limitado a una sola conversación con Claude a la vez. En VS Code, puedes abrir múltiples terminales — cada una ejecutando su propia sesión de Claude Code con su propio hilo de conversación.
+No estás limitado a una sola conversación con Claude a la vez. En Cursor, puedes abrir múltiples terminales — cada una ejecutando su propia sesión de Claude Code con su propio hilo de conversación.
 
 **Cómo hacerlo:**
 
-1. Haz clic en el icono **+** del panel de terminal (o presiona `` Ctrl+Shift+` ``) para abrir una nueva terminal
+1. Haz clic en el icono **+** del panel de terminal para abrir una nueva terminal
 2. Escribe `claude` en la nueva terminal para iniciar una segunda sesión
 3. Repite tantas veces como quieras
 
@@ -158,32 +154,23 @@ Antes de crear más proyectos, configura una estructura de carpetas simple. Esto
 
 ### Paso 1: Crea la carpeta principal
 
-Crea una carpeta llamada **`Claude`** en tu Escritorio. Puedes hacerlo de la forma que prefieras:
+Crea una carpeta llamada **`Claude`** en tu Escritorio:
 
-- **Desde Finder**: clic derecho en el Escritorio → Nueva carpeta → nómbrala `Claude`
-- **Desde la terminal**:
-```bash
-mkdir ~/Desktop/Claude
-```
+- **Mac**: clic derecho en el Escritorio → Nueva carpeta → nómbrala `Claude`
+- **Windows**: clic derecho en el Escritorio → Nuevo → Carpeta → nómbrala `Claude`
 
 ### Paso 2: Crea la estructura dentro
 
-Dentro de `Claude`, crea estas carpetas:
+Abre la carpeta `Claude` y crea dos carpetas dentro de la misma forma (clic derecho → Nueva carpeta):
 
-```bash
-mkdir ~/Desktop/Claude/projects
-mkdir ~/Desktop/Claude/resources
-```
+- `projects`
+- `resources`
 
-Y mueve el proyecto de Nike que creamos antes:
+Luego mueve la carpeta `nike-analysis` de tu Escritorio a `projects/` (simplemente arrastra y suelta).
 
-```bash
-mv ~/Desktop/nike-analysis ~/Desktop/Claude/projects/nike-analysis
-```
+### Paso 3: Ábrelo en Cursor
 
-### Paso 3: Ábrelo en VS Code
-
-Abre la carpeta `Claude` en VS Code (`File > Open Folder` → busca tu Escritorio → selecciona `Claude`). Verás todo organizado en la barra lateral.
+Abre la carpeta `Claude` en Cursor (**File → Open Folder** → busca tu Escritorio → selecciona `Claude`). Verás todo organizado en la barra lateral.
 
 ### La estructura
 
@@ -220,14 +207,13 @@ Así debería verse tu espacio de trabajo con el tiempo:
 
 ### Empezar un proyecto nuevo
 
-Cada vez que empieces algo nuevo, crea una carpeta dentro de `projects/` con subcarpetas `data/` y `output/`:
+Cada vez que empieces algo nuevo, crea una carpeta dentro de `projects/` con subcarpetas `data/` y `output/`. Simplemente usa Finder (Mac) o Explorador de Archivos (Windows):
 
-```bash
-mkdir -p ~/Desktop/Claude/projects/mi-nuevo-proyecto/data
-mkdir ~/Desktop/Claude/projects/mi-nuevo-proyecto/output
-```
+1. Abre `Escritorio/Claude/projects/`
+2. Crea una nueva carpeta con el nombre de tu proyecto (ej. `mi-nuevo-proyecto`)
+3. Dentro, crea dos carpetas: `data` y `output`
 
-Abre la carpeta del proyecto en VS Code, inicia Claude Code y listo — ya puedes trabajar.
+Abre la carpeta del proyecto en Cursor (**File → Open Folder**), abre el panel de terminal (**Cmd+J** / **Ctrl+J**), escribe `claude`, y listo.
 
 > **El beneficio se acumula.** Después de unas semanas, tendrás una biblioteca ordenada de proyectos. Puedes saltar entre cualquiera de ellos y Claude retoma justo donde lo dejaste.
 

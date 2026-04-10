@@ -1,31 +1,31 @@
-# Visual Studio Code
+# Cursor
 
-## Why VS Code?
+## Why Cursor?
 
-Visual Studio Code (VS Code) is where you'll do everything in this course. It's a **free editor** made by Microsoft that combines:
+Cursor is where you'll do everything in this course. It's a **free code editor** that combines:
 - A **file browser** to see all your project files
 - A **text editor** to view and edit any file
 - A **built-in terminal** to run Claude Code
 
 All in one window. Instead of switching between apps, you have everything together — you can see the files Claude is changing while you talk to it.
 
-> **This is your work environment for the entire course.** We'll use VS Code for everything — editing files, running the terminal, and talking to Claude.
+> **This is your work environment for the entire course.** We'll use Cursor for everything — editing files, running the terminal, and talking to Claude.
 
-## Installing VS Code
+## Installing Cursor
 
 ### Download
 
-1. Go to [code.visualstudio.com](https://code.visualstudio.com)
-2. Click the big **Download** button
+1. Go to [cursor.com](https://www.cursor.com)
+2. Click the **Download** button
 3. Install it like any other app
 
 It's free and works on Mac, Windows, and Linux.
 
 ### First launch
 
-When you open VS Code for the first time, you'll see a welcome screen:
+When you open Cursor for the first time, you'll see a welcome screen:
 
-![VS Code welcome screen](/vscode-welcome.png)
+![Cursor welcome screen](/cursor-welcome.png)
 
 You can close it — we won't need it.
 
@@ -37,7 +37,7 @@ We'll explore the other sidebar icons later in the course.
 
 ## Your first project
 
-Let's open a real project so you can see VS Code in action.
+Let's open a real project so you can see Cursor in action.
 
 ### Download the practice project
 
@@ -46,7 +46,7 @@ Let's open a real project so you can see VS Code in action.
 
 It's a simple competitive analysis of Nike with a few files inside.
 
-### Open it in VS Code
+### Open it in Cursor
 
 1. Go to **File > Open Folder** (or `Cmd+O` on Mac)
 2. Navigate to your **Desktop** and select the `nike-analysis` folder
@@ -62,7 +62,7 @@ Take a look at the files in the project. You'll see three different types that a
 - **`notes.txt`** — a simple text file. Meeting notes, to-do lists, raw ideas — any plain text works.
 - **`sales-data.csv`** — a CSV file (comma-separated values). This is how spreadsheet data looks as text. Claude can read, analyze, and transform CSVs for you.
 
-Click each one to see how it looks inside VS Code.
+Click each one to see how it looks inside Cursor.
 
 ## Saving files
 
@@ -74,17 +74,15 @@ To save: press `Cmd+S` (Mac) or `Ctrl+S` (Windows).
 
 ## The built-in terminal
 
-VS Code has a terminal built right in. The easiest way to open it is clicking the **terminal icon** in the top-right area of the window:
+Cursor has a terminal built right in. The easiest way to open it is pressing **Cmd+J** (Mac) or **Ctrl+J** (Windows).
 
-![Terminal icon in VS Code](/vscode-terminal-icon.png)
+You can also click the **terminal icon** in the top-right area of the window:
 
-You can also press `` Ctrl+` `` (the backtick key, next to the number 1).
+![Terminal icon in Cursor](/cursor-terminal-icon.png)
 
 This means you can:
 - Browse files visually in the sidebar
 - Edit files in the main area
-- Run terminal commands at the bottom
+- Talk to Claude in the terminal at the bottom
 
-All in one window. We'll use this terminal in the next lesson.
-
-
+All in one window. We'll use this terminal in the next lesson to start Claude Code.

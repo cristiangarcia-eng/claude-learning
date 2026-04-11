@@ -61,8 +61,8 @@ const dictionaries = {
     logIn: "Log in",
     bookACall: "Book a Call",
     noCodingNeeded: "No coding experience needed",
-    masterClaudeCode: "Master Claude Code",
-    withoutWritingCode: "without writing code",
+    masterClaudeCode: "Claude Code is this generation's superpower.",
+    withoutWritingCode: "Claude10x teaches you how to use it.",
     heroSubtitle: "The hands-on course for product managers, designers, and non-technical teams who want to 10x their productivity with AI.",
     bookFreeCall: "Book a Free Call",
     seePricing: "See Pricing",
@@ -91,7 +91,7 @@ const dictionaries = {
     meetYourInstructor: "Meet your instructor",
     readyToGetStarted: "Ready to get started?",
     readyToGetStartedDesc: "Start learning today. Get instant access to all lessons and hands-on exercises.",
-    masterClaudeCodeFooter: "Master Claude Code without writing code",
+    masterClaudeCodeFooter: "Claude10x teaches you how to use Claude Code.",
 
     // Dashboard hero
     dashboardHeroDesc: "Master Claude Code in a weekend. From first commands to orchestrating agents, hooks, skills, and MCP servers.",
@@ -198,8 +198,8 @@ const dictionaries = {
     logIn: "Iniciar sesion",
     bookACall: "Reservar llamada",
     noCodingNeeded: "No se necesita experiencia en programacion",
-    masterClaudeCode: "Domina Claude Code",
-    withoutWritingCode: "sin escribir codigo",
+    masterClaudeCode: "Claude Code es el superpoder de esta generación.",
+    withoutWritingCode: "Claude10x te enseña a usarlo.",
     heroSubtitle: "El curso practico para product managers, disenadores y equipos no tecnicos que quieren multiplicar su productividad con IA.",
     bookFreeCall: "Reservar llamada gratuita",
     seePricing: "Ver Precios",
@@ -228,7 +228,7 @@ const dictionaries = {
     meetYourInstructor: "Conoce a tu instructor",
     readyToGetStarted: "Listo para empezar?",
     readyToGetStartedDesc: "Empieza a aprender hoy. Obtén acceso instantáneo a todas las lecciones y ejercicios prácticos.",
-    masterClaudeCodeFooter: "Domina Claude Code sin escribir codigo",
+    masterClaudeCodeFooter: "Claude10x te enseña a usar Claude Code.",
 
     // Dashboard hero
     dashboardHeroDesc: "Domina Claude Code en un fin de semana. Desde los primeros comandos hasta orquestar agentes, hooks, skills y servidores MCP.",

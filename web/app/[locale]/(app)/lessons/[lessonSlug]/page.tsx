@@ -5,10 +5,9 @@ import { MarkdownRenderer } from "@/components/markdown-renderer";
 import { LessonNav } from "@/components/lesson-nav";
 import { getAdjacentLessons } from "@/lib/lessons";
 import { Badge } from "@/components/ui/badge";
-import { Clock, Star, GraduationCap } from "lucide-react";
+import { Clock, Star } from "lucide-react";
 import Link from "next/link";
 import { CompleteButton } from "@/components/progress/complete-button";
-import { getQuizBySlug } from "@/lib/quiz-data";
 import { SUPPORTED_LOCALES, type Locale, isValidLocale, t } from "@/lib/i18n";
 
 export function generateStaticParams() {
@@ -46,12 +45,12 @@ export default async function LessonPage({
 
   const files = getLessonFiles(lesson, typedLocale);
   const { prev, next } = getAdjacentLessons(lessonSlug);
-  const hasQuiz = !!getQuizBySlug(lessonSlug);
 
-  const levelColors = {
+  const levelColors: Record<string, string> = {
     starter: "bg-brand-green/10 text-brand-green border-brand-green/20",
     pro: "bg-blue-500/10 text-blue-500 border-blue-500/20",
     projects: "bg-orange-500/10 text-orange-500 border-orange-500/20",
+    extra: "bg-purple-500/10 text-purple-500 border-purple-500/20",
   };
 
   return (
@@ -104,15 +103,6 @@ export default async function LessonPage({
         {/* Actions */}
         <div className="mt-8 flex items-center justify-center gap-4">
           <CompleteButton lessonSlug={lessonSlug} />
-          {hasQuiz && (
-            <Link
-              href={`/${locale}/quiz/${lessonSlug}`}
-              className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium bg-brand-green/10 text-brand-green border border-brand-green/30 hover:bg-brand-green/20 transition-colors"
-            >
-              <GraduationCap className="h-4 w-4" />
-              {t(typedLocale, "takeQuiz")}
-            </Link>
-          )}
         </div>
 
         {/* Navigation */}

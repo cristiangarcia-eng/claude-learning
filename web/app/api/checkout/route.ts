@@ -1,7 +1,13 @@
 import { NextResponse } from "next/server";
 import { getStripe } from "@/lib/stripe";
+import { auth } from "@/lib/auth";
 
 export async function POST(request: Request) {
+  const session = await auth();
+  if (!session?.user?.email) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+
   try {
     const { tier, locale } = await request.json();
     const stripe = getStripe();

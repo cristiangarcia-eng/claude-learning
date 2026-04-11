@@ -43,7 +43,7 @@ export async function POST(request: Request) {
         console.error("Failed to send welcome email:", err)
       );
 
-      console.log(`Payment processed: ${email} → ${tier}`);
+      console.log(`Payment processed: ${email.replace(/(.{2}).*(@.*)/, "$1***$2")} → ${tier}`);
     } else {
       console.warn("Webhook missing email or tier metadata:", session.id);
     }

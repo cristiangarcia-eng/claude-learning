@@ -12,11 +12,20 @@ export async function POST(req: NextRequest) {
     completedLessons?: string[];
   };
 
+  if (!Array.isArray(completedLessons) || completedLessons.length > 200) {
+    return Response.json({ error: "Invalid input" }, { status: 400 });
+  }
+
+  const slugPattern = /^[a-z0-9-]+$/;
+  const validLessons = completedLessons.filter(
+    (s) => typeof s === "string" && slugPattern.test(s)
+  );
+
   const progress = await getUserProgress(session.user.email);
 
   // Merge completed lessons from localStorage format
-  if (completedLessons?.length) {
-    for (const slug of completedLessons) {
+  if (validLessons.length) {
+    for (const slug of validLessons) {
       if (!progress.lessons[slug]) {
         progress.lessons[slug] = {
           completed: true,

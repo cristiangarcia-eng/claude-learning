@@ -1,8 +1,6 @@
-# Exercise 5: Analyze Customer Support Conversations
+# Exercise 4: Analyze Customer Support Conversations
 
-**Time:** 45 minutes | **Level:** Intermediate
-**Module:** [04-subagents](../../04-subagents/) — Delegating specialized tasks to agents
-**Skill:** Creating a reusable data-analyst subagent for recurring analysis tasks
+**Time:** 15 minutes | **Level:** Intermediate
 
 ## Objective
 
@@ -16,7 +14,7 @@ You are a Customer Success Manager at **Orbit Task Manager**, a fictional projec
 
 ## What You Have
 
-A JSON file at `data/conversations.json` with 40 customer support conversations. Each conversation includes:
+A JSON file called `conversations.json` with 40 customer support conversations. Each conversation includes:
 - **customer** — the customer's name
 - **plan** — Free, Pro, or Team
 - **channel** — live_chat or email
@@ -27,31 +25,9 @@ A JSON file at `data/conversations.json` with 40 customer support conversations.
 
 ## Setup
 
-> **This is the same workflow you'll use for real projects.** Create a project, copy in your data, and work from there.
+> If you haven't downloaded the exercise materials yet, see the setup instructions in [Exercise 1](../02-messy-spreadsheet/).
 
-**1. Create your project folder:**
-
-Open Finder (Mac) or File Explorer (Windows) and go to `Desktop/Claude/projects/`. Create these folders:
-- `conversation-analysis/`
-  - `data/` (inside conversation-analysis)
-  - `output/` (inside conversation-analysis)
-
-**2. Copy the exercise data:**
-
-Find the file `conversations.json` in your course materials at `11-exercises/05-conversation-analysis/data/` and drag it into your new `data/` folder.
-
-**3. Open in Cursor and start Claude:**
-
-In Cursor: **File → Open Folder** → select your `conversation-analysis` folder. Open the terminal panel (**Cmd+J** / **Ctrl+J**) and type `claude`.
-
-Your project looks like this:
-
-```
-conversation-analysis/
-├── data/
-│   └── conversations.json
-└── output/          ← Claude saves results here
-```
+Create a `conversation-analysis` folder inside `Desktop/Claude/projects/`. Copy the files from `04-conversation-analysis` in the downloaded materials into it. Then open the folder in Cursor (**File → Open Folder**) and start Claude Code in the terminal.
 
 ## Step-by-Step Instructions
 
@@ -62,7 +38,7 @@ Before building a subagent, you need to understand what good analysis looks like
 **Step 1.** Ask Claude to explore the data:
 
 ```
-Read data/conversations.json and give me an overview:
+Read conversations.json and give me an overview:
 - How many conversations total?
 - Distribution by category (billing, bug_report, etc.)
 - Distribution by channel (live_chat vs email)
@@ -90,7 +66,7 @@ Read through the message content in conversations with
 satisfaction scores of 1 or 2. What are the top complaints
 or frustrations? Group them into themes and suggest specific
 actions the support or product team could take.
-Save this as a markdown file called output/manual_analysis.md
+Save this as a markdown file called manual_analysis.md
 ```
 
 ### Part 2: Create a data-analyst subagent (20 minutes)
@@ -127,7 +103,7 @@ Save the agent definition at .claude/agents/data-analyst.md
 Start a new terminal and run the agent directly:
 
 ```bash
-claude --agent data-analyst "Analyze data/conversations.json. Focus on finding patterns that explain customer satisfaction. Save the report as output/satisfaction_report.md"
+claude --agent data-analyst "Analyze conversations.json. Focus on finding patterns that explain customer satisfaction. Save the report as satisfaction_report.md"
 ```
 
 This launches a fresh Claude session that follows only the instructions from your `data-analyst.md` agent file.
@@ -163,7 +139,7 @@ Update .claude/agents/data-analyst.md with these improvements.
 ## Success Checklist
 
 - [ ] You explored the support data and found satisfaction patterns
-- [ ] A `output/manual_analysis.md` report exists with insights
+- [ ] A `manual_analysis.md` report exists with insights
 - [ ] `.claude/agents/data-analyst.md` exists with a defined process
 - [ ] Running `claude --agent data-analyst` produces a useful report
 - [ ] The subagent report includes actionable recommendations

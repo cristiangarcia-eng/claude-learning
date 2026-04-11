@@ -1,8 +1,6 @@
-# Exercise 2: Tame a Messy Spreadsheet
+# Exercise 1: Tame a Messy Spreadsheet
 
-**Time:** 30 minutes | **Level:** Beginner
-**Module:** [03-skills](../../03-skills/) -- Creating reusable skills
-**Skill:** Building a reusable skill that automates CSV cleanup
+**Time:** 5 minutes | **Level:** Beginner
 
 ## Objective
 
@@ -16,13 +14,13 @@ By the end, you will understand:
 
 ## Scenario
 
-You are working on the Nike competitive analysis project. A colleague from the sales team just shared a spreadsheet of Q1 retail partner sales data. The problem: the data is a mess. Names are inconsistent, dates are all over the place, there are duplicates, and some entries mix in notes where numbers should be.
+A colleague from the sales team just shared a spreadsheet of Q1 sales data. The problem: the data is a mess. Names are inconsistent, dates are all over the place, there are duplicates, and some entries mix in notes where numbers should be.
 
 Your job: clean it up, then build a skill so the next messy spreadsheet takes seconds instead of an hour.
 
 ## What You Have
 
-A CSV file at `data/raw_sales.csv` with ~40 rows of retail partner sales data. The problems include:
+A CSV file called `raw_sales.csv` with ~40 rows of sales data. The problems include:
 
 - **Inconsistent company names** ("Orbit Sports", "ORBIT SPORTS", "Orbit sports Inc.")
 - **Mixed date formats** ("15/01/2025", "2025-01-15", "January 15", "Jan 15 2025")
@@ -34,31 +32,26 @@ A CSV file at `data/raw_sales.csv` with ~40 rows of retail partner sales data. T
 
 ## Setup
 
-> **This is the same workflow you'll use for real projects.** Create a project, copy in your data, and work from there.
+All exercises use sample data files. Download them once and you are set for the entire course.
 
-**1. Create your project folder:**
+**1. Download the exercise materials:**
 
-Open Finder (Mac) or File Explorer (Windows) and go to `Desktop/Claude/projects/`. Create these folders:
-- `messy-spreadsheet/`
-  - `data/` (inside messy-spreadsheet)
-  - `output/` (inside messy-spreadsheet)
+Download [exercise-materials.zip](/exercise-materials.zip) and unzip it. You will get a folder with subfolders for each exercise.
 
-**2. Copy the exercise data:**
+**2. Create your project folder and copy the data:**
 
-Find the file `raw_sales.csv` in your course materials at `11-exercises/02-messy-spreadsheet/data/` and drag it into your new `data/` folder.
+On your Desktop, create a folder structure: `Claude` → `projects` → `messy-spreadsheet`. Then open the `01-messy-spreadsheet` folder from the download and copy `raw_sales.csv` into your new `messy-spreadsheet` folder.
 
-**3. Open in Cursor and start Claude:**
-
-In Cursor: **File → Open Folder** → select your `messy-spreadsheet` folder. Open the terminal panel (**Cmd+J** / **Ctrl+J**) and type `claude`.
-
-Your project looks like this:
+Your folder should look like this:
 
 ```
-messy-spreadsheet/
-├── data/
-│   └── raw_sales.csv
-└── output/          ← Claude saves results here
+Desktop/Claude/projects/messy-spreadsheet/
+└── raw_sales.csv
 ```
+
+**3. Open Claude Code inside your project:**
+
+Open Cursor, go to **File → Open Folder** and select your `messy-spreadsheet` folder. Then open the terminal (**Cmd+J** / **Ctrl+J**) and type `claude`.
 
 ## Step-by-Step Instructions
 
@@ -67,14 +60,14 @@ messy-spreadsheet/
 Open Claude Code in your project folder and ask:
 
 ```
-Read data/raw_sales.csv and give me a full diagnosis. How many issues
+Read raw_sales.csv and give me a full diagnosis. How many issues
 do you find? Categorize them by type (duplicates, formatting, missing
 data, inconsistencies). Show me specific examples of each problem.
 ```
 
 Review the diagnosis. Understanding the problems is half the work.
 
-**Want to see the mess for yourself?** Open `data/raw_sales.csv` in Excel or Google Sheets. You will see something like this:
+**Want to see the mess for yourself?** Open `raw_sales.csv` in Excel or Google Sheets. You will see something like this:
 
 ![Raw sales data in Google Sheets -- notice the inconsistent names, mixed date formats, and notes in number fields](/exercise-images/raw-sales-sheets.png)
 
@@ -83,7 +76,7 @@ Review the diagnosis. Understanding the problems is half the work.
 Ask Claude Code to fix everything:
 
 ```
-Clean up data/raw_sales.csv and save the result as output/clean_sales.csv.
+Clean up raw_sales.csv and save the result as clean_sales.csv.
 Apply these rules:
 
 1. Standardize company names to their canonical form:
@@ -107,10 +100,10 @@ Apply these rules:
 7. Generate a cleanup report showing what changed (how many fixes
    per category)
 
-Save the clean file as output/clean_sales.csv
+Save the clean file as clean_sales.csv
 ```
 
-Check the output. Open `output/clean_sales.csv` in Excel or Google Sheets to verify it looks right. Compare it with the original -- the difference should be dramatic:
+Check the output. Open `clean_sales.csv` in Excel or Google Sheets to verify it looks right. Compare it with the original -- the difference should be dramatic:
 
 ![Clean sales data in Google Sheets -- names standardized, dates consistent, duplicates removed, no more notes in number fields](/exercise-images/clean-sales-sheets.png)
 
@@ -130,7 +123,7 @@ The skill should:
   fix dates to YYYY-MM-DD, remove duplicates, normalize status fields,
   clean number formatting, fill gaps where possible
 - Always output a cleanup report showing what changed
-- Save the clean file in the output/ folder with a _clean suffix (e.g., output/raw_sales_clean.csv)
+- Save the clean file with a _clean suffix (e.g., raw_sales_clean.csv)
 
 Use the SKILL.md format from the 03-skills module.
 ```
@@ -140,7 +133,7 @@ Use the SKILL.md format from the 03-skills module.
 Start a fresh conversation (`/clear`) and test with natural language:
 
 ```
-Can you clean up data/raw_sales.csv? It is pretty messy.
+Can you clean up raw_sales.csv? It is pretty messy.
 ```
 
 The skill should trigger automatically and apply the same cleanup process without you repeating all the rules.
@@ -156,7 +149,7 @@ The skill should trigger automatically and apply the same cleanup process withou
 
 ## Success Criteria
 
-- [ ] `output/clean_sales.csv` exists with standardized, deduplicated data
+- [ ] `clean_sales.csv` exists with standardized, deduplicated data
 - [ ] `.claude/skills/clean-csv/SKILL.md` exists with proper structure
 - [ ] The skill auto-triggers when you ask to "clean" or "standardize" a CSV
 - [ ] The skill works on any messy CSV, not just the sales data

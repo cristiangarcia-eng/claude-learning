@@ -1,8 +1,6 @@
-# Ejercicio 5: Analizar conversaciones de soporte al cliente
+# Ejercicio 4: Analizar conversaciones de soporte al cliente
 
-**Tiempo:** 45 minutos | **Nivel:** Intermedio
-**Módulo:** [04-subagents](../../04-subagents/) — Delegar tareas especializadas a agentes
-**Habilidad:** Crear un subagent reutilizable de análisis de datos para tareas de análisis recurrentes
+**Tiempo:** 15 minutos | **Nivel:** Intermedio
 
 ## Objetivo
 
@@ -16,7 +14,7 @@ Eres Customer Success Manager en **Orbit Task Manager**, una herramienta fictici
 
 ## Lo que tienes
 
-Un archivo JSON en `data/conversations.json` con 40 conversaciones de soporte al cliente. Cada conversación incluye:
+Un archivo JSON llamado `conversations.json` con 40 conversaciones de soporte al cliente. Cada conversación incluye:
 - **customer** — el nombre del cliente
 - **plan** — Free, Pro o Team
 - **channel** — live_chat o email
@@ -27,31 +25,9 @@ Un archivo JSON en `data/conversations.json` con 40 conversaciones de soporte al
 
 ## Preparación
 
-> **Este es el mismo flujo que usarás para proyectos reales.** Crea un proyecto, copia tus datos, y trabaja desde ahí.
+> Si aún no has descargado los materiales de los ejercicios, mira las instrucciones de preparación en el [Ejercicio 1](../02-messy-spreadsheet/).
 
-**1. Crea tu carpeta de proyecto:**
-
-Abre Finder (Mac) o Explorador de Archivos (Windows) y ve a `Escritorio/Claude/projects/`. Crea estas carpetas:
-- `conversation-analysis/`
-  - `data/` (dentro de conversation-analysis)
-  - `output/` (dentro de conversation-analysis)
-
-**2. Copia los datos del ejercicio:**
-
-Encuentra el archivo `conversations.json` en los materiales del curso en `11-exercises/05-conversation-analysis/data/` y arrástralo a tu nueva carpeta `data/`.
-
-**3. Abre en Cursor e inicia Claude:**
-
-En Cursor: **File → Open Folder** → selecciona tu carpeta `conversation-analysis`. Abre el panel de terminal (**Cmd+J** / **Ctrl+J**) y escribe `claude`.
-
-Tu proyecto se ve así:
-
-```
-conversation-analysis/
-├── data/
-│   └── conversations.json
-└── output/          ← Claude guarda los resultados aquí
-```
+Crea una carpeta `conversation-analysis` dentro de `Escritorio/Claude/projects/`. Copia los archivos de `04-conversation-analysis` de los materiales descargados. Luego abre la carpeta en Cursor (**File → Open Folder**) e inicia Claude Code en la terminal.
 
 ## Instrucciones paso a paso
 
@@ -62,7 +38,7 @@ Antes de construir un subagent, necesitas entender cómo se ve un buen análisis
 **Paso 1.** Pídele a Claude que explore los datos:
 
 ```
-Read data/conversations.json and give me an overview:
+Read conversations.json and give me an overview:
 - How many conversations total?
 - Distribution by category (billing, bug_report, etc.)
 - Distribution by channel (live_chat vs email)
@@ -90,7 +66,7 @@ Read through the message content in conversations with
 satisfaction scores of 1 or 2. What are the top complaints
 or frustrations? Group them into themes and suggest specific
 actions the support or product team could take.
-Save this as a markdown file called output/manual_analysis.md
+Save this as a markdown file called manual_analysis.md
 ```
 
 ### Parte 2: Crear un subagent de análisis de datos (20 minutos)
@@ -127,7 +103,7 @@ Save the agent definition at .claude/agents/data-analyst.md
 Abre una nueva terminal y ejecuta el agente directamente:
 
 ```bash
-claude --agent data-analyst "Analyze data/conversations.json. Focus on finding patterns that explain customer satisfaction. Save the report as output/satisfaction_report.md"
+claude --agent data-analyst "Analyze conversations.json. Focus on finding patterns that explain customer satisfaction. Save the report as satisfaction_report.md"
 ```
 
 Esto lanza una sesión nueva de Claude que sigue solo las instrucciones de tu archivo `data-analyst.md`.
@@ -163,7 +139,7 @@ Update .claude/agents/data-analyst.md with these improvements.
 ## Lista de verificación
 
 - [ ] Exploraste los datos de soporte y encontraste patrones de satisfacción
-- [ ] Existe un informe `output/manual_analysis.md` con hallazgos
+- [ ] Existe un informe `manual_analysis.md` con hallazgos
 - [ ] Existe `.claude/agents/data-analyst.md` con un proceso definido
 - [ ] Ejecutar `claude --agent data-analyst` produce un informe útil
 - [ ] El informe del subagent incluye recomendaciones accionables

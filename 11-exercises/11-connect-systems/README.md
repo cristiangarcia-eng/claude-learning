@@ -1,8 +1,6 @@
-# Exercise 11: Build a Competitive Intelligence System
+# Exercise 7: Build a Competitive Intelligence System
 
-**Time:** 50 minutes | **Level:** Advanced
-**Module:** Capstone — Combines [02-memory](../../02-memory/), [03-skills](../../03-skills/), [05-mcp](../../05-mcp/), and [09-advanced-features](../../09-advanced-features/)
-**Skill:** Combining Memory, Skills, MCP, and Plan Mode into a complete, reusable system
+**Time:** 20 minutes | **Level:** Advanced
 
 ## Objective
 
@@ -25,39 +23,14 @@ This exercise delivers both.
 
 ## What You Have
 
-- `data/nike-competitive-snapshot.md` — your existing competitive analysis (local data, a few months old)
-- `data/competitor-urls.md` — a list of competitor pages to check
+- `nike-competitive-snapshot.md` — your existing competitive analysis (local data, a few months old)
+- `competitor-urls.md` — a list of competitor pages to check
 
 ## Setup
 
-> **This is the same workflow you'll use for real projects.** Create a project, copy in your data, and work from there.
+> If you haven't downloaded the exercise materials yet, see the setup instructions in [Exercise 1](../02-messy-spreadsheet/).
 
-**1. Create your project folder:**
-
-Open Finder (Mac) or File Explorer (Windows) and go to `Desktop/Claude/projects/`. Create these folders:
-- `competitive-intelligence/`
-  - `data/` (inside competitive-intelligence)
-  - `output/` (inside competitive-intelligence)
-
-**2. Copy the exercise data:**
-
-Find these two files in your course materials at `11-exercises/11-connect-systems/data/` and drag them into your new `data/` folder:
-- `nike-competitive-snapshot.md`
-- `competitor-urls.md`
-
-**3. Open in Cursor and start Claude:**
-
-In Cursor: **File → Open Folder** → select your `competitive-intelligence` folder. Open the terminal panel (**Cmd+J** / **Ctrl+J**) and type `claude`.
-
-Your project looks like this:
-
-```
-competitive-intelligence/
-├── data/
-│   ├── nike-competitive-snapshot.md
-│   └── competitor-urls.md
-└── output/          ← Claude saves results here
-```
+Create a `competitive-intelligence` folder inside `Desktop/Claude/projects/`. Copy the files from `07-competitive-intelligence` in the downloaded materials into it. Then open the folder in Cursor (**File → Open Folder**) and start Claude Code in the terminal.
 
 ## Step-by-Step Instructions
 
@@ -109,11 +82,11 @@ This memory will inform every future analysis in this project folder.
 
    ```
    /plan I need to produce an updated competitive analysis that combines
-   our local data (data/nike-competitive-snapshot.md) with live web data.
+   our local data (nike-competitive-snapshot.md) with live web data.
 
    Plan the approach:
    - What should we fetch from each competitor's website?
-     (Read data/competitor-urls.md for the list)
+     (Read competitor-urls.md for the list)
    - How should we structure the comparison? (Remember our quality
      standards in CLAUDE.md)
    - How do we clearly distinguish "old local data" from "fresh web data"
@@ -142,14 +115,14 @@ This memory will inform every future analysis in this project folder.
    ```
    Execute the plan:
 
-   1. Read our local data/nike-competitive-snapshot.md
-   2. Read data/competitor-urls.md for the URLs to check
+   1. Read our local nike-competitive-snapshot.md
+   2. Read competitor-urls.md for the URLs to check
    3. Use Fetch MCP to pull data from each competitor URL listed
       (if a URL fails, note it and move on — some sites block automated access)
    4. Combine the local snapshot data with the fresh web data
    5. Write the full updated report following the plan structure
 
-   Save as output/updated-competitive-analysis.md
+   Save as updated-competitive-analysis.md
 
    Remember: cite every claim with its source — [local snapshot] or
    [web fetch, DATE].
@@ -176,7 +149,7 @@ This memory will inform every future analysis in this project folder.
     - Follow this process:
       1. Read local CLAUDE.md for project context and quality standards
       2. Read the most recent competitive analysis file
-      3. Read data/competitor-urls.md for URLs to fetch
+      3. Read competitor-urls.md for URLs to fetch
       4. Use Fetch MCP to pull live data from competitor websites
       5. Combine local + web data into updated analysis
       6. Include "Data Freshness" header, comparison table,
@@ -230,7 +203,7 @@ This is your finished system. A teammate who opens this project folder with Clau
 - [ ] Fetch MCP is installed and working
 - [ ] `CLAUDE.md` exists with project context and quality standards
 - [ ] You used Plan Mode to design the analysis structure before executing
-- [ ] `output/updated-competitive-analysis.md` exists with cited sources (local vs. web)
+- [ ] `updated-competitive-analysis.md` exists with cited sources (local vs. web)
 - [ ] `.claude/skills/competitive-intel/SKILL.md` exists and auto-triggers
 - [ ] The skill works in a fresh conversation without re-explaining the process
 - [ ] You can explain how Memory, Skills, MCP, and Plan Mode work together

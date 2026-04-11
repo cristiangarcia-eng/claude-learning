@@ -1,8 +1,6 @@
-# Ejercicio 6: Verificar contenido de IA contra lineamientos de marca
+# Ejercicio 5: Verificar contenido de IA contra lineamientos de marca
 
-**Tiempo:** 40 minutos | **Nivel:** Intermedio
-**Módulo:** [06-hooks](../../06-hooks/) — Automatización basada en eventos
-**Habilidad:** Crear un hook sencillo que verifica automáticamente la calidad del contenido
+**Tiempo:** 15 minutos | **Nivel:** Intermedio
 
 ## Objetivo
 
@@ -18,7 +16,7 @@ Tu Brand Manager te ha pedido configurar un control de calidad para que cada pie
 
 ## Lo que tienes
 
-Un archivo JSON en `data/ai_outputs.json` con 20 borradores de contenido generados por IA. Cada entrada incluye:
+Un archivo JSON llamado `ai_outputs.json` con 20 borradores de contenido generados por IA. Cada entrada incluye:
 - **type** — qué tipo de contenido es (social_media_post, email_subject_line, blog_intro, customer_email)
 - **platform** — dónde se publicará
 - **draft** — el texto del contenido
@@ -28,31 +26,9 @@ Algunos borradores siguen los lineamientos perfectamente. Otros tienen violacion
 
 ## Preparación
 
-> **Este es el mismo flujo que usarás para proyectos reales.** Crea un proyecto, copia tus datos, y trabaja desde ahí.
+> Si aún no has descargado los materiales de los ejercicios, mira las instrucciones de preparación en el [Ejercicio 1](../02-messy-spreadsheet/).
 
-**1. Crea tu carpeta de proyecto:**
-
-Abre Finder (Mac) o Explorador de Archivos (Windows) y ve a `Escritorio/Claude/projects/`. Crea estas carpetas:
-- `evaluate-ai-output/`
-  - `data/` (dentro de evaluate-ai-output)
-  - `output/` (dentro de evaluate-ai-output)
-
-**2. Copia los datos del ejercicio:**
-
-Encuentra el archivo `ai_outputs.json` en los materiales del curso en `11-exercises/06-evaluate-ai-output/data/` y arrástralo a tu nueva carpeta `data/`.
-
-**3. Abre en Cursor e inicia Claude:**
-
-En Cursor: **File → Open Folder** → selecciona tu carpeta `evaluate-ai-output`. Abre el panel de terminal (**Cmd+J** / **Ctrl+J**) y escribe `claude`.
-
-Tu proyecto se ve así:
-
-```
-evaluate-ai-output/
-├── data/
-│   └── ai_outputs.json
-└── output/          ← Claude guarda los resultados aquí
-```
+Crea una carpeta `evaluate-ai-output` dentro de `Escritorio/Claude/projects/`. Copia los archivos de `05-evaluate-ai-output` de los materiales descargados. Luego abre la carpeta en Cursor (**File → Open Folder**) e inicia Claude Code en la terminal.
 
 ## Instrucciones paso a paso
 
@@ -63,7 +39,7 @@ Antes de automatizar nada, entiende cómo se ve lo "bueno" y lo "malo".
 **Paso 1.** Pídele a Claude que lea los datos y cree una lista de verificación:
 
 ```
-Read data/ai_outputs.json. For each entry, the brand_guidelines
+Read ai_outputs.json. For each entry, the brand_guidelines
 field defines the rules. Create a quality checklist that covers
 all the rule types across all entries: tone, emoji count,
 forbidden phrases, length limits, and required elements.
@@ -79,7 +55,7 @@ For each one, give me:
 - Severity: Critical (would damage the brand), Medium (noticeable
   issue), or Low (minor nitpick)
 
-Show results as a markdown table. Save it as output/evaluation_results.md
+Show results as a markdown table. Save it as evaluation_results.md
 ```
 
 **Paso 3.** Pídele a Claude que encuentre patrones:
@@ -91,7 +67,7 @@ Based on the evaluation:
 - Which rule violations are most common?
 - What recommendations would you give to the AI content
   generation team?
-Add this analysis to output/evaluation_results.md
+Add this analysis to evaluation_results.md
 ```
 
 ### Parte 2: Construir un hook de verificación de calidad (15 minutos)
@@ -130,7 +106,7 @@ I'm not a developer, so keep it simple.
 
 ```
 Write a promotional social media post about Orbit's new feature
-and save it as output/test_post.txt. Make it enthusiastic but don't
+and save it as test_post.txt. Make it enthusiastic but don't
 worry about brand guidelines — I want to see if the hook catches
 any issues.
 ```
@@ -179,7 +155,7 @@ Piensa en los hooks como filtros de correo electrónico: configuras las reglas u
 ## Lista de verificación
 
 - [ ] Los 20 borradores de contenido están evaluados con aprobado/reprobado y justificación
-- [ ] Un informe `output/evaluation_results.md` identifica patrones y recomendaciones
+- [ ] Un informe `evaluation_results.md` identifica patrones y recomendaciones
 - [ ] Existe un script `hooks/brand-check.sh` que verifica violaciones comunes
 - [ ] Entiendes la configuración de settings.json para el hook
 - [ ] Puedes explicar lo que hace el hook en lenguaje sencillo

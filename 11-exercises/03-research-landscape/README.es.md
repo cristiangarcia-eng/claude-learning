@@ -1,8 +1,6 @@
-# Ejercicio 3: Investiga un panorama competitivo
+# Ejercicio 2: Investiga un panorama competitivo
 
-**Tiempo:** 40 minutos | **Nivel:** Intermedio
-**Módulo:** [03-skills](../../03-skills/) -- Crear skills de activación automática
-**Habilidad:** Investigación iterativa — hacer análisis, criticar tu propio resultado y mejorarlo antes de empaquetarlo
+**Tiempo:** 15 minutos | **Nivel:** Intermedio
 
 ## Objetivo
 
@@ -20,44 +18,22 @@ Tu VP pregunta: "¿Puedes armar un panorama del mercado de calzado deportivo? Qu
 
 ## Lo que tienes
 
-Un ejemplo de referencia que muestra cómo se ve un buen resultado de investigación — `data/example-output.md`. No son datos de entrada; es tu estándar de calidad. Le pedirás a Claude que lo lea en la Parte 1.
+Un ejemplo de referencia que muestra cómo se ve un buen resultado de investigación — `example-output.md`. No son datos de entrada; es tu estándar de calidad. Le pedirás a Claude que lo lea en la Parte 1.
 
 ## Preparación
 
-> **Este es el mismo flujo que usarás para proyectos reales.** Crea un proyecto, copia tus datos, y trabaja desde ahí.
+> Si aún no has descargado los materiales de los ejercicios, mira las instrucciones de preparación en el [Ejercicio 1](../02-messy-spreadsheet/).
 
-**1. Crea tu carpeta de proyecto:**
-
-Abre Finder (Mac) o Explorador de Archivos (Windows) y ve a `Escritorio/Claude/projects/`. Crea estas carpetas:
-- `research-landscape/`
-  - `data/` (dentro de research-landscape)
-  - `output/` (dentro de research-landscape)
-
-**2. Copia los datos del ejercicio:**
-
-Encuentra el archivo `example-output.md` en los materiales del curso en `11-exercises/03-research-landscape/data/` y arrástralo a tu nueva carpeta `data/`.
-
-**3. Abre en Cursor e inicia Claude:**
-
-En Cursor: **File → Open Folder** → selecciona tu carpeta `research-landscape`. Abre el panel de terminal (**Cmd+J** / **Ctrl+J**) y escribe `claude`.
-
-Tu proyecto se ve así:
-
-```
-research-landscape/
-├── data/
-│   └── example-output.md    ← ejemplo de referencia (tu estándar de calidad)
-└── output/                  ← Claude guarda los reportes aquí
-```
+Crea una carpeta `research-landscape` dentro de `Escritorio/Claude/projects/`. Copia los archivos de `02-research-landscape` de los materiales descargados. Luego abre la carpeta en Cursor (**File → Open Folder**) e inicia Claude Code en la terminal.
 
 ## Instrucciones paso a paso
 
 ### Parte 1: Establece el estándar de calidad (3 minutos)
 
-Lee `data/example-output.md`:
+Lee `example-output.md`:
 
 ```
-Read data/example-output.md and tell me: what makes this report
+Read example-output.md and tell me: what makes this report
 actually useful vs. generic? Point out specific things it does well.
 ```
 
@@ -88,13 +64,13 @@ Then create a scoring matrix rating each brand 1-5 on:
 End with a "So What?" section: what should Nike's competitive strategy
 team pay attention to?
 
-Save the full report as output/landscape-report-v1.md
+Save the full report as landscape-report-v1.md
 ```
 
 Ahora **critica el resultado tú mismo.** Léelo de forma crítica. Luego pídele a Claude que evalúe su propio trabajo:
 
 ```
-Read output/landscape-report-v1.md and compare it against data/example-output.md.
+Read landscape-report-v1.md and compare it against example-output.md.
 Be brutally honest:
 - Where is the analysis vague or generic? ("strong brand presence" means nothing)
 - Where are specific numbers or evidence missing?
@@ -108,7 +84,7 @@ List every weakness you find.
 Usa la crítica para producir una versión mejor:
 
 ```
-Rewrite the report as output/landscape-report-v2.md, fixing every weakness
+Rewrite the report as landscape-report-v2.md, fixing every weakness
 you identified. Specifically:
 - Replace vague claims with specific numbers or evidence
 - Make each scoring matrix rating include a 1-sentence justification
@@ -125,9 +101,9 @@ Un buen enfoque de investigación funciona más allá de una industria. Pruébal
 
 ```
 Using the exact same structure and quality standards from
-output/landscape-report-v2.md, produce a competitive landscape for
+landscape-report-v2.md, produce a competitive landscape for
 the project management software market. Compare Asana, Monday.com,
-ClickUp, Notion, and Linear. Save as output/landscape-report-pm-tools.md
+ClickUp, Notion, and Linear. Save as landscape-report-pm-tools.md
 ```
 
 Revisa el resultado. ¿La estructura se transfiere bien? Si el reporte de herramientas PM es significativamente más débil que el de calzado, tu enfoque tiene un punto ciego — la estructura solo funciona cuando Claude tiene buenos datos de entrenamiento sobre el dominio.
@@ -152,7 +128,7 @@ Auto-trigger on: "competitive analysis", "landscape review",
 
 ## Ejemplo de resultado
 
-Así se ve un reporte de investigación sólido (consulta `data/example-output.md` para la versión completa):
+Así se ve un reporte de investigación sólido (consulta `example-output.md` para la versión completa):
 
 **Matriz de puntuación con justificaciones (calidad v2):**
 
@@ -179,10 +155,10 @@ Observa: cada puntuación tiene una razón. Esta es la diferencia entre análisi
 
 ## Criterios de éxito
 
-- [ ] `output/landscape-report-v1.md` existe (primer borrador)
+- [ ] `landscape-report-v1.md` existe (primer borrador)
 - [ ] Identificaste debilidades específicas en v1 (no "está bien")
-- [ ] `output/landscape-report-v2.md` existe con mejoras claras sobre v1
-- [ ] `output/landscape-report-pm-tools.md` existe (prueba de estrés en otra industria)
+- [ ] `landscape-report-v2.md` existe con mejoras claras sobre v1
+- [ ] `landscape-report-pm-tools.md` existe (prueba de estrés en otra industria)
 - [ ] `.claude/skills/competitive-landscape/SKILL.md` existe e incluye el paso de crítica
 - [ ] El skill se activa automáticamente cuando pides un "competitive analysis"
 

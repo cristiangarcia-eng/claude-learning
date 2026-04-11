@@ -1,8 +1,6 @@
-# Exercise 3: Research a Competitive Landscape
+# Exercise 2: Research a Competitive Landscape
 
-**Time:** 40 minutes | **Level:** Intermediate
-**Module:** [03-skills](../../03-skills/) -- Creating auto-invoked skills
-**Skill:** Iterative research — doing analysis, critiquing your own output, and improving it before packaging
+**Time:** 15 minutes | **Level:** Intermediate
 
 ## Objective
 
@@ -20,44 +18,22 @@ Your VP asks: "Can you put together a landscape of the athletic footwear market?
 
 ## What You Have
 
-A reference example showing what good research output looks like — `data/example-output.md`. This is not input data; it is your quality bar. You will ask Claude to read it in Part 1.
+A reference example showing what good research output looks like — `example-output.md`. This is not input data; it is your quality bar. You will ask Claude to read it in Part 1.
 
 ## Setup
 
-> **This is the same workflow you'll use for real projects.** Create a project, copy in your data, and work from there.
+> If you haven't downloaded the exercise materials yet, see the setup instructions in [Exercise 1](../02-messy-spreadsheet/).
 
-**1. Create your project folder:**
-
-Open Finder (Mac) or File Explorer (Windows) and go to `Desktop/Claude/projects/`. Create these folders:
-- `research-landscape/`
-  - `data/` (inside research-landscape)
-  - `output/` (inside research-landscape)
-
-**2. Copy the exercise data:**
-
-Find the file `example-output.md` in your course materials at `11-exercises/03-research-landscape/data/` and drag it into your new `data/` folder.
-
-**3. Open in Cursor and start Claude:**
-
-In Cursor: **File → Open Folder** → select your `research-landscape` folder. Open the terminal panel (**Cmd+J** / **Ctrl+J**) and type `claude`.
-
-Your project looks like this:
-
-```
-research-landscape/
-├── data/
-│   └── example-output.md    ← reference example (your quality bar)
-└── output/                  ← Claude saves reports here
-```
+Create a `research-landscape` folder inside `Desktop/Claude/projects/`. Copy the files from `02-research-landscape` in the downloaded materials into it. Then open the folder in Cursor (**File → Open Folder**) and start Claude Code in the terminal.
 
 ## Step-by-Step Instructions
 
 ### Part 1: Set the quality bar (3 minutes)
 
-Read through `data/example-output.md`:
+Read through `example-output.md`:
 
 ```
-Read data/example-output.md and tell me: what makes this report
+Read example-output.md and tell me: what makes this report
 actually useful vs. generic? Point out specific things it does well.
 ```
 
@@ -88,13 +64,13 @@ Then create a scoring matrix rating each brand 1-5 on:
 End with a "So What?" section: what should Nike's competitive strategy
 team pay attention to?
 
-Save the full report as output/landscape-report-v1.md
+Save the full report as landscape-report-v1.md
 ```
 
 Now **critique the output yourself.** Read it critically. Then ask Claude to evaluate its own work:
 
 ```
-Read output/landscape-report-v1.md and compare it against data/example-output.md.
+Read landscape-report-v1.md and compare it against example-output.md.
 Be brutally honest:
 - Where is the analysis vague or generic? ("strong brand presence" means nothing)
 - Where are specific numbers or evidence missing?
@@ -108,7 +84,7 @@ List every weakness you find.
 Use the critique to push for a better version:
 
 ```
-Rewrite the report as output/landscape-report-v2.md, fixing every weakness
+Rewrite the report as landscape-report-v2.md, fixing every weakness
 you identified. Specifically:
 - Replace vague claims with specific numbers or evidence
 - Make each scoring matrix rating include a 1-sentence justification
@@ -125,9 +101,9 @@ A good research approach works beyond one industry. Test it:
 
 ```
 Using the exact same structure and quality standards from
-output/landscape-report-v2.md, produce a competitive landscape for
+landscape-report-v2.md, produce a competitive landscape for
 the project management software market. Compare Asana, Monday.com,
-ClickUp, Notion, and Linear. Save as output/landscape-report-pm-tools.md
+ClickUp, Notion, and Linear. Save as landscape-report-pm-tools.md
 ```
 
 Review the result. Does the structure transfer well? If the PM tools report is significantly weaker than the footwear one, your approach has a blind spot — the structure only works when Claude has strong training data about the domain.
@@ -152,7 +128,7 @@ Auto-trigger on: "competitive analysis", "landscape review",
 
 ## Example Output
 
-Here is what a strong research report looks like (see `data/example-output.md` for the full version):
+Here is what a strong research report looks like (see `example-output.md` for the full version):
 
 **Scoring Matrix with justifications (v2 quality):**
 
@@ -179,10 +155,10 @@ Notice: every score has a reason. This is the difference between useful analysis
 
 ## Success Criteria
 
-- [ ] `output/landscape-report-v1.md` exists (first draft)
+- [ ] `landscape-report-v1.md` exists (first draft)
 - [ ] You identified specific weaknesses in v1 (not "it's fine")
-- [ ] `output/landscape-report-v2.md` exists with clear improvements over v1
-- [ ] `output/landscape-report-pm-tools.md` exists (stress test on different industry)
+- [ ] `landscape-report-v2.md` exists with clear improvements over v1
+- [ ] `landscape-report-pm-tools.md` exists (stress test on different industry)
 - [ ] `.claude/skills/competitive-landscape/SKILL.md` exists and includes the critique step
 - [ ] The skill auto-triggers when you ask for a "competitive analysis"
 

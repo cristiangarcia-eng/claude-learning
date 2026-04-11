@@ -1,8 +1,6 @@
-# Ejercicio 10: Pipeline de contenido de principio a fin
+# Ejercicio 6: Pipeline de contenido de principio a fin
 
-**Tiempo:** 45 minutos | **Nivel:** Avanzado
-**Módulo:** [07-plugins](../../07-plugins/) — Empaquetar flujos de trabajo completos como paquetes distribuibles
-**Habilidad:** Crear un plugin que empaquete un flujo de trabajo de múltiples pasos para tu equipo
+**Tiempo:** 18 minutos | **Nivel:** Avanzado
 
 ## Objetivo
 
@@ -20,35 +18,13 @@ Tu equipo de marketing en Nike está preparando el lanzamiento de un nuevo produ
 
 ## Lo que tienes
 
-Un brief de producto en `data/sample-brief.md` — la entrada inicial para tu pipeline.
+Un brief de producto en `sample-brief.md` — la entrada inicial para tu pipeline.
 
 ## Preparación
 
-> **Este es el mismo flujo que usarás para proyectos reales.** Crea un proyecto, copia tus datos, y trabaja desde ahí.
+> Si aún no has descargado los materiales de los ejercicios, mira las instrucciones de preparación en el [Ejercicio 1](../02-messy-spreadsheet/).
 
-**1. Crea tu carpeta de proyecto:**
-
-Abre Finder (Mac) o Explorador de Archivos (Windows) y ve a `Escritorio/Claude/projects/`. Crea estas carpetas:
-- `end-to-end-pipeline/`
-  - `data/` (dentro de end-to-end-pipeline)
-  - `output/` (dentro de end-to-end-pipeline)
-
-**2. Copia los datos del ejercicio:**
-
-Encuentra el archivo `sample-brief.md` en los materiales del curso en `11-exercises/10-end-to-end-pipeline/data/` y arrástralo a tu nueva carpeta `data/`.
-
-**3. Abre en Cursor e inicia Claude:**
-
-En Cursor: **File → Open Folder** → selecciona tu carpeta `end-to-end-pipeline`. Abre el panel de terminal (**Cmd+J** / **Ctrl+J**) y escribe `claude`.
-
-Tu proyecto se ve así:
-
-```
-end-to-end-pipeline/
-├── data/
-│   └── sample-brief.md
-└── output/          ← Claude guarda los resultados del pipeline aquí
-```
+Crea una carpeta `content-pipeline` dentro de `Escritorio/Claude/projects/`. Copia los archivos de `06-content-pipeline` de los materiales descargados. Luego abre la carpeta en Cursor (**File → Open Folder**) e inicia Claude Code en la terminal.
 
 ## Tu tarea
 
@@ -60,41 +36,41 @@ Trabaja cada etapa en orden. Cada paso se construye sobre la salida del anterior
 
 Pídele a Claude:
 ```
-Basándote en el brief de data/sample-brief.md, haz una investigación para este
+Basándote en el brief de sample-brief.md, haz una investigación para este
 lanzamiento de producto. Cubre: perfil del público objetivo, panorama
 competitivo (qué están haciendo otras marcas con materiales reciclados),
 ángulos clave de mensajes y posibles riesgos u objeciones. Guarda el
-resultado como output/01-research-notes.md
+resultado como 01-research-notes.md
 ```
 
 **Etapa 2 — Esquema**
 
 ```
-Usando la investigación en output/01-research-notes.md, crea un esquema detallado
+Usando la investigación en 01-research-notes.md, crea un esquema detallado
 para un paquete de contenido de lanzamiento. Incluye secciones para:
 comunicado de prensa, copy para redes sociales (3 plataformas), anuncio
 por email y puntos de conversación para el equipo de ventas interno.
 Señala dónde necesitamos datos reales vs. estimaciones.
-Guarda como output/02-content-outline.md
+Guarda como 02-content-outline.md
 ```
 
 **Etapa 3 — Borrador completo**
 
 ```
-Escribe el paquete de contenido completo basándote en output/02-content-outline.md.
+Escribe el paquete de contenido completo basándote en 02-content-outline.md.
 Hazlo profesional y alineado con la marca de una gran empresa deportiva.
 Incluye todas las secciones del esquema. Usa tablas donde sea útil.
-Guarda como output/03-full-draft.md
+Guarda como 03-full-draft.md
 ```
 
 **Etapa 4 — Revisión y resumen ejecutivo**
 
 ```
-Revisa output/03-full-draft.md en cuanto a consistencia de tono, claridad de
+Revisa 03-full-draft.md en cuanto a consistencia de tono, claridad de
 mensajes y completitud. Luego crea un resumen ejecutivo de una página con:
 la recomendación de lanzamiento, 3-5 mensajes clave, una tabla de
 cronograma y próximos pasos claros. Guarda el resumen como
-output/04-executive-summary.md
+04-executive-summary.md
 ```
 
 **Punto de control:** Ahora deberías tener cuatro archivos que forman la salida completa del pipeline. Abre cada uno y confirma que cada etapa se construye claramente sobre la anterior.

@@ -1,8 +1,6 @@
-# Exercise 4: Build a Taxonomy from Chaos
+# Exercise 3: Build a Taxonomy from Chaos
 
-**Time:** 40 minutes | **Level:** Intermediate
-**Module:** [08-checkpoints](../../08-checkpoints/) — Safe experimentation with rewind
-**Skill:** Using checkpoints to try different approaches, compare them, and rewind to the best one
+**Time:** 15 minutes | **Level:** Intermediate
 
 ## Objective
 
@@ -16,7 +14,7 @@ Your VP of Product wants you to turn this chaos into an **organized taxonomy** s
 
 ## What You Have
 
-A CSV file at `data/raw_entries.csv` with 200 feedback entries. Each row has:
+A CSV file called `raw_entries.csv` with 200 feedback entries. Each row has:
 - **feedback_id** — unique identifier
 - **feedback_text** — the actual feedback (free text, messy, inconsistent)
 - **source** — where it came from (app_store_review, support_ticket, in_app_survey, feature_request_form)
@@ -24,31 +22,9 @@ A CSV file at `data/raw_entries.csv` with 200 feedback entries. Each row has:
 
 ## Setup
 
-> **This is the same workflow you'll use for real projects.** Create a project, copy in your data, and work from there.
+> If you haven't downloaded the exercise materials yet, see the setup instructions in [Exercise 1](../02-messy-spreadsheet/).
 
-**1. Create your project folder:**
-
-Open Finder (Mac) or File Explorer (Windows) and go to `Desktop/Claude/projects/`. Create these folders:
-- `taxonomy-from-chaos/`
-  - `data/` (inside taxonomy-from-chaos)
-  - `output/` (inside taxonomy-from-chaos)
-
-**2. Copy the exercise data:**
-
-Find the file `raw_entries.csv` in your course materials at `11-exercises/04-taxonomy-from-chaos/data/` and drag it into your new `data/` folder.
-
-**3. Open in Cursor and start Claude:**
-
-In Cursor: **File → Open Folder** → select your `taxonomy-from-chaos` folder. Open the terminal panel (**Cmd+J** / **Ctrl+J**) and type `claude`.
-
-Your project looks like this:
-
-```
-taxonomy-from-chaos/
-├── data/
-│   └── raw_entries.csv
-└── output/          ← Claude saves results here
-```
+Create a `taxonomy-from-chaos` folder inside `Desktop/Claude/projects/`. Copy the files from `03-taxonomy-from-chaos` in the downloaded materials into it. Then open the folder in Cursor (**File → Open Folder**) and start Claude Code in the terminal.
 
 ## Step-by-Step Instructions
 
@@ -57,7 +33,7 @@ taxonomy-from-chaos/
 **Step 1.** Open Claude Code in your project folder and ask it to read and summarize the data:
 
 ```
-Read data/raw_entries.csv and give me a summary:
+Read raw_entries.csv and give me a summary:
 - How many entries are there?
 - What sources are represented and how many from each?
 - What are the main themes you see?
@@ -76,7 +52,7 @@ This is where checkpoints shine. You will try three different ways to categorize
 Propose a taxonomy that groups this feedback by type of feedback:
 bug reports, feature requests, praise, complaints, and questions.
 Map every entry to one category.
-Save the result as output/taxonomy_by_type.md with a summary table
+Save the result as taxonomy_by_type.md with a summary table
 showing how many entries fall into each category.
 ```
 
@@ -91,7 +67,7 @@ Now try a completely different approach. Group the feedback by
 product area: mobile app, performance, integrations, UI/UX,
 notifications, collaboration, reporting, and anything else that
 emerges from the data. Map every entry to one area.
-Save as output/taxonomy_by_area.md with the same summary format.
+Save as taxonomy_by_area.md with the same summary format.
 ```
 
 **Step 5.** Try Approach C — categorize by **customer action needed**:
@@ -101,7 +77,7 @@ One more approach. Group feedback by what action the team should take:
 fix now (bugs/crashes), build next (most-requested features),
 improve existing (enhancements to current features),
 no action (praise/positive feedback), and investigate (unclear issues).
-Map every entry. Save as output/taxonomy_by_action.md.
+Map every entry. Save as taxonomy_by_action.md.
 ```
 
 ### Part 3: Compare and choose (10 minutes)
@@ -124,7 +100,7 @@ Recommend the best approach and explain your reasoning.
 
 ```
 Using the best taxonomy approach, create a final report called
-output/feedback_analysis.md that includes:
+feedback_analysis.md that includes:
 - The taxonomy with category names and descriptions
 - A count of entries per category
 - The top 3 most common pieces of feedback in each category
@@ -146,7 +122,7 @@ output/feedback_analysis.md that includes:
 - [ ] You tried at least 2 different taxonomy approaches
 - [ ] You used `/rewind` or checkpoints to navigate between approaches
 - [ ] You compared approaches and chose the best one with reasoning
-- [ ] A final `output/feedback_analysis.md` report exists with prioritized categories
+- [ ] A final `feedback_analysis.md` report exists with prioritized categories
 
 ## What You Learned
 

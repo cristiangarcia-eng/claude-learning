@@ -1,8 +1,6 @@
-# Ejercicio 2: Domina una hoja de cálculo desordenada
+# Ejercicio 1: Domina una hoja de cálculo desordenada
 
-**Tiempo:** 30 minutos | **Nivel:** Principiante
-**Módulo:** [03-skills](../../03-skills/) -- Crear skills reutilizables
-**Habilidad:** Construir un skill reutilizable que automatice la limpieza de CSVs
+**Tiempo:** 5 minutos | **Nivel:** Principiante
 
 ## Objetivo
 
@@ -16,49 +14,44 @@ Al finalizar, entenderás:
 
 ## Escenario
 
-Estás trabajando en el proyecto de análisis competitivo de Nike. Un colega del equipo de ventas acaba de compartir una hoja de cálculo con datos de ventas de socios minoristas del Q1. El problema: los datos son un desastre. Los nombres son inconsistentes, las fechas están en todos los formatos posibles, hay duplicados y algunas entradas mezclan notas donde deberían ir números.
+Un colega del equipo de ventas te acaba de compartir una hoja de calculo con datos de ventas del Q1. El problema: los datos son un desastre. Los nombres son inconsistentes, las fechas estan en todos los formatos posibles, hay duplicados y algunas entradas mezclan notas donde deberian ir numeros.
 
-Tu tarea: limpiarlo y luego construir un skill para que la próxima hoja desordenada tome segundos en vez de una hora.
+Tu tarea: limpiarlo y luego construir un skill para que la proxima hoja desordenada tome segundos en vez de una hora.
 
 ## Lo que tienes
 
-Un archivo CSV en `data/raw_sales.csv` con ~40 filas de datos de ventas de socios minoristas. Los problemas incluyen:
+Un archivo CSV llamado `raw_sales.csv` con ~40 filas de datos de ventas. Los problemas incluyen:
 
 - **Nombres de empresas inconsistentes** ("Orbit Sports", "ORBIT SPORTS", "Orbit sports Inc.")
 - **Formatos de fecha mezclados** ("15/01/2025", "2025-01-15", "January 15", "Jan 15 2025")
 - **Filas duplicadas** (mismo socio, misma fecha, mismo monto)
 - **Valores de estado inconsistentes** ("shipped", "Shipped", "SHIPPED", "delivered", "complete")
 - **Campos faltantes** (regiones en blanco, representantes de ventas ausentes)
-- **Notas mezcladas en campos numéricos** ("12500 (estimated)", "$8,200 USD")
+- **Notas mezcladas en campos numericos** ("12500 (estimated)", "$8,200 USD")
 - **Formato de moneda inconsistente** ("$12,500", "12500", "$12.5K")
 
-## Preparación
+## Preparacion
 
-> **Este es el mismo flujo que usarás para proyectos reales.** Crea un proyecto, copia tus datos, y trabaja desde ahí.
+Todos los ejercicios usan archivos de datos de ejemplo. Descárgalos una vez y estarás listo para todo el curso.
 
-**1. Crea tu carpeta de proyecto:**
+**1. Descarga los materiales de los ejercicios:**
 
-Abre Finder (Mac) o Explorador de Archivos (Windows) y ve a `Escritorio/Claude/projects/`. Crea estas carpetas:
-- `messy-spreadsheet/`
-  - `data/` (dentro de messy-spreadsheet)
-  - `output/` (dentro de messy-spreadsheet)
+Descarga [exercise-materials.zip](/exercise-materials.zip) y descomprímelo. Obtendrás una carpeta con subcarpetas para cada ejercicio.
 
-**2. Copia los datos del ejercicio:**
+**2. Crea tu carpeta de proyecto y copia los datos:**
 
-Encuentra el archivo `raw_sales.csv` en los materiales del curso en `11-exercises/02-messy-spreadsheet/data/` y arrástralo a tu nueva carpeta `data/`.
+En tu Escritorio, crea esta estructura de carpetas: `Claude` → `projects` → `messy-spreadsheet`. Luego abre la carpeta `01-messy-spreadsheet` de la descarga y copia `raw_sales.csv` a tu nueva carpeta `messy-spreadsheet`.
 
-**3. Abre en Cursor e inicia Claude:**
-
-En Cursor: **File → Open Folder** → selecciona tu carpeta `messy-spreadsheet`. Abre el panel de terminal (**Cmd+J** / **Ctrl+J**) y escribe `claude`.
-
-Tu proyecto se ve así:
+Tu carpeta debería verse así:
 
 ```
-messy-spreadsheet/
-├── data/
-│   └── raw_sales.csv
-└── output/          ← Claude guarda los resultados aquí
+Escritorio/Claude/projects/messy-spreadsheet/
+└── raw_sales.csv
 ```
+
+**3. Abre Claude Code dentro de tu proyecto:**
+
+Abre Cursor, ve a **File → Open Folder** y selecciona tu carpeta `messy-spreadsheet`. Luego abre la terminal (**Cmd+J** / **Ctrl+J**) y escribe `claude`.
 
 ## Instrucciones paso a paso
 
@@ -67,14 +60,14 @@ messy-spreadsheet/
 Abre Claude Code en la carpeta de tu proyecto y pregunta:
 
 ```
-Read data/raw_sales.csv and give me a full diagnosis. How many issues
+Read raw_sales.csv and give me a full diagnosis. How many issues
 do you find? Categorize them by type (duplicates, formatting, missing
 data, inconsistencies). Show me specific examples of each problem.
 ```
 
 Revisa el diagnóstico. Entender los problemas es la mitad del trabajo.
 
-**Quieres ver el desorden con tus propios ojos?** Abre `data/raw_sales.csv` en Excel o Google Sheets. Verás algo así:
+**Quieres ver el desorden con tus propios ojos?** Abre `raw_sales.csv` en Excel o Google Sheets. Verás algo así:
 
 ![Datos de ventas en bruto en Google Sheets -- nota los nombres inconsistentes, formatos de fecha mezclados y notas en campos numéricos](/exercise-images/raw-sales-sheets.png)
 
@@ -83,7 +76,7 @@ Revisa el diagnóstico. Entender los problemas es la mitad del trabajo.
 Pídele a Claude Code que arregle todo:
 
 ```
-Clean up data/raw_sales.csv and save the result as output/clean_sales.csv.
+Clean up raw_sales.csv and save the result as clean_sales.csv.
 Apply these rules:
 
 1. Standardize company names to their canonical form:
@@ -107,10 +100,10 @@ Apply these rules:
 7. Generate a cleanup report showing what changed (how many fixes
    per category)
 
-Save the clean file as output/clean_sales.csv
+Save the clean file as clean_sales.csv
 ```
 
-Revisa el resultado. Abre `output/clean_sales.csv` en Excel o Google Sheets para verificar que se vea bien. Compáralo con el original -- la diferencia debería ser dramática:
+Revisa el resultado. Abre `clean_sales.csv` en Excel o Google Sheets para verificar que se vea bien. Compáralo con el original -- la diferencia debería ser dramática:
 
 ![Datos de ventas limpios en Google Sheets -- nombres estandarizados, fechas consistentes, duplicados eliminados, sin notas en campos numéricos](/exercise-images/clean-sales-sheets.png)
 
@@ -130,7 +123,7 @@ The skill should:
   fix dates to YYYY-MM-DD, remove duplicates, normalize status fields,
   clean number formatting, fill gaps where possible
 - Always output a cleanup report showing what changed
-- Save the clean file in the output/ folder with a _clean suffix (e.g., output/raw_sales_clean.csv)
+- Save the clean file with a _clean suffix (e.g., raw_sales_clean.csv)
 
 Use the SKILL.md format from the 03-skills module.
 ```
@@ -140,7 +133,7 @@ Use the SKILL.md format from the 03-skills module.
 Inicia una conversación nueva (`/clear`) y prueba con lenguaje natural:
 
 ```
-Can you clean up data/raw_sales.csv? It is pretty messy.
+Can you clean up raw_sales.csv? It is pretty messy.
 ```
 
 El skill debería activarse automáticamente y aplicar el mismo proceso de limpieza sin que tengas que repetir todas las reglas.
@@ -156,7 +149,7 @@ El skill debería activarse automáticamente y aplicar el mismo proceso de limpi
 
 ## Criterios de éxito
 
-- [ ] `output/clean_sales.csv` existe con datos estandarizados y sin duplicados
+- [ ] `clean_sales.csv` existe con datos estandarizados y sin duplicados
 - [ ] `.claude/skills/clean-csv/SKILL.md` existe con la estructura correcta
 - [ ] El skill se activa automáticamente cuando pides "limpiar" o "estandarizar" un CSV
 - [ ] El skill funciona con cualquier CSV desordenado, no solo con los datos de ventas

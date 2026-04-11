@@ -1,8 +1,6 @@
-# Exercise 10: End-to-End Content Pipeline
+# Exercise 6: End-to-End Content Pipeline
 
-**Time:** 45 minutes | **Level:** Advanced
-**Module:** [07-plugins](../../07-plugins/) — Packaging complete workflows as distributable bundles
-**Skill:** Building a plugin that packages a multi-step workflow for your team
+**Time:** 18 minutes | **Level:** Advanced
 
 ## Objective
 
@@ -20,35 +18,13 @@ Your marketing team at Nike is preparing for the launch of a fictional new produ
 
 ## What You Have
 
-A product brief at `data/sample-brief.md` — the starting input for your pipeline.
+A product brief at `sample-brief.md` — the starting input for your pipeline.
 
 ## Setup
 
-> **This is the same workflow you'll use for real projects.** Create a project, copy in your data, and work from there.
+> If you haven't downloaded the exercise materials yet, see the setup instructions in [Exercise 1](../02-messy-spreadsheet/).
 
-**1. Create your project folder:**
-
-Open Finder (Mac) or File Explorer (Windows) and go to `Desktop/Claude/projects/`. Create these folders:
-- `end-to-end-pipeline/`
-  - `data/` (inside end-to-end-pipeline)
-  - `output/` (inside end-to-end-pipeline)
-
-**2. Copy the exercise data:**
-
-Find the file `sample-brief.md` in your course materials at `11-exercises/10-end-to-end-pipeline/data/` and drag it into your new `data/` folder.
-
-**3. Open in Cursor and start Claude:**
-
-In Cursor: **File → Open Folder** → select your `end-to-end-pipeline` folder. Open the terminal panel (**Cmd+J** / **Ctrl+J**) and type `claude`.
-
-Your project looks like this:
-
-```
-end-to-end-pipeline/
-├── data/
-│   └── sample-brief.md
-└── output/          ← Claude saves pipeline results here
-```
+Create a `content-pipeline` folder inside `Desktop/Claude/projects/`. Copy the files from `06-content-pipeline` in the downloaded materials into it. Then open the folder in Cursor (**File → Open Folder**) and start Claude Code in the terminal.
 
 ## Your Task
 
@@ -60,38 +36,38 @@ Work through each stage in order. Each step builds on the output of the previous
 
 Ask Claude:
 ```
-Based on the brief in data/sample-brief.md, do research for this product launch.
+Based on the brief in sample-brief.md, do research for this product launch.
 Cover: target audience profile, competitive landscape (what other brands
 are doing with recycled materials), key messaging angles, and potential
-risks or objections. Save the output as output/01-research-notes.md
+risks or objections. Save the output as 01-research-notes.md
 ```
 
 **Stage 2 — Outline**
 
 ```
-Using the research in output/01-research-notes.md, create a detailed outline
+Using the research in 01-research-notes.md, create a detailed outline
 for a launch content package. Include sections for: press release,
 social media copy (3 platforms), email announcement, and internal
 sales talking points. Flag where we need real data vs. estimates.
-Save as output/02-content-outline.md
+Save as 02-content-outline.md
 ```
 
 **Stage 3 — Full draft**
 
 ```
-Write the full content package based on output/02-content-outline.md.
+Write the full content package based on 02-content-outline.md.
 Make it professional and on-brand for a major athletic company.
 Include all sections from the outline. Use tables where helpful.
-Save as output/03-full-draft.md
+Save as 03-full-draft.md
 ```
 
 **Stage 4 — Review and executive summary**
 
 ```
-Review output/03-full-draft.md for tone consistency, messaging clarity,
+Review 03-full-draft.md for tone consistency, messaging clarity,
 and completeness. Then create a one-page executive summary with:
 the launch recommendation, 3-5 key messages, a timeline table,
-and clear next steps. Save the summary as output/04-executive-summary.md
+and clear next steps. Save the summary as 04-executive-summary.md
 ```
 
 **Checkpoint:** You should now have four files that form a complete pipeline output. Open each one and confirm that every stage clearly builds on the one before it.

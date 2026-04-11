@@ -1,8 +1,6 @@
-# Exercise 6: Check AI Content Against Brand Guidelines
+# Exercise 5: Check AI Content Against Brand Guidelines
 
-**Time:** 40 minutes | **Level:** Intermediate
-**Module:** [06-hooks](../../06-hooks/) — Event-driven automation
-**Skill:** Building a simple hook that automatically checks output quality
+**Time:** 15 minutes | **Level:** Intermediate
 
 ## Objective
 
@@ -18,7 +16,7 @@ Your Brand Manager has asked you to set up a quality check so that every piece o
 
 ## What You Have
 
-A JSON file at `data/ai_outputs.json` with 20 AI-generated content drafts. Each entry includes:
+A JSON file called `ai_outputs.json` with 20 AI-generated content drafts. Each entry includes:
 - **type** — what kind of content (social_media_post, email_subject_line, blog_intro, customer_email)
 - **platform** — where it will be published
 - **draft** — the actual content text
@@ -28,31 +26,9 @@ Some drafts follow the guidelines perfectly. Others have intentional violations 
 
 ## Setup
 
-> **This is the same workflow you'll use for real projects.** Create a project, copy in your data, and work from there.
+> If you haven't downloaded the exercise materials yet, see the setup instructions in [Exercise 1](../02-messy-spreadsheet/).
 
-**1. Create your project folder:**
-
-Open Finder (Mac) or File Explorer (Windows) and go to `Desktop/Claude/projects/`. Create these folders:
-- `evaluate-ai-output/`
-  - `data/` (inside evaluate-ai-output)
-  - `output/` (inside evaluate-ai-output)
-
-**2. Copy the exercise data:**
-
-Find the file `ai_outputs.json` in your course materials at `11-exercises/06-evaluate-ai-output/data/` and drag it into your new `data/` folder.
-
-**3. Open in Cursor and start Claude:**
-
-In Cursor: **File → Open Folder** → select your `evaluate-ai-output` folder. Open the terminal panel (**Cmd+J** / **Ctrl+J**) and type `claude`.
-
-Your project looks like this:
-
-```
-evaluate-ai-output/
-├── data/
-│   └── ai_outputs.json
-└── output/          ← Claude saves results here
-```
+Create an `evaluate-ai-output` folder inside `Desktop/Claude/projects/`. Copy the files from `05-evaluate-ai-output` in the downloaded materials into it. Then open the folder in Cursor (**File → Open Folder**) and start Claude Code in the terminal.
 
 ## Step-by-Step Instructions
 
@@ -63,7 +39,7 @@ Before automating anything, understand what "good" and "bad" look like.
 **Step 1.** Ask Claude to read the data and create a checklist:
 
 ```
-Read data/ai_outputs.json. For each entry, the brand_guidelines
+Read ai_outputs.json. For each entry, the brand_guidelines
 field defines the rules. Create a quality checklist that covers
 all the rule types across all entries: tone, emoji count,
 forbidden phrases, length limits, and required elements.
@@ -79,7 +55,7 @@ For each one, give me:
 - Severity: Critical (would damage the brand), Medium (noticeable
   issue), or Low (minor nitpick)
 
-Show results as a markdown table. Save it as output/evaluation_results.md
+Show results as a markdown table. Save it as evaluation_results.md
 ```
 
 **Step 3.** Ask Claude to find patterns:
@@ -91,7 +67,7 @@ Based on the evaluation:
 - Which rule violations are most common?
 - What recommendations would you give to the AI content
   generation team?
-Add this analysis to output/evaluation_results.md
+Add this analysis to evaluation_results.md
 ```
 
 ### Part 2: Build a quality-check hook (15 minutes)
@@ -130,7 +106,7 @@ I'm not a developer, so keep it simple.
 
 ```
 Write a promotional social media post about Orbit's new feature
-and save it as output/test_post.txt. Make it enthusiastic but don't
+and save it as test_post.txt. Make it enthusiastic but don't
 worry about brand guidelines — I want to see if the hook catches
 any issues.
 ```
@@ -179,7 +155,7 @@ Think of hooks like email filters: you set the rules once, and they run automati
 ## Success Checklist
 
 - [ ] All 20 content drafts are evaluated with pass/fail and reasoning
-- [ ] An `output/evaluation_results.md` report identifies patterns and recommendations
+- [ ] An `evaluation_results.md` report identifies patterns and recommendations
 - [ ] A `hooks/brand-check.sh` script exists that checks for common violations
 - [ ] You understand the settings.json configuration for the hook
 - [ ] You can explain what the hook does in plain English

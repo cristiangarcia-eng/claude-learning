@@ -27,17 +27,9 @@ Cuando abres Cursor por primera vez, verás una pantalla de bienvenida:
 
 ![Pantalla de bienvenida de Cursor](/cursor-welcome.png)
 
-Puedes cerrarla — no la necesitaremos.
+Haz clic en **Open project** y selecciona tu carpeta de Escritorio (o cualquier carpeta que prefieras). Esto le dice a Cursor dónde trabajar — piensa en ello como elegir en qué mesa sentarte.
 
-## La barra lateral: tu explorador de archivos
-
-Por ahora, lo único que necesitas conocer es el **Explorador** — el primer icono en la barra lateral izquierda (parece dos archivos superpuestos). Aquí es donde verás todos los archivos y carpetas de tu proyecto, igual que Finder en Mac o Explorador de Archivos en Windows.
-
-Exploraremos los otros iconos de la barra lateral más adelante en el curso.
-
-## Tu primer proyecto
-
-Abramos un proyecto real para que veas Cursor en acción.
+Una vez que abras una carpeta, verás el **Explorador** en la barra lateral izquierda (parece dos archivos superpuestos). Aquí es donde aparecen todos los archivos y carpetas de tu proyecto, igual que Finder en Mac o Explorador de Archivos en Windows.
 
 ### Descarga el proyecto de práctica
 
@@ -46,13 +38,19 @@ Abramos un proyecto real para que veas Cursor en acción.
 
 Es un análisis competitivo sencillo de Nike con algunos archivos dentro.
 
+> **Antes de continuar**, asegúrate de que la carpeta `nike-analysis` descomprimida está en tu Escritorio. Los siguientes pasos asumen que está ahí.
+
 ### Ábrelo en Cursor
 
 1. Ve a **File > Open Folder** (o `Cmd+O` en Mac)
+
+![File > Open Folder en Cursor](./images/cursor-open-folder.png)
 2. Navega a tu **Escritorio** y selecciona la carpeta `nike-analysis`
 3. Haz clic en **Open**
 
 Deberías ver los archivos aparecer en el Explorador a la izquierda. Haz clic en cualquier archivo para abrirlo — ¡eso es todo!
+
+![Proyecto Nike abierto en Cursor](./images/cursor-nike-project.png)
 
 ### Qué hay dentro
 
@@ -68,6 +66,8 @@ Haz clic en cada uno para ver cómo se ve dentro de Cursor.
 
 Cuando editas un archivo, notarás que aparece un **punto** en la pestaña junto al nombre del archivo. Ese punto significa que tienes **cambios sin guardar**.
 
+![Punto indicando cambios sin guardar en la pestaña](./images/cursor-unsaved-dot.png)
+
 Para guardar: presiona `Cmd+S` (Mac) o `Ctrl+S` (Windows).
 
 > **Consejo**: Ve a **File > Auto Save** y actívalo. Ahora tus archivos se guardan automáticamente — no más preocupaciones por perder cambios.
@@ -75,6 +75,8 @@ Para guardar: presiona `Cmd+S` (Mac) o `Ctrl+S` (Windows).
 ## La terminal integrada
 
 Cursor tiene una terminal integrada. La forma más fácil de abrirla es presionando **Cmd+J** (Mac) o **Ctrl+J** (Windows).
+
+![Cursor sin terminal abierta](./images/cursor-no-terminal.png)
 
 También puedes hacer clic en el **icono de terminal** en la parte superior derecha de la ventana:
 

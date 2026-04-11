@@ -74,7 +74,7 @@ Tu organización puede tener su propio marketplace de plugins con herramientas e
 | **Organización** | Procesos y herramientas específicos de la empresa |
 | **Personal** | Tus propios flujos de trabajo personalizados |
 
-## Cuando usar un Plugin vs. otras funcionalidades
+## Cuándo usar un Plugin vs. otras funcionalidades
 
 | Necesitas | Usa |
 |-----------|-----|
@@ -86,14 +86,8 @@ Tu organización puede tener su propio marketplace de plugins con herramientas e
 ## Consejos
 
 - **Revisa lo que usa tu equipo.** Pregunta a tus colegas cuáles plugins tienen instalados. Usar los mismos plugins asegura flujos de trabajo consistentes.
-- **Comienza con poco.** Instala uno o dos plugins y aprendelos bien antes de agregar más.
-- **Desactiva, no desinstales.** Si no estás seguro sobre un plugin, desactivalo temporalmente en lugar de eliminarlo. Puedes reactivarlo después sin reconfigurar.
-
-## Ejercicio práctico
-
-> **[Ejercicio 10: Pipeline de Contenido de Principio a Fin](../11-exercises/10-end-to-end-pipeline/)** — Ejecuta un pipeline de brief-a-documento (investigación, esquema, documento, resumen), luego empaquetalo como un plugin distribuible con un slash command, subagent, skill y plantillas.
->
-> **Tiempo:** 45 min | **Datos:** Elige un brief para tu rol (ventas, finanzas, RRHH, etc.)
+- **Comienza con poco.** Instala uno o dos plugins y apréndelos bien antes de agregar más.
+- **Desactiva, no desinstales.** Si no estás seguro sobre un plugin, desactívalo temporalmente en lugar de eliminarlo. Puedes reactivarlo después sin reconfigurar.
 
 ## Recursos adicionales
 

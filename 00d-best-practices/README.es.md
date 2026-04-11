@@ -1,43 +1,45 @@
 # Mejores Prácticas
 
-## Cómo hablarle a Claude de manera efectiva
+## Empieza con un plan
 
-Claude Code es como un colega muy inteligente. Cuanto más claro te comuniques, mejores resultados obtendrás.
+Antes de hacer cambios, siempre empieza en **Modo Plan**. Tienes dos formas de activarlo:
 
-## Sé específico, no vago (y ahórrate los formalismos)
+- **Atajo de teclado:** Presiona **Shift+Tab** dos veces — verás que el indicador de modo cambia en la parte inferior. Funciona en Mac, Windows y Linux.
+- **En lenguaje natural:** Simplemente dile a Claude *"ponte en modo plan"* o *"switch to plan mode"*. Claude entiende la instrucción y cambia de modo.
 
-El consejo más importante: **di exactamente lo que quieres**.
+En Modo Plan, Claude solo puede leer y analizar — no modificará ningún archivo. Esta es la mejor forma de empezar cualquier tarea porque Claude pensará en el enfoque antes de hacer nada.
 
-"¡Hola Claude! Espero que estés bien, me preguntaba si podrías ayudarme con..." está quemando tokens en palabras sin valor. Escribe como si pagaras por palabra — porque así es.
+Los datos lo confirman: **las tareas que empiezan con Modo Plan tienen éxito al primer intento el 77% de las veces**, comparado con solo el 40% cuando se salta directamente a los cambios. Planificar primero casi duplica tu tasa de éxito.
 
-| En lugar de... | Prueba... |
-|--------------|--------|
-| "Arregla la página de inicio" | "Cambia el título principal de la página de inicio a 'Bienvenido a Nova'" |
-| "Hazlo ver mejor" | "Aumenta el tamaño de fuente de los encabezados y agrega más espacio entre secciones" |
-| "Hay un bug" | "Los usuarios ven una pantalla en blanco después de hacer clic en el botón de login" |
-| "Actualiza la documentación" | "Agrega una sección sobre nuestra política de reembolsos a la página de FAQ" |
+### Pruébalo: planifica un informe de mercado de Nike
 
-## Dale a Claude una forma de verificar su trabajo
+Abre Claude Code en tu carpeta `nike-analysis` y activa el Modo Plan (con Shift+Tab dos veces, o dile *"ponte en modo plan"*). Luego escribe:
 
-Cuando sea posible, dile a Claude cómo verificar el resultado:
+> `Quiero convertir este análisis competitivo en un informe de mercado completo. Planifica qué secciones agregar, qué datos del CSV incluir, y cómo estructurar el documento final.`
 
-```
-Cambia el email de la empresa a hello@nova.com en todas partes.
-Después de hacer los cambios, busca en el codebase para confirmar
-que no quedan referencias al email anterior.
-```
+Claude leerá tus archivos y propondrá un plan detallado — sin cambiar nada. Puedes revisarlo, hacer preguntas y ajustar antes de que empiece cualquier trabajo.
 
-```
-Actualiza los precios en el sitio web. Después del cambio,
-toma una captura de pantalla para que pueda verificar que se ve bien.
-```
+Cuando el plan te parezca bien, Claude te ofrece varias opciones para continuar:
+
+![Claude ofrece opciones después de planificar](./images/plan-mode-options.png)
+
+Las opciones significan:
+
+1. **Yes, auto-accept edits** — Claude ejecuta el plan y aplica todos los cambios sin pedirte permiso en cada paso. La opción más rápida.
+2. **Yes, manually approve edits** — Claude ejecuta el plan pero te pide confirmación antes de cada cambio. Más control, más lento.
+3. **No, refine with Ultraplan** — Claude refina el plan con más detalle antes de ejecutar. Útil si el plan es demasiado vago.
+4. **Tell Claude what to change** — Te deja dar feedback sobre el plan antes de ejecutarlo. Ej: "quita la sección 3" o "empieza por el CSV".
+
+Simplemente haz clic en la opción que prefieras y Claude empezará a trabajar.
+
+Este enfoque de **planificar primero, ejecutar después** te da resultados mucho mejores que ir directamente a los cambios.
 
 ## Deja que Claude explore primero
 
 Antes de pedir cambios, deja que Claude entienda el proyecto:
 
 ```
-Lee el proyecto y explicame la estructura
+Lee el proyecto y explícame la estructura
 como si fuera un product manager.
 ```
 
@@ -51,27 +53,17 @@ a Starter/Growth/Scale.
 
 Este enfoque de dos pasos da mucho mejores resultados que ir directamente a los cambios.
 
-## Empieza con un plan
+## La técnica de entrevista
 
-Antes de hacer cambios, siempre empieza en **Modo Plan**. Presiona **Shift+Tab** dos veces para activarlo — verás que el indicador de modo cambia en la parte inferior.
+Para tareas más grandes, deja que Claude te haga preguntas primero:
 
-En Modo Plan, Claude solo puede leer y analizar — no modificará ningún archivo. Esta es la mejor forma de empezar cualquier tarea porque Claude pensará en el enfoque antes de hacer nada.
+```
+Quiero rediseñar nuestro flujo de onboarding. Entrevístame
+sobre lo que tengo en mente — pregunta sobre objetivos, tipos de usuario
+y restricciones antes de hacer cualquier cambio.
+```
 
-Los datos lo confirman: **las tareas que empiezan con Modo Plan tienen éxito al primer intento el 77% de las veces**, comparado con solo el 40% cuando se salta directamente a los cambios. Planificar primero casi duplica tu tasa de éxito.
-
-### Pruébalo: planifica un informe de mercado de Nike
-
-Abre Claude Code en tu carpeta `nike-analysis` y activa el Modo Plan (Shift+Tab dos veces). Luego escribe:
-
-> `Quiero convertir este análisis competitivo en un informe de mercado completo. Planifica qué secciones agregar, qué datos del CSV incluir, y cómo estructurar el documento final.`
-
-Claude leerá tus archivos y propondrá un plan detallado — sin cambiar nada. Puedes revisarlo, hacer preguntas y ajustar antes de que empiece cualquier trabajo.
-
-Cuando el plan te parezca bien, sal del Modo Plan (presiona **Shift+Tab** para volver al modo normal) y dile a Claude:
-
-> `Adelante, ejecuta el plan.`
-
-Ahora Claude empezará a hacer los cambios reales. Este enfoque de **planificar primero, ejecutar después** te da resultados mucho mejores que ir directamente a los cambios.
+Claude hará preguntas inteligentes sobre cosas que quizás no habías considerado. Una vez alineados, puede ejecutar con mucha más precisión.
 
 ## Mantén las conversaciones enfocadas (esto te ahorra dinero real)
 
@@ -94,75 +86,6 @@ Si corriges a Claude dos veces sobre el mismo tema y sigue sin entenderlo, **dej
 
 Seguir corrigiendo a un Claude confundido pierde tiempo. Un prompt nuevo y bien escrito da mejores resultados más rápido que una cadena de correcciones.
 
-## Corrige el rumbo temprano
-
-Si Claude empieza a ir en la dirección equivocada:
-
-- Presiona **Esc** para detenerlo inmediatamente
-- Di "No, me refería a..." y redirige
-- Si está realmente confundido, escribe `/clear` y empieza de nuevo con un mejor prompt
-
-> Después de dos correcciones sobre el mismo tema, es más rápido hacer `/clear` y escribir un mejor prompt inicial que seguir corrigiendo.
-
-## La técnica de entrevista
-
-Para tareas más grandes, deja que Claude te haga preguntas primero:
-
-```
-Quiero rediseñar nuestro flujo de onboarding. Entrevistame
-sobre lo que tengo en mente — pregunta sobre objetivos, tipos de usuario
-y restricciones antes de hacer cualquier cambio.
-```
-
-Claude hará preguntas inteligentes sobre cosas que quizás no habías considerado. Una vez alineados, puede ejecutar con mucha más precisión.
-
-## El bucle de aprendizaje
-
-La mayor diferencia entre los buenos y los excelentes usuarios de Claude Code es el **bucle de aprendizaje**. Después de cada proyecto o sesión:
-
-1. **Anota qué funcionó** — qué prompts dieron buenos resultados a la primera?
-2. **Anota qué no funcionó** — donde fue Claude en la dirección equivocada?
-3. **Actualiza tu CLAUDE.md** — añade las lecciones para que Claude no repita errores
-
-```
-Añade a mi memoria de proyecto: "Cuando crees informes, siempre
-incluye un resumen ejecutivo arriba. El equipo se quejó la
-última vez cuando estaba enterrado al final."
-```
-
-Con el tiempo, tu CLAUDE.md se convierte en un documento vivo que hace a Claude más inteligente con cada proyecto. Las personas que sacan más valor de Claude Code son las que iteran en sus archivos de memoria — no las que escriben los mejores prompts.
-
-## Comprime imágenes antes de subirlas
-
-Si le pasas a Claude una captura de pantalla, un mockup de diseño o cualquier imagen, asegúrate de que pese menos de **5 MB**. Las imágenes grandes consumen tu presupuesto de tokens rápidamente — una captura de 20 MB puede usar tantos tokens como una conversación entera.
-
-Usa una herramienta gratuita como [iLoveIMG](https://www.iloveimg.com/compress-image) para reducir imágenes antes de pasárselas a Claude. Esto ahorra tokens y hace que Claude procese la imagen más rápido.
-
-Dato importante: añadir o quitar imágenes entre mensajes puede romper el caché interno de prompts de Claude. Si estás trabajando en una tarea de UI con capturas de pantalla, intenta incluir todas las imágenes que necesites desde el principio en vez de ir añadiéndolas una por una en diferentes mensajes.
-
-## Usa el Modo Caveman para reducir tokens de salida
-
-Si las respuestas de Claude te parecen demasiado largas para lo que necesitas, prueba a instalar [Modo Caveman](https://github.com/JuliusBrussee/caveman) — un skill que hace que Claude responda en un estilo comprimido y directo: sin artículos, sin relleno, sin formalismos, pero con total precisión técnica.
-
-En benchmarks reales, una respuesta de 1,180 tokens baja a 159 — eso es un ~65% menos de tokens de salida. Instálalo con:
-
-```
-/install-skill https://github.com/JuliusBrussee/caveman
-```
-
-## Delega tareas pesadas a subagentes
-
-Cuando Claude necesita ejecutar tests, procesar logs o buscar en documentación extensa, toda esa salida pesada inunda el contexto de tu conversación — consumiendo tokens rápidamente.
-
-En su lugar, deja que Claude delegue estas tareas a subagentes. La salida pesada se queda en el contexto del subagente, y solo un resumen conciso vuelve a tu conversación principal. Tu ventana principal se mantiene limpia y barata.
-
-No necesitas hacer nada especial — Claude Code usa subagentes automáticamente cuando tiene sentido. Pero si ves que tu contexto crece rápido, puedes pedirlo explícitamente:
-
-```
-Usa un subagente para buscar en todos los archivos de log
-y dame un resumen de los errores.
-```
-
 ## Monitorea, no microgestiones
 
 Cuando Claude está trabajando en una tarea grande, déjalo trabajar. No lo interrumpas cada 10 segundos con correcciones — esto rompe su flujo y gasta contexto.
@@ -176,14 +99,10 @@ Piénsalo como delegar a un colega: le entregas la tarea, revisas cuando termina
 
 ## Resumen: las reglas de oro
 
-1. **Empieza con un plan** — siempre usa el Modo Plan antes de hacer cambios
-2. **Sé específico** — di exactamente lo que quieres, ahórrate los formalismos
-3. **Explora primero** — deja que Claude entienda antes de cambiar
-4. **Limpia seguido** — `/clear` entre diferentes temas (cada mensaje reprocesa todo)
-5. **Deja que Claude verifique** — dile cómo revisar su propio trabajo
-6. **Corrige rápido** — Esc y redirige si va por mal camino
-7. **Técnica de entrevista** — para tareas grandes, deja que Claude haga preguntas primero
-8. **Comprime imágenes** — reduce antes de subir, evita añadirlas a mitad de conversación
-9. **Delega lo pesado** — deja que los subagentes manejen las tareas verbosas
-10. **Monitorea tu gasto** — usa `/cost` para ver el consumo de tokens por sesión
+1. **Empieza con un plan** — Modo Plan antes de hacer cambios (77% de éxito vs 40%)
+2. **Explora primero** — deja que Claude entienda el proyecto antes de pedirle cambios
+3. **Un tema por sesión** — `/clear` al cambiar de tema, cada mensaje reprocesa todo
+4. **Regla de las 2 correcciones** — si corriges dos veces lo mismo, `/clear` y reescribe el prompt
+5. **Técnica de entrevista** — para tareas grandes, deja que Claude te haga preguntas primero
+6. **No microgestiones** — deja que termine, luego da todo el feedback de una vez
 

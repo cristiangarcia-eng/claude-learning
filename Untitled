@@ -1,0 +1,5 @@
+ GMAIL_USER=tu@gmail.com                                   
+  GMAIL_APP_PASSWORD=abcd efgh ijkl mnop                                                                                   
+  AUTH_SECRET=generare-uno-yo
+  ALLOWED_EMAILS=tu@gmail.com,otro@email.com                                                                               
+  NEXT_PUBLIC_CALENDLY_URL=https://calendly.com/tu-link      

@@ -28,11 +28,11 @@ graph TD
     G --> A
 ```
 
-1. **Tu escribes** un mensaje en español simple
-2. **Claude piensa** en que hacer
-3. **Claude actua** — lee archivos, propone ediciones o ejecuta comandos
-4. **Tu apruebas** cualquier cambio (Claude siempre pregunta primero)
-5. **Repite** hasta que la tarea este completa
+1. **Tú escribes** un mensaje en español simple
+2. **Claude piensa** en qué hacer
+3. **Claude actúa** — lee archivos, propone ediciones o ejecuta comandos
+4. **Tú apruebas** cualquier cambio (Claude siempre pregunta primero)
+5. **Repite** hasta que la tarea esté completa
 
 ## Espera iteración, no perfección
 
@@ -102,7 +102,6 @@ Claude Code tiene algunos comandos integrados que empiezan con `/`. No necesitas
 | Comando | Qué hace |
 |---------|----------|
 | `/clear` | Empieza una conversación nueva (¡úsalo seguido!) |
-| `/memory` | Abre tus archivos de memoria — donde Claude guarda lo que debe recordar sobre ti y tu proyecto |
 | `/compact` | Resume una conversación larga para liberar espacio |
 | `/help` | Muestra todos los comandos disponibles |
 | `/model` | Cambia entre modelos de Claude (Haiku, Sonnet, Opus) |
@@ -129,7 +128,7 @@ Añade esa línea a tu `.bashrc` o `.zshrc` para que se aplique en cada sesión.
 
 > **Nota:** `max` solo está disponible en Opus 4.6 — si usas Sonnet dará error.
 
-Aprenderás más sobre `/memory` en la lección de Memoria. Por ahora, el más importante es `/clear` — úsalo cada vez que cambies de tema.
+El más importante es `/clear` — úsalo cada vez que cambies de tema.
 
 ## Permisos: siempre tienes el control
 
@@ -167,8 +166,8 @@ Claude Code usa tokens (piensa en ellos como palabras) cada vez que tienes una c
 
 ## Puntos clave
 
-1. **Habla naturalmente** — Claude entiende español simple
-2. **Claude siempre pregunta** antes de hacer cambios
-3. **Usa `/clear` seguido** — contexto fresco = mejores resultados
-4. **El modo plan es seguro** — Claude solo puede leer, no escribir
-5. **Todo es reversible** — Claude crea puntos de control a los que puedes regresar
+1. **No esperes perfección al primer intento** — el valor de la IA es la velocidad de iteración, no acertar a la primera
+2. **Claude siempre pregunta antes de actuar** — tú apruebas cada cambio, nunca pierdes el control
+3. **La ventana de contexto es limitada** — usa `/clear` al cambiar de tema y `/compact` si la conversación se alarga
+4. **Usa Opus 4.6 con esfuerzo al máximo** — es la configuración que mejores resultados da
+5. **Vigila tu consumo** — `/cost` te muestra los tokens de la sesión, y en claude.ai puedes ver tu uso mensual

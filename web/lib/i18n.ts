@@ -47,7 +47,6 @@ const dictionaries = {
     filesInThisLesson: "Files in this lesson",
     previous: "Previous",
     next: "Next",
-    takeQuiz: "Take Quiz",
     backTo: "Back to",
     markComplete: "Mark Complete",
     completed: "Completed",
@@ -57,23 +56,6 @@ const dictionaries = {
     overallProgress: "Overall Progress",
     lessons: "lessons",
     badges: "Badges",
-
-    // Quiz
-    quiz: "Quiz",
-    question: "Question",
-    of: "of",
-    checkAnswer: "Check Answer",
-    seeResults: "See Results",
-    quizComplete: "Quiz Complete!",
-    correct: "Correct!",
-    incorrect: "Incorrect",
-    perfectScore: "Perfect score! You've mastered this topic.",
-    greatJob: "Great job! Review the missed questions to solidify your knowledge.",
-    keepStudying: "Keep studying! Review the lesson and try again.",
-    retry: "Retry",
-    backToLesson: "Back to Lesson",
-    noQuizAvailable: "No Quiz Available",
-    noQuizYet: "This lesson doesn't have a quiz yet.",
 
     // Landing / public
     logIn: "Log in",
@@ -87,14 +69,14 @@ const dictionaries = {
     builtForNonDev: "Built for non-developers",
     builtForNonDevDesc: "You don't need to be a programmer. If you can describe what you want in plain English, Claude Code can do it.",
     lessonsFromZero: "lessons, from zero to mastery",
-    lessonsFromZeroDesc: "Start with terminal basics and progress to advanced workflows. Each lesson includes interactive quizzes and real-world examples.",
+    lessonsFromZeroDesc: "Start with terminal basics and progress to advanced workflows. Each lesson includes hands-on exercises and real-world examples.",
     simplePricing: "Simple pricing",
     choosePlan: "Choose the option that works for you.",
     courseOnly: "Course Only",
-    courseOnlyDesc: "Full access to all lessons, quizzes, and progress tracking.",
+    courseOnlyDesc: "Full access to all lessons and progress tracking.",
     oneTime: "one-time",
     interactiveLessons: "interactive lessons",
-    quizzesWithFeedback: "Quizzes with instant feedback",
+    handsOnExercises: "Hands-on exercises",
     progressTracking: "Progress tracking",
     lifetimeAccess: "Lifetime access",
     getAccess: "Get Access",
@@ -108,7 +90,7 @@ const dictionaries = {
     whatStudentsSay: "What students say",
     meetYourInstructor: "Meet your instructor",
     readyToGetStarted: "Ready to get started?",
-    readyToGetStartedDesc: "Start learning today. Get instant access to all lessons, quizzes, and hands-on exercises.",
+    readyToGetStartedDesc: "Start learning today. Get instant access to all lessons and hands-on exercises.",
     masterClaudeCodeFooter: "Master Claude Code without writing code",
 
     // Dashboard hero
@@ -157,12 +139,15 @@ const dictionaries = {
     anyoneCuriousDesc: "No coding experience needed. If you can type a message, you can use Claude Code.",
 
     // Level descriptions (dashboard)
+    extra: "Extra",
     starterDesc: "No experience needed — perfect for PMs, designers, and non-devs",
     proDesc: "Memory, checkpoints, skills, MCP, and advanced features",
     projectsDesc: "11 hands-on exercises to practice everything you've learned",
+    extraDesc: "Deep dives into advanced tools, workflows, and optimizations",
     starterTime: "~1.5 hours",
     proTime: "~5 hours",
     projectsTime: "~6 hours",
+    extraTime: "~3 hours",
 
     // Welcome modal
     welcomeTitle: "This is where it starts.",
@@ -199,7 +184,6 @@ const dictionaries = {
     filesInThisLesson: "Archivos en esta leccion",
     previous: "Anterior",
     next: "Siguiente",
-    takeQuiz: "Hacer Quiz",
     backTo: "Volver a",
     markComplete: "Marcar completa",
     completed: "Completada",
@@ -209,23 +193,6 @@ const dictionaries = {
     overallProgress: "Progreso General",
     lessons: "lecciones",
     badges: "Insignias",
-
-    // Quiz
-    quiz: "Quiz",
-    question: "Pregunta",
-    of: "de",
-    checkAnswer: "Comprobar",
-    seeResults: "Ver Resultados",
-    quizComplete: "Quiz Completo!",
-    correct: "Correcto!",
-    incorrect: "Incorrecto",
-    perfectScore: "Puntuacion perfecta! Has dominado este tema.",
-    greatJob: "Buen trabajo! Revisa las preguntas falladas para afianzar tu conocimiento.",
-    keepStudying: "Sigue estudiando! Revisa la leccion e intentalo de nuevo.",
-    retry: "Reintentar",
-    backToLesson: "Volver a la leccion",
-    noQuizAvailable: "No hay Quiz disponible",
-    noQuizYet: "Esta leccion aun no tiene quiz.",
 
     // Landing / public
     logIn: "Iniciar sesion",
@@ -239,14 +206,14 @@ const dictionaries = {
     builtForNonDev: "Disenado para no-desarrolladores",
     builtForNonDevDesc: "No necesitas ser programador. Si puedes describir lo que quieres en espanol, Claude Code puede hacerlo.",
     lessonsFromZero: "lecciones, de cero a experto",
-    lessonsFromZeroDesc: "Empieza con lo basico del terminal y progresa hasta flujos avanzados. Cada leccion incluye quizzes interactivos y ejemplos reales.",
+    lessonsFromZeroDesc: "Empieza con lo basico del terminal y progresa hasta flujos avanzados. Cada leccion incluye ejercicios practicos y ejemplos reales.",
     simplePricing: "Precios simples",
     choosePlan: "Elige la opcion que mejor te funcione.",
     courseOnly: "Solo Curso",
-    courseOnlyDesc: "Acceso completo a todas las lecciones, quizzes y seguimiento de progreso.",
+    courseOnlyDesc: "Acceso completo a todas las lecciones y seguimiento de progreso.",
     oneTime: "pago unico",
     interactiveLessons: "lecciones interactivas",
-    quizzesWithFeedback: "Quizzes con feedback instantaneo",
+    handsOnExercises: "Ejercicios practicos",
     progressTracking: "Seguimiento de progreso",
     lifetimeAccess: "Acceso de por vida",
     getAccess: "Obtener Acceso",
@@ -260,7 +227,7 @@ const dictionaries = {
     whatStudentsSay: "Lo que dicen los estudiantes",
     meetYourInstructor: "Conoce a tu instructor",
     readyToGetStarted: "Listo para empezar?",
-    readyToGetStartedDesc: "Empieza a aprender hoy. Obtén acceso instantáneo a todas las lecciones, quizzes y ejercicios prácticos.",
+    readyToGetStartedDesc: "Empieza a aprender hoy. Obtén acceso instantáneo a todas las lecciones y ejercicios prácticos.",
     masterClaudeCodeFooter: "Domina Claude Code sin escribir codigo",
 
     // Dashboard hero
@@ -309,12 +276,15 @@ const dictionaries = {
     anyoneCuriousDesc: "No se necesita experiencia en programacion. Si puedes escribir un mensaje, puedes usar Claude Code.",
 
     // Level descriptions (dashboard)
+    extra: "Extra",
     starterDesc: "Sin experiencia necesaria — perfecto para PMs, diseñadores y no-devs",
     proDesc: "Memoria, checkpoints, skills, MCP y funcionalidades avanzadas",
     projectsDesc: "11 ejercicios prácticos para practicar todo lo que has aprendido",
+    extraDesc: "Inmersiones profundas en herramientas avanzadas, flujos y optimizaciones",
     starterTime: "~1.5 horas",
     proTime: "~5 horas",
     projectsTime: "~6 horas",
+    extraTime: "~3 horas",
 
     // Welcome modal
     welcomeTitle: "Aqui empieza todo.",

@@ -122,18 +122,9 @@ const components: Components = {
     return <hr className="my-8 border-border" />;
   },
   img({ src, alt }) {
-    // Rewrite relative paths to public assets
-    let resolvedSrc = typeof src === "string" ? src : "";
-    if (resolvedSrc.includes("resources/logos/")) {
-      resolvedSrc = resolvedSrc.replace(/.*resources\/logos\//, "/logos/");
-    } else if (resolvedSrc.includes("resources/icons/")) {
-      resolvedSrc = resolvedSrc.replace(/.*resources\/icons\//, "/icons/");
-    } else if (resolvedSrc.startsWith("images/")) {
-      resolvedSrc = resolvedSrc.replace("images/", "/exercise-images/");
-    }
     return (
       <img
-        src={resolvedSrc}
+        src={src}
         alt={alt || ""}
         className="my-4 max-w-full rounded-lg"
       />

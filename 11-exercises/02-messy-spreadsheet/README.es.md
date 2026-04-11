@@ -14,9 +14,9 @@ Al finalizar, entenderás:
 
 ## Escenario
 
-Un colega del equipo de ventas te acaba de compartir una hoja de calculo con datos de ventas del Q1. El problema: los datos son un desastre. Los nombres son inconsistentes, las fechas estan en todos los formatos posibles, hay duplicados y algunas entradas mezclan notas donde deberian ir numeros.
+Un colega del equipo de ventas te acaba de compartir una hoja de cálculo con datos de ventas del Q1. El problema: los datos son un desastre. Los nombres son inconsistentes, las fechas están en todos los formatos posibles, hay duplicados y algunas entradas mezclan notas donde deberían ir números.
 
-Tu tarea: limpiarlo y luego construir un skill para que la proxima hoja desordenada tome segundos en vez de una hora.
+Tu tarea: limpiarlo y luego construir un skill para que la próxima hoja desordenada tome segundos en vez de una hora.
 
 ## Lo que tienes
 
@@ -27,10 +27,10 @@ Un archivo CSV llamado `raw_sales.csv` con ~40 filas de datos de ventas. Los pro
 - **Filas duplicadas** (mismo socio, misma fecha, mismo monto)
 - **Valores de estado inconsistentes** ("shipped", "Shipped", "SHIPPED", "delivered", "complete")
 - **Campos faltantes** (regiones en blanco, representantes de ventas ausentes)
-- **Notas mezcladas en campos numericos** ("12500 (estimated)", "$8,200 USD")
+- **Notas mezcladas en campos numéricos** ("12500 (estimated)", "$8,200 USD")
 - **Formato de moneda inconsistente** ("$12,500", "12500", "$12.5K")
 
-## Preparacion
+## Preparación
 
 Todos los ejercicios usan archivos de datos de ejemplo. Descárgalos una vez y estarás listo para todo el curso.
 

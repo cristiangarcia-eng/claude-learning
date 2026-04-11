@@ -85,10 +85,10 @@ Once created, you can use a skill in three ways:
 
 ### Make a skill always active for a project
 
-If you want Claude to **always** use a specific skill in a project, add it to your project memory (`CLAUDE.md`):
+If you want Claude to **always** use a specific skill in a project, add it to your project memory (`CLAUDE.md`). Open the file from Cursor or type in Claude Code:
 
 ```
-code CLAUDE.md
+! open CLAUDE.md
 ```
 
 Add a line like:
@@ -99,6 +99,80 @@ When formatting meeting notes, always use the meeting-notes skill.
 ```
 
 This way you don't have to remember to mention the skill every time — Claude will use it automatically for every conversation in that project.
+
+## Real-world example: Sales Email skill
+
+Here's a real skill used by a recruiting company's sales team. It standardizes how the team writes outreach emails — consistent tone, always data-driven, always with a soft close.
+
+This is what the `SKILL.md` file looks like (shortened for clarity):
+
+```markdown
+# Sales Emails Skill
+
+## How to Use
+When you need to write a sales email:
+1. Identify the email type from the catalogue below (ask if unclear)
+2. Gather the required inputs for that type
+3. Identify the language (match prior conversations; Spanish by default)
+4. Draft the email following the structure and tone for that type
+
+## Universal Tone Principles
+1. **Warm and personal** — First person singular. Use the contact's first name.
+   Reference the last conversation or shared context.
+2. **Data-driven** — Always include specific numbers: hours saved, cost per
+   process, total opportunity. Numbers build credibility.
+3. **Structured for busy readers** — Lead with context, use bullet-point
+   summaries, keep it scannable.
+4. **Soft close, never pushy** — Propose a next step, don't demand one.
+5. **Confident but not arrogant** — State what you can do clearly.
+   Anchor claims in the client's data, not marketing language.
+
+## Email Types
+
+### Type 1: Business Case Follow-up
+When: After presenting a business case. Goal: send a summary they can
+circulate internally.
+
+Required inputs:
+- Contact name and company
+- What was discussed/agreed
+- Key numbers (hours saved, cost/hour, team size, total opportunity)
+- Proposed pilot scope (typical: 10-20% of volume)
+
+Structure:
+Subject: Business Case [Company] x [Your Company]
+- Greeting referencing the meeting
+- Summary bullets with calculations (hours x cost = savings)
+- Pilot proposal (collaborative framing)
+- Soft CTA
+
+### Type 2: Post-Meeting Follow-up
+[...]
+
+### Type 3: Pilot Proposal
+[...]
+
+### Type 4: Cold Intro
+[...]
+
+## Checklist
+Before delivering any draft:
+- Is the greeting warm and personal?
+- Are all numbers specific and calculations shown?
+- Is the CTA soft and clear (one next step)?
+- Is it in the correct language?
+- Does it sound personal, not like a template?
+```
+
+Notice what makes this skill effective:
+
+- **Clear trigger** — tells Claude exactly when to activate
+- **Universal principles** — tone rules that apply to every email type
+- **Structured templates** — each email type has required inputs, structure, and guidelines
+- **A checklist** — quality control before delivering the result
+- **Language rules** — handles bilingual teams naturally
+
+The sales team doesn't need to explain their email standards every time. They just say "write a follow-up email to Maria at Acme about the pilot" and Claude produces a draft that matches their voice, includes the right data, and follows their format.
 
 ## Tips
 

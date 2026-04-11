@@ -1,16 +1,18 @@
 # Memoria
 
-## Por qué importa la memoria
+> Sin memoria, cada conversación con Claude es una primera cita.
 
-Cada vez que inicias una conversación nueva con Claude, empieza desde cero — no sabe quién eres, en qué estás trabajando, ni cómo te gustan las cosas. Tendrías que explicar todo de nuevo.
+En la lección de Voz dijimos que lo más importante es dar buen contexto. La memoria es cómo haces ese contexto **permanente**.
 
-**La memoria soluciona esto.** Es un archivo de texto simple que Claude lee al inicio de cada conversación. Tú escribes lo que Claude debe saber, y lo recuerda — automáticamente, cada vez.
+Cada vez que inicias una conversación nueva, Claude empieza desde cero — no sabe quién eres, en qué trabajas, ni cómo te gustan las cosas. Sin memoria, tendrías que explicar todo de nuevo cada vez.
+
+La memoria es un archivo de texto simple que Claude lee al inicio de **cada** conversación. Tú escribes lo que Claude debe saber, y lo recuerda — automáticamente, siempre.
 
 ## Dos tipos de memoria
 
 Cuando escribes `/memory` en Claude Code, verás dos opciones:
 
-![El menú de /memory en Claude Code](/claude-memory-menu.png)
+![El menú de /memory en Claude Code](./images/claude-memory-menu.png)
 
 ### 1. User memory — sobre ti
 
@@ -34,20 +36,22 @@ Solo aplica al proyecto actual. Se queda con la carpeta. Pon aquí cosas como:
 - Terminología y nombres
 - Reglas específicas de este proyecto
 
-## Los 4 pilares de una buena memoria
+## Qué poner en la memoria
 
-Los mejores archivos CLAUDE.md cubren cuatro cosas:
+La mayoría de la gente solo pone lo básico: su rol y algunas preferencias. Pero los que sacan más valor de Claude añaden también **lecciones aprendidas** — cosas que descubrieron que funcionan o no funcionan:
 
-| Pilar | Qué hace | Ejemplo |
-|-------|----------|---------|
-| **Compresion de conocimiento** | Resume info clave para que Claude no tenga que leer cada archivo | "El producto principal es un SaaS B2B para equipos de RRHH. Modelo de ingresos por puesto." |
-| **Preferencias y convenciones** | Como te gusta que se hagan las cosas | "Siempre usa viñetas. Escribe en un tono casual y amigable." |
-| **Capacidades** | Que puede y debe hacer Claude en este contexto | "Tienes acceso a Google Docs via MCP. Úsalo para actualizar el informe semanal." |
-| **Lecciones aprendidas** | Que funciono y que no en sesiones anteriores | "No uses tablas para comparaciones — el equipo prefiere listas con viñetas." |
+```
+Soy product manager en una empresa de SaaS B2B para RRHH.
+Prefiero respuestas en español, con bullet points.
+Mantén los resúmenes en menos de 200 palabras.
 
-La mayoría de la gente solo hace los dos primeros. Agregar capacidades y lecciones aprendidas hace que Claude sea dramáticamente más efectivo con el tiempo.
+Lecciones:
+- No uses tablas para comparaciones — el equipo prefiere listas con viñetas.
+- Siempre incluye un resumen ejecutivo al principio de los informes.
+- Cuando analices datos de ventas, compara siempre año contra año.
+```
 
-> **Piénsalo como entrenar a un nuevo empleado.** No solo le dirías que hace la empresa — también le dirías tus preferencias, que herramientas tiene disponibles y errores a evitar.
+> **Piénsalo como entrenar a un nuevo empleado.** No solo le dirías qué hace la empresa — también le dirías tus preferencias y errores a evitar. Cuanto mejor sea el briefing, mejor trabaja desde el primer día.
 
 ## Configurando tu memoria
 
@@ -55,7 +59,13 @@ Vamos a configurar ambos tipos usando el proyecto de Nike con el que has estado 
 
 ### Paso 1: Configura tu User memory
 
-Abre Claude Code y escribe `/memory`. Selecciona **"Edit User memory"**. Esto abre tu archivo personal CLAUDE.md. Agrega algo así:
+En Claude Code, escribe el siguiente comando para abrir tu archivo de memoria personal:
+
+```
+! open ~/.claude/CLAUDE.md
+```
+
+Esto abre el archivo en Cursor donde puedes editarlo cómodamente. Agrega algo así:
 
 ```
 Soy product manager.
@@ -65,7 +75,9 @@ Usa bullet points en vez de párrafos largos.
 Siempre explica las cosas en lenguaje simple, no técnico.
 ```
 
-Guarda el archivo (`Cmd+S`) y listo.
+Guarda el archivo (`Cmd+S` en Mac, `Ctrl+S` en Windows) y listo.
+
+> **Nota:** También puedes usar `/memory` y seleccionar "Edit User memory", pero eso abre un editor de terminal (vim) que puede ser confuso. El comando `! open` es más simple porque abre el archivo directamente en Cursor.
 
 ### Paso 2: Configura tu Project memory
 
@@ -97,15 +109,7 @@ Contexto importante:
 
 Revísalo, ajusta lo que falte, guarda y listo.
 
-> **Hazlo un hábito.** Cada vez que abras una carpeta de proyecto nueva, ejecuta `/init` primero. Te toma 30 segundos y Claude empieza cada conversación sabiendo en que estas trabajando.
-
-### Paso 3: Ve la diferencia
-
-Ahora inicia una conversación nueva (`/clear`) y pregunta:
-
-> `¿En qué deberíamos enfocarnos para el próximo trimestre?`
-
-Sin memoria, Claude no tendría idea de qué significa "deberíamos" ni de qué proyecto estás hablando. Con memoria, sabe que eres un PM trabajando en un análisis competitivo de Nike, y te da una respuesta relevante y enfocada.
+> **Hazlo un hábito.** Cada vez que abras una carpeta de proyecto nueva, ejecuta `/init` primero. Te toma 30 segundos y Claude empieza cada conversación sabiendo en qué estás trabajando.
 
 ## Adiciones rápidas a la memoria
 
@@ -123,7 +127,7 @@ Claude las agregará a tu memoria de proyecto automáticamente.
 
 **Actualízala regularmente.** A medida que tu proyecto evoluciona, actualiza la memoria. Elimina cosas que ya no son verdad. Agrega nuevo contexto conforme lo aprendes.
 
-**Sé específico.** "Me gustan las respuestas cortas" está bien. "Mantén los resúmenes en menos de 200 palabras y usa bullet points" es mejor.
+**Sé específico.** La misma regla que con la voz — la vaguedad es el enemigo:
 
 | Buenas entradas de memoria | Entradas menos útiles |
 |---|---|
@@ -142,9 +146,24 @@ Cuando ambas memorias están configuradas, Claude las lee al inicio de cada conv
 
 Por ejemplo: si tu User Memory dice "usa EUR para moneda" pero la Project Memory dice "usa USD", Claude usará USD para ese proyecto.
 
+## El bucle de aprendizaje
+
+La mayor diferencia entre los buenos y los excelentes usuarios de Claude Code es el **bucle de aprendizaje**. Después de cada proyecto o sesión:
+
+1. **Anota qué funcionó** — qué prompts dieron buenos resultados a la primera?
+2. **Anota qué no funcionó** — dónde fue Claude en la dirección equivocada?
+3. **Actualiza tu CLAUDE.md** — añade las lecciones para que Claude no repita errores
+
+```
+Añade a mi memoria de proyecto: "Cuando crees informes, siempre
+incluye un resumen ejecutivo arriba. El equipo se quejó la
+última vez cuando estaba enterrado al final."
+```
+
+Con el tiempo, tu CLAUDE.md se convierte en un documento vivo que hace a Claude más inteligente con cada proyecto. Las personas que sacan más valor de Claude Code son las que iteran en sus archivos de memoria — no las que escriben los mejores prompts.
+
 ## Lo que la memoria NO es
 
 La memoria **no** es un historial de conversaciones. Claude no recuerda de qué hablaste ayer. La memoria es un conjunto de instrucciones y contexto que Claude lee de nuevo cada vez.
 
 Piensa en ella como un documento de briefing que le entregas a un nuevo miembro del equipo en su primer día — no ha estado en tus reuniones, pero si el briefing es bueno, puede ponerse al día rápidamente.
-

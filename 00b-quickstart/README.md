@@ -1,4 +1,4 @@
-# Setting Up Claude Code
+# Install & Open Claude Code
 
 ## What you need
 
@@ -29,35 +29,23 @@ That's it. It installs automatically and keeps itself up to date.
 >
 > ⚠️ **Heads up about what claude.ai may suggest:** the browser chat sometimes recommends installing Claude Code with `npm install -g @anthropic-ai/claude-code`. **Don't do this on Windows** — that path depends on Node.js, on PATH configuration, and ends in "command not found". If it suggests that, ignore it and re-run the `irm https://claude.ai/install.ps1 | iex` command above — that's the official installer and it doesn't need Node. On Mac/Linux, always use `curl ... install.sh | bash`.
 
-### Recommended: stop screen flickering
-
-Claude Code's terminal can flicker while it's working. To fix this, run this once:
-
-**Mac / Linux:**
-```bash
-echo 'export CLAUDE_CODE_NO_FLICKER=1' >> ~/.zshrc && source ~/.zshrc
-```
-
-**Windows PowerShell:**
-```powershell
-[System.Environment]::SetEnvironmentVariable('CLAUDE_CODE_NO_FLICKER', '1', 'User')
-```
-
-This makes the terminal much smoother — you only need to do it once.
-
-## Step 2: Start Claude Code
+## Step 2: Open Claude Code
 
 You should already have the `nike-analysis` folder open in Cursor from the [previous lesson](../00f-cursor/). If not, open it now: **File → Open Folder → Desktop → nike-analysis**.
 
-Open the terminal panel (**Cmd+J** on Mac, **Ctrl+J** on Windows) and type:
+The terminal is just the **bottom panel** in Cursor — think of it as a chat window that happens to be at the bottom of your editor. Open it with **Cmd+J** (Mac) or **Ctrl+J** (Windows) and type:
 
 ```
 claude
 ```
 
+![Typing claude in the terminal](./images/cursor-type-claude.png)
+
 The first time, you'll be asked to log in. Follow the prompts — it opens your browser to authenticate.
 
-Once logged in, you'll see a welcome screen like this — with the Nike project files on the left and Claude ready to chat at the bottom:
+> **Important:** you can't click with your mouse to select options in the terminal. Use the **arrow keys** (up/down) to move between options and **Enter** to confirm.
+
+Once logged in, you'll see the Nike project files on the left and Claude ready to chat at the bottom:
 
 ![Claude Code running in Cursor with the Nike project](/claude-code-running.png)
 
@@ -118,16 +106,35 @@ Here are more things you can ask Claude about the Nike project:
 
 > `draft an email to the team summarizing the key findings from the Nike analysis`
 
-## Essential commands to remember
+## When something goes wrong
+
+**The terminal shows an error you don't understand?**
+
+Don't worry. Just select the error text, copy it, and paste it directly into Claude:
+
+> `I got this error: [paste the error]. What does it mean and how do I fix it?`
+
+Claude will explain what happened and walk you through the fix. You can also paste errors into [claude.ai](https://claude.ai) (the browser chat) or the [Desktop App](https://claude.com/download).
+
+**Claude isn't starting?**
+
+If you type `claude` and see "command not found", go back to Step 1 and make sure the installation completed. Remember to close and reopen Cursor after installing.
+
+**The panel closed?**
+
+Press **Cmd + J** (Mac) or **Ctrl + J** (Windows) again to reopen it. Claude will still be running.
+
+## Essential commands and shortcuts
 
 | What to type | What it does |
 |-------------|-------------|
 | `claude` | Start a new session |
 | `claude -c` | Continue your last conversation |
 | `/help` | See all available commands |
-| `/clear` | Start fresh (clear conversation) |
 | `Esc` | Stop Claude mid-action |
 | `exit` or `Ctrl+C` | Exit Claude Code |
+| **Cmd/Ctrl + J** | Open or close the terminal panel |
+| **Up arrow** | Show your previous message |
 
 ## Power tip: Run multiple sessions in parallel
 
@@ -136,8 +143,13 @@ You're not limited to one Claude conversation at a time. In Cursor, you can open
 **How to do it:**
 
 1. Click the **+** icon in the terminal panel to open a new terminal
+
+![The + icon to create a new terminal](./images/cursor-new-terminal.png)
+
 2. Type `claude` in the new terminal to start a second session
 3. Repeat as many times as you want
+
+![Multiple Claude sessions running in parallel](./images/cursor-multiple-sessions.png)
 
 Now you can have Claude working on three things simultaneously:
 - **Terminal 1**: Analyzing your sales data
@@ -180,38 +192,32 @@ This is what your workspace should look like over time:
 ~/Desktop/Claude/
 ├── projects/                    ← one folder per project
 │   ├── nike-analysis/
-│   │   ├── data/                ← files you give Claude (CSVs, PDFs, exports)
-│   │   └── output/              ← files Claude creates (reports, summaries)
+│   │   ├── competitive-analysis.md
+│   │   ├── notes.txt
+│   │   └── sales-data.csv
 │   ├── q4-planning/
-│   │   ├── data/
-│   │   └── output/
 │   └── client-acme/
-│       ├── data/
-│       └── output/
 └── resources/                   ← shared across all projects
     ├── brand-guidelines.md
-    ├── competitor-list.csv
-    └── pricing-sheets/
+    └── competitor-list.csv
 ```
 
-**`projects/`** is where your work lives. Each project gets its own folder with `data/` (what you give Claude) and `output/` (what Claude creates for you).
+**`projects/`** is where your work lives. Each project gets its own folder — put your files and Claude's results all together in it.
 
 **`resources/`** is for reference material that applies across projects — brand guidelines, pricing sheets, competitor data. When Claude needs this info, you can tell it: "check the resources folder for our brand guidelines."
 
 ### The rules
 
 1. **One folder per project** — Claude works best with focused context. Don't mix Nike files with Q4 planning files.
-2. **`data/`** for inputs — everything you want Claude to read (spreadsheets, documents, exports)
-3. **`output/`** for results — everything Claude creates for you (reports, analysis, drafts)
-4. **`resources/`** for shared material — things that don't belong to any single project
+2. **`resources/`** for shared material — things that don't belong to any single project.
 
 ### Starting a new project
 
-Every time you start something new, create a folder inside `projects/` with `data/` and `output/` subfolders. Just use Finder (Mac) or File Explorer (Windows):
+Every time you start something new, create a folder inside `projects/`. Just use Finder (Mac) or File Explorer (Windows):
 
 1. Open `Desktop/Claude/projects/`
 2. Create a new folder with your project name (e.g., `my-new-project`)
-3. Inside it, create two folders: `data` and `output`
+3. Drop your files inside it
 
 Open the project folder in Cursor (**File → Open Folder**), open the terminal panel (**Cmd+J** / **Ctrl+J**), type `claude`, and you're ready to work.
 
@@ -220,4 +226,3 @@ Open the project folder in Cursor (**File → Open Folder**), open the terminal 
 > **Later in the course** you'll learn how to give each project its own memory so Claude remembers context between sessions.
 
 ## What's next?
-

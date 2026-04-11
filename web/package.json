@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prebuild": "cp -r ../resources/logos public/logos 2>/dev/null; cp -r ../resources/icons public/icons 2>/dev/null; cp -r ../resources/favicons public/favicons 2>/dev/null; mkdir -p public/exercise-images && for d in ../11-exercises/*/images; do cp -r \"$d\"/* public/exercise-images/ 2>/dev/null; done; true",
+    "prebuild": "cp -r ../resources/logos public/logos 2>/dev/null; cp -r ../resources/icons public/icons 2>/dev/null; cp -r ../resources/favicons public/favicons 2>/dev/null; mkdir -p public/lesson-images && for d in ../*/images; do cp -r \"$d\"/* public/lesson-images/ 2>/dev/null; done; for d in ../11-exercises/*/images; do cp -r \"$d\"/* public/lesson-images/ 2>/dev/null; done; true",
     "dev": "npm run prebuild && next dev",
     "build": "npm run prebuild && next build",
     "start": "next start",

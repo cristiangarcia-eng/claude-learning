@@ -1,0 +1,1271 @@
+{
+  "taxonomy_type": "company_industries",
+  "description": "Nova ATS company-industries taxonomy (legacy import, never cleaned). Known hygiene issues: duplicates (exact/case/whitespace/translation/synonym), typos, misclassifications, orphan parent references, catch-alls, granularity inconsistencies.",
+  "entries": [
+    {
+      "id": "t0001",
+      "name": "Technology",
+      "parent_id": null
+    },
+    {
+      "id": "t0002",
+      "name": "Software",
+      "parent_id": "t0001"
+    },
+    {
+      "id": "t0003",
+      "name": "SaaS",
+      "parent_id": "t0002"
+    },
+    {
+      "id": "t0004",
+      "name": "Mobile Apps",
+      "parent_id": "t0002"
+    },
+    {
+      "id": "t0005",
+      "name": "Web Development",
+      "parent_id": "t0002"
+    },
+    {
+      "id": "t0006",
+      "name": "DevTools",
+      "parent_id": "t0002"
+    },
+    {
+      "id": "t0007",
+      "name": "Open Source",
+      "parent_id": "t0002"
+    },
+    {
+      "id": "t0008",
+      "name": "Data & Analytics",
+      "parent_id": "t0001"
+    },
+    {
+      "id": "t0009",
+      "name": "Big Data",
+      "parent_id": "t0008"
+    },
+    {
+      "id": "t0010",
+      "name": "Business Intelligence",
+      "parent_id": "t0008"
+    },
+    {
+      "id": "t0011",
+      "name": "Data Engineering",
+      "parent_id": "t0008"
+    },
+    {
+      "id": "t0012",
+      "name": "Artificial Intelligence",
+      "parent_id": "t0001"
+    },
+    {
+      "id": "t0013",
+      "name": "Machine Learning",
+      "parent_id": "t0012"
+    },
+    {
+      "id": "t0014",
+      "name": "Computer Vision",
+      "parent_id": "t0012"
+    },
+    {
+      "id": "t0015",
+      "name": "Natural Language Processing",
+      "parent_id": "t0012"
+    },
+    {
+      "id": "t0016",
+      "name": "Generative AI",
+      "parent_id": "t0012"
+    },
+    {
+      "id": "t0017",
+      "name": "Robotics",
+      "parent_id": "t0001"
+    },
+    {
+      "id": "t0018",
+      "name": "Cybersecurity",
+      "parent_id": "t0001"
+    },
+    {
+      "id": "t0019",
+      "name": "Cloud Infrastructure",
+      "parent_id": "t0001"
+    },
+    {
+      "id": "t0020",
+      "name": "Hardware",
+      "parent_id": "t0001"
+    },
+    {
+      "id": "t0021",
+      "name": "Semiconductors",
+      "parent_id": "t0001"
+    },
+    {
+      "id": "t0022",
+      "name": "IoT",
+      "parent_id": "t0001"
+    },
+    {
+      "id": "t0023",
+      "name": "AR/VR",
+      "parent_id": "t0001"
+    },
+    {
+      "id": "t0024",
+      "name": "Blockchain",
+      "parent_id": "t0001"
+    },
+    {
+      "id": "t0025",
+      "name": "Crypto",
+      "parent_id": "t0024"
+    },
+    {
+      "id": "t0026",
+      "name": "Web3",
+      "parent_id": "t0024"
+    },
+    {
+      "id": "t0027",
+      "name": "Quantum Computing",
+      "parent_id": "t0001"
+    },
+    {
+      "id": "t0028",
+      "name": "FinTech",
+      "parent_id": "t0041"
+    },
+    {
+      "id": "t0029",
+      "name": "AdTech",
+      "parent_id": "t0001"
+    },
+    {
+      "id": "t0030",
+      "name": "HealthTech",
+      "parent_id": "t0001"
+    },
+    {
+      "id": "t0031",
+      "name": "EdTech",
+      "parent_id": "t0001"
+    },
+    {
+      "id": "t0032",
+      "name": "PropTech",
+      "parent_id": "t0001"
+    },
+    {
+      "id": "t0033",
+      "name": "LegalTech",
+      "parent_id": "t0001"
+    },
+    {
+      "id": "t0034",
+      "name": "HRTech",
+      "parent_id": "t0001"
+    },
+    {
+      "id": "t0035",
+      "name": "InsurTech",
+      "parent_id": "t0001"
+    },
+    {
+      "id": "t0036",
+      "name": "CleanTech",
+      "parent_id": "t0001"
+    },
+    {
+      "id": "t0037",
+      "name": "AgriTech",
+      "parent_id": "t0001"
+    },
+    {
+      "id": "t0038",
+      "name": "FoodTech",
+      "parent_id": "t0001"
+    },
+    {
+      "id": "t0039",
+      "name": "TravelTech",
+      "parent_id": "t0001"
+    },
+    {
+      "id": "t0040",
+      "name": "SportsTech",
+      "parent_id": "t0001"
+    },
+    {
+      "id": "t0041",
+      "name": "Finance",
+      "parent_id": null
+    },
+    {
+      "id": "t0042",
+      "name": "Banking",
+      "parent_id": "t0041"
+    },
+    {
+      "id": "t0043",
+      "name": "Investment Banking",
+      "parent_id": "t0042"
+    },
+    {
+      "id": "t0044",
+      "name": "Retail Banking",
+      "parent_id": "t0042"
+    },
+    {
+      "id": "t0045",
+      "name": "Private Equity",
+      "parent_id": "t0041"
+    },
+    {
+      "id": "t0046",
+      "name": "Venture Capital",
+      "parent_id": "t0041"
+    },
+    {
+      "id": "t0047",
+      "name": "Asset Management",
+      "parent_id": "t0041"
+    },
+    {
+      "id": "t0048",
+      "name": "Hedge Funds",
+      "parent_id": "t0041"
+    },
+    {
+      "id": "t0049",
+      "name": "Insurance",
+      "parent_id": null
+    },
+    {
+      "id": "t0050",
+      "name": "Life Insurance",
+      "parent_id": "t0049"
+    },
+    {
+      "id": "t0051",
+      "name": "Property Insurance",
+      "parent_id": "t0049"
+    },
+    {
+      "id": "t0052",
+      "name": "Reinsurance",
+      "parent_id": "t0049"
+    },
+    {
+      "id": "t0053",
+      "name": "Accounting",
+      "parent_id": "t0041"
+    },
+    {
+      "id": "t0054",
+      "name": "Auditing",
+      "parent_id": "t0041"
+    },
+    {
+      "id": "t0055",
+      "name": "Payments",
+      "parent_id": "t0041"
+    },
+    {
+      "id": "t0056",
+      "name": "Trading",
+      "parent_id": "t0041"
+    },
+    {
+      "id": "t0057",
+      "name": "Healthcare",
+      "parent_id": null
+    },
+    {
+      "id": "t0058",
+      "name": "Hospitals",
+      "parent_id": "t0057"
+    },
+    {
+      "id": "t0059",
+      "name": "Clinics",
+      "parent_id": "t0057"
+    },
+    {
+      "id": "t0060",
+      "name": "Medical Devices",
+      "parent_id": "t0057"
+    },
+    {
+      "id": "t0061",
+      "name": "Diagnostics",
+      "parent_id": "t0057"
+    },
+    {
+      "id": "t0062",
+      "name": "Telemedicine",
+      "parent_id": "t0057"
+    },
+    {
+      "id": "t0063",
+      "name": "Mental Health",
+      "parent_id": "t0057"
+    },
+    {
+      "id": "t0064",
+      "name": "Dental",
+      "parent_id": "t0057"
+    },
+    {
+      "id": "t0065",
+      "name": "Life Sciences",
+      "parent_id": null
+    },
+    {
+      "id": "t0066",
+      "name": "Biotech",
+      "parent_id": "t0057"
+    },
+    {
+      "id": "t0067",
+      "name": "Pharmaceuticals",
+      "parent_id": "t0057"
+    },
+    {
+      "id": "t0068",
+      "name": "Genomics",
+      "parent_id": "t0065"
+    },
+    {
+      "id": "t0069",
+      "name": "Clinical Research",
+      "parent_id": "t0065"
+    },
+    {
+      "id": "t0070",
+      "name": "Retail",
+      "parent_id": null
+    },
+    {
+      "id": "t0071",
+      "name": "E-commerce",
+      "parent_id": "t0080"
+    },
+    {
+      "id": "t0072",
+      "name": "Marketplace",
+      "parent_id": "t0071"
+    },
+    {
+      "id": "t0073",
+      "name": "Fashion",
+      "parent_id": "t0070"
+    },
+    {
+      "id": "t0074",
+      "name": "Luxury",
+      "parent_id": "t0070"
+    },
+    {
+      "id": "t0075",
+      "name": "Grocery",
+      "parent_id": "t0070"
+    },
+    {
+      "id": "t0076",
+      "name": "Consumer Goods",
+      "parent_id": null
+    },
+    {
+      "id": "t0077",
+      "name": "Food & Beverage",
+      "parent_id": "t0076"
+    },
+    {
+      "id": "t0078",
+      "name": "Beauty & Personal Care",
+      "parent_id": "t0076"
+    },
+    {
+      "id": "t0079",
+      "name": "Household Products",
+      "parent_id": "t0076"
+    },
+    {
+      "id": "t0080",
+      "name": "Manufacturing",
+      "parent_id": null
+    },
+    {
+      "id": "t0081",
+      "name": "Automotive",
+      "parent_id": "t0080"
+    },
+    {
+      "id": "t0082",
+      "name": "Heavy Machinery",
+      "parent_id": "t0080"
+    },
+    {
+      "id": "t0083",
+      "name": "Electronics Manufacturing",
+      "parent_id": "t0080"
+    },
+    {
+      "id": "t0084",
+      "name": "Textiles",
+      "parent_id": "t0080"
+    },
+    {
+      "id": "t0085",
+      "name": "Energy",
+      "parent_id": null
+    },
+    {
+      "id": "t0086",
+      "name": "Oil & Gas",
+      "parent_id": "t0085"
+    },
+    {
+      "id": "t0087",
+      "name": "Renewables",
+      "parent_id": "t0085"
+    },
+    {
+      "id": "t0088",
+      "name": "Solar",
+      "parent_id": "t0087"
+    },
+    {
+      "id": "t0089",
+      "name": "Wind",
+      "parent_id": "t0087"
+    },
+    {
+      "id": "t0090",
+      "name": "Nuclear",
+      "parent_id": "t0085"
+    },
+    {
+      "id": "t0091",
+      "name": "Utilities",
+      "parent_id": "t0085"
+    },
+    {
+      "id": "t0092",
+      "name": "Real Estate",
+      "parent_id": null
+    },
+    {
+      "id": "t0093",
+      "name": "Residential",
+      "parent_id": "t0092"
+    },
+    {
+      "id": "t0094",
+      "name": "Commercial",
+      "parent_id": "t0092"
+    },
+    {
+      "id": "t0095",
+      "name": "Construction",
+      "parent_id": null
+    },
+    {
+      "id": "t0096",
+      "name": "Transportation",
+      "parent_id": null
+    },
+    {
+      "id": "t0097",
+      "name": "Aviation",
+      "parent_id": "t0096"
+    },
+    {
+      "id": "t0098",
+      "name": "Maritime",
+      "parent_id": "t0096"
+    },
+    {
+      "id": "t0099",
+      "name": "Rail",
+      "parent_id": "t0096"
+    },
+    {
+      "id": "t0100",
+      "name": "Logistics",
+      "parent_id": null
+    },
+    {
+      "id": "t0101",
+      "name": "Shipping",
+      "parent_id": "t0100"
+    },
+    {
+      "id": "t0102",
+      "name": "Warehousing",
+      "parent_id": "t0100"
+    },
+    {
+      "id": "t0103",
+      "name": "Supply Chain",
+      "parent_id": "t0041"
+    },
+    {
+      "id": "t0104",
+      "name": "Media & Entertainment",
+      "parent_id": null
+    },
+    {
+      "id": "t0105",
+      "name": "Streaming",
+      "parent_id": "t0104"
+    },
+    {
+      "id": "t0106",
+      "name": "Film",
+      "parent_id": "t0104"
+    },
+    {
+      "id": "t0107",
+      "name": "Music",
+      "parent_id": "t0104"
+    },
+    {
+      "id": "t0108",
+      "name": "Publishing",
+      "parent_id": "t0104"
+    },
+    {
+      "id": "t0109",
+      "name": "Gaming",
+      "parent_id": "t0104"
+    },
+    {
+      "id": "t0110",
+      "name": "News",
+      "parent_id": "t0104"
+    },
+    {
+      "id": "t0111",
+      "name": "Telecommunications",
+      "parent_id": null
+    },
+    {
+      "id": "t0112",
+      "name": "Mobile Carriers",
+      "parent_id": "t0111"
+    },
+    {
+      "id": "t0113",
+      "name": "Satellite",
+      "parent_id": "t0111"
+    },
+    {
+      "id": "t0114",
+      "name": "Education",
+      "parent_id": null
+    },
+    {
+      "id": "t0115",
+      "name": "K-12",
+      "parent_id": "t0114"
+    },
+    {
+      "id": "t0116",
+      "name": "Higher Education",
+      "parent_id": "t0114"
+    },
+    {
+      "id": "t0117",
+      "name": "Online Learning",
+      "parent_id": "t0114"
+    },
+    {
+      "id": "t0118",
+      "name": "Consulting",
+      "parent_id": null
+    },
+    {
+      "id": "t0119",
+      "name": "Management Consulting",
+      "parent_id": "t0118"
+    },
+    {
+      "id": "t0120",
+      "name": "IT Consulting",
+      "parent_id": "t0118"
+    },
+    {
+      "id": "t0121",
+      "name": "Strategy Consulting",
+      "parent_id": "t0118"
+    },
+    {
+      "id": "t0122",
+      "name": "Legal",
+      "parent_id": null
+    },
+    {
+      "id": "t0123",
+      "name": "Law Firms",
+      "parent_id": "t0122"
+    },
+    {
+      "id": "t0124",
+      "name": "Government",
+      "parent_id": null
+    },
+    {
+      "id": "t0125",
+      "name": "Non-Profit",
+      "parent_id": null
+    },
+    {
+      "id": "t0126",
+      "name": "NGO",
+      "parent_id": "t0125"
+    },
+    {
+      "id": "t0127",
+      "name": "Hospitality",
+      "parent_id": null
+    },
+    {
+      "id": "t0128",
+      "name": "Hotels",
+      "parent_id": "t0127"
+    },
+    {
+      "id": "t0129",
+      "name": "Restaurants",
+      "parent_id": "t0127"
+    },
+    {
+      "id": "t0130",
+      "name": "Travel",
+      "parent_id": null
+    },
+    {
+      "id": "t0131",
+      "name": "Airlines",
+      "parent_id": "t0130"
+    },
+    {
+      "id": "t0132",
+      "name": "Tourism",
+      "parent_id": "t0130"
+    },
+    {
+      "id": "t0133",
+      "name": "Aerospace",
+      "parent_id": null
+    },
+    {
+      "id": "t0134",
+      "name": "Defense",
+      "parent_id": "t0133"
+    },
+    {
+      "id": "t0135",
+      "name": "Agriculture",
+      "parent_id": null
+    },
+    {
+      "id": "t0136",
+      "name": "Farming",
+      "parent_id": "t0135"
+    },
+    {
+      "id": "t0137",
+      "name": "Mining",
+      "parent_id": null
+    },
+    {
+      "id": "t0138",
+      "name": "Metals",
+      "parent_id": "t0137"
+    },
+    {
+      "id": "t0139",
+      "name": "Chemicals",
+      "parent_id": null
+    },
+    {
+      "id": "t0140",
+      "name": "Advertising",
+      "parent_id": null
+    },
+    {
+      "id": "t0141",
+      "name": "Marketing",
+      "parent_id": null
+    },
+    {
+      "id": "t0142",
+      "name": "Sports",
+      "parent_id": null
+    },
+    {
+      "id": "t0143",
+      "name": "Esports",
+      "parent_id": "t0142"
+    },
+    {
+      "id": "t0144",
+      "name": "technology",
+      "parent_id": null
+    },
+    {
+      "id": "t0145",
+      "name": "TECHNOLOGY",
+      "parent_id": null
+    },
+    {
+      "id": "t0146",
+      "name": "Tech",
+      "parent_id": null
+    },
+    {
+      "id": "t0147",
+      "name": "software",
+      "parent_id": "t0001"
+    },
+    {
+      "id": "t0148",
+      "name": "Software ",
+      "parent_id": null
+    },
+    {
+      "id": "t0149",
+      "name": "Software as a Service",
+      "parent_id": "t0002"
+    },
+    {
+      "id": "t0150",
+      "name": "saas",
+      "parent_id": null
+    },
+    {
+      "id": "t0151",
+      "name": "Fintech",
+      "parent_id": "t0001"
+    },
+    {
+      "id": "t0152",
+      "name": "fintech",
+      "parent_id": null
+    },
+    {
+      "id": "t0153",
+      "name": "FINTECH",
+      "parent_id": "t0001"
+    },
+    {
+      "id": "t0154",
+      "name": "Financial Technology",
+      "parent_id": null
+    },
+    {
+      "id": "t0155",
+      "name": "Healthtech",
+      "parent_id": "t0001"
+    },
+    {
+      "id": "t0156",
+      "name": "Health Tech",
+      "parent_id": null
+    },
+    {
+      "id": "t0157",
+      "name": "Edtech",
+      "parent_id": "t0001"
+    },
+    {
+      "id": "t0158",
+      "name": "Ed Tech",
+      "parent_id": null
+    },
+    {
+      "id": "t0159",
+      "name": "Education Technology",
+      "parent_id": "t0001"
+    },
+    {
+      "id": "t0160",
+      "name": "Proptech",
+      "parent_id": null
+    },
+    {
+      "id": "t0161",
+      "name": "Property Tech",
+      "parent_id": "t0001"
+    },
+    {
+      "id": "t0162",
+      "name": "Insurtech",
+      "parent_id": null
+    },
+    {
+      "id": "t0163",
+      "name": "Insurance Tech",
+      "parent_id": "t0001"
+    },
+    {
+      "id": "t0164",
+      "name": "finance",
+      "parent_id": null
+    },
+    {
+      "id": "t0165",
+      "name": "Finance ",
+      "parent_id": null
+    },
+    {
+      "id": "t0166",
+      "name": "Financial Services",
+      "parent_id": null
+    },
+    {
+      "id": "t0167",
+      "name": "banking",
+      "parent_id": "t0041"
+    },
+    {
+      "id": "t0168",
+      "name": "Banks",
+      "parent_id": null
+    },
+    {
+      "id": "t0169",
+      "name": "IB",
+      "parent_id": "t0042"
+    },
+    {
+      "id": "t0170",
+      "name": "I-Banking",
+      "parent_id": null
+    },
+    {
+      "id": "t0171",
+      "name": "VC",
+      "parent_id": "t0041"
+    },
+    {
+      "id": "t0172",
+      "name": "venture capital",
+      "parent_id": null
+    },
+    {
+      "id": "t0173",
+      "name": "PE",
+      "parent_id": "t0041"
+    },
+    {
+      "id": "t0174",
+      "name": "private equity",
+      "parent_id": null
+    },
+    {
+      "id": "t0175",
+      "name": "Health Care",
+      "parent_id": null
+    },
+    {
+      "id": "t0176",
+      "name": "health care",
+      "parent_id": null
+    },
+    {
+      "id": "t0177",
+      "name": "HEALTHCARE",
+      "parent_id": null
+    },
+    {
+      "id": "t0178",
+      "name": "Pharma",
+      "parent_id": null
+    },
+    {
+      "id": "t0179",
+      "name": "pharma",
+      "parent_id": "t0065"
+    },
+    {
+      "id": "t0180",
+      "name": "Pharmaceutical",
+      "parent_id": null
+    },
+    {
+      "id": "t0181",
+      "name": "Biotechnology",
+      "parent_id": "t0065"
+    },
+    {
+      "id": "t0182",
+      "name": "biotech",
+      "parent_id": null
+    },
+    {
+      "id": "t0183",
+      "name": "Bio-Tech",
+      "parent_id": "t0065"
+    },
+    {
+      "id": "t0184",
+      "name": "Ecommerce",
+      "parent_id": null
+    },
+    {
+      "id": "t0185",
+      "name": "eCommerce",
+      "parent_id": "t0070"
+    },
+    {
+      "id": "t0186",
+      "name": "E commerce",
+      "parent_id": null
+    },
+    {
+      "id": "t0187",
+      "name": "E-Commerce",
+      "parent_id": "t0070"
+    },
+    {
+      "id": "t0188",
+      "name": "FMCG",
+      "parent_id": null
+    },
+    {
+      "id": "t0189",
+      "name": "CPG",
+      "parent_id": null
+    },
+    {
+      "id": "t0190",
+      "name": "consumer goods",
+      "parent_id": null
+    },
+    {
+      "id": "t0191",
+      "name": "F&B",
+      "parent_id": "t0076"
+    },
+    {
+      "id": "t0192",
+      "name": "Food and Beverage",
+      "parent_id": null
+    },
+    {
+      "id": "t0193",
+      "name": "manufacturing",
+      "parent_id": null
+    },
+    {
+      "id": "t0194",
+      "name": "Manufacturing ",
+      "parent_id": null
+    },
+    {
+      "id": "t0195",
+      "name": "Auto",
+      "parent_id": "t0080"
+    },
+    {
+      "id": "t0196",
+      "name": "Car Manufacturing",
+      "parent_id": null
+    },
+    {
+      "id": "t0197",
+      "name": "Oil and Gas",
+      "parent_id": "t0085"
+    },
+    {
+      "id": "t0198",
+      "name": "O&G",
+      "parent_id": null
+    },
+    {
+      "id": "t0199",
+      "name": "Renewable Energy",
+      "parent_id": "t0085"
+    },
+    {
+      "id": "t0200",
+      "name": "renewables",
+      "parent_id": null
+    },
+    {
+      "id": "t0201",
+      "name": "Clean Energy",
+      "parent_id": "t0085"
+    },
+    {
+      "id": "t0202",
+      "name": "Telecomunications",
+      "parent_id": null
+    },
+    {
+      "id": "t0203",
+      "name": "Telecom",
+      "parent_id": null
+    },
+    {
+      "id": "t0204",
+      "name": "Telco",
+      "parent_id": null
+    },
+    {
+      "id": "t0205",
+      "name": "telecommunications",
+      "parent_id": null
+    },
+    {
+      "id": "t0206",
+      "name": "Media",
+      "parent_id": null
+    },
+    {
+      "id": "t0207",
+      "name": "Entertainment",
+      "parent_id": null
+    },
+    {
+      "id": "t0208",
+      "name": "Media and Entertainment",
+      "parent_id": null
+    },
+    {
+      "id": "t0209",
+      "name": "Video Games",
+      "parent_id": "t0104"
+    },
+    {
+      "id": "t0210",
+      "name": "Videogames",
+      "parent_id": null
+    },
+    {
+      "id": "t0211",
+      "name": "videojuegos",
+      "parent_id": "t0104"
+    },
+    {
+      "id": "t0212",
+      "name": "transport",
+      "parent_id": null
+    },
+    {
+      "id": "t0213",
+      "name": "Transport",
+      "parent_id": null
+    },
+    {
+      "id": "t0214",
+      "name": "logistics",
+      "parent_id": null
+    },
+    {
+      "id": "t0215",
+      "name": "Logistica",
+      "parent_id": null
+    },
+    {
+      "id": "t0216",
+      "name": "SCM",
+      "parent_id": null
+    },
+    {
+      "id": "t0217",
+      "name": "supply chain",
+      "parent_id": "t0100"
+    },
+    {
+      "id": "t0218",
+      "name": "real estate",
+      "parent_id": null
+    },
+    {
+      "id": "t0219",
+      "name": "RE",
+      "parent_id": null
+    },
+    {
+      "id": "t0220",
+      "name": "hospitality",
+      "parent_id": null
+    },
+    {
+      "id": "t0221",
+      "name": "Hoteleria",
+      "parent_id": null
+    },
+    {
+      "id": "t0222",
+      "name": "hotels",
+      "parent_id": null
+    },
+    {
+      "id": "t0223",
+      "name": "Aeronautica",
+      "parent_id": null
+    },
+    {
+      "id": "t0224",
+      "name": "aerospace",
+      "parent_id": null
+    },
+    {
+      "id": "t0225",
+      "name": "consulting",
+      "parent_id": null
+    },
+    {
+      "id": "t0226",
+      "name": "Consultoria",
+      "parent_id": null
+    },
+    {
+      "id": "t0227",
+      "name": "Tech Consulting",
+      "parent_id": "t0118"
+    },
+    {
+      "id": "t0228",
+      "name": "Technology Consulting",
+      "parent_id": null
+    },
+    {
+      "id": "t0229",
+      "name": "education",
+      "parent_id": null
+    },
+    {
+      "id": "t0230",
+      "name": "Educacion",
+      "parent_id": null
+    },
+    {
+      "id": "t0231",
+      "name": "insurance",
+      "parent_id": "t0041"
+    },
+    {
+      "id": "t0232",
+      "name": "Seguros",
+      "parent_id": null
+    },
+    {
+      "id": "t0233",
+      "name": "advertising",
+      "parent_id": null
+    },
+    {
+      "id": "t0234",
+      "name": "Ads",
+      "parent_id": null
+    },
+    {
+      "id": "t0235",
+      "name": "Ads/Marketing",
+      "parent_id": null
+    },
+    {
+      "id": "t0236",
+      "name": "marketing",
+      "parent_id": null
+    },
+    {
+      "id": "t0237",
+      "name": "Marketing & Advertising",
+      "parent_id": null
+    },
+    {
+      "id": "t0238",
+      "name": "retail",
+      "parent_id": null
+    },
+    {
+      "id": "t0239",
+      "name": "agriculture",
+      "parent_id": null
+    },
+    {
+      "id": "t0240",
+      "name": "Agricultura",
+      "parent_id": null
+    },
+    {
+      "id": "t0241",
+      "name": "Other",
+      "parent_id": null
+    },
+    {
+      "id": "t0242",
+      "name": "Misc",
+      "parent_id": null
+    },
+    {
+      "id": "t0243",
+      "name": "General",
+      "parent_id": null
+    },
+    {
+      "id": "t0244",
+      "name": "Varios",
+      "parent_id": null
+    },
+    {
+      "id": "t0245",
+      "name": "Otros",
+      "parent_id": null
+    },
+    {
+      "id": "t0246",
+      "name": "N/A",
+      "parent_id": null
+    },
+    {
+      "id": "t0247",
+      "name": "Unknown",
+      "parent_id": null
+    },
+    {
+      "id": "t0248",
+      "name": "To Be Categorized",
+      "parent_id": null
+    },
+    {
+      "id": "t0249",
+      "name": "Uncategorized",
+      "parent_id": null
+    },
+    {
+      "id": "t0250",
+      "name": "Quantum Computing",
+      "parent_id": "t_ghost_01"
+    },
+    {
+      "id": "t0251",
+      "name": "Genomics",
+      "parent_id": "t_ghost_02"
+    },
+    {
+      "id": "t0252",
+      "name": "Warehousing",
+      "parent_id": "t_ghost_03"
+    },
+    {
+      "id": "t0253",
+      "name": "Podcasting",
+      "parent_id": "t_ghost_04"
+    }
+  ]
+}

@@ -23,12 +23,14 @@ const LEVEL_ICONS = {
   starter: Sparkles,
   pro: Rocket,
   projects: Zap,
+  extra: Brain,
 } as const;
 
 const LEVEL_COLORS = {
   starter: "text-brand-green",
   pro: "text-blue-500",
   projects: "text-orange-500",
+  extra: "text-purple-500",
 } as const;
 
 export default function ProgressPage() {
@@ -88,7 +90,7 @@ export default function ProgressPage() {
       </div>
 
       {/* Lessons by level */}
-      {(["starter", "pro", "projects"] as const).map((level) => {
+      {(["starter", "pro", "projects", "extra"] as const).map((level) => {
         const lessons = getLessonsByLevel(level);
         const Icon = LEVEL_ICONS[level];
         const levelCompleted = lessons.filter((l) =>
@@ -106,7 +108,6 @@ export default function ProgressPage() {
             <div className="space-y-2">
               {lessons.map((lesson) => {
                 const done = completed.has(lesson.slug);
-                const quiz = progress.quizScores[lesson.slug];
                 return (
                   <Link
                     key={lesson.slug}
@@ -124,11 +125,6 @@ export default function ProgressPage() {
                         {lesson.duration}
                       </span>
                     </div>
-                    {quiz && (
-                      <span className="text-xs text-muted-foreground">
-                        Quiz: {quiz.score}/{quiz.total}
-                      </span>
-                    )}
                   </Link>
                 );
               })}

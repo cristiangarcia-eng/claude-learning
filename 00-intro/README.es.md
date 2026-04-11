@@ -9,7 +9,7 @@ Probablemente has usado ChatGPT, Gemini o Claude en una ventana de chat. Escribe
 - **Lee tus archivos** — ve todo tu proyecto, no solo lo que le pegas
 - **Hace cambios** — edita archivos, crea nuevos, reorganiza contenido
 - **Ejecuta comandos** — puede buscar, analizar datos y ejecutar tareas
-- **Trabaja de forma autónoma** — tu describes lo que quieres, Claude descubre cómo hacerlo
+- **Trabaja de forma autónoma** — tú describes lo que quieres, Claude descubre cómo hacerlo
 
 Piénsalo así: el chat de IA normal es como enviar mensajes a un amigo inteligente pidiendo consejo. Claude Code es como tener a ese amigo sentándose en tu ordenador y haciendo el trabajo contigo.
 
@@ -33,7 +33,15 @@ Claude Code está disponible en varios sitios:
 
 ## Cómo lo vas a usar
 
-Claude Code vive en el **panel de terminal** — el panel inferior dentro de Cursor (tu editor de código). Lo abres, escribes `claude`, y empiezas a hablar. Ese es el único comando que necesitas saber.
+Todas las opciones de arriba funcionan muy bien. En este curso vamos a usar Claude Code dentro del **panel de terminal** de un editor de código — concretamente **Cursor** (aunque VS Code también funciona). Es la configuración más versátil porque:
+
+1. **Ves el código y la conversación lado a lado.** Claude edita archivos justo donde estás mirando — sin cambiar de ventana. Y a medida que Claude va creando archivos nuevos (scripts, CSVs, informes), los puedes abrir directamente en el editor, revisarlos y seguir interactuando.
+2. **Crea un hábito útil.** Incluso la App de Escritorio a veces te pide ejecutar un comando en la terminal. Si ya estás cómodo con la terminal, nunca te quedarás bloqueado.
+3. **Todo es transferible.** Una vez que aprendas Claude Code de esta forma, pasarte a cualquier otra superficie (App de Escritorio, web, móvil) es trivial — todas las habilidades, prompts y flujos de trabajo son exactamente los mismos.
+
+No te preocupes si esto suena desconocido — te guiaremos paso a paso: instalar Cursor, abrir la terminal y lanzar tu primera conversación con Claude.
+
+**En la práctica:** abres el panel de terminal en la parte inferior de Cursor, escribes `claude`, y empiezas a hablar. Ese es el único comando que necesitas saber.
 
 Una vez que Claude Code está funcionando, le hablas en español (o inglés). Sin comandos, sin código, sin sintaxis. Solo describe lo que quieres.
 

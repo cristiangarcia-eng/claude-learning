@@ -25,10 +25,11 @@ function SidebarContent({ onClose }: { onClose?: () => void }) {
   const pathname = usePathname();
   const locale = useLocale();
 
-  const LEVELS: { key: LessonMeta["level"]; labelKey: "startHere" | "pro" | "projects"; color: string }[] = [
+  const LEVELS: { key: LessonMeta["level"]; labelKey: "startHere" | "pro" | "projects" | "extra"; color: string }[] = [
     { key: "starter", labelKey: "startHere", color: "text-brand-green" },
     { key: "pro", labelKey: "pro", color: "text-blue-500" },
     { key: "projects", labelKey: "projects", color: "text-orange-500" },
+    { key: "extra", labelKey: "extra", color: "text-purple-500" },
   ];
 
   return (

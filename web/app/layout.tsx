@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Outfit, Geist_Mono } from "next/font/google";
-import { ThemeProvider } from "next-themes";
 import "./globals.css";
 
 const jakarta = Plus_Jakarta_Sans({
@@ -36,13 +35,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${jakarta.variable} ${outfit.variable} ${geistMono.variable} antialiased`}
-      suppressHydrationWarning
+      className={`dark ${jakarta.variable} ${outfit.variable} ${geistMono.variable} antialiased`}
     >
       <body className="min-h-screen">
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          {children}
-        </ThemeProvider>
+        {children}
       </body>
     </html>
   );

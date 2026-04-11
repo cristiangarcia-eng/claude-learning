@@ -18,19 +18,18 @@ interface ProgressContextValue {
   progress: Progress;
   loaded: boolean;
   toggleLessonComplete: (slug: string) => void;
-  saveQuizScore: (slug: string, score: number, total: number) => void;
 }
 
 const ProgressContext = createContext<ProgressContextValue | null>(null);
 
-const EMPTY: Progress = { completedLessons: [], quizScores: {} };
+const EMPTY: Progress = { completedLessons: [] };
 
 /** Convert server UserProgress to the client-facing Progress view */
 function toProgress(up: UserProgress): Progress {
   const completedLessons = Object.entries(up.lessons)
     .filter(([, v]) => v.completed)
     .map(([slug]) => slug);
-  return { completedLessons, quizScores: up.quizScores };
+  return { completedLessons };
 }
 
 export function ProgressProvider({ children }: { children: React.ReactNode }) {
@@ -54,8 +53,7 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
         const local = consumeLocalStorageProgress();
         if (
           local &&
-          (local.completedLessons.length > 0 ||
-            Object.keys(local.quizScores).length > 0)
+          local.completedLessons.length > 0
         ) {
           const importRes = await fetch("/api/progress/import", {
             method: "POST",
@@ -107,33 +105,9 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
     []
   );
 
-  const saveQuizScore = useCallback(
-    async (slug: string, score: number, total: number) => {
-      // Optimistic update
-      setProgress((prev) => ({
-        ...prev,
-        quizScores: {
-          ...prev.quizScores,
-          [slug]: { score, total, date: new Date().toISOString() },
-        },
-      }));
-
-      const res = await fetch(`/api/progress/quizzes/${slug}`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ score, total }),
-      });
-      if (res.ok) {
-        const updated = (await res.json()) as UserProgress;
-        setProgress(toProgress(updated));
-      }
-    },
-    []
-  );
-
   const value = useMemo(
-    () => ({ progress, loaded, toggleLessonComplete, saveQuizScore }),
-    [progress, loaded, toggleLessonComplete, saveQuizScore]
+    () => ({ progress, loaded, toggleLessonComplete }),
+    [progress, loaded, toggleLessonComplete]
   );
 
   return (

@@ -1,4 +1,4 @@
-# Configurar Claude Code
+# Instalar y Abrir Claude Code
 
 ## Lo que necesitas
 
@@ -25,39 +25,27 @@ Eso es todo. Se instala automáticamente y se mantiene actualizado.
 
 > **Importante: cierra Cursor del todo y vuelve a abrirlo** después de instalar. No basta con abrir una terminal nueva — Cursor tiene que releer las variables de entorno. Tras reabrir, escribe `claude` y debería arrancar.
 
-> **¿Problemas al instalar? No te preocupes.** Si ves errores, copia lo que muestra la terminal y pegalo en [claude.ai](https://claude.ai) (el chat del navegador). Describe lo que intentabas hacer y Claude te guiará.
+> **¿Problemas al instalar? No te preocupes.** Si ves errores, copia lo que muestra la terminal y pégalo en [claude.ai](https://claude.ai) (el chat del navegador). Describe lo que intentabas hacer y Claude te guiará.
 >
 > ⚠️ **Aviso importante sobre lo que te sugiera claude.ai:** el chat del navegador a veces recomienda instalar Claude Code con `npm install -g @anthropic-ai/claude-code`. **No lo hagas en Windows** — esa ruta depende de Node.js, del PATH, y acaba en "command not found". Si te lo sugiere, ignóralo y repite el comando `irm https://claude.ai/install.ps1 | iex` de arriba, que es el instalador oficial y no necesita Node. En Mac/Linux, usa siempre `curl ... install.sh | bash`.
 
-### Recomendado: eliminar el parpadeo de pantalla
-
-La terminal de Claude Code puede parpadear mientras trabaja. Para solucionarlo, ejecuta esto una sola vez:
-
-**Mac / Linux:**
-```bash
-echo 'export CLAUDE_CODE_NO_FLICKER=1' >> ~/.zshrc && source ~/.zshrc
-```
-
-**Windows PowerShell:**
-```powershell
-[System.Environment]::SetEnvironmentVariable('CLAUDE_CODE_NO_FLICKER', '1', 'User')
-```
-
-Esto hace que la terminal sea mucho más fluida — solo necesitas hacerlo una vez.
-
-## Paso 2: Inicia Claude Code
+## Paso 2: Abrir Claude Code
 
 Ya deberías tener la carpeta `nike-analysis` abierta en Cursor desde la [lección anterior](../00f-cursor/). Si no, ábrela ahora: **File → Open Folder → Escritorio → nike-analysis**.
 
-Abre el panel de terminal (**Cmd+J** en Mac, **Ctrl+J** en Windows) y escribe:
+La terminal es simplemente el **panel inferior** de Cursor — piensa en ella como una ventana de chat que está en la parte de abajo de tu editor. Ábrela con **Cmd+J** (Mac) o **Ctrl+J** (Windows) y escribe:
 
 ```
 claude
 ```
 
+![Escribiendo claude en la terminal](./images/cursor-type-claude.png)
+
 La primera vez, se te pedirá iniciar sesión. Sigue las instrucciones — se abrirá tu navegador para autenticarte.
 
-Una vez que inicies sesión, verás una pantalla como esta — con los archivos de Nike a la izquierda y Claude listo para conversar en la parte inferior:
+> **Importante:** en la terminal no puedes hacer clic con el ratón para elegir opciones. Usa las **flechas del teclado** (arriba/abajo) para moverte entre opciones y **Enter** para confirmar.
+
+Una vez que inicies sesión, verás los archivos de Nike a la izquierda y Claude listo para conversar en la parte inferior:
 
 ![Claude Code corriendo en Cursor con el proyecto Nike](/claude-code-running.png)
 
@@ -118,16 +106,35 @@ Aquí hay más cosas que puedes pedirle a Claude sobre el proyecto de Nike:
 
 > `redacta un email para el equipo resumiendo los hallazgos clave del análisis de Nike`
 
-## Comandos esenciales para recordar
+## Cuando algo sale mal
+
+**¿La terminal muestra un error que no entiendes?**
+
+No te preocupes. Solo selecciona el texto del error, cópialo, y pégalo directamente a Claude:
+
+> `Me salió este error: [pega el error]. ¿Qué significa y cómo lo arreglo?`
+
+Claude te explicará qué pasó y te guiará para solucionarlo. También puedes pegar errores en [claude.ai](https://claude.ai) (el chat del navegador) o en la [App de Escritorio](https://claude.com/download).
+
+**¿Claude no arranca?**
+
+Si escribes `claude` y ves "command not found", vuelve al Paso 1 y asegúrate de que la instalación se completó. Recuerda cerrar y reabrir Cursor después de instalar.
+
+**¿Se cerró el panel?**
+
+Presiona **Cmd + J** (Mac) o **Ctrl + J** (Windows) de nuevo para reabrirlo. Claude seguirá ejecutándose.
+
+## Comandos y atajos esenciales
 
 | Qué escribir | Qué hace |
 |-------------|-------------|
 | `claude` | Iniciar una nueva sesión |
 | `claude -c` | Continuar tu última conversación |
 | `/help` | Ver todos los comandos disponibles |
-| `/clear` | Empezar de cero (limpiar conversación) |
 | `Esc` | Detener a Claude a mitad de una acción |
 | `exit` o `Ctrl+C` | Salir de Claude Code |
+| **Cmd/Ctrl + J** | Abrir o cerrar el panel de terminal |
+| **Flecha arriba** | Mostrar tu mensaje anterior |
 
 ## Consejo avanzado: Ejecuta varias sesiones en paralelo
 
@@ -136,8 +143,13 @@ No estás limitado a una sola conversación con Claude a la vez. En Cursor, pued
 **Cómo hacerlo:**
 
 1. Haz clic en el icono **+** del panel de terminal para abrir una nueva terminal
+
+![El icono + para crear una nueva terminal](./images/cursor-new-terminal.png)
+
 2. Escribe `claude` en la nueva terminal para iniciar una segunda sesión
 3. Repite tantas veces como quieras
+
+![Varias sesiones de Claude ejecutándose en paralelo](./images/cursor-multiple-sessions.png)
 
 Ahora puedes tener a Claude trabajando en tres cosas a la vez:
 - **Terminal 1**: Analizando tus datos de ventas
@@ -180,38 +192,32 @@ Así debería verse tu espacio de trabajo con el tiempo:
 ~/Desktop/Claude/
 ├── projects/                    ← una carpeta por proyecto
 │   ├── nike-analysis/
-│   │   ├── data/                ← archivos que le das a Claude (CSVs, PDFs, exports)
-│   │   └── output/              ← archivos que Claude crea (informes, resúmenes)
+│   │   ├── competitive-analysis.md
+│   │   ├── notes.txt
+│   │   └── sales-data.csv
 │   ├── q4-planning/
-│   │   ├── data/
-│   │   └── output/
 │   └── client-acme/
-│       ├── data/
-│       └── output/
 └── resources/                   ← compartido entre todos los proyectos
     ├── brand-guidelines.md
-    ├── competitor-list.csv
-    └── pricing-sheets/
+    └── competitor-list.csv
 ```
 
-**`projects/`** es donde vive tu trabajo. Cada proyecto tiene su propia carpeta con `data/` (lo que le das a Claude) y `output/` (lo que Claude crea para ti).
+**`projects/`** es donde vive tu trabajo. Cada proyecto tiene su propia carpeta — pon tus archivos y los resultados de Claude juntos ahí.
 
 **`resources/`** es para material de referencia que aplica a varios proyectos — guías de marca, listas de precios, datos de competidores. Cuando Claude necesite esta info, puedes decirle: "revisa la carpeta resources para nuestras guías de marca."
 
 ### Las reglas
 
 1. **Una carpeta por proyecto** — Claude funciona mejor con contexto enfocado. No mezcles archivos de Nike con archivos de planificación de Q4.
-2. **`data/`** para inputs — todo lo que quieras que Claude lea (hojas de cálculo, documentos, exports)
-3. **`output/`** para resultados — todo lo que Claude crea para ti (informes, análisis, borradores)
-4. **`resources/`** para material compartido — cosas que no pertenecen a un solo proyecto
+2. **`resources/`** para material compartido — cosas que no pertenecen a un solo proyecto.
 
 ### Empezar un proyecto nuevo
 
-Cada vez que empieces algo nuevo, crea una carpeta dentro de `projects/` con subcarpetas `data/` y `output/`. Simplemente usa Finder (Mac) o Explorador de Archivos (Windows):
+Cada vez que empieces algo nuevo, crea una carpeta dentro de `projects/`. Simplemente usa Finder (Mac) o Explorador de Archivos (Windows):
 
 1. Abre `Escritorio/Claude/projects/`
 2. Crea una nueva carpeta con el nombre de tu proyecto (ej. `mi-nuevo-proyecto`)
-3. Dentro, crea dos carpetas: `data` y `output`
+3. Mete tus archivos dentro
 
 Abre la carpeta del proyecto en Cursor (**File → Open Folder**), abre el panel de terminal (**Cmd+J** / **Ctrl+J**), escribe `claude`, y listo.
 
@@ -220,4 +226,3 @@ Abre la carpeta del proyecto en Cursor (**File → Open Folder**), abre el panel
 > **Más adelante en el curso** aprenderás a darle memoria a cada proyecto para que Claude recuerde el contexto entre sesiones.
 
 ## ¿Qué sigue?
-

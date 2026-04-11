@@ -6,6 +6,14 @@ import { type Locale, DEFAULT_LOCALE } from "./i18n";
 
 const CONTENT_ROOT = path.join(/*turbopackIgnore: true*/ process.cwd(), "..");
 
+/** Rewrite relative image paths in markdown to /lesson-images/ public paths */
+function rewriteImagePaths(markdown: string): string {
+  return markdown
+    .replace(/\(\.?\/?(resources\/logos\/)/g, "(/logos/")
+    .replace(/\(\.?\/?(resources\/icons\/)/g, "(/icons/")
+    .replace(/\(\.?\/?images\//g, "(/lesson-images/");
+}
+
 export interface LessonFile {
   slug: string;
   title: string;
@@ -60,7 +68,7 @@ export function getLessonContent(
   const { data, content } = matter(raw);
 
   return {
-    markdown: content,
+    markdown: rewriteImagePaths(content),
     frontmatter: data,
     title: extractTitle(content, fileSlug || lesson.title),
   };

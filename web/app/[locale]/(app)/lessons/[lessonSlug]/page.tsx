@@ -60,7 +60,7 @@ export default async function LessonPage({
         <div className="mb-8">
           <div className="flex items-center gap-3 mb-3">
             <Badge variant="outline" className={levelColors[lesson.level]}>
-              {lesson.level}
+              {lesson.level.charAt(0).toUpperCase() + lesson.level.slice(1)}
             </Badge>
             <span className="flex items-center gap-1 text-sm text-muted-foreground">
               <Clock className="h-3.5 w-3.5" />

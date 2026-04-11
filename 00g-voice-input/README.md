@@ -1,8 +1,39 @@
 # Working with Your Voice
 
-One of the biggest productivity boosts with Claude Code is **not typing at all**. Instead of writing out your requests, just say them out loud.
+> **This is possibly the most important lesson in the entire course.**
 
-This is especially powerful for non-developers — you can describe what you want in natural, conversational language without worrying about formatting or syntax.
+*Why on earth is there a lesson about talking with your voice in an AI course?*
+
+Because if there's one thing that determines whether AI gives you great results or mediocre ones, it's a single factor: **the context you provide**. By far the most important factor. More than knowing the perfect prompt, more than learning advanced tricks — what makes the difference is whether the AI truly understands your situation.
+
+And here's the key discovery: **voice dramatically improves your context**.
+
+When you type, you tend to summarize, simplify, and cut to the chase. You skip details that seem obvious. The result is a short, vague prompt that produces generic responses.
+
+When you speak, the opposite happens. You naturally share more: the problem you're facing, how you'd thought about solving it, what you've already tried, the project context, why it matters... All that additional information is exactly what the AI needs to give you a truly useful response.
+
+### The golden rule
+
+**Talk to the AI like you'd talk to a colleague.** Do it in a structured or unstructured way, however it comes to mind, but speak instead of typing:
+
+- Tell it the problem you're trying to solve
+- Tell it the options you'd considered
+- Tell it the project context — who will use it, what constraints exist
+- Tell it what you've already tried and why it didn't work
+
+You don't need to organize your thoughts. That's the AI's job.
+
+> **Use the language you're most comfortable in.** If you think better in Spanish, speak in Spanish. If you mix languages, mix languages. What matters is that you express yourself naturally and with depth — not the language.
+
+### What you must always avoid
+
+**Never give vague answers to the AI.** This is equally important when speaking as when typing:
+
+- ❌ *"Make me something for the website"* → ✅ *"I need a pricing section for our website, with three plans: basic at 29, pro at 59, and custom enterprise. The audience is PMs at mid-size companies."*
+- ❌ *"Fix this"* → ✅ *"The contact form isn't sending the email. I think the problem is the API because the button does respond to clicks but nothing happens after."*
+- ❌ *"Improve the copy"* → ✅ *"The landing page copy sounds too technical. Our customers are marketing directors who don't know code. Make it more accessible without losing credibility."*
+
+Vagueness is the enemy of good results. Voice helps you avoid it because when you speak, you naturally provide more context.
 
 ## The recommended way: Wispr Flow
 
@@ -64,24 +95,12 @@ The difference is that `/voice` only works inside Claude Code, while Wispr Flow 
 
 > **Note for non-English speakers**: Claude's built-in `/voice` is optimized for English. If you speak Spanish or other languages, the transcription accuracy drops noticeably. Wispr Flow handles multiple languages much better, which is another reason we recommend it.
 
-## Voice dumps: skip the long brief
+## Voice dumps: the context you'd never type
 
-Instead of spending 20 minutes writing a detailed brief or requirements document, try a **voice dump** — just talk for 2-3 minutes straight, describing everything you want.
+Instead of spending 20 minutes writing a detailed brief, try a **voice dump** — just talk for 2-3 minutes straight, telling the AI everything it needs to know.
 
-For example, instead of typing a carefully structured project brief:
+The magic of the voice dump is that **you include context you'd never bother typing** — the team's complaint last time, the budget constraint nobody documented, the real reason this project matters.
 
-> Hold the Wispr Flow key and say: *"Okay so here's what I need — I want a competitive analysis of our top three competitors, focus on their pricing models and how they position themselves to enterprise customers. Make sure to include their free tier if they have one. Last time we did this the team complained that the format was hard to scan quickly, so use bullet points and keep each competitor to one page max. Oh and include a recommendation section at the end about where we should differentiate..."*
+> **Voice dumps are 3x faster than typing** and produce better results because the AI receives the complete context, not the summarized version.
 
-Claude will extract the key requirements from your stream of consciousness. You don't need to organize your thoughts perfectly — that's Claude's job.
-
-> **Voice dumps are 3x faster than typing** and often produce better results because you include details you'd skip when writing (like the formatting complaint from last time).
-
-## Tips for voice input
-
-- **Speak naturally** — don't try to "sound technical". Just describe what you want like you'd tell a colleague
-- **Be specific** — "Change the hero title to Welcome to Nova" works better than "Make the title different"
-- **Use pauses** — Wispr Flow handles natural pauses well, take your time
-- **Correct as you go** — if it transcribes something wrong, just fix it before pressing Enter
-
-> **This changes everything.** Once you get used to voice input, going back to typing feels painfully slow. Most people who try it never go back.
 

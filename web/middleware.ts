@@ -39,7 +39,7 @@ export function middleware(request: NextRequest) {
 
   // Auth check for protected routes
   const pathWithoutLocale = "/" + segments.slice(1).join("/");
-  const protectedPrefixes = ["/dashboard", "/lessons", "/quiz", "/progress"];
+  const protectedPrefixes = ["/dashboard", "/lessons", "/progress"];
   const isProtected = protectedPrefixes.some((prefix) =>
     pathWithoutLocale.startsWith(prefix)
   );

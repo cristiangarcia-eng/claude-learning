@@ -27,17 +27,9 @@ When you open Cursor for the first time, you'll see a welcome screen:
 
 ![Cursor welcome screen](/cursor-welcome.png)
 
-You can close it — we won't need it.
+Click **Open project** and select your Desktop folder (or any folder you like). This tells Cursor where to work — think of it as choosing which desk to sit at.
 
-## The sidebar: your file explorer
-
-For now, the only thing you need to know is the **Explorer** — the first icon in the left sidebar (it looks like two overlapping files). This is where you'll see all your project files and folders, just like Finder on Mac or File Explorer on Windows.
-
-We'll explore the other sidebar icons later in the course.
-
-## Your first project
-
-Let's open a real project so you can see Cursor in action.
+Once you open a folder, you'll see the **Explorer** on the left sidebar (it looks like two overlapping files). This is where all your project files and folders appear, just like Finder on Mac or File Explorer on Windows.
 
 ### Download the practice project
 
@@ -46,13 +38,19 @@ Let's open a real project so you can see Cursor in action.
 
 It's a simple competitive analysis of Nike with a few files inside.
 
+> **Before continuing**, make sure the unzipped `nike-analysis` folder is on your Desktop. The next steps assume it's there.
+
 ### Open it in Cursor
 
 1. Go to **File > Open Folder** (or `Cmd+O` on Mac)
+
+![File > Open Folder in Cursor](./images/cursor-open-folder.png)
 2. Navigate to your **Desktop** and select the `nike-analysis` folder
 3. Click **Open**
 
 You should see the files appear in the Explorer sidebar on the left. Click any file to open it — that's it!
+
+![Nike project open in Cursor](./images/cursor-nike-project.png)
 
 ### What's inside
 
@@ -68,6 +66,8 @@ Click each one to see how it looks inside Cursor.
 
 When you edit a file, you'll notice a **dot** appears on the tab next to the filename. That dot means you have **unsaved changes**.
 
+![Dot indicating unsaved changes in the tab](./images/cursor-unsaved-dot.png)
+
 To save: press `Cmd+S` (Mac) or `Ctrl+S` (Windows).
 
 > **Pro tip**: Go to **File > Auto Save** and enable it. Now your files save automatically — no more worrying about losing changes.
@@ -75,6 +75,8 @@ To save: press `Cmd+S` (Mac) or `Ctrl+S` (Windows).
 ## The built-in terminal
 
 Cursor has a terminal built right in. The easiest way to open it is pressing **Cmd+J** (Mac) or **Ctrl+J** (Windows).
+
+![Cursor without terminal open](./images/cursor-no-terminal.png)
 
 You can also click the **terminal icon** in the top-right area of the window:
 

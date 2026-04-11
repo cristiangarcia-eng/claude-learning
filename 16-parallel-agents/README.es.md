@@ -10,7 +10,7 @@ Con múltiples agentes, puedes dividir el trabajo entre varias instancias de Cla
 
 ### 1. Ejecución paralela
 
-Divide una tarea en partes independientes y ejecutalas simultáneamente.
+Divide una tarea en partes independientes y ejecútalas simultáneamente.
 
 **Ejemplo: Análisis competitivo**
 
@@ -50,7 +50,7 @@ Cada agente trae ideas creativas diferentes. Los nombres que múltiples agentes 
 
 ```
 Usa 3 agentes para evaluar independientemente los riesgos de
-lanzar en el mercado japones. Luego sintetiza: qué riesgos
+lanzar en el mercado japonés. Luego sintetiza: qué riesgos
 identificaron los 3? Qué solo capturó 1? Ordena por consenso.
 ```
 
@@ -58,13 +58,13 @@ identificaron los 3? Qué solo capturó 1? Ordena por consenso.
 
 Pasa el trabajo a través de una cadena de especialistas, cada uno aportando su experiencia.
 
-**Ejemplo: Produccion de contenido**
+**Ejemplo: Producción de contenido**
 
 ```
 Usa un pipeline de agentes:
 1. Agente investigador: recopilar datos de nuestro rendimiento Q3
-2. Agente escritor: redactar un informe a partir de la investigacion
-3. Agente editor: revisar claridad, tono y precision
+2. Agente escritor: redactar un informe a partir de la investigación
+3. Agente editor: revisar claridad, tono y precisión
 ```
 
 Cada agente se enfoca en lo que mejor hace, produciendo mayor calidad que un solo agente haciendo todo.
@@ -112,7 +112,7 @@ Simplemente describe lo que quieres en tu prompt. Claude se encarga de la orques
 
 ```
 Usa subagentes para investigar estos 4 mercados en paralelo:
-EEUU, UK, Alemania, Japon. Para cada uno, encuentra tamaño
+EEUU, UK, Alemania, Japón. Para cada uno, encuentra tamaño
 de mercado, top 3 competidores y requisitos regulatorios.
 Combina en un único informe comparativo.
 ```
@@ -122,8 +122,8 @@ Combina en un único informe comparativo.
 - **Investigación de mercado**: Analizar múltiples mercados o competidores simultáneamente
 - **Contenido a escala**: Generar variaciones de emails, copy publicitario o posts en paralelo
 - **Due diligence**: Múltiples agentes revisando diferentes aspectos de un deal
-- **Planificacion de eventos**: Agentes paralelos gestionando venues, catering y ponentes
-- **Contratacion**: Analizar múltiples perfiles de candidatos a la vez
+- **Planificación de eventos**: Agentes paralelos gestionando venues, catering y ponentes
+- **Contratación**: Analizar múltiples perfiles de candidatos a la vez
 
 ## Cuidado con los costos
 

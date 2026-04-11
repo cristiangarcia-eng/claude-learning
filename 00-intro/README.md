@@ -33,7 +33,15 @@ Claude Code is available in several places:
 
 ## How you'll use it
 
-Claude Code lives in the **terminal panel** — that's the bottom panel inside Cursor (your code editor). You open it, type `claude`, and start talking. That's the only command you need to know.
+All the options above work great. In this course we'll use Claude Code inside the **terminal panel** of a code editor — specifically **Cursor** (though VS Code works too). This is the most versatile setup because:
+
+1. **You see code and conversation side by side.** Claude edits files right where you're looking — no switching windows. And as Claude creates new files (scripts, CSVs, reports), you can open them instantly in the editor, review them, and keep the conversation going.
+2. **It builds a useful habit.** Even the Desktop App occasionally asks you to run a terminal command. If you're already comfortable with the terminal, you'll never get stuck.
+3. **Everything transfers.** Once you learn Claude Code this way, switching to any other surface (Desktop App, web, mobile) is trivial — all the skills, prompts, and workflows are exactly the same.
+
+Don't worry if this sounds unfamiliar — we'll walk you through every step: installing Cursor, opening the terminal, and running your first conversation with Claude.
+
+**In practice:** you open the terminal panel at the bottom of Cursor, type `claude`, and start talking. That's the only command you need to know.
 
 Once Claude Code is running, you talk to it in plain language. No commands, no code, no syntax. Just describe what you want.
 

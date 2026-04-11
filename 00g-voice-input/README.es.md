@@ -1,8 +1,39 @@
 # Trabaja con tu Voz
 
-Uno de los mayores impulsos de productividad con Claude Code es **no escribir nada**. En lugar de redactar tus solicitudes, simplemente dilas en voz alta.
+> **Esta es posiblemente la lección más importante de todo el curso.**
 
-Esto es especialmente poderoso para personas no técnicas — puedes describir lo que quieres en lenguaje natural y conversacional sin preocuparte por el formato o la sintaxis.
+*¿Por qué narices metemos una lección de hablar con la voz en un curso de IA?*
+
+Porque si hay algo que determina si la IA te da resultados buenos o mediocres, es una sola cosa: **el contexto que le das**. Con diferencia, es el factor más importante. Más que saber el prompt perfecto, más que conocer trucos avanzados — lo que marca la diferencia es que la IA entienda bien tu situación.
+
+Y aquí está el descubrimiento clave: **la voz mejora el contexto de forma brutal**.
+
+Cuando escribes, tiendes a resumir, a simplificar, a ir directo al grano. Te saltas detalles que parecen obvios. El resultado es un prompt corto y vago que produce respuestas genéricas.
+
+Cuando hablas, pasa lo contrario. Naturalmente cuentas más cosas: el problema que tienes, cómo habías pensado solucionarlo, qué has probado ya, el contexto del proyecto, por qué importa... Toda esa información adicional es exactamente lo que la IA necesita para darte una respuesta realmente útil.
+
+### La regla de oro
+
+**Cuéntale tus problemas a la IA como se los contarías a un colega.** Hazlo de forma estructurada o desestructurada, como te venga a la cabeza, pero habla en vez de escribir:
+
+- Cuéntale el problema que intentas resolver
+- Cuéntale las opciones que habías considerado
+- Cuéntale el contexto del proyecto — quién lo va a usar, qué restricciones hay
+- Cuéntale qué has probado ya y por qué no funcionó
+
+No necesitas organizar tus pensamientos. Eso es trabajo de la IA.
+
+> **Hazlo en el idioma donde te sientas más cómodo.** Si piensas mejor en español, habla en español. Si mezclas idiomas, mezcla idiomas. Lo que importa es que te expreses con naturalidad y profundidad — no el idioma.
+
+### Lo que debes evitar siempre
+
+**Nunca des respuestas vagas a la IA.** Esto es igual de importante al hablar que al escribir:
+
+- ❌ *"Hazme algo para la web"* → ✅ *"Necesito una sección de precios para nuestra web, con tres planes: básico a 29, pro a 59 y enterprise personalizado. El público son PMs de empresas medianas."*
+- ❌ *"Arregla esto"* → ✅ *"El formulario de contacto no envía el email. Creo que el problema está en la API porque el botón sí responde al click pero no pasa nada después."*
+- ❌ *"Mejora el texto"* → ✅ *"El texto de la landing suena muy técnico. Nuestros clientes son directores de marketing que no saben de código. Hazlo más accesible pero sin perder credibilidad."*
+
+La vaguedad es el enemigo de los buenos resultados. La voz te ayuda a evitarla porque cuando hablas, naturalmente das más contexto.
 
 ## La forma recomendada: Wispr Flow
 
@@ -64,24 +95,12 @@ La diferencia es que `/voice` solo funciona dentro de Claude Code, mientras que 
 
 > **Nota para hispanohablantes**: El `/voice` integrado de Claude está optimizado para inglés. Si hablas en español u otros idiomas, la precisión de la transcripción baja bastante. Wispr Flow maneja múltiples idiomas mucho mejor, lo cual es otra razón por la que lo recomendamos.
 
-## Voice dumps: sáltate el brief largo
+## Voice dumps: el contexto que nunca escribirías
 
-En vez de pasar 20 minutos escribiendo un brief detallado o un documento de requisitos, prueba un **voice dump** — simplemente habla durante 2-3 minutos seguidos, describiendo todo lo que quieres.
+En vez de pasar 20 minutos escribiendo un brief detallado, prueba un **voice dump** — simplemente habla durante 2-3 minutos seguidos, contando todo lo que la IA necesita saber.
 
-Por ejemplo, en vez de escribir un brief de proyecto cuidadosamente estructurado:
+La magia del voice dump es que **incluyes contexto que nunca te molestarías en escribir** — la queja del equipo la última vez, la restricción que nadie documentó, la razón real por la que el proyecto importa.
 
-> Mantén la tecla de Wispr Flow y di: *"A ver, lo que necesito es un análisis competitivo de nuestros tres principales competidores, enfócate en sus modelos de precios y cómo se posicionan ante clientes enterprise. Asegúrate de incluir su nivel gratuito si tienen uno. La última vez que hicimos esto el equipo se quejó de que el formato era difícil de escanear rápido, así que usa viñetas y mantén cada competidor en una página máximo. Ah y incluye una sección de recomendaciones al final sobre dónde deberíamos diferenciarnos..."*
+> **Los voice dumps son 3x más rápidos que escribir** y producen mejores resultados porque la IA recibe el contexto completo, no la versión resumida.
 
-Claude extraerá los requisitos clave de tu flujo de consciencia. No necesitas organizar tus pensamientos perfectamente — ese es el trabajo de Claude.
-
-> **Los voice dumps son 3x más rápidos que escribir** y a menudo producen mejores resultados porque incluyes detalles que te saltarías al escribir (como la queja de formato de la última vez).
-
-## Consejos para la entrada por voz
-
-- **Habla con naturalidad** — no intentes "sonar técnico". Solo describe lo que quieres como se lo dirías a un colega
-- **Sé específico** — "Cambia el título principal a Bienvenido a Nova" funciona mejor que "Haz el título diferente"
-- **Usa pausas** — Wispr Flow maneja las pausas naturales bien, tómate tu tiempo
-- **Corrige sobre la marcha** — si transcribe algo mal, simplemente corrígelo antes de presionar Enter
-
-> **Esto lo cambia todo.** Una vez que te acostumbras a la entrada por voz, volver a escribir se siente dolorosamente lento. La mayoría de personas que lo prueban nunca vuelven atrás.
 

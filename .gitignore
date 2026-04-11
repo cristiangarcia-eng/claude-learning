@@ -37,6 +37,7 @@ yarn-error.log*
 
 # Environment variables
 .env
+.env.*
 .env.local
 .env.*.local
 
@@ -87,3 +88,4 @@ promo-video/
 *.mp4
 
 update-plan*.md
+.vercel

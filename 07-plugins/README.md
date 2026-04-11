@@ -90,12 +90,6 @@ Your organization may have its own plugin marketplace with company-specific tool
 - **Start small.** Install one or two plugins and learn them well before adding more.
 - **Disable, do not uninstall.** If you are not sure about a plugin, disable it temporarily instead of removing it. You can re-enable it later without reconfiguring.
 
-## Practice Exercise
-
-> **[Exercise 10: End-to-End Content Pipeline](../11-exercises/10-end-to-end-pipeline/)** — Execute a brief-to-document pipeline (research, outline, document, summary), then package it as a distributable plugin with a slash command, subagent, skill, and templates.
->
-> **Time:** 45 min | **Data:** Choose a brief for your role (sales, finance, HR, etc.)
-
 ## Additional Resources
 
 - [Official Plugins Documentation](https://code.claude.com/docs/en/plugins)

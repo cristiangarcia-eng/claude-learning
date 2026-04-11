@@ -102,7 +102,6 @@ Claude Code has a few built-in commands that start with `/`. You don't need to m
 | Command | What it does |
 |---------|-------------|
 | `/clear` | Starts a fresh conversation (use this often!) |
-| `/memory` | Opens your memory files — where Claude stores what it should remember about you and your project |
 | `/compact` | Summarizes a long conversation to free up space |
 | `/help` | Shows all available commands |
 | `/model` | Switches between Claude models (Haiku, Sonnet, Opus) |
@@ -129,7 +128,7 @@ Add that line to your `.bashrc` or `.zshrc` so it applies in every session.
 
 > **Note:** `max` is only available on Opus 4.6 — using it with Sonnet will throw an error.
 
-You'll learn more about `/memory` in the Memory lesson. For now, the most important one is `/clear` — use it every time you switch topics.
+The most important one is `/clear` — use it every time you switch topics.
 
 ## Permissions: you're always in control
 
@@ -167,9 +166,9 @@ Claude Code uses tokens (think of them as words) every time you have a conversat
 
 ## Key takeaways
 
-1. **Talk naturally** — Claude understands plain English
-2. **Claude always asks** before making changes
-3. **Use `/clear` often** — fresh context = better results
-4. **Plan mode is safe** — Claude can only read, not write
-5. **Everything is reversible** — Claude creates checkpoints you can rewind to
+1. **Don't expect perfection on the first try** — the value of AI is iteration speed, not getting it right the first time
+2. **Claude always asks before acting** — you approve every change, you never lose control
+3. **The context window is limited** — use `/clear` when switching topics and `/compact` if the conversation gets long
+4. **Use Opus 4.6 with max effort** — this is the configuration that gives the best results
+5. **Watch your usage** — `/cost` shows your session tokens, and claude.ai shows your monthly consumption
 

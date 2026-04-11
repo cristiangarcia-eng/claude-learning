@@ -14,21 +14,13 @@ export interface LessonProgress {
   lastPosition?: string;
 }
 
-export interface QuizScore {
-  score: number;
-  total: number;
-  date: string;
-}
-
 export interface UserProgress {
   lessons: Record<string, LessonProgress>;
-  quizScores: Record<string, QuizScore>;
   updatedAt: string;
 }
 
 const EMPTY_PROGRESS: UserProgress = {
   lessons: {},
-  quizScores: {},
   updatedAt: new Date().toISOString(),
 };
 

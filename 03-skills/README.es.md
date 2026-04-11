@@ -78,16 +78,16 @@ Una vez creado, puedes usar un skill de tres formas:
 
 - **Escribe el slash command**: `/meeting-notes` y luego pega tus notas
 - **Menciónalo en tu prompt**: "Crea una landing page para la campaña DTC de Nike **usando el skill de frontend-design**" — esto asegura que Claude use el skill en vez de hacerlo por libre
-- **Solo pídelo naturalmente**: "Aqui estan mis notas de reunion de hoy, por favor organizalas" — Claude puede reconocer la solicitud y activar el skill automáticamente
+- **Solo pídelo naturalmente**: "Aquí están mis notas de reunión de hoy, por favor organízalas" — Claude puede reconocer la solicitud y activar el skill automáticamente
 
 > **Importante:** Claude no siempre activa los skills por su cuenta. Si instalas un skill como **frontend-design** y solo pides "crea una landing page," Claude podría hacerlo sin usar el skill — y el resultado no será tan bueno. Para asegurarte, **menciona el skill en tu prompt** o usa el slash command.
 
 ### Haz que un skill esté siempre activo en un proyecto
 
-Si quieres que Claude **siempre** use un skill específico en un proyecto, añádelo a tu memoria de proyecto (`CLAUDE.md`):
+Si quieres que Claude **siempre** use un skill específico en un proyecto, añádelo a tu memoria de proyecto (`CLAUDE.md`). Abre el archivo desde Cursor o escribe en Claude Code:
 
 ```
-code CLAUDE.md
+! open CLAUDE.md
 ```
 
 Añade una línea como:
@@ -98,6 +98,80 @@ Cuando formatees notas de reunión, usa siempre el skill meeting-notes.
 ```
 
 Así no tienes que acordarte de mencionar el skill cada vez — Claude lo usará automáticamente en cada conversación de ese proyecto.
+
+## Ejemplo real: Skill de emails de venta
+
+Este es un skill real usado por el equipo de ventas de una empresa de recruiting. Estandariza cómo el equipo escribe emails de outreach — tono consistente, siempre con datos, siempre con un cierre suave.
+
+Así se ve el archivo `SKILL.md` (acortado para claridad):
+
+```markdown
+# Sales Emails Skill
+
+## Cómo usar
+Cuando necesites escribir un email de venta:
+1. Identifica el tipo de email del catálogo (pregunta si no está claro)
+2. Recopila los inputs necesarios para ese tipo
+3. Identifica el idioma (según conversaciones previas; español por defecto)
+4. Redacta el email siguiendo la estructura y tono de ese tipo
+
+## Principios universales de tono
+1. **Cálido y personal** — Primera persona del singular. Usa el nombre del
+   contacto. Referencia la última conversación o contexto compartido.
+2. **Basado en datos** — Siempre incluye números específicos: horas ahorradas,
+   coste por proceso, oportunidad total. Los números generan credibilidad.
+3. **Estructurado para lectores ocupados** — Empieza con contexto, usa
+   resúmenes en viñetas, mantenlo escaneable.
+4. **Cierre suave, nunca agresivo** — Propone un siguiente paso, no lo exijas.
+5. **Seguro pero no arrogante** — Di claramente lo que puedes hacer.
+   Ancla las afirmaciones en los datos del cliente, no en lenguaje de marketing.
+
+## Tipos de email
+
+### Tipo 1: Follow-up de Business Case
+Cuando: Después de presentar un business case. Objetivo: enviar un resumen
+que puedan circular internamente.
+
+Inputs necesarios:
+- Nombre del contacto y empresa
+- Qué se discutió/acordó
+- Números clave (horas ahorradas, coste/hora, tamaño del equipo, oportunidad total)
+- Alcance del piloto propuesto (típico: 10-20% del volumen)
+
+Estructura:
+Subject: Business Case [Empresa] x [Tu Empresa]
+- Saludo referenciando la reunión
+- Viñetas de resumen con cálculos (horas x coste = ahorro)
+- Propuesta de piloto (enmarcado colaborativo)
+- CTA suave
+
+### Tipo 2: Follow-up post-reunión
+[...]
+
+### Tipo 3: Propuesta de piloto
+[...]
+
+### Tipo 4: Intro en frío
+[...]
+
+## Checklist
+Antes de entregar cualquier borrador:
+- Es el saludo cálido y personal?
+- Son todos los números específicos y los cálculos visibles?
+- Es el CTA suave y claro (un solo siguiente paso)?
+- Está en el idioma correcto?
+- Suena personal, no como una plantilla?
+```
+
+Fíjate en lo que hace este skill efectivo:
+
+- **Trigger claro** — le dice a Claude exactamente cuándo activarse
+- **Principios universales** — reglas de tono que aplican a todos los tipos de email
+- **Plantillas estructuradas** — cada tipo tiene inputs, estructura y guías
+- **Un checklist** — control de calidad antes de entregar el resultado
+- **Reglas de idioma** — maneja equipos bilingües de forma natural
+
+El equipo de ventas no necesita explicar sus estandares de email cada vez. Solo dicen "escribe un email de follow-up a Maria de Acme sobre el piloto" y Claude produce un borrador que coincide con su voz, incluye los datos correctos, y sigue su formato.
 
 ## Consejos
 

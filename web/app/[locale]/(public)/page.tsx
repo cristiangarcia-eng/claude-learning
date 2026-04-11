@@ -32,18 +32,21 @@ const LEVEL_LABELS = {
   starter: "startHere",
   pro: "pro",
   projects: "projects",
+  extra: "extra",
 } as const;
 
 const LEVEL_COLORS = {
   starter: "text-brand-green",
   pro: "text-blue-500",
   projects: "text-orange-500",
+  extra: "text-purple-500",
 } as const;
 
 const LEVEL_BORDER_COLORS = {
   starter: "border-brand-green/20",
   pro: "border-blue-500/20",
   projects: "border-orange-500/20",
+  extra: "border-purple-500/20",
 } as const;
 
 export default async function LandingPage({
@@ -195,7 +198,7 @@ export default async function LandingPage({
             {t(l, "lessonsFromZeroDesc")}
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {(["starter", "pro", "projects"] as const).map(
+            {(["starter", "pro", "projects", "extra"] as const).map(
               (level) => {
                 const lessons = getLessonsByLevel(level);
                 return (
@@ -260,7 +263,7 @@ export default async function LandingPage({
                 </li>
                 <li className="flex items-center gap-2.5">
                   <CheckCircle className="h-4 w-4 text-brand-green/60" />
-                  <span className="text-muted-foreground">{t(l, "quizzesWithFeedback")}</span>
+                  <span className="text-muted-foreground">{t(l, "handsOnExercises")}</span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <CheckCircle className="h-4 w-4 text-brand-green/60" />

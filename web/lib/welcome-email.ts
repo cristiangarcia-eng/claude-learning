@@ -80,7 +80,7 @@ export async function sendWelcomeEmail(email: string, tier: Tier) {
             </tr>
             <tr>
               <td style="padding:6px 0;color:#22c55e;font-size:14px;width:24px;vertical-align:top;">&#10003;</td>
-              <td style="padding:6px 0;color:#ccc;font-size:14px;">Interactive quizzes to test your knowledge</td>
+              <td style="padding:6px 0;color:#ccc;font-size:14px;">Hands-on exercises with real-world scenarios</td>
             </tr>
             <tr>
               <td style="padding:6px 0;color:#22c55e;font-size:14px;width:24px;vertical-align:top;">&#10003;</td>

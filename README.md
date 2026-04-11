@@ -60,7 +60,7 @@ This isn't another feature reference. It's a **structured, visual, example-drive
 | **Examples** | Basic snippets | Production-ready templates you use immediately |
 | **Structure** | Feature-organized | Progressive learning path (beginner to advanced) |
 | **Onboarding** | Self-directed | Guided roadmap with time estimates |
-| **Self-Assessment** | None | Interactive quizzes to find your gaps and build a personalized path |
+| **Self-Assessment** | None | Hands-on exercises with real-world scenarios |
 
 ### What you get:
 
@@ -68,7 +68,7 @@ This isn't another feature reference. It's a **structured, visual, example-drive
 - **Copy-paste configs** — slash commands, CLAUDE.md templates, hook scripts, MCP configs, subagent definitions, and full plugin bundles
 - **Mermaid diagrams** showing how each feature works internally, so you understand *why*, not just *how*
 - **A guided learning path** that takes you from beginner to power user in 11-13 hours
-- **Built-in self-assessment** — run `/self-assessment` or `/lesson-quiz hooks` directly in Claude Code to identify gaps
+- **11 hands-on exercises** — practice everything you learn with real-world scenarios
 
 **[Start the Learning Path  ->](LEARNING-ROADMAP.md)**
 
@@ -78,7 +78,7 @@ This isn't another feature reference. It's a **structured, visual, example-drive
 
 ### 1. Find your level
 
-Take the [self-assessment quiz](LEARNING-ROADMAP.md#-find-your-level) or run `/self-assessment` in Claude Code. Get a personalized roadmap based on what you already know.
+Check the [learning roadmap](LEARNING-ROADMAP.md#-find-your-level) to find your starting point based on what you already know.
 
 ### 2. Follow the guided path
 
@@ -87,10 +87,6 @@ Work through 10 modules in order — each builds on the last. Copy templates dir
 ### 3. Combine features into workflows
 
 The real power is in combining features. Learn to wire slash commands + memory + subagents + hooks into automated pipelines that handle code reviews, deployments, and documentation generation.
-
-### 4. Test your understanding
-
-Run `/lesson-quiz [topic]` after each module. The quiz pinpoints what you missed so you can fill gaps fast.
 
 **[Get Started in 15 Minutes](#get-started-in-15-minutes)**
 

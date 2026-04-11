@@ -9,6 +9,7 @@ import {
   Sparkles,
   Zap,
   Rocket,
+  Crown,
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { type Locale, isValidLocale, t } from "@/lib/i18n";
@@ -50,6 +51,7 @@ const LEVEL_ICONS = {
   starter: Sparkles,
   pro: Rocket,
   projects: Zap,
+  extra: Crown,
 } as const;
 
 const LEVEL_STYLES = {
@@ -68,24 +70,32 @@ const LEVEL_STYLES = {
     borderColor: "border-orange-500/30",
     bgColor: "bg-orange-500/5",
   },
+  extra: {
+    color: "text-purple-500",
+    borderColor: "border-purple-500/30",
+    bgColor: "bg-purple-500/5",
+  },
 } as const;
 
 const LEVEL_LABEL_KEYS = {
   starter: "startHere",
   pro: "pro",
   projects: "projects",
+  extra: "extra",
 } as const;
 
 const LEVEL_DESC_KEYS = {
   starter: "starterDesc",
   pro: "proDesc",
   projects: "projectsDesc",
+  extra: "extraDesc",
 } as const;
 
 const LEVEL_TIME_KEYS = {
   starter: "starterTime",
   pro: "proTime",
   projects: "projectsTime",
+  extra: "extraTime",
 } as const;
 
 export default async function HomePage({
@@ -110,7 +120,7 @@ export default async function HomePage({
 
       {/* Learning path by level */}
       <main className="max-w-6xl mx-auto px-6 py-12 space-y-12">
-        {(["starter", "pro", "projects"] as const).map((level) => {
+        {(["starter", "pro", "projects", "extra"] as const).map((level) => {
           const styles = LEVEL_STYLES[level];
           const lessons = getLessonsByLevel(level);
           const Icon = LEVEL_ICONS[level];

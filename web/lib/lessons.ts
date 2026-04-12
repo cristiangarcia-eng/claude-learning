@@ -64,6 +64,18 @@ export const LESSONS: LessonMeta[] = [
     order: 3,
   },
   {
+    folder: "00h-organize-workspace",
+    slug: "organize-workspace",
+    title: "Organize Your Workspace",
+    titleEs: "Organiza tu Espacio de Trabajo",
+    description: "Set up a simple folder structure so Claude works with focused context",
+    descriptionEs: "Configura una estructura de carpetas simple para que Claude trabaje con contexto enfocado",
+    level: "starter",
+    duration: "5 min",
+    complexity: 1,
+    order: 4,
+  },
+  {
     folder: "00g-voice-input",
     slug: "voice-input",
     title: "Working with Your Voice",
@@ -73,7 +85,7 @@ export const LESSONS: LessonMeta[] = [
     level: "starter",
     duration: "5 min",
     complexity: 1,
-    order: 4,
+    order: 5,
   },
   {
     folder: "00c-how-it-works",
@@ -85,7 +97,7 @@ export const LESSONS: LessonMeta[] = [
     level: "starter",
     duration: "5 min",
     complexity: 1,
-    order: 5,
+    order: 6,
   },
   {
     folder: "00d-best-practices",
@@ -97,7 +109,7 @@ export const LESSONS: LessonMeta[] = [
     level: "starter",
     duration: "5 min",
     complexity: 1,
-    order: 6,
+    order: 7,
   },
   // === PRO: From memory onwards ===
   {

@@ -6,6 +6,12 @@ Lo que esta lección te da es **un punto de partida muy simple**: una estructura
 
 La única idea que sí merece la pena interiorizar es esta: **Claude trabaja mejor cuando cada proyecto tiene su propia carpeta enfocada.** Todo lo demás de abajo es solo una forma práctica de que eso te resulte fácil.
 
+### Un recorrido rápido
+
+Aquí tienes el resto de la lección en video — puedes verlo primero y luego repasar los pasos de abajo, o saltártelo e ir directo a las instrucciones.
+
+<video src="https://qcc2s6imrfok5tgt.public.blob.vercel-storage.com/lessons/organize-workspace/claude-setup-es.mp4" controls playsinline preload="metadata" class="my-4 max-w-full rounded-lg"></video>
+
 ## Un setup simple para empezar
 
 Si quieres copiar nuestra propuesta tal cual, sigue estos tres pasos. Siéntete libre de renombrar las cosas sobre la marcha — los nombres de las carpetas no importan, lo que importa es la idea.

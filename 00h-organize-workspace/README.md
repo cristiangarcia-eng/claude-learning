@@ -6,6 +6,12 @@ What this lesson gives you is **a very simple starting point**: one concrete str
 
 The one idea that's actually worth internalizing is this: **Claude works best when each project has its own focused folder.** Everything else below is just a practical way to make that easy.
 
+### A quick tour
+
+Here's the rest of this lesson as a short video — feel free to watch first and then skim the steps below, or skip it and go straight to the written instructions.
+
+<video src="https://qcc2s6imrfok5tgt.public.blob.vercel-storage.com/lessons/organize-workspace/claude-setup-eng.mp4" controls playsinline preload="metadata" class="my-4 max-w-full rounded-lg"></video>
+
 ## A simple starting setup
 
 If you want to copy our proposal exactly, follow these three steps. Feel free to rename things as you go — the folder names don't matter, the idea does.

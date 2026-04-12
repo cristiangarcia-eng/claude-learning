@@ -52,6 +52,8 @@ Deberías ver los archivos aparecer en el Explorador a la izquierda. Haz clic en
 
 ![Proyecto Nike abierto en Cursor](./images/cursor-nike-project.png)
 
+> **Atención**: es posible que también veas una ventana de chat a la derecha. Ese es el agente de IA integrado de Cursor — no lo vamos a usar en este curso, así que puedes cerrarlo sin problema.
+
 ### Qué hay dentro
 
 Echa un vistazo a los archivos del proyecto. Verás tres tipos diferentes que son muy comunes cuando trabajas con Claude:

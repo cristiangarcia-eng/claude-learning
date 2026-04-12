@@ -52,6 +52,8 @@ You should see the files appear in the Explorer sidebar on the left. Click any f
 
 ![Nike project open in Cursor](./images/cursor-nike-project.png)
 
+> **Heads up**: you may also see a chat window on the right side. That's Cursor's built-in AI agent — we won't be using it in this course, so feel free to close it.
+
 ### What's inside
 
 Take a look at the files in the project. You'll see three different types that are very common when working with Claude:

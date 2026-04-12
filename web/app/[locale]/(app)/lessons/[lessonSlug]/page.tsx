@@ -5,7 +5,7 @@ import { MarkdownRenderer } from "@/components/markdown-renderer";
 import { LessonNav } from "@/components/lesson-nav";
 import { getAdjacentLessons } from "@/lib/lessons";
 import { Badge } from "@/components/ui/badge";
-import { Clock, Star } from "lucide-react";
+import { Clock } from "lucide-react";
 import Link from "next/link";
 import { CompleteButton } from "@/components/progress/complete-button";
 import { SUPPORTED_LOCALES, type Locale, isValidLocale, t } from "@/lib/i18n";
@@ -65,14 +65,6 @@ export default async function LessonPage({
             <span className="flex items-center gap-1 text-sm text-muted-foreground">
               <Clock className="h-3.5 w-3.5" />
               {lesson.duration}
-            </span>
-            <span className="flex items-center gap-1 text-sm text-muted-foreground">
-              {Array.from({ length: lesson.complexity }).map((_, i) => (
-                <Star
-                  key={i}
-                  className="h-3.5 w-3.5 fill-brand-green text-brand-green"
-                />
-              ))}
             </span>
           </div>
         </div>

@@ -52,8 +52,10 @@ Here's the rest of this lesson as a short video — feel free to watch first and
 
 1. Go to **File > Open Folder** (or `Cmd+O` on Mac)
 
-![File > Open Folder in Cursor](./images/cursor-open-folder.png)
+   ![File > Open Folder in Cursor](./images/cursor-open-folder.png)
+
 2. Navigate to your **Desktop** and select the `nike-analysis` folder
+
 3. Click **Open**
 
 You should see the files appear in the Explorer sidebar on the left. Click any file to open it — that's it!

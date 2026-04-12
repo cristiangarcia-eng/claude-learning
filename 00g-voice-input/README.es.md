@@ -39,15 +39,7 @@ La vaguedad es el enemigo de los buenos resultados. La voz te ayuda a evitarla p
 
 Recomendamos instalar **Wispr Flow** — una aplicación de voz a texto que funciona en cualquier lugar de tu computadora. No es solo para Claude Code — puedes usarla en cualquier app: Slack, email, Google Docs, tu navegador, donde sea.
 
-### ¿Por qué Wispr Flow?
-
-| Característica | Wispr Flow | Voz integrada |
-|---------|-----------|----------------|
-| Funciona en todos lados | Cualquier app de tu computadora | Solo dentro de Claude Code |
-| Velocidad | Tiempo real, muy rápido | Ligero retraso |
-| Precisión | Excelente, aprende tu estilo | Buena |
-| Formato | Agrega puntuación automáticamente | Básico |
-| Siempre disponible | Cualquier campo de texto, cualquier app | Solo cuando Claude está abierto |
+Mantienes presionada una tecla, hablas, sueltas, y tus palabras aparecen como texto donde esté tu cursor. Es rápido, preciso, aprende tu estilo y añade puntuación automáticamente. Una vez que lo pruebas, es difícil volver atrás.
 
 ### Cómo configurarlo
 
@@ -81,9 +73,15 @@ Se siente como tener una conversación. Tú hablas, Claude escucha y trabaja.
 
 > "Crea un resumen de todos los cambios hechos esta semana que pueda compartir con mi equipo en Slack"
 
+## Alternativa open source: Handy
+
+Wispr Flow es de pago — aunque su tier gratuito da para mucho. Si prefieres una alternativa totalmente gratuita y open source, echa un vistazo a **Handy**: [handy.computer](https://handy.computer/).
+
+Handy funciona con la misma idea que Wispr Flow (pulsar-para-hablar en cualquier app de tu computadora), pero es software libre y corre localmente en tu máquina usando modelos Whisper. La precisión es algo menor que Wispr Flow y el formato automático es más básico, pero para muchos casos de uso es más que suficiente — y es 100% gratis.
+
 ## Alternativa: la voz integrada de Claude
 
-Si prefieres no instalar Wispr Flow, Claude Code tiene su propia función de voz:
+Claude Code también tiene su propia función de voz integrada:
 
 ```
 /voice
@@ -91,9 +89,21 @@ Si prefieres no instalar Wispr Flow, Claude Code tiene su propia función de voz
 
 Esto activa pulsar-para-hablar directamente dentro de Claude Code. Mantén presionada la tecla, habla y suelta.
 
-La diferencia es que `/voice` solo funciona dentro de Claude Code, mientras que Wispr Flow funciona en todas las apps de tu computadora. Para la mayoría de personas, Wispr Flow es la mejor opción porque lo usarás en todos lados — no solo con Claude.
+La diferencia es que `/voice` solo funciona dentro de Claude Code, mientras que Wispr Flow y Handy funcionan en todas las apps de tu computadora. Por eso, para la mayoría de personas, una herramienta del sistema (Wispr Flow o Handy) es la mejor opción — la usarás en todos lados, no solo con Claude.
 
-> **Nota para hispanohablantes**: El `/voice` integrado de Claude está optimizado para inglés. Si hablas en español u otros idiomas, la precisión de la transcripción baja bastante. Wispr Flow maneja múltiples idiomas mucho mejor, lo cual es otra razón por la que lo recomendamos.
+> **Nota para hispanohablantes**: El `/voice` integrado de Claude está optimizado para inglés. Si hablas en español u otros idiomas, la precisión de la transcripción baja bastante. Wispr Flow y Handy manejan múltiples idiomas mucho mejor, lo cual es otra razón por la que recomendamos usar una de esas dos.
+
+### Comparación rápida
+
+Ahora que conoces las tres opciones, así es como se comparan:
+
+| Característica | Wispr Flow | Handy | Voz integrada (`/voice`) |
+|---|---|---|---|
+| Funciona en todos lados | ✅ Cualquier app | ✅ Cualquier app | ❌ Solo Claude Code |
+| Precio | De pago (tier gratuito generoso) | Gratis y open source | Gratis |
+| Precisión | Excelente, aprende tu estilo | Buena (Whisper local) | Buena en inglés, peor en otros idiomas |
+| Formato automático | Puntuación inteligente | Básico | Básico |
+| Idiomas no ingleses | Muy bueno | Bueno | Flojo |
 
 ## Voice dumps: el contexto que nunca escribirías
 

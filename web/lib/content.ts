@@ -30,16 +30,19 @@ const FOLDER_TO_SLUG: Map<string, string> = (() => {
 })();
 
 /**
- * Rewrite cross-lesson markdown links to use slugs.
- * `](../02-messy-spreadsheet/)` → `](../project-messy-spreadsheet/)`
- * `](../../05-mcp/)`            → `](../mcp/)`  (web URLs are flat under /lessons/)
+ * Rewrite cross-lesson markdown links to absolute URLs under /<locale>/lessons/.
+ * `](../02-messy-spreadsheet/)` → `](/es/lessons/project-messy-spreadsheet/)`
+ *
+ * Relative hrefs like `../slug/` resolve wrong when the current URL has no
+ * trailing slash (browser treats the last segment as a file), so we emit
+ * absolute URLs instead.
  */
-function rewriteLessonLinks(markdown: string): string {
+function rewriteLessonLinks(markdown: string, locale: Locale): string {
   return markdown.replace(
     /\]\((?:\.\.\/)+([^/)\s]+)\/?\)/g,
     (match, basename: string) => {
       const slug = FOLDER_TO_SLUG.get(basename);
-      return slug ? `](../${slug}/)` : match;
+      return slug ? `](/${locale}/lessons/${slug})` : match;
     }
   );
 }
@@ -98,7 +101,7 @@ export function getLessonContent(
   const { data, content } = matter(raw);
 
   return {
-    markdown: rewriteLessonLinks(rewriteImagePaths(content)),
+    markdown: rewriteLessonLinks(rewriteImagePaths(content), locale),
     frontmatter: data,
     title: extractTitle(content, fileSlug || lesson.title),
   };

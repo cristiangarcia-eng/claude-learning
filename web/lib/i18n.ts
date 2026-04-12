@@ -154,6 +154,10 @@ const dictionaries = {
     welcomeBody: "You just took the first step toward a career leap. In a weekend, you'll go from \"I don't code\" to confidently using AI to do things that used to require a developer.",
     welcomeSubtext: "No terminal experience needed. No programming knowledge. Just you, Claude, and a bit of curiosity.",
     welcomeCta: "Let's go",
+    welcomeLanguageTitle: "Choose your language",
+    welcomeLanguageBody: "Which language do you want to take the course in?",
+    welcomeLanguageHint: "Pick the one you're most comfortable in. We recommend prompting AI in your native language — that's where you'll get the best results.",
+    welcomeLanguageContinue: "Continue",
 
     // Instructor section
     yearsInProduct: "Years in Product",
@@ -291,6 +295,10 @@ const dictionaries = {
     welcomeBody: "Acabas de dar el primer paso hacia un salto en tu carrera. En un fin de semana, pasaras de \"yo no programo\" a usar IA con confianza para hacer cosas que antes requerian un desarrollador.",
     welcomeSubtext: "No necesitas experiencia con la terminal. Ni conocimientos de programacion. Solo tu, Claude y un poco de curiosidad.",
     welcomeCta: "Vamos",
+    welcomeLanguageTitle: "Elige tu idioma",
+    welcomeLanguageBody: "¿En qué idioma quieres tomar el curso?",
+    welcomeLanguageHint: "Elige aquel en el que te sientas más cómodo. Te recomendamos hablarle a la IA en tu idioma nativo — ahí es donde obtendrás los mejores resultados.",
+    welcomeLanguageContinue: "Continuar",
 
     // Instructor section
     yearsInProduct: "Anos en Producto",

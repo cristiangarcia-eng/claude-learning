@@ -22,13 +22,20 @@ export function middleware(request: NextRequest) {
 
   // If no locale in the URL, redirect to default locale prefix
   if (!hasLocale) {
-    // Detect preferred locale from Accept-Language header
-    const acceptLanguage = request.headers.get("accept-language") || "";
-    let detectedLocale = DEFAULT_LOCALE;
-    for (const locale of SUPPORTED_LOCALES) {
-      if (acceptLanguage.toLowerCase().includes(locale)) {
-        detectedLocale = locale;
-        break;
+    let detectedLocale: (typeof SUPPORTED_LOCALES)[number] = DEFAULT_LOCALE;
+
+    // Honor the user's saved language preference if present
+    const savedLocale = request.cookies.get("claude10x-locale")?.value;
+    if (savedLocale && isValidLocale(savedLocale)) {
+      detectedLocale = savedLocale;
+    } else {
+      // Otherwise fall back to Accept-Language header
+      const acceptLanguage = request.headers.get("accept-language") || "";
+      for (const locale of SUPPORTED_LOCALES) {
+        if (acceptLanguage.toLowerCase().includes(locale)) {
+          detectedLocale = locale;
+          break;
+        }
       }
     }
 

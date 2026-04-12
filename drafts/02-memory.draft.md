@@ -1,15 +1,12 @@
 <!--
-DRAFT — Growth.Design-inspired rewrite of 02-memory/README.md
-Status: approved in conversation, pending final approval to apply
+DRAFT — Surgical hero-rewrite of 02-memory/README.md
+Status: v2 — replaces full-rewrite v1, preserves existing lesson body
 Persona: Inés (freelance brand strategist, Barcelona, 4 clients)
-Strategy: fresh persona per lesson (Option B — no fixed cast)
-Key moves applied: 1 (specific numbers: 4, 18, 72, 200, 60s),
-2 (active verbs), 3 (timebox "2 minutes flat"),
-5 (headers as answers), 6 (real brand names: Weleda, Dr. Hauschka,
-Freshly Cosmetics), 7 (binary: User vs Project; Do vs Avoid;
-memory is vs is NOT), 8 (result before method)
-Preserved from original: "first date" quote, "new hire" metaphor,
-all technical commands, Nike project continuity
+Approach: Only the intro (~10 lines) was adapted. Added Growth.Design
+hero + subtitle. Kept the existing "first date" quote and the
+"Memory is a simple text file" definition. Dropped the "starts from
+zero" paragraph because Inés's story already illustrates it. Everything
+from "## Two types of memory" onwards is preserved verbatim.
 Pending: Spanish mirror (README.es.md)
 -->
 
@@ -32,160 +29,168 @@ Then she learned **one command**: `/init`. Now every client folder has
 a `CLAUDE.md` that Claude reads before Inés has opened her second tab.
 Monday morning starts at the actual work.
 
-> **Without memory, every conversation with Claude is a first date.**
+> Without memory, every conversation with Claude is a first date.
 
-Memory is a simple text file Claude reads at the start of **every**
-conversation. You write down what Claude should know once, and it
-remembers — automatically, always.
+In the Voice lesson we said the most important thing is providing good context. Memory is how you make that context **permanent**.
 
-## Two memories: one about you, one about the project
+Memory is a simple text file that Claude reads at the beginning of **every** conversation. You write down what Claude should know, and it remembers — automatically, always.
+
+## Two types of memory
 
 When you type `/memory` in Claude Code, you'll see two options:
 
 ![The /memory menu in Claude Code](../02-memory/images/claude-memory-menu.png)
 
-| Type | Lives at | Scope | What goes here |
-|---|---|---|---|
-| **User memory** | `~/.claude/CLAUDE.md` | Every project you touch | Who you are, your role, preferred language, how you like answers |
-| **Project memory** | `./CLAUDE.md` in the project | Just this folder | What the project is, key files, terminology, project-specific rules |
+### 1. User memory — about you
 
-Claude reads both at the start of every conversation. If they conflict,
-**project memory wins** — so if your user memory says *"use EUR"* but
-the Nike project memory says *"use USD"*, Claude uses USD for Nike.
+**Where it lives:** `~/.claude/CLAUDE.md` (in your home folder)
 
-## What to actually put in memory
+This follows you everywhere, across all projects. Put things here that are always true about you:
 
-Most people add the basics: their role, a couple of preferences. But
-the people who get the most out of Claude also add **lessons learned**
-— things they discovered work or don't work for them:
+- Your role and what you do
+- Your preferred language
+- How you like responses formatted
+- Things Claude should always do (or never do)
+
+### 2. Project memory — about the project
+
+**Where it lives:** `./CLAUDE.md` (inside the project folder)
+
+This only applies to the current project. It stays with the folder. Put things here like:
+
+- What the project is about
+- Key files and what they contain
+- Terminology and names
+- Rules specific to this project
+
+## What to put in memory
+
+Most people only add the basics: their role and some preferences. But the ones who get the most value from Claude also add **lessons learned** — things they discovered that work or don't work:
 
 ```
 I am a product manager at a B2B SaaS company for HR teams.
 I prefer responses in Spanish, with bullet points.
 Keep summaries under 200 words.
 
-Lessons learned:
-- Don't use tables for comparisons — my team prefers bullet lists.
+Lessons:
+- Don't use tables for comparisons — the team prefers bullet lists.
 - Always include an executive summary at the top of reports.
 - When analyzing sales data, always compare year-over-year.
 ```
 
-> **Think of it as training a new hire.** You wouldn't just tell them
-> what the company does — you'd also tell them your preferences and
-> the mistakes to avoid. The better the briefing, the better they
-> work from day one.
+> **Think of it as training a new hire.** You wouldn't just tell them what the company does — you'd also tell them your preferences and mistakes to avoid. The better the briefing, the better they work from day one.
 
-## Set it up in 2 minutes flat
+## Setting up your memory
 
-### Step 1: your user memory (60 seconds)
+Let's set up both types using the Nike project you've been working with.
 
-In Claude Code, open your personal memory file directly in Cursor:
+### Step 1: Set up your User memory
+
+In Claude Code, type the following command to open your personal memory file:
 
 ```
 ! open ~/.claude/CLAUDE.md
 ```
 
-Paste something like this, save (`Cmd+S` / `Ctrl+S`), done:
+This opens the file in Cursor where you can edit it comfortably. Add something like this:
 
 ```
-I am a product manager at a Spanish fintech startup.
-I prefer responses in Spanish, with bullet points.
+I am a product manager.
+I prefer responses in Spanish.
 Keep summaries under 200 words.
+Use bullet points instead of long paragraphs.
 Always explain things in simple, non-technical language.
 ```
 
-> **Note:** You can also use `/memory` → *"Edit User memory"*, but it
-> opens a terminal vim editor which is confusing. The `! open` command
-> opens the file directly in Cursor, which is simpler.
+Save the file (`Cmd+S` on Mac, `Ctrl+S` on Windows) and you're done.
 
-### Step 2: your project memory (60 seconds)
+> **Note:** You can also use `/memory` and select "Edit User memory", but it opens a terminal editor (vim) which can be confusing. The `! open` command is simpler because it opens the file directly in Cursor.
 
-The golden rule: **every time you open a new project folder, run
-`/init` first.**
+### Step 2: Set up your Project memory
+
+For project memory, the best practice is: **every time you start working in a new project folder, run `/init` as your first command.** Claude will scan your files, understand the project, and create a `CLAUDE.md` for you automatically.
 
 1. Open Claude Code in your project folder
 2. Type `/init`
-3. Claude reads your files and writes `CLAUDE.md` for you
+3. Claude reads your files and generates a `CLAUDE.md` with the project context
 
-That's it. Claude figures out what the project is about, what the key
-files are, and writes the briefing for you. You review it, tweak
-anything off, save. You never have to re-explain this project again.
+That's it. Claude figures out what the project is about, what the key files are, and writes the memory for you.
 
-For Inés's cosmetics client, `/init` produced something like this:
+You can review and edit what Claude generated. Just open `CLAUDE.md` from the file explorer in Cursor (it will appear in the sidebar after Claude creates it).
+
+For example, Claude might generate something like this for the Nike project:
 
 ```
-This is the brand strategy project for a mid-size organic cosmetics
-brand based in Girona, Spain.
+This is a competitive analysis project for Nike.
 
 Key files:
-- brand-brief-2026.md — positioning and messaging pillars
-- competitors.csv — 12 competitors with pricing and claims
-- content-calendar.xlsx — scheduled posts through Q2
+- competitive-analysis.md — the main report with strengths, weaknesses, opportunities, and threats
+- sales-data.csv — quarterly revenue by region (North America, EMEA, Greater China, APLA)
+- notes.txt — meeting notes from the brand strategy review on March 15
 
-Context:
-- Primary audience: women 30-45, eco-conscious, urban
-- Main competitors: Weleda, Dr. Hauschka, Freshly Cosmetics
-- Tone of voice: warm, expert, never preachy
+Important context:
+- We are evaluating Nike's position against Adidas and New Balance
+- The focus is on DTC strategy and digital transformation
+- China recovery is a key concern for the team
 ```
 
-Inés reviewed it, added two lessons from past mistakes, saved. Now
-every Monday she types *"Review this week's social calendar"* and
-Claude already knows what *"this week"* means, what the brand sounds
-like, and who it's talking to.
+Review it, tweak anything that's missing, save and you're done.
 
-## The `#` shortcut: remember this, forever
+> **Make it a habit.** Every time you open a new project folder, run `/init` first. It takes 30 seconds and Claude starts every conversation already knowing what you're working on.
 
-You don't always need to open the memory file. Mid-conversation, type
-`#` followed by what you want Claude to remember:
+## Quick memory additions
+
+You don't always need to open the memory file. During a conversation, you can add quick notes with `#`:
 
 > `# When analyzing sales data, always compare year-over-year growth`
 
 > `# Our fiscal year starts in June, not January`
 
-Claude appends these to your project memory automatically. Perfect for
-those *"oh, I just realized Claude should always..."* moments.
+Claude will add these to your project memory automatically.
 
-## The 3 rules of good memory
+## Tips for good memory
 
-| Do | Avoid |
+**Keep it concise.** Claude reads your entire memory file at the start of every conversation. **Keep it under 150-200 instructions** — beyond that, Claude starts ignoring rules. A focused, well-organized memory works much better than a long one.
+
+**Update it regularly.** As your project evolves, update the memory. Remove things that are no longer true. Add new context as you learn it.
+
+**Be specific.** Same rule as with voice — vagueness is the enemy:
+
+| Good memory entries | Less useful entries |
 |---|---|
-| **Be specific**: *"Q4 deadline is March 30"* | **Vague**: *"We have a deadline"* |
-| **Stay under ~200 lines** — Claude starts ignoring rules beyond that | Dumping every document into one giant file |
-| **Update it regularly** — remove stale context, add new lessons | Writing it once and never touching it again |
+| "Our Q4 deadline is March 30" | "We have a deadline" |
+| "Compare all competitors against Nike as the baseline" | "Do good analysis" |
+| "Revenue figures are in millions USD" | "Be careful with numbers" |
 
-## The learning loop (the move pros use)
+## How the two layers interact
 
-Here's what separates someone who's been using Claude for 3 months from
-someone who's used it for 3 weeks. After each project or session, they
-do 3 things:
+When both memories are set up, Claude reads them both at the start of every conversation. If there's a conflict, **Project Memory wins over User Memory** for that project.
+
+| Layer | Location | Scope | Example |
+|-------|----------|-------|---------|
+| **User Memory** | `~/.claude/CLAUDE.md` | All your projects | "I'm a PM, use bullet points" |
+| **Project Memory** | `./CLAUDE.md` in the project root | Only this project | "Competitors are Adidas, New Balance..." |
+
+For example: if your User Memory says "use EUR for currency" but the Project Memory says "use USD", Claude will use USD for that project.
+
+## The learning loop
+
+The biggest difference between good and great Claude Code users is the **learning loop**. After each project or session:
 
 1. **Note what worked** — which prompts gave good results on the first try?
 2. **Note what didn't** — where did Claude go in the wrong direction?
-3. **Update their `CLAUDE.md`** — add the lessons so Claude doesn't repeat mistakes
+3. **Update your CLAUDE.md** — add the lessons so Claude doesn't repeat mistakes
 
-You can even ask Claude to do it for you, mid-conversation:
+```
+Add to my project memory: "When creating reports, always
+include an executive summary at the top. The team complained
+last time when it was buried at the end."
+```
 
-> *"Add to my project memory: When creating reports, always include an
-> executive summary at the top. The team complained last time when it
-> was buried at the end."*
-
-Over time, your `CLAUDE.md` becomes a living document that makes Claude
-smarter with every project. The people who get the most value from
-Claude Code are the ones who iterate on their memory files — not the
-ones who write the best prompts.
+Over time, your CLAUDE.md becomes a living document that makes Claude smarter with every project. The people who get the most value from Claude Code are the ones who iterate on their memory files — not the ones who write the best prompts.
 
 ## What memory is NOT
 
-Memory is **not** a conversation history. Claude doesn't remember what
-you talked about yesterday, the file it generated last Tuesday, or the
-funny mistake it made last week. Memory is a set of **instructions and
-context** that Claude reads fresh at the start of every conversation.
+Memory is **not** a conversation history. Claude doesn't remember what you talked about yesterday. Memory is a set of instructions and context that Claude reads fresh every time.
 
-Think of it like the briefing document you'd hand a new team member on
-their first day — they haven't been in your meetings, but if the
-briefing is good, they're up to speed in 10 minutes.
-
-> **The insider move:** Don't treat `CLAUDE.md` as a setup chore you do
-> once. Treat it as a journal. Every time Claude surprises you (good or
-> bad), update it that same day. In 3 months you'll have a briefing
-> that makes Claude feel like it's been on your team for years.
+Think of it like a briefing document you hand to a new team member on their first day — they haven't been in your meetings, but if the briefing is good, they can get up to speed quickly.

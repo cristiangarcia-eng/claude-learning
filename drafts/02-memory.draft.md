@@ -1,33 +1,26 @@
 <!--
 DRAFT — Surgical hero-rewrite of 02-memory/README.md
-Status: v2 — replaces full-rewrite v1, preserves existing lesson body
-Persona: Inés (freelance brand strategist, Barcelona, 4 clients)
-Approach: Only the intro (~10 lines) was adapted. Added Growth.Design
-hero + subtitle. Kept the existing "first date" quote and the
-"Memory is a simple text file" definition. Dropped the "starts from
-zero" paragraph because Inés's story already illustrates it. Everything
-from "## Two types of memory" onwards is preserved verbatim.
+Status: v3 — compressed hero, preserves existing lesson body
+Persona: Inés (brand strategist, Barcelona, 4 clients)
+Approach: Only the intro (~10 lines) was adapted. Hero compressed to
+~9 lines. Everything from "## Two types of memory" onwards is
+preserved verbatim from the current lesson.
 Pending: Spanish mirror (README.es.md)
 -->
 
 # Memory
 **Brief Claude once — it remembers your project, your style, your lessons forever.**
 
-Inés, a freelance brand strategist in Barcelona, juggles 4 active
-clients: an organic cosmetics brand, a fintech for seniors, a
-plant-based meal-kit startup, and a chain of yoga studios. Every Monday
-morning, she opened Claude and spent 18 minutes pasting the same three
-paragraphs of context for each client before getting any real work done
-— industry, competitors, tone of voice, last month's campaigns.
+Inés is a brand strategist in Barcelona with 4 clients. Every Monday
+she'd spend 18 minutes pasting the same context into Claude for each
+one — industry, competitors, tone of voice, last month's campaigns.
+Tuesday, same thing. Wednesday too.
 
-Then on Tuesday, she'd do it again. Wednesday. Thursday.
+72 minutes a week re-introducing Claude to projects it had just helped
+her with the day before.
 
-72 minutes a week of re-introducing Claude to the same projects it had
-just helped her with the day before.
-
-Then she learned **one command**: `/init`. Now every client folder has
-a `CLAUDE.md` that Claude reads before Inés has opened her second tab.
-Monday morning starts at the actual work.
+Then she learned one command: `/init`. Now every client folder has a
+`CLAUDE.md` Claude reads before Inés has opened her second tab.
 
 > Without memory, every conversation with Claude is a first date.
 

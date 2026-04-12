@@ -1,11 +1,13 @@
 <!--
-DRAFT — Growth.Design-inspired rewrite of 05-mcp/README.md
-Status: approved in conversation, pending final approval to apply
+DRAFT — Surgical hero-rewrite of 05-mcp/README.md
+Status: v4 — replaces earlier full rewrite with conservative approach
 Persona: Laura (head of sales, Madrid B2B SaaS)
-Key moves applied: 1 (specific numbers), 2 (active verbs), 3 (timebox),
-5 (header as answer), 6 (real brand names), 7 (binary opposition),
-8 (result before method)
-Iterations: v1 (Diego/Adidas), v2 (Laura/Gmail), v3 (compressed Fetch)
+Approach: Only the intro (~13 lines) was adapted. Added Growth.Design
+hero + subtitle + fixed blockquote (the original said "blind to the
+outside world" which is factually wrong since Claude can reach the
+public web — replaced with "blind to the tools where your real work
+lives"). Everything from "## Try it: Install the Fetch MCP" onwards
+is preserved verbatim from the current lesson.
 Pending: Spanish mirror (README.es.md)
 -->
 
@@ -14,123 +16,104 @@ Pending: Spanish mirror (README.es.md)
 
 Laura, head of sales at a Madrid B2B SaaS startup, asked Claude:
 *"Draft a follow-up to Carlos at Acme based on the thread we had last
-week about the pilot."*
+week."* Claude replied: *"I don't have access to your Gmail."*
 
-Claude replied: *"I don't have access to your Gmail."*
-
-For 2 weeks, Laura's Monday routine was 35 minutes of copy-pasting
-email threads into Claude by hand, one at a time, before each
-follow-up could be drafted. Then a colleague showed her **one
-command**. Now, every Monday at 8:30am, Claude reads her 4 most-active
-deal threads, drafts personalized follow-ups referencing the last
-specific thing each prospect said, and leaves them in her drafts
-folder — before Laura has opened Slack.
+For 2 weeks, Laura spent 35 minutes every Monday pasting email threads
+into Claude by hand. Then a colleague showed her one command. Now, by
+8:30am every Monday, Claude has already drafted her 4 follow-ups —
+referencing the last specific thing each prospect said — before Laura
+has opened Slack.
 
 The command was `claude mcp add gmail`.
 
-> **Claude is brilliant — but blind to the tools where your real work
-> lives. MCPs open those doors.**
+> **Claude is brilliant — but blind to the tools where your real work lives. MCPs open those doors.**
 
-MCP (Model Context Protocol) is how Claude Code connects to external
-systems. Each MCP server is an **adapter** — one connection, one
-superpower.
+MCP (Model Context Protocol) is how Claude Code connects to external systems. Think of MCP servers as "adapters" — each one gives Claude access to a specific tool or data source.
 
 ```
 You  →  Claude Code  →  MCP Server  →  The outside world
                        (the adapter)
 ```
 
-Gmail adapter? Claude reads your threads and drafts replies. Notion
-adapter? Claude searches your workspace and updates pages. Slack
-adapter? Claude summarizes channels and posts messages. The adapter
-stays plugged in until you unplug it.
+## Try it: Install the Fetch MCP
 
-## Try it in 60 seconds
+The best way to understand MCP is to use one. **Fetch** is the simplest MCP server — it lets Claude read any web page. No API key, no account, no setup.
 
-The fastest way to feel how an MCP plugs in: install **Fetch**, the
-only adapter with zero auth. It lets Claude read any public web page.
+### Step 1: Install it
 
-In your Cursor terminal, **outside** of Claude Code:
+In your Cursor terminal (outside of Claude Code), run:
 
 ```bash
 claude mcp add fetch -s user -- npx -y @anthropic-ai/fetch-mcp
 ```
 
-Then open Claude Code in your `nike-analysis` folder and try:
+This tells Claude Code: "I want you to be able to read web pages."
 
-> *"Use the Fetch MCP to read adidas.com's running shoes page and
-> compare it with our Nike notes."*
+### Step 2: Use it with your Nike project
 
-That's it. You just watched Claude reach outside itself for the first
-time. Now let's install the adapters you actually came for.
+Open Claude Code in your `nike-analysis` folder and try:
 
-## The 5 adapters worth knowing
+> `Use the Fetch MCP to go to adidas.com and analyze their running shoe lineup. Compare their positioning with Nike's strengths from our competitive analysis.`
 
-These are where the real time-savings live:
+Claude will use the Fetch MCP to read the Adidas website and compare it with your local Nike files. This is the power of MCP — combining live external data with your project.
 
-| Adapter | What Claude can do | The Monday-morning task it kills |
-|---|---|---|
-| **Gmail** | Read threads, search, draft replies | *"Draft follow-ups to every prospect who replied last week"* |
-| **Notion** | Browse pages, search workspace, update docs | *"Find every meeting note mentioning Project Apollo and list open decisions"* |
-| **Slack** | Read channels, search, post messages | *"Summarize #launch-feedback since Monday into 5 bullets"* |
-| **Google Docs** | Read and edit documents | *"Update the roadmap doc with the 3 points we agreed in standup"* |
-| **Linear / Jira** | Track issues, create tickets, move status | *"Open a ticket for each bug in this QA report, assign Ana"* |
+> **Why say "Use the Fetch MCP"?** Claude can also search the web on its own (web search), but that's a different thing — it gives you search results, not the actual page content. When you want Claude to read a specific website and extract detailed information, you need to tell it to use the Fetch MCP explicitly. Otherwise it might just do a web search instead.
 
-Every adapter is added with the same pattern: `claude mcp add <name>`.
-Gmail, Notion, Slack and Google Docs each need a one-time
-authentication (2–5 minutes per adapter). You set it up once, then
-forget about it — forever.
+More things you can do with Fetch:
 
-**Laura paid the 5-minute Gmail auth tax on a Friday afternoon. Every
-Monday since, she's saved 35 minutes.** That's the real math of MCPs.
+> `Use Fetch MCP to read https://www.nike.com/sustainability and add a sustainability section to our competitive analysis based on what you find`
 
-## Managing your adapters
+> `Use Fetch to check what New Balance is doing on newbalance.com and update the threats section`
+
+## The MCP ecosystem
+
+Fetch is just the beginning. There are MCP servers for most business tools:
+
+| Tool | What Claude can do |
+|------|-------------------|
+| **Fetch** | Read any web page |
+| **Slack** | Read channels, send messages, search conversations |
+| **Google Docs** | Read and edit documents |
+| **Notion** | Browse pages, search your workspace |
+| **Linear** | Track issues, manage projects |
+| **Gmail** | Search emails, read messages, draft replies |
+
+You add any MCP server the same way — with `claude mcp add`. Each tool may need an API key or authentication.
+
+## Managing your connections
 
 | Command | What it does |
-|---|---|
-| `claude mcp list` | See every MCP server currently connected |
-| `claude mcp remove gmail` | Unplug one |
+|---------|-------------|
+| `claude mcp list` | See all connected MCP servers |
+| `claude mcp remove fetch` | Disconnect a server |
 | `/mcp` (inside Claude Code) | Browse and manage connections interactively |
 
-## The cost nobody tells you about: your context window
+## Important: MCPs consume your context window
 
-Here's the part most tutorials skip. **Every MCP you have connected
-takes up space in Claude's context window** — even when you're not
-using it. Claude has to "know" about each adapter's capabilities at
-the start of every conversation, so it can decide when to call them.
+Every MCP server you have connected takes up space in Claude's context window — even if you're not using it. Claude needs to "know" about each server's capabilities at the start of every conversation.
 
-In plain English:
+**This means:**
 
-- **10 MCPs connected, 2 in use** = 8 adapters silently eating your memory budget
-- **Less memory budget** = Claude forgets things faster, gives shorter answers, loses focus on long tasks
-- **More MCPs** = slower conversation startup, every single time
+- If you have 10 MCP servers connected but only use 2, the other 8 are wasting context space
+- Less context space = Claude forgets things faster and produces worse results
+- More MCP servers = slower startup for each conversation
 
-### The rule of thumb
+### How to manage this
 
-| Connected MCPs | What you'll feel |
-|---|---|
-| **1–3** | Crisp, fast, focused. Ideal. |
-| **4–5** | Still fine for most work. |
-| **6+** | Noticeably slower, shorter answers, more *"wait, what were we doing?"* moments. |
-
-**Keep only what you're using today.** Treat MCPs like browser tabs —
-close the ones you don't need. You can always add them back in 5
-seconds (plus auth if it's a new tool):
+**Only keep connected the MCPs you're actively using.** Remove the rest:
 
 ```bash
 claude mcp list          # see what's connected
-claude mcp remove slack  # close the tab
+claude mcp remove slack  # disconnect what you're not using
 ```
 
-## The 3 habits that separate MCP beginners from pros
+You can always reconnect them later when you need them. Think of it like browser tabs — close the ones you're not using.
 
-| Do | Avoid |
-|---|---|
-| Install the adapter that kills your most painful weekly task first | Installing 6 adapters "just in case" on day one |
-| Add **one at a time** — test it, confirm it works, then add the next | Running `/mcp` for the first time *after* everything is broken |
-| **Disconnect** the ones you're not using today | Treating MCPs as decorations — each one has a memory cost |
+> **Rule of thumb:** 2-3 MCP servers connected at a time is ideal. More than 5 and you'll start noticing slower, less focused responses from Claude.
 
-> **The insider move:** Before a big multi-step task, run `/mcp` and
-> remove every adapter you won't need for it. A clean MCP list is the
-> difference between Claude *"remembering"* your whole task and Claude
-> *"losing the thread"* halfway through.
+## Tips
+
+- **Start with Fetch** — it's free, requires nothing, and is immediately useful
+- **Add one at a time** — connect a new MCP, test it, make sure it works before adding the next
+- **Disconnect when done** — remove MCPs you're not actively using to save context space
+- **Check with `/mcp`** — type this inside Claude Code to see what's connected and if it's working

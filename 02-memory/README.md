@@ -8,6 +8,20 @@ Every time you start a new conversation, Claude starts from zero — it doesn't 
 
 Memory is a simple text file that Claude reads at the beginning of **every** conversation. You write down what Claude should know, and it remembers — automatically, always.
 
+## Where Claude Code saves things
+
+Before we dive into memory specifically, it's worth knowing where Claude Code keeps your stuff in general. Think of Claude Code like any other app on your computer (Word, Spotify, Chrome). It saves a few files on your machine so it can remember your stuff between sessions. There are three things worth knowing:
+
+- **Your conversations** — saved right on your own computer, not in the cloud. If you close Claude today and come back tomorrow, your chat history is still there waiting for you.
+- **Your global preferences and memory** — things that apply to *every* project you work on. These live in a hidden folder called `.claude` inside your user folder — the main folder on your Mac or PC that has your name on it. Your User memory (the one we're about to set up) lives here.
+- **Your project-specific settings and memory** — rules that only apply to *this one* project. These live inside the project itself, so each project can have its own personality. Your Project memory lives here.
+
+> **You don't have to create any of this.** Claude sets these folders up automatically the first time they're needed — you'll never have to make them by hand.
+
+**What about privacy?** The only thing that ever leaves your computer is the message you type to Claude — exactly like when you chat with ChatGPT. Your files, your settings, your memory, and your conversation history all stay on your machine.
+
+With that picture in mind, let's look at the two types of memory.
+
 ## Two types of memory
 
 When you type `/memory` in Claude Code, you'll see two options:

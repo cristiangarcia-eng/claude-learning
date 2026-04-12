@@ -1,6 +1,10 @@
 # Optimizar Tokens
 
-Claude Code usa tokens cada vez que envías un mensaje, y cada mensaje reprocesa toda la conversación anterior. Entender cómo funcionan los tokens te ayuda a gastar menos sin sacrificar calidad.
+Claude Code usa tokens (piensa en ellos como palabras) cada vez que envías un mensaje, y tu suscripción incluye una cantidad mensual de tokens. Si llegas al límite, te quedas bloqueado hasta que se renueve — justo tan divertido como suena:
+
+![Claude Code: You've hit your limit, resets 7pm. Me from 5-6.59pm: Darth Maul esperando furioso](./images/rate-limit-meme.png)
+
+La buena noticia: entender cómo funcionan los tokens te permite gastar muchísimo menos sin sacrificar calidad. Esta lección recorre las técnicas que marcan más diferencia.
 
 ## Cómo se gastan los tokens
 
@@ -131,7 +135,9 @@ Cambia de modelo con `/model`. Para preguntas simples como "¿qué hay en este a
 
 Escribe `/cost` en cualquier momento para ver cuántos tokens has usado en la sesión actual. Si ves que una sesión se dispara, probablemente necesitas un `/clear` o `/compact`.
 
-> **Consejo**: Puedes ver tu consumo mensual total en [claude.ai/settings](https://claude.ai/settings) bajo la sección de uso.
+> **Consejo**: Puedes ver tu consumo mensual total en [claude.ai](https://claude.ai) → Settings → Usage.
+
+> **Dato útil:** Leer archivos grandes y trabajar con imágenes consume muchos más tokens que las conversaciones simples de texto. Si estás trabajando en un proyecto grande, vigila `/cost`.
 
 ## Resumen rápido
 

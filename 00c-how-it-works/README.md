@@ -61,114 +61,17 @@ Claude can search through all your files to find specific information — like e
 ### Search the web
 Claude can search the internet to find current information — competitor websites, market data, news, documentation. You can ask it to look something up and it will bring the results directly into your conversation, combining what it finds online with your local project files.
 
-## The context window
+## What's next
 
-Claude has a **context window** — think of it as Claude's short-term memory for your conversation.
+This lesson gave you the mental model. The next few lessons zoom in on three things that make a huge difference in your day-to-day:
 
-Everything goes into this memory:
-- Your messages
-- Files Claude reads
-- Command outputs
-- Claude's responses
-
-This memory has a limit. When it fills up, Claude's quality degrades:
-
-- At **70% full** — quality starts dropping, responses become less precise
-- At **85% full** — frequent errors, Claude misses important details
-- At **90%+** — Claude forgets key parts of the conversation
-
-You can check how full your context is by typing `/context`.
-
-### Auto-compaction
-
-When your conversation gets very long, Claude automatically compresses older messages into high-density summaries. This happens in the background — you don't need to do anything. It preserves the important information while freeing up space for new work.
-
-You can also trigger this manually with `/compact` if you want to free up space without starting over.
-
-### How to manage it
-
-| Problem | Solution |
-|---------|----------|
-| Conversation getting long | Type `/clear` to start fresh |
-| Claude forgot something you said earlier | Remind it, or start a new session |
-| Claude seems confused | Type `/clear` and rephrase your request |
-
-> **Rule of thumb**: If you're switching to a completely different topic, start with `/clear`. It's like opening a fresh document instead of adding to an already long one.
-
-## Useful commands
-
-Claude Code has a few built-in commands that start with `/`. You don't need to memorize many — just these:
-
-| Command | What it does |
-|---------|-------------|
-| `/clear` | Starts a fresh conversation (use this often!) |
-| `/compact` | Summarizes a long conversation to free up space |
-| `/help` | Shows all available commands |
-| `/model` | Switches between Claude models (Haiku, Sonnet, Opus) |
-
-We recommend using **Opus 4.6** — it's the most capable model and produces the best results. You can check which model you're using at the bottom of the Claude Code screen, and switch with `/model` if needed.
-
-### Effort level: always set it to max
-
-Besides choosing the model, Claude has an **effort level** setting (`/effort`) that controls how much it reasons before answering. By default, Claude tends to put you on `medium` to consume fewer tokens — but we recommend always keeping it at max for the best responses.
-
-You have several ways to set it as default:
-
-**Environment variable (most reliable, always persists):**
-
-```bash
-export CLAUDE_CODE_EFFORT_LEVEL=max
-```
-
-Add that line to your `.bashrc` or `.zshrc` so it applies in every session.
-
-**Settings file:** Add `"effortLevel": "max"` in your Claude Code configuration file.
-
-**Per-session command:** Type `/effort max` in Claude Code. The levels `low`, `medium`, and `high` persist between sessions, but `max` does not persist between sessions except through the environment variable.
-
-> **Note:** `max` is only available on Opus 4.6 — using it with Sonnet will throw an error.
-
-The most important one is `/clear` — use it every time you switch topics.
-
-## Permissions: you're always in control
-
-Claude Code has three modes:
-
-| Mode | What it means |
-|------|--------------|
-| **Normal** (default) | Claude asks permission for every change |
-| **Auto-accept** | Claude makes changes without asking (use with caution) |
-| **Plan mode** | Claude only reads and plans — no changes allowed |
-
-Press **Shift+Tab** to cycle between modes. Most people start in Normal mode.
-
-> **Plan mode is great for learning.** You can ask Claude to analyze your project without any risk of changes.
-
-## Where things are saved
-
-- **Conversations** are saved locally on your computer
-- **Settings** live in `~/.claude/` (your home folder)
-- **Project settings** live in `.claude/` inside your project folder
-
-Nothing is sent to the cloud except your messages to Claude (just like using ChatGPT or any AI chat).
-
-## How much does it cost?
-
-Claude Code uses tokens (think of them as words) every time you have a conversation. Your subscription includes a monthly token allowance.
-
-**Check your session cost:** Type `/cost` in Claude Code to see how many tokens you've used in the current session.
-
-**Check your monthly usage:** Go to [claude.ai](https://claude.ai) → Settings → Usage to see your overall consumption and how much of your monthly allowance you've used.
-
-> **Good to know:** Reading large files and working with images uses more tokens than simple text conversations. If you're working on a big project, keep an eye on your usage with `/cost`.
-
-![Claude Code: You've hit your limit, resets 7pm. Me from 5-6.59pm: Darth Maul waiting furiously](./images/rate-limit-meme.png)
+- **[The Context Window](/en/lessons/context-window)** — Claude's short-term memory, why it matters, and how to manage it.
+- **[Models](/en/lessons/models)** — Haiku vs Sonnet vs Opus, and the effort setting that controls how hard Claude thinks.
+- **[Plan Mode](/en/lessons/plan-mode)** — the safest way to let Claude analyze your project without touching anything.
 
 ## Key takeaways
 
-1. **Don't expect perfection on the first try** — the value of AI is iteration speed, not getting it right the first time
-2. **Claude always asks before acting** — you approve every change, you never lose control
-3. **The context window is limited** — use `/clear` when switching topics and `/compact` if the conversation gets long
-4. **Use Opus 4.6 with max effort** — this is the configuration that gives the best results
-5. **Watch your usage** — `/cost` shows your session tokens, and claude.ai shows your monthly consumption
-
+1. **Don't expect perfection on the first try** — the value of AI is iteration speed, not getting it right the first time.
+2. **Claude always asks before acting** — you approve every change, you never lose control.
+3. **Claude works in a loop**: you guide, it thinks, it acts, you approve, repeat.
+4. **`/clear` is your best friend** — use it every time you switch topics.

@@ -44,7 +44,7 @@ Es un análisis competitivo sencillo de Nike con algunos archivos dentro.
 
 Aquí tienes el resto de la lección en video — puedes verlo primero y luego repasar los pasos de abajo, o saltártelo e ir directo a las instrucciones.
 
-<video src="https://qcc2s6imrfok5tgt.public.blob.vercel-storage.com/lessons/cursor/Cursor-basics.mp4" controls playsinline preload="metadata" class="my-4 max-w-full rounded-lg"></video>
+<video src="https://qcc2s6imrfok5tgt.public.blob.vercel-storage.com/lessons/cursor/Cursor-basics-es.mp4" controls playsinline preload="metadata" class="my-4 max-w-full rounded-lg"></video>
 
 *PD: Puedes ponerme a 1.5x, no me voy a ofender.*
 
@@ -52,8 +52,10 @@ Aquí tienes el resto de la lección en video — puedes verlo primero y luego r
 
 1. Ve a **File > Open Folder** (o `Cmd+O` en Mac)
 
-![File > Open Folder en Cursor](./images/cursor-open-folder.png)
+   ![File > Open Folder en Cursor](./images/cursor-open-folder.png)
+
 2. Navega a tu **Escritorio** y selecciona la carpeta `nike-analysis`
+
 3. Haz clic en **Open**
 
 Deberías ver los archivos aparecer en el Explorador a la izquierda. Haz clic en cualquier archivo para abrirlo — ¡eso es todo!

@@ -40,6 +40,14 @@ It's a simple competitive analysis of Nike with a few files inside.
 
 > **Before continuing**, make sure the unzipped `nike-analysis` folder is on your Desktop. The next steps assume it's there.
 
+### A quick tour
+
+Here's the rest of this lesson as a short video — feel free to watch first and then skim the steps below, or skip it and go straight to the written instructions.
+
+<video src="https://n7yspnoyrifihysp.public.blob.vercel-storage.com/lessons/cursor/cursor-basics.mp4" controls playsinline preload="metadata" class="my-4 max-w-full rounded-lg"></video>
+
+*PS: Feel free to watch me at 1.5x — I won't take it personally.*
+
 ### Open it in Cursor
 
 1. Go to **File > Open Folder** (or `Cmd+O` on Mac)

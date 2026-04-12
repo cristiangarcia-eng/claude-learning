@@ -40,6 +40,14 @@ Es un análisis competitivo sencillo de Nike con algunos archivos dentro.
 
 > **Antes de continuar**, asegúrate de que la carpeta `nike-analysis` descomprimida está en tu Escritorio. Los siguientes pasos asumen que está ahí.
 
+### Un recorrido rápido
+
+Aquí tienes el resto de la lección en video — puedes verlo primero y luego repasar los pasos de abajo, o saltártelo e ir directo a las instrucciones.
+
+<video src="https://n7yspnoyrifihysp.public.blob.vercel-storage.com/lessons/cursor/cursor-basics.mp4" controls playsinline preload="metadata" class="my-4 max-w-full rounded-lg"></video>
+
+*PD: Puedes ponerme a 1.5x, no me voy a ofender.*
+
 ### Ábrelo en Cursor
 
 1. Ve a **File > Open Folder** (o `Cmd+O` en Mac)

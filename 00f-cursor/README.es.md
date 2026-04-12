@@ -44,7 +44,7 @@ Es un análisis competitivo sencillo de Nike con algunos archivos dentro.
 
 Aquí tienes el resto de la lección en video — puedes verlo primero y luego repasar los pasos de abajo, o saltártelo e ir directo a las instrucciones.
 
-<video src="https://n7yspnoyrifihysp.public.blob.vercel-storage.com/lessons/cursor/cursor-basics.mp4" controls playsinline preload="metadata" class="my-4 max-w-full rounded-lg"></video>
+<video src="https://qcc2s6imrfok5tgt.public.blob.vercel-storage.com/lessons/cursor/Cursor-basics.mp4" controls playsinline preload="metadata" class="my-4 max-w-full rounded-lg"></video>
 
 *PD: Puedes ponerme a 1.5x, no me voy a ofender.*
 

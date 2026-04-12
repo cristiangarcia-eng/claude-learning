@@ -28,7 +28,7 @@ Si no tienes claro cuáles son esas teclas, aquí las tienes en un teclado está
 
 Mantén pulsada `Shift` y toca `Tab` a la vez. Cada pulsación te lleva al siguiente modo. Verás el modo actual indicado en la interfaz de Claude Code, así siempre sabes dónde estás.
 
-## Modo Plan: la caja de arena segura
+## Modo Plan: explorar sin romper nada
 
 El modo Plan es especial. Cuando está activo, Claude **físicamente no puede modificar tus archivos ni ejecutar comandos**. Solo puede leer. Suena limitante, pero desbloquea una forma de trabajar muy potente:
 

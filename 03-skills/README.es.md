@@ -1,8 +1,15 @@
-# Skills — Capacidades Reutilizables para Claude
+# Skills
+**Enséñale a Claude un flujo una vez — lo ejecutará igual, para siempre.**
 
-## ¿Qué son los Skills?
+Álvaro es un tech recruiter en Valencia. Escribe ~30 mensajes de outreach a la semana — cada uno para un candidato distinto, para un rol distinto, y cada uno necesita la misma estructura de 4 párrafos: intro, rol, por qué encaja, siguiente paso. Antes de crear un Skill, se pasaba 8 minutos por mensaje escribiendo la misma estructura de siempre antes de llegar a lo que de verdad importaba: *por qué esta persona para este rol*.
 
-Los Skills son instrucciones reutilizables que Claude sigue automáticamente. En lugar de re-explicar la misma tarea en cada conversación, un Skill guarda las instrucciones una vez. Claude las usa cada vez que son relevantes.
+**4 horas a la semana escribiendo la misma plantilla una y otra vez.**
+
+Entonces lo escribió una vez — la estructura, el tono, las reglas sobre lo que nunca decir — y lo guardó como Skill. Ahora pega el perfil del candidato y el rol, Claude produce el borrador con la estructura lista, y Álvaro dedica su tiempo a lo que debe hacer un humano: el pitch. Mismo resultado, misma voz, en una fracción del tiempo.
+
+Eso son los Skills. La memoria recuerda *quién eres y en qué trabajas*. Los Skills recuerdan *cómo haces las cosas*.
+
+> **La memoria es quién eres. Los Skills son lo que sabes hacer.**
 
 Piensa en un skill como una receta. Escribes los pasos una vez, y Claude los sigue siempre — produciendo resultados consistentes.
 
@@ -13,11 +20,47 @@ Piensa en un skill como una receta. Escribes los pasos una vez, y Claude los sig
 | **Comparte con tu equipo** | Todos usan las mismas guías de voz de marca |
 | **Claude los activa automáticamente** | Claude detecta cuándo un skill es relevante y lo usa |
 
+## Dónde viven tus skills
+
+Los skills siguen el **mismo patrón de dos capas** que ya conoces de la [lección de Memoria](/es/lessons/memory) — una capa para *ti*, otra para *cada proyecto*:
+
+```
+~/Desktop/Claude/                  ← tu workspace (visible en Finder)
+├── projects/
+│   ├── nike-analysis/
+│   │   ├── competitive-analysis.md
+│   │   ├── sales-data.csv
+│   │   ├── CLAUDE.md              ← memoria de proyecto
+│   │   └── .claude/
+│   │       └── skills/            ← skills solo para este proyecto (opcional)
+│   │           └── nike-report-style/
+│   │               └── SKILL.md
+│   └── q4-planning/
+└── resources/
+
+~/.claude/                         ← config de Claude Code (oculta)
+├── CLAUDE.md                      ← tu User memory
+└── skills/                        ← tus skills personales
+    ├── meeting-notes/
+    │   └── SKILL.md
+    └── weekly-report-format/
+        └── SKILL.md
+```
+
+Dos cosas que vale la pena notar:
+
+- **Tus skills personales viven en `~/.claude/skills/`** — la misma carpeta oculta de configuración donde vive tu User memory. Todo lo que dejes aquí está disponible en **todos los proyectos, en todas las conversaciones**. Aquí es donde van a vivir la mayoría de tus skills: tus reglas de formato, tu tono de voz, los workflows que repites con cada cliente.
+- **Los skills de proyecto viven dentro de la carpeta del proyecto**, bajo `.claude/skills/`. Usa esto solo para cosas que tengan sentido en *un único* proyecto — la voz de marca de un cliente específico, una plantilla de informe única para una cuenta concreta.
+
+**Por defecto, personales.** La mayoría de la gente acaba con 10–20 skills personales y apenas un par específicos de proyecto. Haz un skill solo-de-proyecto únicamente si de verdad no tiene sentido en ningún otro sitio.
+
+> **No tienes que crear estas carpetas a mano.** Cuando tú (o Claude) guardéis vuestro primer skill, Claude Code crea la estructura de carpetas automáticamente — exactamente igual que hizo con tus archivos de memoria.
+
 ## Explora el Marketplace de Skills
 
 Antes de crear tus propios skills, explora lo que ya existe. La comunidad ha creado cientos de skills listos para usar:
 
-**[skillsmp.com](https://skillsmp.com/)**
+**[skills.sh](https://skills.sh/)**
 
 Es como una tienda de aplicaciones para capacidades de Claude Code — navega por categoría, ve los más populares, e instala con un solo comando.
 
@@ -34,10 +77,18 @@ Aquí hay algunos para empezar:
 
 ### Cómo instalar un skill
 
-1. Ve a [skillsmp.com](https://skillsmp.com/) y encuentra un skill que te guste
+1. Ve a [skills.sh](https://skills.sh/) y encuentra un skill que te guste
 2. Copia el comando de instalación (se muestra en la página del skill)
-3. Pégalo en tu terminal de Claude Code
-4. El skill está listo para usar inmediatamente
+
+    ![Comando de instalación del skill](images/skills-install-command.png)
+
+3. Pégalo en tu terminal (fuera de Claude Code, o con `!` delante si estás dentro)
+
+    ![Selector de agentes al instalar un skill](images/skills-agent-picker.png)
+
+4. Te va a preguntar con qué agentes instalarlo: selecciona **Claude Code**. Aquí el ratón no funciona — muévete con las flechas ↑↓, marca con la barra espaciadora y confirma con Enter
+5. Cuando pregunte el alcance, elige **global** (para que esté disponible en todos tus proyectos) y el método **Symlink**
+6. Abre una sesión nueva de Claude Code — las skills se cargan al iniciar la sesión, así que las que instales mientras Claude ya está corriendo no aparecerán hasta que reinicies
 
 ### Pruébalo ahora
 
@@ -46,6 +97,10 @@ Instala un skill del marketplace y pruébalo. Por ejemplo, después de instalar 
 > `Crea una landing page sencilla para una campaña DTC de Nike dirigida a corredores Gen Z`
 
 Claude usará las instrucciones del skill para producir un resultado pulido — mucho mejor que preguntar sin el skill.
+
+Por cierto, a mí me quedó guapísima 👇
+
+![Landing de Nike creada con el skill frontend-design](images/nike-landing-example.png)
 
 ## Crea tus propios Skills
 
@@ -63,14 +118,7 @@ Crea un skill llamado "meeting-notes" que formatee notas de reunión en:
 4. Preguntas abiertas
 ```
 
-Claude creará el archivo por ti en la ubicación correcta.
-
-### Dónde viven los skills
-
-| Ubicación | Quién puede usarlo |
-|----------|---------------|
-| `~/.claude/skills/mi-skill/SKILL.md` | Solo tú, en todos los proyectos |
-| `.claude/skills/mi-skill/SKILL.md` | Todo tu equipo (compartido via la carpeta del proyecto) |
+Claude creará el archivo por ti en la ubicación correcta — por defecto en `~/.claude/skills/` para que esté disponible en todos tus proyectos. Si en cambio lo quieres limitado a un solo proyecto, díselo a Claude en tu petición (por ejemplo *"créalo como skill de proyecto"*).
 
 ### Usando tus skills
 

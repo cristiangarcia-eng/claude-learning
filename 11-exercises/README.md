@@ -14,14 +14,13 @@ You don't just use Claude Code — you extend it.
 
 | # | Exercise | Module | Feature You Build | Level |
 |---|----------|--------|-------------------|-------|
-| 1 | [Context Engineering](01-context-engineering/) | [02-memory](../02-memory/) | CLAUDE.md with layered memory | Beginner |
-| 2 | [Tame a Messy Spreadsheet](02-messy-spreadsheet/) | [01-slash-commands](../01-slash-commands/) | A reusable `/clean-csv` command | Beginner |
-| 3 | [Research & Structure](03-research-landscape/) | [03-skills](../03-skills/) | An auto-triggered research skill | Beginner |
-| 4 | [Build a Taxonomy](04-taxonomy-from-chaos/) | [08-checkpoints](../08-checkpoints/) | Checkpoint-based approach comparison | Intermediate |
-| 5 | [Conversation Analysis](05-conversation-analysis/) | [04-subagents](../04-subagents/) | A `data-analyst` subagent | Intermediate |
-| 6 | [Evaluate AI Output](06-evaluate-ai-output/) | [06-hooks](../06-hooks/) | A quality-check hook | Intermediate |
-| 7 | [Content Pipeline](10-end-to-end-pipeline/) | [07-plugins](../07-plugins/) | A complete distributable plugin | Advanced |
-| 8 | [Connect Systems](11-connect-systems/) | [05-mcp](../05-mcp/) | MCP server + cross-system workflow | Advanced |
+| 1 | [Tame a Messy Spreadsheet](02-messy-spreadsheet/) | Slash Commands | A reusable `/clean-csv` command | Beginner |
+| 2 | [Research & Structure](03-research-landscape/) | [03-skills](../03-skills/) | An auto-triggered research skill | Beginner |
+| 3 | [Build a Taxonomy](04-taxonomy-from-chaos/) | [08-checkpoints](../08-checkpoints/) | Checkpoint-based approach comparison | Intermediate |
+| 4 | [Conversation Analysis](05-conversation-analysis/) | [04-subagents](../04-subagents/) | A `data-analyst` subagent | Intermediate |
+| 5 | [Evaluate AI Output](06-evaluate-ai-output/) | Hooks | A quality-check hook | Intermediate |
+| 6 | [Content Pipeline](10-end-to-end-pipeline/) | [07-plugins](../07-plugins/) | A complete distributable plugin | Advanced |
+| 7 | [Capstone: Intelligence System](11-connect-systems/) | [05-mcp](../05-mcp/) | MCP server + cross-system workflow | Advanced |
 
 ## Who Are These For?
 
@@ -29,18 +28,18 @@ Everyone. The tasks are universal — what changes is **what you build** with ea
 
 | Role | Exercises that feel familiar |
 |------|------------------------------|
-| **Sales** | CRM cleanup (#2), landscape research (#3), conversation analysis (#5) |
-| **Finance** | Expense categorization (#2), data analysis (#5), taxonomy (#4) |
-| **HR / People** | Taxonomy standardization (#4), conversation analysis (#5) |
-| **Operations** | Vendor evaluation (#3), system integration (#8) |
-| **Product** | AI evaluation (#6), content pipeline (#7) |
-| **Marketing** | Research (#3), AI content QA (#6), end-to-end content (#7) |
+| **Sales** | CRM cleanup (#1), landscape research (#2), conversation analysis (#4) |
+| **Finance** | Expense categorization (#1), data analysis (#4), taxonomy (#3) |
+| **HR / People** | Taxonomy standardization (#3), conversation analysis (#4) |
+| **Operations** | Vendor evaluation (#2), system integration (#7) |
+| **Product** | AI evaluation (#5), content pipeline (#6) |
+| **Marketing** | Research (#2), AI content QA (#5), end-to-end content (#6) |
 
 ## Recommended Path
 
-- **After Level 1 (modules 01-02):** Exercises 1, 2, 3
-- **After Level 2 (modules 03-06):** Exercises 4, 5, 6
-- **After Level 3 (modules 07-10):** Exercises 7, 8
+- **After Getting Started (00-intro → 02-memory):** Exercises 1, 2, 3
+- **After Core Features (03-skills → 05-mcp):** Exercises 4, 5
+- **After Advanced (07-plugins, 08-checkpoints):** Exercises 6, 7
 
 ## Tips for Success
 

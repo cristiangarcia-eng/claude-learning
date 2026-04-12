@@ -1,12 +1,14 @@
 # Memory
 
+**Brief Claude once — it remembers your project, your style, your lessons forever.**
+
+Inés is a brand strategist in Barcelona with 4 clients. Every Monday she'd spend 18 minutes pasting the same context into Claude for each one — industry, competitors, tone of voice, last month's campaigns. Tuesday, same thing. 72 minutes a week re-introducing Claude to projects it had just helped her with the day before.
+
+Until she discovered memory.
+
 > Without memory, every conversation with Claude is a first date.
 
-In the Voice lesson we said the most important thing is providing good context. Memory is how you make that context **permanent**.
-
-Every time you start a new conversation, Claude starts from zero — it doesn't know who you are, what you're working on, or how you like things done. Without memory, you'd have to explain everything again every time.
-
-Memory is a simple text file that Claude reads at the beginning of **every** conversation. You write down what Claude should know, and it remembers — automatically, always.
+Memory is how you make context **permanent**. Every time you start a new conversation, Claude starts from zero — it doesn't know who you are, what you're working on, or how you like things done. With memory, Claude reads a simple text file at the beginning of **every** conversation with whatever you've told it about yourself and your project — automatically, always.
 
 ## Where Claude Code saves things
 
@@ -24,13 +26,13 @@ With that picture in mind, let's look at the two types of memory.
 
 ## Two types of memory
 
-When you type `/memory` in Claude Code, you'll see two options:
+When you type `/memory` in Claude Code, you'll see a menu. Ignore the third item (*"Open auto-memory folder"*) for now — that's just a shortcut. The two that matter are **User memory** and **Project memory**:
 
 ![The /memory menu in Claude Code](./images/claude-memory-menu.png)
 
 ### 1. User memory — about you
 
-**Where it lives:** `~/.claude/CLAUDE.md` (in your home folder)
+**Think of it as:** a sticky note Claude always carries with it, no matter which project you're working on. It's one file, saved inside your user folder — the main folder on your Mac or PC that has your name on it — and every project reads from it.
 
 This follows you everywhere, across all projects. Put things here that are always true about you:
 
@@ -41,7 +43,7 @@ This follows you everywhere, across all projects. Put things here that are alway
 
 ### 2. Project memory — about the project
 
-**Where it lives:** `./CLAUDE.md` (inside the project folder)
+**Think of it as:** a briefing document that lives inside one specific project folder. Only Claude reads it when you're working in that folder — in any other project, it's invisible.
 
 This only applies to the current project. It stays with the folder. Put things here like:
 
@@ -79,7 +81,13 @@ In Claude Code, type the following command to open your personal memory file:
 ! open ~/.claude/CLAUDE.md
 ```
 
-This opens the file in Cursor where you can edit it comfortably. Add something like this:
+![The ! open command in Claude Code's bash mode](./images/bash-mode-open.png)
+
+The `!` at the start is important — it tells Claude Code you want to run a shell command instead of chatting with Claude. You'll see the prompt turn pink and the label *"! for bash mode"* appear underneath, just like in the screenshot. Press Enter and the file opens in Cursor where you can edit it comfortably.
+
+Yes, writing out something like this is boring — that's exactly what the [voice input](/en/lessons/voice-input) setup from the earlier lesson is for. Hit the voice shortcut and just *talk* your context out loud: who you are, what you work on, how you like things done, the quirks your team cares about. Ten seconds of talking beats two minutes of typing, and the result is usually richer because you're thinking out loud instead of editing as you go.
+
+Here's a rough template of what to end up with:
 
 ```
 I am a product manager.
@@ -100,6 +108,18 @@ For project memory, the best practice is: **every time you start working in a ne
 1. Open Claude Code in your project folder
 2. Type `/init`
 3. Claude reads your files and generates a `CLAUDE.md` with the project context
+
+Here's what it looks like when it runs — in this case on a `nike-analysis` folder:
+
+![Claude Code running /init on the nike-analysis folder, reading files and writing CLAUDE.md](./images/init-output.png)
+
+Notice what's happening in that screenshot: Claude reads the files, writes a draft of `CLAUDE.md` in about 40 seconds, and even points out that this is a loose reference folder (not a real code repo) so it doesn't make up build systems or tooling that don't exist. It adapts to whatever kind of folder you're in.
+
+When it finishes, a brand new `CLAUDE.md` shows up right inside your project folder — you can open Finder and see it sitting next to your other files:
+
+![The nike-analysis folder in Finder showing the new CLAUDE.md file next to competitive-analysis.md, notes.txt, and sales-data.csv](./images/claude-md-in-finder.png)
+
+That's your project memory. From now on, every time you open Claude Code in this folder, it reads that file first.
 
 That's it. Claude figures out what the project is about, what the key files are, and writes the memory for you.
 

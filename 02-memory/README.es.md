@@ -1,12 +1,14 @@
 # Memoria
 
+**Ponle a Claude el contexto una vez — y se acuerda de tu proyecto, tu estilo y tus lecciones para siempre.**
+
+Inés es estratega de marca en Barcelona y lleva 4 clientes. Cada lunes se pasaba 18 minutos pegando el mismo contexto en Claude para cada uno — sector, competidores, tono de voz, las campañas del mes pasado. El martes, lo mismo. 72 minutos a la semana volviendo a presentarle Claude a proyectos en los que le había ayudado el día anterior.
+
+Hasta que descubrió la memoria.
+
 > Sin memoria, cada conversación con Claude es una primera cita.
 
-En la lección de Voz dijimos que lo más importante es dar buen contexto. La memoria es cómo haces ese contexto **permanente**.
-
-Cada vez que inicias una conversación nueva, Claude empieza desde cero — no sabe quién eres, en qué trabajas, ni cómo te gustan las cosas. Sin memoria, tendrías que explicar todo de nuevo cada vez.
-
-La memoria es un archivo de texto simple que Claude lee al inicio de **cada** conversación. Tú escribes lo que Claude debe saber, y lo recuerda — automáticamente, siempre.
+La memoria es cómo haces que el contexto sea **permanente**. Cada vez que inicias una conversación nueva, Claude empieza desde cero — no sabe quién eres, en qué trabajas, ni cómo te gustan las cosas. Con memoria, Claude lee un archivo de texto al inicio de **cada** conversación con todo lo que le hayas contado sobre ti y tu proyecto — automáticamente, siempre.
 
 ## Dónde guarda las cosas Claude Code
 
@@ -24,13 +26,13 @@ Con esa imagen en mente, veamos los dos tipos de memoria.
 
 ## Dos tipos de memoria
 
-Cuando escribes `/memory` en Claude Code, verás dos opciones:
+Cuando escribes `/memory` en Claude Code, verás un menú. Ignora la tercera opción (*"Open auto-memory folder"*) por ahora — es solo un atajo. Las dos que importan son **User memory** y **Project memory**:
 
 ![El menú de /memory en Claude Code](./images/claude-memory-menu.png)
 
 ### 1. User memory — sobre ti
 
-**Dónde vive:** `~/.claude/CLAUDE.md` (en tu carpeta personal)
+**Piénsalo como:** una nota adhesiva que Claude lleva siempre consigo, sin importar en qué proyecto estés trabajando. Es un solo archivo, guardado dentro de tu carpeta de usuario — la carpeta principal de tu Mac o PC que tiene tu nombre — y todos los proyectos leen de él.
 
 Te sigue a todas partes, en todos los proyectos. Pon aquí cosas que siempre son verdad sobre ti:
 
@@ -41,7 +43,7 @@ Te sigue a todas partes, en todos los proyectos. Pon aquí cosas que siempre son
 
 ### 2. Project memory — sobre el proyecto
 
-**Dónde vive:** `./CLAUDE.md` (dentro de la carpeta del proyecto)
+**Piénsalo como:** un documento de briefing que vive dentro de una carpeta de proyecto específica. Claude solo lo lee cuando estás trabajando en esa carpeta — en cualquier otro proyecto, es invisible.
 
 Solo aplica al proyecto actual. Se queda con la carpeta. Pon aquí cosas como:
 
@@ -79,7 +81,13 @@ En Claude Code, escribe el siguiente comando para abrir tu archivo de memoria pe
 ! open ~/.claude/CLAUDE.md
 ```
 
-Esto abre el archivo en Cursor donde puedes editarlo cómodamente. Agrega algo así:
+![El comando ! open en el modo bash de Claude Code](./images/bash-mode-open.png)
+
+El `!` al principio es importante — le dice a Claude Code que quieres ejecutar un comando de terminal en lugar de chatear con Claude. Verás que el prompt se vuelve rosa y aparece abajo la etiqueta *"! for bash mode"*, igual que en la captura. Pulsa Enter y el archivo se abrirá en Cursor donde puedes editarlo cómodamente.
+
+Sí, escribir algo así es aburridísimo — para eso está exactamente el [input por voz](/es/lessons/voice-input) que configuramos en la lección anterior. Pulsa el atajo de voz y simplemente *habla* tu contexto en voz alta: quién eres, en qué trabajas, cómo te gustan las cosas, las manías que le importan a tu equipo. Diez segundos hablando le ganan a dos minutos escribiendo, y el resultado suele ser más rico porque piensas en voz alta en lugar de ir editando sobre la marcha.
+
+Aquí tienes una plantilla aproximada de a lo que quieres llegar:
 
 ```
 Soy product manager.
@@ -100,6 +108,18 @@ Para la memoria de proyecto, la mejor práctica es: **cada vez que empieces a tr
 1. Abre Claude Code en tu carpeta de proyecto
 2. Escribe `/init`
 3. Claude lee tus archivos y genera un `CLAUDE.md` con el contexto del proyecto
+
+Así se ve cuando corre — en este caso sobre una carpeta `nike-analysis`:
+
+![Claude Code ejecutando /init sobre la carpeta nike-analysis, leyendo archivos y escribiendo CLAUDE.md](./images/init-output.png)
+
+Fíjate lo que está pasando en la captura: Claude lee los archivos, escribe un borrador de `CLAUDE.md` en unos 40 segundos, e incluso señala que esta es una carpeta de referencia suelta (no un repo de código real) para no inventarse sistemas de build o herramientas que no existen. Se adapta al tipo de carpeta en la que estés.
+
+Cuando termina, aparece un `CLAUDE.md` nuevo justo dentro de tu carpeta de proyecto — puedes abrir Finder y verlo al lado del resto de tus archivos:
+
+![La carpeta nike-analysis en Finder mostrando el nuevo archivo CLAUDE.md junto a competitive-analysis.md, notes.txt y sales-data.csv](./images/claude-md-in-finder.png)
+
+Esa es tu memoria de proyecto. A partir de ahora, cada vez que abras Claude Code en esta carpeta, leerá ese archivo primero.
 
 Eso es todo. Claude descubre de qué trata el proyecto, cuáles son los archivos clave, y escribe la memoria por ti.
 

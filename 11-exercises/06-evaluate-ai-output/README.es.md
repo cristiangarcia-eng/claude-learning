@@ -30,6 +30,8 @@ Algunos borradores siguen los lineamientos perfectamente. Otros tienen violacion
 
 Crea una carpeta `evaluate-ai-output` dentro de `Escritorio/Claude/projects/`. Copia los archivos de `05-evaluate-ai-output` de los materiales descargados. Luego abre la carpeta en Cursor (**File → Open Folder**) e inicia Claude Code en la terminal.
 
+> **¿Qué es un hook?** Un hook es un script (shell, Python, etc.) que Claude Code ejecuta automáticamente cuando ocurre un evento — por ejemplo, después de que escribe o edita un archivo. Los hooks se declaran en `settings.json`: a nivel usuario en `~/.claude/settings.json` (se aplican a todos tus proyectos) o a nivel proyecto en `.claude/settings.json`. En este ejercicio usarás un hook `PostToolUse` que corre después de cualquier `Write` o `Edit` y valida que el contenido cumpla tus reglas de marca.
+
 ## Instrucciones paso a paso
 
 ### Parte 1: Evaluación manual (15 minutos)
@@ -78,7 +80,8 @@ Ahora automatiza la verificación de calidad como un hook. Un hook es un script 
 
 ```
 Help me create a hook that checks brand guideline compliance.
-Following the format from the 06-hooks module, I want:
+The hook should be a shell script triggered by the PostToolUse
+event in .claude/settings.json for Write and Edit tools. I want:
 
 - A script that checks any written file for common brand issues:
   * More than 2 emojis

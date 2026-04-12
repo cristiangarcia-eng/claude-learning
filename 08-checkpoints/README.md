@@ -9,41 +9,43 @@ Every time you send a message to Claude, it automatically saves a checkpoint —
 
 ## How to rewind
 
-Press **Esc twice** (Esc + Esc) to open the checkpoint browser. You'll see a list of all your checkpoints with timestamps.
+Press **Esc twice** (`Esc + Esc`) — or type `/rewind` — to open the rewind menu. You'll see a scrollable list of every message you sent in the session. Pick the point you want to go back to.
 
-Select any checkpoint and you'll see these options:
+What happens next depends on whether Claude has edited any of your files since that point.
 
-1. **Restore code and conversation** — go back to that exact point (files + conversation)
-2. **Restore conversation** — rewind the chat but keep your current files
-3. **Restore code** — revert the files but keep the conversation
-4. **Never mind** — cancel and stay where you are
+### The usual case: rewinding the conversation
 
-Most of the time, you'll want option 1 — a full rewind.
+If you've been mostly chatting with Claude — asking questions, brainstorming, reviewing files without editing them — you'll see three options when you pick a message to rewind to:
 
-## When to use checkpoints
+![The rewind dialog showing Restore conversation, Summarize from here, and Never mind](./images/rewind-confirmation.png)
 
-### You don't like what Claude did
+1. **Restore conversation** — jump the chat back to that point. Everything you and Claude said after it is dropped, and you start fresh from that moment.
+2. **Summarize from here** — instead of throwing the later messages away, Claude squeezes them into a compact summary and carries on with that summary as the new context. Good for freeing up space in the conversation without losing the gist of what happened.
+3. **Never mind** — cancel and go back to the message list.
 
-You asked Claude to rewrite a section of your report and it went in the wrong direction. Instead of trying to fix it, just rewind:
+A nice detail: after you pick **Restore conversation** or **Summarize from here**, the original text of the selected message is put back into your input field — so you can resend it as-is or edit it first.
 
-1. Press **Esc + Esc**
-2. Select the checkpoint before the change
-3. Choose **Restore code and conversation**
-4. Ask Claude again with a clearer instruction
+### When Claude has edited your files: two more options
 
-### You want to try two approaches
+The moment Claude has actually edited files in your project — a report, a spreadsheet, a doc, some notes — the menu grows to **five options**. The new ones let you also undo the file changes, not just the conversation:
 
-You're not sure how to structure your analysis. Try both:
+1. **Restore code and conversation** — revert *both* your files and the conversation to that point. The closest thing to a full "undo". (The word "code" in the button is just the technical name Claude Code uses — for you it means "your files": reports, CSVs, notes, whatever Claude touched.)
+2. **Restore conversation** — same as before: rewind the chat but keep your current files.
+3. **Restore code** — revert the files but keep the conversation. Useful when you want Claude to try a different edit but you don't want to re-explain the context.
+4. **Summarize from here** — same as before. Your files stay unchanged.
+5. **Never mind** — same as before.
 
-1. Ask Claude for approach A
-2. Review the result
-3. Press **Esc + Esc** and rewind to before approach A
-4. Ask Claude for approach B
-5. Compare and keep the one you prefer
+When Claude has been editing files for you, **Restore code and conversation** is usually what you want — a clean, full rewind back to a state where everything was fine.
 
-### Something went wrong
+## What checkpoints don't cover
 
-Claude made several changes and now things are messy. No problem — rewind to the last point where everything was fine.
+Checkpoints are a great safety net, but they're not magic. A few things they *don't* track:
+
+- **Files modified through terminal commands.** If Claude runs something like `rm file.txt` or `mv old.txt new.txt` from the terminal, those changes are **not** checkpointed and can't be undone by rewind. Only edits that Claude makes directly to files are tracked.
+- **Files you edit yourself** outside of Claude Code.
+- **Changes from other Claude Code sessions** running at the same time.
+
+For these cases, rely on your normal safety nets — regular backups (Time Machine, iCloud, Dropbox) and, if you're in a git-based project, your commit history. Think of checkpoints as a **session-level undo button**, not as permanent history.
 
 ## Things to know
 

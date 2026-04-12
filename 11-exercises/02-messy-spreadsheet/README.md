@@ -69,7 +69,7 @@ Review the diagnosis. Understanding the problems is half the work.
 
 **Want to see the mess for yourself?** Open `raw_sales.csv` in Excel or Google Sheets. You will see something like this:
 
-![Raw sales data in Google Sheets -- notice the inconsistent names, mixed date formats, and notes in number fields](/exercise-images/raw-sales-sheets.png)
+![Raw sales data in Google Sheets -- notice the inconsistent names, mixed date formats, and notes in number fields](/lesson-images/raw-sales-sheets.png)
 
 ### Step 2: Clean the data (10 minutes)
 
@@ -105,7 +105,7 @@ Save the clean file as clean_sales.csv
 
 Check the output. Open `clean_sales.csv` in Excel or Google Sheets to verify it looks right. Compare it with the original -- the difference should be dramatic:
 
-![Clean sales data in Google Sheets -- names standardized, dates consistent, duplicates removed, no more notes in number fields](/exercise-images/clean-sales-sheets.png)
+![Clean sales data in Google Sheets -- names standardized, dates consistent, duplicates removed, no more notes in number fields](/lesson-images/clean-sales-sheets.png)
 
 ### Step 3: Build the skill (10 minutes)
 

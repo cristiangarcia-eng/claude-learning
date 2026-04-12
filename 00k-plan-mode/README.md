@@ -39,6 +39,40 @@ Plan mode is special. When it's on, Claude **physically cannot modify your files
 
 > **Plan mode is great for learning.** When you're new to Claude Code, put it in Plan mode and ask it to analyze your project. You get all the benefit of Claude's understanding with zero risk of anything going wrong. Once you see its plan, you can switch back to Normal mode and actually execute it.
 
+## Start with a plan — always
+
+Before making changes, always start in Plan mode. You have two ways to activate it:
+
+- **Keyboard shortcut:** Press `Shift + Tab` **twice** — you'll see the mode indicator change at the bottom of the screen. Works on Mac, Windows, and Linux.
+- **Natural language:** Just tell Claude *"switch to plan mode"*. Claude understands the instruction and changes modes for you.
+
+In Plan mode, Claude can only read and analyze — it won't modify any files. Starting every task this way is worth it because Claude thinks through the approach before doing anything.
+
+**The numbers back this up:** tasks that start in Plan mode succeed on the first try **77% of the time**, compared to just **40%** when you jump straight to changes. Planning first nearly doubles your success rate.
+
+### Try it: plan a Nike market report
+
+Open Claude Code in your `nike-analysis` folder and switch to Plan mode (`Shift + Tab` twice, or tell Claude *"switch to plan mode"*). Then type:
+
+> Convert this competitive analysis into a full market report. Plan which sections to add, which data from the CSV to include, and how to structure the final document.
+
+Claude will read your files and propose a detailed plan — without changing anything. You can review it, ask questions, and adjust before any work starts.
+
+When the plan looks good, Claude offers you four options to continue:
+
+![The four options Claude Code shows after finishing a plan](./images/plan-mode-options.png)
+
+| Option | What it does |
+|--------|--------------|
+| **Yes, auto-accept edits** | Claude executes the plan and applies all changes without asking at each step. The fastest option. |
+| **Yes, manually approve edits** | Claude executes the plan but asks for confirmation before each change. More control, slower. |
+| **No, refine with Ultraplan on Claude Code on the web** | Sends the plan to Claude Code on the web, where Ultraplan refines it further before execution. Useful when the plan still feels too vague or the task is complex enough to deserve a deeper second pass. |
+| **Tell Claude what to change** | Lets you give feedback on the plan before executing. E.g., *"drop section 3"* or *"start with the CSV"*. |
+
+Pick whichever one fits, and Claude gets to work.
+
+This plan-first, execute-later approach gives you much better results than diving straight into changes.
+
 ## Auto-accept: use with caution
 
 Auto-accept mode is the opposite of Plan mode — Claude makes changes without asking for permission. It's fast, but it's also the mode where people accidentally ship things they didn't intend.
@@ -52,25 +86,10 @@ Auto-accept mode is the opposite of Plan mode — Claude makes changes without a
 
 If any of those aren't true, stick with Normal mode.
 
-## The mental model
-
-Think of it as a dial:
-
-```
-Plan mode  ◄─── Normal ───►  Auto-accept
-(safest)                     (fastest)
-```
-
-- Slide left when you want to **think and explore** without any risk.
-- Stay in the middle for **normal work** — Claude acts, you approve.
-- Slide right when you want **speed** and you've already done the thinking upfront.
-
-Most people live in the middle. Smart people use Plan mode more than they think they should.
-
 ## Key takeaways
 
 1. **Claude Code has three modes** — Normal, Auto-accept, and Plan.
-2. **`Shift + Tab`** cycles between them.
+2. **`Shift + Tab`** cycles between them (twice to reach Plan). You can also just tell Claude *"switch to plan mode"*.
 3. **Plan mode is read-only** — Claude can analyze and propose but cannot change anything.
-4. **Plan mode is perfect for learning** and for high-stakes decisions where you want a proposal before any action.
+4. **Start serious tasks in Plan mode** — it nearly doubles first-try success rate (77% vs 40%).
 5. **Use Auto-accept sparingly** — only for tasks you've scoped well and can easily undo.

@@ -69,7 +69,7 @@ Revisa el diagnóstico. Entender los problemas es la mitad del trabajo.
 
 **Quieres ver el desorden con tus propios ojos?** Abre `raw_sales.csv` en Excel o Google Sheets. Verás algo así:
 
-![Datos de ventas en bruto en Google Sheets -- nota los nombres inconsistentes, formatos de fecha mezclados y notas en campos numéricos](/exercise-images/raw-sales-sheets.png)
+![Datos de ventas en bruto en Google Sheets -- nota los nombres inconsistentes, formatos de fecha mezclados y notas en campos numéricos](/lesson-images/raw-sales-sheets.png)
 
 ### Paso 2: Limpia los datos (10 minutos)
 
@@ -105,7 +105,7 @@ Save the clean file as clean_sales.csv
 
 Revisa el resultado. Abre `clean_sales.csv` en Excel o Google Sheets para verificar que se vea bien. Compáralo con el original -- la diferencia debería ser dramática:
 
-![Datos de ventas limpios en Google Sheets -- nombres estandarizados, fechas consistentes, duplicados eliminados, sin notas en campos numéricos](/exercise-images/clean-sales-sheets.png)
+![Datos de ventas limpios en Google Sheets -- nombres estandarizados, fechas consistentes, duplicados eliminados, sin notas en campos numéricos](/lesson-images/clean-sales-sheets.png)
 
 ### Paso 3: Construye el skill (10 minutos)
 

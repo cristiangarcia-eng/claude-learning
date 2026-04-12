@@ -43,6 +43,8 @@ Si completaste la [lección de MCP](../../05-mcp/) y ya tienes Fetch instalado, 
    claude mcp add fetch -s user -- npx -y @anthropic-ai/fetch-mcp
    ```
 
+   > **Qué hace este comando:** `claude mcp add fetch` registra un servidor MCP llamado `fetch` en tu configuración de Claude Code. El flag `-s user` guarda la configuración a nivel de usuario (`~/.claude.json`) para que esté disponible en todos tus proyectos — si prefieres que solo viva en este proyecto usa `-s project`. Los dos guiones `--` separan los flags de `claude mcp add` del comando que lanza el servidor. `npx -y @anthropic-ai/fetch-mcp` descarga y ejecuta el paquete oficial de Fetch sin necesidad de instalarlo globalmente (`-y` acepta la confirmación automáticamente). Requisito: tener Node.js instalado.
+
 2. **Reinicia Claude Code** para que detecte el nuevo servidor MCP.
 
 3. **Verifica la conexión.** Dentro de Claude Code, escribe `/mcp` — deberías ver `fetch` listado como activo. Haz una prueba rápida:

@@ -1,60 +1,37 @@
-# MCP — Conectando Claude a Datos Externos
+# MCP
+**Dale a Claude acceso a Gmail, Notion, Slack y todas las herramientas donde ocurre tu trabajo real — con un solo comando.**
 
-## ¿Qué es MCP?
+Laura dirige ventas en una startup B2B SaaS de Madrid. Una mañana le pidió a Claude: *"Redacta un follow-up para Carlos de Acme basándote en el hilo que tuvimos la semana pasada."* Claude respondió: *"No tengo acceso a tu Gmail."*
 
-MCP (Model Context Protocol) es cómo Claude Code se conecta al mundo exterior. Sin MCP, Claude solo sabe lo que hay en los archivos de tu proyecto. Con MCP, Claude puede leer páginas web, acceder a tus mensajes de Slack, revisar tus Google Docs, y mucho más.
+Durante dos semanas, Laura se pasó 35 minutos cada lunes pegando hilos de email en Claude a mano. Hasta que un compañero le enseñó un solo comando. Ahora, a las 8:30 de la mañana cada lunes, Claude ya le tiene redactados sus 4 follow-ups — haciendo referencia a lo último que dijo cada prospecto — antes de que Laura haya abierto Slack siquiera.
 
-Piensa en los servidores MCP como "adaptadores" — cada uno le da a Claude acceso a una herramienta o fuente de datos específica.
+Ese comando instaló un **MCP**.
+
+La memoria le da contexto a Claude. Los Skills le dan flujos de trabajo. Ambas cosas son potentes, pero ambas están limitadas a lo que ya vive en tu ordenador. ¿Necesitas un hilo de email de Gmail? ¿Una página de Notion? ¿Un mensaje de Slack? ¿Una fila de tu CRM? Claude no puede acceder a nada de eso por sí solo — solo ve tus archivos locales.
+
+> **Sin MCP, Claude es brillante pero ciego al mundo exterior.**
+
+MCP (Model Context Protocol) es cómo Claude Code se conecta a sistemas externos. Piensa en los servidores MCP como "adaptadores" — cada uno le da a Claude acceso a una herramienta o fuente de datos específica.
 
 ```
 Tú  →  Claude Code  →  Servidor MCP  →  El mundo exterior
                        (el adaptador)
 ```
 
-## Pruébalo: Instala el Fetch MCP
-
-La mejor forma de entender MCP es usar uno. **Fetch** es el servidor MCP más simple — le permite a Claude leer cualquier página web. Sin API key, sin cuenta, sin configuración.
-
-### Paso 1: Instálalo
-
-En tu terminal de Cursor (fuera de Claude Code), ejecuta:
-
-```bash
-claude mcp add fetch -s user -- npx -y @anthropic-ai/fetch-mcp
-```
-
-Esto le dice a Claude Code: "Quiero que puedas leer páginas web."
-
-### Paso 2: Úsalo con tu proyecto de Nike
-
-Abre Claude Code en tu carpeta `nike-analysis` y prueba:
-
-> `Usa el Fetch MCP para ir a adidas.com y analizar su línea de zapatillas de running. Compara su posicionamiento con las fortalezas de Nike de nuestro análisis competitivo.`
-
-Claude usará el Fetch MCP para leer el sitio web de Adidas y compararlo con tus archivos locales de Nike. Este es el poder de MCP — combinar datos externos en vivo con tu proyecto.
-
-> **¿Por qué decir "Usa el Fetch MCP"?** Claude también puede buscar en la web por su cuenta (web search), pero eso es otra cosa — te da resultados de búsqueda, no el contenido real de la página. Cuando quieres que Claude lea un sitio web específico y extraiga información detallada, necesitas decirle que use el Fetch MCP explícitamente. Si no, podría hacer solo una búsqueda web.
-
-Más cosas que puedes hacer con Fetch:
-
-> `Usa Fetch MCP para leer https://www.nike.com/sustainability y agregar una sección de sostenibilidad a nuestro análisis competitivo basándote en lo que encuentres`
-
-> `Usa Fetch para revisar qué está haciendo New Balance en newbalance.com y actualizar la sección de amenazas`
-
 ## El ecosistema MCP
 
-Fetch es solo el principio. Hay servidores MCP para la mayoría de herramientas de trabajo:
+Hay servidores MCP para la mayoría de las herramientas donde ocurre tu trabajo:
 
 | Herramienta | Qué puede hacer Claude |
 |------|-------------------|
-| **Fetch** | Leer cualquier página web |
+| **Gmail** | Buscar emails, leer mensajes, redactar respuestas |
 | **Slack** | Leer canales, enviar mensajes, buscar conversaciones |
 | **Google Docs** | Leer y editar documentos |
 | **Notion** | Navegar páginas, buscar en tu workspace |
 | **Linear** | Rastrear issues, gestionar proyectos |
-| **Gmail** | Buscar emails, leer mensajes, redactar respuestas |
+| **Fetch** | Leer cualquier página web |
 
-Agregas cualquier servidor MCP de la misma forma — con `claude mcp add`. Cada herramienta puede necesitar una API key o autenticación.
+Agregas cualquier servidor MCP con `claude mcp add`. Cada herramienta puede necesitar una API key o autenticación.
 
 ## Gestionar tus conexiones
 
@@ -63,6 +40,22 @@ Agregas cualquier servidor MCP de la misma forma — con `claude mcp add`. Cada 
 | `claude mcp list` | Ver todos los servidores MCP conectados |
 | `claude mcp remove fetch` | Desconectar un servidor |
 | `/mcp` (dentro de Claude Code) | Navegar y gestionar conexiones interactivamente |
+
+Cuando escribes `/mcp` dentro de Claude Code, verás una lista de tus servidores conectados y su estado — algo así:
+
+![Salida del comando /mcp mostrando los servidores conectados](images/mcp-list.png)
+
+Si seleccionas uno que necesita autenticación — Gmail, por ejemplo — se abre una vista de detalle donde puedes autenticarlo o desactivarlo:
+
+![Vista de detalle del servidor MCP de Gmail con opciones Authenticate y Disable](images/mcp-gmail-authenticate.png)
+
+La mayoría de MCPs que se conectan a herramientas externas (Gmail, Slack, Notion…) requieren autenticación. Cuando pulsas "Authenticate", Claude abre una pantalla de consentimiento en tu navegador para que des acceso — para Gmail es algo así:
+
+![Pantalla de consentimiento para conectar Claude con Gmail](images/mcp-gmail-oauth.png)
+
+Una vez conectado, ya puedes hablar con Claude y usará el MCP en tu nombre — buscar en tu bandeja de entrada, leer hilos, redactar respuestas, etc.:
+
+![Claude Code confirmando que está conectado al MCP de Gmail y listando las acciones disponibles](images/mcp-gmail-connected.png)
 
 ## Importante: Los MCPs consumen tu ventana de contexto
 
@@ -89,7 +82,7 @@ Siempre puedes reconectarlos después cuando los necesites. Piensa en ello como 
 
 ## Consejos
 
-- **Empieza con Fetch** — es gratis, no requiere nada, y es inmediatamente útil
+- **Empieza por la herramienta donde más trabajas** — Gmail, Slack o Notion suelen ser el mayor desbloqueo
 - **Agrega uno a la vez** — conecta un nuevo MCP, pruébalo, asegúrate de que funciona antes de agregar el siguiente
 - **Desconecta cuando termines** — elimina MCPs que no estés usando activamente para ahorrar espacio de contexto
 - **Revisa con `/mcp`** — escribe esto dentro de Claude Code para ver qué está conectado y si funciona

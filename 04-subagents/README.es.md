@@ -9,8 +9,6 @@ Ya conoces los Skills — instrucciones que Claude sigue directamente. Los Subag
 
 La distinción clave:
 
-La distinción clave:
-
 | | Skill | Subagente |
 |---|---|---|
 | **Qué es** | Instrucciones que Claude sigue | Un asistente separado al que Claude delega |

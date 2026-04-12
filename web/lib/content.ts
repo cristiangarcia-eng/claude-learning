@@ -14,6 +14,36 @@ function rewriteImagePaths(markdown: string): string {
     .replace(/\(\.?\/?images\//g, "(/lesson-images/");
 }
 
+/**
+ * Map folder basename → lesson slug, for rewriting cross-lesson markdown links.
+ * Lesson READMEs link to each other by filesystem path (e.g. `../02-messy-spreadsheet/`),
+ * but the web app serves them as flat `/lessons/<slug>` URLs. We rewrite the hrefs
+ * so the links resolve correctly in the rendered page.
+ */
+const FOLDER_TO_SLUG: Map<string, string> = (() => {
+  const m = new Map<string, string>();
+  for (const lesson of LESSONS) {
+    const basename = lesson.folder.split("/").pop();
+    if (basename) m.set(basename, lesson.slug);
+  }
+  return m;
+})();
+
+/**
+ * Rewrite cross-lesson markdown links to use slugs.
+ * `](../02-messy-spreadsheet/)` → `](../project-messy-spreadsheet/)`
+ * `](../../05-mcp/)`            → `](../mcp/)`  (web URLs are flat under /lessons/)
+ */
+function rewriteLessonLinks(markdown: string): string {
+  return markdown.replace(
+    /\]\((?:\.\.\/)+([^/)\s]+)\/?\)/g,
+    (match, basename: string) => {
+      const slug = FOLDER_TO_SLUG.get(basename);
+      return slug ? `](../${slug}/)` : match;
+    }
+  );
+}
+
 export interface LessonFile {
   slug: string;
   title: string;
@@ -68,7 +98,7 @@ export function getLessonContent(
   const { data, content } = matter(raw);
 
   return {
-    markdown: rewriteImagePaths(content),
+    markdown: rewriteLessonLinks(rewriteImagePaths(content)),
     frontmatter: data,
     title: extractTitle(content, fileSlug || lesson.title),
   };

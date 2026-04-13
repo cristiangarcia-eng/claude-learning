@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, Outfit, Geist_Mono } from "next/font/google";
+import { Plus_Jakarta_Sans, Outfit, Geist_Mono, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 
 const jakarta = Plus_Jakarta_Sans({
@@ -15,6 +15,13 @@ const outfit = Outfit({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const instrumentSerif = Instrument_Serif({
+  variable: "--font-instrument-serif",
+  subsets: ["latin"],
+  weight: "400",
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
@@ -35,7 +42,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`dark ${jakarta.variable} ${outfit.variable} ${geistMono.variable} antialiased`}
+      className={`dark ${jakarta.variable} ${outfit.variable} ${geistMono.variable} ${instrumentSerif.variable} antialiased`}
     >
       <body className="min-h-screen">
         {children}

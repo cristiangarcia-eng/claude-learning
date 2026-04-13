@@ -4,6 +4,14 @@ const REDIS_KEY = "allowed-emails";
 const SEED_FLAG = "allowlist-seeded";
 
 /**
+ * Emails granted manual access (no Stripe payment required).
+ * Add lowercase emails here to grant course access.
+ */
+const MANUAL_GRANTS: readonly string[] = [
+  "elena.navarro@novatalent.com",
+];
+
+/**
  * One-time migration: copy ALLOWED_EMAILS env var into Redis Set.
  * Idempotent — skips if already seeded.
  */
@@ -47,6 +55,13 @@ export async function isAllowed(email: string): Promise<boolean> {
     .map((e) => e.trim().toLowerCase());
 
   if (envEmails.includes(normalized)) {
+    // Opportunistically sync to Redis
+    await redis.sadd(REDIS_KEY, normalized);
+    return true;
+  }
+
+  // Fallback to manually granted emails (hardcoded in source)
+  if (MANUAL_GRANTS.includes(normalized)) {
     // Opportunistically sync to Redis
     await redis.sadd(REDIS_KEY, normalized);
     return true;

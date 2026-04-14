@@ -177,10 +177,10 @@ const dictionaries = {
     goToLogin: "Go to Login",
 
     // Landing — narrative sections
-    heroHeadlineA: "One Agent.",
-    heroHeadlineB: "Every task.",
+    heroHeadlineA: "Master Claude Code.",
+    heroHeadlineB: "10x yourself.",
     heroHeadlineAccent: "Research. Scraping. Automation. Code.",
-    heroSubtitleNew: "A 30-lesson course on Claude Code — your AI agent for deep research, web scraping, workflow automation, data analysis, and yes, shipping software. No technical background required.",
+    heroSubtitleNew: "A 30-lesson course to put Claude Code to work for you. No coding required.",
     heroTrust: "Taught by Cristian Garcia · CPO at Nova Talent · ex-BBVA · ex-Santander",
     statLessons: "Lessons",
     statHours: "Hours",
@@ -224,7 +224,7 @@ const dictionaries = {
     act5Chapter: "05 — Your guide",
     act6Chapter: "06 — The offer",
     act7Chapter: "07 — Let's go",
-    guaranteeLine: "7-day refund, no questions asked.",
+    unemployedOfferLine: "If you're unemployed, I don't want price to be a blocker. Email me at cgferneco@gmail.com and I'll give you access for free.",
   },
   es: {
     // Navigation
@@ -368,10 +368,10 @@ const dictionaries = {
     goToLogin: "Ir al Login",
 
     // Landing — secciones narrativas
-    heroHeadlineA: "Un Agente.",
-    heroHeadlineB: "Cada tarea.",
+    heroHeadlineA: "Domina Claude Code.",
+    heroHeadlineB: "Multiplícate por 10.",
     heroHeadlineAccent: "Investigación. Scraping. Automatización. Código.",
-    heroSubtitleNew: "Un curso de 30 lecciones sobre Claude Code — tu agente de IA para investigación profunda, web scraping, automatización de flujos, análisis de datos y sí, también desarrollo de software. Sin experiencia técnica previa.",
+    heroSubtitleNew: "Un curso de 30 lecciones para poner a Claude Code a trabajar para ti. Sin saber programar.",
     heroTrust: "Impartido por Cristian Garcia · CPO en Nova Talent · ex-BBVA · ex-Santander",
     statLessons: "Lecciones",
     statHours: "Horas",
@@ -415,7 +415,7 @@ const dictionaries = {
     act5Chapter: "05 — Tu guía",
     act6Chapter: "06 — La oferta",
     act7Chapter: "07 — Adelante",
-    guaranteeLine: "7 días de devolución, sin preguntas.",
+    unemployedOfferLine: "Si estás sin trabajo, no quiero que el precio sea un obstáculo. Escríbeme a cgferneco@gmail.com y te doy acceso gratis.",
   },
 } as const;
 

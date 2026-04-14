@@ -8,7 +8,6 @@ import {
   MoveRight,
   Repeat,
   Search,
-  ShieldCheck,
   Terminal,
   Wrench,
 } from "lucide-react";
@@ -111,10 +110,10 @@ export default async function LandingPage({
                 {t(l, "noCodingNeeded")}
               </div>
 
-              <h1 className="animate-fade-up delay-1 font-heading text-[2.75rem] sm:text-5xl md:text-6xl lg:text-[4.5rem] font-bold leading-[0.98] tracking-[-0.035em] mb-8">
-                {t(l, "heroHeadlineA")}
+              <h1 className="animate-fade-up delay-1 font-heading text-[clamp(1.375rem,7vw,2.75rem)] sm:text-5xl md:text-6xl lg:text-[4.5rem] font-bold leading-[0.98] tracking-[-0.035em] mb-8">
+                <span className="whitespace-nowrap">{t(l, "heroHeadlineA")}</span>
                 <br />
-                {t(l, "heroHeadlineB")}
+                <span className="whitespace-nowrap">{t(l, "heroHeadlineB")}</span>
                 <br />
                 <span className="font-serif-italic text-brand-green/95 text-[0.88em]">
                   {t(l, "heroHeadlineAccent")}
@@ -540,10 +539,9 @@ export default async function LandingPage({
             </div>
           </div>
 
-          <div className="flex items-center justify-center gap-2 mt-10 text-muted-foreground/70 text-sm">
-            <ShieldCheck className="h-4 w-4 text-brand-green/70" />
-            <span>{t(l, "guaranteeLine")}</span>
-          </div>
+          <p className="mt-10 text-center text-muted-foreground/60 text-sm max-w-xl mx-auto leading-relaxed">
+            {t(l, "unemployedOfferLine")}
+          </p>
         </div>
       </section>
 

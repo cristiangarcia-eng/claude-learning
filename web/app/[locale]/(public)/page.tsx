@@ -566,9 +566,6 @@ export default async function LandingPage({
             {t(l, "startLearning")}
             <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
           </a>
-          <p className="relative text-xs text-muted-foreground/60 mt-6 font-mono tracking-wide">
-            {t(l, "guaranteeLine")}
-          </p>
         </div>
       </section>
 
